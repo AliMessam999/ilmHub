@@ -1,0 +1,110 @@
+.btn.btn-anim, .wizard > .actions a.btn-anim, .dt-buttons .btn-anim.dt-button, .tablesaw-sortable th.tablesaw-sortable-head button.btn-anim, .sweet-alert button.btn-anim, .owl-theme .owl-nav .btn-anim[class*="owl-"], button.btn-anim.fc-agendaDay-button,
+button.btn-anim.fc-month-button,
+button.btn-anim.fc-agendaWeek-button, .btn-anim.fc-prev-button, .btn-anim.fc-next-button, .btn-anim.fc-today-button {
+  position: relative;
+  overflow: hidden;
+}
+.btn.btn-anim i, .wizard > .actions a.btn-anim i, .dt-buttons .btn-anim.dt-button i, .tablesaw-sortable th.tablesaw-sortable-head button.btn-anim i, .sweet-alert button.btn-anim i, .owl-theme .owl-nav .btn-anim[class*="owl-"] i, button.btn-anim.fc-agendaDay-button i,
+button.btn-anim.fc-month-button i,
+button.btn-anim.fc-agendaWeek-button i, .btn-anim.fc-prev-button i, .btn-anim.fc-next-button i, .btn-anim.fc-today-button i {
+  font-size: 16px;
+  height: 100%;
+  left: 0;
+  padding-top: 10px;
+  position: absolute;
+  top: -100%;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  width: 100%;
+}
+.btn.btn-anim .btn-text, .wizard > .actions a.btn-anim .btn-text, .dt-buttons .btn-anim.dt-button .btn-text, .tablesaw-sortable th.tablesaw-sortable-head button.btn-anim .btn-text, .sweet-alert button.btn-anim .btn-text, .owl-theme .owl-nav .btn-anim[class*="owl-"] .btn-text, button.btn-anim.fc-agendaDay-button .btn-text,
+button.btn-anim.fc-month-button .btn-text,
+button.btn-anim.fc-agendaWeek-button .btn-text, .btn-anim.fc-prev-button .btn-text, .btn-anim.fc-next-button .btn-text, .btn-anim.fc-today-button .btn-text {
+  position: relative;
+  top: 0;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.btn.btn-anim:hover i, .wizard > .actions a.btn-anim:hover i, .dt-buttons .btn-anim.dt-button:hover i, .tablesaw-sortable th.tablesaw-sortable-head button.btn-anim:hover i, .sweet-alert button.btn-anim:hover i, .owl-theme .owl-nav .btn-anim[class*="owl-"]:hover i, button.btn-anim.fc-agendaDay-button:hover i,
+button.btn-anim.fc-month-button:hover i,
+button.btn-anim.fc-agendaWeek-button:hover i, .btn-anim.fc-prev-button:hover i, .btn-anim.fc-next-button:hover i, .btn-anim.fc-today-button:hover i {
+  top: 0;
+}
+.btn.btn-anim:hover .btn-text, .wizard > .actions a.btn-anim:hover .btn-text, .dt-buttons .btn-anim.dt-button:hover .btn-text, .tablesaw-sortable th.tablesaw-sortable-head button.btn-anim:hover .btn-text, .sweet-alert button.btn-anim:hover .btn-text, .owl-theme .owl-nav .btn-anim[class*="owl-"]:hover .btn-text, button.btn-anim.fc-agendaDay-button:hover .btn-text,
+button.btn-anim.fc-month-button:hover .btn-text,
+button.btn-anim.fc-agendaWeek-button:hover .btn-text, .btn-anim.fc-prev-button:hover .btn-text, .btn-anim.fc-next-button:hover .btn-text, .btn-anim.fc-today-button:hover .btn-text {
+  top: 50px;
+}
+.btn.btn-icon-anim, .wizard > .actions a.btn-icon-anim, .dt-buttons .btn-icon-anim.dt-button, .tablesaw-sortable th.tablesaw-sortable-head button.btn-icon-anim, .sweet-alert button.btn-icon-anim, .owl-theme .owl-nav .btn-icon-anim[class*="owl-"], button.btn-icon-anim.fc-agendaDay-button,
+button.btn-icon-anim.fc-month-button,
+button.btn-icon-anim.fc-agendaWeek-button, .btn-icon-anim.fc-prev-button, .btn-icon-anim.fc-next-button, .btn-icon-anim.fc-today-button {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  border: none;
+  padding: 11px;
+  background: transparent;
+}
+.fileupload {
+  overflow: hidden;
+  position: relative;
+}
+
+.fileupload input.upload {
+  cursor: pointer;
+  filter: alpha(opacity=0);
+  font-size: 20px;
+  margin: 0;
+  opacity: 0;
+  padding: 0;
+  position: absolute;
+  right: -3px;
+  top: -3px;
+  padding: 5px;
+}
+.swal2-confirm{
+    margin-left:1rem;
+}
+
+
+.close-button{
+  background: #fff;
+  color:#2982f3;
+  border:1px solid #2982f3;
+  position: absolute;
+  right: -7px;
+  top: -7px;
+  border-radius: 50%;
+  transition: all 0.5s ease;
+}
+.close-button:hover{
+background: #2982f3;
+color:#FFF
+}
+.image-preview{
+  position: relative;
+}
+.fileupload {
+    max-height: 40px;
+}
+.image-list{
+    height:100px;
+    width: 100px;
+  }
+  table.dataTable tbody th, table.dataTable tbody td{
+    color: #000;
+  }
+  .nice_Select2:focus{
+    background: #f6f7fb;
+  }
+  .nice_Select2{
+    line-height: 26px;
+  }
+  .nice_Select2.open::after{
+    line-height: 24px;
+  }
+  .nice_Select2::after{
+    line-height: 40px;
+  }
