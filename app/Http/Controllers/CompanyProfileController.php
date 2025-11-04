@@ -31,7 +31,8 @@ class CompanyProfileController extends Controller
             'fax' => 'required',
             'description' => 'required',
             'image' => ['required',Rule::imageFile(),'max:500'],
-            'alt'=>'required'    
+            'alt'=>'required',   
+            'large_logo' => ['nullable',Rule::imageFile(),'max:500'],
         ]);
 
         if ($validator->fails()) {
@@ -39,17 +40,20 @@ class CompanyProfileController extends Controller
         } 
         // if(CdProfile::all()->count())
             $path = $request->file('image')->store('upload/company_profile');
+            $large_logo_path = $request->file('large_logo')->store('upload/company_profile');
             if(isset($request->profile_id) && !empty($request->profile_id)){
                 $profile = $request->input();
                 Arr::pull($profile,'_token');
                 Arr::pull($profile,'profile_id');
                 $profile['image']=$path;
+                $profile['large_logo']=$large_logo_path;
                 $update = CdProfile::where("id",$request->profile_id)->update($profile); 
             }
             else{
             $profile = $request->input();
             Arr::pull($profile,'_token');
             $profile['image']=$path;
+            $profile['large_logo']=$large_logo_path;
             $update = CdProfile::create($profile);
             }
             if ($update) {

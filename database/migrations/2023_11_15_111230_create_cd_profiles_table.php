@@ -31,6 +31,7 @@ return new class extends Migration
             $table->longText('description');
             $table->string('alt');
             $table->string('image');
+            $table->string('large_logo')->nullable();
             $table->SoftDeletes();
             $table->timestamps();
         });

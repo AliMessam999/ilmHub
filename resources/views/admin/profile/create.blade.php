@@ -164,6 +164,24 @@
                                         placeholder="Enter ALt of Image for SEO" autocomplete="off">
                                 </div>
                             </div>
+                            <div class="col-lg-6">
+                                <div class="d-flex gap-5  align-items-center h-100">
+                                    <div class="fileupload btn btn_1 radius_btn btn-anim"><i
+                                            class="fa fa-upload"></i><span class="btn-text">Upload large logo</span>
+                                        <input type="file" class="upload" name="large_logo" id="uploadFilesingle"
+                                            accept="image/*">
+                                    </div>
+                                    <div class="img-upload-wrap">
+                                        <div id="imagePreview">
+                                            @if($item)
+                                            <img src="/{{ __($item->large_logo) }}" class="image-list" alt="upload_img">
+                                            @endif
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
 
                             <div class="row">
                                 <div class="col-12">
