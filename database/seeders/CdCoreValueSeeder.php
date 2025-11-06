@@ -26,7 +26,7 @@ class CdCoreValueSeeder extends Seeder
 </ul>',
     'deleted_at' => NULL,
     'created_at' => NULL,
-    'updated_at' => '2023-11-23 07:18:54',
+    'updated_at' => '2023-11-23 12:18:54',
   ),
 );
         DB::table('cd_core_values')->insert($data);

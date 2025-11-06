@@ -63,8 +63,8 @@ class CdPolicySeeder extends Seeder
 
 <p>&nbsp;</p>',
     'deleted_at' => NULL,
-    'created_at' => '2023-11-23 07:30:29',
-    'updated_at' => '2023-11-23 07:30:29',
+    'created_at' => '2023-11-23 12:30:29',
+    'updated_at' => '2023-11-23 12:30:29',
   ),
 );
         DB::table('cd_policies')->insert($data);
