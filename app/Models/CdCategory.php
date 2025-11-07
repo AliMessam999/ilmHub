@@ -14,16 +14,16 @@ class CdCategory extends Model
     public function menu(){
         return $this->belongsTo(CdMenu::class);
     }
+    
     public function sub_categories(){
-        return $this->hasMany(CdCategory::class,'parent', 'id');
+        return $this->hasMany(CdCategory::class, 'parent', 'id');
     }
+    
     public function parent_item(){
         return $this->belongsTo(CdCategory::class, 'parent', 'id');
     }
 
     public function solutions(){
-        return $this->hasMany(CdSolution::class,'category_id');
+        return $this->hasMany(CdSolution::class, 'category_id');
     }
-
-
 }
