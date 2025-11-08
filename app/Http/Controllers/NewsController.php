@@ -7,6 +7,7 @@ use App\Models\CdNew;
 use Illuminate\Http\Request;
 use Illuminate\Validation\Rule;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Str;
 
 class NewsController extends Controller
 {
@@ -31,15 +32,17 @@ class NewsController extends Controller
                 }
                 $career = new CdNew();
                 $career->title = $request->title;
+                $career->slug = Str::slug($request->slug);
                 $career->category_id = $request->category_id;
                 $career->description = $request->description;
                 $career->alt = $request->alt;
                 $career->date = $request->date;
+                $career->tags = $request->tags;
                 $career->image = $path;
                 $result = $career->save();
                 if ($result) {
                     return response()->json([
-                        "message" => "News Created Successfully"
+                        "message" => "Insights Created Successfully"
                     ], 200);
                 } else {
                     return response()->json([
@@ -60,7 +63,7 @@ class NewsController extends Controller
             $CdNew = CdNew::where('id', $id)->delete();
             if ($CdNew) {
                 return response()->json([
-                    "message" => "News Deleted Successfully"
+                    "message" => "Insights Deleted Successfully"
                 ], 200);
             } else {
                 return response()->json([
@@ -110,24 +113,28 @@ class NewsController extends Controller
                 if($request->file('image')){
                     $CdNew = CdNew::where('id', $id)->update([
                         'title' => $request->title,
+                        'slug' => Str::slug($request->slug),
                         'category_id' => $request->category_id,
                         'description' => $request->description,
                         'alt' => $request->alt,
                         'date' => $request->date,
+                        'tags' => $request->tags,
                         'image' => $path,
                     ]);
                 }else{
                     $CdNew = CdNew::where('id', $id)->update([
                         'title' => $request->title,
+                        'slug' => Str::slug($request->slug),
                         'category_id' => $request->category_id,
                         'description' => $request->description,
                         'date' => $request->date,
+                        'tags' => $request->tags,
                         'alt' => $request->alt,
                     ]);
                 }
                         if ($CdNew) {
                             return response()->json([
-                                "message" => "News Updated Successfully"
+                                "message" => "Insights Updated Successfully"
                             ], 200);
                         } else {
                             return response()->json([

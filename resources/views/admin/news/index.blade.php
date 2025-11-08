@@ -8,8 +8,8 @@
                     <div class="white_card_body">
                         <div class="QA_section">
                             <div class="white_box_tittle list_header d-flex">
-                                <h4>News List </h4>
-                                <a href="/admin/news/create" class="white_btn3 justify-content-end">Create News</a>
+                                <h4>Insights List </h4>
+                                <a href="/admin/news/create" class="white_btn3 justify-content-end">Create Insights</a>
                             </div>
                             <div class="QA_table mb_30">
                                 <table class="table lms_table_active3">
