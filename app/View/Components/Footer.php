@@ -2,39 +2,34 @@
 
 namespace App\View\Components;
 
-use App\Models\CdGallary;
-use App\Models\CdNew;
+use App\Models\CdCareer;
+use App\Models\CdCategory;
+use App\Models\CdContact;
+use App\Models\CdMenu;
 use App\Models\CdProfile;
-use Closure;
-use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
+use Illuminate\Support\Facades\DB;
 
 class Footer extends Component
 {
-    /**
-     * Create a new component instance.
-     */
     public $footer;
     public function __construct()
     {
-        //
         $data = new \StdClass;
-        $data->news = CdNew::WhereHas('category',function($query){
-            $query->where('title','LIKE','%ict%');
-        })->OrderBy('created_at','desc')->limit(6)->get();
-        $data->news_hydromet = CdNew::WhereHas('category',function($query){
-            $query->where('title','LIKE','%hydromet%');
-        })->OrderBy('created_at','desc')->limit(6)->get();
-        $data->gallery = CdGallary::OrderBy('created_at','desc')->limit(8)->get();
+        $data->services = CdCategory::wherehas('menu', function ($query) {
+            return $query->where('menu_id', 2);
+        })->whereNull('parent')->get();
+        $data->resources = CdCategory::wherehas('menu', function ($query) {
+            $query->where('id');
+        })->whereNull('parent')->get();
+        // $data->links = CdProfile::all();
         $data->profile = CdProfile::first();
         $this->footer = $data;
+        // dd($this->footer->services);
     }
-
-    /**
-     * Get the view / contents that represent the component.
-     */
-    public function render(): View|Closure|string
+    public function render()
     {
-        return view('components.footer');
+        //  dd($footer);
+        return view('includes.footer');
     }
 }

@@ -45,6 +45,7 @@ Route::get('/', [HomeController::class, 'getData'])->name('home');
 Route::get('/solutions', [HomeController::class, 'SolutionPage']);
 Route::get('/solutions/{id}', [HomeController::class, 'SolutionPage']);
 Route::get('/project/details/{title}', [HomeController::class, 'ProjectDetailsPage']);
+Route::get('/industry',[HomeController::class,'IndustryData'])->name('industry.data');
 Route::get('/services', [HomeController::class, 'servicesPage']);
 Route::get('/service/details/{title}', [HomeController::class, 'serviceDetailsPage']);
 Route::get('/gallery', [HomeController::class, 'galleryPage']);
