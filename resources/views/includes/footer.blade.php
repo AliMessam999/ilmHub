@@ -134,8 +134,8 @@
                                </div>
                                <div class="copyright-menu">
                                    <ul>
-                                       <li><a href="contact.html">Privacy Policy</a></li>
-                                       <li><a href="terms-and-conditions.html">Terms & Condition</a></li>
+                                       <li><a href="{{ route('policies.page') }}">Privacy Policy</a></li>
+                                       <li><a href="{{ route('terms.page') }}">Terms & Conditions</a></li>
                                    </ul>
                                </div>
                            </div>

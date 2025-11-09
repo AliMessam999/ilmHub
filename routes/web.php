@@ -58,8 +58,8 @@ Route::get('/contact', [HomeController::class, 'contactPage']);
 Route::post('/contact', [HomeController::class, 'contactus']);
 Route::get('/news_&_blogs', [HomeController::class, 'newsPage']);
 Route::get('/news/details/{title}', [HomeController::class, 'newsDetailPage']);
-Route::get('/policies', [HomeController::class, 'policyPage']);
-Route::get('/terms_conditions', [HomeController::class, 'termsconditionPage']);
+Route::get('/policies', [HomeController::class, 'policyPage'])->name('policies.page');
+Route::get('/terms_conditions', [HomeController::class, 'termsconditionPage'])->name('terms.page');
 
 Route::get('/dashboard', function () {
     return view('admin.index');
