@@ -28,6 +28,9 @@ Progressbar js
 
 (function ($) {
 	"use strict";
+	const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+	const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+
 	// Weave Animation Js
 	const target = document.getElementById("tj-weave-anim");
 	function splitTextToSpans(targetElement) {

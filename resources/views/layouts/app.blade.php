@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   @include('includes.head')
+  
 </head>
 <body>
   <div class="body-overlay"></div>

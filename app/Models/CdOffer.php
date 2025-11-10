@@ -9,4 +9,8 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 class CdOffer extends Model
 {
     use HasFactory, SoftDeletes;
+     protected $guarded = [];
+    public function Category(){
+        return $this->belongsTo(CdCategory::class)->where('parent',NULL);
+    }
 }
