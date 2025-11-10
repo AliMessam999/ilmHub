@@ -24,6 +24,7 @@ class DatabaseSeeder extends Seeder
         CdCoreValueSeeder::class,
         CdFaqSeeder::class,
         CdFeatureSeeder::class,
+        CdFeatureImageSeeder::class,
         CdGallarySeeder::class,
         CdNewsSeeder::class,
         CdOfferSeeder::class,

@@ -26,4 +26,10 @@ class CdCategory extends Model
     public function solutions(){
         return $this->hasMany(CdSolution::class, 'category_id');
     }
+
+    public function news(){
+        return $this->hasMany(CdNew::class,'category_id');
+    }
+
+
 }
