@@ -21,9 +21,9 @@ class AdminMiddleWare
             $publicIp = file_get_contents('https://api64.ipify.org?format=json');
             $publicIp = json_decode($publicIp)->ip;
         }
-        
+        // dd($publicIp,env('APP_ENV'));
 
-        $allowedIps = ['58.65.177.181','203.124.36.134','115.186.136.48'];
+        $allowedIps = ['58.65.177.181','203.124.36.134','115.186.136.48','127.0.0.1','2400:adcc:110d:bb01:d90f:a747:9c21:cedf'];
         if (!in_array($publicIp, $allowedIps)) {
             abort(403, 'Unauthorized IP address.');
         }

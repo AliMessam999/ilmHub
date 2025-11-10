@@ -13,4 +13,11 @@ class CdNew extends Model
     public function category(){
         return $this->belongsTo(CdCategory::class)->where('parent',NULL);
     }
+
+    public function scopeFilter($query, array $filters)
+    {
+        $query->when($filters['search'] ?? false, function ($query, $search) {
+            return $query->where('title', 'like', '%' . $search . '%');
+        });
+    }
 }

@@ -76,7 +76,7 @@ class HomeController extends Controller
             return $query->where('title', 'Like', '%' . $title . '%');
         })->with('category', 'category.parent_item')->first();
         $recent = CdSolution::distinct('category_id')->with('category')->orderBy('created_at', 'desc')->limit(3)->get();
-        $category = CdCategory::where('parent', NULL)->whereNotIn('title',['Clients','Partners','Contact'])->get();
+        $category = CdCategory::where('parent', NULL)->whereNotIn('title', ['Clients', 'Partners', 'Contact'])->get();
         return view('solution_details', compact('solution', 'recent', 'category'));
     }
 
@@ -92,25 +92,36 @@ class HomeController extends Controller
     {
         $solution = CdFeature::where('title', 'Like', '%' . $title . '%')->first();
         $recent = CdSolution::distinct('category_id')->with('category')->orderBy('created_at', 'desc')->limit(3)->get();
-        $category = CdCategory::where('parent', NULL)->whereNotIn('title',['Clients','Partners','Contact'])->get();
+        $category = CdCategory::where('parent', NULL)->whereNotIn('title', ['Clients', 'Partners', 'Contact'])->get();
         // dd($solution);
         return view('service_details', compact('solution', 'recent', 'category'));
     }
 
     public function galleryPage()
     {
-        $gallery = CdGallary::OrderBy('created_at','desc')->get();
-        return view('gallery', compact('gallery'));
+        $gallery = CdGallary::OrderBy('created_at', 'desc')->get();
+        return view('frontend.gallery', compact('gallery'));
     }
     public function careersPage($title = null)
     {
         if ($title) {
             $career = CdCareer::where('title', 'LIKE', '%' . $title . '%')->first();
             $recent = CdCareer::OrderBy('created_at', 'desc')->limit(5)->get();
-            return view('career-details', compact('career', 'recent'));
+             // Next post (newer one in same category)
+        $next = CdCareer::
+            where('id', '>', $career->id)
+            ->orderBy('id', 'asc')
+            ->first();
+
+        // Previous post (older one in same category)
+        $previous = CdCareer::
+            where('id', '<', $career->id)
+            ->orderBy('id', 'desc')
+            ->first();
+            return view('frontend.career-details', compact('career', 'recent','next','previous'));
         }
-        $careers = CdCareer::whereDate('last_date_to_apply','>=',now())->get();
-        return view('careers', compact('careers'));
+        $careers = CdCareer::whereDate('last_date_to_apply', '>=', now())->get();
+        return view('frontend.careers', compact('careers'));
     }
 
     public function aboutusPage()
@@ -118,7 +129,14 @@ class HomeController extends Controller
         $profile = CdProfile::first();
         $services = CdFeature::Orderby('created_at', 'desc')->limit(3)->get();
         $team = CdTeamMember::all();
-        return view('about_us', compact('profile', 'services', 'team'));
+        // dd($team);
+         $certificates = CdOffer::where('position','top')->whereHas('Category',function($query){
+            return $query->where('title','LIKE','Certifications & Registrations');
+        })->get();
+        $registrations =  CdOffer::where('position','bottom')->whereHas('Category',function($query){
+            return $query->where('title','LIKE','Certifications & Registrations');
+        })->get();
+        return view('frontend.about_us', compact('profile', 'services', 'team','certificates','registrations'));
     }
 
     public function clientsPage()
@@ -178,27 +196,46 @@ class HomeController extends Controller
         }
     }
 
-    public function newsPage(){
-        $news = CdNew::orderBy('created_at','desc')->get();
-        $recent = CdSolution::distinct('category_id')->with('category')->orderBy('created_at', 'desc')->limit(3)->get();
-        $category = CdCategory::where('parent', NULL)->whereNotIn('title',['Clients','Partners','Contact'])->get();
-        return view('news',compact('news','recent','category'));
+    public function newsPage(Request $request)
+    {
+        if ($request->has('search')) {
+            $news = CdNew::filter(request(['search']))->with('category')->orderBy('created_at', 'desc')->get();
+        } else {
+            $news = CdNew::with('category')->orderBy('created_at', 'desc')->get();
+        }
+        $category = CdCategory::where('parent', NULL)->whereNotIn('title', ['Clients', 'Partners', 'Contact'])->withCount('news')->get();
+        return view('frontend.blogs', compact('news', 'category'));
     }
 
-    public function newsDetailPage($title){
-        $new = CdNew::where('title','LIKE','%'.$title.'%')->with('category')->first();
-        $recent = CdSolution::distinct('category_id')->with('category')->orderBy('created_at', 'desc')->limit(3)->get();
-        $category = CdCategory::where('parent', NULL)->whereNotIn('title',['Clients','Partners','Contact'])->get();
-        return view('new_details',compact('new','recent','category'));
+    public function newsDetailPage($title)
+    {
+        $new = CdNew::where('title', 'LIKE', '%' . $title . '%')->with('category')->first();
+        $recent = CdNew::where('category_id', $new->category_id)->where('id', '!=', $new->id)->orderBy('created_at', 'desc')->limit(3)->get();
+        $category = CdCategory::where('parent', NULL)->whereNotIn('title', ['Clients', 'Partners', 'Contact'])->get();
+        // Next post (newer one in same category)
+        $next = CdNew::where('category_id', $new->category_id)
+            ->where('id', '>', $new->id)
+            ->orderBy('id', 'asc')
+            ->first();
+
+        // Previous post (older one in same category)
+        $previous = CdNew::where('category_id', $new->category_id)
+            ->where('id', '<', $new->id)
+            ->orderBy('id', 'desc')
+            ->first();
+
+        return view('frontend.blogs-details', compact('new', 'recent', 'category', 'next', 'previous'));
     }
 
-    public function policyPage(){
+    public function policyPage()
+    {
         $policy = CdPolicy::first();
-        return view('policy',compact('policy'));
+        return view('policy', compact('policy'));
     }
 
-    public function termsconditionPage(){
+    public function termsconditionPage()
+    {
         $terms = CdTermCondition::first();
-        return view('terms_conditions',compact('terms'));
+        return view('terms_conditions', compact('terms'));
     }
 }
