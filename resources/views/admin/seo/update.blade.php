@@ -16,26 +16,35 @@
                     <div class="white_card_body">
                         <form id="CircleForm">
                             @csrf
-                            {{-- <input type="hidden" value="{{ __($menu->id) }}" id="career_id"> --}}
+                            <input type="hidden" value="{{ __($seoable_id) }}" id="career_id">
+                            <input type="hidden" name="seoable_type" value="{{ __($seoable_type ?? '') }}" id="career_id">
+                            <input type="hidden" name="seoable_id" value="{{ __($seoable_id ?? '') }}" id="career_id">
+
                             <div class="row">
                                 <div class="col-lg-6">
                                     <label>Meta Title</label>
                                     <div class="common_input mb_15">
-                                        <input type="text" name="meta_title" placeholder="Enter Meta Title">
+                                        <input type="text" name="meta_title"
+                                            value="{{ old('meta_title', $seo->meta_title ?? '') }}"
+                                            placeholder="Enter Meta Title">
                                     </div>
                                 </div>
 
                                 <div class="col-lg-6">
                                     <label>Meta Author</label>
                                     <div class="common_input mb_15">
-                                        <input type="text" name="meta_author" placeholder="Enter Meta Author">
+                                        <input type="text" name="meta_author"
+                                            value="{{ old('meta_author', $seo->meta_author ?? '') }}"
+                                            placeholder="Enter Meta Author">
                                     </div>
                                 </div>
 
                                 <div class="col-lg-6">
                                     <label>Meta Description</label>
                                     <div class="common_input mb_15">
-                                        <input type="text" name="meta_description" placeholder="Enter Meta Description">
+                                        <input type="text" name="meta_description"
+                                            value="{{ old('meta_description', $seo->meta_description ?? '') }}"
+                                            placeholder="Enter Meta Description">
                                     </div>
                                 </div>
 
@@ -43,6 +52,7 @@
                                     <label>Meta Keywords</label>
                                     <div class="common_input mb_15">
                                         <input type="text" name="meta_keywords"
+                                            value="{{ old('meta_keywords', $seo->meta_keywords ?? '') }}"
                                             placeholder="Enter comma-separated keywords">
                                     </div>
                                 </div>
@@ -52,7 +62,9 @@
                                 <div class="col-lg-6">
                                     <label>OG Title</label>
                                     <div class="common_input mb_15">
-                                        <input type="text" name="og_title" placeholder="Enter OG Title">
+                                        <input type="text" name="og_title"
+                                            value="{{ old('og_title', $seo->og_title ?? '') }}"
+                                            placeholder="Enter OG Title">
                                     </div>
                                 </div>
 
@@ -60,6 +72,7 @@
                                     <label>OG Type</label>
                                     <div class="common_input mb_15">
                                         <input type="text" name="og_type"
+                                            value="{{ old('og_type', $seo->og_type ?? '') }}"
                                             placeholder="Enter OG Type (e.g. website, article)">
                                     </div>
                                 </div>
@@ -67,21 +80,44 @@
                                 <div class="col-lg-6">
                                     <label>OG Description</label>
                                     <div class="common_input mb_15">
-                                        <input type="text" name="og_description" placeholder="Enter OG Description">
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-6">
-                                    <label>OG Image</label>
-                                    <div class="common_input mb_15">
-                                        <input type="file" name="og_image" accept="image/*">
+                                        <input type="text" name="og_description"
+                                            value="{{ old('og_description', $seo->og_description ?? '') }}"
+                                            placeholder="Enter OG Description">
                                     </div>
                                 </div>
 
                                 <div class="col-lg-6">
                                     <label>OG URL</label>
                                     <div class="common_input mb_15">
-                                        <input type="text" name="og_url" placeholder="Enter OG URL">
+                                        <input type="text" name="og_url"
+                                            value="{{ old('og_url', $seo->og_url ?? '') }}" placeholder="Enter OG URL">
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <div class="d-flex gap-5  align-items-center h-100">
+
+                                        <div class="fileupload btn btn_1 radius_btn btn-anim"><i
+                                                class="fa fa-upload"></i><span class="btn-text">Upload OG Image</span>
+                                            <input type="file" class="upload" name="og_image" id="uploadFilesingle"
+                                                accept="image/*">
+
+                                        </div>
+                                        <div class="img-upload-wrap">
+                                            <div id="imagePreview">
+                                                @if (!empty($seo->og_image))
+                                                    <img src="/{{ $seo->og_image }}" class="image-list" alt="upload_img">
+                                                @endif
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="create_report_btn mt_30">
+                                        <button href="#" class="btn_1 radius_btn d-block text-center" type="submit"
+                                            id="updatebtn">Update</button>
                                     </div>
                                 </div>
                             </div>
@@ -105,10 +141,10 @@
 
             var formData = new FormData(form[0]);
             var id = $("#career_id").val();
-            var desc = CKEDITOR.instances.ckeditor.getData();
-            formData.append("description", desc)
+            // var desc = CKEDITOR.instances.ckeditor.getData();
+            // formData.append("description", desc)
             $.ajax({
-                url: "/admin/news/update/" + id,
+                url: "/admin/seo/update/" + id,
                 method: "POST",
                 data: formData,
                 contentType: false, //this is requireded please see answers above

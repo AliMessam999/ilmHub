@@ -32,6 +32,48 @@
                                             autocomplete="off" required>
                                     </div>
                                 </div>
+                                
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <label>Vacancy Number</label>
+                                        <div class="common_input mb_15">
+                                            <input type="text" name="vacancy_number" value="{{ __($menu->vacancy_number) }}" placeholder="Enter Vacancy Number"
+                                                autocomplete="off">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6">
+                                        <label>Tags</label>
+                                        <div class="common_input mb_15">
+                                            <input type="text" name="tags" value="{{ __($menu->tags) }}" placeholder="Enter comma-separated tags"
+                                                autocomplete="off">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6">
+                                        <label>Location Type</label>
+                                        <div class="common_input mb_15">
+                                            <input type="text" name="location_type" value="{{ __($menu->location_type) }}" placeholder="Enter Location Type"
+                                                autocomplete="off">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <label>Email</label>
+                                        <div class="common_input mb_15">
+                                            <input type="email" name="email" value="{{ __($menu->email) }}"
+                                                placeholder="Enter email" autocomplete="off">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <label>Last Date To Apply</label>
+                                        <div class="common_input mb_15">
+                                            <input type="date" name="last_date_to_apply"
+                                                placeholder="Enter Last Date To APply"
+                                                value="{{ __($menu->last_date_to_apply) }}" autocomplete="off">
+                                        </div>
+                                    </div>
+                                </div>
+
                                 <div class="row">
                                     <div class="col-lg-6">
                                         <div class="d-flex gap-5  align-items-center h-100">
@@ -59,23 +101,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="col-lg-6">
-                                        <label>Email</label>
-                                        <div class="common_input mb_15">
-                                            <input type="email" name="email" value="{{ __($menu->email) }}"
-                                                placeholder="Enter email" autocomplete="off">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <label>Last Date To Apply</label>
-                                        <div class="common_input mb_15">
-                                            <input type="date" name="last_date_to_apply"
-                                                placeholder="Enter Last Date To APply"
-                                                value="{{ __($menu->last_date_to_apply) }}" autocomplete="off">
-                                        </div>
-                                    </div>
-                                </div>
+                                
                                 <div class="row">
                                     <div class="col-lg-12">
                                         <label>Description</label>
@@ -114,7 +140,7 @@
             var form = $("#CircleForm");
             $("#updatebtn").html(
                 "<i class='fa fa-spinner fa-spin' style='padding:0px;margin-right:10px' id='spinner'></i>Waiting.."
-                )
+            )
 
             var formData = new FormData(form[0]);
             var id = $("#career_id").val();

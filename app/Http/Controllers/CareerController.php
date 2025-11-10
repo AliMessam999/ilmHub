@@ -39,6 +39,9 @@ class CareerController extends Controller
             $career->alt = $request->alt;
             $career->email = $request->email;
             $career->last_date_to_apply = $request->last_date_to_apply;
+            $career->vacancy_number = $request->vacancy_number;
+            $career->tags = $request->tags;
+            $career->location_type = $request->location_type;
             $career->image = $path;
             $result = $career->save();
             if ($result) {
@@ -125,6 +128,9 @@ class CareerController extends Controller
                         'alt' => $request->alt,
                         'email' => $request->email,
                         'last_date_to_apply' => $request->last_date_to_apply,
+                        'vacancy_number' => $request->vacancy_number,
+                        'tags' => $request->tags,
+                        'location_type' => $request->location_type,
                         'image' => $path,
                     ]);
                 } else {
@@ -136,6 +142,9 @@ class CareerController extends Controller
                         'email' => $request->email,
                         'last_date_to_apply' => $request->last_date_to_apply,
                         'alt' => $request->alt,
+                        'vacancy_number' => $request->vacancy_number,
+                        'tags' => $request->tags,
+                        'location_type' => $request->location_type,
                     ]);
                 }
                 if ($CdCareer) {

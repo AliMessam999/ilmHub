@@ -10,6 +10,11 @@ return new class extends Migration
     {
         Schema::create('seos', function (Blueprint $table) {
             $table->id();
+
+            // Polymorphic relationship
+            $table->morphs('seoable'); // creates seoable_id and seoable_type
+            
+            // Meta fields
             $table->string('meta_title')->nullable();
             $table->text('meta_description')->nullable();
             $table->text('meta_keywords')->nullable();
@@ -21,9 +26,6 @@ return new class extends Migration
             $table->string('og_image')->nullable();
             $table->string('og_type')->nullable();
             $table->string('og_url')->nullable();
-
-            // Polymorphic relationship
-            $table->morphs('seoable'); // creates seoable_id and seoable_type
 
             $table->timestamps();
         });
