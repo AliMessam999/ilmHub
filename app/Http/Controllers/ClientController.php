@@ -35,10 +35,11 @@ class ClientController extends Controller
              $client->alt = $request->alt;
              $client->image = $path;
              $client->link = $request->link;
+             $client->description = $request->description;
              $result = $client->save();
              if ($result) {
                  return response()->json([
-                     "message" => "Client Created Successfully"
+                     "message" => "Industry Created Successfully"
                  ], 200);
              } else {
                  return response()->json([
@@ -59,7 +60,7 @@ class ClientController extends Controller
              $CdClient = CdClient::where('id', $id)->delete();
              if ($CdClient) {
                  return response()->json([
-                     "message" => "Client Deleted Successfully"
+                     "message" => "Industry Deleted Successfully"
                  ], 200);
              } else {
                  return response()->json([
@@ -109,17 +110,21 @@ class ClientController extends Controller
                          'sort' => $request->sort,
                          'alt' => $request->alt,
                          'image' => $path,
+                         'link' => $request->link,
+                         'description' => $request->description,
                      ]);
                  } else {
                      $CdClient = CdClient::where('id', $id)->update([
                          'title' => $request->title,
                          'sort' => $request->sort,
                          'alt' => $request->alt,
+                         'link' => $request->link,
+                         'description' => $request->description,
                      ]);
                  }
                  if ($CdClient) {
                      return response()->json([
-                         "message" => "Client Updated Successfully"
+                         "message" => "Industry Updated Successfully"
                      ], 200);
                  } else {
                      return response()->json([

@@ -13,7 +13,7 @@
                     <div class="white_card_header">
                         <div class="box_header m-0">
                             <div class="main-title">
-                                <h3 class="m-0">Create Insights</h3>
+                                <h3 class="m-0">Create SEO</h3>
                             </div>
                         </div>
                     </div>
@@ -22,84 +22,73 @@
                         <div class="white_card_body">
                             <div class="row">
                                 <div class="col-lg-6">
-                                    <label>Title</label>
+                                    <label>Meta Title</label>
                                     <div class="common_input mb_15">
-                                        <input type="text" name="title" placeholder="Title" >
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <label>Slug</label>
-                                    <div class="common_input mb_15">
-                                        <input type="text" name="slug" placeholder="Slug" >
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <label>Type</label>
-                                    <div class="common_input mb_15">
-                                        <select class="form-control nice_Select2 wide" name="category_id" required>
-                                            <option value="" disabled selected>Select Type</option>
-                                            @foreach($categories as $category)
-                                                <option value="{{ $category->id }}">{{ $category->id }} | {{ $category->title }}</option>
-                                            @endforeach
-                                        </select>                                
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <div class="d-flex gap-5 align-items-center h-100">
-
-                                        <div class="fileupload btn btn_1 radius_btn btn-anim"><i
-                                                class="fa fa-upload"></i><span class="btn-text">Upload new image</span>
-                                            <input type="file" class="upload" name="image" id="uploadFilesingle"
-                                                 accept="image/*">
-
-                                        </div>
-                                        <div class="img-upload-wrap">
-                                            <div id="imagePreview"></div>
-                                            <!-- <img class="img-responsive" src="dist/img/chair.jpg" alt="upload_img"> -->
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div class="col-lg-6">
-                                    <label>alt</label>
-                                    <div class="common_input mb_15">
-                                        <input type="text" name="alt" placeholder="Enter ALt of Image for SEO"
-                                            autocomplete="off">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <label>Date</label>
-                                    <div class="common_input mb_15">
-                                        <input type="date" name="date"
-                                            placeholder="Enter Date" autocomplete="off" >
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <label>Tags</label>
-                                    <div class="common_input mb_15">
-                                        <input type="text" name="tags" placeholder="Enter Comma Seperated Tags" autocomplete="off" >
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <label>Description</label>
-                                    <div class="common_input mb_15">
-                                        <textarea name="description" id="ckeditor" placeholder="Enter Description of news" style="height:100%"></textarea>
+                                        <input type="text" name="meta_title" placeholder="Enter Meta Title">
                                     </div>
                                 </div>
 
-                                <div class="col-12">
-                                    <div class="create_report_btn mt_30">
-                                        <button type="submit" class="btn_1 radius_btn d-block text-center"
-                                            id="updatebtn">Create</button>
+                                <div class="col-lg-6">
+                                    <label>Meta Author</label>
+                                    <div class="common_input mb_15">
+                                        <input type="text" name="meta_author" placeholder="Enter Meta Author">
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <label>Meta Description</label>
+                                    <div class="common_input mb_15">
+                                        <input type="text" name="meta_description" placeholder="Enter Meta Description">
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <label>Meta Keywords</label>
+                                    <div class="common_input mb_15">
+                                        <input type="text" name="meta_keywords"
+                                            placeholder="Enter comma-separated keywords">
+                                    </div>
+                                </div>
+
+                                <hr class="my-4">
+
+                                <div class="col-lg-6">
+                                    <label>OG Title</label>
+                                    <div class="common_input mb_15">
+                                        <input type="text" name="og_title" placeholder="Enter OG Title">
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <label>OG Type</label>
+                                    <div class="common_input mb_15">
+                                        <input type="text" name="og_type"
+                                            placeholder="Enter OG Type (e.g. website, article)">
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <label>OG Description</label>
+                                    <div class="common_input mb_15">
+                                        <input type="text" name="og_description" placeholder="Enter OG Description">
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <label>OG Image</label>
+                                    <div class="common_input mb_15">
+                                        <input type="file" name="og_image" accept="image/*">
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <label>OG URL</label>
+                                    <div class="common_input mb_15">
+                                        <input type="text" name="og_url" placeholder="Enter OG URL">
                                     </div>
                                 </div>
                             </div>
+
                         </div>
                     </form>
                 </div>

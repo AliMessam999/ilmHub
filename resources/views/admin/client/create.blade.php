@@ -13,7 +13,7 @@
                     <div class="white_card_header">
                         <div class="box_header m-0">
                             <div class="main-title">
-                                <h3 class="m-0">Create Clients</h3>
+                                <h3 class="m-0">Create Industry</h3>
                             </div>
                         </div>
                     </div>
@@ -21,7 +21,6 @@
                         @csrf
                         <div class="white_card_body">
                             <div class="row">
-                                
                                 <div class="col-lg-6">
                                     <label>Title</label>
                                     <div class="common_input mb_15">
@@ -71,6 +70,14 @@
                                 </div>
                             </div>
                             <div class="row">
+                                <div class="col-lg-12">
+                                    <label>Description</label>
+                                    <div class="common_input mb_15">
+                                        <textarea name="description" id="ckeditor" placeholder="Enter Description of news" style="height:100%"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
                               
                                 <div class="col-12">
                                     <div class="create_report_btn mt_30">
@@ -97,6 +104,8 @@
             )
 
             var formData = new FormData(form[0]);
+            var desc = CKEDITOR.instances.ckeditor.getData();
+            formData.append("description", desc)
             // console.log(form);
             $.ajax({
                 url: "/admin/client/create",

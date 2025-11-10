@@ -16,94 +16,77 @@
                     <div class="white_card_body">
                         <form id="CircleForm">
                             @csrf
-                            <input type="hidden" value="{{ __($menu->id) }}" id="career_id">
+                            {{-- <input type="hidden" value="{{ __($menu->id) }}" id="career_id"> --}}
                             <div class="row">
                                 <div class="col-lg-6">
-                                    <label>Title</label>
+                                    <label>Meta Title</label>
                                     <div class="common_input mb_15">
-                                        <input type="text" name="title" value="{{ __($menu->title) }}"
-                                            placeholder="Title" required>
+                                        <input type="text" name="meta_title" placeholder="Enter Meta Title">
                                     </div>
                                 </div>
+
                                 <div class="col-lg-6">
-                                    <label>Slug</label>
+                                    <label>Meta Author</label>
                                     <div class="common_input mb_15">
-                                        <input type="text" name="slug" placeholder="Slug" value="{{ __($menu->slug) }}" >
+                                        <input type="text" name="meta_author" placeholder="Enter Meta Author">
                                     </div>
                                 </div>
+
                                 <div class="col-lg-6">
-                                    <label>Type</label>
+                                    <label>Meta Description</label>
                                     <div class="common_input mb_15">
-                                        <select class="form-control nice_Select2 wide" name="category_id" required>
-                                            <option value="" disabled>Select Type</option>
-                                            @foreach ($categories as $category)
-                                                <option value="{{ $category->id }}"
-                                                    {{ $category->id == $menu->category_id ? 'selected' : '' }}>
-                                                    {{ $category->id }} | {{ $category->title }}</option>
-                                            @endforeach
-                                        </select>
+                                        <input type="text" name="meta_description" placeholder="Enter Meta Description">
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <label>Meta Keywords</label>
+                                    <div class="common_input mb_15">
+                                        <input type="text" name="meta_keywords"
+                                            placeholder="Enter comma-separated keywords">
+                                    </div>
+                                </div>
+
+                                <hr class="my-4">
+
+                                <div class="col-lg-6">
+                                    <label>OG Title</label>
+                                    <div class="common_input mb_15">
+                                        <input type="text" name="og_title" placeholder="Enter OG Title">
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <label>OG Type</label>
+                                    <div class="common_input mb_15">
+                                        <input type="text" name="og_type"
+                                            placeholder="Enter OG Type (e.g. website, article)">
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <label>OG Description</label>
+                                    <div class="common_input mb_15">
+                                        <input type="text" name="og_description" placeholder="Enter OG Description">
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <label>OG Image</label>
+                                    <div class="common_input mb_15">
+                                        <input type="file" name="og_image" accept="image/*">
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <label>OG URL</label>
+                                    <div class="common_input mb_15">
+                                        <input type="text" name="og_url" placeholder="Enter OG URL">
                                     </div>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <div class="d-flex gap-5  align-items-center h-100">
-
-                                        <div class="fileupload btn btn_1 radius_btn btn-anim"><i
-                                                class="fa fa-upload"></i><span class="btn-text">Upload new image</span>
-                                            <input type="file" class="upload" name="image" id="uploadFilesingle"
-                                                accept="image/*">
-
-                                        </div>
-                                        <div class="img-upload-wrap">
-                                            <div id="imagePreview">
-                                                <img src="/{{ __($menu->image) }}" class="image-list" alt="upload_img">
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                                <div class="col-lg-6">
-                                    <label>alt</label>
-                                    <div class="common_input mb_15">
-                                        <input type="text" name="alt" value="{{ __($menu->alt) }}"
-                                            placeholder="Enter ALt of Image for SEO" autocomplete="off">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <label> Date</label>
-                                    <div class="common_input mb_15">
-                                        <input type="date" name="date" placeholder="Enter Date"
-                                            value="{{ __($menu->date) }}" autocomplete="off">
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <label>Tags</label>
-                                    <div class="common_input mb_15">
-                                        <input type="text" name="tags" value="{{ __($menu->tags) }}" placeholder="Enter Comma Seperated Tags" autocomplete="off" >
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <label>Description</label>
-                                    <div class="common_input mb_15">
-                                        <textarea name="description" id="ckeditor" placeholder="Enter Description of Career" style="height:100%">{{ __($menu->description) }}</textarea>
-                                    </div>
-                                </div>
-
-                                <div class="col-12">
-                                    <div class="create_report_btn mt_30">
-                                        <button href="#" class="btn_1 radius_btn d-block text-center" type="submit"
-                                            id="updatebtn">Update</button>
-                                    </div>
-                                </div>
-                            </div>
+                        </form>
                     </div>
-                    </form>
                 </div>
             </div>
         </div>

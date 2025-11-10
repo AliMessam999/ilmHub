@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\FaqController;
+use App\Http\Controllers\SeoController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\NewsController;
 use App\Http\Controllers\RoleController;
@@ -245,6 +246,12 @@ Route::middleware('authwithadmin')->controller(CompanyProfileController::class)-
     Route::get('/admin/company-profile/create', 'create_profile_view');
     Route::post('/admin/company-profile/create', 'create_company_profile');
 
+});
+
+
+Route::middleware('authwithadmin')->controller(SeoController::class)->group(function () {
+    Route::get('/admin/seo/update/{type}/{id}', 'update_seo_view');
+    Route::put('/admin/seo/update/{id}', 'update_seo');
 });
 
 

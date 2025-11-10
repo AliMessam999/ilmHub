@@ -48,8 +48,6 @@
 
                         </div>
                         <div class="row">
-                            
-
                             <div class="col-lg-6">
                                 <label>alt</label>
                                 <div class="common_input mb_15">
@@ -57,6 +55,12 @@
                                         autocomplete="off">
                                 </div>
                             </div>
+                            <div class="col-lg-6">
+                                    <label>Slug</label>
+                                    <div class="common_input mb_15">
+                                        <input type="text" name="slug" placeholder="Slug" value="{{ __($menu->slug) }}" >
+                                    </div>
+                                </div>
                         </div>
                         <div class="row">
                             <div class="col-lg-12">
