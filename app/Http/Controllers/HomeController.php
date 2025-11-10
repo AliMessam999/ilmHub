@@ -43,6 +43,11 @@ class HomeController extends Controller
         // dd($data->category);
         return view('frontend.home', compact('data'));
     }
+    public function IndustryData()
+    {
+        $data['industries']=CdClient::all();
+        return view('frontend.industries', $data);
+    }
 
     public function SolutionPage($id = null)
     {

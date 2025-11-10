@@ -8,8 +8,8 @@
                     <div class="white_card_body">
                         <div class="QA_section">
                             <div class="white_box_tittle list_header d-flex">
-                                <h4>Client List </h4>
-                                <a href="/admin/client/create" class="white_btn3 justify-content-end">Create Client</a>
+                                <h4>Industry List </h4>
+                                <a href="/admin/client/create" class="white_btn3 justify-content-end">Create Industry</a>
                             </div>
                             <div class="QA_table mb_30">
                                 <table class="table lms_table_active3">

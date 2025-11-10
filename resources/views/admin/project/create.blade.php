@@ -51,13 +51,17 @@
                                 </div>
                             </div>
                             <div class="row">
-                                
-
                                 <div class="col-lg-6">
                                     <label>alt</label>
                                     <div class="common_input mb_15">
                                         <input type="text" name="alt" placeholder="Enter ALt of Image for SEO"
                                             autocomplete="off">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <label>Slug</label>
+                                    <div class="common_input mb_15">
+                                        <input type="text" name="slug" placeholder="Slug" >
                                     </div>
                                 </div>
                             </div>

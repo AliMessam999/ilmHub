@@ -9,7 +9,7 @@
                     <div class="white_card_header">
                         <div class="box_header m-0">
                             <div class="main-title">
-                                <h3 class="m-0">Update News</h3>
+                                <h3 class="m-0">Update Insights</h3>
                             </div>
                         </div>
                     </div>
@@ -23,6 +23,12 @@
                                     <div class="common_input mb_15">
                                         <input type="text" name="title" value="{{ __($menu->title) }}"
                                             placeholder="Title" required>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <label>Slug</label>
+                                    <div class="common_input mb_15">
+                                        <input type="text" name="slug" placeholder="Slug" value="{{ __($menu->slug) }}" >
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
@@ -72,6 +78,12 @@
                                     <div class="common_input mb_15">
                                         <input type="date" name="date" placeholder="Enter Date"
                                             value="{{ __($menu->date) }}" autocomplete="off">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <label>Tags</label>
+                                    <div class="common_input mb_15">
+                                        <input type="text" name="tags" value="{{ __($menu->tags) }}" placeholder="Enter Comma Seperated Tags" autocomplete="off" >
                                     </div>
                                 </div>
                             </div>

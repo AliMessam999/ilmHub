@@ -13,66 +13,63 @@ class CdMenuSeeder extends Seeder
         $data = array (
   0 => 
   array (
-    'id' => 1,
-    'title' => 'Home',
-    'icon' => '<i class="fa fa-home"></i>',
+    'id' => 2,
+    'order' => 3,
+    'title' => 'Divisionsing',
+    'icon' => '<i class="fa fa-cogs"></i>',
     'deleted_at' => NULL,
-    'created_at' => '2023-11-22 05:52:44',
-    'updated_at' => '2023-11-22 05:52:44',
+    'created_at' => '2023-11-22 10:53:54',
+    'updated_at' => '2025-11-07 05:04:15',
   ),
   1 => 
   array (
-    'id' => 2,
-    'title' => 'Solutions',
-    'icon' => '<i class="fa fa-cogs"></i>',
+    'id' => 3,
+    'order' => 5,
+    'title' => 'Resources',
+    'icon' => '<i class="fa fa-server"></i>',
     'deleted_at' => NULL,
-    'created_at' => '2023-11-22 05:53:54',
-    'updated_at' => '2023-11-22 05:53:54',
+    'created_at' => '2023-11-22 10:55:09',
+    'updated_at' => '2025-08-12 16:02:12',
   ),
   2 => 
   array (
-    'id' => 3,
-    'title' => 'Services',
-    'icon' => '<i class="fa fa-server"></i>',
-    'deleted_at' => NULL,
-    'created_at' => '2023-11-22 05:55:09',
-    'updated_at' => '2023-11-22 05:55:09',
-  ),
-  3 => 
-  array (
-    'id' => 4,
-    'title' => 'Gallery',
-    'icon' => '<i class="fa fa-file-image-o"></i>',
-    'deleted_at' => NULL,
-    'created_at' => '2023-11-22 05:56:01',
-    'updated_at' => '2023-11-22 05:56:01',
-  ),
-  4 => 
-  array (
-    'id' => 5,
-    'title' => 'Careers',
-    'icon' => '<i class="fa fa-briefcase"></i>',
-    'deleted_at' => NULL,
-    'created_at' => '2023-11-22 05:56:41',
-    'updated_at' => '2023-11-22 05:56:41',
-  ),
-  5 => 
-  array (
     'id' => 6,
+    'order' => 6,
     'title' => 'About Us',
     'icon' => '<i class="fa fa-user"></i>',
     'deleted_at' => NULL,
-    'created_at' => '2023-11-22 05:57:24',
-    'updated_at' => '2023-11-22 05:57:24',
+    'created_at' => '2023-11-22 10:57:24',
+    'updated_at' => '2025-08-12 16:02:18',
   ),
-  6 => 
+  3 => 
   array (
-    'id' => 7,
-    'title' => 'NEWS & BLOGS',
-    'icon' => '<i class="fa fa-file-image-o"></i>',
+    'id' => 12,
+    'order' => 1,
+    'title' => 'Home',
+    'icon' => '<i class="fa fa-home"></i>',
     'deleted_at' => NULL,
-    'created_at' => '2023-11-22 05:58:09',
-    'updated_at' => '2023-11-22 05:58:09',
+    'created_at' => '2025-08-12 16:02:35',
+    'updated_at' => '2025-11-06 11:08:59',
+  ),
+  4 => 
+  array (
+    'id' => 13,
+    'order' => 2,
+    'title' => 'AI Automation',
+    'icon' => 'Icon',
+    'deleted_at' => NULL,
+    'created_at' => '2025-11-06 11:20:53',
+    'updated_at' => '2025-11-06 11:20:53',
+  ),
+  5 => 
+  array (
+    'id' => 14,
+    'order' => 4,
+    'title' => 'Industries',
+    'icon' => 'icon',
+    'deleted_at' => NULL,
+    'created_at' => '2025-11-06 11:27:05',
+    'updated_at' => '2025-11-06 11:27:05',
   ),
 );
         DB::table('cd_menus')->insert($data);

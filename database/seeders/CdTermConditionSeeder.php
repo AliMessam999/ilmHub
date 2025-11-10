@@ -48,8 +48,8 @@ class CdTermConditionSeeder extends Seeder
 
 <p>If you have any questions about these Terms, please contact us.</p>',
     'deleted_at' => NULL,
-    'created_at' => '2023-11-23 07:28:53',
-    'updated_at' => '2023-11-23 07:28:53',
+    'created_at' => '2023-11-23 12:28:53',
+    'updated_at' => '2023-11-23 12:28:53',
   ),
 );
         DB::table('cd_term_conditions')->insert($data);

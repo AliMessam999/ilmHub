@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\CdCategory;
 use App\Models\CdSolution;
+use Illuminate\Support\Str;
 use Illuminate\Http\Request;
 use Illuminate\Validation\Rule;
 use Illuminate\Support\Facades\Validator;
@@ -31,6 +32,7 @@ class ProjectController extends Controller
                  ], 302);
              }
              $project = new CdSolution();
+             $project->slug = Str::slug($request->slug);
              $project->category_id = $request->category_id;
              $project->description = $request->description;
              $project->alt = $request->alt;
@@ -106,6 +108,7 @@ class ProjectController extends Controller
              } else {
                  if ($request->file('image')) {
                      $CdSolution = CdSolution::where('id', $id)->update([
+                         'slug' => Str::slug($request->slug),
                          'category_id' => $request->category_id,
                          'description' => $request->description,
                          'alt' => $request->alt,
@@ -113,6 +116,7 @@ class ProjectController extends Controller
                      ]);
                  } else {
                      $CdSolution = CdSolution::where('id', $id)->update([
+                         'slug' => Str::slug($request->slug),
                          'category_id' => $request->category_id,
                          'description' => $request->description,
                          'alt' => $request->alt,

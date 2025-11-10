@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\FaqController;
+use App\Http\Controllers\SeoController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\NewsController;
 use App\Http\Controllers\RoleController;
@@ -45,6 +46,7 @@ Route::get('/', [HomeController::class, 'getData'])->name('home');
 Route::get('/solutions', [HomeController::class, 'SolutionPage']);
 Route::get('/solutions/{id}', [HomeController::class, 'SolutionPage']);
 Route::get('/project/details/{title}', [HomeController::class, 'ProjectDetailsPage']);
+Route::get('/industry',[HomeController::class,'IndustryData'])->name('industry.data');
 Route::get('/services', [HomeController::class, 'servicesPage']);
 Route::get('/service/details/{title}', [HomeController::class, 'serviceDetailsPage']);
 Route::get('/gallery', [HomeController::class, 'galleryPage']);
@@ -57,8 +59,8 @@ Route::get('/contact', [HomeController::class, 'contactPage']);
 Route::post('/contact', [HomeController::class, 'contactus']);
 Route::get('/news_&_blogs', [HomeController::class, 'newsPage']);
 Route::get('/news/details/{title}', [HomeController::class, 'newsDetailPage']);
-Route::get('/policies', [HomeController::class, 'policyPage']);
-Route::get('/terms_conditions', [HomeController::class, 'termsconditionPage']);
+Route::get('/policies', [HomeController::class, 'policyPage'])->name('policies.page');
+Route::get('/terms_conditions', [HomeController::class, 'termsconditionPage'])->name('terms.page');
 
 Route::get('/dashboard', function () {
     return view('admin.index');
@@ -244,6 +246,12 @@ Route::middleware('authwithadmin')->controller(CompanyProfileController::class)-
     Route::get('/admin/company-profile/create', 'create_profile_view');
     Route::post('/admin/company-profile/create', 'create_company_profile');
 
+});
+
+
+Route::middleware('authwithadmin')->controller(SeoController::class)->group(function () {
+    Route::get('/admin/seo/update/{type}/{id}', 'update_seo_view');
+    Route::put('/admin/seo/update/{id}', 'update_seo');
 });
 
 
