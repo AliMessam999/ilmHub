@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\CdFeature;
+use App\Models\CdCategory;
+use App\Models\CdClient;
 use Illuminate\Http\Request;
 use Illuminate\Validation\Rule;
 use Illuminate\Support\Facades\Validator;
@@ -31,6 +33,12 @@ class FeaturedController extends Controller
             $career->title = $request->title;
             $career->icon = $request->icon;
             $career->description = $request->description;
+            $career->sub_category_id = $request->sub_category_id;
+            $career->client_name = $request->client_name;
+            $career->funded_by = $request->funded_by;
+            $career->location = $request->location;
+            $career->industry_id = $request->industry_id;
+            $career->website = $request->website;
             $career->alt = $request->alt;
             $career->image = $path;
             $result = $career->save();
@@ -84,14 +92,14 @@ class FeaturedController extends Controller
                     'icon' => 'required',
                     'description' => 'required',
                     'image' => ['required', Rule::imageFile(), 'max:500'],
-                        ]);
+                ]);
                 $path = $request->file('image')->store('upload/featured');
             } else {
                 $validator = Validator::make($request->all(), [
                     'title' => ['required',],
                     'icon' => 'required',
                     'description' => 'required',
-                        ]);
+                ]);
             }
             if (CdFeature::where('id', '!=', $id)->where('title', 'LIKE', $request->title)->count() > 0) {
                 return response()->json([
@@ -108,6 +116,14 @@ class FeaturedController extends Controller
                         'description' => $request->description,
                         'alt' => $request->alt,
                         'image' => $path,
+
+                        // New fields
+                        'sub_category_id' => $request->sub_category_id,
+                        'client_name' => $request->client_name,
+                        'funded_by' => $request->funded_by,
+                        'location' => $request->location,
+                        'industry_id' => $request->industry_id,
+                        'website' => $request->website,
                     ]);
                 } else {
                     $menu = CdFeature::where('id', $id)->update([
@@ -115,8 +131,17 @@ class FeaturedController extends Controller
                         'icon' => $request->icon,
                         'description' => $request->description,
                         'alt' => $request->alt,
+
+                        // New fields
+                        'sub_category_id' => $request->sub_category_id,
+                        'client_name' => $request->client_name,
+                        'funded_by' => $request->funded_by,
+                        'location' => $request->location,
+                        'industry_id' => $request->industry_id,
+                        'website' => $request->website,
                     ]);
                 }
+
                 if ($menu) {
                     return response()->json([
                         "message" => "Featured Updated Successfully"
@@ -132,15 +157,21 @@ class FeaturedController extends Controller
 
     public function create_featured_view()
     {
-        return view('admin.home.featured_services.create');
+        $data['categories'] = CdCategory::where('parent','!=',NULL)->get();
+        $data['clients'] = CdClient::all();
+
+        return view('admin.home.featured_services.create', $data);
     }
 
     public function update_featured_view($id)
     {
+        $data['categories'] = CdCategory::where('parent','!=',NULL)->get();
+        $data['clients'] = CdClient::all();
+
         $menu = CdFeature::where('id', $id);
         if ($menu->count() > 0) {
-            $menu = $menu->first();
-            return view('admin.home.featured_services.update', compact('menu'));
+            $data['menu'] = $menu->first();
+            return view('admin.home.featured_services.update', $data);
         } else {
             return redirect('/admin/featured');
         }
