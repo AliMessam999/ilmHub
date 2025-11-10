@@ -4,14 +4,25 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\SoftDeletes;
 
 class CdMenu extends Model
 {
-    use HasFactory, SoftDeletes;
-    protected $guarded=[];
+    use HasFactory;
+    protected $guarded = [];
 
-    public function categories(){
-        return $this->hasMany(CdCategory::class,'menu_id');
+    // Your table uses 'title' instead of 'name'
+    public function getTitleAttribute($value)
+    {
+        return $value;
+    }
+
+    public function categories()
+    {
+        return $this->hasMany(CdCategory::class, 'menu_id')->whereNull('parent');
+    }
+
+    public function allCategories()
+    {
+        return $this->hasMany(CdCategory::class, 'menu_id');
     }
 }
