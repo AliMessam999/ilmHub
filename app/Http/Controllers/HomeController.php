@@ -50,10 +50,13 @@ class HomeController extends Controller
     }
      public function IndustryDetails($title)
     {
+        // dd($title);
         $data['industriesDetails']=CdClient::where('title', $title)->first();
-
+        //  dd($data['industriesDetails']);
+        $data['insightsupdates'] = CdNew::inRandomOrder()->limit(3)->get();
         return view('frontend.industries-details', $data);
     }
+  
 
     public function SolutionPage($id = null)
     {

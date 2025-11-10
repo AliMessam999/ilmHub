@@ -62,6 +62,7 @@ Route::get('/news/details/{title}', [HomeController::class, 'newsDetailPage']);
 Route::get('/policies', [HomeController::class, 'policyPage'])->name('policies.page');
 Route::get('/terms_conditions', [HomeController::class, 'termsconditionPage'])->name('terms.page');
 Route::get('/industries-details/{title}',[HomeController::class,'IndustryDetails'])->name('industries.details');
+// Route::get('/insights-updates',[HomeController::class,'Insightsupdates'])->name('insightsupdates.blogs');
 Route::get('/dashboard', function () {
     return view('admin.index');
 })->middleware(['authwithadmin', 'verified'])->name('dashboard');
