@@ -9,14 +9,14 @@ return new class extends Migration
     public function up(): void
     {
         Schema::table('cd_menus', function (Blueprint $table) {
-            $table->integer('order')->nullable()->after('id'); // add order column
+            // $table->integer('order')->nullable()->after('id'); // add order column
         });
     }
 
     public function down(): void
     {
         Schema::table('cd_menus', function (Blueprint $table) {
-            $table->dropColumn('order');
+            // $table->dropColumn('order');
         });
     }
 };
