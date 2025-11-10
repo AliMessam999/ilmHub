@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::table('cd_features', function (Blueprint $table) {
             //
             $table->dropColumn('image');
-            $table->dropColumn('alt');
+            // $table->dropColumn('alt');
         });
     }
 

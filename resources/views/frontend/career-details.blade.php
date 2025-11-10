@@ -164,7 +164,7 @@
                                 <a href="#">Consulting</a>
                                 <a href="#">Insights</a>
                             </div>
-                            <div class="post-share">
+                            <!-- <div class="post-share">
                                 <ul>
                                     <li>Share:</li>
                                     <li>
@@ -186,7 +186,7 @@
                                             title="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
                                     </li>
                                 </ul>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
 
