@@ -10,4 +10,7 @@ class CdFeature extends Model
 {
     use HasFactory, SoftDeletes;
     protected $guarded = [];
+    public function images(){
+        return $this->hasMany(CdFeatureImage::class, 'feature_id', 'id');
+    }
 }

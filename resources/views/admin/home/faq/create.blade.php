@@ -27,6 +27,20 @@
                                     <input type="text" name="title" placeholder="Title" autocomplete="off" required>
                                 </div>
                             </div>
+
+                            <div class="col-lg-6">
+                                    <label>Sub Category</label>
+                                    <div class="common_input mb_15">
+                                        <select class="form-control nice_Select2 wide" name="sub_category_id">
+                                            <option value="" disabled selected>Select Sub Category</option>
+                                            @foreach ($categories as $subcategory)
+                                                <option value="{{ $subcategory->id }}">{{ $subcategory->id }} |
+                                                    {{ $subcategory->title }}</option>
+                                            @endforeach
+                                        </select>
+                                    </div>
+                                </div>
+                                
                             <div class="row">
                                 <div class="col-lg-12">
                                     <label>Description</label>
