@@ -1,8 +1,31 @@
 @extends('layouts.app')
 
 @section('content')
-    @include('components.slider')
+    {{-- @include('components.slider') --}}
     <!-- start: Project Section -->
+
+    <section class="tj-page-header rounded-0" data-bg-image="/frontend_assets/images/bg/pheader-bg.webp">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="tj-page-header-content text-center">
+                        <h1 class="tj-page-title mt-5">Industries</h1>
+                        <div class="tj-page-link">
+                            <span><i class="tji-home"></i></span>
+                            <span>
+                                <a href="/">Home</a>
+                            </span>
+                            <span><i class="tji-arrow-right"></i></span>
+                            <span>
+                                <span>Industries</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
     <section class="tj-project-section-3 h9-project section-gap mt-5 mb-3 section-gap-x">
         <div class="container">
             <div class="row">
@@ -44,19 +67,19 @@
                                     <div class="swiper-slide">
                                         <div class="project-item">
                                             <div class="project-img">
-                                                <a href="{{ route('industry.data', $industry->alt) }}">
+                                                <a href="{{ route('industries.details', $industry->title) }}">
                                                     <img src="/{{ $industry->image }}" alt="{{ $industry->title }}">
                                                 </a>
                                             </div>
                                             <div class="project-content">
                                                 <span class="categories">
-                                                    <a href="{{ route('industry.data', $industry->alt) }}">
+                                                    <a href="{{ route('industries.details', $industry->title) }}">
                                                         {{ $industry->title }}
                                                     </a>
                                                 </span>
                                                 <div class="project-text">
                                                     <h4 class="title">
-                                                        <a href="{{ route('industry.data', $industry->alt) }}">
+                                                        <a href="{{ route('industries.details', $industry->title) }}">
                                                             {{ $industry->title }}
                                                         </a>
                                                     </h4>
