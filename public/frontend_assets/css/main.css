@@ -10790,7 +10790,7 @@ START: Project CSS
      object-fit: cover;
   -webkit-transition: all 0.3s ease-in-out 0s;
   transition: all 0.3s ease-in-out 0s;
-  max-height:250px;
+  /* max-height:250px; */
 }
 .project-item .project-img::before {
   content: "";
