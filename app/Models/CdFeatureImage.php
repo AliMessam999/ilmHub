@@ -6,11 +6,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-class CdFeature extends Model
+class CdFeatureImage extends Model
 {
     use HasFactory, SoftDeletes;
-    protected $guarded = [];
-    public function images(){
-        return $this->hasMany(CdFeatureImage::class, 'feature_id', 'id');
-    }
 }

@@ -57,10 +57,13 @@ Route::get('/clients', [HomeController::class, 'clientsPage']);
 Route::get('/partners', [HomeController::class, 'partnersPage']);
 Route::get('/contact', [HomeController::class, 'contactPage']);
 Route::post('/contact', [HomeController::class, 'contactus']);
-Route::get('/news_&_blogs', [HomeController::class, 'newsPage']);
+Route::get('/blogs', [HomeController::class, 'newsPage']);
 Route::get('/news/details/{title}', [HomeController::class, 'newsDetailPage']);
 Route::get('/policies', [HomeController::class, 'policyPage'])->name('policies.page');
 Route::get('/terms_conditions', [HomeController::class, 'termsconditionPage'])->name('terms.page');
+Route::get('/case-studies', [HomeController::class, 'caseStudiesPage'])->name('case-studies.page');
+Route::get('/case-study/{title}', [HomeController::class, 'caseStudyDetailPage'])->name('case-study-detail.page');
+Route::get('/divisions/{category}', [HomeController::class, 'divsions'])->name('divisions.page');
 
 Route::get('/dashboard', function () {
     return view('admin.index');

@@ -10790,6 +10790,7 @@ START: Project CSS
      object-fit: cover;
   -webkit-transition: all 0.3s ease-in-out 0s;
   transition: all 0.3s ease-in-out 0s;
+  max-height:250px;
 }
 .project-item .project-img::before {
   content: "";
@@ -11059,6 +11060,7 @@ START: Project CSS
 .project-slider-2s .project-item .title {
   color: var(--tj-color-common-white);
   margin-bottom: 0;
+  font-size: 20px;
 }
 .project-slider-2s .project-item .title a {
   display: inline;
