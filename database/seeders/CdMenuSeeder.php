@@ -15,11 +15,12 @@ class CdMenuSeeder extends Seeder
   array (
     'id' => 2,
     'order' => 3,
-    'title' => 'Divisionsing',
+    'title' => 'Divisions',
     'icon' => '<i class="fa fa-cogs"></i>',
     'deleted_at' => NULL,
     'created_at' => '2023-11-22 10:53:54',
-    'updated_at' => '2025-11-07 05:04:15',
+    'updated_at' => '2025-11-10 10:23:08',
+    'slug' => '#',
   ),
   1 => 
   array (
@@ -29,7 +30,8 @@ class CdMenuSeeder extends Seeder
     'icon' => '<i class="fa fa-server"></i>',
     'deleted_at' => NULL,
     'created_at' => '2023-11-22 10:55:09',
-    'updated_at' => '2025-08-12 16:02:12',
+    'updated_at' => '2025-11-10 10:44:54',
+    'slug' => '#',
   ),
   2 => 
   array (
@@ -39,7 +41,8 @@ class CdMenuSeeder extends Seeder
     'icon' => '<i class="fa fa-user"></i>',
     'deleted_at' => NULL,
     'created_at' => '2023-11-22 10:57:24',
-    'updated_at' => '2025-08-12 16:02:18',
+    'updated_at' => '2025-11-10 10:58:08',
+    'slug' => '/about_us',
   ),
   3 => 
   array (
@@ -49,19 +52,10 @@ class CdMenuSeeder extends Seeder
     'icon' => '<i class="fa fa-home"></i>',
     'deleted_at' => NULL,
     'created_at' => '2025-08-12 16:02:35',
-    'updated_at' => '2025-11-06 11:08:59',
+    'updated_at' => '2025-11-10 10:32:09',
+    'slug' => '/',
   ),
   4 => 
-  array (
-    'id' => 13,
-    'order' => 2,
-    'title' => 'AI Automation',
-    'icon' => 'Icon',
-    'deleted_at' => NULL,
-    'created_at' => '2025-11-06 11:20:53',
-    'updated_at' => '2025-11-06 11:20:53',
-  ),
-  5 => 
   array (
     'id' => 14,
     'order' => 4,
@@ -69,7 +63,8 @@ class CdMenuSeeder extends Seeder
     'icon' => 'icon',
     'deleted_at' => NULL,
     'created_at' => '2025-11-06 11:27:05',
-    'updated_at' => '2025-11-06 11:27:05',
+    'updated_at' => '2025-11-11 05:08:14',
+    'slug' => '/industry',
   ),
 );
         DB::table('cd_menus')->insert($data);

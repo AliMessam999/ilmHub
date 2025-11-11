@@ -15,216 +15,155 @@ class CdCategorySeeder extends Seeder
   array (
     'id' => 1,
     'title' => 'ICT',
+    'slug' => '/divisions/ict',
     'parent' => NULL,
     'deleted_at' => NULL,
     'created_at' => '2023-11-22 11:02:40',
-    'updated_at' => '2025-06-03 14:28:05',
+    'updated_at' => '2025-11-10 11:12:58',
     'menu_id' => 2,
-    'description' => '<div class="col-md-8">
-            <div class="left-side-devision-main">
-              <h2>Power Your Digital Future</h2>
-              <p class="mt-4">
-               Let us help you power your business to success with secure, scalable, and efficient technology
-solutions, specifically designed for you, leveraging the latest in AI and cloud innovations.
-              </p>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card shadow-lg rounded-0 border-0">
-              <div class="card-body">
-                <div class="avatar">
-                  <img src="/upload/team_member/NiiveAtxy1zmANDFUg9dUlt7GIQHvoyCbDWQFBLu.png" alt="" />
-                </div>
-                <div class="division-designation-text text-center">
-                  <h1 class="">Babar Jahangir</h1>
-                  <p class="designation">HOD</p>
-                  <p class="mb-0"><strong>Phone: </strong>+921234567890</p>
-                  <p class="mb-0"><strong>Email: </strong>babar@cdigital.com.pk</p>
-                </div>
-              </div>
-            </div>
-          </div>',
+    'description' => '<h2>Power Your Digital Future</h2>
+
+<p>Let us help you power your business to success with secure, scalable, and efficient technology solutions, specifically designed for you, leveraging the latest in AI and cloud innovations.</p>
+
+<p><img alt="" src="/upload/team_member/NiiveAtxy1zmANDFUg9dUlt7GIQHvoyCbDWQFBLu.png" /></p>
+
+<h1>Babar Jahangir</h1>
+
+<p>HOD</p>
+
+<p><strong>Phone: </strong>+921234567890</p>
+
+<p><strong>Email: </strong>babar@cdigital.com.pk</p>',
   ),
   1 => 
   array (
     'id' => 2,
-    'title' => 'HYDROMET',
+    'title' => 'Hydromet',
+    'slug' => '/divisions/hydromet',
     'parent' => NULL,
     'deleted_at' => NULL,
     'created_at' => '2023-11-22 11:03:33',
-    'updated_at' => '2025-06-03 14:29:00',
+    'updated_at' => '2025-11-10 11:18:58',
     'menu_id' => 2,
-    'description' => '<div class="col-md-8">
-            <div class="left-side-devision-main">
-              <h2>Unlock Insights about Your Environment</h2>
-              <p class="mt-4">
-               Empower your decisions for a sustainable future by gaining real-time, comprehensive
-environmental insights from our precise Hydromet monitoring solutions.
-              </p>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card shadow-lg rounded-0 border-0">
-              <div class="card-body">
-                <div class="avatar">
-                  <img src="/assets/images/team/Sibtain.png" alt="" />
-                </div>
-                <div class="division-designation-text text-center">
-                  <h1 class="">Sibtain Bashir</h1>
-                  <p class="designation">HOD</p>
-                  <p class="mb-0"><strong>Phone: </strong>+921234567890</p>
-                  <p class="mb-0"><strong>Email: </strong>sibtain@cdigital.com.pk</p>
-                </div>
-              </div>
-            </div>
-          </div>',
+    'description' => '<h2>Unlock Insights about Your Environment</h2>
+
+<p>Empower your decisions for a sustainable future by gaining real-time, comprehensive environmental insights from our precise Hydromet monitoring solutions.</p>
+
+<p><img alt="" src="/assets/images/team/Sibtain.png" /></p>
+
+<h1>Sibtain Bashir</h1>
+
+<p>HOD</p>
+
+<p><strong>Phone: </strong>+921234567890</p>
+
+<p><strong>Email: </strong>sibtain@cdigital.com.pk</p>',
   ),
   2 => 
   array (
     'id' => 3,
     'title' => 'Biotechnology',
+    'slug' => '/divisions/biotechnology',
     'parent' => NULL,
     'deleted_at' => NULL,
     'created_at' => '2023-11-22 11:05:54',
-    'updated_at' => '2025-06-03 14:29:38',
+    'updated_at' => '2025-11-10 11:20:08',
     'menu_id' => 2,
-    'description' => '<div class="col-md-8">
-            <div class="left-side-devision-main">
-              <h2>Accelerate Your Biotech Innovation</h2>
-              <p class="mt-4">
-                Advance your work in life sciences using our cutting-edge technologies and sustainable
-biotechnology solutions, designed to support your breakthroughs in healthcare, agriculture, and
-environmental fields.
-              </p>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card shadow-lg rounded-0 border-0">
-              <div class="card-body">
-                <div class="avatar">
-                  <img src="/assets/images/team/4.png" alt="" />
-                </div>
-                <div class="division-designation-text text-center">
-                  <h1 class="">Quratulain Malik</h1>
-                  <p class="designation">HOD</p>
-                  <p class="mb-0"><strong>Phone: </strong>+921234567890</p>
-                  <p class="mb-0"><strong>Email: </strong>quratulain@cdigital.com.pk</p>
-                </div>
-              </div>
-            </div>
-          </div>',
+    'description' => '<h2>Accelerate Your Biotech Innovation</h2>
+
+<p>Advance your work in life sciences using our cutting-edge technologies and sustainable biotechnology solutions, designed to support your breakthroughs in healthcare, agriculture, and environmental fields.</p>
+
+<p><img alt="" src="/assets/images/team/4.png" /></p>
+
+<h1>Quratulain Malik</h1>
+
+<p>HOD</p>
+
+<p><strong>Phone: </strong>+921234567890</p>
+
+<p><strong>Email: </strong>quratulain@cdigital.com.pk</p>',
   ),
   3 => 
   array (
     'id' => 4,
     'title' => 'Renewable Energy',
+    'slug' => '/divisions/renewable-energy',
     'parent' => NULL,
     'deleted_at' => NULL,
     'created_at' => '2023-11-22 11:06:37',
-    'updated_at' => '2025-06-03 14:30:26',
+    'updated_at' => '2025-11-10 11:23:40',
     'menu_id' => 2,
-    'description' => '<div class="col-md-8">
-            <div class="left-side-devision-main">
-              <h2>Your Clean Energy Partner</h2>
-              <p class="mt-4">
-                Transform your energy future and achieve greater efficiency and sustainability with our
-innovative renewable power solutions, covering everything from generation to smart
-management.
-              </p>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card shadow-lg rounded-0 border-0">
-              <div class="card-body">
-                <div class="avatar">
-                  <img src="/assets/images/team/3.png" alt="" />
-                </div>
-                <div class="division-designation-text text-center">
-                  <h1 class="">Riaz Hussain</h1>
-                  <p class="designation">GM BD</p>
-                  <p class="mb-0"><strong>Phone: </strong>+921234567890</p>
-                  <p class="mb-0"><strong>Email: </strong>riaz@cdigital.com.pk</p>
-                </div>
-              </div>
-            </div>
-          </div>',
+    'description' => '<h2>Your Clean Energy Partner</h2>
+
+<p>Transform your energy future and achieve greater efficiency and sustainability with our innovative renewable power solutions, covering everything from generation to smart management.</p>
+
+<p><img alt="" src="/assets/images/team/3.png" /></p>
+
+<h1>Riaz Hussain</h1>
+
+<p>GM BD</p>
+
+<p><strong>Phone: </strong>+921234567890</p>
+
+<p><strong>Email: </strong>riaz@cdigital.com.pk</p>',
   ),
   4 => 
   array (
     'id' => 5,
     'title' => 'Mining & Minerals',
+    'slug' => '/divisions/mining-minerals',
     'parent' => NULL,
     'deleted_at' => NULL,
     'created_at' => '2023-11-22 11:07:14',
-    'updated_at' => '2025-06-03 14:35:23',
+    'updated_at' => '2025-11-11 05:09:34',
     'menu_id' => 2,
-    'description' => '<div class="col-md-8">
-            <div class="left-side-devision-main">
-              <h2>Optimize Your Mining Operations</h2>
-              <p class="mt-4">
-                Elevate your mining operations, significantly enhancing efficiency, safety, and sustainability in
-resource extraction through use of advanced technology and powerful data-driven insights.
-              </p>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card shadow-lg rounded-0 border-0">
-              <div class="card-body">
-                <div class="avatar">
-                  <img src="/assets/images/team/4.png" alt="" />
-                </div>
-                <div class="division-designation-text text-center">
-                  <h1 class="">Quratulain Malik</h1>
-                  <p class="designation">HOD</p>
-                  <p class="mb-0"><strong>Phone: </strong>+921234567890</p>
-                  <p class="mb-0"><strong>Email: </strong>quratulain@cdigital.com.pk</p>
-                </div>
-              </div>
-            </div>
-          </div>',
+    'description' => '<h2>Optimize Your Mining Operations</h2>
+
+<p>Elevate your mining operations, significantly enhancing efficiency, safety, and sustainability in resource extraction through use of advanced technology and powerful data-driven insights.</p>
+
+<p><img alt="" src="/assets/images/team/4.png" /></p>
+
+<h1>Quratulain Malik</h1>
+
+<p>HOD</p>
+
+<p><strong>Phone: </strong>+921234567890</p>
+
+<p><strong>Email: </strong>quratulain@cdigital.com.pk</p>',
   ),
   5 => 
   array (
     'id' => 6,
     'title' => 'Security Systems',
+    'slug' => '/divisions/security-systems',
     'parent' => NULL,
     'deleted_at' => NULL,
     'created_at' => '2023-11-22 11:07:55',
-    'updated_at' => '2025-06-03 14:36:08',
+    'updated_at' => '2025-11-11 05:10:01',
     'menu_id' => 2,
-    'description' => '<div class="col-md-8">
-            <div class="left-side-devision-main">
-              <h2>Secure Your World</h2>
-              <p class="mt-4">
-                Secure your world and ensure your safety and resilience against the latest threats with
-comprehensive surveillance, access control, and cybersecurity solutions you can rely on.
-              </p>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card shadow-lg rounded-0 border-0">
-              <div class="card-body">
-                <div class="avatar">
-                  <img src="/assets/images/team/3.png" alt="" />
-                </div>
-                <div class="division-designation-text text-center">
-                  <h1 class="">Riaz Hussain	</h1>
-                  <p class="designation">GM BD	</p>
-                  <p class="mb-0"><strong>Phone: </strong>+921234567890</p>
-                  <p class="mb-0"><strong>Email: </strong>riaz@cdigital.com.pk</p>
-                </div>
-              </div>
-            </div>
-          </div>',
+    'description' => '<h2>Secure Your World</h2>
+
+<p>Secure your world and ensure your safety and resilience against the latest threats with comprehensive surveillance, access control, and cybersecurity solutions you can rely on.</p>
+
+<p><img alt="" src="/assets/images/team/3.png" /></p>
+
+<h1>Riaz Hussain</h1>
+
+<p>GM BD</p>
+
+<p><strong>Phone: </strong>+921234567890</p>
+
+<p><strong>Email: </strong>riaz@cdigital.com.pk</p>',
   ),
   6 => 
   array (
     'id' => 7,
     'title' => 'Software Solutions',
+    'slug' => '/sub-divisions/software-solutions',
     'parent' => '1',
     'deleted_at' => NULL,
     'created_at' => '2023-11-22 11:12:04',
-    'updated_at' => '2025-11-06 11:43:53',
+    'updated_at' => '2025-11-11 05:19:33',
     'menu_id' => NULL,
     'description' => NULL,
   ),
@@ -232,10 +171,11 @@ comprehensive surveillance, access control, and cybersecurity solutions you can 
   array (
     'id' => 8,
     'title' => 'IT Infrastructure & Hardware',
+    'slug' => '/sub-divisions/it-infrastructure-and-hardware',
     'parent' => '1',
     'deleted_at' => NULL,
     'created_at' => '2023-11-22 11:12:37',
-    'updated_at' => '2025-11-06 11:44:32',
+    'updated_at' => '2025-11-11 05:20:21',
     'menu_id' => NULL,
     'description' => NULL,
   ),
@@ -243,6 +183,7 @@ comprehensive surveillance, access control, and cybersecurity solutions you can 
   array (
     'id' => 9,
     'title' => 'Cyber Security & Compliance',
+    'slug' => NULL,
     'parent' => '1',
     'deleted_at' => '2025-11-06 11:45:45',
     'created_at' => '2023-11-22 11:13:11',
@@ -254,6 +195,7 @@ comprehensive surveillance, access control, and cybersecurity solutions you can 
   array (
     'id' => 10,
     'title' => 'Software Solution Development',
+    'slug' => NULL,
     'parent' => '1',
     'deleted_at' => '2025-11-06 11:45:19',
     'created_at' => '2023-11-22 11:13:35',
@@ -265,10 +207,11 @@ comprehensive surveillance, access control, and cybersecurity solutions you can 
   array (
     'id' => 11,
     'title' => 'Cybersecurity & Compliance',
+    'slug' => '/sub-divisions/cybersecurity-compliance',
     'parent' => '1',
     'deleted_at' => NULL,
     'created_at' => '2023-11-22 11:13:53',
-    'updated_at' => '2023-11-22 11:13:53',
+    'updated_at' => '2025-11-11 05:21:34',
     'menu_id' => NULL,
     'description' => NULL,
   ),
@@ -276,10 +219,11 @@ comprehensive surveillance, access control, and cybersecurity solutions you can 
   array (
     'id' => 12,
     'title' => 'Company Overview',
+    'slug' => '/about_us',
     'parent' => NULL,
     'deleted_at' => NULL,
     'created_at' => '2023-11-22 11:14:58',
-    'updated_at' => '2025-11-06 11:34:01',
+    'updated_at' => '2025-11-10 11:31:59',
     'menu_id' => 6,
     'description' => NULL,
   ),
@@ -287,10 +231,11 @@ comprehensive surveillance, access control, and cybersecurity solutions you can 
   array (
     'id' => 13,
     'title' => 'Leadership & Team',
+    'slug' => '/about_us',
     'parent' => NULL,
     'deleted_at' => NULL,
     'created_at' => '2023-11-22 11:15:31',
-    'updated_at' => '2025-11-06 11:39:40',
+    'updated_at' => '2025-11-10 11:32:27',
     'menu_id' => 6,
     'description' => NULL,
   ),
@@ -298,10 +243,11 @@ comprehensive surveillance, access control, and cybersecurity solutions you can 
   array (
     'id' => 14,
     'title' => 'Case Studies',
+    'slug' => '/case-studies',
     'parent' => NULL,
     'deleted_at' => NULL,
     'created_at' => '2023-11-22 11:16:40',
-    'updated_at' => '2025-11-06 11:40:09',
+    'updated_at' => '2025-11-11 05:10:43',
     'menu_id' => 6,
     'description' => NULL,
   ),
@@ -309,10 +255,11 @@ comprehensive surveillance, access control, and cybersecurity solutions you can 
   array (
     'id' => 15,
     'title' => 'Hydrological Monitoring',
+    'slug' => '/sub-divisions/hydrological-monitoring',
     'parent' => '2',
     'deleted_at' => NULL,
     'created_at' => '2023-11-22 11:20:19',
-    'updated_at' => '2023-11-22 11:20:19',
+    'updated_at' => '2025-11-11 05:22:00',
     'menu_id' => NULL,
     'description' => NULL,
   ),
@@ -320,10 +267,11 @@ comprehensive surveillance, access control, and cybersecurity solutions you can 
   array (
     'id' => 16,
     'title' => 'Weather Stations & Networks',
+    'slug' => '/sub-divisions/weather-stations-networks',
     'parent' => '2',
     'deleted_at' => NULL,
     'created_at' => '2023-11-22 11:20:46',
-    'updated_at' => '2025-11-06 11:47:12',
+    'updated_at' => '2025-11-11 05:22:20',
     'menu_id' => NULL,
     'description' => NULL,
   ),
@@ -331,10 +279,11 @@ comprehensive surveillance, access control, and cybersecurity solutions you can 
   array (
     'id' => 17,
     'title' => 'Environmental Monitoring',
+    'slug' => '/sub-divisions/environmental-monitoring',
     'parent' => '2',
     'deleted_at' => NULL,
     'created_at' => '2023-11-22 11:21:19',
-    'updated_at' => '2023-11-22 11:21:19',
+    'updated_at' => '2025-11-11 05:22:40',
     'menu_id' => NULL,
     'description' => NULL,
   ),
@@ -342,6 +291,7 @@ comprehensive surveillance, access control, and cybersecurity solutions you can 
   array (
     'id' => 18,
     'title' => 'Technical Solutions Consulting',
+    'slug' => NULL,
     'parent' => '2',
     'deleted_at' => '2025-11-06 11:47:29',
     'created_at' => '2023-11-22 11:21:47',
@@ -353,6 +303,7 @@ comprehensive surveillance, access control, and cybersecurity solutions you can 
   array (
     'id' => 19,
     'title' => 'Hardware & Networking',
+    'slug' => NULL,
     'parent' => '1',
     'deleted_at' => '2025-11-06 11:47:53',
     'created_at' => '2023-11-22 11:13:53',
@@ -364,10 +315,11 @@ comprehensive surveillance, access control, and cybersecurity solutions you can 
   array (
     'id' => 28,
     'title' => 'Biotech R&D',
+    'slug' => '/sub-divisions/biotech-rd',
     'parent' => '3',
     'deleted_at' => NULL,
     'created_at' => '2023-11-22 11:29:05',
-    'updated_at' => '2025-11-06 11:55:06',
+    'updated_at' => '2025-11-11 05:22:59',
     'menu_id' => NULL,
     'description' => NULL,
   ),
@@ -375,10 +327,11 @@ comprehensive surveillance, access control, and cybersecurity solutions you can 
   array (
     'id' => 29,
     'title' => 'Healthcare Medical Tech',
+    'slug' => '/sub-divisions/healthcare-medical-tech',
     'parent' => '3',
     'deleted_at' => NULL,
     'created_at' => '2023-11-22 11:29:27',
-    'updated_at' => '2025-11-06 11:55:47',
+    'updated_at' => '2025-11-11 05:23:20',
     'menu_id' => NULL,
     'description' => NULL,
   ),
@@ -386,6 +339,7 @@ comprehensive surveillance, access control, and cybersecurity solutions you can 
   array (
     'id' => 30,
     'title' => 'Technical Consulting Services',
+    'slug' => NULL,
     'parent' => '3',
     'deleted_at' => '2025-11-06 11:56:05',
     'created_at' => '2023-11-22 11:29:49',
@@ -397,10 +351,11 @@ comprehensive surveillance, access control, and cybersecurity solutions you can 
   array (
     'id' => 34,
     'title' => 'Solar Power Solutions',
+    'slug' => '/sub-divisions/solar-power-solutions',
     'parent' => '4',
     'deleted_at' => NULL,
     'created_at' => '2023-11-22 11:31:50',
-    'updated_at' => '2025-11-06 11:56:41',
+    'updated_at' => '2025-11-11 05:23:39',
     'menu_id' => NULL,
     'description' => NULL,
   ),
@@ -408,10 +363,11 @@ comprehensive surveillance, access control, and cybersecurity solutions you can 
   array (
     'id' => 35,
     'title' => 'Hybrid & Wind Energy',
+    'slug' => '/sub-divisions/hybrid-wind-energy',
     'parent' => '4',
     'deleted_at' => NULL,
     'created_at' => '2023-11-22 11:32:14',
-    'updated_at' => '2025-11-06 11:57:08',
+    'updated_at' => '2025-11-11 05:23:58',
     'menu_id' => NULL,
     'description' => NULL,
   ),
@@ -419,6 +375,7 @@ comprehensive surveillance, access control, and cybersecurity solutions you can 
   array (
     'id' => 36,
     'title' => 'Wind & Hybrid Energy Systems',
+    'slug' => NULL,
     'parent' => '4',
     'deleted_at' => '2025-11-06 11:57:28',
     'created_at' => '2023-11-22 11:32:41',
@@ -430,10 +387,11 @@ comprehensive surveillance, access control, and cybersecurity solutions you can 
   array (
     'id' => 39,
     'title' => 'Automation & Control Systems',
+    'slug' => '/sub-divisions/automation-control-systems',
     'parent' => '5',
     'deleted_at' => NULL,
     'created_at' => '2023-11-22 11:35:25',
-    'updated_at' => '2025-11-06 11:58:20',
+    'updated_at' => '2025-11-11 05:24:19',
     'menu_id' => NULL,
     'description' => NULL,
   ),
@@ -441,6 +399,7 @@ comprehensive surveillance, access control, and cybersecurity solutions you can 
   array (
     'id' => 40,
     'title' => 'Mining Management Systems',
+    'slug' => NULL,
     'parent' => '5',
     'deleted_at' => '2025-11-06 11:58:44',
     'created_at' => '2023-11-22 11:36:25',
@@ -452,10 +411,11 @@ comprehensive surveillance, access control, and cybersecurity solutions you can 
   array (
     'id' => 49,
     'title' => 'CCTV & Surveillance',
+    'slug' => '/sub-divisions/cctv-surveillance',
     'parent' => '6',
     'deleted_at' => NULL,
     'created_at' => '2023-11-22 11:40:31',
-    'updated_at' => '2025-11-06 11:59:23',
+    'updated_at' => '2025-11-11 05:24:40',
     'menu_id' => NULL,
     'description' => NULL,
   ),
@@ -463,10 +423,11 @@ comprehensive surveillance, access control, and cybersecurity solutions you can 
   array (
     'id' => 50,
     'title' => 'Access  Control',
+    'slug' => '/sub-divisions/access-control',
     'parent' => '6',
     'deleted_at' => NULL,
     'created_at' => '2023-11-22 11:41:17',
-    'updated_at' => '2025-11-06 12:00:42',
+    'updated_at' => '2025-11-11 05:25:02',
     'menu_id' => NULL,
     'description' => NULL,
   ),
@@ -474,10 +435,11 @@ comprehensive surveillance, access control, and cybersecurity solutions you can 
   array (
     'id' => 51,
     'title' => 'Careers',
+    'slug' => '/careers',
     'parent' => NULL,
     'deleted_at' => NULL,
     'created_at' => '2025-05-14 16:15:54',
-    'updated_at' => '2025-05-14 16:15:54',
+    'updated_at' => '2025-11-11 05:11:02',
     'menu_id' => 6,
     'description' => NULL,
   ),
@@ -485,10 +447,11 @@ comprehensive surveillance, access control, and cybersecurity solutions you can 
   array (
     'id' => 52,
     'title' => 'Insights / Blogs',
+    'slug' => '/blogs',
     'parent' => NULL,
     'deleted_at' => NULL,
     'created_at' => '2025-05-14 16:19:26',
-    'updated_at' => '2025-11-06 11:38:06',
+    'updated_at' => '2025-11-11 05:14:46',
     'menu_id' => 3,
     'description' => NULL,
   ),
@@ -496,10 +459,11 @@ comprehensive surveillance, access control, and cybersecurity solutions you can 
   array (
     'id' => 53,
     'title' => 'Gallery / Media',
+    'slug' => '/gallery',
     'parent' => NULL,
     'deleted_at' => NULL,
     'created_at' => '2025-05-14 16:19:41',
-    'updated_at' => '2025-11-06 11:39:13',
+    'updated_at' => '2025-11-10 11:35:22',
     'menu_id' => 3,
     'description' => NULL,
   ),
@@ -507,10 +471,11 @@ comprehensive surveillance, access control, and cybersecurity solutions you can 
   array (
     'id' => 54,
     'title' => 'Healthcare',
+    'slug' => '/industry-detail/healthcare',
     'parent' => NULL,
     'deleted_at' => NULL,
     'created_at' => '2025-11-06 11:27:42',
-    'updated_at' => '2025-11-06 11:27:42',
+    'updated_at' => '2025-11-11 05:15:41',
     'menu_id' => 14,
     'description' => NULL,
   ),
@@ -518,10 +483,11 @@ comprehensive surveillance, access control, and cybersecurity solutions you can 
   array (
     'id' => 55,
     'title' => 'Education',
+    'slug' => '/industry-detail/education',
     'parent' => NULL,
     'deleted_at' => NULL,
     'created_at' => '2025-11-06 11:28:08',
-    'updated_at' => '2025-11-06 11:28:08',
+    'updated_at' => '2025-11-11 05:16:06',
     'menu_id' => 14,
     'description' => NULL,
   ),
@@ -529,10 +495,11 @@ comprehensive surveillance, access control, and cybersecurity solutions you can 
   array (
     'id' => 56,
     'title' => 'Utilities / Environment',
+    'slug' => '/industry-detail/utilities-environment',
     'parent' => NULL,
     'deleted_at' => NULL,
     'created_at' => '2025-11-06 11:28:41',
-    'updated_at' => '2025-11-06 11:28:41',
+    'updated_at' => '2025-11-11 05:16:55',
     'menu_id' => 14,
     'description' => NULL,
   ),
@@ -540,10 +507,11 @@ comprehensive surveillance, access control, and cybersecurity solutions you can 
   array (
     'id' => 57,
     'title' => 'Defence & Law Enforcement',
+    'slug' => '/industry-detail/defence-law-enforcement',
     'parent' => NULL,
     'deleted_at' => NULL,
     'created_at' => '2025-11-06 11:29:35',
-    'updated_at' => '2025-11-06 11:29:35',
+    'updated_at' => '2025-11-11 05:17:16',
     'menu_id' => 14,
     'description' => NULL,
   ),
@@ -551,10 +519,11 @@ comprehensive surveillance, access control, and cybersecurity solutions you can 
   array (
     'id' => 58,
     'title' => 'Private Enterprises',
+    'slug' => '/industry-detail/private-enterprises',
     'parent' => NULL,
     'deleted_at' => NULL,
     'created_at' => '2025-11-06 11:30:07',
-    'updated_at' => '2025-11-06 11:30:07',
+    'updated_at' => '2025-11-11 05:17:40',
     'menu_id' => 14,
     'description' => NULL,
   ),
@@ -562,11 +531,24 @@ comprehensive surveillance, access control, and cybersecurity solutions you can 
   array (
     'id' => 59,
     'title' => 'Integrated Security Solutions',
+    'slug' => '/sub-divisions/integrated-security-solutions',
     'parent' => '6',
     'deleted_at' => NULL,
     'created_at' => '2025-11-06 12:01:22',
-    'updated_at' => '2025-11-06 12:01:22',
+    'updated_at' => '2025-11-11 05:25:22',
     'menu_id' => NULL,
+    'description' => NULL,
+  ),
+  38 => 
+  array (
+    'id' => 60,
+    'title' => 'Meesam',
+    'slug' => 'sania-ali',
+    'parent' => NULL,
+    'deleted_at' => '2025-11-10 09:57:25',
+    'created_at' => '2025-11-10 09:43:57',
+    'updated_at' => '2025-11-10 09:57:25',
+    'menu_id' => 12,
     'description' => NULL,
   ),
 );

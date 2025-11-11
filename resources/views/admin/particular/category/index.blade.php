@@ -17,6 +17,7 @@
                                         <tr>
                                             <th scope="col">ID</th>
                                             <th scope="col">Title</th>
+                                            <th scope="col">Slug</th> <!-- Added slug column -->
                                             <th scope="col">Menu</th>
                                             <th scope="col">Action</th>
                                         </tr>
@@ -26,18 +27,22 @@
                                             <tr>
                                                 <td>{{ $item->id }}</td>
                                                 <td>{{ $item->title }}</td>
-                                                <td>{{ $item->menu->title }}</td>
+                                                <td>{{ $item->slug }}</td> <!-- Display slug -->
+                                                <td>{{ $item->menu->title ?? '-' }}</td>
                                                 <td>
                                                     <div class="action_btns d-flex">
-                                                        <a href="/admin/category/update/{{$item->id}}" class="action_btn mr_10"> <i class="far fa-edit"></i> </a>
-                                                        <a href="javascript:;" class="action_btn" onclick="deleteItem(<?php echo $item->id ?>,'/admin/category/delete','Record')"> <i class="fas fa-trash"></i>
+                                                        <a href="/admin/category/update/{{$item->id}}" class="action_btn mr_10">
+                                                            <i class="far fa-edit"></i>
+                                                        </a>
+                                                        <a href="javascript:;" class="action_btn" onclick="deleteItem({{ $item->id }},'/admin/category/delete','Record')">
+                                                            <i class="fas fa-trash"></i>
                                                         </a>
                                                     </div>
                                                 </td>
                                             </tr>
-                                            @empty
-                                                <tr class="text-center"><td colspan="7">No Records Found</td></tr>
-                                            @endforelse
+                                        @empty
+                                            <tr class="text-center"><td colspan="7">No Records Found</td></tr>
+                                        @endforelse
                                     </tbody>
                                 </table>
                             </div>
