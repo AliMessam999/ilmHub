@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\CdFaq;
+use App\Models\CdCategory;
 use Illuminate\Http\Request;
 use Illuminate\Validation\Rule;
 use Illuminate\Support\Facades\Validator;
@@ -23,6 +24,7 @@ class FaqController extends Controller
 
             $career = new CdFaq();
             $career->title = $request->title;
+            $career->sub_category_id = $request->sub_category_id;
             $career->description = $request->description;
             $result = $career->save();
             if ($result) {
@@ -84,6 +86,7 @@ class FaqController extends Controller
             } else {
                     $menu = CdFaq::where('id', $id)->update([
                         'title' => $request->title,
+                        'sub_category_id' => $request->sub_category_id,
                         'description' => $request->description,
                     ]);
                 if ($menu) {
@@ -101,15 +104,18 @@ class FaqController extends Controller
 
     public function create_faq_view()
     {
-        return view('admin.home.faq.create');
+        $data['categories'] = CdCategory::where('parent','!=',NULL)->get();
+        return view('admin.home.faq.create', $data);
     }
 
     public function update_faq_view($id)
     {
+        $data['categories'] = CdCategory::where('parent','!=',NULL)->get();
+
         $menu = CdFaq::where('id', $id);
         if ($menu->count() > 0) {
-            $menu = $menu->first();
-            return view('admin.home.faq.update', compact('menu'));
+            $data['menu'] = $menu->first();
+            return view('admin.home.faq.update', $data);
         } else {
             return redirect('/admin/faq');
         }
