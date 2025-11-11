@@ -65,6 +65,9 @@ Route::get('/case-studies', [HomeController::class, 'caseStudiesPage'])->name('c
 Route::get('/case-study/{title}', [HomeController::class, 'caseStudyDetailPage'])->name('case-study-detail.page');
 Route::get('/divisions/{category}', [HomeController::class, 'divsions'])->name('divisions.page');
 
+Route::get('/industry-details/{title}',[HomeController::class,'IndustryDetails'])->name('industries.details');
+// Route::get('/insights-updates',[HomeController::class,'Insightsupdates'])->name('insightsupdates.blogs');
+
 Route::get('/dashboard', function () {
     return view('admin.index');
 })->middleware(['authwithadmin', 'verified'])->name('dashboard');
@@ -254,7 +257,7 @@ Route::middleware('authwithadmin')->controller(CompanyProfileController::class)-
 
 Route::middleware('authwithadmin')->controller(SeoController::class)->group(function () {
     Route::get('/admin/seo/update/{type}/{id}', 'update_seo_view');
-    Route::put('/admin/seo/update/{id}', 'update_seo');
+    Route::post('/admin/seo/update/{id}', 'update_seo');
 });
 
 

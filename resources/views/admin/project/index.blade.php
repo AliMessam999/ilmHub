@@ -31,15 +31,23 @@
                                                 <td>{!! $item->alt !!}</td>
                                                 <td>
                                                     <div class="action_btns d-flex">
-                                                        <a href="/admin/solution/update/{{$item->id}}" class="action_btn mr_10"> <i class="far fa-edit"></i> </a>
-                                                        <a href="javascript:;" class="action_btn" onclick="deleteItem(<?php echo $item->id ?>,'/admin/project/delete','Record')"> <i class="fas fa-trash"></i>
+                                                        <a href="/admin/solution/update/{{ $item->id }}"
+                                                            class="action_btn mr_10"> <i class="far fa-edit"></i> </a>
+                                                        <a href="javascript:;" class="action_btn mr_10"
+                                                            onclick="deleteItem(<?php echo $item->id; ?>,'/admin/project/delete','Record')">
+                                                            <i class="fas fa-trash"></i>
                                                         </a>
+                                                        <a href="/admin/seo/update/CdSolution/{{ $item->id }}"
+                                                            title="Add Seo Data" class="action_btn"> <i
+                                                                class="fas fa-plus"></i> </a>
                                                     </div>
                                                 </td>
                                             </tr>
-                                            @empty
-                                                <tr><td colspan="7">No Records Found</td></tr>
-                                            @endforelse
+                                        @empty
+                                            <tr>
+                                                <td colspan="7">No Records Found</td>
+                                            </tr>
+                                        @endforelse
                                     </tbody>
                                 </table>
                             </div>

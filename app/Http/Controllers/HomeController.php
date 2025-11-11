@@ -45,9 +45,18 @@ class HomeController extends Controller
     }
     public function IndustryData()
     {
-        $data['industries']=CdClient::all();
+        $data['industries'] = CdClient::all();
         return view('frontend.industries', $data);
     }
+     public function IndustryDetails($title)
+    {
+        // dd($title);
+        $data['industriesDetails']=CdClient::where('title', $title)->first();
+        //  dd($data['industriesDetails']);
+        $data['insightsupdates'] = CdNew::inRandomOrder()->limit(3)->get();
+        return view('frontend.industries-details', $data);
+    }
+  
 
     public function SolutionPage($id = null)
     {

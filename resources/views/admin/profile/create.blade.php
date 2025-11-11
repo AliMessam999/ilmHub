@@ -15,8 +15,10 @@
                             <div class="main-title">
                                 <h3 class="m-0">Update Profile</h3>
                             </div>
+                                <a href="/admin/seo/update/CdProfile/{{$item->id}}" title="Add Seo Data" class="btn btn-primary"> Update SEO </a>
                         </div>
                     </div>
+                    <hr>
                     <form id="AdminForm">
                         @csrf
 
