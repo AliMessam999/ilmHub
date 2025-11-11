@@ -26,10 +26,8 @@
                                         @forelse($project as $item)
                                             <tr>
                                                 <td>{{ $item->id }}</td>
-                                                <td><img src="/{{ $item->image }}"
-                                                        alt="{{ $item->alt ? $item->alt : 'No Alt' }}" class="image-list">
-                                                </td>
-                                                <td>{{ $item->category->title }}</td>
+                                                <td><img src="/{{ $item->image }}" alt="{{ $item->alt ? $item->alt:"No Alt" }}" class="image-list"></td>
+                                                <td>{{ $item->category->title ?? 'N/A' }}</td>
                                                 <td>{!! $item->alt !!}</td>
                                                 <td>
                                                     <div class="action_btns d-flex">

@@ -241,4 +241,32 @@ class HomeController extends Controller
         $terms = CdTermCondition::first();
         return view('terms_conditions', compact('terms'));
     }
+    public function caseStudiesPage()
+    {
+        $caseStudies = CdFeature::with('images')->paginate(15);
+        return view('frontend/case-studies', compact('caseStudies'));
+    }
+
+    public function caseStudyDetailPage($title)
+    {
+        $caseStudy = CdFeature::where('title', 'LIKE', '%' . $title . '%')->with('images')->first();
+        $recent = CdFeature::where('id', '!=', $caseStudy->id)->orderBy('created_at', 'desc')->limit(3)->get();
+        // Next post (newer one in same category)
+        $next = CdFeature::where('id', '>', $caseStudy->id)
+            ->orderBy('id', 'asc')
+            ->first();
+
+        // Previous post (older one in same category)
+        $previous = CdFeature::where('id', '<', $caseStudy->id)
+            ->orderBy('id', 'desc')
+            ->first();
+        
+        return view('frontend/case-study-detail', compact('caseStudy', 'recent','previous','next'));
+    }
+
+    public function divsions($category_id)
+    {
+       $category = CdCategory::where('title','LIKE','%'.$category_id.'%')->with('sub_categories.solutions')->first();
+       return view('frontend.divisions',compact('category'));
+    }
 }
