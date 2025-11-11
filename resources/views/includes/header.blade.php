@@ -23,7 +23,9 @@
                   @endphp
 
                   <li class="{{ $menu->categories->isNotEmpty() ? 'has-dropdown' : '' }}">
-                    <a href="#">{{ $menu->title }}</a>
+                    <a href="{{ url($menu->slug) }}">
+                      {{ $menu->title }}
+                    </a>
 
                     {{-- CASE 1: Categories that have subcategories --}}
                     @if ($withSub->isNotEmpty())
@@ -35,11 +37,11 @@
                               @foreach ($withSub as $category)
                                 <div class="mega-menu-pages-single">
                                   <div class="mega-menu-pages-single-inner">
-                                    <a class="mega-menu-title mb-3" href="#">{{ $category->title }}</a>
+                                    <a class="mega-menu-title mb-3" href="{{ url($category->slug) }}">{{ $category->title }}</a>
 
                                     <div class="mega-menu-list mt-3">
                                       @foreach ($category->sub_categories as $sub)
-                                        <a href="#">{{ $sub->title }}</a>
+                                        <a href="{{ url($sub->slug) }}">{{ $sub->title }}</a>
                                       @endforeach
                                     </div>
                                   </div>
@@ -53,10 +55,14 @@
                         <ul class="sub-menu">
                           @foreach ($withSub as $category)
                             <li>
-                              <a href="#">{{ $category->title }}</a>
+                              <a href="{{ url($category->slug) }}">{{ $category->title }}</a>
                               <ul class="sub-menu">
                                 @foreach ($category->sub_categories as $sub)
-                                  <li><a href="#">{{ $sub->title }}</a></li>
+                                  <li>
+                                    <a href="{{ url($sub->slug) }}">
+                                      {{ $sub->title }}
+                                    </a>
+                                  </li>
                                 @endforeach
                               </ul>
                             </li>
@@ -69,7 +75,11 @@
                     @if ($withoutSub->isNotEmpty())
                       <ul class="sub-menu">
                         @foreach ($withoutSub as $category)
-                          <li><a href="#">{{ $category->title }}</a></li>
+                          <li>
+                            <a href="{{ url($category->slug) }}">
+                              {{ $category->title }}
+                            </a>
+                          </li>
                         @endforeach
                       </ul>
                     @endif
@@ -168,7 +178,9 @@
                   @endphp
 
                   <li class="{{ $menu->categories->isNotEmpty() ? 'has-dropdown' : '' }}">
-                    <a href="#">{{ $menu->title }}</a>
+                    <a href="{{ url($menu->slug) }}">
+                      {{ $menu->title }}
+                    </a>
 
                     {{-- CASE 1: Categories that have subcategories --}}
                     @if ($withSub->isNotEmpty())
@@ -184,7 +196,9 @@
                                     @if ($category->sub_categories->isNotEmpty())
                                       <div class="mega-menu-list mt-3">
                                         @foreach ($category->sub_categories as $sub)
-                                          <a href="#">{{ $sub->title }}</a>
+                                          <a href="{{ url($sub->slug) }}">
+                                            {{ $sub->title }}
+                                          </a>
                                         @endforeach
                                       </div>
                                     @endif
@@ -199,10 +213,16 @@
                         <ul class="sub-menu">
                           @foreach ($withSub as $category)
                             <li>
-                              <a href="#">{{ $category->title }}</a>
+                              <a href="{{ url($category->slug) }}">
+                                {{ $category->title }}
+                              </a>
                               <ul class="sub-menu">
                                 @foreach ($category->sub_categories as $sub)
-                                  <li><a href="#">{{ $sub->title }}</a></li>
+                                  <li>
+                                    <a href="{{ url($sub->slug) }}">
+                                      {{ $sub->title }}
+                                    </a>
+                                  </li>
                                 @endforeach
                               </ul>
                             </li>
@@ -215,7 +235,11 @@
                     @if ($withoutSub->isNotEmpty())
                       <ul class="sub-menu">
                         @foreach ($withoutSub as $category)
-                          <li><a href="#">{{ $category->title }}</a></li>
+                          <li>
+                            <a href="{{ url($category->slug) }}">
+                              {{ $category->title }}
+                            </a>
+                          </li>
                         @endforeach
                       </ul>
                     @endif
