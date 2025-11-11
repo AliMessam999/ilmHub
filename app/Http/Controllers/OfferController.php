@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\CdOffer;
+use App\Models\CdCategory;
+use App\Models\CdMenu;
 use Illuminate\Http\Request;
 use Illuminate\Validation\Rule;
 use Illuminate\Support\Facades\Validator;
@@ -15,17 +17,14 @@ class OfferController extends Controller
             'title' => ['required', Rule::unique('cd_offers')],
             'description' => 'required',
             'image' => ['required', Rule::imageFile(), 'max:500'],
-            'alt'=>'required'
+            'alt'=>'required',
+            'category_id'=>'required'
         ]);
 
         if ($validator->fails()) {
             return response()->json($validator->errors(), 302);
         } else {
-            if(CdOffer::count() != 0){
-                return response()->json([
-                    "message" => "You Cannot create second Offer due to Home Page"
-                ], 302);
-            }
+            
                 $path = $request->file('image')->store('upload/offer');
                 if(!$path){
                     return response()->json([
@@ -35,6 +34,8 @@ class OfferController extends Controller
                 $offer = new CdOffer();
                 $offer->title = $request->title;
                 $offer->description = $request->description;
+                $offer->category_id = $request->category_id;
+                $offer->position = $request->position;
                 $offer->alt = $request->alt;
                 $offer->image = $path;
                 $result = $offer->save();
@@ -102,11 +103,7 @@ class OfferController extends Controller
                     "message" => "The Name Has Already Been Taken"
                 ], 302);
             }
-            if(CdOffer::where('id','!=',$id)->count() != 0){
-                return response()->json([
-                    "message" => "You Cannot update second Offer due to Home Page"
-                ], 302);
-            }
+           
             if ($validator->fails()) {
                 return response()->json($validator->errors(), 302);
             } else {
@@ -117,12 +114,16 @@ class OfferController extends Controller
                         'description' => $request->description,
                         'alt' => $request->alt,
                         'image' => $path,
+                        'category_id' => $request->category_id,
+                        'position' => $request->position,
                     ]);
                 }else{
                     $CdOffer = CdOffer::where('id', $id)->update([
                         'title' => $request->title,
                         'description' => $request->description,
                         'alt' => $request->alt,
+                        'category_id' => $request->category_id,
+                        'position' => $request->position,
                     ]);
                 }
                         if ($CdOffer) {
@@ -140,15 +141,19 @@ class OfferController extends Controller
 
     public function create_offer_view()
     {
-        return view('admin.offer.create');
+        $menues = CdMenu::with('allCategories')->get();
+
+        return view('admin.offer.create',compact('menues'));
     }
 
     public function update_offer_view($id)
     {
+        $categories = CdMenu::with('allCategories')->get();
+
         $menu = CdOffer::where('id', $id);
         if ($menu->count() > 0) {
             $menu = $menu->first();
-            return view('admin.offer.update', compact('menu'));
+            return view('admin.offer.update', compact('menu','categories'));
         } else {
             return redirect('/admin/offer');
         }

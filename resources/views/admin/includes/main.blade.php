@@ -201,7 +201,7 @@
                         <i class="fab fa-buffer" style="color: #048391;"></i>
                     </div>
                     <div class="nav_title">
-                        <span>What We Offer</span>
+                        <span>Global Content</span>
                     </div>
                 </a>
             </li>
