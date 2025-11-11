@@ -15144,6 +15144,9 @@ START: Blog Details CSS
   border-radius: 12px;
   overflow: hidden;
 }
+.blog-images img {
+  min-width: 100%;
+}
 .post-details-wrapper .title {
   line-height: 1.1;
   margin-bottom: 22px;
@@ -18248,6 +18251,12 @@ START: Blog CSS
   -webkit-transition: all 0.3s ease-in-out 0s;
   transition: all 0.3s ease-in-out 0s;
 }
+.tj-careers:hover p {
+  color: white !important;
+}
+.tj-job-entry-content h1{
+  font-size: var(--tj-fs-h4);
+}
 .tj-careers-icon {
   width: 88px;
   height: 88px;
@@ -18474,6 +18483,9 @@ START: Blog CSS
     margin-bottom: 35px;
   }
 }
+.tj-careers-details h1{
+  margin: 10px 0px !important;
+}
 .tj-careers-details .tj-check-list ul {
   list-style: none;
 }
@@ -18488,8 +18500,33 @@ START: Blog CSS
      -moz-column-gap: 10px;
           column-gap: 10px;
   color: var(--tj-color-heading-primary);
-  font-weight: var(--tj-fw-medium);
+  /* font-weight: var(--tj-fw-medium); */
   margin-bottom: 10px;
+  position: relative;
+  margin-left: 30px;
+}
+.tj-careers-details .tj-check-list ul li::before{
+  content:"\e911";
+  position: absolute;
+  width:20px;
+  height: 20px;
+  background: var(--tj-color-theme-primary);
+  border-radius: 50%;
+  font-family: "bexon-icons";
+  color: var(--tj-color-common-white);
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+            font-size: 8px;
+  line-height: 1;
+  margin-top: 3px;
+  margin-left: -30px;
 }
 .tj-careers-details .tj-check-list ul li:last-child {
   margin-bottom: 0;
@@ -18646,7 +18683,7 @@ START: Blog CSS
 .tj-careers-form .form-input textarea,
 .tj-careers-form .form-input input {
   height: 60px;
-  border-color: transparent;
+  border-color: var(--tj-color-theme-primary);
   border-radius: 8px;
 }
 .tj-careers-form .form-input textarea::-webkit-input-placeholder, .tj-careers-form .form-input input::-webkit-input-placeholder {

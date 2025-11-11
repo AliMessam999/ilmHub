@@ -8,8 +8,8 @@
                     <div class="white_card_body">
                         <div class="QA_section">
                             <div class="white_box_tittle list_header d-flex">
-                                <h4>Client List </h4>
-                                <a href="/admin/client/create" class="white_btn3 justify-content-end">Create Client</a>
+                                <h4>Industry List </h4>
+                                <a href="/admin/client/create" class="white_btn3 justify-content-end">Create Industry</a>
                             </div>
                             <div class="QA_table mb_30">
                                 <table class="table lms_table_active3">
@@ -34,8 +34,9 @@
                                                 <td>
                                                     <div class="action_btns d-flex">
                                                         <a href="/admin/client/update/{{$item->id}}" class="action_btn mr_10"> <i class="far fa-edit"></i> </a>
-                                                        <a href="javascript:;" class="action_btn" onclick="deleteItem(<?php echo $item->id ?>,'/admin/client/delete','Record')"> <i class="fas fa-trash"></i>
+                                                        <a href="javascript:;" class="action_btn mr_10" onclick="deleteItem(<?php echo $item->id ?>,'/admin/client/delete','Record')"> <i class="fas fa-trash"></i>
                                                         </a>
+                                                        <a href="/admin/seo/update/CdClient/{{$item->id}}" title="Add Seo Data" class="action_btn"> <i class="fas fa-plus"></i> </a>
                                                     </div>
                                                 </td>
                                             </tr>

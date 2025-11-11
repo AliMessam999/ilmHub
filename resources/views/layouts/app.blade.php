@@ -1,23 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  @include('includes.head')
+    @include('includes.head')
 </head>
+
 <body>
-  <div class="body-overlay"></div>
-  @include('includes.global-ui')
-  @include('includes.header')
+    <div class="body-overlay"></div>
+    @include('includes.global-ui')
+    @include('includes.header')
 
-  <div id="smooth-wrapper">
-    <div id="smooth-content">
-      <main id="primary" class="site-main">
-        @yield('content')
-      </main>
+    <div id="smooth-wrapper">
+        <div id="smooth-content">
 
-      @include('includes.footer')
+            <main id="primary" class="site-main">
+                @yield('content')
+            </main>
+         
+            {{-- @include('includes.footer') --}}
+            <x-footer/>
+        </div>
     </div>
-  </div>
-  
-  @include('includes.scripts')
+
+    @include('includes.scripts')
 </body>
+
 </html>

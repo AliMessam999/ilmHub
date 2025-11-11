@@ -165,7 +165,7 @@
                             <i class="far fa-newspaper" style="color: #048391;"></i>
                         </div>
                         <div class="nav_title">
-                            <span>News</span>
+                            <span>Insights</span>
                         </div>
                     </a>
                 </li>
@@ -177,7 +177,7 @@
                         <i class="fa fa-users" style="color: #048391;"></i>
                     </div>
                     <div class="nav_title">
-                        <span>Clients</span>
+                        <span>Industries</span>
                     </div>
                 </a>
             </li>

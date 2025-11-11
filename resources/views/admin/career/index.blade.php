@@ -36,8 +36,9 @@
                                                 <td>
                                                     <div class="action_btns d-flex">
                                                         <a href="/admin/career/update/{{$item->id}}" class="action_btn mr_10"> <i class="far fa-edit"></i> </a>
-                                                        <a href="javascript:;" class="action_btn" onclick="deleteItem(<?php echo $item->id ?>,'/admin/career/delete','Record')"> <i class="fas fa-trash"></i>
+                                                        <a href="javascript:;" class="action_btn mr_10" onclick="deleteItem(<?php echo $item->id ?>,'/admin/career/delete','Record')"> <i class="fas fa-trash"></i>
                                                         </a>
+                                                        <a href="/admin/seo/update/CdCareer/{{$item->id}}" title="Add Seo Data" class="action_btn"> <i class="fas fa-plus"></i> </a>
                                                     </div>
                                                 </td>
                                             </tr>

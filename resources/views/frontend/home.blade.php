@@ -244,8 +244,8 @@
                     <div class="blog-wrapper h8-blog-wrapper">
                         <div class="blog-item style-2 wow fadeInUp" data-wow-delay=".3s">
                             <div class="blog-thumb">
-                                <a href="blog-details.html"><img src="{{ asset('frontend_assets/images/blog/blog-1.webp') }}"
-                                        alt="" /></a>
+                                <a href="blog-details.html"><img
+                                        src="{{ asset('frontend_assets/images/blog/blog-1.webp') }}" alt="" /></a>
                                 <div class="blog-date">
                                     <span class="date">28</span>
                                     <span class="month">Feb</span>
@@ -271,8 +271,8 @@
                         </div>
                         <div class="blog-item style-2 wow fadeInUp" data-wow-delay=".4s">
                             <div class="blog-thumb">
-                                <a href="blog-details.html"><img src="{{ asset('frontend_assets/images/blog/blog-5.webp') }}"
-                                        alt="" /></a>
+                                <a href="blog-details.html"><img
+                                        src="{{ asset('frontend_assets/images/blog/blog-5.webp') }}" alt="" /></a>
                                 <div class="blog-date">
                                     <span class="date">28</span>
                                     <span class="month">Feb</span>
@@ -298,8 +298,8 @@
                         </div>
                         <div class="blog-item style-2 wow fadeInUp" data-wow-delay=".5s">
                             <div class="blog-thumb">
-                                <a href="blog-details.html"><img src="{{ asset('frontend_assets/images/blog/blog-4.webp') }}"
-                                        alt="" /></a>
+                                <a href="blog-details.html"><img
+                                        src="{{ asset('frontend_assets/images/blog/blog-4.webp') }}" alt="" /></a>
                                 <div class="blog-date">
                                     <span class="date">28</span>
                                     <span class="month">Feb</span>
@@ -336,10 +336,10 @@
             <div class="row">
                 <div class="col-12">
                     <!-- <div class="client-content style-2 wow fadeIn" data-wow-delay=".3s">
-                      <h5 class="sec-title">Join Over <span class="client-numbers">1000+</span> Companies with
-                        <span class="client-text">Cdigital</span> Here
-                      </h5>
-                    </div> -->
+                          <h5 class="sec-title">Join Over <span class="client-numbers">1000+</span> Companies with
+                            <span class="client-text">Cdigital</span> Here
+                          </h5>
+                        </div> -->
                     <div class="swiper client-slider client-slider-1 wow fadeIn" data-wow-delay=".5s">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide client-item">
@@ -359,17 +359,20 @@
                             </div>
                             <div class="swiper-slide client-item">
                                 <div class="client-logo">
-                                    <img src="{{ asset('frontend_assets/images/brands/brand-4.webp') }}" alt="" />
+                                    <img src="{{ asset('frontend_assets/images/brands/brand-4.webp') }}"
+                                        alt="" />
                                 </div>
                             </div>
                             <div class="swiper-slide client-item">
                                 <div class="client-logo">
-                                    <img src="{{ asset('frontend_assets/images/brands/brand-5.webp') }}" alt="" />
+                                    <img src="{{ asset('frontend_assets/images/brands/brand-5.webp') }}"
+                                        alt="" />
                                 </div>
                             </div>
                             <div class="swiper-slide client-item">
                                 <div class="client-logo">
-                                    <img src="{{ asset('frontend_assets/images/brands/brand-6.webp') }}" alt="" />
+                                    <img src="{{ asset('frontend_assets/images/brands/brand-6.webp') }}"
+                                        alt="" />
                                 </div>
                             </div>
                         </div>
@@ -421,7 +424,8 @@
                                 <div class="swiper-slide">
                                     <div class="project-item">
                                         <div class="project-img">
-                                            <img src="{{ asset('frontend_assets/images/industries/2.jpg') }}" alt="" />
+                                            <img src="{{ asset('frontend_assets/images/industries/2.jpg') }}"
+                                                alt="" />
                                         </div>
                                         <div class="project-content">
                                             <span class="categories"><a href="portfolio-details.html">Buisness</a></span>
@@ -436,7 +440,8 @@
                                 <div class="swiper-slide">
                                     <div class="project-item">
                                         <div class="project-img">
-                                            <img src="{{ asset('frontend_assets/images/industries/3.jpg') }}" alt="" />
+                                            <img src="{{ asset('frontend_assets/images/industries/3.jpg') }}"
+                                                alt="" />
                                         </div>
                                         <div class="project-content">
                                             <span class="categories"><a href="portfolio-details.html">Business</a></span>
@@ -451,7 +456,8 @@
                                 <div class="swiper-slide">
                                     <div class="project-item">
                                         <div class="project-img">
-                                            <img src="{{ asset('frontend_assets/images/industries/4.jpg') }}" alt="" />
+                                            <img src="{{ asset('frontend_assets/images/industries/4.jpg') }}"
+                                                alt="" />
                                         </div>
                                         <div class="project-content">
                                             <span class="categories"><a href="portfolio-details.html">Business</a></span>
@@ -466,7 +472,8 @@
                                 <div class="swiper-slide">
                                     <div class="project-item">
                                         <div class="project-img">
-                                            <img src="{{ asset('frontend_assets/images/industries/5.jpg') }}" alt="" />
+                                            <img src="{{ asset('frontend_assets/images/industries/5.jpg') }}"
+                                                alt="" />
                                         </div>
                                         <div class="project-content">
                                             <span class="categories"><a href="portfolio-details.html">Business</a></span>
@@ -481,7 +488,8 @@
                                 <div class="swiper-slide">
                                     <div class="project-item">
                                         <div class="project-img">
-                                            <img src="{{ asset('frontend_assets/images/industries/6.jpg') }}" alt="" />
+                                            <img src="{{ asset('frontend_assets/images/industries/6.jpg') }}"
+                                                alt="" />
                                         </div>
                                         <div class="project-content">
                                             <span class="categories"><a href="portfolio-details.html">Business</a></span>
@@ -510,271 +518,7 @@
     <!-- end: Project Section -->
 
     <!-- start: Team Section -->
-    <section class="h8-team section-gap section-gap-x mt-5">
-        <div class="container">
-            <div class="row h8-team-wrapper gap-0">
-                <div class="col-lg-3 col-sm-6">
-                    <div class="sec-heading style-3">
-                        <span class="sub-title wow fadeInUp" data-wow-delay=".3s">MEET OUR TEAM</span>
-                        <h2 class="sec-title title-anim">
-                            Meet the Mind Behind Our Success.
-                        </h2>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6 h8-team-item-wrapper">
-                    <div class="team-item wow fadeInRightBig" data-wow-delay=".2s">
-                        <div class="team-img">
-                            <div class="team-img-inner">
-                                <img src="{{ asset('frontend_assets/images/team/team-1.webp') }}" alt="" />
-                            </div>
-                            <div class="social-links">
-                                <ul>
-                                    <li>
-                                        <a href="https://www.facebook.com/" target="_blank"><i
-                                                class="fa-brands fa-facebook-f"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.instagram.com/" target="_blank"><i
-                                                class="fa-brands fa-instagram"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="https://x.com/" target="_blank"><i
-                                                class="fa-brands fa-x-twitter"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.linkedin.com/" target="_blank"><i
-                                                class="fa-brands fa-linkedin-in"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="team-content">
-                            <h5 class="title">
-                                <a href="team-details.html">James Anderson</a>
-                            </h5>
-                            <span class="designation">Chief Executive</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6 h8-team-item-wrapper">
-                    <div class="team-item wow fadeInRightBig" data-wow-delay=".3s">
-                        <div class="team-img">
-                            <div class="team-img-inner">
-                                <img src="{{ asset('frontend_assets/images/team/team-2.webp') }}" alt="" />
-                            </div>
-                            <div class="social-links">
-                                <ul>
-                                    <li>
-                                        <a href="https://www.facebook.com/" target="_blank"><i
-                                                class="fa-brands fa-facebook-f"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.instagram.com/" target="_blank"><i
-                                                class="fa-brands fa-instagram"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="https://x.com/" target="_blank"><i
-                                                class="fa-brands fa-x-twitter"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.linkedin.com/" target="_blank"><i
-                                                class="fa-brands fa-linkedin-in"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="team-content">
-                            <h5 class="title">
-                                <a href="team-details.html">Savannah Ngueen</a>
-                            </h5>
-                            <span class="designation">Operations Head</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6 h8-team-item-wrapper">
-                    <div class="team-item wow fadeInRightBig" data-wow-delay=".4s">
-                        <div class="team-img">
-                            <div class="team-img-inner">
-                                <img src="{{ asset('frontend_assets/images/team/team-3.webp') }}" alt="" />
-                            </div>
-                            <div class="social-links">
-                                <ul>
-                                    <li>
-                                        <a href="https://www.facebook.com/" target="_blank"><i
-                                                class="fa-brands fa-facebook-f"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.instagram.com/" target="_blank"><i
-                                                class="fa-brands fa-instagram"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="https://x.com/" target="_blank"><i
-                                                class="fa-brands fa-x-twitter"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.linkedin.com/" target="_blank"><i
-                                                class="fa-brands fa-linkedin-in"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="team-content">
-                            <h5 class="title">
-                                <a href="team-details.html">Emma Richardson</a>
-                            </h5>
-                            <span class="designation">Marketing Lead</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6 h8-team-item-wrapper">
-                    <div class="team-item wow fadeInRightBig" data-wow-delay=".5s">
-                        <div class="team-img">
-                            <div class="team-img-inner">
-                                <img src="{{ asset('frontend_assets/images/team/team-4.webp') }}" alt="" />
-                            </div>
-                            <div class="social-links">
-                                <ul>
-                                    <li>
-                                        <a href="https://www.facebook.com/" target="_blank"><i
-                                                class="fa-brands fa-facebook-f"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.instagram.com/" target="_blank"><i
-                                                class="fa-brands fa-instagram"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="https://x.com/" target="_blank"><i
-                                                class="fa-brands fa-x-twitter"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.linkedin.com/" target="_blank"><i
-                                                class="fa-brands fa-linkedin-in"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="team-content">
-                            <h5 class="title">
-                                <a href="team-details.html">Nathan Price</a>
-                            </h5>
-                            <span class="designation">Business Director</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6 h8-team-item-wrapper">
-                    <div class="team-item wow fadeInRightBig" data-wow-delay=".6s">
-                        <div class="team-img">
-                            <div class="team-img-inner">
-                                <img src="{{ asset('frontend_assets/images/team/team-5.webp') }}" alt="" />
-                            </div>
-                            <div class="social-links">
-                                <ul>
-                                    <li>
-                                        <a href="https://www.facebook.com/" target="_blank"><i
-                                                class="fa-brands fa-facebook-f"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.instagram.com/" target="_blank"><i
-                                                class="fa-brands fa-instagram"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="https://x.com/" target="_blank"><i
-                                                class="fa-brands fa-x-twitter"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.linkedin.com/" target="_blank"><i
-                                                class="fa-brands fa-linkedin-in"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="team-content">
-                            <h5 class="title">
-                                <a href="team-details.html">Nathaniel Ellington</a>
-                            </h5>
-                            <span class="designation">Business Director</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6 h8-team-item-wrapper">
-                    <div class="team-item wow fadeInRightBig" data-wow-delay=".7s">
-                        <div class="team-img">
-                            <div class="team-img-inner">
-                                <img src="{{ asset('frontend_assets/images/team/team-7.webp') }}" alt="" />
-                            </div>
-                            <div class="social-links">
-                                <ul>
-                                    <li>
-                                        <a href="https://www.facebook.com/" target="_blank"><i
-                                                class="fa-brands fa-facebook-f"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.instagram.com/" target="_blank"><i
-                                                class="fa-brands fa-instagram"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="https://x.com/" target="_blank"><i
-                                                class="fa-brands fa-x-twitter"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.linkedin.com/" target="_blank"><i
-                                                class="fa-brands fa-linkedin-in"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="team-content">
-                            <h5 class="title">
-                                <a href="team-details.html">Eade Marren</a>
-                            </h5>
-                            <span class="designation">Business Director</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6 h8-team-item-wrapper">
-                    <div class="team-item wow fadeInRightBig" data-wow-delay=".7s">
-                        <div class="team-img">
-                            <div class="team-img-inner">
-                                <img src="{{ asset('frontend_assets/images/team/team-8.webp') }}" alt="" />
-                            </div>
-                            <div class="social-links">
-                                <ul>
-                                    <li>
-                                        <a href="https://www.facebook.com/" target="_blank"><i
-                                                class="fa-brands fa-facebook-f"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.instagram.com/" target="_blank"><i
-                                                class="fa-brands fa-instagram"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="https://x.com/" target="_blank"><i
-                                                class="fa-brands fa-x-twitter"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.linkedin.com/" target="_blank"><i
-                                                class="fa-brands fa-linkedin-in"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="team-content">
-                            <h5 class="title">
-                                <a href="team-details.html">Eade Marren</a>
-                            </h5>
-                            <span class="designation">Business Director</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="bg-shape-1">
-            <img src="{{ asset('frontend_assets/images/shape/pattern-2.svg') }}" alt="" />
-        </div>
-        <div class="bg-shape-2">
-            <img src="{{ asset('frontend_assets/images/shape/pattern-3.svg') }}" alt="" />
-        </div>
-    </section>
+    <x-team />
     <!-- end: Team Section -->
 
     <!-- start: Contact Section -->
@@ -911,7 +655,7 @@
         </div>
 
         <!-- <div class="bg-shape-3">
-                <img src="frontend_assets/images/shape/shape-blur.svg" alt="">
-              </div> -->
+                    <img src="frontend_assets/images/shape/shape-blur.svg" alt="">
+                  </div> -->
     </section>
 @endsection
