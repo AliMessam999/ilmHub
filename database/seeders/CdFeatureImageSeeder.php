@@ -191,6 +191,46 @@ class CdFeatureImageSeeder extends Seeder
     'created_at' => '2025-06-03 14:51:25',
     'updated_at' => '2025-06-03 14:51:25',
   ),
+  18 => 
+  array (
+    'id' => 59,
+    'feature_id' => 19,
+    'image' => 'upload/featured/IxxfwMQ8rZVwXEseidc8S61hawGVxrmlVGhMqRdg.jpg',
+    'alt' => 'Totam saepe cumque q',
+    'deleted_at' => NULL,
+    'created_at' => '2025-11-12 04:59:39',
+    'updated_at' => '2025-11-12 04:59:39',
+  ),
+  19 => 
+  array (
+    'id' => 60,
+    'feature_id' => 19,
+    'image' => 'upload/featured/QlCgjV2yyZHjdB7HR7zbNT7JMjmA3ASCOXklurEC.jpg',
+    'alt' => 'Totam saepe cumque q',
+    'deleted_at' => NULL,
+    'created_at' => '2025-11-12 04:59:39',
+    'updated_at' => '2025-11-12 04:59:39',
+  ),
+  20 => 
+  array (
+    'id' => 61,
+    'feature_id' => 19,
+    'image' => 'upload/featured/6Np292DvsF7wpeLEZ4K9fHPlGHm8MvZSUHYtAe22.jpg',
+    'alt' => 'Totam saepe cumque q',
+    'deleted_at' => NULL,
+    'created_at' => '2025-11-12 05:09:52',
+    'updated_at' => '2025-11-12 05:09:52',
+  ),
+  21 => 
+  array (
+    'id' => 62,
+    'feature_id' => 19,
+    'image' => 'upload/featured/xZPF5TPVUjiFq5H4czxF5dwHKXaleRbrazfdTHOG.jpg',
+    'alt' => 'Totam saepe cumque q',
+    'deleted_at' => NULL,
+    'created_at' => '2025-11-12 05:09:52',
+    'updated_at' => '2025-11-12 05:09:52',
+  ),
 );
         DB::table('cd_feature_images')->insert($data);
     }
