@@ -14,124 +14,104 @@ class CdOfferSeeder extends Seeder
   0 => 
   array (
     'id' => 1,
-    'category_id' => 12,
-    'title' => 'Our Journey',
-    'description' => '<p>What began in 2003 as a small-scale ICT solutions provider has transformed into a dynamic and diversified enterprise. In 2005, we took our first step toward expansion by introducing Security &amp; Surveillance Solutions&mdash;a move that laid the foundation for our multidimensional growth.</p>',
+    'title' => 'Driving Innovation and Excellence for Sustainable Corporate Success Worldwide.',
+    'description' => '<p>heading</p>',
     'alt' => 'Our Journey',
-    'image' => 'upload/offer/JCDEuHHUCtsDlhkfoNXOSXKdHHXAbhwihVFqKZgZ.jpg',
-    'position' => 'top',
+    'image' => 'upload/offer/hEOZl5izDDWWWr8uZXLroCHzMAeiVeSlX2oMXd4D.webp',
+    'icon' => NULL,
     'deleted_at' => NULL,
     'created_at' => NULL,
-    'updated_at' => '2025-05-15 11:46:57',
+    'updated_at' => '2025-11-13 06:05:07',
+    'category_id' => 12,
+    'position' => 'bottom',
   ),
   1 => 
   array (
-    'id' => 2,
-    'category_id' => 12,
-    'title' => 'Our Vision',
-    'description' => '<p>To be a leader in technology, engineering, and innovation, pioneering intelligent, data-driven solutions that redefine industries, empower businesses, and shape a smarter, more sustainable world.</p>',
-    'alt' => 'Our Vision',
-    'image' => 'upload/offer/xptkMrU7Eqnk216GNLkvTq2xU2GwJXOWD1dB4cwI.jpg',
-    'position' => 'bottom',
-    'deleted_at' => NULL,
-    'created_at' => '2025-05-15 11:40:37',
-    'updated_at' => '2025-05-15 11:40:37',
-  ),
-  2 => 
-  array (
-    'id' => 3,
-    'category_id' => 12,
-    'title' => 'Our Mission',
-    'description' => '<p>To transform industries through advanced technology by delivering state-of-the-art solutions in enterprise software, security, water resources and weather monitoring, biotechnology, and renewable energy. We aim to foster long-term partnerships built on trust, innovation, and excellence.</p>',
-    'alt' => 'Our Mission',
-    'image' => 'upload/offer/f8tCb6JxOjWGDOIoIKrqBrnPNjLTik63Lv8aX6Z0.jpg',
-    'position' => 'bottom',
-    'deleted_at' => NULL,
-    'created_at' => '2025-05-15 11:43:12',
-    'updated_at' => '2025-05-15 11:43:12',
-  ),
-  3 => 
-  array (
     'id' => 4,
-    'category_id' => 13,
     'title' => 'Federal Board of Revenue',
     'description' => '<p>test</p>',
     'alt' => 'Federal Board of Revenue',
     'image' => 'upload/offer/f2LXf1IZfWYJDc1m9DrEIPnN7YqhhV6ru2KSebve.png',
-    'position' => 'top',
+    'icon' => NULL,
     'deleted_at' => NULL,
     'created_at' => '2025-05-15 14:33:08',
     'updated_at' => '2025-05-15 14:33:08',
+    'category_id' => 13,
+    'position' => 'top',
   ),
-  4 => 
+  2 => 
   array (
     'id' => 5,
-    'category_id' => 13,
     'title' => 'Pakistan Engineering Council (CA-No Limit)',
     'description' => '<p>test</p>',
     'alt' => 'Pakistan Engineering Council (CA-No Limit)',
     'image' => 'upload/offer/IKHRPGTlIqjZKSDrOACSPtgDARlHRf5Wl5U8ZylM.png',
-    'position' => 'top',
+    'icon' => NULL,
     'deleted_at' => NULL,
     'created_at' => '2025-05-15 14:33:46',
     'updated_at' => '2025-05-15 14:33:46',
+    'category_id' => 13,
+    'position' => 'top',
   ),
-  5 => 
+  3 => 
   array (
     'id' => 6,
-    'category_id' => 13,
     'title' => 'Pakistan Software Export Board',
     'description' => '<p>test</p>',
     'alt' => 'Pakistan Software Export Board',
     'image' => 'upload/offer/AYDjE2CEiyza6qLDo3rVu9VRAVQNcdFJLoZ2GfN8.png',
-    'position' => 'top',
+    'icon' => NULL,
     'deleted_at' => NULL,
     'created_at' => '2025-05-15 14:34:14',
     'updated_at' => '2025-05-15 14:34:14',
+    'category_id' => 13,
+    'position' => 'top',
   ),
-  6 => 
+  4 => 
   array (
     'id' => 7,
-    'category_id' => 13,
     'title' => 'Islamabad Chamber of Commerce & Industry',
     'description' => '<p>test</p>',
     'alt' => 'Islamabad Chamber of Commerce & Industry',
     'image' => 'upload/offer/ZnTIBihiNqTdHMGkPAbto14w8Y1Kr5Ulb39Qdt31.png',
-    'position' => 'top',
+    'icon' => NULL,
     'deleted_at' => NULL,
     'created_at' => '2025-05-15 14:35:59',
     'updated_at' => '2025-05-15 14:35:59',
+    'category_id' => 13,
+    'position' => 'top',
   ),
-  7 => 
+  5 => 
   array (
     'id' => 8,
-    'category_id' => 13,
     'title' => 'Rawalpindi Chamber of Commerce & Industry',
     'description' => '<p>test</p>',
     'alt' => 'Rawalpindi Chamber of Commerce & Industry',
     'image' => 'upload/offer/JHlH7qGDhfTVGiWL0r006dqRsesfLCnaMaBqr3Na.png',
-    'position' => 'top',
+    'icon' => NULL,
     'deleted_at' => NULL,
     'created_at' => '2025-05-15 14:36:40',
     'updated_at' => '2025-05-15 14:36:40',
+    'category_id' => 13,
+    'position' => 'top',
   ),
-  8 => 
+  6 => 
   array (
     'id' => 9,
-    'category_id' => 13,
     'title' => 'ISO 9001: 2015 Certified <br> ISO 14001:2015  Certified <br> ISO 14001:2018 Certified',
     'description' => '<p>cert</p>',
     'alt' => 'ISO',
     'image' => 'upload/offer/SEeR7UivSfs7TlwUXU8CHGtbhpL35xtKMEQ8XU1y.png',
-    'position' => 'bottom',
+    'icon' => NULL,
     'deleted_at' => NULL,
     'created_at' => '2025-05-15 14:38:39',
     'updated_at' => '2025-05-15 14:38:39',
+    'category_id' => 13,
+    'position' => 'bottom',
   ),
-  9 => 
+  7 => 
   array (
     'id' => 10,
-    'category_id' => 51,
     'title' => 'Career',
     'description' => '<p>At CDigital, we believe that innovation starts with people. As we build cutting-edge solutions across diverse sectors, we&#39;re looking for driven individuals ready to shape the future. Whether you&#39;re an experienced professional or a passionate newcomer, your journey begins here.</p>
 
@@ -169,10 +149,94 @@ class CdOfferSeeder extends Seeder
               </p>',
     'alt' => 'Career',
     'image' => 'upload/offer/UJKPQmhmIG2o7K2NXZIM7D6v6fBmFm1F524dXGfA.jpg',
-    'position' => 'top',
+    'icon' => NULL,
     'deleted_at' => NULL,
     'created_at' => '2025-05-15 15:52:29',
     'updated_at' => '2025-05-15 15:52:29',
+    'category_id' => 51,
+    'position' => 'top',
+  ),
+  8 => 
+  array (
+    'id' => 11,
+    'title' => 'Innovative Solutions',
+    'description' => '<p>We stay ahead of the curve, leveraging cutting-edge technologies and strategies to keep you competitive in a marketplace.</p>',
+    'alt' => 'Innovative Solutions image',
+    'image' => 'upload/offer/OBH4U9SYfA2CjfmSOc1UB97hI2JiCIesaOasCoD1.png',
+    'icon' => NULL,
+    'deleted_at' => NULL,
+    'created_at' => '2025-11-12 10:23:11',
+    'updated_at' => '2025-11-12 11:08:34',
+    'category_id' => 12,
+    'position' => 'top',
+  ),
+  9 => 
+  array (
+    'id' => 12,
+    'title' => 'Award-Winning Expertise',
+    'description' => '<p>Recognized by industry leaders, our award-winning team has a proven record of delivering excellence across projects.</p>',
+    'alt' => 'Award-Winning Expertise image',
+    'image' => 'upload/offer/DAi3LYwHLqxce1shjlneU55lqXgE7mGSb7fbxHLU.png',
+    'icon' => NULL,
+    'deleted_at' => NULL,
+    'created_at' => '2025-11-12 10:24:20',
+    'updated_at' => '2025-11-12 11:22:45',
+    'category_id' => 12,
+    'position' => 'top',
+  ),
+  10 => 
+  array (
+    'id' => 13,
+    'title' => 'Dedicated Support',
+    'description' => '<p>Our team is always available to address your concerns, providing quick and effective solution to keep your business.</p>',
+    'alt' => 'Dedicated Support Image',
+    'image' => 'upload/offer/KtWtGtV7qX6XrYiYvU7hYKdQU1K1pK399vIqlmvd.png',
+    'icon' => NULL,
+    'deleted_at' => NULL,
+    'created_at' => '2025-11-12 10:25:14',
+    'updated_at' => '2025-11-12 11:23:45',
+    'category_id' => 12,
+    'position' => 'top',
+  ),
+  11 => 
+  array (
+    'id' => 14,
+    'title' => 'Our Mission',
+    'description' => '<p>Our mission is empower businesses through innovate best&nbsp;solution, exceptional service.</p>
+
+<ul>
+	<li>Innovation &amp; Excellence</li>
+	<li>Exceptional Customer</li>
+	<li>Business Growth</li>
+</ul>',
+    'alt' => 'our mission',
+    'image' => 'upload/offer/pkEZOds7AXbARy1ngYDqFbOBEOO3A5XpfMb1hqxU.jpg',
+    'icon' => NULL,
+    'deleted_at' => NULL,
+    'created_at' => '2025-11-13 06:08:38',
+    'updated_at' => '2025-11-13 06:20:27',
+    'category_id' => 12,
+    'position' => 'bottom',
+  ),
+  12 => 
+  array (
+    'id' => 15,
+    'title' => 'Our Vision',
+    'description' => '<p>Our vision is to become a global leader in providing transformative business solutions.</p>
+
+<ul>
+	<li>Global Leadership</li>
+	<li>Transformative Impact</li>
+	<li>Sustainable Success</li>
+</ul>',
+    'alt' => 'Our Vision',
+    'image' => 'upload/offer/2e8G2aiwsa6JHfWxMasBLeot4qqbf4JWrcmHaYNb.jpg',
+    'icon' => NULL,
+    'deleted_at' => NULL,
+    'created_at' => '2025-11-13 06:16:39',
+    'updated_at' => '2025-11-13 06:18:32',
+    'category_id' => 12,
+    'position' => 'bottom',
   ),
 );
         DB::table('cd_offers')->insert($data);

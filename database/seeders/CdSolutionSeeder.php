@@ -17,12 +17,13 @@ class CdSolutionSeeder extends Seeder
     'type' => 'Project',
     'alt' => 'system hardware',
     'image' => 'upload/project/VmjT3fB2AXnYcMGKkQPAeyMCs1Vgeub9x6MCqn8w.jpg',
-    'title' => 'Empower Your Future with Emerging Technologies',
     'description' => '<p>Our Digital Transformation services empower organizations of all sizes to adapt to modern, AI-driven, and cloud-based solutions that enhance efficiency and productivity.</p>',
     'category_id' => 7,
     'deleted_at' => NULL,
     'created_at' => '2023-11-22 11:49:20',
     'updated_at' => '2025-06-03 12:19:55',
+    'title' => 'Empower Your Future with Emerging Technologies',
+    'slug' => NULL,
   ),
   1 => 
   array (
@@ -30,12 +31,13 @@ class CdSolutionSeeder extends Seeder
     'type' => 'Project',
     'alt' => 'Aligning Technology with Your Vision',
     'image' => 'upload/project/tvv9hG1nXKs0Pr44DLS1yKRZRNbZzjGUKI1FG3zo.jpg',
-    'title' => 'Aligning Technology with Your Vision',
     'description' => '<p>Our IT strategy and solutions services help organizations harness technology to achieve their goals. From digital transformation roadmaps to tailored software and infrastructure solutions, we work closely with you to design, implement, and manage IT systems that drive efficiency, innovation, and long-term value.</p>',
     'category_id' => 8,
     'deleted_at' => NULL,
     'created_at' => '2023-11-22 11:51:07',
     'updated_at' => '2025-06-03 12:42:52',
+    'title' => 'Aligning Technology with Your Vision',
+    'slug' => NULL,
   ),
   2 => 
   array (
@@ -43,12 +45,13 @@ class CdSolutionSeeder extends Seeder
     'type' => 'Project',
     'alt' => 'network infrastructure (act)',
     'image' => 'upload/project/5lRhEllIbLawB0aWaFLArNoDnBhUxLFcr6KeZAkH.jpg',
-    'title' => 'Design with Confidence',
     'description' => '<p>Our Product Design Assurance Services ensure solutions meet the highest quality standards, guiding organizations from concept validation to deployment with expert precision.</p>',
     'category_id' => 9,
     'deleted_at' => NULL,
     'created_at' => '2023-11-22 11:56:25',
     'updated_at' => '2025-06-03 12:44:45',
+    'title' => 'Design with Confidence',
+    'slug' => NULL,
   ),
   3 => 
   array (
@@ -56,12 +59,13 @@ class CdSolutionSeeder extends Seeder
     'type' => 'Project',
     'alt' => 'network infrastructure (psv)',
     'image' => 'upload/project/X0FQ22lc0su68agID3AjauCfZB6mutW57SqZdmB2.jpg',
-    'title' => 'Software Built for You',
     'description' => '<p>Our Software Solution Development services deliver custom applications tailored to your business, using modern technologies, and technical expertise for scalable, secure, and high-performance solutions.</p>',
     'category_id' => 10,
     'deleted_at' => NULL,
     'created_at' => '2023-11-22 11:58:07',
     'updated_at' => '2025-06-03 12:47:57',
+    'title' => 'Software Built for You',
+    'slug' => NULL,
   ),
   4 => 
   array (
@@ -69,12 +73,13 @@ class CdSolutionSeeder extends Seeder
     'type' => 'Project',
     'alt' => 'power solution',
     'image' => 'upload/project/Xn0LAAUOZJ3os6Htr9JVNbB6SJVi37K53jcHXPi0.jpg',
-    'title' => 'Protect Your Digital Frontier',
     'description' => '<p>Our Software Solution Development services provide end-to-end custom applications, leveraging modern technologies, and technical expertise for scalable, secure, and high-performance solutions.</p>',
     'category_id' => 11,
     'deleted_at' => NULL,
     'created_at' => '2023-11-22 12:02:29',
     'updated_at' => '2025-06-03 12:51:24',
+    'title' => 'Protect Your Digital Frontier',
+    'slug' => NULL,
   ),
   5 => 
   array (
@@ -82,12 +87,13 @@ class CdSolutionSeeder extends Seeder
     'type' => 'Project',
     'alt' => 'Real-Time Awareness for a Resilient Water Future',
     'image' => 'upload/project/VclZ0ZsOPeRV559iepiMUKqpikz8Os1sENh8OT6K.jpg',
-    'title' => 'Real-Time Awareness for a Resilient Water Future',
     'description' => '<p>Our hydrological monitoring solutions provide accurate, real-time insights into water levels, flow, and quality. Designed to support effective decision-making, we help governments, researchers, and communities manage water resources responsibly &mdash; ensuring resilience against floods, droughts, and environmental change.</p>',
     'category_id' => 15,
     'deleted_at' => NULL,
     'created_at' => '2023-11-22 12:04:31',
     'updated_at' => '2025-06-03 12:57:42',
+    'title' => 'Real-Time Awareness for a Resilient Water Future',
+    'slug' => NULL,
   ),
   6 => 
   array (
@@ -95,12 +101,13 @@ class CdSolutionSeeder extends Seeder
     'type' => 'Project',
     'alt' => 'Reliable Monitoring for Weather-Smart Decisions',
     'image' => 'upload/project/O6sKSNw1wnN6HS5xC868YRltpPPlmONa9dSeEBCO.jpg',
-    'title' => 'Stay Ahead of the Weather.',
     'description' => '<p>Our weather monitoring systems deliver timely, precise data on temperature, humidity, wind, and atmospheric conditions. Whether for agriculture, disaster preparedness, or research, our solutions enable informed planning and rapid response &mdash; helping you stay ahead of changing weather patterns and climate risks.</p>',
     'category_id' => 16,
     'deleted_at' => NULL,
     'created_at' => '2023-11-22 12:06:12',
     'updated_at' => '2025-06-03 12:59:16',
+    'title' => 'Stay Ahead of the Weather.',
+    'slug' => NULL,
   ),
   7 => 
   array (
@@ -108,12 +115,13 @@ class CdSolutionSeeder extends Seeder
     'type' => 'Project',
     'alt' => 'Clear Insights for a Healthier Environment',
     'image' => 'upload/project/ynMw6NAq8kRs8invgyRgI2aKvXLSZ2bgcQF98ngQ.png',
-    'title' => 'Preserve Ecosystems Through Clear Insight',
     'description' => '<p>Our environmental monitoring solutions track air, water, and soil conditions to provide a comprehensive view of ecosystem health. Supporting sustainability, compliance, and research, our systems empower stakeholders to detect changes early, make informed decisions, and protect natural resources for future generations.</p>',
     'category_id' => 17,
     'deleted_at' => NULL,
     'created_at' => '2023-11-22 12:07:48',
     'updated_at' => '2025-06-03 13:00:31',
+    'title' => 'Preserve Ecosystems Through Clear Insight',
+    'slug' => NULL,
   ),
   8 => 
   array (
@@ -121,12 +129,13 @@ class CdSolutionSeeder extends Seeder
     'type' => 'Project',
     'alt' => 'Expert Guidance for Smarter Hydromet Solutionsasset management system',
     'image' => 'upload/project/ishGTUGlf1NdPcJxM5vpkiyLnmz5ZbtZFiwd6Pcp.png',
-    'title' => 'Expert Guidance for Hydromet Solutions',
     'description' => '<p>Our technical consulting services bring deep expertise in hydrological and meteorological systems, helping you design, implement, and optimize monitoring networks with confidence. From site selection and system integration to data interpretation and capacity building, we provide end-to-end support tailored to your operational and environmental goals.</p>',
     'category_id' => 18,
     'deleted_at' => NULL,
     'created_at' => '2023-11-22 12:09:05',
     'updated_at' => '2025-06-03 13:01:29',
+    'title' => 'Expert Guidance for Hydromet Solutions',
+    'slug' => NULL,
   ),
   9 => 
   array (
@@ -134,12 +143,13 @@ class CdSolutionSeeder extends Seeder
     'type' => 'Project',
     'alt' => 'Robust Infrastructure for Seamless Connectivity',
     'image' => 'upload/project/3CzsATnj3yBAH68YbocbX6mhHmNCZP6ma4VQfVvO.jpg',
-    'title' => 'Build Robust Infrastructure with Seamless Connectivity',
     'description' => '<p>We deliver reliable hardware and networking solutions that form the backbone of efficient digital operations. From system design and equipment deployment to network configuration and ongoing support, our services ensure secure, scalable, and high-performance connectivity tailored to your organization&rsquo;s needs.</p>',
     'category_id' => 19,
     'deleted_at' => NULL,
     'created_at' => '2023-11-22 12:11:10',
     'updated_at' => '2025-06-03 12:55:49',
+    'title' => 'Build Robust Infrastructure with Seamless Connectivity',
+    'slug' => NULL,
   ),
   10 => 
   array (
@@ -147,12 +157,13 @@ class CdSolutionSeeder extends Seeder
     'type' => 'Project',
     'alt' => 'Advancing Innovation in Life Sciences',
     'image' => 'upload/project/Fo6YZstEIlUZsLJDHYwGtyB02gUNAiCcV6IaiSpc.png',
-    'title' => 'Accelerating Biotech Innovations',
     'description' => '<p>Our biotech development services support research, product development, and technology integration across the life sciences sector. From lab-scale innovation to field-ready solutions, we provide expert guidance, precision tools, and scalable systems to accelerate breakthroughs in healthcare, agriculture, and environmental biotechnology.</p>',
     'category_id' => 28,
     'deleted_at' => NULL,
     'created_at' => '2023-11-22 12:26:28',
     'updated_at' => '2025-06-03 13:03:48',
+    'title' => 'Accelerating Biotech Innovations',
+    'slug' => NULL,
   ),
   11 => 
   array (
@@ -160,12 +171,13 @@ class CdSolutionSeeder extends Seeder
     'type' => 'Project',
     'alt' => 'Innovative Solutions for Health and Life Sciences',
     'image' => 'upload/project/6VXjkc8evEalnHSLgCcVcXGzGe9zdq4iBKdXOriI.png',
-    'title' => 'Innovations for Health & Life Sciences',
     'description' => '<p>We offer integrated biotech and medical technology solutions designed to advance diagnostics, treatment, and research. By combining scientific expertise with cutting-edge tools, our services support healthcare providers, laboratories, and researchers in delivering smarter, faster, and more effective outcomes in human and environmental health.</p>',
     'category_id' => 29,
     'deleted_at' => NULL,
     'created_at' => '2023-11-22 12:27:30',
     'updated_at' => '2025-06-03 13:06:46',
+    'title' => 'Innovations for Health & Life Sciences',
+    'slug' => NULL,
   ),
   12 => 
   array (
@@ -173,12 +185,13 @@ class CdSolutionSeeder extends Seeder
     'type' => 'Project',
     'alt' => 'Expert Support for Breakthrough Biotech Solutions',
     'image' => 'upload/project/9v6Elfic2devTPOtpHsowOo6u8t93eAO335HUJdy.png',
-    'title' => 'Expert Support for Biotech Breakthroughs',
     'description' => '<p>Our biotech technical consulting services provide specialized guidance across research, development, and deployment of biotechnology applications. Whether you&#39;re advancing medical diagnostics, agricultural innovation, or environmental solutions, we help you navigate complex challenges with strategic insight, technical expertise, and regulatory understanding to accelerate success.</p>',
     'category_id' => 30,
     'deleted_at' => NULL,
     'created_at' => '2023-11-22 12:28:19',
     'updated_at' => '2025-06-03 14:09:06',
+    'title' => 'Expert Support for Biotech Breakthroughs',
+    'slug' => NULL,
   ),
   13 => 
   array (
@@ -186,12 +199,13 @@ class CdSolutionSeeder extends Seeder
     'type' => 'Project',
     'alt' => 'Powering a Sustainable Future with Solar',
     'image' => 'upload/project/M8kwVleTs0PtVPoZY3sWESdYoZYnacUr8uTbjD7O.png',
-    'title' => 'Harness Solar Power for a Sustainable Future',
     'description' => '<p>Our solar energy solutions are designed to deliver clean, efficient, and reliable power for a wide range of applications. From residential and commercial systems to off-grid and industrial installations, we provide end-to-end services including design, installation, and maintenance &mdash; helping you reduce energy costs and environmental impact.</p>',
     'category_id' => 34,
     'deleted_at' => NULL,
     'created_at' => '2023-11-22 12:32:47',
     'updated_at' => '2025-06-03 14:15:30',
+    'title' => 'Harness Solar Power for a Sustainable Future',
+    'slug' => NULL,
   ),
   14 => 
   array (
@@ -199,12 +213,13 @@ class CdSolutionSeeder extends Seeder
     'type' => 'Project',
     'alt' => 'Clean Power for a Greener Tomorrow',
     'image' => 'upload/project/L6UVWUulHIaE0zbCGX8rAXNOFOnd92o0uADkjFX3.jpg',
-    'title' => 'Clean Power for a Greener Tomorrow.',
     'description' => '<p>Our green energy solutions encompass a range of sustainable technologies including solar, wind, and hybrid systems. We help communities, businesses, and institutions transition to renewable energy through customized design, seamless integration, and ongoing support &mdash; reducing carbon footprints and building energy resilience for the future.</p>',
     'category_id' => 35,
     'deleted_at' => NULL,
     'created_at' => '2023-11-22 12:33:35',
     'updated_at' => '2025-06-03 14:17:24',
+    'title' => 'Clean Power for a Greener Tomorrow.',
+    'slug' => NULL,
   ),
   15 => 
   array (
@@ -212,12 +227,13 @@ class CdSolutionSeeder extends Seeder
     'type' => 'Project',
     'alt' => 'Harnessing Nature for Reliable, Renewable Power',
     'image' => 'upload/project/cCeelGmG2dOf4kGBwVJ5ZydjpkVPpWWDTZlqAoGM.png',
-    'title' => 'Reliable, Renewable Energy by Harnessing Nature',
     'description' => '<p>Our wind and hybrid energy systems combine the strengths of wind, solar, and backup technologies to deliver consistent and efficient energy solutions. Designed for diverse environments and energy demands, we offer end-to-end services from system design to deployment &mdash; empowering sustainable growth with resilient, low-carbon power.</p>',
     'category_id' => 36,
     'deleted_at' => NULL,
     'created_at' => '2023-11-22 12:35:47',
     'updated_at' => '2025-06-03 14:19:18',
+    'title' => 'Reliable, Renewable Energy by Harnessing Nature',
+    'slug' => NULL,
   ),
   16 => 
   array (
@@ -225,12 +241,13 @@ class CdSolutionSeeder extends Seeder
     'type' => 'Project',
     'alt' => 'Streamlining Mineral Extraction with Intelligent Automation',
     'image' => 'upload/project/UEuRG4aoNQ4197ybxBw3bWyWWm8s2LcFKLoIhP27.jpg',
-    'title' => 'Smarter Mining, Safer Operations',
     'description' => '<p>Our mineral extraction automation solutions enhance efficiency, safety, and precision across mining operations. By integrating advanced control systems and real-time monitoring, we help optimize resource recovery, reduce downtime, and minimize environmental impact &mdash; driving smarter, more sustainable mining practices.</p>',
     'category_id' => 39,
     'deleted_at' => NULL,
     'created_at' => '2023-11-22 12:38:52',
     'updated_at' => '2025-06-03 14:20:25',
+    'title' => 'Smarter Mining, Safer Operations',
+    'slug' => NULL,
   ),
   17 => 
   array (
@@ -238,12 +255,13 @@ class CdSolutionSeeder extends Seeder
     'type' => 'Project',
     'alt' => 'Optimizing Mining Operations for Maximum Efficiency',
     'image' => 'upload/project/VZEg38jgCk08OIq6tZHeqfC7cj7cdGJlebDQCxrQ.jpg',
-    'title' => 'Optimize Mining Operations with Intelligent Management',
     'description' => '<p>Our mining management systems provide comprehensive tools for planning, monitoring, and controlling all aspects of mining operations. From resource allocation to equipment tracking and safety management, our solutions enable data-driven decisions that boost productivity, enhance safety, and ensure regulatory compliance throughout the mining lifecycle.</p>',
     'category_id' => 40,
     'deleted_at' => NULL,
     'created_at' => '2023-11-22 12:39:36',
     'updated_at' => '2025-06-03 14:22:09',
+    'title' => 'Optimize Mining Operations with Intelligent Management',
+    'slug' => NULL,
   ),
   18 => 
   array (
@@ -251,12 +269,13 @@ class CdSolutionSeeder extends Seeder
     'type' => 'Project',
     'alt' => 'Secure Spaces with Smart Surveillance and Access Control',
     'image' => 'upload/project/M6L3nOifEBohFbtoPfDbmGjrcSx8RXcBX2ZeyTXy.png',
-    'title' => 'Security Solutions for Your Physical Space',
     'description' => '<p>Our CCTV, surveillance, and access control solutions provide robust security for your facilities and assets. Combining high-definition monitoring with advanced access management, we help you prevent unauthorized entry, monitor activity in real time, and respond quickly to potential threats &mdash; ensuring safety and peace of mind.</p>',
     'category_id' => 49,
     'deleted_at' => NULL,
     'created_at' => '2023-11-22 12:47:09',
     'updated_at' => '2025-06-03 14:10:43',
+    'title' => 'Security Solutions for Your Physical Space',
+    'slug' => NULL,
   ),
   19 => 
   array (
@@ -264,12 +283,13 @@ class CdSolutionSeeder extends Seeder
     'type' => 'Project',
     'alt' => 'Intelligent Protection for People, Property, and Assets',
     'image' => 'upload/project/IPWFsR39CNS4h6ozMjkMuIMTUUxUVdFhCqmNPfZr.png',
-    'title' => 'Intelligent Protection for People, Property and Assets.',
     'description' => '<p>Our smart security solutions integrate surveillance, access control, and real-time alert systems to create a proactive approach to safety. Designed for homes, businesses, and critical infrastructure, our customizable systems offer seamless monitoring, quick response capabilities, and centralized control &mdash; ensuring reliable protection around the clock.</p>',
     'category_id' => 50,
     'deleted_at' => NULL,
     'created_at' => '2023-11-22 12:49:04',
     'updated_at' => '2025-06-03 14:13:16',
+    'title' => 'Intelligent Protection for People, Property and Assets.',
+    'slug' => NULL,
   ),
   20 => 
   array (
@@ -277,12 +297,13 @@ class CdSolutionSeeder extends Seeder
     'type' => 'Project',
     'alt' => 'Enterprise Automation & Business Intelligence',
     'image' => 'upload/project/qDxQtNl8hudlxih7oiJPLCCSVYyz9CcxCeaM3P6B.jpg',
-    'title' => 'Enterprise Automation & Business Intelligence',
     'description' => '<p>Unlock your organization&#39;s potential with intelligent automation and insightful analytics that drive smarter decisions and measurable results.</p>',
     'category_id' => 7,
     'deleted_at' => NULL,
     'created_at' => '2025-05-19 12:15:45',
     'updated_at' => '2025-06-03 12:21:27',
+    'title' => 'Enterprise Automation & Business Intelligence',
+    'slug' => NULL,
   ),
   21 => 
   array (
@@ -290,12 +311,13 @@ class CdSolutionSeeder extends Seeder
     'type' => 'Project',
     'alt' => 'IT Modernization',
     'image' => 'upload/project/VpN9dSBd1i16zuxTzx39IJKF90SJMK8MGRI8AGNy.jpg',
-    'title' => 'IT Modernization',
     'description' => '<p>Revamp your IT landscape with future-ready solutions that enhance agility, streamline operations, and harness the power of AI and cloud.</p>',
     'category_id' => 7,
     'deleted_at' => NULL,
     'created_at' => '2025-05-19 12:16:09',
     'updated_at' => '2025-06-03 12:22:01',
+    'title' => 'IT Modernization',
+    'slug' => NULL,
   ),
   22 => 
   array (
@@ -303,12 +325,13 @@ class CdSolutionSeeder extends Seeder
     'type' => 'Project',
     'alt' => 'Smart Digital Devices & Systems',
     'image' => 'upload/project/bCGJRL9Wc0kOdnrcSyS1x0CaNnMHAc4yS40Zx8bq.jpg',
-    'title' => 'Smart Digital Devices & Systems',
     'description' => '<p>Transform your operations by integrating intelligent systems that boost productivity and enable real-time innovation. Our solutions leverage AI and cloud technology for enhanced efficiency across your operations.</p>',
     'category_id' => 7,
     'deleted_at' => NULL,
     'created_at' => '2025-05-19 12:16:54',
     'updated_at' => '2025-06-03 12:22:23',
+    'title' => 'Smart Digital Devices & Systems',
+    'slug' => NULL,
   ),
   23 => 
   array (
@@ -316,12 +339,13 @@ class CdSolutionSeeder extends Seeder
     'type' => 'Project',
     'alt' => 'Technical Consulting Services',
     'image' => 'upload/project/OsOv5rUK4zSBm138GFtsANtUqXZr0su5fhfy1iVY.png',
-    'title' => 'Product Ideation Services',
     'description' => '<p>Helping businesses conceptualize and refine innovative digital products.</p>',
     'category_id' => 18,
     'deleted_at' => '2025-05-26 12:09:21',
     'created_at' => '2025-05-26 10:56:08',
     'updated_at' => '2025-05-26 12:09:21',
+    'title' => 'Product Ideation Services',
+    'slug' => NULL,
   ),
   24 => 
   array (
@@ -329,12 +353,13 @@ class CdSolutionSeeder extends Seeder
     'type' => 'Project',
     'alt' => 'Product Ideation Services',
     'image' => 'upload/project/YjGAfJAZBWVGr9OranXkciyliGECthRaV1C9se7p.png',
-    'title' => 'Product Ideation Services',
     'description' => '<p>Bring your ideas to life with expert support that turns bold concepts into impactful digital products. We help businesses conceptualize and refine groundbreaking digital products from the ground up.</p>',
     'category_id' => 8,
     'deleted_at' => NULL,
     'created_at' => '2025-05-26 12:13:20',
     'updated_at' => '2025-06-03 12:43:25',
+    'title' => 'Product Ideation Services',
+    'slug' => NULL,
   ),
   25 => 
   array (
@@ -342,12 +367,13 @@ class CdSolutionSeeder extends Seeder
     'type' => 'Project',
     'alt' => 'Requirements Discovery & Scoping Services',
     'image' => 'upload/project/929pfFKvi6GQSCw15q6AcAhEwpJe5uRPUmkY33aY.png',
-    'title' => 'Requirements Discovery & Scoping Services',
     'description' => '<p>Lay a strong foundation for success with clear, actionable project blueprints tailored to your unique goals. We accurately outline technical and functional specifications, ensuring a solid foundation for development.</p>',
     'category_id' => 8,
     'deleted_at' => NULL,
     'created_at' => '2025-05-26 12:17:38',
     'updated_at' => '2025-06-03 12:43:44',
+    'title' => 'Requirements Discovery & Scoping Services',
+    'slug' => NULL,
   ),
   26 => 
   array (
@@ -355,12 +381,13 @@ class CdSolutionSeeder extends Seeder
     'type' => 'Project',
     'alt' => 'MVP Development',
     'image' => 'upload/project/y8ByBsCGq96tylrmDyKrB8bAuwQc059AlhE7M1Bs.png',
-    'title' => 'MVP Development',
     'description' => '<p>Launch faster and smarter with rapid MVPs that validate your vision and capture real market feedback early. We quickly develop Minimum Viable Products (MVPs) to ensure early market entry.</p>',
     'category_id' => 8,
     'deleted_at' => NULL,
     'created_at' => '2025-05-26 12:18:25',
     'updated_at' => '2025-06-03 12:44:05',
+    'title' => 'MVP Development',
+    'slug' => NULL,
   ),
   27 => 
   array (
@@ -368,12 +395,13 @@ class CdSolutionSeeder extends Seeder
     'type' => 'Project',
     'alt' => 'UI/UX Design',
     'image' => 'upload/project/V4WDxx48gMs8UsUHnLr2suwxPukcvO2FmmnimyZf.png',
-    'title' => 'UI/UX Design',
     'description' => '<p>Create seamless and delightful user experiences that are visually appealing to keep your audience engaged. We use human-centered design principles to craft engaging digital experiences that captivate your users.</p>',
     'category_id' => 9,
     'deleted_at' => NULL,
     'created_at' => '2025-05-26 12:25:17',
     'updated_at' => '2025-06-03 12:45:09',
+    'title' => 'UI/UX Design',
+    'slug' => NULL,
   ),
   28 => 
   array (
@@ -381,12 +409,13 @@ class CdSolutionSeeder extends Seeder
     'type' => 'Project',
     'alt' => 'Prototype Design and Development',
     'image' => 'upload/project/170VQMWiwLYuP2ogpbFqjiLyvVogK6W8l7okX9L2.png',
-    'title' => 'Prototype Design and Development',
     'description' => '<p>Visualize and refine your ideas to take shape quickly with interactive prototypes enabling you to test, iterate, and improve faster. We provide rapid wireframing and development to test concepts and perfect your product design.</p>',
     'category_id' => 9,
     'deleted_at' => NULL,
     'created_at' => '2025-05-26 12:26:04',
     'updated_at' => '2025-06-03 12:45:33',
+    'title' => 'Prototype Design and Development',
+    'slug' => NULL,
   ),
   29 => 
   array (
@@ -394,12 +423,13 @@ class CdSolutionSeeder extends Seeder
     'type' => 'Project',
     'alt' => 'Design Verification Services',
     'image' => 'upload/project/h7u4z2mN74HKBvcU5v3Dqa4sWpNGTjaGYyOudTts.png',
-    'title' => 'Design Verification Services',
     'description' => '<p>Ensure your digital products perform flawlessly and securely. We verify designs for optimal performance, robust security, and reliable scalability before deployment.</p>',
     'category_id' => 9,
     'deleted_at' => NULL,
     'created_at' => '2025-05-26 12:26:43',
     'updated_at' => '2025-06-03 12:46:14',
+    'title' => 'Design Verification Services',
+    'slug' => NULL,
   ),
   30 => 
   array (
@@ -407,12 +437,13 @@ class CdSolutionSeeder extends Seeder
     'type' => 'Project',
     'alt' => 'Bespoke Business Solutions',
     'image' => 'upload/project/k2XaCWHwsAoM7yUbu6cPk6PK9b6vS9gZzCFe5qMZ.png',
-    'title' => 'Bespoke Business Solutions',
     'description' => '<p>Get custom applications precisely tailored to your industry needs. We develop bespoke ERP, CRM, and enterprise solutions for enhanced business operations.</p>',
     'category_id' => 10,
     'deleted_at' => NULL,
     'created_at' => '2025-05-26 12:33:44',
     'updated_at' => '2025-06-03 12:48:25',
+    'title' => 'Bespoke Business Solutions',
+    'slug' => NULL,
   ),
   31 => 
   array (
@@ -420,12 +451,13 @@ class CdSolutionSeeder extends Seeder
     'type' => 'Project',
     'alt' => 'Web & Mobile Applications',
     'image' => 'upload/project/12aCvTklrXHddOpFfW6H7aXp8LhdqbASnmo07CRb.png',
-    'title' => 'Web & Mobile Applications',
     'description' => '<p>Reach your audience anywhere with secure, scalable, and feature-rich applications. We build powerful web and mobile apps for both businesses and consumers.</p>',
     'category_id' => 10,
     'deleted_at' => NULL,
     'created_at' => '2025-05-26 12:34:37',
     'updated_at' => '2025-06-03 12:48:52',
+    'title' => 'Web & Mobile Applications',
+    'slug' => NULL,
   ),
   32 => 
   array (
@@ -433,12 +465,13 @@ class CdSolutionSeeder extends Seeder
     'type' => 'Project',
     'alt' => 'Database Design & Development',
     'image' => 'upload/project/4WHeV8AsR5rOdc4sW0JurINzLtajpCeDG7v25VUK.png',
-    'title' => 'Database Design & Development',
     'description' => '<p>Build a robust foundation for your data with high-performance database architectures. Our services ensure data integrity and accessibility for critical business functions.</p>',
     'category_id' => 10,
     'deleted_at' => NULL,
     'created_at' => '2025-05-26 12:35:38',
     'updated_at' => '2025-06-03 12:49:14',
+    'title' => 'Database Design & Development',
+    'slug' => NULL,
   ),
   33 => 
   array (
@@ -446,12 +479,13 @@ class CdSolutionSeeder extends Seeder
     'type' => 'Project',
     'alt' => 'Analytics & Visualization',
     'image' => 'upload/project/wg9vHylqcrcqElIHasI9vg1KpXJQ6Ms4DRRLP7IA.png',
-    'title' => 'Analytics & Visualization',
     'description' => '<p>Make smarter decisions by transforming raw data into powerful insights for informed decisions. We provide data intelligence, dashboards, and business analytics solutions to guide your strategy.</p>',
     'category_id' => 10,
     'deleted_at' => NULL,
     'created_at' => '2025-05-26 12:36:29',
     'updated_at' => '2025-06-03 12:49:37',
+    'title' => 'Analytics & Visualization',
+    'slug' => NULL,
   ),
   34 => 
   array (
@@ -459,12 +493,13 @@ class CdSolutionSeeder extends Seeder
     'type' => 'Project',
     'alt' => 'Machine Learning & AI',
     'image' => 'upload/project/mwm3rKBTdgjrwIIu4SHTzugutVgmuWFdcFwFoy0s.png',
-    'title' => 'Machine Learning & AI',
     'description' => '<p>Empower your business with intelligent systems to enhance operations. We implement AI-driven applications and models to help you in unlock the hidden value and optimization of your business.</p>',
     'category_id' => 10,
     'deleted_at' => NULL,
     'created_at' => '2025-05-26 12:37:14',
     'updated_at' => '2025-06-03 12:49:56',
+    'title' => 'Machine Learning & AI',
+    'slug' => NULL,
   ),
   35 => 
   array (
@@ -472,12 +507,13 @@ class CdSolutionSeeder extends Seeder
     'type' => 'Project',
     'alt' => 'Data Protection & Privacy',
     'image' => 'upload/project/rhQ2zVZSdO2k39NJulHVrrEm2rsn40N71l0BCWDi.jpg',
-    'title' => 'Data Protection & Privacy',
     'description' => '<p>Secure your sensitive data with industry-leading privacy measures that ensure compliance and build trust. We provide data encryption, GDPR compliance, and robust security frameworks.</p>',
     'category_id' => 11,
     'deleted_at' => NULL,
     'created_at' => '2025-05-26 12:47:58',
     'updated_at' => '2025-06-03 12:53:24',
+    'title' => 'Data Protection & Privacy',
+    'slug' => NULL,
   ),
   36 => 
   array (
@@ -485,12 +521,13 @@ class CdSolutionSeeder extends Seeder
     'type' => 'Project',
     'alt' => 'Security Assessments',
     'image' => 'upload/project/ImIBHSLqGalhUoaaOqQPJfY4oDuvLDZsCd3NYQrN.jpg',
-    'title' => 'Security Assessments',
     'description' => '<p>Stay ahead of threats with comprehensive security evaluations of your digital products to uncover and fix vulnerabilities before they become risks. We conduct penetration testing, vulnerability scanning, and threat assessments for enhanced security.</p>',
     'category_id' => 11,
     'deleted_at' => NULL,
     'created_at' => '2025-05-26 12:48:35',
     'updated_at' => '2025-06-03 12:53:46',
+    'title' => 'Security Assessments',
+    'slug' => NULL,
   ),
   37 => 
   array (
@@ -498,12 +535,13 @@ class CdSolutionSeeder extends Seeder
     'type' => 'Project',
     'alt' => 'Telemetry Solutions and Services',
     'image' => 'upload/project/UfEr3Y0DPE5DZdH3TtUkHT61HjO14y7jZhJ5vFC5.png',
-    'title' => 'Telemetry Solutions and Services',
     'description' => '<p>Access critical water and climate data in real-time with smart telemetry systems built for remote and challenging environments. We offer remote monitoring and telemetry systems for collecting water and climate data.</p>',
     'category_id' => 15,
     'deleted_at' => NULL,
     'created_at' => '2025-05-26 13:05:37',
     'updated_at' => '2025-06-03 12:58:16',
+    'title' => 'Telemetry Solutions and Services',
+    'slug' => NULL,
   ),
   38 => 
   array (
@@ -511,12 +549,13 @@ class CdSolutionSeeder extends Seeder
     'type' => 'Project',
     'alt' => 'Water Resource Management Solutions',
     'image' => 'upload/project/0m7nrNSFAp4rH4bXXgbHh6Dre0Rw1Q1CiYl3uA7c.jpg',
-    'title' => 'Water Resource Management Solutions',
     'description' => '<p>Make informed water management decisions with accurate monitoring systems for flow, flood, and groundwater dynamics by having real-time insights. Our solutions include hydrological flow monitoring, flood warning systems, and groundwater analysis.</p>',
     'category_id' => 15,
     'deleted_at' => NULL,
     'created_at' => '2025-05-26 13:06:30',
     'updated_at' => '2025-06-03 12:58:36',
+    'title' => 'Water Resource Management Solutions',
+    'slug' => NULL,
   ),
   39 => 
   array (
@@ -524,12 +563,13 @@ class CdSolutionSeeder extends Seeder
     'type' => 'Project',
     'alt' => 'Weather & Climate Monitoring Systems',
     'image' => 'upload/project/NfsqWxEB0R0bEfBJSBv3iIOpsSUmfm9JMQmmd7X4.png',
-    'title' => 'Weather & Climate Monitoring Systems',
     'description' => '<p>Stay informed about changing conditions with precise weather data. We provide systems designed for accurate, dependable forecasting and planning for agrometeorological, solar, and oceanic monitoring.</p>',
     'category_id' => 16,
     'deleted_at' => NULL,
     'created_at' => '2025-05-26 13:13:28',
     'updated_at' => '2025-06-03 12:59:45',
+    'title' => 'Weather & Climate Monitoring Systems',
+    'slug' => NULL,
   ),
   40 => 
   array (
@@ -537,12 +577,13 @@ class CdSolutionSeeder extends Seeder
     'type' => 'Project',
     'alt' => 'Environmental Monitoring',
     'image' => 'upload/project/EiqAoujHzMLAxQ0rz98NRQpjS2clqguGovU2WWbe.jpg',
-    'title' => 'Environmental Monitoring',
     'description' => '<p>Track the health of ecosystems with reliable, high-precision monitoring for regulatory, research, and sustainability efforts. We assess air, soil, and water quality for both industrial and ecological applications.</p>',
     'category_id' => 17,
     'deleted_at' => NULL,
     'created_at' => '2025-05-26 13:21:25',
     'updated_at' => '2025-06-03 13:00:48',
+    'title' => 'Environmental Monitoring',
+    'slug' => NULL,
   ),
   41 => 
   array (
@@ -550,12 +591,13 @@ class CdSolutionSeeder extends Seeder
     'type' => 'Project',
     'alt' => 'Data Centre Solutions',
     'image' => 'upload/project/m1FYOA7M6SbDneAVLcRlVjPF6XLdevE7GmOiaS6R.png',
-    'title' => 'Data Centre Solutions',
     'description' => '<p>Build a reliable, scalable IT backbone with modern data centre solutions designed for today&rsquo;s dynamic business needs. We provide flexible data centre solutions including cloud, on-premise, and hybrid setups.</p>',
     'category_id' => 19,
     'deleted_at' => NULL,
     'created_at' => '2025-05-26 14:25:25',
     'updated_at' => '2025-06-03 12:56:18',
+    'title' => 'Data Centre Solutions',
+    'slug' => NULL,
   ),
   42 => 
   array (
@@ -563,12 +605,13 @@ class CdSolutionSeeder extends Seeder
     'type' => 'Project',
     'alt' => 'Networks & Connectivity Solutions',
     'image' => 'upload/project/jVVlmRL1sljXCri3QdBIFMvCeeyatf4qL9utTtUd.jpg',
-    'title' => 'Networks & Connectivity Solutions',
     'description' => '<p>Keep your teams connected with high-speed, secure, and seamless networking solutions across your enterprise. We deliver enterprise-grade wired and wireless networking solutions for efficient business operations.</p>',
     'category_id' => 19,
     'deleted_at' => NULL,
     'created_at' => '2025-05-26 14:26:37',
     'updated_at' => '2025-06-03 12:56:54',
+    'title' => 'Networks & Connectivity Solutions',
+    'slug' => NULL,
   ),
   43 => 
   array (
@@ -576,12 +619,13 @@ class CdSolutionSeeder extends Seeder
     'type' => 'Project',
     'alt' => 'Technical Studies & Consulting',
     'image' => 'upload/project/s42fa1PjI7Gyo5IWyEUmrPwEJqkLdIOGTQdTlLsT.png',
-    'title' => 'Technical Studies & Consulting',
     'description' => '<p>Get expert insight and strategic direction for water and climate initiatives that demand precision and foresight. Benefit from. We provide technical studies, feasibility assessments, risk evaluations and expert guidance for your water and climate initiatives.</p>',
     'category_id' => 18,
     'deleted_at' => NULL,
     'created_at' => '2025-05-26 14:29:53',
     'updated_at' => '2025-06-03 13:03:04',
+    'title' => 'Technical Studies & Consulting',
+    'slug' => NULL,
   ),
   44 => 
   array (
@@ -589,12 +633,13 @@ class CdSolutionSeeder extends Seeder
     'type' => 'Project',
     'alt' => 'Strain Development',
     'image' => 'upload/project/k05YQ2rFBQRFkhZI0ocZzoPNzqCLEMJqGEpEXCzx.png',
-    'title' => 'Strain Development',
     'description' => '<p>Unlock new possibilities in biotech with advanced genetic engineering. We specialize in strain development and optimization for diverse biotechnology applications.</p>',
     'category_id' => 28,
     'deleted_at' => NULL,
     'created_at' => '2025-05-26 14:50:49',
     'updated_at' => '2025-06-03 13:04:07',
+    'title' => 'Strain Development',
+    'slug' => NULL,
   ),
   45 => 
   array (
@@ -602,12 +647,13 @@ class CdSolutionSeeder extends Seeder
     'type' => 'Project',
     'alt' => 'DSP Development',
     'image' => 'upload/project/K5vxTT6UaeFiYq5eTXMVoVOuYFhoDmFsqTndPxll.png',
-    'title' => 'DSP Development',
     'description' => '<p>Achieve enhanced product purification and recovery with optimized downstream processing. Our DSP solutions streamline the extraction and refining of valuable biotech products.</p>',
     'category_id' => 28,
     'deleted_at' => NULL,
     'created_at' => '2025-05-26 14:51:58',
     'updated_at' => '2025-06-03 13:04:35',
+    'title' => 'DSP Development',
+    'slug' => NULL,
   ),
   46 => 
   array (
@@ -615,12 +661,13 @@ class CdSolutionSeeder extends Seeder
     'type' => 'Project',
     'alt' => 'Fermentation Process Development',
     'image' => 'upload/project/XunhwTBYeny1xwJCfGuOql9Xlw5N3GmupBG9gwBO.png',
-    'title' => 'Fermentation Process Development',
     'description' => '<p>Maximize efficiency and yield in industrial fermentation. We optimize fermentation processes for pharmaceuticals, food production, and other biotech applications.</p>',
     'category_id' => 28,
     'deleted_at' => NULL,
     'created_at' => '2025-05-26 14:52:42',
     'updated_at' => '2025-06-03 13:04:53',
+    'title' => 'Fermentation Process Development',
+    'slug' => NULL,
   ),
   47 => 
   array (
@@ -628,12 +675,13 @@ class CdSolutionSeeder extends Seeder
     'type' => 'Project',
     'alt' => 'Biotechnology Manufacturing Solutions',
     'image' => 'upload/project/FTXS7RsqWR6sXxSMQvCuhP9mUvYtAhku9Hq7hT7V.png',
-    'title' => 'Biotechnology Manufacturing Solutions',
     'description' => '<p>Scale up your biotech innovations from lab to market. We provide solutions for the commercialization and large-scale manufacturing of biotech products.</p>',
     'category_id' => 28,
     'deleted_at' => NULL,
     'created_at' => '2025-05-26 14:53:57',
     'updated_at' => '2025-06-03 13:05:12',
+    'title' => 'Biotechnology Manufacturing Solutions',
+    'slug' => NULL,
   ),
   48 => 
   array (
@@ -641,12 +689,13 @@ class CdSolutionSeeder extends Seeder
     'type' => 'Project',
     'alt' => 'Products Development Services',
     'image' => 'upload/project/nLJ0WYPE8UNqfq9OSiatiLdwEqzLtzxNhvzWFh7U.png',
-    'title' => 'Products Development Services',
     'description' => '<p>Accelerate your journey from concept to commercialization with end-to-end support for biotech product development. We support biotech firms from R&amp;D through commercialization, ensuring innovation readiness.</p>',
     'category_id' => 28,
     'deleted_at' => NULL,
     'created_at' => '2025-05-26 14:54:53',
     'updated_at' => '2025-06-03 13:05:32',
+    'title' => 'Products Development Services',
+    'slug' => NULL,
   ),
   49 => 
   array (
@@ -654,12 +703,13 @@ class CdSolutionSeeder extends Seeder
     'type' => 'Project',
     'alt' => 'Biotech Equipment, Instruments & Accessories',
     'image' => 'upload/project/N8qjkMCFeu4OZHIoxK6Od2tn6m6tODBZMgrnaGM0.png',
-    'title' => 'Biotech Equipment, Instruments & Accessories',
     'description' => '<p>Equip your lab for discovery with high-quality tools that support cutting-edge research and development. We supply a range of biotech equipment, instruments, and accessories.</p>',
     'category_id' => 29,
     'deleted_at' => NULL,
     'created_at' => '2025-05-26 15:06:09',
     'updated_at' => '2025-06-03 13:07:09',
+    'title' => 'Biotech Equipment, Instruments & Accessories',
+    'slug' => NULL,
   ),
   50 => 
   array (
@@ -667,12 +717,13 @@ class CdSolutionSeeder extends Seeder
     'type' => 'Project',
     'alt' => 'Medical Research Technologies & Systems',
     'image' => 'upload/project/fpzcE36y4VdIRAmacF67vUhE0mDS5F05ioAF7sm5.png',
-    'title' => 'Medical Research Technologies & Systems',
     'description' => '<p>Empower your clinical research with advanced cutting-edge technology to meet the demands of modern medicine We provide specialized equipment and solutions designed for medical research.</p>',
     'category_id' => 29,
     'deleted_at' => NULL,
     'created_at' => '2025-05-26 15:08:09',
     'updated_at' => '2025-06-03 13:07:31',
+    'title' => 'Medical Research Technologies & Systems',
+    'slug' => NULL,
   ),
   51 => 
   array (
@@ -680,12 +731,13 @@ class CdSolutionSeeder extends Seeder
     'type' => 'Project',
     'alt' => 'Technical Studies & Commercialization Services',
     'image' => 'upload/project/3MGc8bilGGecgvprM0qEJemUAkcO71d4vCvlj73y.png',
-    'title' => 'Technical Studies & Commercialization Services',
     'description' => '<p>Get expert support to bring your biotech innovations to market successfully. We assist biotech firms with technical studies, technical guidance and commercialization strategies to ensure market readiness and business success.</p>',
     'category_id' => 30,
     'deleted_at' => NULL,
     'created_at' => '2025-05-26 15:14:02',
     'updated_at' => '2025-06-03 14:09:35',
+    'title' => 'Technical Studies & Commercialization Services',
+    'slug' => NULL,
   ),
   52 => 
   array (
@@ -693,12 +745,13 @@ class CdSolutionSeeder extends Seeder
     'type' => 'Project',
     'alt' => 'On-grid and off-grid solar solutions',
     'image' => 'upload/project/0v4QmDuCq7uVAdjzZP3quyKQVobrFMgvcBcvTXFt.png',
-    'title' => 'On-grid and off-grid solar solutions',
     'description' => '<p>Power your future sustainably with solar solutions tailored for homes, businesses, and remote locations. We offer comprehensive on-grid and off-grid solar solutions for residential and commercial applications.</p>',
     'category_id' => 34,
     'deleted_at' => NULL,
     'created_at' => '2025-05-26 15:20:59',
     'updated_at' => '2025-06-03 14:16:44',
+    'title' => 'On-grid and off-grid solar solutions',
+    'slug' => NULL,
   ),
   53 => 
   array (
@@ -706,12 +759,13 @@ class CdSolutionSeeder extends Seeder
     'type' => 'Project',
     'alt' => 'Smart Energy Storage Systems',
     'image' => 'upload/project/mhA4ClDB6GPjgoD82p9drCvFzhnOBe8JYpeAfPLI.png',
-    'title' => 'Smart Energy Storage Systems',
     'description' => '<p>Ensure uninterrupted power supply with advanced energy storage. We provide smart battery storage and grid-independent solutions for reliable energy resilience and efficiency.</p>',
     'category_id' => 35,
     'deleted_at' => NULL,
     'created_at' => '2025-05-26 15:30:51',
     'updated_at' => '2025-06-03 14:17:45',
+    'title' => 'Smart Energy Storage Systems',
+    'slug' => NULL,
   ),
   54 => 
   array (
@@ -719,12 +773,13 @@ class CdSolutionSeeder extends Seeder
     'type' => 'Project',
     'alt' => 'Water Pumping Solutions',
     'image' => 'upload/project/GsTw5MH0uBlfgCvsz2wSziOfllKBalSTCUx6felo.jpg',
-    'title' => 'Water Pumping Solutions',
     'description' => '<p>Achieve efficient water management even in remote areas. We offer solar-powered and hybrid water pumping systems.</p>',
     'category_id' => 35,
     'deleted_at' => NULL,
     'created_at' => '2025-05-26 15:32:36',
     'updated_at' => '2025-06-03 14:18:03',
+    'title' => 'Water Pumping Solutions',
+    'slug' => NULL,
   ),
   55 => 
   array (
@@ -732,12 +787,13 @@ class CdSolutionSeeder extends Seeder
     'type' => 'Project',
     'alt' => 'Agricultural Irrigation',
     'image' => 'upload/project/mfwwiW2YwfoWvxxi7yZSQLqdokqzZ1sT45tG26vM.jpg',
-    'title' => 'Agricultural Irrigation',
     'description' => '<p>Boost agricultural productivity with sustainable irrigation systems. Our solutions leverage solar power and automated water distribution for efficient farming.</p>',
     'category_id' => 35,
     'deleted_at' => NULL,
     'created_at' => '2025-05-26 15:38:28',
     'updated_at' => '2025-06-03 14:18:30',
+    'title' => 'Agricultural Irrigation',
+    'slug' => NULL,
   ),
   56 => 
   array (
@@ -745,12 +801,13 @@ class CdSolutionSeeder extends Seeder
     'type' => 'Project',
     'alt' => 'Wind & Hybrid Energy Systems',
     'image' => 'upload/project/y6N8gFsqbaYguCodqxKaBIlsRAWAjnVNI76udgCs.png',
-    'title' => 'Wind & Hybrid Energy Systems',
     'description' => '<p>Harness the power of wind and solar energy with systems that are high performing, resilient and flexible. We design and deploy integrated solar-wind hybrid systems tailored to your energy needs.</p>',
     'category_id' => 36,
     'deleted_at' => NULL,
     'created_at' => '2025-05-26 15:46:35',
     'updated_at' => '2025-06-03 14:19:35',
+    'title' => 'Wind & Hybrid Energy Systems',
+    'slug' => NULL,
   ),
   57 => 
   array (
@@ -758,12 +815,13 @@ class CdSolutionSeeder extends Seeder
     'type' => 'Project',
     'alt' => 'Exploration & Surveying Solutions',
     'image' => 'upload/project/lyq4H0AW6x0s3fiBq3fqyEUBKAnjdgg4GPJCxIIP.jpg',
-    'title' => 'Exploration & Surveying Solutions',
     'description' => '<p>Identify high-value resources with precision using cutting-edge exploration and surveying technologies. We provide geospatial analysis, remote sensing, and AI-driven analytics for precise mineral exploration and mapping.</p>',
     'category_id' => 39,
     'deleted_at' => NULL,
     'created_at' => '2025-05-26 15:54:08',
     'updated_at' => '2025-06-03 14:20:44',
+    'title' => 'Exploration & Surveying Solutions',
+    'slug' => NULL,
   ),
   58 => 
   array (
@@ -771,12 +829,13 @@ class CdSolutionSeeder extends Seeder
     'type' => 'Project',
     'alt' => 'Technical Consulting Solutions –',
     'image' => 'upload/project/B6YD7iRdkSbdmvBf5c4tBf6oRaiAZvnovDlRgykY.png',
-    'title' => 'Technical Consulting Solutions',
     'description' => '<p>Make confident mining decisions with expert-led consulting based on robust geological and geochemical analysis. We offer technical consulting for comprehensive geological, geochemical, and feasibility evaluations.</p>',
     'category_id' => 39,
     'deleted_at' => NULL,
     'created_at' => '2025-05-26 15:56:22',
     'updated_at' => '2025-06-03 14:21:00',
+    'title' => 'Technical Consulting Solutions',
+    'slug' => NULL,
   ),
   59 => 
   array (
@@ -784,12 +843,13 @@ class CdSolutionSeeder extends Seeder
     'type' => 'Project',
     'alt' => 'Mine Development & Construction Solutions',
     'image' => 'upload/project/HssSbNjplSFRrRy8ScdU1tw47ANRFmv43th9Qe7f.png',
-    'title' => 'Mine Development & Construction Solutions',
     'description' => '<p>Build smarter, safer mines with expert planning and advanced engineering from concept to construction. We provide solutions for advanced engineering, tunnelling, and infrastructure planning for effective mine setup.</p>',
     'category_id' => 39,
     'deleted_at' => NULL,
     'created_at' => '2025-05-26 15:57:21',
     'updated_at' => '2025-06-03 14:21:16',
+    'title' => 'Mine Development & Construction Solutions',
+    'slug' => NULL,
   ),
   60 => 
   array (
@@ -797,12 +857,13 @@ class CdSolutionSeeder extends Seeder
     'type' => 'Project',
     'alt' => 'Mining Operations Systems',
     'image' => 'upload/project/N7f6g63wKpRxHyuveVYIylghkXqnYBEXQ1qKvJFP.jpg',
-    'title' => 'Mining Operations Systems',
     'description' => '<p>Optimize your mining operations with integrated systems that monitor fleets, reduce downtime, and enhance safety. Our systems provide automated fleet management, real-time monitoring, and predictive maintenance.</p>',
     'category_id' => 39,
     'deleted_at' => NULL,
     'created_at' => '2025-05-26 15:59:07',
     'updated_at' => '2025-06-03 14:21:32',
+    'title' => 'Mining Operations Systems',
+    'slug' => NULL,
   ),
   61 => 
   array (
@@ -810,12 +871,13 @@ class CdSolutionSeeder extends Seeder
     'type' => 'Project',
     'alt' => 'Processing & Beneficiation Systems',
     'image' => 'upload/project/UaEZVyVjEMIsiKDtYRjhLMb8iSkpb4w2mTUdVQyJ.jpg',
-    'title' => 'Processing & Beneficiation Systems',
     'description' => '<p>Streamline resource recovery with automated systems that refine and extract more&mdash;efficiently and sustainably. We implement automated ore refining, beneficiation, and waste management solutions for higher yield extraction.</p>',
     'category_id' => 40,
     'deleted_at' => NULL,
     'created_at' => '2025-05-26 16:04:12',
     'updated_at' => '2025-06-03 14:22:25',
+    'title' => 'Processing & Beneficiation Systems',
+    'slug' => NULL,
   ),
   62 => 
   array (
@@ -823,12 +885,13 @@ class CdSolutionSeeder extends Seeder
     'type' => 'Project',
     'alt' => 'Rehabilitation & Closure Solutions',
     'image' => 'upload/project/3OTRp45plhedVSaeYHBIItZWuO13lDkwmk7IW1Av.jpg',
-    'title' => 'Rehabilitation & Closure Solutions',
     'description' => '<p>Plan for the future with responsible mine closure and rehabilitation strategies that protect the environment. We provide sustainable mine closure planning to ensure environmental compliance.</p>',
     'category_id' => 40,
     'deleted_at' => NULL,
     'created_at' => '2025-05-26 16:07:20',
     'updated_at' => '2025-06-03 14:22:43',
+    'title' => 'Rehabilitation & Closure Solutions',
+    'slug' => NULL,
   ),
   63 => 
   array (
@@ -836,12 +899,13 @@ class CdSolutionSeeder extends Seeder
     'type' => 'Project',
     'alt' => 'Surveillance',
     'image' => 'upload/project/MEfn6IU4KElwwsCrRzKLMeeyRwdPGbhmr8aIVwIb.jpg',
-    'title' => 'Intelligent Surveillance',
     'description' => '<p>Stay protected with intelligent surveillance that offers real-time visibility, analytics, and peace of mind. Our smart surveillance technology solutions include AI-powered video analytics, HD CCTV, and real-time monitoring for enhanced security.</p>',
     'category_id' => 49,
     'deleted_at' => NULL,
     'created_at' => '2025-05-26 16:19:14',
     'updated_at' => '2025-06-03 14:11:20',
+    'title' => 'Intelligent Surveillance',
+    'slug' => NULL,
   ),
   64 => 
   array (
@@ -849,12 +913,13 @@ class CdSolutionSeeder extends Seeder
     'type' => 'Project',
     'alt' => 'Access Control System',
     'image' => 'upload/project/y6qjE0SgBQwD44YlSZljgPeunoeS9NuRXsT5vzwU.png',
-    'title' => 'Access Control System',
     'description' => '<p>Control and monitor entry points with advanced access systems that secure your premises with seamless authentication. We offer biometric authentication, RFID access, and smart card solutions for secure entry control.</p>',
     'category_id' => 49,
     'deleted_at' => NULL,
     'created_at' => '2025-05-26 16:21:09',
     'updated_at' => '2025-06-03 14:11:42',
+    'title' => 'Access Control System',
+    'slug' => NULL,
   ),
   65 => 
   array (
@@ -862,12 +927,13 @@ class CdSolutionSeeder extends Seeder
     'type' => 'Project',
     'alt' => 'Time Attendance Management System',
     'image' => 'upload/project/UtAG8J6Jvu2V8KoMmjcU2qNlqyQiDth8jy7eEqog.png',
-    'title' => 'Time Attendance Management System',
     'description' => '<p>Simplify workforce management with smart systems that ensure accurate, automated attendance tracking. Our solutions use biometric and facial recognition for accurate time attendance management.</p>',
     'category_id' => 49,
     'deleted_at' => NULL,
     'created_at' => '2025-05-26 16:21:54',
     'updated_at' => '2025-06-03 14:12:03',
+    'title' => 'Time Attendance Management System',
+    'slug' => NULL,
   ),
   66 => 
   array (
@@ -875,12 +941,13 @@ class CdSolutionSeeder extends Seeder
     'type' => 'Project',
     'alt' => 'Facial & Biometric System',
     'image' => 'upload/project/okE4HEuaiNKRpkvSsvGQFvzuC50FoemlRco2DtRA.png',
-    'title' => 'Facial & Biometric System',
     'description' => '<p>Secure high security zones with high-end biometric solutions and next-generation identification technology. Our systems use advanced facial recognition for securing critical areas and facilities.</p>',
     'category_id' => 49,
     'deleted_at' => NULL,
     'created_at' => '2025-05-26 16:22:37',
     'updated_at' => '2025-06-03 14:12:26',
+    'title' => 'Facial & Biometric System',
+    'slug' => NULL,
   ),
   67 => 
   array (
@@ -888,12 +955,13 @@ class CdSolutionSeeder extends Seeder
     'type' => 'Project',
     'alt' => 'Smart Verification & Alert System',
     'image' => 'upload/project/4Gk8xogvAeovXxRt7j6mE4CtNoU7Dkn80TZSoEP2.png',
-    'title' => 'Smart Verification & Alert System',
     'description' => '<p>Detect, alert, and respond instantly to threats with AI-powered security intelligence. Our AI-based system provides real-time threat detection, automatic alerts, and emergency response activation.</p>',
     'category_id' => 50,
     'deleted_at' => NULL,
     'created_at' => '2025-05-26 16:32:27',
     'updated_at' => '2025-06-03 14:13:41',
+    'title' => 'Smart Verification & Alert System',
+    'slug' => NULL,
   ),
   68 => 
   array (
@@ -901,12 +969,13 @@ class CdSolutionSeeder extends Seeder
     'type' => 'Project',
     'alt' => 'Detection & Scanning',
     'image' => 'upload/project/cSqtoaxcNyRktdjGA75R2JEn6xl9u7mN1QZiYVsF.jpg',
-    'title' => 'Detection & Scanning',
     'description' => '<p>Ensure safety in high-risk zones with advanced scanning technologies for threat detection and risk mitigation. We provide advanced scanning technologies, such as, thermal imaging, X-ray scanning, and explosive detection solutions.</p>',
     'category_id' => 50,
     'deleted_at' => NULL,
     'created_at' => '2025-05-26 16:33:53',
     'updated_at' => '2025-06-03 14:14:01',
+    'title' => 'Detection & Scanning',
+    'slug' => NULL,
   ),
   69 => 
   array (
@@ -914,12 +983,13 @@ class CdSolutionSeeder extends Seeder
     'type' => 'Project',
     'alt' => 'Tracking Solutions',
     'image' => 'upload/project/Z1CHIJdq6dkddTz5TRFyARvB9zTekxEgUkzDEzaN.png',
-    'title' => 'Tracking Solutions',
     'description' => '<p>Protect your valuable assets and fleets with reliable tracking technology. Our GPS-based tracking and geofencing solutions ensure asset protection and enhanced security.</p>',
     'category_id' => 50,
     'deleted_at' => NULL,
     'created_at' => '2025-05-26 16:34:44',
     'updated_at' => '2025-06-03 14:14:20',
+    'title' => 'Tracking Solutions',
+    'slug' => NULL,
   ),
   70 => 
   array (
@@ -927,12 +997,13 @@ class CdSolutionSeeder extends Seeder
     'type' => 'Project',
     'alt' => 'Perimeter Security',
     'image' => 'upload/project/9e0UtcLskff00RRa6BSq26UipmExMBw9k23C0qet.png',
-    'title' => 'Perimeter Security',
     'description' => '<p>Safeguard critical areas with advanced perimeter systems designed for 24/7 intrusion prevention. We offer laser-based intrusion detection, motion sensors, and automated mechanisms to protect boundaries and critical infrastructure.</p>',
     'category_id' => 50,
     'deleted_at' => NULL,
     'created_at' => '2025-05-26 16:35:34',
     'updated_at' => '2025-06-03 14:14:39',
+    'title' => 'Perimeter Security',
+    'slug' => NULL,
   ),
   71 => 
   array (
@@ -940,12 +1011,13 @@ class CdSolutionSeeder extends Seeder
     'type' => 'Project',
     'alt' => 'Small Business & Personal Computing',
     'image' => 'upload/project/xk5UUl98sP4G8LHwZ8byXeXepCZFH9jcNCMPrt2Y.jpg',
-    'title' => 'Small Business & Personal Computing',
     'description' => '<p>Equip your SME and startup with cost-effective IT infrastructure, networking, and security solutions. We provide high-performance desktops, laptops, workstations, printers, scanners and other peripheral equipment for business and personal productivity.</p>',
     'category_id' => 19,
     'deleted_at' => NULL,
     'created_at' => '2025-06-03 14:29:41',
     'updated_at' => '2025-06-03 14:29:41',
+    'title' => 'Small Business & Personal Computing',
+    'slug' => NULL,
   ),
 );
         DB::table('cd_solutions')->insert($data);
