@@ -100,21 +100,20 @@
                                 </div>
                                 <div class="row">
                                     <div class="col-lg-6">
-                                        <div class="d-flex gap-5 align-items-center h-100">
+                                    <div class="d-flex gap-5 align-items-center h-100">
 
-                                            <div class="fileupload btn btn_1 radius_btn btn-anim"><i
-                                                    class="fa fa-upload"></i><span class="btn-text">Upload new image</span>
-                                                <input type="file" class="upload" name="image" id="uploadFilesingle"
-                                                    accept="image/*">
+                                        <div class="fileupload btn btn_1 radius_btn btn-anim"><i
+                                                class="fa fa-upload"></i><span class="btn-text">Upload Images</span>
+                                            <input type="file" multiple class="upload" name="image[]" id="uploadFile"
+                                                 accept="image/*">
 
-                                            </div>
-                                            <div class="img-upload-wrap">
-                                                <div id="imagePreview"></div>
-                                                <!-- <img class="img-responsive" src="dist/img/chair.jpg" alt="upload_img"> -->
-                                            </div>
                                         </div>
-
+                                        <div class="img-upload-wrap">
+                                            <div id="imagePreviews"></div>
+                                            <!-- <img class="img-responsive" src="dist/img/chair.jpg" alt="upload_img"> -->
+                                        </div>
                                     </div>
+                                </div>
 
                                     <div class="col-lg-6">
                                         <label>alt</label>
@@ -151,6 +150,32 @@
 @stop
 
 @section('scripts')
+    <script>
+        document.getElementById('uploadFilesMultiple').addEventListener('change', function(event) {
+            const preview = document.getElementById('imagePreview');
+            preview.innerHTML = ''; // clear previous previews
+            const files = event.target.files;
+
+            if (files.length > 0) {
+                Array.from(files).forEach(file => {
+                    if (file.type.startsWith('image/')) {
+                        const reader = new FileReader();
+                        reader.onload = function(e) {
+                            const img = document.createElement('img');
+                            img.src = e.target.result;
+                            img.classList.add('img-thumbnail');
+                            img.style.width = '100px';
+                            img.style.height = '100px';
+                            img.style.objectFit = 'cover';
+                            preview.appendChild(img);
+                        };
+                        reader.readAsDataURL(file);
+                    }
+                });
+            }
+        });
+    </script>
+
     <script>
         $("#AdminForm").on("submit", function(e) {
             e.preventDefault();

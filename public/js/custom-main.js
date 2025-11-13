@@ -150,32 +150,52 @@ function UpdateStatus(id, url, message, status) {
 }
 
 $("#uploadFile").on("change", function(e) {
-e.preventDefault();
+    e.preventDefault();
 
-var files = this.files;
-if (!files.length || !window.FileReader) return;
+    var files = this.files;
+    if (!files.length || !window.FileReader) return;
 
-for (var i = 0; i < files.length; i++) {
-if (/^image/.test(files[i].type)) {
-  var reader = new FileReader();
-  reader.readAsDataURL(files[i]);
+    for (var i = 0; i < files.length; i++) {
+        if (/^image/.test(files[i].type)) {
+            let reader = new FileReader();
 
-  reader.onloadend = function() {
-    var imagePreview = $("<div class='image-preview'></div>");
-    imagePreview.css("background-image", "url(" + this.result + ")");
-    imagePreview.css("height", "100px");
-    imagePreview.css("width", "100px");
+            reader.onloadend = function(event) {
+                let imageUrl = event.target.result; // Correct way to access the result
 
-    var closeButton = $("<button class='close-button'><i class='fa fa-times'></i></button>");
-    closeButton.on("click", function() {
-      imagePreview.remove();
-    });
+                var imagePreview = $("<div class='image-preview'></div>");
+                imagePreview.css({
+                    "background-image": "url(" + imageUrl + ")",
+                    "height": "100px",
+                    "width": "100px",
+                    "background-size": "cover",
+                    "background-position": "center",
+                    "margin": "5px",
+                    "position": "relative"
+                });
 
-    imagePreview.append(closeButton);
-    $("#imagePreviews").append(imagePreview);
-  };
-}
-}
+                var closeButton = $("<button class='close-button'><i class='fa fa-times'></i></button>");
+                closeButton.css({
+                    "position": "absolute",
+                    "top": "5px",
+                    "right": "5px",
+                    "background": "rgba(0,0,0,0.5)",
+                    "color": "#fff",
+                    "border": "none",
+                    "border-radius": "50%",
+                    "cursor": "pointer"
+                });
+
+                closeButton.on("click", function() {
+                    imagePreview.remove();
+                });
+
+                imagePreview.append(closeButton);
+                $("#imagePreviews").append(imagePreview);
+            };
+
+            reader.readAsDataURL(files[i]); // must be called after defining onloadend
+        }
+    }
 });
 
 $("#uploadFilesingle").on("change", function(e) {

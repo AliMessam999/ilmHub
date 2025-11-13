@@ -139,7 +139,18 @@ class HomeController extends Controller
         $registrations =  CdOffer::where('position','bottom')->whereHas('Category',function($query){
             return $query->where('title','LIKE','Certifications & Registrations');
         })->get();
-        return view('frontend.about_us', compact('profile', 'services', 'team','certificates','registrations'));
+
+        $expertise = CdOffer::where('position','top')->whereHas('Category',function($query){
+            return $query->where('title', 'Company Overview');
+        })->get();
+
+        $about_us = CdOffer::where('position','bottom')->whereHas('Category',function($query){
+            return $query->where('title', 'Company Overview');
+        })->get();
+
+        $skills = CdSkill::get();
+
+        return view('frontend.about_us', compact('profile', 'services', 'team','certificates','registrations', 'expertise', 'about_us', 'skills'));
     }
 
     public function clientsPage()
