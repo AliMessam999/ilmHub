@@ -40,7 +40,23 @@ class HomeController extends Controller
         $data->offer = CdOffer::first();
         $data->partners = CdPartner::OrderBy('sort', 'asc')->get();
         $data->client = CdClient::OrderBy('sort', 'asc')->get();
-        // dd($data->category);
+        // dd($data->client);
+
+        // New Data
+        $data->blogs = CdNew::inRandomOrder()->with('category')->get();
+
+        // dd($data->blogs);
+        // foreach ($data->blogs as $blog) {
+        //     // Access your single random blog item
+        //     // dd($blog);
+        //     // dd($blog->category->title);
+        //     // dd($blog->date);
+        //     // dd($blog->date);
+        //     // dd($blog->alt);
+        //     // dd($blog->image);
+        //     // dd($blog->description);
+        //     // dd($blog->title);
+        // }        
         return view('frontend.home', compact('data'));
     }
     public function IndustryData()
@@ -139,8 +155,18 @@ class HomeController extends Controller
         $registrations =  CdOffer::where('position','bottom')->whereHas('Category',function($query){
             return $query->where('title','LIKE','Leadership & Team');
         })->get();
-        // dd($certificates);
-        return view('frontend.about_us', compact('profile', 'services', 'team','certificates','registrations'));
+
+        $expertise = CdOffer::where('position','top')->whereHas('Category',function($query){
+            return $query->where('title', 'Company Overview');
+        })->get();
+
+        $about_us = CdOffer::where('position','bottom')->whereHas('Category',function($query){
+            return $query->where('title', 'Company Overview');
+        })->get();
+
+        $skills = CdSkill::get();
+
+        return view('frontend.about_us', compact('profile', 'services', 'team','certificates','registrations', 'expertise', 'about_us', 'skills'));
     }
 
     public function clientsPage()

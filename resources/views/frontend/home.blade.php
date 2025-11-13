@@ -242,34 +242,39 @@
                 </div>
                 <div class="col-12 col-lg-8 col-xl-9">
                     <div class="blog-wrapper h8-blog-wrapper">
-                        <div class="blog-item style-2 wow fadeInUp" data-wow-delay=".3s">
-                            <div class="blog-thumb">
-                                <a href="blog-details.html"><img
-                                        src="{{ asset('frontend_assets/images/blog/blog-1.webp') }}" alt="" /></a>
-                                <div class="blog-date">
-                                    <span class="date">28</span>
-                                    <span class="month">Feb</span>
-                                </div>
-                            </div>
-                            <div class="blog-content">
-                                <div class="title-area">
-                                    <div class="blog-meta">
-                                        <span class="categories"><a href="blog-details.html">Business</a></span>
-                                        <span>By
-                                            <a href="blog-details.html">Ellinien Loma</a></span>
+                            @foreach ($data->blogs as $blog)
+                                <div class="blog-item style-2 wow fadeInUp" data-wow-delay=".3s">
+                                    <div class="blog-thumb">
+                                        <a href="blog-details.html">
+                                            <img src="{{ asset($blog->image) }}" alt="{{ $blog->alt }}" />
+                                            <!-- <img src="{{ asset('storage/'.$blog->image) }}" alt="{{ $blog->alt }}" /> -->
+                                        </a>
+                                        <div class="blog-date">
+                                            <span class="date">{{ $blog->created_at->format('d') }}</span>
+                                            <span class="month">{{ $blog->created_at->format('M') }}</span>
+                                        </div>
                                     </div>
-                                    <h3 class="title">
-                                        <a href="blog-details.html">Harnessing Digital Transform a Roadmap
-                                            Businesses.</a>
-                                    </h3>
+                                    <div class="blog-content">
+                                        <div class="title-area">
+                                            <div class="blog-meta">
+                                                <span class="categories"><a href="blog-details.html">{{$blog->category->title}}</a></span>
+                                                <!-- <span>By
+                                                    <a href="blog-details.html">Ellinien Loma</a></span> -->
+                                            </div>
+                                            <h3 class="title">
+                                                <a href="blog-details.html">{{ $blog->title }}</a>
+                                            </h3>
+                                        </div>
+                                        <a class="text-btn" href="blog-details.html">
+                                            <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
+                                            <span class="btn-text"><span>Read More</span></span>
+                                        </a>
+                                    </div>
                                 </div>
-                                <a class="text-btn" href="blog-details.html">
-                                    <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
-                                    <span class="btn-text"><span>Read More</span></span>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="blog-item style-2 wow fadeInUp" data-wow-delay=".4s">
+                            @endforeach
+
+                        <!-- Reference -->
+                        <!-- <div class="blog-item style-2 wow fadeInUp" data-wow-delay=".4s">
                             <div class="blog-thumb">
                                 <a href="blog-details.html"><img
                                         src="{{ asset('frontend_assets/images/blog/blog-5.webp') }}" alt="" /></a>
@@ -295,34 +300,7 @@
                                     <span class="btn-text"><span>Read More</span></span>
                                 </a>
                             </div>
-                        </div>
-                        <div class="blog-item style-2 wow fadeInUp" data-wow-delay=".5s">
-                            <div class="blog-thumb">
-                                <a href="blog-details.html"><img
-                                        src="{{ asset('frontend_assets/images/blog/blog-4.webp') }}" alt="" /></a>
-                                <div class="blog-date">
-                                    <span class="date">28</span>
-                                    <span class="month">Feb</span>
-                                </div>
-                            </div>
-                            <div class="blog-content">
-                                <div class="title-area">
-                                    <div class="blog-meta">
-                                        <span class="categories"><a href="blog-details.html">Business</a></span>
-                                        <span>By
-                                            <a href="blog-details.html">Ellinien Loma</a></span>
-                                    </div>
-                                    <h3 class="title">
-                                        <a href="blog-details.html">Harnessing Digital Transform a Roadmap
-                                            Businesses.</a>
-                                    </h3>
-                                </div>
-                                <a class="text-btn" href="blog-details.html">
-                                    <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
-                                    <span class="btn-text"><span>Read More</span></span>
-                                </a>
-                            </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -342,39 +320,20 @@
                         </div> -->
                     <div class="swiper client-slider client-slider-1 wow fadeIn" data-wow-delay=".5s">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide client-item">
-                                <div class="client-logo">
-                                    <img src="{{ asset('frontend_assets/images/brands/brand-1.webp') }}" alt="" />
+                            @foreach ($data->partners as $client)
+                                <div class="swiper-slide client-item">
+                                    <div class="client-logo">
+                                        <img src="{{ asset($client->image) }}" alt="{{ $client->alt }}" />
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="swiper-slide client-item">
-                                <div class="client-logo">
-                                    <img src="{{ asset('frontend_assets/images/brands/brand-2.webp') }}" alt="" />
-                                </div>
-                            </div>
-                            <div class="swiper-slide client-item">
-                                <div class="client-logo">
-                                    <img src="{{ asset('frontend_assets/images/brands/brand-3.webp') }}" alt="" />
-                                </div>
-                            </div>
-                            <div class="swiper-slide client-item">
-                                <div class="client-logo">
-                                    <img src="{{ asset('frontend_assets/images/brands/brand-4.webp') }}"
-                                        alt="" />
-                                </div>
-                            </div>
-                            <div class="swiper-slide client-item">
-                                <div class="client-logo">
-                                    <img src="{{ asset('frontend_assets/images/brands/brand-5.webp') }}"
-                                        alt="" />
-                                </div>
-                            </div>
-                            <div class="swiper-slide client-item">
+                            @endforeach
+                            <!-- Reference -->
+                            <!-- <div class="swiper-slide client-item">
                                 <div class="client-logo">
                                     <img src="{{ asset('frontend_assets/images/brands/brand-6.webp') }}"
                                         alt="" />
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -421,23 +380,24 @@
                     <div class="project-wrapper h9-project-wrapper wow fadeInUp" data-wow-delay=".4s">
                         <div class="swiper h9-project-slider">
                             <div class="swiper-wrapper">
+                                @foreach ($data->client as $client)
                                 <div class="swiper-slide">
                                     <div class="project-item">
                                         <div class="project-img">
-                                            <img src="{{ asset('frontend_assets/images/industries/2.jpg') }}"
-                                                alt="" />
+                                           <img src="{{ asset($client->image) }}" alt="{{ $client->alt }}" />
                                         </div>
                                         <div class="project-content">
-                                            <span class="categories"><a href="portfolio-details.html">Buisness</a></span>
                                             <div class="project-text">
                                                 <h4 class="title">
-                                                    <a href="portfolio-details.html">HealthCare</a>
+                                                    <a href="portfolio-details.html">{{$client->title}}</a>
                                                 </h4>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="swiper-slide">
+                                @endforeach
+                                <!-- Reference -->
+                                <!-- <div class="swiper-slide">
                                     <div class="project-item">
                                         <div class="project-img">
                                             <img src="{{ asset('frontend_assets/images/industries/3.jpg') }}"
@@ -452,55 +412,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="project-item">
-                                        <div class="project-img">
-                                            <img src="{{ asset('frontend_assets/images/industries/4.jpg') }}"
-                                                alt="" />
-                                        </div>
-                                        <div class="project-content">
-                                            <span class="categories"><a href="portfolio-details.html">Business</a></span>
-                                            <div class="project-text">
-                                                <h4 class="title">
-                                                    <a href="portfolio-details.html">Utilities / Environment</a>
-                                                </h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="project-item">
-                                        <div class="project-img">
-                                            <img src="{{ asset('frontend_assets/images/industries/5.jpg') }}"
-                                                alt="" />
-                                        </div>
-                                        <div class="project-content">
-                                            <span class="categories"><a href="portfolio-details.html">Business</a></span>
-                                            <div class="project-text">
-                                                <h4 class="title">
-                                                    <a href="portfolio-details.html">Defence & Law Enforcement</a>
-                                                </h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="project-item">
-                                        <div class="project-img">
-                                            <img src="{{ asset('frontend_assets/images/industries/6.jpg') }}"
-                                                alt="" />
-                                        </div>
-                                        <div class="project-content">
-                                            <span class="categories"><a href="portfolio-details.html">Business</a></span>
-                                            <div class="project-text">
-                                                <h4 class="title">
-                                                    <a href="portfolio-details.html">Private Enterprise</a>
-                                                </h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                </div> -->
                             </div>
                             <div class="swiper-pagination-area"></div>
                         </div>

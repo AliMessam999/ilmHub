@@ -101,45 +101,57 @@
                                         <div class="d-flex gap-5  align-items-center h-100">
 
                                             <div class="fileupload btn btn_1 radius_btn btn-anim"><i
-                                                    class="fa fa-upload"></i><span class="btn-text">Upload new image</span>
-                                                <input type="file" class="upload" name="image" id="uploadFilesingle"
-                                                    accept="image/*">
+                                                    class="fa fa-upload"></i><span class="btn-text">Upload Images</span>
+                                                <input type="file" class="upload" name="image[]" id="uploadFile"
+                                                    accept="image/*" multiple>
 
                                             </div>
                                             <div class="img-upload-wrap">
-                                                <div id="imagePreview">
-                                                    <img src="/{{ __($menu->image) }}" class="image-list" alt="upload_img">
+                                                <div id="imagePreviews">
+                                                    @if (!empty($menu->images))
+                                                        @foreach ($menu->images as $image)
+                                                            <div class="image-preview" data-id="{{ $image->id }}"
+                                                                style="position: relative; display: inline-block; margin: 5px;">
+                                                                <img src="/{{ __($image->image) }}" class="image-list"
+                                                                    alt="{{ $image->alt }}"
+                                                                    style="height:100px; width:100px; object-fit:cover; border-radius:5px;">
+                                                                <button class="close-button"
+                                                                    style="position:absolute;top:5px;right:5px;background:rgba(0,0,0,0.6);color:#fff;border:none;border-radius:50%;cursor:pointer;">
+                                                                    <i class="fa fa-times"></i>
+                                                                </button>
+                                                            </div>
+                                                        @endforeach
+                                                    @endif
                                                 </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col-lg-6">
+                                            <label>alt</label>
+                                            <div class="common_input mb_15">
+                                                <input type="text" name="alt" value="{{ __($menu->alt) }}"
+                                                    placeholder="Enter ALt of Image for SEO" autocomplete="off">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+
+                                        <div class="col-lg-12">
+                                            <label>Description</label>
+                                            <div class="common_input mb_15">
+                                                <textarea name="description" id="ckeditor" placeholder="Enter Description of Career" style="height:100%">{{ __($menu->description) }}</textarea>
                                             </div>
                                         </div>
 
-                                    </div>
-
-                                    <div class="col-lg-6">
-                                        <label>alt</label>
-                                        <div class="common_input mb_15">
-                                            <input type="text" name="alt" value="{{ __($menu->alt) }}"
-                                                placeholder="Enter ALt of Image for SEO" autocomplete="off">
+                                        <div class="col-12">
+                                            <div class="create_report_btn mt_30">
+                                                <button href="#" class="btn_1 radius_btn d-block text-center"
+                                                    type="submit" id="updatebtn">Update</button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="row">
-
-                                    <div class="col-lg-12">
-                                        <label>Description</label>
-                                        <div class="common_input mb_15">
-                                            <textarea name="description" id="ckeditor" placeholder="Enter Description of Career" style="height:100%">{{ __($menu->description) }}</textarea>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-12">
-                                        <div class="create_report_btn mt_30">
-                                            <button href="#" class="btn_1 radius_btn d-block text-center"
-                                                type="submit" id="updatebtn">Update</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                         </form>
                     </div>
                 </div>
@@ -155,7 +167,7 @@
             var form = $("#CircleForm");
             $("#updatebtn").html(
                 "<i class='fa fa-spinner fa-spin' style='padding:0px;margin-right:10px' id='spinner'></i>Waiting.."
-                )
+            )
 
             var formData = new FormData(form[0]);
             var desc = CKEDITOR.instances.ckeditor.getData();
