@@ -82,6 +82,8 @@ class OfferController extends Controller
     }
     public function update_offer(Request $request, $id)
     {
+        // dd($request->all());
+
         if (CdOffer::where('id', $id)->count() > 0) {
             if($request->file('image')){
                 $validator = Validator::make($request->all(), [
@@ -142,6 +144,7 @@ class OfferController extends Controller
     public function create_offer_view()
     {
         $menues = CdMenu::with('allCategories')->get();
+        // dd($menues);
 
         return view('admin.offer.create',compact('menues'));
     }
@@ -149,6 +152,7 @@ class OfferController extends Controller
     public function update_offer_view($id)
     {
         $categories = CdMenu::with('allCategories')->get();
+        // dd($categories);
 
         $menu = CdOffer::where('id', $id);
         if ($menu->count() > 0) {

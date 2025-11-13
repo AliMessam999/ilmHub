@@ -55,8 +55,15 @@
                                     <select class="form-control nice_Select2 wide" name="category_id" required>
                                             <option value="" disabled selected>Select Category</option>
                                             @foreach ($categories as $category)
-                                                <option value="{{ $category->id }}" {{ $menu->category_id == $category->id ? 'selected':'' }}>{{ $category->id }} |
-                                                    {{ $category->title }}</option>
+                                                @if ($category->allCategories && $category->allCategories->isNotEmpty())
+                                                    @foreach ($category->allCategories as $all_category)
+                                                        <option value="{{ $all_category->id }}" {{ $menu->category_id == $all_category->id ? 'selected':'' }}>{{ $all_category->id }} |
+                                                            {{ $all_category->title }}</option>
+                                                    @endforeach
+                                                @else
+                                                    <option value="{{ $category->id }}" {{ $menu->category_id == $category->id ? 'selected':'' }}>{{ $category->id }} |
+                                                        {{ $category->title }}</option>
+                                                @endif
                                             @endforeach
                                         </select>
                                     </div>
@@ -105,6 +112,8 @@
 
       var formData = new FormData(form[0]);
       var id = $("#offer_id").val();
+      var desc = CKEDITOR.instances.ckeditor.getData();
+        formData.append("description", desc)
       // console.log(form);
       $.ajax({
         url: "/admin/offer/update/"+id,

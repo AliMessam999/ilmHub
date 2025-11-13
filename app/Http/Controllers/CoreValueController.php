@@ -13,16 +13,25 @@ class CoreValueController extends Controller
     {
         $validator = Validator::make($request->all(), [
             'title' => ['required', Rule::unique('cd_core_values')],
+            'video' => 'nullable|file|mimes:mp4,mov,avi,wmv|max:51200',
             'description' => 'required',
-            
+
         ]);
 
         if ($validator->fails()) {
             return response()->json($validator->errors(), 302);
         } else {
+
+            // Handle video upload
+            $videoPath = null;
+            if ($request->hasFile('video')) {
+                $videoPath = $request->file('video')->store('uploads/videos', 'public');
+            }
+
             $career = new CdCoreValue();
             $career->title = $request->title;
             $career->description = $request->description;
+            $career->video = $videoPath;
             $result = $career->save();
             if ($result) {
                 return response()->json([
@@ -65,14 +74,16 @@ class CoreValueController extends Controller
         $menu = CdCoreValue::get();
         return view('admin.home.core_value.index', compact('menu'));
     }
+
+
     public function update_core_value(Request $request, $id)
     {
         if (CdCoreValue::where('id', $id)->count() > 0) {
 
-                $validator = Validator::make($request->all(), [
-                    'title' => ['required',],
-                            'description' => 'required',
-                        ]);
+            $validator = Validator::make($request->all(), [
+                'title' => ['required',],
+                'description' => 'required',
+            ]);
             if (CdCoreValue::where('id', '!=', $id)->where('title', 'LIKE', $request->title)->count() > 0) {
                 return response()->json([
                     "message" => "The Name Has Already Been Taken"
@@ -81,10 +92,26 @@ class CoreValueController extends Controller
             if ($validator->fails()) {
                 return response()->json($validator->errors(), 302);
             } else {
-                    $menu = CdCoreValue::where('id', $id)->update([
-                        'title' => $request->title,
-                        'description' => $request->description,
-                    ]);
+
+                $videoPath = null;
+
+                if ($request->hasFile('video')) {
+                    // store video file
+                    $videoPath = $request->file('video')->store('uploads/videos', 'public');
+                }
+
+                // update record
+                $menu = CdCoreValue::where('id', $id)->first();
+
+                $menu->title = $request->title;
+                $menu->description = $request->description;
+
+                // update only if a new video is uploaded
+                if ($videoPath) {
+                    $menu->video = $videoPath;
+                }
+
+                $menu->save();
                 if ($menu) {
                     return response()->json([
                         "message" => "Core Values Updated Successfully"
