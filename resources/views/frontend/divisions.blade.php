@@ -72,14 +72,14 @@
                     @endforeach
                     
                 </div>
-                <div
+                <!-- <div
                     class="service-btn-area text-center wow fadeInUp"
                     data-wow-delay=".3s">
                     <a class="tj-primary-btn" href="service.html">
                         <span class="btn-text"><span>More Services</span></span>
                         <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
                     </a>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
@@ -87,6 +87,7 @@
 <!-- end: Service Section -->
 
 <!-- start: Project Section -->
+ @if($caseStudies->count() > 0)
 <section class="tj-project-section-3 mb-5 section-gap section-gap-x">
     <div class="container">
         <div class="row">
@@ -128,95 +129,31 @@
                     data-wow-delay=".4s">
                     <div class="swiper project-slider-2">
                         <div class="swiper-wrapper">
+                            @foreach($caseStudies as $caseStudy)
                             <div class="swiper-slide">
                                 <div class="project-item">
                                     <div class="project-img">
                                         <img
-                                            src="assets/images/project/tlemetry.png"
-                                            alt="" />
+                                            src="/{{ $caseStudy->images[0]->image ?? '' }}"
+                                            alt="{{ $caseStudy->images[0]->alt ?? '' }}" />
                                     </div>
                                     <div class="project-content">
-                                        <span class="categories"><a href="portfolio-details.html">Hydrological Monitoring</a></span>
+                                        <span class="categories"><a href="portfolio-details.html">{{ $caseStudy->category->title ?? '' }}</a></span>
                                         <div class="project-text">
                                             <h4 class="title">
-                                                <a href="portfolio-details.html">Telemetry Solutions and Services</a>
+                                                <a href="portfolio-details.html">{{ $caseStudy->title }}</a>
                                             </h4>
                                             <a
                                                 class="project-btn"
-                                                href="portfolio-details.html">
+                                                href="/case-study/{{ $caseStudy->title }}">
                                                 <i class="tji-arrow-right-big"></i>
                                             </a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide">
-                                <div class="project-item">
-                                    <div class="project-img">
-                                        <img
-                                            src="assets/images/project/water.jpg"
-                                            alt="" />
-                                    </div>
-                                    <div class="project-content">
-                                        <span class="categories"><a href="portfolio-details.html">Hydrological Monitoring</a></span>
-                                        <div class="project-text">
-                                            <h4 class="title">
-                                                <a href="portfolio-details.html">Water Resource Solutions</a>
-                                            </h4>
-                                            <a
-                                                class="project-btn"
-                                                href="portfolio-details.html">
-                                                <i class="tji-arrow-right-big"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="project-item">
-                                    <div class="project-img">
-                                        <img
-                                            src="assets/images/project/project-8.png"
-                                            alt="" />
-                                    </div>
-                                    <div class="project-content">
-                                        <span class="categories"><a href="portfolio-details.html">Business</a></span>
-                                        <div class="project-text">
-                                            <h4 class="title">
-                                                <a href="portfolio-details.html">Environmental Monitoring</a>
-                                            </h4>
-                                            <a
-                                                class="project-btn"
-                                                href="portfolio-details.html">
-                                                <i class="tji-arrow-right-big"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="project-item">
-                                    <div class="project-img" style="min-height: 269px">
-                                        <img
-                                            src="assets/images/project/hydrological.png"
-                                            alt=""
-                                            style="min-height: 269px" />
-                                    </div>
-                                    <div class="project-content">
-                                        <span class="categories"><a href="portfolio-details.html">Weather Monitoring</a></span>
-                                        <div class="project-text">
-                                            <h4 class="title">
-                                                <a href="portfolio-details.html">Weather & Climate Monitoring Systems</a>
-                                            </h4>
-                                            <a
-                                                class="project-btn"
-                                                href="portfolio-details.html">
-                                                <i class="tji-arrow-right-big"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            @endforeach
+                            
                         </div>
                         <div class="swiper-pagination-area"></div>
                     </div>
@@ -234,6 +171,7 @@
         <img src="assets/images/shape/shape-blur.svg" alt="" />
     </div>
 </section>
+@endif
 <!-- end: Project Section -->
 
 

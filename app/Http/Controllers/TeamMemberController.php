@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\CdCategory;
 use App\Models\CdTeamMember;
 use Illuminate\Http\Request;
 use Illuminate\Validation\Rule;
@@ -13,6 +14,7 @@ class TeamMemberController extends Controller
     {
         $validator = Validator::make($request->all(), [
             'name' => ['required', Rule::unique('cd_team_members')],
+            'category_id' => ['required'],
             'designation' => 'required',
             'description' => 'required',
             'image' => ['required', Rule::imageFile(), 'max:500'],
@@ -30,6 +32,7 @@ class TeamMemberController extends Controller
             $career = new CdTeamMember();
             $career->name = $request->name;
             $career->designation = $request->designation;
+            $career->category_id = $request->category_id;
             $career->description = $request->description;
             $career->alt = $request->alt;
             $career->image = $path;
@@ -81,6 +84,7 @@ class TeamMemberController extends Controller
             if ($request->file('image')) {
                 $validator = Validator::make($request->all(), [
                     'name' => ['required',],
+                    'category_id' => ['nullable'],
                     'designation' => 'required',
                     'description' => 'required',
                     'image' => ['required', Rule::imageFile(), 'max:500'],
@@ -89,6 +93,7 @@ class TeamMemberController extends Controller
             } else {
                 $validator = Validator::make($request->all(), [
                     'name' => ['required',],
+                    'category_id' => ['nullable'],
                     'designation' => 'required',
                     'description' => 'required',
                 ]);
@@ -105,6 +110,7 @@ class TeamMemberController extends Controller
                     $CdTeamMember = CdTeamMember::where('id', $id)->update([
                         'name' => $request->name,
                         'designation' => $request->designation,
+                        'category_id' => $request->category_id ?? null,
                         'description' => $request->description,
                         'alt' => $request->alt,
                         'image' => $path,
@@ -113,6 +119,7 @@ class TeamMemberController extends Controller
                     $CdTeamMember = CdTeamMember::where('id', $id)->update([
                         'name' => $request->name,
                         'designation' => $request->designation,
+                        'category_id' => $request->category_id ?? null,
                         'description' => $request->description,
                         'alt' => $request->alt,
                     ]);
@@ -132,7 +139,10 @@ class TeamMemberController extends Controller
 
     public function create_team_member_view()
     {
-        return view('admin.home.team_member.create');
+        $sub_categories = CdCategory::whereNull('parent')->whereHas('menu',function($query){
+            return $query->where('title', 'LIKE', '%Our Division%');
+        })->get();
+        return view('admin.home.team_member.create',compact('sub_categories'));
     }
 
     public function update_team_member_view($id)
@@ -140,7 +150,10 @@ class TeamMemberController extends Controller
         $menu = CdTeamMember::where('id', $id);
         if ($menu->count() > 0) {
             $menu = $menu->first();
-            return view('admin.home.team_member.update', compact('menu'));
+            $sub_categories = CdCategory::whereNull('parent')->whereHas('menu',function($query){
+                return $query->where('title', 'LIKE', '%Our Division%');
+            })->get();
+            return view('admin.home.team_member.update', compact('menu','sub_categories'));
         } else {
             return redirect('/admin/team_member');
         }

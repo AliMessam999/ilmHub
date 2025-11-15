@@ -64,8 +64,9 @@ Route::get('/terms_conditions', [HomeController::class, 'termsconditionPage'])->
 Route::get('/case-studies', [HomeController::class, 'caseStudiesPage'])->name('case-studies.page');
 Route::get('/case-study/{title}', [HomeController::class, 'caseStudyDetailPage'])->name('case-study-detail.page');
 Route::get('/divisions/{category}', [HomeController::class, 'divsions'])->name('divisions.page');
+Route::get('/sub-divisions/{category}', [HomeController::class, 'subDivsions'])->name('sub-divisions.page');
 
-Route::get('/industry-details/{title}',[HomeController::class,'IndustryDetails'])->name('industries.details');
+Route::get('/industry-detail/{title}',[HomeController::class,'IndustryDetails'])->name('industries.details');
 // Route::get('/insights-updates',[HomeController::class,'Insightsupdates'])->name('insightsupdates.blogs');
 
 Route::get('/dashboard', function () {
