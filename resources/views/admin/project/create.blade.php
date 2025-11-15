@@ -5,6 +5,7 @@
         .ck.ck-editor__main>.ck-editor__editable {
             height: 300px !important;
         }
+
         .customer-service-row {
             /* margin-bottom: 15px; */
             /* padding: 15px; */
@@ -13,8 +14,22 @@
             position: relative;
             width: 100%;
         }
+
         .remove-service {
-            position: absolute;
+            background: #ff5a5a;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            font-size: 24px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 10px;
+            /* margin-top: 26px; */
+            /* position: absolute;
             top: 10px;
             right: 10px;
             background: #ff5a5a;
@@ -24,11 +39,13 @@
             width: 25px;
             height: 25px;
             cursor: pointer;
-            display: none;
+            display: none; */
         }
-        .customer-service-row:hover .remove-service {
+
+        /* .customer-service-row:hover .remove-service {
             display: block;
-        }
+        } */
+
         .add-service-btn {
             background: #4CAF50;
             color: white;
@@ -44,6 +61,7 @@
             margin-left: 10px;
             margin-top: 26px;
         }
+
         .service-row-container {
             display: flex;
             align-items: flex-start;
@@ -68,7 +86,8 @@
                                 <div class="col-lg-6">
                                     <label>Solution Title</label>
                                     <div class="common_input mb_15">
-                                        <input type="text" name="title" placeholder="Enter title for solution" autocomplete="off">
+                                        <input type="text" name="title" placeholder="Enter title for solution"
+                                            autocomplete="off">
                                     </div>
                                 </div>
 
@@ -90,7 +109,8 @@
                                     <div class="d-flex gap-5 align-items-center h-100">
                                         <div class="fileupload btn btn_1 radius_btn btn-anim">
                                             <i class="fa fa-upload"></i><span class="btn-text">Upload new image</span>
-                                            <input type="file" class="upload" name="image" id="uploadFilesingle" accept="image/*">
+                                            <input type="file" class="upload" name="image" id="uploadFilesingle"
+                                                accept="image/*">
                                         </div>
                                         <div class="img-upload-wrap">
                                             <div id="imagePreview"></div>
@@ -101,7 +121,8 @@
                                 <div class="col-lg-6">
                                     <label>alt</label>
                                     <div class="common_input mb_15">
-                                        <input type="text" name="alt" placeholder="Enter Alt text for SEO" autocomplete="off">
+                                        <input type="text" name="alt" placeholder="Enter Alt text for SEO"
+                                            autocomplete="off">
                                     </div>
                                 </div>
                             </div>
@@ -129,35 +150,39 @@
                                         <h4>Add Customer Services</h4>
                                     </div>
                                 </div>
-                                
+
                                 <div class="col-12">
                                     <div class="service-row-container">
                                         <div id="customer-services-container" style="width: 80%;">
                                             <div class="customer-service-row">
                                                 <div class="row">
-                                                    <div class="col-lg-6">
+                                                    <div class="col-lg-5">
                                                         <label>Service Title</label>
                                                         <div class="common_input mb_15">
-                                                            <input type="text" name="service_titles[]" placeholder="Enter Service Title" autocomplete="off">
+                                                            <input type="text" name="service_titles[]"
+                                                                placeholder="Enter Service Title" autocomplete="off">
                                                         </div>
                                                     </div>
                                                     <div class="col-lg-6">
                                                         <label>Service Description</label>
                                                         <div class="common_input mb_15">
-                                                            <input type="text" name="service_descriptions[]" placeholder="Enter Service Description" autocomplete="off">
+                                                            <input type="text" name="service_descriptions[]"
+                                                                placeholder="Enter Service Description" autocomplete="off">
                                                         </div>
                                                     </div>
+                                                    <div class="col-lg-1">
+                                                        <button type="button" class="add-service-btn" id="add-service-btn">+</button>
+                                                    </div>
                                                 </div>
-                                                <button type="button" class="remove-service">×</button>
                                             </div>
                                         </div>
-                                        <button type="button" class="add-service-btn" id="add-service-btn">+</button>
                                     </div>
                                 </div>
 
                                 <div class="col-12">
                                     <div class="create_report_btn mt_30">
-                                        <button type="submit" class="btn_1 radius_btn d-block text-center" id="updatebtn">Create</button>
+                                        <button type="submit" class="btn_1 radius_btn d-block text-center"
+                                            id="updatebtn">Create</button>
                                     </div>
                                 </div>
                             </div>
@@ -171,6 +196,35 @@
 
 @section('scripts')
     <script>
+        document.getElementById('add-service-btn').addEventListener('click', function() {
+            let container = document.getElementById('customer-services-container');
+
+            // Clone the first row
+            let firstRow = container.querySelector('.customer-service-row');
+            let newRow = firstRow.cloneNode(true);
+
+            // Clear input values
+            newRow.querySelectorAll('input').forEach(i => i.value = '');
+
+            // Show remove button on new rows
+            newRow.querySelector('.remove-service').style.display = 'block';
+
+            // Hide add button inside cloned row (if any)
+            if (newRow.querySelector('.add-service-btn')) {
+                newRow.querySelector('.add-service-btn').style.display = 'none';
+            }
+
+            container.appendChild(newRow);
+        });
+
+        // Remove service row
+        document.addEventListener('click', function(e) {
+            if (e.target.classList.contains('remove-service')) {
+                e.target.closest('.customer-service-row').remove();
+            }
+        });
+    </script>
+    <script>
         // ✅ Customer Services Dynamic Add/Remove
         document.getElementById('add-service-btn').addEventListener('click', function() {
             const container = document.getElementById('customer-services-container');
@@ -178,23 +232,23 @@
             newRow.className = 'customer-service-row';
             newRow.innerHTML = `
                 <div class="row">
-                    <div class="col-lg-6">
-                        <label>Service Title</label>
+                    <div class="col-lg-5">
                         <div class="common_input mb_15">
                             <input type="text" name="service_titles[]" placeholder="Enter Service Title" autocomplete="off">
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <label>Service Description</label>
                         <div class="common_input mb_15">
                             <input type="text" name="service_descriptions[]" placeholder="Enter Service Description" autocomplete="off">
                         </div>
                     </div>
+                    <div class="col-lg-1">
+                        <button type="button" class="remove-service">×</button>
+                    </div>
                 </div>
-                <button type="button" class="remove-service">×</button>
             `;
             container.appendChild(newRow);
-            
+
             newRow.querySelector('.remove-service').addEventListener('click', function() {
                 container.removeChild(newRow);
             });
@@ -210,7 +264,9 @@
         $("#AdminForm").on("submit", function(e) {
             e.preventDefault();
             var form = $("#AdminForm");
-            $("#updatebtn").html("<i class='fa fa-spinner fa-spin' style='padding:0px;margin-right:10px' id='spinner'></i>Waiting..");
+            $("#updatebtn").html(
+                "<i class='fa fa-spinner fa-spin' style='padding:0px;margin-right:10px' id='spinner'></i>Waiting.."
+                );
 
             var formData = new FormData(form[0]);
             var desc = CKEDITOR.instances.ckeditor.getData();
