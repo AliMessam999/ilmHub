@@ -15,4 +15,8 @@ class CdSolution extends Model
     public function category(){
         return $this->belongsTo(CdCategory::class);
     }
+
+    public function customer_services(){
+        return $this->hasMany(CustomerService::class, 'solution_id', 'id');
+    }
 }
