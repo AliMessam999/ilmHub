@@ -168,8 +168,7 @@
           <div class="menu-area d-none d-lg-inline-flex align-items-center">
             <nav class="mainmenu">
               <ul>
-                <li><a href="{{ url('/') }}">Home</a></li>
-
+              
                 {{-- Dynamic Menus --}}
                 @foreach ($menus->sortBy('order') as $menu)
                   @php

@@ -15,8 +15,11 @@
 
             <main id="primary" class="site-main">
                 @yield('content')
+
+                <x-cta-section />
             </main>
          
+
             {{-- @include('includes.footer') --}}
             <x-footer/>
         </div>
