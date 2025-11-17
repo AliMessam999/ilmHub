@@ -92,121 +92,137 @@
                         </div>
                     </div>
                 </div>
+
+                @php
+                    use App\Models\CdSolution;
+
+                    $solutions = CdSolution::inRandomOrder()
+                                    ->take(4)
+                                    ->with('category', 'customer_services')
+                                    ->get();
+                @endphp
+
                 <div class="col-lg-8">
                     <div class="service-wrapper-2">
-                        <div class="service-item-wrapper tj-fadein-right-on-scroll">
-                            <div class="service-item style-2">
-                                <div class="title-area">
-                                    <div class="service-icon">
-                                        <i class="tji-service-1"></i>
+                        @foreach ($solutions as $solution)
+                            <div class="service-item-wrapper tj-fadein-right-on-scroll">
+                                <div class="service-item style-2">
+                                    <div class="title-area">
+                                        <div class="service-icon">
+                                            <i class="{{$solution->alt}}"></i>
+                                        </div>
+                                        <h4 class="title">
+                                            <a href="{{$solution->slug}}">{{$solution->title}}</a>
+                                            <!-- <a href="service-details.html">Business Strategy Development</a> -->
+                                        </h4>
                                     </div>
-                                    <h4 class="title">
-                                        <a href="service-details.html">Business Strategy Development</a>
-                                    </h4>
-                                </div>
-                                <div class="service-content">
-                                    <p class="desc">
-                                        Through a combination of data-driven insights and
-                                        innovative approaches, we work closely with you to
-                                        develop customized.
-                                    </p>
-                                    <ul class="list-items">
-                                        <li>
-                                            <i class="tji-list"></i>Expansion Strategies
-                                        </li>
-                                        <li>
-                                            <i class="tji-list"></i>Operational Efficiency
-                                        </li>
-                                        <li><i class="tji-list"></i>Competitive Edge</li>
-                                    </ul>
+                                    <div class="service-content">
+                                        <p class="desc">
+                                            {{$solution->description}}
+                                            <!-- Through a combination of data-driven insights and
+                                            innovative approaches, we work closely with you to
+                                            develop customized. -->
+                                        </p>
+                                        <!-- <ul class="list-items">
+                                            <li>
+                                                <i class="tji-list"></i>Expansion Strategies
+                                            </li>
+                                            <li>
+                                                <i class="tji-list"></i>Operational Efficiency
+                                            </li>
+                                            <li><i class="tji-list"></i>Competitive Edge</li>
+                                        </ul> -->
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="service-item-wrapper tj-fadein-right-on-scroll">
-                            <div class="service-item style-2">
-                                <div class="title-area">
-                                    <div class="service-icon">
-                                        <i class="tji-service-2"></i>
+                            <!-- <div class="service-item-wrapper tj-fadein-right-on-scroll">
+                                <div class="service-item style-2">
+                                    <div class="title-area">
+                                        <div class="service-icon">
+                                            <i class="tji-service-2"></i>
+                                        </div>
+                                        <h4 class="title">
+                                            <a href="service-details.html">Customer Experience Solutions</a>
+                                        </h4>
                                     </div>
-                                    <h4 class="title">
-                                        <a href="service-details.html">Customer Experience Solutions</a>
-                                    </h4>
+                                    <div class="service-content">
+                                        <p class="desc">
+                                            Developing personalized customer journeys to
+                                            increase satisfaction and loyalty of our expansion
+                                            to keep competitive.
+                                        </p>
+                                        <ul class="list-items">
+                                            <li>
+                                                <i class="tji-list"></i>Personalized Customer
+                                            </li>
+                                            <li><i class="tji-list"></i>Seamless Service</li>
+                                            <li><i class="tji-list"></i>Proactive Support</li>
+                                        </ul>
+                                    </div>
                                 </div>
-                                <div class="service-content">
-                                    <p class="desc">
-                                        Developing personalized customer journeys to
-                                        increase satisfaction and loyalty of our expansion
-                                        to keep competitive.
-                                    </p>
-                                    <ul class="list-items">
-                                        <li>
-                                            <i class="tji-list"></i>Personalized Customer
-                                        </li>
-                                        <li><i class="tji-list"></i>Seamless Service</li>
-                                        <li><i class="tji-list"></i>Proactive Support</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
+                            </div> -->
 
-                        <div class="service-item-wrapper tj-fadein-right-on-scroll">
-                            <div class="service-item style-2">
-                                <div class="title-area">
-                                    <div class="service-icon">
-                                        <i class="tji-service-3"></i>
+                            <!-- <div class="service-item-wrapper tj-fadein-right-on-scroll">
+                                <div class="service-item style-2">
+                                    <div class="title-area">
+                                        <div class="service-icon">
+                                            <i class="tji-service-3"></i>
+                                        </div>
+                                        <h4 class="title">
+                                            <a href="service-details.html">Sustainability and ESG Consulting</a>
+                                        </h4>
                                     </div>
-                                    <h4 class="title">
-                                        <a href="service-details.html">Sustainability and ESG Consulting</a>
-                                    </h4>
+                                    <div class="service-content">
+                                        <p class="desc">
+                                            Provide tailored strategies that not only drive
+                                            long-term value but also build trust with
+                                            stakeholders, investors.
+                                        </p>
+                                        <ul class="list-items">
+                                            <li>
+                                                <i class="tji-list"></i>Strategy Development
+                                            </li>
+                                            <li>
+                                                <i class="tji-list"></i>Sustainable Business
+                                            </li>
+                                            <li><i class="tji-list"></i>Impactful Reporting</li>
+                                        </ul>
+                                    </div>
                                 </div>
-                                <div class="service-content">
-                                    <p class="desc">
-                                        Provide tailored strategies that not only drive
-                                        long-term value but also build trust with
-                                        stakeholders, investors.
-                                    </p>
-                                    <ul class="list-items">
-                                        <li>
-                                            <i class="tji-list"></i>Strategy Development
-                                        </li>
-                                        <li>
-                                            <i class="tji-list"></i>Sustainable Business
-                                        </li>
-                                        <li><i class="tji-list"></i>Impactful Reporting</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
+                            </div> -->
 
-                        <div class="service-item-wrapper tj-fadein-right-on-scroll">
-                            <div class="service-item style-2">
-                                <div class="title-area">
-                                    <div class="service-icon">
-                                        <i class="tji-service-4"></i>
+                            <!-- <div class="service-item-wrapper tj-fadein-right-on-scroll">
+                                <div class="service-item style-2">
+                                    <div class="title-area">
+                                        <div class="service-icon">
+                                            <i class="tji-service-4"></i>
+                                        </div>
+                                        <h4 class="title">
+                                            <a href="service-details.html">Training and Development Programs</a>
+                                        </h4>
                                     </div>
-                                    <h4 class="title">
-                                        <a href="service-details.html">Training and Development Programs</a>
-                                    </h4>
+                                    <div class="service-content">
+                                        <p class="desc">
+                                            Training and Development Programs are designed to
+                                            empower employees with the skills, knowledge, and
+                                            tools they need.
+                                        </p>
+                                        <ul class="list-items">
+                                            <li>
+                                                <i class="tji-list"></i>Leadership Development
+                                            </li>
+                                            <li><i class="tji-list"></i>Skill Enhancement</li>
+                                            <li><i class="tji-list"></i>Employee Engagement</li>
+                                        </ul>
+                                    </div>
                                 </div>
-                                <div class="service-content">
-                                    <p class="desc">
-                                        Training and Development Programs are designed to
-                                        empower employees with the skills, knowledge, and
-                                        tools they need.
-                                    </p>
-                                    <ul class="list-items">
-                                        <li>
-                                            <i class="tji-list"></i>Leadership Development
-                                        </li>
-                                        <li><i class="tji-list"></i>Skill Enhancement</li>
-                                        <li><i class="tji-list"></i>Employee Engagement</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
+                            </div> -->
+                        @endforeach
                     </div>
                 </div>
+
+
             </div>
         </div>
         <div class="bg-shape-1">

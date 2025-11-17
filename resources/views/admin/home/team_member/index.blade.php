@@ -18,6 +18,7 @@
                                             <th scope="col">id</th>
                                             <th scope="col">Name</th>
                                             <th scope="col">Designation</th>
+                                            <th scope="col">Division</th>
                                             <th scope="col">Image</th>
                                             <th scope="col">Description</th>
                                             <th scope="col">Action</th>
@@ -29,6 +30,7 @@
                                                 <td>{{ $item->id }}</td>
                                                 <td>{{ $item->name }}</td>
                                                 <td>{{ $item->designation  }}</td>
+                                                <td>{{ $item->division   }}</td>
                                                 <td><img src="/{{ $item->image }}" alt="{{ $item->alt ? $item->alt:"No Alt" }}" class="image-list"></td>
                                                 <td>{{ $item->description }}</td>
                                                 <td>
