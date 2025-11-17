@@ -34,6 +34,12 @@
                                                 placeholder="Designation" autocomplete="off" >
                                         </div>
                                     </div>
+                                    <div class="col-lg-6">
+                                        <label>Division</label>
+                                        <div class="common_input mb_15">
+                                            <input type="text" name="division" placeholder="Division" autocomplete="off">
+                                        </div>
+                                    </div>
                                 </div>
                             
                             <div class="row">

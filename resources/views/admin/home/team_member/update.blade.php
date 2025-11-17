@@ -32,6 +32,12 @@
                                             value="{{ __($menu->designation) }}" autocomplete="off">
                                     </div>
                                 </div>
+                                 <div class="col-lg-6">
+                                        <label>Division</label>
+                                        <div class="common_input mb_15">
+                                            <input type="text" name="division" placeholder="Division" value="{{ __($menu->division) }}" autocomplete="off">
+                                        </div>
+                                    </div>
                                 </row>
                                 <div class="row">
                                     <div class="col-lg-6">

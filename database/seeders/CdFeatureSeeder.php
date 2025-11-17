@@ -361,42 +361,6 @@ class CdFeatureSeeder extends Seeder
     'updated_at' => '2025-05-26 10:43:33',
     'image' => NULL,
   ),
-  16 => 
-  array (
-    'id' => 18,
-    'title' => 'Labore debitis aliqu',
-    'description' => '<p>Qui in sed aperiam d</p>',
-    'sub_category_id' => 11,
-    'client_name' => 'Stewart Williamson',
-    'funded_by' => 'Magnam non qui do et',
-    'location' => 'Ad lorem eos animi',
-    'industry_id' => 1,
-    'website' => 'https://www.dys.cm',
-    'alt' => 'Qui in sed aperiam d',
-    'icon' => 'Quo ut iusto veritat',
-    'deleted_at' => NULL,
-    'created_at' => '2025-11-12 04:31:59',
-    'updated_at' => '2025-11-12 04:31:59',
-    'image' => '["upload\\/featured\\/OPEMlaUxwgfPTKqy0QmPdhUEbYYrjUrldFkkHF3F.webp","upload\\/featured\\/aFw7doD8z1rFKxEkMN3hlkooELwrnPbzyXkkWwSM.webp","upload\\/featured\\/zIiIFzRe8XwT1jTMDZ1uqPc7TK2DeqQjHC7ldliW.jpg"]',
-  ),
-  17 => 
-  array (
-    'id' => 19,
-    'title' => 'Consequatur repudian',
-    'description' => '<p>Totam saepe cumque q</p>',
-    'sub_category_id' => 11,
-    'client_name' => 'Hop Osborne',
-    'funded_by' => 'Nostrud culpa sunt',
-    'location' => 'Est mollitia aut lab',
-    'industry_id' => 6,
-    'website' => 'https://www.pivafyt.ca',
-    'alt' => 'Totam saepe cumque q',
-    'icon' => 'Facilis veritatis il',
-    'deleted_at' => NULL,
-    'created_at' => '2025-11-12 04:59:39',
-    'updated_at' => '2025-11-12 04:59:39',
-    'image' => NULL,
-  ),
 );
         DB::table('cd_features')->insert($data);
     }

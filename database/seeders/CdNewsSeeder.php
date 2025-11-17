@@ -25,7 +25,7 @@ class CdNewsSeeder extends Seeder
 <p bis_size="{&quot;x&quot;:19,&quot;y&quot;:74,&quot;w&quot;:959,&quot;h&quot;:20,&quot;abs_x&quot;:361,&quot;abs_y&quot;:619}">&nbsp;</p>
 
 <p bis_size="{&quot;x&quot;:19,&quot;y&quot;:108,&quot;w&quot;:959,&quot;h&quot;:20,&quot;abs_x&quot;:361,&quot;abs_y&quot;:653}">&nbsp;</p>',
-    'image' => 'upload/news/xbchytqs4bKR3jxVujfggswPnrdUfVUrys0kUEQC.jpg',
+    'image' => 'upload/news/upload/news/xbchytqs4bKR3jxVujfggswPnrdUfVUrys0kUEQC.jpg',
     'alt' => 'Bio-Innovation for the Future—Sustainable Agriculture with Microbial Technology',
     'date' => '2020-11-25',
     'tags' => NULL,

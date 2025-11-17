@@ -56,24 +56,6 @@ class CdSkillSeeder extends Seeder
     'created_at' => '2023-11-23 12:27:24',
     'updated_at' => '2025-05-15 16:43:56',
   ),
-  5 => 
-  array (
-    'id' => 6,
-    'title' => 'Revenue',
-    'percentage' => '82',
-    'deleted_at' => '2025-11-13 06:29:39',
-    'created_at' => '2025-11-13 06:21:26',
-    'updated_at' => '2025-11-13 06:29:39',
-  ),
-  6 => 
-  array (
-    'id' => 7,
-    'title' => 'Satisfaction',
-    'percentage' => '90',
-    'deleted_at' => '2025-11-13 06:29:54',
-    'created_at' => '2025-11-13 06:21:50',
-    'updated_at' => '2025-11-13 06:29:54',
-  ),
 );
         DB::table('cd_skills')->insert($data);
     }
