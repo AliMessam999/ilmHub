@@ -21,7 +21,7 @@
                                 drive success. With a focus on quality.
                             </div>
                             <div class="slider-btn">
-                                <a class="tj-primary-btn" href="contact.html">
+                                <a class="tj-primary-btn" href="/contact">
                                     <span class="btn-text"><span>Get Started</span></span>
                                     <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
                                 </a>
@@ -50,7 +50,7 @@
                                 drive success. With a focus on quality.
                             </div>
                             <div class="slider-btn">
-                                <a class="tj-primary-btn" href="contact.html">
+                                <a class="tj-primary-btn" href="/contact">
                                     <span class="btn-text"><span>Get Started</span></span>
                                     <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
                                 </a>
@@ -79,7 +79,7 @@
                                 drive success. With a focus on quality.
                             </div>
                             <div class="slider-btn">
-                                <a class="tj-primary-btn" href="contact.html">
+                                <a class="tj-primary-btn" href="/contact">
                                     <span class="btn-text"><span>Get Started</span></span>
                                     <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
                                 </a>

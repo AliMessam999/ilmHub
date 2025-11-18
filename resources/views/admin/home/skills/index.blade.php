@@ -18,6 +18,8 @@
                                             <th scope="col">id</th>
                                             <th scope="col">Title</th>
                                             <th scope="col">Percentage</th>
+                                            <th scope="col">Description</th>
+                                            <th scope="col">Position</th>
                                             <th scope="col">Action</th>
                                         </tr>
                                     </thead>
@@ -27,6 +29,8 @@
                                                 <td>{{ $item->id }}</td>
                                                 <td>{{ $item->title }}</td>
                                                 <td>{{ $item->percentage }}</td>
+                                                <td>{{ $item->description }}</td>
+                                                <td>{{ $item->position }}</td>
                                                 <td>
                                                     <div class="action_btns d-flex">
                                                         <a href="/admin/skills/update/{{$item->id}}" class="action_btn mr_10"> <i class="far fa-edit"></i> </a>

@@ -17,24 +17,43 @@
                     @csrf
                     <div class="white_card_body">
                         <div class="row">
-                            <div class="col-lg-6">
-                                <label>Title</label>
-                                <div class="common_input mb_15">
-                                    <input type="text" name="title" placeholder="Title" required>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <label>Percentage</label>
-                                <div class="common_input mb_15">
-                                    <input type="text" name="percentage" placeholder="Percentage" autocomplete="off" required>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="create_report_btn mt_30">
-                                    <button type="submit" class="btn_1 radius_btn d-block text-center" id="updatebtn">Create</button>
-                                </div>
-                            </div>
-                        </div>
+    <div class="col-lg-6">
+        <label>Title</label>
+        <div class="common_input mb_15">
+            <input type="text" name="title" placeholder="Title" required>
+        </div>
+    </div>
+
+    <div class="col-lg-6">
+        <label>Percentage</label>
+        <div class="common_input mb_15">
+            <input type="text" name="percentage" placeholder="Percentage" autocomplete="off" required>
+        </div>
+    </div>
+
+    <!-- OPTIONAL DESCRIPTION -->
+    <div class="col-lg-6">
+        <label>Description (Optional)</label>
+        <div class="common_input mb_15">
+            <input type="text" name="description" placeholder="Description (optional)">
+        </div>
+    </div>
+
+    <!-- OPTIONAL POSITION -->
+    <div class="col-lg-6">
+        <label>Position (Optional)</label>
+        <div class="common_input mb_15">
+            <input type="text" name="position" placeholder="Position (optional)">
+        </div>
+    </div>
+
+    <div class="col-12">
+        <div class="create_report_btn mt_30">
+            <button type="submit" class="btn_1 radius_btn d-block text-center" id="updatebtn">Create</button>
+        </div>
+    </div>
+</div>
+
                     </div>
                 </form>
             </div>

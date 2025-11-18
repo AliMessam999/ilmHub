@@ -3,6 +3,33 @@
 @section('content')
     @include('components.slider')
 
+
+    @php
+        use App\Models\CdSkill;
+        use App\Models\CdCoreValue;
+        use App\Models\CdOffer;
+        use App\Models\CdSolution;
+
+        $skillsLeft = CdSkill::where('position', 'left')->get()->last();
+        $skillsRight = CdSkill::where('position', 'right')->get();
+
+        $video = CdCoreValue::get()->last()->video;
+
+        $heading = CdOffer::first()->title;
+
+        // Convert sentence to array of words
+        $words = explode(' ', trim($heading));
+        // Extract last two words
+        $subHeading = implode(' ', array_slice($words, -2));
+        // Extract remaining part
+        $mainHeading = implode(' ', array_slice($words, 0, -2));
+
+        $solutions = CdSolution::inRandomOrder()
+            ->take(4)
+            ->with('category', 'customer_services')
+            ->get();
+    @endphp
+    
     <!-- start: About Section -->
     <section class="tj-about-section section-gap">
         <div class="container">
@@ -11,16 +38,15 @@
                     <div class="about-img-area wow fadeInLeft" data-wow-delay=".2s">
                         <div class="about-img overflow-hidden">
                             <video data-speed="0.8" autoplay muted loop playsinline>
-                                <source src="{{ asset('frontend_assets/video/about-us2.mp4') }}" type="video/mp4" />
+                                <source src="{{ $video }}" type="video/mp4" />
+                                <!-- <source src="{{ asset('frontend_assets/video/about-us2.mp4') }}" type="video/mp4" /> -->
                             </video>
                         </div>
                         <div class="box-area">
                             <div class="experience-box wow fadeInUp" data-wow-delay=".3s">
-                                <span class="sub-title">Experiences</span>
-                                <div class="customers-number">20+</div>
-                                <h6 class="customers-text">
-                                    Decades of Experience, Endless Innovation
-                                </h6>
+                                <span class="sub-title">{{$skillsLeft->title}}</span>
+                                <div class="customers-number">{{$skillsLeft->percentage}}</div>
+                                <h6 class="customers-text">{{$skillsLeft->description}}</h6>
                             </div>
                         </div>
                     </div>
@@ -31,39 +57,24 @@
                             <span class="sub-title wow fadeInUp" data-wow-delay=".3s"><i class="tji-box"></i>Get to Know
                                 Us</span>
                             <h2 class="sec-title title-anim">
-                                Empowering Businesses with Innovation, Expertise, and
-                                for <span>Success.</span>
+                                {{$mainHeading}}<span> {{$subHeading}}</span>
                             </h2>
                         </div>
                         <div class="wow fadeInUp" data-wow-delay=".5s">
-                            <a class="text-btn" href="about.html">
+                            <a class="text-btn" href="/about_us">
                                 <span class="btn-text"><span>Learn More</span></span>
                                 <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
                             </a>
                         </div>
                     </div>
                     <div class="about-bottom-area">
+                         @foreach ($skillsRight as $skill)
                         <div class="experience-box max-w-220 wow fadeInUp" data-wow-delay=".3s">
-                            <span class="sub-title">Peojects</span>
-                            <div class="customers-number">100+</div>
-                            <h6 class="customers-text">
-                                Decades of Experience, Endless Innovation
-                            </h6>
+                            <span class="sub-title">{{$skill->title}}</span>
+                            <div class="customers-number">{{$skill->percentage}}</div>
+                            <h6 class="customers-text">{{$skill->description}}</h6>
                         </div>
-                        <div class="experience-box max-w-220 wow fadeInUp" data-wow-delay=".3s">
-                            <span class="sub-title">Partner</span>
-                            <div class="customers-number">50+</div>
-                            <h6 class="customers-text">
-                                Decades of Experience, Endless Innovation
-                            </h6>
-                        </div>
-                        <div class="experience-box max-w-220 wow fadeInUp" data-wow-delay=".3s">
-                            <span class="sub-title">Clients Served</span>
-                            <div class="customers-number">50+</div>
-                            <h6 class="customers-text">
-                                Decades of Experience, Endless Innovation
-                            </h6>
-                        </div>
+                        @endforeach
                     </div>
                 </div>
             </div>
@@ -85,22 +96,13 @@
                             </h2>
                         </div>
                         <div class="wow fadeInUp" data-wow-delay=".6s">
-                            <a class="tj-primary-btn" href="service.html">
+                            <a class="tj-primary-btn" href="/sub-divisions/it-infrastructure-and-hardware">
                                 <span class="btn-text"><span>More Services</span></span>
                                 <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
                             </a>
                         </div>
                     </div>
                 </div>
-
-                @php
-                    use App\Models\CdSolution;
-
-                    $solutions = CdSolution::inRandomOrder()
-                                    ->take(4)
-                                    ->with('category', 'customer_services')
-                                    ->get();
-                @endphp
 
                 <div class="col-lg-8">
                     <div class="service-wrapper-2">
@@ -113,111 +115,15 @@
                                         </div>
                                         <h4 class="title">
                                             <a href="{{$solution->slug}}">{{$solution->title}}</a>
-                                            <!-- <a href="service-details.html">Business Strategy Development</a> -->
                                         </h4>
                                     </div>
                                     <div class="service-content">
                                         <p class="desc">
                                             {{$solution->description}}
-                                            <!-- Through a combination of data-driven insights and
-                                            innovative approaches, we work closely with you to
-                                            develop customized. -->
                                         </p>
-                                        <!-- <ul class="list-items">
-                                            <li>
-                                                <i class="tji-list"></i>Expansion Strategies
-                                            </li>
-                                            <li>
-                                                <i class="tji-list"></i>Operational Efficiency
-                                            </li>
-                                            <li><i class="tji-list"></i>Competitive Edge</li>
-                                        </ul> -->
                                     </div>
                                 </div>
                             </div>
-
-                            <!-- <div class="service-item-wrapper tj-fadein-right-on-scroll">
-                                <div class="service-item style-2">
-                                    <div class="title-area">
-                                        <div class="service-icon">
-                                            <i class="tji-service-2"></i>
-                                        </div>
-                                        <h4 class="title">
-                                            <a href="service-details.html">Customer Experience Solutions</a>
-                                        </h4>
-                                    </div>
-                                    <div class="service-content">
-                                        <p class="desc">
-                                            Developing personalized customer journeys to
-                                            increase satisfaction and loyalty of our expansion
-                                            to keep competitive.
-                                        </p>
-                                        <ul class="list-items">
-                                            <li>
-                                                <i class="tji-list"></i>Personalized Customer
-                                            </li>
-                                            <li><i class="tji-list"></i>Seamless Service</li>
-                                            <li><i class="tji-list"></i>Proactive Support</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div> -->
-
-                            <!-- <div class="service-item-wrapper tj-fadein-right-on-scroll">
-                                <div class="service-item style-2">
-                                    <div class="title-area">
-                                        <div class="service-icon">
-                                            <i class="tji-service-3"></i>
-                                        </div>
-                                        <h4 class="title">
-                                            <a href="service-details.html">Sustainability and ESG Consulting</a>
-                                        </h4>
-                                    </div>
-                                    <div class="service-content">
-                                        <p class="desc">
-                                            Provide tailored strategies that not only drive
-                                            long-term value but also build trust with
-                                            stakeholders, investors.
-                                        </p>
-                                        <ul class="list-items">
-                                            <li>
-                                                <i class="tji-list"></i>Strategy Development
-                                            </li>
-                                            <li>
-                                                <i class="tji-list"></i>Sustainable Business
-                                            </li>
-                                            <li><i class="tji-list"></i>Impactful Reporting</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div> -->
-
-                            <!-- <div class="service-item-wrapper tj-fadein-right-on-scroll">
-                                <div class="service-item style-2">
-                                    <div class="title-area">
-                                        <div class="service-icon">
-                                            <i class="tji-service-4"></i>
-                                        </div>
-                                        <h4 class="title">
-                                            <a href="service-details.html">Training and Development Programs</a>
-                                        </h4>
-                                    </div>
-                                    <div class="service-content">
-                                        <p class="desc">
-                                            Training and Development Programs are designed to
-                                            empower employees with the skills, knowledge, and
-                                            tools they need.
-                                        </p>
-                                        <ul class="list-items">
-                                            <li>
-                                                <i class="tji-list"></i>Leadership Development
-                                            </li>
-                                            <li><i class="tji-list"></i>Skill Enhancement</li>
-                                            <li><i class="tji-list"></i>Employee Engagement</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div> -->
                         @endforeach
                     </div>
                 </div>
@@ -249,7 +155,7 @@
                             Read Our Latest Blog & News.
                         </h2>
                         <div class="h8-blog-more wow fadeInUp" data-wow-delay=".8s">
-                            <a class="tj-primary-btn" href="blog.html">
+                            <a class="tj-primary-btn" href="/blogs">
                                 <span class="btn-text"><span>More Blogs</span></span>
                                 <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
                             </a>
@@ -263,7 +169,6 @@
                                     <div class="blog-thumb">
                                         <a href="blog-details.html">
                                             <img src="{{ asset($blog->image) }}" alt="{{ $blog->alt }}" />
-                                            <!-- <img src="{{ asset('storage/'.$blog->image) }}" alt="{{ $blog->alt }}" /> -->
                                         </a>
                                         <div class="blog-date">
                                             <span class="date">{{ $blog->created_at->format('d') }}</span>
@@ -274,14 +179,12 @@
                                         <div class="title-area">
                                             <div class="blog-meta">
                                                 <span class="categories"><a href="blog-details.html">{{$blog->category->title}}</a></span>
-                                                <!-- <span>By
-                                                    <a href="blog-details.html">Ellinien Loma</a></span> -->
                                             </div>
                                             <h3 class="title">
-                                                <a href="blog-details.html">{{ $blog->title }}</a>
+                                                <a href="{{{ $blog->tags }}}">{{ $blog->title }}</a>
                                             </h3>
                                         </div>
-                                        <a class="text-btn" href="blog-details.html">
+                                        <a class="text-btn" href="{{{ $blog->tags }}}">
                                             <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
                                             <span class="btn-text"><span>Read More</span></span>
                                         </a>
