@@ -81,6 +81,16 @@ class CdFaqSeeder extends Seeder
     'created_at' => '2025-11-15 07:58:21',
     'updated_at' => '2025-11-15 07:58:46',
   ),
+  7 => 
+  array (
+    'id' => 8,
+    'title' => 'Software Solution FAQ',
+    'sub_category_id' => 8,
+    'description' => '<p>Want Faq for&nbsp;Software Solutions</p>',
+    'deleted_at' => '2025-11-17 11:04:13',
+    'created_at' => '2025-11-17 11:03:17',
+    'updated_at' => '2025-11-17 11:04:13',
+  ),
 );
         DB::table('cd_faqs')->insert($data);
     }

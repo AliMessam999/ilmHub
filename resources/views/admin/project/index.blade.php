@@ -8,7 +8,7 @@
                     <div class="white_card_body">
                         <div class="QA_section">
                             <div class="white_box_tittle list_header d-flex">
-                                <h4>Solution List </h4>
+                                <h4>Solution List</h4>
                                 <a href="/admin/solution/create" class="white_btn3 justify-content-end">Create Solution</a>
                             </div>
                             <div class="QA_table mb_30">
@@ -16,6 +16,8 @@
                                     <thead>
                                         <tr>
                                             <th scope="col">id</th>
+                                            <th scope="col">Title</th>
+                                            <th scope="col">Slug</th>
                                             <th scope="col">Image</th>
                                             <th scope="col">Category</th>
                                             <th scope="col">Alt Tag</th>
@@ -26,6 +28,8 @@
                                         @forelse($project as $item)
                                             <tr>
                                                 <td>{{ $item->id }}</td>
+                                                <td>{{ $item->title }}</td>
+                                                <td>{{ $item->slug }}</td>
                                                 <td><img src="/{{ $item->image }}" alt="{{ $item->alt ? $item->alt:"No Alt" }}" class="image-list"></td>
                                                 <td>{{ $item->category->title ?? 'N/A' }}</td>
                                                 <td>{!! $item->alt !!}</td>

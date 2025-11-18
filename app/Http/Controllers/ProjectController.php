@@ -34,7 +34,7 @@ class ProjectController extends Controller
             }
             $project = new CdSolution();
             $project->title = $request->title;
-            $project->slug = Str::slug($request->slug);
+            $project->slug = $request->slug; // added 
             $project->category_id = $request->category_id;
             $project->description = $request->description;
             $project->alt = $request->alt;
@@ -138,7 +138,7 @@ class ProjectController extends Controller
 
         // Update basic fields
         $CdSolution->update([
-            'slug'         => Str::slug($request->slug),
+            'slug'         => $request->slug,
             'category_id'  => $request->category_id,
             'description'  => $request->description,
             'alt'          => $request->alt,
