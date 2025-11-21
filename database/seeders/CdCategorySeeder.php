@@ -11,18 +11,18 @@ class CdCategorySeeder extends Seeder
     {
         // Seed data for the 'cd_categories' table
         $data = array (
-  0 => 
-  array (
-    'id' => 0,
-    'title' => '',
-    'slug' => '   ',
-    'parent' => NULL,
-    'deleted_at' => NULL,
-    'created_at' => NULL,
-    'updated_at' => NULL,
-    'menu_id' => NULL,
-    'description' => NULL,
-  ),
+  // 0 => 
+  // array (
+  //   'id' => 0,
+  //   'title' => '',
+  //   'slug' => '   ',
+  //   'parent' => NULL,
+  //   'deleted_at' => NULL,
+  //   'created_at' => NULL,
+  //   'updated_at' => NULL,
+  //   'menu_id' => NULL,
+  //   'description' => NULL,
+  // ),
   1 => 
   array (
     'id' => 1,
