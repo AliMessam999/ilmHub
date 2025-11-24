@@ -164,9 +164,23 @@ class HomeController extends Controller
             return $query->where('title', 'Company Overview');
         })->get();
 
-        $skills = CdSkill::get();
+        $about_page_title = CdOffer::where('position', 'bottom')
+            ->where('alt', 'about_page_title')
+            ->value('title');
 
-        return view('frontend.about_us', compact('profile', 'services', 'team','certificates','registrations', 'expertise', 'about_us', 'skills'));
+        // Split into words
+        $words = explode(' ', $about_page_title);
+
+        // Get all words except last one
+        $title_except_last_word = implode(' ', array_slice($words, 0, -1));
+
+        // Get only the last word
+        $last_word = end($words);
+
+        $skills = CdSkill::where('position', 'progress_bar')->get();
+
+        return view('frontend.about_us', compact('profile', 'services', 'team','certificates',
+            'registrations', 'expertise', 'about_us', 'skills', 'title_except_last_word', 'last_word'));
     }
 
     public function clientsPage()
@@ -297,11 +311,20 @@ class HomeController extends Controller
 
     public function divsions($category_id = null)
     {
-       $category = CdCategory::where('title','LIKE','%'.$category_id.'%')->with('sub_categories.solutions')->first();
-       $caseStudies = CdFeature::whereHas('category',function($query) use ($category){
-        return $query->where('parent',$category->id);
-       })->with('images')->paginate(15);
-       return view('frontend.divisions',compact('category','caseStudies'));
+        $category = CdCategory::where('title','LIKE','%'.$category_id.'%')->with('sub_categories.solutions')->first();
+        // dd($category);
+        
+        // Check if category exists
+        if (!$category) {
+            // Handle the case where category is not found
+            abort(404, 'Category not found');
+        }
+
+        $caseStudies = CdFeature::whereHas('category',function($query) use ($category){
+            return $query->where('parent',$category->id);
+        })->with('images')->paginate(15);
+        
+        return view('frontend.divisions',compact('category','caseStudies'));
     }
 
     public function subDivsions($category_id = null)

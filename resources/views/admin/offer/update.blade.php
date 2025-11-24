@@ -43,41 +43,50 @@
                         </div>
                         <div class="row">
                             <div class="col-lg-4">
-                                <label>alt</label>
+                                <label>Alt</label>
                                 <div class="common_input mb_15">
-                                    <input type="text" name="alt" value="{{__($menu->alt)}}" placeholder="Enter ALt of Image for SEO"
+                                    <input type="text" name="alt" value="{{__($menu->alt)}}" placeholder="Enter Alt of Image for SEO"
                                         autocomplete="off">
                                 </div>
                             </div>
                             <div class="col-lg-4">
-                                    <label>Type (For multiple section)</label>
-                                    <div class="common_input mb_15">
+                                <label>Class (Optional)</label>
+                                <div class="common_input mb_15">
+                                    <input type="text" name="class" value="{{__($menu->class)}}" placeholder="Enter CSS class for icon"
+                                        autocomplete="off">
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <label>Category</label>
+                                <div class="common_input mb_15">
                                     <select class="form-control nice_Select2 wide" name="category_id" required>
-                                            <option value="" disabled selected>Select Category</option>
-                                            @foreach ($categories as $category)
-                                                @if ($category->allCategories && $category->allCategories->isNotEmpty())
-                                                    @foreach ($category->allCategories as $all_category)
-                                                        <option value="{{ $all_category->id }}" {{ $menu->category_id == $all_category->id ? 'selected':'' }}>{{ $all_category->id }} |
-                                                            {{ $all_category->title }}</option>
-                                                    @endforeach
-                                                @else
-                                                    <option value="{{ $category->id }}" {{ $menu->category_id == $category->id ? 'selected':'' }}>{{ $category->id }} |
-                                                        {{ $category->title }}</option>
-                                                @endif
-                                            @endforeach
-                                        </select>
-                                    </div>
+                                        <option value="" disabled selected>Select Category</option>
+                                        @foreach ($categories as $category)
+                                            @if ($category->allCategories && $category->allCategories->isNotEmpty())
+                                                @foreach ($category->allCategories as $all_category)
+                                                    <option value="{{ $all_category->id }}" {{ $menu->category_id == $all_category->id ? 'selected':'' }}>{{ $all_category->id }} |
+                                                        {{ $all_category->title }}</option>
+                                                @endforeach
+                                            @else
+                                                <option value="{{ $category->id }}" {{ $menu->category_id == $category->id ? 'selected':'' }}>{{ $category->id }} |
+                                                    {{ $category->title }}</option>
+                                            @endif
+                                        @endforeach
+                                    </select>
                                 </div>
-                                <div class="col-lg-4">
-                                    <label>Type (For multiple section)</label>
-                                    <div class="common_input mb_15">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <label>Position</label>
+                                <div class="common_input mb_15">
                                     <select class="form-control nice_Select2 wide" name="position" required>
-                                            <option value="" disabled selected>Select Position</option>
-                                            <option value="top" {{ $menu->position == 'top' ? 'selected':'' }}>Top</option>
-                                            <option value="bottom" {{ $menu->position == 'bottom' ? 'selected':'' }}>Bottom</option>
-                                        </select>
-                                    </div>
+                                        <option value="" disabled selected>Select Position</option>
+                                        <option value="top" {{ $menu->position == 'top' ? 'selected':'' }}>Top</option>
+                                        <option value="bottom" {{ $menu->position == 'bottom' ? 'selected':'' }}>Bottom</option>
+                                    </select>
                                 </div>
+                            </div>
                         </div>
                         <div class="row">
                             <div class="col-lg-12">

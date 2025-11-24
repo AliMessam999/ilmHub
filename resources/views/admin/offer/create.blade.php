@@ -47,7 +47,13 @@
                                     <label>alt</label>
                                     <div class="common_input mb_15">
                                         <input type="text" name="alt" placeholder="Enter ALt of Image for SEO"
-                                            autocomplete="off">
+                                            autocomplete="off" value="home_page_card">
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <label>Class (Optional)</label>
+                                    <div class="common_input mb_15">
+                                        <input type="text" name="class" placeholder="Enter CSS class for icon" autocomplete="off" value="tji-service-1">
                                     </div>
                                 </div>
                                 <div class="col-lg-4">

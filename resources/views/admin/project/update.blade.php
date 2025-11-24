@@ -7,15 +7,12 @@
         }
 
         .customer-service-row {
-            /* margin-bottom: 15px; */
-            /* padding: 15px; */
-            /* border: 1px solid #e0e0e0; */
             border-radius: 5px;
             position: relative;
             width: 100%;
         }
 
-        .remove-service {
+        .remove-service, .remove-faq {
             background: #ff5a5a;
             color: white;
             border: none;
@@ -28,25 +25,9 @@
             align-items: center;
             justify-content: center;
             margin-left: 10px;
-            /* margin-top: 26px; */
-            /* position: absolute;
-                    top: 10px;
-                    right: 10px;
-                    background: #ff5a5a;
-                    color: white;
-                    border: none;
-                    border-radius: 50%;
-                    width: 25px;
-                    height: 25px;
-                    cursor: pointer;
-                    display: none; */
         }
 
-        /* .customer-service-row:hover .remove-service {
-                    display: block;
-                } */
-
-        .add-service-btn {
+        .add-service-btn, .add-faq-btn {
             background: #4CAF50;
             color: white;
             border: none;
@@ -155,7 +136,7 @@
                                                         <div class="customer-service-row">
                                                             <div class="row">
 
-                                                                <div class="col-lg-5">
+                                                                <div class="col-lg-2">
                                                                     @if ($index == 0)
                                                                         <label>Service Title</label>
                                                                     @endif
@@ -167,7 +148,19 @@
                                                                     </div>
                                                                 </div>
 
-                                                                <div class="col-lg-6">
+                                                                <div class="col-lg-2">
+                                                                    @if ($index == 0)
+                                                                        <label>Service Label</label>
+                                                                    @endif
+                                                                    <div class="common_input mb_15">
+                                                                        <select name="service_labels[]" class="nice_Select2 wide form-control">
+                                                                            <option value="withImage" {{ $service->label == 'withImage' ? 'selected' : '' }}>withImage</option>
+                                                                            <option value="withoutImage" {{ $service->label == 'withoutImage' ? 'selected' : '' }}>withoutImage</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="col-lg-3">
                                                                     @if ($index == 0)
                                                                         <label>Service Description</label>
                                                                     @endif
@@ -177,6 +170,19 @@
                                                                             placeholder="Enter Service Description"
                                                                             autocomplete="off">
                                                                     </div>
+                                                                </div>
+
+                                                                <div class="col-lg-4">
+                                                                    @if ($index == 0)
+                                                                        <label>Service Image</label>
+                                                                    @endif
+                                                                    <div class="fileupload btn btn_1 radius_btn btn-anim mb_15" style="white-space: nowrap; display: block;">
+                                                                        <i class="fa fa-upload"></i><span class="btn-text">Upload Image</span>
+                                                                        <input type="file" class="upload" name="service_images[]" accept="image/*">
+                                                                    </div>
+                                                                    @if($service->image)
+                                                                        <small>Current: <a href="/{{ $service->image }}" target="_blank">View Image</a></small>
+                                                                    @endif
                                                                 </div>
 
                                                                 <div class="col-lg-1">
@@ -197,7 +203,7 @@
                                                     <div class="customer-service-row">
                                                         <div class="row">
 
-                                                            <div class="col-lg-5">
+                                                            <div class="col-lg-2">
                                                                 <label>Service Title</label>
                                                                 <div class="common_input mb_15">
                                                                     <input type="text" name="service_titles[]"
@@ -205,11 +211,29 @@
                                                                 </div>
                                                             </div>
 
-                                                            <div class="col-lg-6">
+                                                            <div class="col-lg-2">
+                                                                <label>Service Label</label>
+                                                                <div class="common_input mb_15">
+                                                                    <select name="service_labels[]" class="nice_Select2 wide form-control">
+                                                                        <option value="withImage">withImage</option>
+                                                                        <option value="withoutImage">withoutImage</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-lg-3">
                                                                 <label>Service Description</label>
                                                                 <div class="common_input mb_15">
                                                                     <input type="text" name="service_descriptions[]"
                                                                         placeholder="Enter Service Description">
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-lg-4">
+                                                                <label>Service Image</label>
+                                                                <div class="fileupload btn btn_1 radius_btn btn-anim mb_15" style="white-space: nowrap; display: block;">
+                                                                    <i class="fa fa-upload"></i><span class="btn-text">Upload Image</span>
+                                                                    <input type="file" class="upload" name="service_images[]" accept="image/*">
                                                                 </div>
                                                             </div>
 
@@ -226,6 +250,80 @@
                                         </div>
                                     </div>
 
+                                    <!-- ✅ FAQs Section -->
+                                    <div class="col-12">
+                                        <div class="main-title mt_30">
+                                            <h4>Update FAQs</h4>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <div class="service-row-container">
+                                            <div id="faqs-container" style="width: 80%;">
+                                                @php
+                                                    $faqs = \App\Models\CdFaq::where('sub_category_id', $menu->category_id)->get();
+                                                @endphp
+                                                
+                                                @if($faqs->count() > 0)
+                                                    @foreach($faqs as $index => $faq)
+                                                        <div class="faq-row">
+                                                            <div class="row">
+                                                                <div class="col-lg-5">
+                                                                    @if ($index == 0)
+                                                                        <label>FAQ Title</label>
+                                                                    @endif
+                                                                    <div class="common_input mb_15">
+                                                                        <input type="text" name="faq_titles[]"
+                                                                            value="{{ $faq->title }}"
+                                                                            placeholder="Enter FAQ Title" autocomplete="off">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-6">
+                                                                    @if ($index == 0)
+                                                                        <label>FAQ Description</label>
+                                                                    @endif
+                                                                    <div class="common_input mb_15">
+                                                                        <input type="text" name="faq_descriptions[]"
+                                                                            value="{{ $faq->description }}"
+                                                                            placeholder="Enter FAQ Description" autocomplete="off">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-1">
+                                                                    @if ($index == 0)
+                                                                        <button type="button" class="add-faq-btn" id="add-faq-btn">+</button>
+                                                                    @else
+                                                                        <button type="button" class="remove-faq">×</button>
+                                                                    @endif
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    @endforeach
+                                                @else
+                                                    <div class="faq-row">
+                                                        <div class="row">
+                                                            <div class="col-lg-5">
+                                                                <label>FAQ Title</label>
+                                                                <div class="common_input mb_15">
+                                                                    <input type="text" name="faq_titles[]"
+                                                                        placeholder="Enter FAQ Title" autocomplete="off">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-6">
+                                                                <label>FAQ Description</label>
+                                                                <div class="common_input mb_15">
+                                                                    <input type="text" name="faq_descriptions[]"
+                                                                        placeholder="Enter FAQ Description" autocomplete="off">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-1">
+                                                                <button type="button" class="add-faq-btn" id="add-faq-btn">+</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                @endif
+                                            </div>
+                                        </div>
+                                    </div>
 
                                     <div class="col-12">
                                         <div class="create_report_btn mt_30">
@@ -282,17 +380,31 @@
             newRow.className = 'customer-service-row';
             newRow.innerHTML = `
                 <div class="row">
-                    <div class="col-lg-5">
+                    <div class="col-lg-2">
                         <div class="common_input mb_15">
                             <input type="text" name="service_titles[]" placeholder="Enter Service Title" autocomplete="off">
                         </div>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-2">
+                        <div class="common_input mb_15">
+                            <select name="service_labels[]" class="nice_Select2 wide form-control">
+                                <option value="withImage">withImage</option>
+                                <option value="withoutImage">withoutImage</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
                         <div class="common_input mb_15">
                             <input type="text" name="service_descriptions[]" placeholder="Enter Service Description" autocomplete="off">
                         </div>
                     </div>
-                    <div class="col-lg-1">
+                    <div class="col-lg-4">
+                        <div class="fileupload btn btn_1 radius_btn btn-anim mb_15" style="white-space: nowrap; display: block;">
+                            <i class="fa fa-upload"></i><span class="btn-text">Upload Image</span>
+                            <input type="file" class="upload" name="service_images[]" accept="image/*">
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
                         <button type="button" class="remove-service">×</button>
                     </div>
                 </div>
@@ -308,6 +420,42 @@
             button.addEventListener('click', function() {
                 this.closest('.customer-service-row').remove();
             });
+        });
+
+        // FAQ Dynamic Add/Remove
+        document.getElementById('add-faq-btn').addEventListener('click', function() {
+            const container = document.getElementById('faqs-container');
+            const newRow = document.createElement('div');
+            newRow.className = 'faq-row';
+            newRow.innerHTML = `
+                <div class="row">
+                    <div class="col-lg-5">
+                        <div class="common_input mb_15">
+                            <input type="text" name="faq_titles[]" placeholder="Enter FAQ Title" autocomplete="off">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="common_input mb_15">
+                            <input type="text" name="faq_descriptions[]" placeholder="Enter FAQ Description" autocomplete="off">
+                        </div>
+                    </div>
+                    <div class="col-lg-1">
+                        <button type="button" class="remove-faq">×</button>
+                    </div>
+                </div>
+            `;
+            container.appendChild(newRow);
+
+            newRow.querySelector('.remove-faq').addEventListener('click', function() {
+                container.removeChild(newRow);
+            });
+        });
+
+        // Remove FAQ row
+        document.addEventListener('click', function(e) {
+            if (e.target.classList.contains('remove-faq')) {
+                e.target.closest('.faq-row').remove();
+            }
         });
     </script>
     <script>
