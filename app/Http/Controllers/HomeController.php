@@ -311,13 +311,13 @@ class HomeController extends Controller
 
     public function divsions($category_id = null)
     {
-        $category = CdCategory::where('title','LIKE','%'.$category_id.'%')->with('sub_categories.solutions')->first();
+        $category = CdCategory::where('slug','LIKE','%'.$category_id.'%')->with('sub_categories.solutions')->first();
         // dd($category);
         
         // Check if category exists
         if (!$category) {
             // Handle the case where category is not found
-            abort(404, 'Category not found');
+            abort(403, 'Category not found');
         }
 
         $caseStudies = CdFeature::whereHas('category',function($query) use ($category){
