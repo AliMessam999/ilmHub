@@ -11,27 +11,15 @@ class CdCategorySeeder extends Seeder
     {
         // Seed data for the 'cd_categories' table
         $data = array (
-  // 0 => 
-  // array (
-  //   'id' => 0,
-  //   'title' => '',
-  //   'slug' => '   ',
-  //   'parent' => NULL,
-  //   'deleted_at' => NULL,
-  //   'created_at' => NULL,
-  //   'updated_at' => NULL,
-  //   'menu_id' => NULL,
-  //   'description' => NULL,
-  // ),
-  1 => 
+  0 => 
   array (
     'id' => 1,
-    'title' => 'ICT',
-    'slug' => '/divisions/ict',
+    'title' => 'IT Infrastructure',
+    'slug' => '/divisions/it-infrastructure',
     'parent' => NULL,
     'deleted_at' => NULL,
     'created_at' => '2023-11-22 11:02:40',
-    'updated_at' => '2025-11-10 11:12:58',
+    'updated_at' => '2025-11-24 05:26:11',
     'menu_id' => 2,
     'description' => '<h2>Power Your Digital Future</h2>
 
@@ -47,7 +35,7 @@ class CdCategorySeeder extends Seeder
 
 <p><strong>Email: </strong>babar@cdigital.com.pk</p>',
   ),
-  2 => 
+  1 => 
   array (
     'id' => 2,
     'title' => 'Hydromet',
@@ -71,7 +59,7 @@ class CdCategorySeeder extends Seeder
 
 <p><strong>Email: </strong>sibtain@cdigital.com.pk</p>',
   ),
-  3 => 
+  2 => 
   array (
     'id' => 3,
     'title' => 'Biotechnology',
@@ -95,7 +83,7 @@ class CdCategorySeeder extends Seeder
 
 <p><strong>Email: </strong>quratulain@cdigital.com.pk</p>',
   ),
-  4 => 
+  3 => 
   array (
     'id' => 4,
     'title' => 'Renewable Energy',
@@ -119,7 +107,7 @@ class CdCategorySeeder extends Seeder
 
 <p><strong>Email: </strong>riaz@cdigital.com.pk</p>',
   ),
-  5 => 
+  4 => 
   array (
     'id' => 5,
     'title' => 'Mining & Minerals',
@@ -143,7 +131,7 @@ class CdCategorySeeder extends Seeder
 
 <p><strong>Email: </strong>quratulain@cdigital.com.pk</p>',
   ),
-  6 => 
+  5 => 
   array (
     'id' => 6,
     'title' => 'Security Systems',
@@ -167,7 +155,7 @@ class CdCategorySeeder extends Seeder
 
 <p><strong>Email: </strong>riaz@cdigital.com.pk</p>',
   ),
-  7 => 
+  6 => 
   array (
     'id' => 7,
     'title' => 'Software Solutions',
@@ -179,7 +167,7 @@ class CdCategorySeeder extends Seeder
     'menu_id' => NULL,
     'description' => NULL,
   ),
-  8 => 
+  7 => 
   array (
     'id' => 8,
     'title' => 'IT Infrastructure & Hardware',
@@ -191,7 +179,7 @@ class CdCategorySeeder extends Seeder
     'menu_id' => NULL,
     'description' => NULL,
   ),
-  9 => 
+  8 => 
   array (
     'id' => 9,
     'title' => 'Cyber Security & Compliance',
@@ -203,7 +191,7 @@ class CdCategorySeeder extends Seeder
     'menu_id' => NULL,
     'description' => NULL,
   ),
-  10 => 
+  9 => 
   array (
     'id' => 10,
     'title' => 'Software Solution Development',
@@ -215,7 +203,7 @@ class CdCategorySeeder extends Seeder
     'menu_id' => NULL,
     'description' => NULL,
   ),
-  11 => 
+  10 => 
   array (
     'id' => 11,
     'title' => 'Cybersecurity & Compliance',
@@ -227,7 +215,7 @@ class CdCategorySeeder extends Seeder
     'menu_id' => NULL,
     'description' => NULL,
   ),
-  12 => 
+  11 => 
   array (
     'id' => 12,
     'title' => 'Company Overview',
@@ -239,7 +227,7 @@ class CdCategorySeeder extends Seeder
     'menu_id' => 6,
     'description' => NULL,
   ),
-  13 => 
+  12 => 
   array (
     'id' => 13,
     'title' => 'Leadership & Team',
@@ -251,7 +239,7 @@ class CdCategorySeeder extends Seeder
     'menu_id' => 6,
     'description' => NULL,
   ),
-  14 => 
+  13 => 
   array (
     'id' => 14,
     'title' => 'Case Studies',
@@ -263,7 +251,7 @@ class CdCategorySeeder extends Seeder
     'menu_id' => 6,
     'description' => NULL,
   ),
-  15 => 
+  14 => 
   array (
     'id' => 15,
     'title' => 'Hydrological Monitoring',
@@ -275,7 +263,7 @@ class CdCategorySeeder extends Seeder
     'menu_id' => NULL,
     'description' => NULL,
   ),
-  16 => 
+  15 => 
   array (
     'id' => 16,
     'title' => 'Weather Stations & Networks',
@@ -287,7 +275,7 @@ class CdCategorySeeder extends Seeder
     'menu_id' => NULL,
     'description' => NULL,
   ),
-  17 => 
+  16 => 
   array (
     'id' => 17,
     'title' => 'Environmental Monitoring',
@@ -299,7 +287,7 @@ class CdCategorySeeder extends Seeder
     'menu_id' => NULL,
     'description' => NULL,
   ),
-  18 => 
+  17 => 
   array (
     'id' => 18,
     'title' => 'Technical Solutions Consulting',
@@ -311,7 +299,7 @@ class CdCategorySeeder extends Seeder
     'menu_id' => NULL,
     'description' => NULL,
   ),
-  19 => 
+  18 => 
   array (
     'id' => 19,
     'title' => 'Hardware & Networking',
@@ -323,7 +311,7 @@ class CdCategorySeeder extends Seeder
     'menu_id' => NULL,
     'description' => NULL,
   ),
-  20 => 
+  19 => 
   array (
     'id' => 28,
     'title' => 'Biotech R&D',
@@ -335,7 +323,7 @@ class CdCategorySeeder extends Seeder
     'menu_id' => NULL,
     'description' => NULL,
   ),
-  21 => 
+  20 => 
   array (
     'id' => 29,
     'title' => 'Healthcare Medical Tech',
@@ -347,7 +335,7 @@ class CdCategorySeeder extends Seeder
     'menu_id' => NULL,
     'description' => NULL,
   ),
-  22 => 
+  21 => 
   array (
     'id' => 30,
     'title' => 'Technical Consulting Services',
@@ -359,7 +347,7 @@ class CdCategorySeeder extends Seeder
     'menu_id' => NULL,
     'description' => NULL,
   ),
-  23 => 
+  22 => 
   array (
     'id' => 34,
     'title' => 'Solar Power Solutions',
@@ -371,7 +359,7 @@ class CdCategorySeeder extends Seeder
     'menu_id' => NULL,
     'description' => NULL,
   ),
-  24 => 
+  23 => 
   array (
     'id' => 35,
     'title' => 'Hybrid & Wind Energy',
@@ -383,7 +371,7 @@ class CdCategorySeeder extends Seeder
     'menu_id' => NULL,
     'description' => NULL,
   ),
-  25 => 
+  24 => 
   array (
     'id' => 36,
     'title' => 'Wind & Hybrid Energy Systems',
@@ -395,7 +383,7 @@ class CdCategorySeeder extends Seeder
     'menu_id' => NULL,
     'description' => NULL,
   ),
-  26 => 
+  25 => 
   array (
     'id' => 39,
     'title' => 'Automation & Control Systems',
@@ -407,7 +395,7 @@ class CdCategorySeeder extends Seeder
     'menu_id' => NULL,
     'description' => NULL,
   ),
-  27 => 
+  26 => 
   array (
     'id' => 40,
     'title' => 'Mining Management Systems',
@@ -419,7 +407,7 @@ class CdCategorySeeder extends Seeder
     'menu_id' => NULL,
     'description' => NULL,
   ),
-  28 => 
+  27 => 
   array (
     'id' => 49,
     'title' => 'CCTV & Surveillance',
@@ -431,7 +419,7 @@ class CdCategorySeeder extends Seeder
     'menu_id' => NULL,
     'description' => NULL,
   ),
-  29 => 
+  28 => 
   array (
     'id' => 50,
     'title' => 'Access  Control',
@@ -443,7 +431,7 @@ class CdCategorySeeder extends Seeder
     'menu_id' => NULL,
     'description' => NULL,
   ),
-  30 => 
+  29 => 
   array (
     'id' => 51,
     'title' => 'Careers',
@@ -455,7 +443,7 @@ class CdCategorySeeder extends Seeder
     'menu_id' => 6,
     'description' => NULL,
   ),
-  31 => 
+  30 => 
   array (
     'id' => 52,
     'title' => 'Insights / Blogs',
@@ -467,7 +455,7 @@ class CdCategorySeeder extends Seeder
     'menu_id' => 3,
     'description' => NULL,
   ),
-  32 => 
+  31 => 
   array (
     'id' => 53,
     'title' => 'Gallery / Media',
@@ -479,7 +467,7 @@ class CdCategorySeeder extends Seeder
     'menu_id' => 3,
     'description' => NULL,
   ),
-  33 => 
+  32 => 
   array (
     'id' => 54,
     'title' => 'Healthcare',
@@ -491,7 +479,7 @@ class CdCategorySeeder extends Seeder
     'menu_id' => 14,
     'description' => NULL,
   ),
-  34 => 
+  33 => 
   array (
     'id' => 55,
     'title' => 'Education',
@@ -503,7 +491,7 @@ class CdCategorySeeder extends Seeder
     'menu_id' => 14,
     'description' => NULL,
   ),
-  35 => 
+  34 => 
   array (
     'id' => 56,
     'title' => 'Utilities / Environment',
@@ -515,7 +503,7 @@ class CdCategorySeeder extends Seeder
     'menu_id' => 14,
     'description' => NULL,
   ),
-  36 => 
+  35 => 
   array (
     'id' => 57,
     'title' => 'Defence & Law Enforcement',
@@ -527,7 +515,7 @@ class CdCategorySeeder extends Seeder
     'menu_id' => 14,
     'description' => NULL,
   ),
-  37 => 
+  36 => 
   array (
     'id' => 58,
     'title' => 'Private Enterprises',
@@ -539,7 +527,7 @@ class CdCategorySeeder extends Seeder
     'menu_id' => 14,
     'description' => NULL,
   ),
-  38 => 
+  37 => 
   array (
     'id' => 59,
     'title' => 'Integrated Security Solutions',
@@ -548,6 +536,102 @@ class CdCategorySeeder extends Seeder
     'deleted_at' => NULL,
     'created_at' => '2025-11-06 12:01:22',
     'updated_at' => '2025-11-11 05:25:22',
+    'menu_id' => NULL,
+    'description' => NULL,
+  ),
+  38 => 
+  array (
+    'id' => 71,
+    'title' => 'Data',
+    'slug' => '/sub-divisions/data',
+    'parent' => '1',
+    'deleted_at' => NULL,
+    'created_at' => '2025-11-22 09:19:21',
+    'updated_at' => '2025-11-22 09:19:21',
+    'menu_id' => NULL,
+    'description' => NULL,
+  ),
+  39 => 
+  array (
+    'id' => 72,
+    'title' => 'IT Modernization & Cloud Infrastructure',
+    'slug' => '/sub-divisions/it-modernization-cloud-infrastructure',
+    'parent' => '1',
+    'deleted_at' => NULL,
+    'created_at' => '2025-11-22 09:23:10',
+    'updated_at' => '2025-11-22 09:23:10',
+    'menu_id' => NULL,
+    'description' => NULL,
+  ),
+  40 => 
+  array (
+    'id' => 73,
+    'title' => 'Enterprise IT Architecture & Strategy',
+    'slug' => '/sub-divisions/enterprise-it-architecture-strategy',
+    'parent' => '1',
+    'deleted_at' => NULL,
+    'created_at' => '2025-11-22 09:24:23',
+    'updated_at' => '2025-11-22 09:24:23',
+    'menu_id' => NULL,
+    'description' => NULL,
+  ),
+  41 => 
+  array (
+    'id' => 74,
+    'title' => 'Cybersecurity & Compliance',
+    'slug' => '/sub-divisions/cybersecurity-compliance',
+    'parent' => '1',
+    'deleted_at' => NULL,
+    'created_at' => '2025-11-22 09:24:45',
+    'updated_at' => '2025-11-22 09:24:45',
+    'menu_id' => NULL,
+    'description' => NULL,
+  ),
+  42 => 
+  array (
+    'id' => 75,
+    'title' => 'Hardware, Networking & Infrastructure',
+    'slug' => '/sub-divisions/hardware-networking-infrastructure',
+    'parent' => '1',
+    'deleted_at' => NULL,
+    'created_at' => '2025-11-22 09:25:01',
+    'updated_at' => '2025-11-22 09:26:22',
+    'menu_id' => NULL,
+    'description' => NULL,
+  ),
+  43 => 
+  array (
+    'id' => 76,
+    'title' => 'Quality Assurance & Product Validation',
+    'slug' => '/sub-divisions/quality-assurance-product-validation',
+    'parent' => '1',
+    'deleted_at' => NULL,
+    'created_at' => '2025-11-22 09:25:33',
+    'updated_at' => '2025-11-22 09:25:33',
+    'menu_id' => NULL,
+    'description' => NULL,
+  ),
+  44 => 
+  array (
+    'id' => 77,
+    'title' => 'Software Solutions',
+    'slug' => '/divisions/software-solutions',
+    'parent' => NULL,
+    'deleted_at' => NULL,
+    'created_at' => '2025-11-24 05:20:26',
+    'updated_at' => '2025-11-24 05:20:26',
+    'menu_id' => 2,
+    'description' => '<p>nnn</p>',
+  ),
+  45 => 
+  array (
+    'id' => 78,
+    'title' => 'Software Solutions Part 1',
+    'slug' => '/sub-divisions/software-solutions-part-1',
+    'parent' => '77',
+    'deleted_at' => NULL,
+    'created_at' => '2025-11-24 05:21:21',
+    'updated_at' => '2025-11-24 05:21:21',
     'menu_id' => NULL,
     'description' => NULL,
   ),

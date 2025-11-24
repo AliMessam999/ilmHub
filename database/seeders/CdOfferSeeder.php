@@ -17,6 +17,7 @@ class CdOfferSeeder extends Seeder
     'title' => 'Driving Innovation and Excellence for Sustainable Corporate Success Worldwide.',
     'description' => '<p>heading</p>',
     'alt' => 'Our Journey',
+    'class' => NULL,
     'image' => 'upload/offer/hEOZl5izDDWWWr8uZXLroCHzMAeiVeSlX2oMXd4D.webp',
     'icon' => NULL,
     'deleted_at' => NULL,
@@ -31,6 +32,7 @@ class CdOfferSeeder extends Seeder
     'title' => 'Federal Board of Revenue',
     'description' => '<p>test</p>',
     'alt' => 'Federal Board of Revenue',
+    'class' => NULL,
     'image' => 'upload/offer/f2LXf1IZfWYJDc1m9DrEIPnN7YqhhV6ru2KSebve.png',
     'icon' => NULL,
     'deleted_at' => NULL,
@@ -45,6 +47,7 @@ class CdOfferSeeder extends Seeder
     'title' => 'Pakistan Engineering Council (CA-No Limit)',
     'description' => '<p>test</p>',
     'alt' => 'Pakistan Engineering Council (CA-No Limit)',
+    'class' => NULL,
     'image' => 'upload/offer/IKHRPGTlIqjZKSDrOACSPtgDARlHRf5Wl5U8ZylM.png',
     'icon' => NULL,
     'deleted_at' => NULL,
@@ -59,6 +62,7 @@ class CdOfferSeeder extends Seeder
     'title' => 'Pakistan Software Export Board',
     'description' => '<p>test</p>',
     'alt' => 'Pakistan Software Export Board',
+    'class' => NULL,
     'image' => 'upload/offer/AYDjE2CEiyza6qLDo3rVu9VRAVQNcdFJLoZ2GfN8.png',
     'icon' => NULL,
     'deleted_at' => NULL,
@@ -73,6 +77,7 @@ class CdOfferSeeder extends Seeder
     'title' => 'Islamabad Chamber of Commerce & Industry',
     'description' => '<p>test</p>',
     'alt' => 'Islamabad Chamber of Commerce & Industry',
+    'class' => NULL,
     'image' => 'upload/offer/ZnTIBihiNqTdHMGkPAbto14w8Y1Kr5Ulb39Qdt31.png',
     'icon' => NULL,
     'deleted_at' => NULL,
@@ -87,6 +92,7 @@ class CdOfferSeeder extends Seeder
     'title' => 'Rawalpindi Chamber of Commerce & Industry',
     'description' => '<p>test</p>',
     'alt' => 'Rawalpindi Chamber of Commerce & Industry',
+    'class' => NULL,
     'image' => 'upload/offer/JHlH7qGDhfTVGiWL0r006dqRsesfLCnaMaBqr3Na.png',
     'icon' => NULL,
     'deleted_at' => NULL,
@@ -101,6 +107,7 @@ class CdOfferSeeder extends Seeder
     'title' => 'ISO 9001: 2015 Certified <br> ISO 14001:2015  Certified <br> ISO 14001:2018 Certified',
     'description' => '<p>cert</p>',
     'alt' => 'ISO',
+    'class' => NULL,
     'image' => 'upload/offer/SEeR7UivSfs7TlwUXU8CHGtbhpL35xtKMEQ8XU1y.png',
     'icon' => NULL,
     'deleted_at' => NULL,
@@ -148,6 +155,7 @@ class CdOfferSeeder extends Seeder
                 ></a>
               </p>',
     'alt' => 'Career',
+    'class' => NULL,
     'image' => 'upload/offer/UJKPQmhmIG2o7K2NXZIM7D6v6fBmFm1F524dXGfA.jpg',
     'icon' => NULL,
     'deleted_at' => NULL,
@@ -162,6 +170,7 @@ class CdOfferSeeder extends Seeder
     'title' => 'Innovative Solutions',
     'description' => '<p>We stay ahead of the curve, leveraging cutting-edge technologies and strategies to keep you competitive in a marketplace.</p>',
     'alt' => 'Innovative Solutions image',
+    'class' => NULL,
     'image' => 'upload/offer/OBH4U9SYfA2CjfmSOc1UB97hI2JiCIesaOasCoD1.png',
     'icon' => NULL,
     'deleted_at' => NULL,
@@ -176,6 +185,7 @@ class CdOfferSeeder extends Seeder
     'title' => 'Award-Winning Expertise',
     'description' => '<p>Recognized by industry leaders, our award-winning team has a proven record of delivering excellence across projects.</p>',
     'alt' => 'Award-Winning Expertise image',
+    'class' => NULL,
     'image' => 'upload/offer/DAi3LYwHLqxce1shjlneU55lqXgE7mGSb7fbxHLU.png',
     'icon' => NULL,
     'deleted_at' => NULL,
@@ -190,6 +200,7 @@ class CdOfferSeeder extends Seeder
     'title' => 'Dedicated Support',
     'description' => '<p>Our team is always available to address your concerns, providing quick and effective solution to keep your business.</p>',
     'alt' => 'Dedicated Support Image',
+    'class' => NULL,
     'image' => 'upload/offer/KtWtGtV7qX6XrYiYvU7hYKdQU1K1pK399vIqlmvd.png',
     'icon' => NULL,
     'deleted_at' => NULL,
@@ -202,19 +213,20 @@ class CdOfferSeeder extends Seeder
   array (
     'id' => 14,
     'title' => 'Our Mission',
-    'description' => '<p>Our mission is empower businesses through innovate best&nbsp;solution, exceptional service.</p>
+    'description' => '<p>To empower industries with smart, secure, and future-ready technologies.</p>
 
 <ul>
-	<li>Innovation &amp; Excellence</li>
-	<li>Exceptional Customer</li>
-	<li>Business Growth</li>
+	<li>Empowerment</li>
+	<li>Tecnology</li>
+	<li>Growth</li>
 </ul>',
     'alt' => 'our mission',
+    'class' => NULL,
     'image' => 'upload/offer/pkEZOds7AXbARy1ngYDqFbOBEOO3A5XpfMb1hqxU.jpg',
     'icon' => NULL,
     'deleted_at' => NULL,
     'created_at' => '2025-11-13 06:08:38',
-    'updated_at' => '2025-11-13 06:20:27',
+    'updated_at' => '2025-11-21 10:39:26',
     'category_id' => 12,
     'position' => 'bottom',
   ),
@@ -222,7 +234,7 @@ class CdOfferSeeder extends Seeder
   array (
     'id' => 15,
     'title' => 'Our Vision',
-    'description' => '<p>Our vision is to become a global leader in providing transformative business solutions.</p>
+    'description' => '<p>To lead global transformation with intelligent, ethical, and future-driven technology.</p>
 
 <ul>
 	<li>Global Leadership</li>
@@ -230,11 +242,208 @@ class CdOfferSeeder extends Seeder
 	<li>Sustainable Success</li>
 </ul>',
     'alt' => 'Our Vision',
+    'class' => NULL,
     'image' => 'upload/offer/2e8G2aiwsa6JHfWxMasBLeot4qqbf4JWrcmHaYNb.jpg',
     'icon' => NULL,
     'deleted_at' => NULL,
     'created_at' => '2025-11-13 06:16:39',
-    'updated_at' => '2025-11-13 06:18:32',
+    'updated_at' => '2025-11-21 10:43:56',
+    'category_id' => 12,
+    'position' => 'bottom',
+  ),
+  13 => 
+  array (
+    'id' => 16,
+    'title' => 'Advancing Technology for Sustainable Indutrial Growth Worldwide',
+    'description' => '<p>nn</p>',
+    'alt' => 'about_page_title',
+    'class' => NULL,
+    'image' => 'upload/offer/U2Nv1ZhfG0KO8In3LHyvNYtWJ75uOHMqjMRDNkjg.jpg',
+    'icon' => NULL,
+    'deleted_at' => NULL,
+    'created_at' => '2025-11-21 10:08:43',
+    'updated_at' => '2025-11-21 10:10:25',
+    'category_id' => 1,
+    'position' => 'bottom',
+  ),
+  14 => 
+  array (
+    'id' => 17,
+    'title' => 'IT Infrasttucture',
+    'description' => '<p>Empowering businesses with seemless connectivity and smart systems, out IT solutions drive efficiency, security, and digital growth accross industries.</p>
+
+<ul>
+	<li>IT Modernization &amp; Cloud Infrastructure</li>
+	<li>Enterprise IT Architecture &amp; Strategy</li>
+	<li>Cyber Security &amp; Compliance</li>
+	<li>Hardware, Networking &amp; Infrastructure</li>
+	<li>Quality Assurance &amp; Product Validation</li>
+</ul>',
+    'alt' => 'home_page_card',
+    'class' => 'tji-service-2',
+    'image' => 'upload/offer/fCabDemjm6sjNrlebQeN7vfddqYcuv0T3VesKl9G.jpg',
+    'icon' => NULL,
+    'deleted_at' => NULL,
+    'created_at' => '2025-11-21 11:42:20',
+    'updated_at' => '2025-11-21 15:21:32',
+    'category_id' => 1,
+    'position' => 'bottom',
+  ),
+  15 => 
+  array (
+    'id' => 18,
+    'title' => 'Revolutionaizing Data',
+    'description' => '<p>Empowering businesses with seemless connectivity and smart systems, out IT solutions drive efficiency, security, and digital growth accross industries.</p>
+
+<ul>
+	<li>IT Modernization &amp; Cloud Infrastructure</li>
+	<li>Enterprise IT Architecture &amp; Strategy</li>
+</ul>',
+    'alt' => 'home_page_card',
+    'class' => 'tji-service-1',
+    'image' => 'upload/offer/i0aCPV1nuf1eFjwE4sxsvBMlgcHeSlH1THOUbVyV.jpg',
+    'icon' => NULL,
+    'deleted_at' => '2025-11-22 04:19:30',
+    'created_at' => '2025-11-21 15:20:38',
+    'updated_at' => '2025-11-22 04:19:30',
+    'category_id' => 1,
+    'position' => 'bottom',
+  ),
+  16 => 
+  array (
+    'id' => 19,
+    'title' => 'Software Solutions & AI',
+    'description' => '<p>Transforming industries through intelligent software, automation, and data-driven solutions that power smarter operations and growth.</p>
+
+<ul>
+	<li>Digital Transformation</li>
+	<li>Enterprose Business Applications</li>
+	<li>AI &amp; Intelligent Automation</li>
+	<li>Application Development &amp; Integration</li>
+</ul>',
+    'alt' => 'home_page_card',
+    'class' => 'tji-service-1',
+    'image' => 'upload/offer/6MLMbDJdC9YlC9wcx4zQu58yWB3Xdrmle9MsGPhY.jpg',
+    'icon' => NULL,
+    'deleted_at' => NULL,
+    'created_at' => '2025-11-22 04:26:55',
+    'updated_at' => '2025-11-22 04:26:55',
+    'category_id' => 12,
+    'position' => 'bottom',
+  ),
+  17 => 
+  array (
+    'id' => 20,
+    'title' => 'Hydromet',
+    'description' => '<p>Turning environmental data into actionable intelligence.</p>
+
+<ul>
+	<li>Hydrology &amp; Flood Management</li>
+	<li>Meteorology &amp; Climate Monitoring</li>
+	<li>Agrometerology &amp; Precision Agriculture</li>
+	<li>Water Quality &amp; Environmental</li>
+</ul>',
+    'alt' => 'home_page_card',
+    'class' => 'tji-service-1',
+    'image' => 'upload/offer/LqGuMepP9Ol4laoUOPcdY5pgHd3LS1YSEgZoqHZb.jpg',
+    'icon' => NULL,
+    'deleted_at' => NULL,
+    'created_at' => '2025-11-22 04:29:45',
+    'updated_at' => '2025-11-22 04:30:13',
+    'category_id' => 12,
+    'position' => 'bottom',
+  ),
+  18 => 
+  array (
+    'id' => 21,
+    'title' => 'Biotech',
+    'description' => '<p>From lab automation to digital diagnostics, we enable smarter, data-driven breakthroughs in biotechnology.</p>
+
+<ul>
+	<li>Strain Engineering &amp; Synthetic Biology</li>
+	<li>Fermentation &amp; Bioprocess Development</li>
+	<li>Downstream Processing (DSP)</li>
+	<li>Tech Tranfer &amp; Industrial Scale-Up</li>
+	<li>Biotech Technical Services</li>
+	<li>Product Development &amp; Partnerships</li>
+</ul>',
+    'alt' => 'home_page_card',
+    'class' => 'tji-service-3',
+    'image' => 'upload/offer/myfvfjuR0rDfABhcOymx3okjOIEbJav0dgZIQ209.jpg',
+    'icon' => NULL,
+    'deleted_at' => NULL,
+    'created_at' => '2025-11-22 04:33:31',
+    'updated_at' => '2025-11-22 04:33:31',
+    'category_id' => 12,
+    'position' => 'bottom',
+  ),
+  19 => 
+  array (
+    'id' => 22,
+    'title' => 'Energy',
+    'description' => '<p>Empowering a greener world with smart, reliable, and future-ready energy systems.</p>
+
+<ul>
+	<li>Solar Engineering &amp; EPC</li>
+	<li>Operations, Maintenance &amp; Monitoring</li>
+	<li>Renewable Energy Advisory</li>
+	<li>Product Solutions</li>
+</ul>',
+    'alt' => 'home_page_card',
+    'class' => 'tji-service-4',
+    'image' => 'upload/offer/zmB7UBzeuIwx7Za4UCCzy5KhqiGThUPOU2FEPiay.jpg',
+    'icon' => NULL,
+    'deleted_at' => NULL,
+    'created_at' => '2025-11-22 04:36:34',
+    'updated_at' => '2025-11-22 04:36:34',
+    'category_id' => 12,
+    'position' => 'bottom',
+  ),
+  20 => 
+  array (
+    'id' => 23,
+    'title' => 'Security',
+    'description' => '<p>Protecting what matters most through intelligent, easy-to-trust security systems.</p>
+
+<ul>
+	<li>Integrated Surveillance &amp; Analytics</li>
+	<li>Access Control &amp; Identity</li>
+	<li>Intrusion &amp; Perimeter Defense</li>
+	<li>Fire Detection &amp; Safety</li>
+	<li>Public Address &amp; Conference Systems</li>
+	<li>Scanning, Detection &amp; Screening</li>
+	<li>Vehicle Tracking &amp; Telematics</li>
+	<li>Command, Control &amp; Security Management</li>
+</ul>',
+    'alt' => 'home_page_card',
+    'class' => 'tji-service-1',
+    'image' => 'upload/offer/PLpYncjxIFeQzS1XGXqKn1gyoTnsKFG0chRLY28n.jpg',
+    'icon' => NULL,
+    'deleted_at' => NULL,
+    'created_at' => '2025-11-22 04:39:01',
+    'updated_at' => '2025-11-22 04:39:01',
+    'category_id' => 12,
+    'position' => 'bottom',
+  ),
+  21 => 
+  array (
+    'id' => 24,
+    'title' => 'Mining and Minerals',
+    'description' => '<p>From exploration to operations, our smart solutions make mining safer, cleaner, and more connected.</p>
+
+<ul>
+	<li>Geological Surveying &amp; Sensing</li>
+	<li>Mine Automation &amp; Control</li>
+	<li>Safety, Environment &amp; Compliance Monitoring</li>
+	<li>Mineral Processing Data Systems</li>
+</ul>',
+    'alt' => 'home_page_card',
+    'class' => 'tji-service-1',
+    'image' => 'upload/offer/658CzgxdVExyK3WJaUH8g0bUuys6rh6NJMequ3Je.jpg',
+    'icon' => NULL,
+    'deleted_at' => NULL,
+    'created_at' => '2025-11-22 04:41:30',
+    'updated_at' => '2025-11-22 04:41:30',
     'category_id' => 12,
     'position' => 'bottom',
   ),

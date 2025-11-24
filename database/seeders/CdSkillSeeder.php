@@ -70,12 +70,12 @@ class CdSkillSeeder extends Seeder
   array (
     'id' => 7,
     'title' => 'Clients Served',
-    'percentage' => '50+',
+    'percentage' => '250000+',
     'description' => 'Decades of Experience, Endless Innovation',
     'position' => 'right',
     'deleted_at' => NULL,
     'created_at' => '2025-11-18 10:16:19',
-    'updated_at' => '2025-11-18 10:16:19',
+    'updated_at' => '2025-11-21 11:08:58',
   ),
   6 => 
   array (
@@ -84,9 +84,9 @@ class CdSkillSeeder extends Seeder
     'percentage' => '70+',
     'description' => 'New to CDigital',
     'position' => 'top',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-11-21 09:57:59',
     'created_at' => '2025-11-18 10:42:42',
-    'updated_at' => '2025-11-18 10:43:58',
+    'updated_at' => '2025-11-21 09:57:59',
   ),
   7 => 
   array (
@@ -98,6 +98,28 @@ class CdSkillSeeder extends Seeder
     'deleted_at' => '2025-11-18 10:54:14',
     'created_at' => '2025-11-18 10:53:27',
     'updated_at' => '2025-11-18 10:54:14',
+  ),
+  8 => 
+  array (
+    'id' => 10,
+    'title' => 'Digital Transformation',
+    'percentage' => '95%',
+    'description' => NULL,
+    'position' => 'progress_bar',
+    'deleted_at' => NULL,
+    'created_at' => '2025-11-21 10:51:16',
+    'updated_at' => '2025-11-21 10:52:41',
+  ),
+  9 => 
+  array (
+    'id' => 11,
+    'title' => 'Sustainablilty Commitment',
+    'percentage' => '90%',
+    'description' => NULL,
+    'position' => 'progress_bar',
+    'deleted_at' => NULL,
+    'created_at' => '2025-11-21 10:53:02',
+    'updated_at' => '2025-11-21 10:53:02',
   ),
 );
         DB::table('cd_skills')->insert($data);

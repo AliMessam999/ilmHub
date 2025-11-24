@@ -17,11 +17,11 @@ class CdSolutionSeeder extends Seeder
     'type' => 'Project',
     'alt' => 'tji-service-2',
     'image' => 'upload/project/gxCS0ONxpJsleqtH8FSFBARBoqEjfRj1eLzLqFHr.png',
-    'description' => 'Our hydrological monitoring solutions provide accurate, real-time insights into water levels, flow, and quality. Designed to support effective decision-making, we help governments, researchers, and communities manage water resources responsibly &mdash; ensuring resilience against floods, droughts, and environmental change.',
+    'description' => '<p>To empower industries with smart, secure, and future-ready technologies.</p>',
     'category_id' => 15,
     'deleted_at' => NULL,
     'created_at' => '2025-11-15 10:13:43',
-    'updated_at' => '2025-11-18 05:15:31',
+    'updated_at' => '2025-11-22 11:05:00',
     'title' => 'Real-Time Awareness for a Resilient Water Future',
     'slug' => '/sub-divisions/hydrological-monitoring',
   ),
@@ -31,11 +31,17 @@ class CdSolutionSeeder extends Seeder
     'type' => 'Project',
     'alt' => 'tji-service-2',
     'image' => 'upload/project/sFlgKWTU8xOIe977Squddt8CtCT9RyWU86eXn6t4.png',
-    'description' => 'IT Infrastructure &amp; Hardware',
+    'description' => '<p>To empower industries with smart, secure, and future-ready technologies.</p>
+
+<ul>
+	<li>Empowerment</li>
+	<li>Tecnology</li>
+	<li>Growth</li>
+</ul>',
     'category_id' => 8,
     'deleted_at' => NULL,
     'created_at' => '2025-11-15 10:27:10',
-    'updated_at' => '2025-11-18 05:17:58',
+    'updated_at' => '2025-11-21 11:22:38',
     'title' => 'IT Infrastructure & Hardware',
     'slug' => '/sub-divisions/it-infrastructure-and-hardware',
   ),
@@ -45,11 +51,15 @@ class CdSolutionSeeder extends Seeder
     'type' => 'Project',
     'alt' => 'tji-service-1',
     'image' => 'upload/project/ScwQKvMVilum0jwiw9JE4t5phcGbx1WMXKcIwqER.jpg',
-    'description' => 'A unified platform enabling organizations to seamlessly connect ERP, CRM, HRMS, and custom applications. This solution improves data synchronization, automates workflows, and ensures smooth cross-department operations.',
+    'description' => '<ul>
+	<li>Empow</li>
+	<li>Tecnology</li>
+	<li>Growth</li>
+</ul>',
     'category_id' => 7,
     'deleted_at' => NULL,
     'created_at' => '2025-11-17 11:32:25',
-    'updated_at' => '2025-11-18 05:18:37',
+    'updated_at' => '2025-11-22 06:54:39',
     'title' => 'Enterprise Software Integration Suite',
     'slug' => '/sub-divisions/software-solutions',
   ),
@@ -73,11 +83,17 @@ class CdSolutionSeeder extends Seeder
     'type' => 'Project',
     'alt' => 'tji-service-3',
     'image' => 'upload/project/bEQuUBDOULptPFZHU6KAYqtha0ksJDmoW1cOJYNW.jpg',
-    'description' => 'A streamlined workplace solution offering automated task management, document routing, internal communication tools, and centralized reporting dashboards to modernize daily operations.',
+    'description' => '<p>To empower industries with smart, secure, and future-ready technologies.</p>
+
+<ul>
+	<li>Empowerment</li>
+	<li>Tecnology</li>
+	<li>Growth</li>
+</ul>',
     'category_id' => 17,
     'deleted_at' => NULL,
     'created_at' => '2025-11-17 11:36:30',
-    'updated_at' => '2025-11-18 05:20:05',
+    'updated_at' => '2025-11-21 11:23:26',
     'title' => 'Digital Workplace Automation Platform',
     'slug' => '/sub-divisions/environmental-monitoring',
   ),
@@ -199,13 +215,55 @@ class CdSolutionSeeder extends Seeder
     'type' => 'Project',
     'alt' => 'tji-service-2',
     'image' => 'upload/project/gMfsVnPDFj488ndskHCI9PDxRvAwWrb6j11JKI5e.jpg',
-    'description' => 'An advanced analytics system that allows organizations to convert raw data into insights through dashboards, forecasting models, and automated reporting&mdash;supporting smarter decision-making.',
+    'description' => '<p>An advanced analytics system that allows organizations to convert raw data into insights through dashboards, forecasting models, and automated reporting&mdash;supporting smarter decision-making.</p>',
     'category_id' => 16,
     'deleted_at' => NULL,
     'created_at' => '2025-11-18 05:32:50',
-    'updated_at' => '2025-11-18 05:32:50',
+    'updated_at' => '2025-11-22 10:37:06',
     'title' => 'Business Intelligence & Analytics Framework',
     'slug' => '/sub-divisions/weather-stations-networks',
+  ),
+  14 => 
+  array (
+    'id' => 113,
+    'type' => 'Project',
+    'alt' => 'tji-service-2',
+    'image' => 'upload/project/rJbp5OeLp0mmOuhIcsfHASFw1W42JXCQEecYKKGv.jpg',
+    'description' => '<p>mmm</p>',
+    'category_id' => 71,
+    'deleted_at' => NULL,
+    'created_at' => '2025-11-22 09:20:21',
+    'updated_at' => '2025-11-22 09:20:21',
+    'title' => 'Data Solution',
+    'slug' => '/sub-divisions/data-solution',
+  ),
+  15 => 
+  array (
+    'id' => 114,
+    'type' => 'Project',
+    'alt' => 'tji-service-2',
+    'image' => 'upload/project/V1iIHw9Z6LJrgoHygpVXNfslmQj3lTHOixdUnWdf.jpg',
+    'description' => '<p>In today&#39;s fast-paced digital landscape, outdated infrastructure can hold your business back. Our IT Modernization &amp; Cloud Infrastructure services help you break free from legacy limitations and embrace agile, scalable systems that drive efficiency and innovation. Whether you&#39;re consolidating data centers, migrating to the cloud, or strengthening business continuity, we provide end-to-end solutions that modernize your technology foundation while minimizing disruption. Our approach balances performance, security, and cost-effectiveness ensuring your infrastructure not only meets today&#39;s demands but is ready to evolve with tomorrow&#39;s opportunities.</p>',
+    'category_id' => 72,
+    'deleted_at' => NULL,
+    'created_at' => '2025-11-22 09:31:01',
+    'updated_at' => '2025-11-22 09:31:01',
+    'title' => 'Modern systems built for agility, designed for growth',
+    'slug' => '/sub-divisions/modern-systems-built-for-agility-designed-for-growth',
+  ),
+  16 => 
+  array (
+    'id' => 115,
+    'type' => 'Project',
+    'alt' => 'tji-service-2',
+    'image' => 'upload/project/wiiMUKnMr7mY3fZLzq9CDmx68tihH5xvhGBgxZL7.jpg',
+    'description' => '<p>An advanced analytics system that allows organizations to convert raw data into insights through dashboards, forecasting models, and automated reporting&mdash;supporting smarter decision-making.</p>',
+    'category_id' => 78,
+    'deleted_at' => NULL,
+    'created_at' => '2025-11-24 05:23:43',
+    'updated_at' => '2025-11-24 05:47:07',
+    'title' => 'Solution 1 for software solutions',
+    'slug' => '/sub-divisions/solution-1-for-software-solutions',
   ),
 );
         DB::table('cd_solutions')->insert($data);
