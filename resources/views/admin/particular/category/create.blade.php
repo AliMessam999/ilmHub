@@ -95,7 +95,10 @@
     let slugManuallyModified = false;
 
     titleInput.addEventListener('input', function() {
-        if (!slugManuallyModified) slugInput.value = slugify(this.value);
+        if (!slugManuallyModified) {
+            const baseSlug = slugify(this.value);
+            slugInput.value = '/divisions/' + baseSlug;
+        }
     });
 
     slugInput.addEventListener('input', function() {
@@ -105,7 +108,8 @@
     slugInput.addEventListener('change', function() {
         if (this.value.trim() === '') {
             slugManuallyModified = false;
-            slugInput.value = slugify(titleInput.value);
+            const baseSlug = slugify(titleInput.value);
+            slugInput.value = '/divisions/' + baseSlug;
         }
     });
 

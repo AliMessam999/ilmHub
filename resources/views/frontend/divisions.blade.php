@@ -67,7 +67,8 @@
                         </div>
                         <div
                             class="service-reveal-bg"
-                            data-bg-image="/{{ $sub_category->solutions[0]->image ?? '' }}"></div>
+                            data-bg-image="/{{ $sub_category->solutions[0]->image ?? '' }}">
+                        </div>
                     </div>
                     @endforeach
                     

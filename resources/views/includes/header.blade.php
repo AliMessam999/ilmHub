@@ -20,17 +20,18 @@
                   @php
                     $withSub = $menu->categories->filter(fn($cat) => $cat->sub_categories->isNotEmpty());
                     $withoutSub = $menu->categories->filter(fn($cat) => $cat->sub_categories->isEmpty());
+                    $hasDropdown = $withSub->isNotEmpty() || $withoutSub->isNotEmpty();
                   @endphp
 
-                  <li class="{{ $menu->categories->isNotEmpty() ? 'has-dropdown' : '' }}">
+                  <li class="{{ $hasDropdown ? 'has-dropdown' : '' }}">
                     <a href="{{ url($menu->slug) }}">
                       {{ $menu->title }}
+                      @if($hasDropdown)<i class="dropdown-indicator"></i>@endif
                     </a>
 
-                    {{-- CASE 1: Categories that have subcategories --}}
-                    @if ($withSub->isNotEmpty())
-                      @if ($withSub->count() > 1)
-                        {{-- Mega Menu --}}
+                    @if($hasDropdown)
+                      {{-- CASE 1: Multiple categories WITH subcategories = Mega Menu --}}
+                      @if ($withSub->isNotEmpty() && $withSub->count() > 1)
                         <ul class="sub-menu header__mega-menu mega-menu mega-menu-pages">
                           <li>
                             <div class="mega-menu-wrapper">
@@ -38,7 +39,6 @@
                                 <div class="mega-menu-pages-single">
                                   <div class="mega-menu-pages-single-inner">
                                     <a class="mega-menu-title mb-3" href="{{ url($category->slug) }}">{{ $category->title }}</a>
-
                                     <div class="mega-menu-list mt-3">
                                       @foreach ($category->sub_categories as $sub)
                                         <a href="{{ url($sub->slug) }}">{{ $sub->title }}</a>
@@ -47,41 +47,55 @@
                                   </div>
                                 </div>
                               @endforeach
+                              
+                              {{-- Add categories WITHOUT subcategories to mega menu --}}
+                              @if($withoutSub->isNotEmpty())
+                                <div class="mega-menu-pages-single">
+                                  <div class="mega-menu-pages-single-inner">
+                                    <div class="mega-menu-list mt-3">
+                                      @foreach ($withoutSub as $category)
+                                        <a class="mega-menu-title" href="{{ url($category->slug) }}">{{ $category->title }}</a>
+                                      @endforeach
+                                    </div>
+                                  </div>
+                                </div>
+                              @endif
                             </div>
                           </li>
                         </ul>
+
+                      {{-- CASE 2: Single category WITH subcategories OR Mix with categories without subcategories --}}
                       @else
-                        {{-- Single category with subcategories --}}
                         <ul class="sub-menu">
-                          @foreach ($withSub as $category)
-                            <li>
-                              <a href="{{ url($category->slug) }}">{{ $category->title }}</a>
-                              <ul class="sub-menu">
-                                @foreach ($category->sub_categories as $sub)
-                                  <li>
-                                    <a href="{{ url($sub->slug) }}">
-                                      {{ $sub->title }}
-                                    </a>
-                                  </li>
-                                @endforeach
-                              </ul>
-                            </li>
-                          @endforeach
+                          {{-- Single category with subcategories --}}
+                          @if ($withSub->isNotEmpty())
+                            @foreach ($withSub as $category)
+                              <li class="has-dropdown-sub">
+                                <a href="{{ url($category->slug) }}">
+                                  {{ $category->title }}
+                                  <i class="sub-dropdown-indicator"></i>
+                                </a>
+                                <ul class="sub-sub-menu">
+                                  @foreach ($category->sub_categories as $sub)
+                                    <li>
+                                      <a href="{{ url($sub->slug) }}">{{ $sub->title }}</a>
+                                    </li>
+                                  @endforeach
+                                </ul>
+                              </li>
+                            @endforeach
+                          @endif
+
+                          {{-- Categories without subcategories --}}
+                          @if ($withoutSub->isNotEmpty())
+                            @foreach ($withoutSub as $category)
+                              <li>
+                                <a href="{{ url($category->slug) }}">{{ $category->title }}</a>
+                              </li>
+                            @endforeach
+                          @endif
                         </ul>
                       @endif
-                    @endif
-
-                    {{-- CASE 2: Categories without subcategories --}}
-                    @if ($withoutSub->isNotEmpty())
-                      <ul class="sub-menu">
-                        @foreach ($withoutSub as $category)
-                          <li>
-                            <a href="{{ url($category->slug) }}">
-                              {{ $category->title }}
-                            </a>
-                          </li>
-                        @endforeach
-                      </ul>
                     @endif
                   </li>
                 @endforeach
@@ -109,7 +123,7 @@
             </div>
             <div class="header-button">
               <a class="tj-primary-btn" href="{{ url('/contact') }}">
-                <span class="btn-text"><span>Let’s Talk</span></span>
+                <span class="btn-text"><span>Let's Talk</span></span>
                 <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
               </a>
             </div>
@@ -168,79 +182,87 @@
           <div class="menu-area d-none d-lg-inline-flex align-items-center">
             <nav class="mainmenu">
               <ul>
-              
                 {{-- Dynamic Menus --}}
                 @foreach ($menus->sortBy('order') as $menu)
                   @php
                     $withSub = $menu->categories->filter(fn($cat) => $cat->sub_categories->isNotEmpty());
                     $withoutSub = $menu->categories->filter(fn($cat) => $cat->sub_categories->isEmpty());
+                    $hasDropdown = $withSub->isNotEmpty() || $withoutSub->isNotEmpty();
                   @endphp
 
-                  <li class="{{ $menu->categories->isNotEmpty() ? 'has-dropdown' : '' }}">
+                  <li class="{{ $hasDropdown ? 'has-dropdown' : '' }}">
                     <a href="{{ url($menu->slug) }}">
                       {{ $menu->title }}
+                      @if($hasDropdown)<i class="dropdown-indicator"></i>@endif
                     </a>
 
-                    {{-- CASE 1: Categories that have subcategories --}}
-                    @if ($withSub->isNotEmpty())
-                      @if ($withSub->count() > 1)
-                        {{-- Mega Menu --}}
+                    @if($hasDropdown)
+                      {{-- CASE 1: Multiple categories WITH subcategories = Mega Menu --}}
+                      @if ($withSub->isNotEmpty() && $withSub->count() > 1)
                         <ul class="sub-menu header__mega-menu mega-menu mega-menu-pages">
                           <li>
                             <div class="mega-menu-wrapper">
                               @foreach ($withSub as $category)
                                 <div class="mega-menu-pages-single">
                                   <div class="mega-menu-pages-single-inner">
-                                    <a class="mega-menu-title mb-3" href="#">{{ $category->title }}</a>
-                                    @if ($category->sub_categories->isNotEmpty())
-                                      <div class="mega-menu-list mt-3">
-                                        @foreach ($category->sub_categories as $sub)
-                                          <a href="{{ url($sub->slug) }}">
-                                            {{ $sub->title }}
-                                          </a>
-                                        @endforeach
-                                      </div>
-                                    @endif
+                                    <a class="mega-menu-title mb-3" href="{{ url($category->slug) }}">{{ $category->title }}</a>
+                                    <div class="mega-menu-list mt-3">
+                                      @foreach ($category->sub_categories as $sub)
+                                        <a href="{{ url($sub->slug) }}">{{ $sub->title }}</a>
+                                      @endforeach
+                                    </div>
                                   </div>
                                 </div>
                               @endforeach
+                              
+                              {{-- Add categories WITHOUT subcategories to mega menu --}}
+                              @if($withoutSub->isNotEmpty())
+                                <div class="mega-menu-pages-single">
+                                  <div class="mega-menu-pages-single-inner">
+                                    <div class="mega-menu-list mt-3">
+                                      @foreach ($withoutSub as $category)
+                                        <a class="mega-menu-title" href="{{ url($category->slug) }}">{{ $category->title }}</a>
+                                      @endforeach
+                                    </div>
+                                  </div>
+                                </div>
+                              @endif
                             </div>
                           </li>
                         </ul>
+
+                      {{-- CASE 2: Single category WITH subcategories OR Mix with categories without subcategories --}}
                       @else
-                        {{-- Single category with subcategories --}}
                         <ul class="sub-menu">
-                          @foreach ($withSub as $category)
-                            <li>
-                              <a href="{{ url($category->slug) }}">
-                                {{ $category->title }}
-                              </a>
-                              <ul class="sub-menu">
-                                @foreach ($category->sub_categories as $sub)
-                                  <li>
-                                    <a href="{{ url($sub->slug) }}">
-                                      {{ $sub->title }}
-                                    </a>
-                                  </li>
-                                @endforeach
-                              </ul>
-                            </li>
-                          @endforeach
+                          {{-- Single category with subcategories --}}
+                          @if ($withSub->isNotEmpty())
+                            @foreach ($withSub as $category)
+                              <li class="has-dropdown-sub">
+                                <a href="{{ url($category->slug) }}">
+                                  {{ $category->title }}
+                                  <i class="sub-dropdown-indicator"></i>
+                                </a>
+                                <ul class="sub-sub-menu">
+                                  @foreach ($category->sub_categories as $sub)
+                                    <li>
+                                      <a href="{{ url($sub->slug) }}">{{ $sub->title }}</a>
+                                    </li>
+                                  @endforeach
+                                </ul>
+                              </li>
+                            @endforeach
+                          @endif
+
+                          {{-- Categories without subcategories --}}
+                          @if ($withoutSub->isNotEmpty())
+                            @foreach ($withoutSub as $category)
+                              <li>
+                                <a href="{{ url($category->slug) }}">{{ $category->title }}</a>
+                              </li>
+                            @endforeach
+                          @endif
                         </ul>
                       @endif
-                    @endif
-
-                    {{-- CASE 2: Categories without subcategories --}}
-                    @if ($withoutSub->isNotEmpty())
-                      <ul class="sub-menu">
-                        @foreach ($withoutSub as $category)
-                          <li>
-                            <a href="{{ url($category->slug) }}">
-                              {{ $category->title }}
-                            </a>
-                          </li>
-                        @endforeach
-                      </ul>
                     @endif
                   </li>
                 @endforeach
@@ -264,7 +286,7 @@
             </div>
             <div class="header-button">
               <a class="tj-primary-btn" href="{{ url('/contact') }}">
-                <span class="btn-text"><span>Let’s Talk</span></span>
+                <span class="btn-text"><span>Let's Talk</span></span>
                 <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
               </a>
             </div>

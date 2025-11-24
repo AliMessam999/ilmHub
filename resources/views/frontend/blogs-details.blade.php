@@ -177,25 +177,40 @@
                             </ul>
                         </div> -->
                     </div>
-                    <div
-                        class="tj-post__navigation wow fadeInUp"
-                        data-wow-delay=".3s">
-                        <!-- previous post -->
-                        <div class="tj-nav__post previous">
-                            <div class="tj-nav-post__nav prev_post">
-                                <a href="/{{ url('news/details/'.$previous->title) }}"><span><i class="tji-arrow-left"></i></span>Previous</a>
-                            </div>
-                        </div>
-                        <div class="tj-nav-post__grid">
-                            <a href="{{ url('/news_&_blogs') }}"><i class="tji-window"></i></a>
-                        </div>
-                        <!-- next post -->
-                        <div class="tj-nav__post next">
-                            <div class="tj-nav-post__nav next_post">
-                                <a href="{{ ($next ? '/news/details'.$next->title:'#') }}">Next<span><i class="tji-arrow-right"></i></span></a>
-                                  </div>
-                        </div>
-                    </div>
+                    <!--  -->
+<div class="tj-post__navigation wow fadeInUp" data-wow-delay=".3s">
+
+    {{-- Previous Post --}}
+    <div class="tj-nav__post previous">
+        <div class="tj-nav-post__nav prev_post">
+            @if($previous)
+                <a href="{{ url('news/details/'.$previous->title) }}">
+                    <span><i class="tji-arrow-left"></i></span>Previous
+                </a>
+            @else
+                <span class="text-muted"><i class="tji-arrow-left"></i> No previous</span>
+            @endif
+        </div>
+    </div>
+
+    <div class="tj-nav-post__grid">
+        <a href="{{ url('/news_&_blogs') }}"><i class="tji-window"></i></a>
+    </div>
+
+    {{-- Next Post --}}
+    <div class="tj-nav__post next">
+        <div class="tj-nav-post__nav next_post">
+            @if($next)
+                <a href="{{ url('news/details/'.$next->title) }}">
+                    Next <span><i class="tji-arrow-right"></i></span>
+                </a>
+            @else
+                <span class="text-muted">No next <i class="tji-arrow-right"></i></span>
+            @endif
+        </div>
+    </div>
+
+</div>
 
                     <div class="tj-comments-container">
                         <div class="tj-comments-wrap">

@@ -29,7 +29,7 @@
                             <div class="col-lg-6">
                                 <label>Slug</label>
                                 <div class="common_input mb_15">
-                                    <input type="text" name="slug" id="slugInput" placeholder="Slug (optional)">
+                                    <input type="text" name="slug" id="slugInput" placeholder="/sub-divisions/slug-name">
                                     <p style="color: #999;">Leave empty to auto-generate from title</p>
                                 </div>
                             </div>
@@ -65,19 +65,21 @@
 
 @section('scripts')
 <script>
-    // Auto-generate slug from title
+    // Function to generate slug like Laravel Str::slug
     function slugify(text) {
-        return text
-            .toString()
-            .normalize('NFD')
+        return text.toString().normalize('NFD')
             .replace(/[\u0300-\u036f]/g, '')
-            .toLowerCase()
-            .trim()
+            .toLowerCase().trim()
             .replace(/\s+/g, '-')
             .replace(/[^\w\-]+/g, '')
             .replace(/\-\-+/g, '-')
             .replace(/^-+/, '')
             .replace(/-+$/, '');
+    }
+
+    function generateFullSlug(title) {
+        const baseSlug = slugify(title);
+        return '/sub-divisions/' + baseSlug;
     }
 
     const titleInput = document.getElementById('titleInput');
@@ -86,18 +88,30 @@
 
     titleInput.addEventListener('input', function() {
         if (!slugManuallyModified) {
-            slugInput.value = slugify(this.value);
+            slugInput.value = generateFullSlug(this.value);
         }
     });
 
     slugInput.addEventListener('input', function() {
-        slugManuallyModified = this.value.trim() !== '';
+        // Check if user manually removed the /sub-divisions/ prefix
+        if (!this.value.startsWith('/sub-divisions/')) {
+            slugManuallyModified = true;
+        } else {
+            slugManuallyModified = this.value.trim() !== '/sub-divisions/';
+        }
     });
 
     slugInput.addEventListener('change', function() {
-        if (this.value.trim() === '') {
+        if (this.value.trim() === '' || this.value === '/sub-divisions/') {
             slugManuallyModified = false;
-            slugInput.value = slugify(titleInput.value);
+            slugInput.value = generateFullSlug(titleInput.value);
+        }
+    });
+
+    // Initialize with empty slug that includes the prefix
+    document.addEventListener('DOMContentLoaded', function() {
+        if (!slugManuallyModified && titleInput.value === '') {
+            slugInput.value = '/sub-divisions/';
         }
     });
 

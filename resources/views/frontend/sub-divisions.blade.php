@@ -59,64 +59,56 @@
                     <div class="blog-text wow fadeInUp" data-wow-delay=".3s">
                         {!! $solution->description !!}
 
+                        @php
+                            use App\Models\CustomerService;
+                            
+                            $servicesWithImages = CustomerService::where('solution_id', $solution->id)
+                                ->where('label', 'withImage')
+                                ->get();
+                                
+                                $servicesWithoutImages = CustomerService::where('solution_id', $solution->id)
+                                ->where('label', 'withoutImage')
+                                ->get();
+                                
+                            $firstServiceWithoutImage = $servicesWithoutImages->first();
+                        @endphp
+                        
+                        @if($servicesWithImages->count() > 0)
                         <div class="images-wrap">
                             <div class="row">
+                                @foreach($servicesWithImages as $service)
                                 <div class="col-sm-6">
                                     <div class="division-detail">
-                                        <div
-                                            class="image-box"
-                                            data-bg-image="/frontend_assets/images/service/service-3.webp">
+                                        <div class="image-box" data-bg-image="/{{ $service->image }}">
                                             <div class="content">
-                                                <h5>Hydrological Monitoring</h5>
-                                                <p>
-                                                    At Bexon, we don't just focus on solving
-                                                    customer problems—we focus on creating
-                                                    experiences that delight and build lasting
-                                                    relationships. Whether it's through
-                                                    improving customer service operations,
-                                                    leveraging technology, or designing more
-                                                    engaging digital experiences,
-                                                </p>
-                                                <a class="tj-primary-btn" href="contact.html">
-                                                    <span class="btn-text"><span>Let’s Talk</span></span>
-                                                    <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="division-detail">
-                                        <div
-                                            class="image-box"
-                                            data-bg-image="/frontend_assets/images/service/service-4.webp">
-                                            <div class="content">
-                                                <h5>Weather Monitoring</h5>
-                                                <p>
-                                                    At Bexon, we don't just focus on solving
-                                                    customer problems—we focus on creating
-                                                    experiences that delight and build lasting
-                                                    relationships. Whether it's through
-                                                    improving customer service operations,
-                                                    leveraging technology, or designing more
-                                                    engaging digital experiences,
-                                                </p>
-                                                <a class="tj-primary-btn" href="contact.html">
-                                                    <span class="btn-text"><span>Let’s Talk</span></span>
+                                                <h5>{{ $service->title }}</h5>
+                                                <p>{{ $service->description }}</p>
+                                                <a class="tj-primary-btn" href="/contact">
+                                                    <span class="btn-text"><span>Let's Talk</span></span>
                                                     <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
                                                 </a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+                                @endforeach
                             </div>
                         </div>
+                        @endif
+                        
+                        @if($firstServiceWithoutImage)
                         <h3 class="wow fadeInUp" data-wow-delay=".3s">
-                            Our Range of Customer Services
+                            {{ $firstServiceWithoutImage->title }}
                         </h3>
                         <p class="wow fadeInUp" data-wow-delay=".3s">
-                            At Bexon, we don't just focus on solving customer
+                            {{ $firstServiceWithoutImage->description }}
+                        </p>
+                        @else
+                        <h3 class="wow fadeInUp" data-wow-delay=".3s">
+                            <!-- Our Range of Customer Services -->
+                        </h3>
+                        <p class="wow fadeInUp" data-wow-delay=".3s">
+                            <!-- At Bexon, we don't just focus on solving customer
                             problems—we focus on creating experiences that delight
                             and build lasting relationships. Whether it's through
                             improving customer service operations, leveraging
@@ -124,18 +116,17 @@
                             experiences, our team is here to help you exceed your
                             customers' expectations every time. We help you
                             understand your customers deeply, optimize their
-                            experience.
+                            experience. -->
                         </p>
+                        @endif
+                        
                         <div class="details-content-box">
                             @php
-                                use App\Models\CustomerService;
-
-                                // Fetch services for the current solution
-                                $services = CustomerService::where('solution_id', $solution->id)->get();
+                                $remainingServices = $servicesWithoutImages->skip(1);
                             @endphp
-                            @foreach($services as $index => $service)
+                            @foreach($remainingServices as $index => $service)
                                 <div class="service-details-item wow fadeInUp" data-wow-delay="{{ 0.2 + ($index * 0.2) }}s">
-                                    <span class="number">{{ str_pad($index + 1, 2, '0', STR_PAD_LEFT) }}.</span>
+                                    <span class="number">{{ str_pad($index + 1, 2, '0', STR_PAD_LEFT) - 1 }}.</span>
                                     <h6 class="title">
                                         {!! $service->title !!}
                                     </h6>
@@ -144,42 +135,6 @@
                                     </div>
                                 </div>
                             @endforeach
-                            <!-- 2 -->
-                            <!-- <div
-                                class="service-details-item wow fadeInUp"
-                                data-wow-delay=".4s">
-                                <div class="service-number">
-                                    <span class="number">02.</span>
-                                    <h6 class="title">
-                                        Improved Operational <br />Efficiency
-                                    </h6>
-                                    <div class="desc">
-                                        <p>
-                                            With our tools and strategies, your customer
-                                            support teams can handle inquiries faster, while
-                                            automated systems.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div> -->
-                            <!-- 3 -->
-                            <!-- <div
-                                class="service-details-item wow fadeInUp"
-                                data-wow-delay=".6s">
-                                <div class="service-number">
-                                    <span class="number">03.</span>
-                                    <h6 class="title">
-                                        Insights for Continuous Improvement
-                                    </h6>
-                                    <div class="desc">
-                                        <p>
-                                            Our data-driven approach provides team with
-                                            valuable insights into customer behavior,
-                                            enabling to continual.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div> -->
                         </div>
                         <h3 class="wow fadeInUp" data-wow-delay=".3s">
                             Frequently asked questions

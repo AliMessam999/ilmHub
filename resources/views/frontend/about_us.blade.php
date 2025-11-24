@@ -1,6 +1,33 @@
 @extends('layouts.app')
 
 @section('content')
+<style>
+    /* Style list items in mission-vision boxes */
+    .mission-vision-box p {
+        /* font-weight: light; */
+    }
+    .mission-vision-box ul li {
+        font-weight: light;
+        color: orange;
+        list-style-type: disc;
+        margin-left: 20px;
+        margin-bottom: 8px;
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    /* Optional: Style progress list titles */
+    .tj-progress-title {
+        color: #333; /* Adjust color as needed */
+        font-weight: 600;
+        margin-bottom: 5px;
+    }
+
+    /* Style for progress list items */
+    .tj-progress-list li {
+        margin-bottom: 15px;
+    }
+</style>
     <!-- start: Breadcrumb Section -->
     <section class="tj-page-header rounded-0" data-bg-image="/frontend_assets/images/bg/pheader-bg.webp">
         <div class="container-fluid">
@@ -37,7 +64,7 @@
                         <div class="heading-wrap-content">
                             <div class="sec-heading">
                                 <h2 class="sec-title title-anim">
-                                    Empowering Business with <span>Expertise.</span>
+                                    Powering Industries with Innovative <span>Solutions.</span>
                                 </h2>
                             </div>
                             <div class="btn-wrap wow fadeInUp" data-wow-delay=".6s">
@@ -82,7 +109,7 @@
                         </div>
                         <div class="box-area style-2">
                             <div class="progress-box wow fadeInUp" data-wow-delay=".3s">
-                                <h4 class="title">Business Progress</h4>
+                                <!-- <h4 class="title">Business Progress</h4> -->
                                 <ul class="tj-progress-list">
                                     @foreach ($skills as $skill)
                                         <li>
@@ -104,7 +131,7 @@
                             <span class="sub-title wow fadeInUp" data-wow-delay=".3s"><i class="tji-box"></i>Get to Know
                                 Us</span>
                             <h2 class="sec-title title-anim">
-                                {{ $about_us[0]->title }}
+                                {{ $title_except_last_word }}<span> {{ $last_word }}</span>
                             </h2>
                         </div>
                     </div>
@@ -152,7 +179,7 @@
                         <span class="sub-title wow fadeInUp" data-wow-delay=".3s"><i class="tji-box"></i> Meet Our
                             Team</span>
                         <h2 class="sec-title title-anim">
-                            Success <span>Stories</span> Fuel our Innovation.
+                            Building <span>Excellence</span> Through Collective Intelligence
                         </h2>
                     </div>
                 </div>

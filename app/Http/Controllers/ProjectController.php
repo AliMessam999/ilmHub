@@ -47,18 +47,48 @@ class ProjectController extends Controller
                 $customer_services = [];
                 $titles = $request->service_titles;
                 $descs  = $request->service_descriptions;
+                $labels = $request->service_labels;
+                $images = $request->file('service_images');
 
                 foreach ($titles as $index => $title) {
                     if ($title) {
+                        $imagePath = null;
+                        if (isset($images[$index]) && $images[$index]) {
+                            $imagePath = $images[$index]->store('upload/customer_services');
+                        }
+                        
                         array_push($customer_services, [
                             'solution_id' => $project->id,
                             'title'       => $title,
+                            'label'       => $labels[$index] ?? null,
                             'description' => $descs[$index] ?? null,
+                            'image'       => $imagePath,
                         ]);
                     }
                 }
 
                 CustomerService::insert($customer_services);
+
+                // FAQs
+                $faqs = [];
+                $faq_titles = $request->faq_titles;
+                $faq_descriptions = $request->faq_descriptions;
+
+                if ($faq_titles) {
+                    foreach ($faq_titles as $index => $title) {
+                        if ($title) {
+                            array_push($faqs, [
+                                'sub_category_id' => $request->category_id,
+                                'title' => $title,
+                                'description' => $faq_descriptions[$index] ?? null,
+                            ]);
+                        }
+                    }
+
+                    if (!empty($faqs)) {
+                        \App\Models\CdFaq::insert($faqs);
+                    }
+                }
 
                 return response()->json([
                     "message" => "Solution Created Successfully"
@@ -151,18 +181,47 @@ class ProjectController extends Controller
             CustomerService::where('solution_id', $id)->delete();
 
             $customer_services = [];
+            $images = $request->file('service_images');
+            
             foreach ($request->service_titles as $i => $title) {
                 if ($title) {
+                    $imagePath = null;
+                    if (isset($images[$i]) && $images[$i]) {
+                        $imagePath = $images[$i]->store('upload/customer_services');
+                    }
+                    
                     $customer_services[] = [
                         'solution_id' => $id,
                         'title'       => $title,
-                        'description' => $request->service_descriptions[$i] ?? null
+                        'label'       => $request->service_labels[$i] ?? null,
+                        'description' => $request->service_descriptions[$i] ?? null,
+                        'image'       => $imagePath
                     ];
                 }
             }
 
             if ($customer_services) {
                 CustomerService::insert($customer_services);
+            }
+        }
+
+        // Update FAQs
+        if ($request->filled('faq_titles')) {
+            \App\Models\CdFaq::where('sub_category_id', $CdSolution->category_id)->delete();
+
+            $faqs = [];
+            foreach ($request->faq_titles as $i => $title) {
+                if ($title) {
+                    $faqs[] = [
+                        'sub_category_id' => $CdSolution->category_id,
+                        'title' => $title,
+                        'description' => $request->faq_descriptions[$i] ?? null
+                    ];
+                }
+            }
+
+            if ($faqs) {
+                \App\Models\CdFaq::insert($faqs);
             }
         }
 

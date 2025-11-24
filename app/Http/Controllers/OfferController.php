@@ -17,37 +17,38 @@ class OfferController extends Controller
             'title' => ['required', Rule::unique('cd_offers')],
             'description' => 'required',
             'image' => ['required', Rule::imageFile(), 'max:500'],
-            'alt'=>'required',
-            'category_id'=>'required'
+            'alt' => 'required',
+            'category_id' => 'required'
         ]);
 
         if ($validator->fails()) {
             return response()->json($validator->errors(), 302);
         } else {
             
-                $path = $request->file('image')->store('upload/offer');
-                if(!$path){
-                    return response()->json([
-                        "message" => "File not store try again!"
-                    ], 302);
-                }
-                $offer = new CdOffer();
-                $offer->title = $request->title;
-                $offer->description = $request->description;
-                $offer->category_id = $request->category_id;
-                $offer->position = $request->position;
-                $offer->alt = $request->alt;
-                $offer->image = $path;
-                $result = $offer->save();
-                if ($result) {
-                    return response()->json([
-                        "message" => "Offer Created Successfully"
-                    ], 200);
-                } else {
-                    return response()->json([
-                        "message" => "Something Went Wrong"
-                    ], 302);
-                }
+            $path = $request->file('image')->store('upload/offer');
+            if(!$path){
+                return response()->json([
+                    "message" => "File not store try again!"
+                ], 302);
+            }
+            $offer = new CdOffer();
+            $offer->title = $request->title;
+            $offer->description = $request->description;
+            $offer->category_id = $request->category_id;
+            $offer->position = $request->position;
+            $offer->alt = $request->alt;
+            $offer->class = $request->class; // Add class field
+            $offer->image = $path;
+            $result = $offer->save();
+            if ($result) {
+                return response()->json([
+                    "message" => "Offer Created Successfully"
+                ], 200);
+            } else {
+                return response()->json([
+                    "message" => "Something Went Wrong"
+                ], 302);
+            }
         }
     }
 
@@ -75,11 +76,13 @@ class OfferController extends Controller
             ], 302);
         }
     }
+    
     public function show_offer($id = null)
     {
         $offer = CdOffer::get();
         return view('admin.offer.index', compact('offer'));
     }
+    
     public function update_offer(Request $request, $id)
     {
         // dd($request->all());
@@ -87,19 +90,20 @@ class OfferController extends Controller
         if (CdOffer::where('id', $id)->count() > 0) {
             if($request->file('image')){
                 $validator = Validator::make($request->all(), [
-                    'title' => ['required',],
+                    'title' => ['required'],
                     'description' => 'required',
                     'image' => ['required', Rule::imageFile(), 'max:500'],
-                    'alt'=>'required'
+                    'alt' => 'required'
                 ]);
                 $path = $request->file('image')->store('upload/offer');
-            }else{
+            } else {
                 $validator = Validator::make($request->all(), [
-                    'title' => ['required',],
+                    'title' => ['required'],
                     'description' => 'required',
-                    'alt'=>'required'
+                    'alt' => 'required'
                 ]);
             }
+            
             if (CdOffer::where('id', '!=', $id)->where('title', 'LIKE', $request->title)->count() > 0) {
                 return response()->json([
                     "message" => "The Name Has Already Been Taken"
@@ -109,55 +113,48 @@ class OfferController extends Controller
             if ($validator->fails()) {
                 return response()->json($validator->errors(), 302);
             } else {
+                $updateData = [
+                    'title' => $request->title,
+                    'description' => $request->description,
+                    'alt' => $request->alt,
+                    'class' => $request->class, // Add class field
+                    'category_id' => $request->category_id,
+                    'position' => $request->position,
+                ];
+
                 if($request->file('image')){
-                    $CdOffer = CdOffer::where('id', $id)->update([
-                        'title' => $request->title,
-                        
-                        'description' => $request->description,
-                        'alt' => $request->alt,
-                        'image' => $path,
-                        'category_id' => $request->category_id,
-                        'position' => $request->position,
-                    ]);
-                }else{
-                    $CdOffer = CdOffer::where('id', $id)->update([
-                        'title' => $request->title,
-                        'description' => $request->description,
-                        'alt' => $request->alt,
-                        'category_id' => $request->category_id,
-                        'position' => $request->position,
-                    ]);
+                    $updateData['image'] = $path;
                 }
-                        if ($CdOffer) {
-                            return response()->json([
-                                "message" => "offer Updated Successfully"
-                            ], 200);
-                        } else {
-                            return response()->json([
-                                "message" => "Something went wrong"
-                            ], 302);
-                        }
-                    }
+
+                $CdOffer = CdOffer::where('id', $id)->update($updateData);
+                
+                if ($CdOffer) {
+                    return response()->json([
+                        "message" => "Offer Updated Successfully"
+                    ], 200);
+                } else {
+                    return response()->json([
+                        "message" => "Something went wrong"
+                    ], 302);
+                }
             }
+        }
     }
 
     public function create_offer_view()
     {
         $menues = CdMenu::with('allCategories')->get();
-        // dd($menues);
-
-        return view('admin.offer.create',compact('menues'));
+        return view('admin.offer.create', compact('menues'));
     }
 
     public function update_offer_view($id)
     {
         $categories = CdMenu::with('allCategories')->get();
-        // dd($categories);
-
         $menu = CdOffer::where('id', $id);
+        
         if ($menu->count() > 0) {
             $menu = $menu->first();
-            return view('admin.offer.update', compact('menu','categories'));
+            return view('admin.offer.update', compact('menu', 'categories'));
         } else {
             return redirect('/admin/offer');
         }
