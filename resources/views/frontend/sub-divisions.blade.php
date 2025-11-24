@@ -61,6 +61,7 @@
 
                         @php
                             use App\Models\CustomerService;
+                            use Illuminate\Support\Str;
                             
                             $servicesWithImages = CustomerService::where('solution_id', $solution->id)
                                 ->where('label', 'withImage')
@@ -82,7 +83,8 @@
                                         <div class="image-box" data-bg-image="/{{ $service->image }}">
                                             <div class="content">
                                                 <h5>{{ $service->title }}</h5>
-                                                <p>{{ $service->description }}</p>
+                                                <p>{{ Str::words($service->description, 40, '...') }}</p>
+
                                                 <a class="tj-primary-btn" href="/contact">
                                                     <span class="btn-text"><span>Let's Talk</span></span>
                                                     <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
