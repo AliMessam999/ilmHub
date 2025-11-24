@@ -361,6 +361,24 @@ class CdFeatureSeeder extends Seeder
     'updated_at' => '2025-05-26 10:43:33',
     'image' => NULL,
   ),
+  16 => 
+  array (
+    'id' => 18,
+    'title' => 'Dolorum duis eum arc',
+    'description' => '<p>jjjj</p>',
+    'sub_category_id' => NULL,
+    'client_name' => 'Kennan Scott',
+    'funded_by' => 'Minima dolores dolor',
+    'location' => 'Ipsum voluptas quis',
+    'industry_id' => 2,
+    'website' => 'https://www.cycig.mobi',
+    'alt' => 'In nisi ut laboriosa',
+    'icon' => 'Velit magni labore q',
+    'deleted_at' => '2025-11-22 07:55:37',
+    'created_at' => '2025-11-22 07:55:13',
+    'updated_at' => '2025-11-22 07:55:37',
+    'image' => NULL,
+  ),
 );
         DB::table('cd_features')->insert($data);
     }

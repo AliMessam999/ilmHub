@@ -191,6 +191,26 @@ class CdFeatureImageSeeder extends Seeder
     'created_at' => '2025-06-03 14:51:25',
     'updated_at' => '2025-06-03 14:51:25',
   ),
+  18 => 
+  array (
+    'id' => 59,
+    'feature_id' => 18,
+    'image' => 'upload/featured/D6NOez4qKE42XVyU30NE3r8nhQfGZYEf6rYzZaJV.jpg',
+    'alt' => 'In nisi ut laboriosa',
+    'deleted_at' => NULL,
+    'created_at' => '2025-11-22 07:55:14',
+    'updated_at' => '2025-11-22 07:55:14',
+  ),
+  19 => 
+  array (
+    'id' => 60,
+    'feature_id' => 18,
+    'image' => 'upload/featured/fZL7NxSHSuRNzAurUEveRcrSf932CMky5Dj9wzsM.jpg',
+    'alt' => 'In nisi ut laboriosa',
+    'deleted_at' => NULL,
+    'created_at' => '2025-11-22 07:55:14',
+    'updated_at' => '2025-11-22 07:55:14',
+  ),
 );
         DB::table('cd_feature_images')->insert($data);
     }
