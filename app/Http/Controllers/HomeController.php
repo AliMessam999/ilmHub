@@ -43,20 +43,7 @@ class HomeController extends Controller
         // dd($data->client);
 
         // New Data
-        $data->blogs = CdNew::inRandomOrder()->with('category')->get();
-
-        // dd($data->blogs);
-        // foreach ($data->blogs as $blog) {
-        //     // Access your single random blog item
-        //     // dd($blog);
-        //     // dd($blog->category->title);
-        //     // dd($blog->date);
-        //     // dd($blog->date);
-        //     // dd($blog->alt);
-        //     // dd($blog->image);
-        //     // dd($blog->description);
-        //     // dd($blog->title);
-        // }        
+        $data->blogs = CdNew::inRandomOrder()->with('category')->get();      
         return view('frontend.home', compact('data'));
     }
     public function IndustryData()

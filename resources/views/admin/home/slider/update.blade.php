@@ -29,27 +29,21 @@
                                 <div class="d-flex gap-5  align-items-center h-100">
 
                                     <div class="fileupload btn btn_1 radius_btn btn-anim"><i
-                                            class="fa fa-upload"></i><span class="btn-text">Upload new image</span>
-                                        <input type="file" class="upload" name="image" id="uploadFilesingle"
-                                             accept="image/*">
+                                            class="fa fa-upload"></i><span class="btn-text">Upload new video</span>
+                                        <input type="file" class="upload" name="video" id="uploadFilesingle"
+                                             accept="video/*">
 
                                     </div>
                                     <div class="img-upload-wrap">
-                                        <div id="imagePreview">
-                                         <img src="/{{__($menu->image)}}" class="image-list" alt="upload_img">
+                                        <div id="videoPreview">
+                                         <video width="200" height="120" controls><source src="/{{__($menu->video)}}" type="video/mp4">Video not supported</video>
                                         </div>
                                     </div>
                                 </div>
 
                             </div>
 
-                            <div class="col-lg-6">
-                                <label>alt</label>
-                                <div class="common_input mb_15">
-                                    <input type="text" name="alt" value="{{__($menu->alt)}}" placeholder="Enter ALt of Image for SEO"
-                                        autocomplete="off">
-                                </div>
-                            </div>
+
                         </div>
                         <div class="row">
                             <div class="col-lg-12">

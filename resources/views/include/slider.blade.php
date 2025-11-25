@@ -7,9 +7,13 @@
               @foreach ($data->slider as $slider)
               <div
                 class="swiper-slide"
-                data-image="{{ $slider->image }}"
+                data-video="{{ $slider->video }}"
                 data-title="{{ $slider->title }}"
               >
+                <video autoplay muted loop playsinline class="slide-video">
+                  <source src="/{{ $slider->video }}" type="video/mp4">
+                  Your browser does not support HTML5 video.
+                </video>
                 <div class="slide-text container">
                   <h1 class="text-white animate__animated animate__fadeInDown">
                     {{ $slider->title }}

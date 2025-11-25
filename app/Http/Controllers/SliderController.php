@@ -15,13 +15,13 @@ class SliderController extends Controller
         $validator = Validator::make($request->all(), [
             'title' => ['required', Rule::unique('cd_sliders')],
             'description' => 'required',
-            'image' => ['required', Rule::imageFile(), 'max:500'],
+            'video' => ['required', 'mimes:mp4,avi,mov,wmv,flv', 'max:50000'],
         ]);
 
         if ($validator->fails()) {
             return response()->json($validator->errors(), 302);
         } else {
-            $path = $request->file('image')->store('upload/slider');
+            $path = $request->file('video')->store('upload/slider');
             if (!$path) {
                 return response()->json([
                     "message" => "File not store try again!"
@@ -30,8 +30,7 @@ class SliderController extends Controller
             $menu = new CdSlider();
                 $menu->title = $request->title;
                 $menu->description = $request->description;
-                $menu->alt = $request->alt;
-                $menu->image = $path;
+                $menu->video = $path;
                 $result = $menu->save();
                 if ($result) {
                     return response()->json([
@@ -77,13 +76,13 @@ class SliderController extends Controller
     public function update_slider(Request $request, $id)
     {
         if (CdSlider::where('id', $id)->count() > 0) {
-            if ($request->file('image')) {
+            if ($request->file('video')) {
                 $validator = Validator::make($request->all(), [
                     'title' => ['required',],
                     'description' => 'required',
-                    'image' => ['required', Rule::imageFile(), 'max:500'],
+                    'video' => ['required', 'mimes:mp4,avi,mov,wmv,flv', 'max:50000'],
                 ]);
-                $path = $request->file('image')->store('upload/slider');
+                $path = $request->file('video')->store('upload/slider');
             } else {
                 $validator = Validator::make($request->all(), [
                     'title' => ['required',],
@@ -98,18 +97,16 @@ class SliderController extends Controller
             if ($validator->fails()) {
                 return response()->json($validator->errors(), 302);
             } else {
-                if ($request->file('image')) {
+                if ($request->file('video')) {
                     $CdSlider = CdSlider::where('id', $id)->update([
                         'title' => $request->title,
                         'description' => $request->description,
-                        'alt' => $request->alt,
-                        'image' => $path,
+                        'video' => $path,
                     ]);
                 } else {
                     $CdSlider = CdSlider::where('id', $id)->update([
                         'title' => $request->title,
                         'description' => $request->description,
-                        'alt' => $request->alt,
                     ]);
                 }
                 if ($CdSlider) {

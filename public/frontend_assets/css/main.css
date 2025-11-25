@@ -13744,7 +13744,8 @@ START: Theme Slider CSS
 }
 
 .tj-slider-item {
-  min-height: 92.5vh;
+  height: 600px;
+  min-height: 600px;
   background-color: #0c1e21;
   position: relative;
   z-index: 1;
@@ -13761,8 +13762,6 @@ START: Theme Slider CSS
   height: 100%;
   z-index: 2;
   color:rgb(35, 41, 63);
-  /* background: -webkit-gradient(linear, left top, right top, color-stop(20%, rgb(12, 30, 33)), color-stop(60%, rgba(12, 30, 33, 0.4)), to(rgba(12, 30, 33, 0.1))); */
-  /* background: linear-gradient(90deg, rgb(12, 30, 33) 20%, rgba(12, 30, 33, 0.4) 60%, rgba(12, 30, 33, 0.1) 100%); */
   background: linear-gradient(90deg, rgb(44,49,69) 20%, rgba(19,32,70, 0.4) 60%, rgba(35,42,63, 0.1) 100%);
 }
 .tj-slider-item .slider-wrapper {
@@ -13793,7 +13792,8 @@ START: Theme Slider CSS
   }
 }
 .tj-slider-item .slider-content {
-  max-width: 660px;
+  max-width: 100%;
+  max-height: 100% !important;
 }
 .tj-slider-item .slider-content .slider-title {
   color: var(--tj-color-common-white);
@@ -13833,7 +13833,7 @@ START: Theme Slider CSS
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px) {
   .tj-slider-item .slider-content .slider-title {
-    font-size: 80px;
+    font-size: 70px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -13857,7 +13857,7 @@ START: Theme Slider CSS
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .tj-slider-item .slider-content {
-    max-width: 600px;
+    max-width: 800px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -29112,3 +29112,20 @@ START: Blog CSS
   background:url('assets/images/service/hydro-div.jpg') no-repeat center center/cover;
 } */
 /* !END: Blog CSS *//*# sourceMappingURL=main.css.map */
+
+.service-content li{
+  position: relative;
+  list-style-type: none;
+  padding-left: 30px;
+}
+
+.service-content li::before{
+  content: "\e92f";
+  color: #DB8801;
+  font-family: "bexon-icons" !important;
+  /* font-weight: 900; */
+  position: absolute;
+  top:15;
+  left:0;
+  /* color:var(--tj-color-theme-primary); */
+}

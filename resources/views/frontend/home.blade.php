@@ -92,8 +92,7 @@
                     <div class="about-img-area wow fadeInLeft" data-wow-delay=".2s">
                         <div class="about-img overflow-hidden">
                             <video data-speed="0.8" autoplay muted loop playsinline>
-                                <source src="{{ $video }}" type="video/mp4" />
-                                <!-- <source src="{{ asset('frontend_assets/video/about-us2.mp4') }}" type="video/mp4" /> -->
+                                <source src="/{{ $video }}" type="video/mp4" />
                             </video>
                         </div>
                         <div class="box-area">
