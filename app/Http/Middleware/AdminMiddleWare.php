@@ -4,6 +4,7 @@ namespace App\Http\Middleware;
 
 use Closure;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
 use Symfony\Component\HttpFoundation\Response;
 
 class AdminMiddleWare
@@ -15,15 +16,27 @@ class AdminMiddleWare
      */
     public function handle(Request $request, Closure $next): Response
     {
-        if(env('APP_ENV') == 'production'){
+        if (env('APP_ENV') == 'production') {
             $publicIp = request()->ip();
-        }else{
+        } else {
             $publicIp = file_get_contents('https://api64.ipify.org?format=json');
             $publicIp = json_decode($publicIp)->ip;
         }
         // dd($publicIp,env('APP_ENV'));
+        // dd($publicIp, request()->ip(), $_SERVER['REMOTE_ADDR']);
 
-        $allowedIps = ['58.65.177.181','203.124.36.134','115.186.136.48','127.0.0.1','2400:adcc:110d:bb01:d90f:a747:9c21:cedf'];
+
+        $allowedIps = [
+            '58.65.177.181',
+            '203.124.36.134',
+            '115.186.136.48',
+            '127.0.0.1',
+            '2400:adcc:110d:bb01:d90f:a747:9c21:cedf',
+            // '119.73.100.120',
+            // '2001:4860:7:622::fc',
+            '2407:aa80:314:bdf2:4854:a3c9:61ee:e3b6'
+        ];
+        Log::info('AdminMiddleWare IP Check: ' . $publicIp);
         if (!in_array($publicIp, $allowedIps)) {
             abort(403, 'Unauthorized IP address.');
         }

@@ -1,93 +1,61 @@
+@php
+    use App\Models\CdSlider;
+
+    $sliders = CdSlider::get();
+    // dd($sliders);
+@endphp
 <section class="tj-slider-section m-0 rounded-0">
     <div class="swiper hero-slider">
         <div class="swiper-wrapper">
-            <div class="swiper-slide tj-slider-item">
-                <!-- <div class="slider-bg-image" data-bg-image="frontend_assets/images/hero/slider-1.webp"></div> -->
-                <div class="slider-bg-image">
-                    <video style="position: relative" autoplay="" muted="" loop="" playsinline="true"
-                        preload="metadata" id="home-hero-video">
-                        <source src="{{ asset('frontend_assets/video/3.mp4') }}" type="video/mp4" />
-                        Your browser does not support HTML5 video.
-                    </video>
-                </div>
-                <div class="container">
-                    <div class="slider-wrapper">
-                        <div class="slider-content">
-                            <h1 class="slider-title">
-                                Leading Future for <span>Business.</span>
-                            </h1>
-                            <div class="slider-desc">
-                                Committed to delivering innovative solutions that
-                                drive success. With a focus on quality.
-                            </div>
-                            <div class="slider-btn">
-                                <a class="tj-primary-btn" href="/contact">
-                                    <span class="btn-text"><span>Get Started</span></span>
-                                    <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-slide tj-slider-item">
-                <div class="slider-bg-image">
-                    <video style="position: relative" autoplay="" muted="" loop="" playsinline="true"
-                        preload="metadata" id="home-hero-video">
-                        <source src="{{ asset('frontend_assets/video/4.mp4') }}" type="video/mp4" />
-                        Your browser does not support HTML5 video.
-                    </video>
-                </div>
+            @if (!empty($sliders))
+                @foreach ($sliders as $slider)
+                {{-- @php --}}
+                    {{-- $title = $slider->title; --}}
+                    {{-- $words = explode(' ', $title); --}}
 
-                <div class="container">
-                    <div class="slider-wrapper">
-                        <div class="slider-content">
-                            <h1 class="slider-title">
-                                Leading Future for <span>Business.</span>
-                            </h1>
-                            <div class="slider-desc">
-                                Committed to delivering innovative solutions that
-                                drive success. With a focus on quality.
-                            </div>
-                            <div class="slider-btn">
-                                <a class="tj-primary-btn" href="/contact">
-                                    <span class="btn-text"><span>Get Started</span></span>
-                                    <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-slide tj-slider-item">
-                <div class="slider-bg-image">
-                    <video style="position: relative" autoplay="" muted="" loop="" playsinline="true"
-                        preload="metadata" id="home-hero-video">
-                        <source src="{{ asset('frontend_assets/video/5.mp4') }}" type="video/mp4" />
-                        Your browser does not support HTML5 video.
-                    </video>
-                </div>
+                    {{-- if ($title == 'Powering Industries with Innovative Solutions' && count($words) > 1) { --}}
+                        {{-- // take last 2 words --}}
+                        {{-- $lastPart = implode(' ', array_slice($words, -2)); --}}
+                        {{-- $firstPart = implode(' ', array_slice($words, 0, -2)); --}}
+                        {{-- // dd($firstPart); --}}
+                    {{-- } else { --}}
+                        {{-- // take only last 1 word --}}
+                        {{-- $lastPart = end($words); --}}
+                        {{-- $firstPart = implode(' ', array_slice($words, 0, count($words) - 1)); --}}
+                    {{-- } --}}
+                {{-- @endphp --}}
 
-                <div class="container">
-                    <div class="slider-wrapper">
-                        <div class="slider-content">
-                            <h1 class="slider-title">
-                                Leading Future for <span>Business.</span>
-                            </h1>
-                            <div class="slider-desc">
-                                Committed to delivering innovative solutions that
-                                drive success. With a focus on quality.
-                            </div>
-                            <div class="slider-btn">
-                                <a class="tj-primary-btn" href="/contact">
-                                    <span class="btn-text"><span>Get Started</span></span>
-                                    <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
-                                </a>
+                    <div class="swiper-slide tj-slider-item">
+                        <div class="slider-bg-image">
+                            <video class="slide-video" style="position: relative" autoplay="" muted="" loop="" playsinline="true"
+                                preload="metadata" id="home-hero-video" >
+                                {{-- class="home-hero-video" --}}
+                                <source src="/{{ $slider->video }}" type="video/mp4" />
+                                Your browser does not support HTML5 video.
+                            </video>
+                        </div>
+                        <div class="container">
+                            <div class="slider-wrapper">
+                                <div class="slider-content">
+                                    <h1 class="slider-title">
+                                        {{ $slider->title }}
+                                        {{-- {{ $firstPart }} <span>{{ $lastPart }}</span> --}}
+                                    </h1>
+                                    <div class="slider-desc">
+                                        {!! $slider->description !!}
+                                    </div>
+                                    <div class="slider-btn">
+                                        <a class="tj-primary-btn" href="/contact">
+                                            <span class="btn-text"><span>Get Started</span></span>
+                                            <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
+                @endforeach
+            @endif
         </div>
         <div class="hero-navigation d-inline-flex wow fadeIn" data-wow-delay="1.5s">
             <div class="slider-prev">

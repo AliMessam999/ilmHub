@@ -18,7 +18,7 @@
                                             <th scope="col">id</th>
                                             <th scope="col">Title</th>
                                             <th scope="col">Description</th>
-                                            <th scope="col">Image</th>
+                                            <th scope="col">Video</th>
                                             <th scope="col">Action</th>
                                         </tr>
                                     </thead>
@@ -28,7 +28,7 @@
                                                 <td>{{ $item->id }}</td>
                                                 <td>{{ $item->title }}</td>
                                                 <td>{{ $item->description }}</td>
-                                                <td><img src="/{{ $item->image }}" alt="{{ $item->alt ? $item->alt:"No Alt" }}" class="image-list"></td>
+                                                <td><video width="100" height="60" controls><source src="/{{ $item->video }}" type="video/mp4">Video not supported</video></td>
                                                 <td>
                                                     <div class="action_btns d-flex">
                                                         <a href="/admin/slider/update/{{$item->id}}" class="action_btn mr_10"> <i class="far fa-edit"></i> </a>
