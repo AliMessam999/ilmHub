@@ -45,7 +45,6 @@ class CdSliderSeeder extends Seeder
     'updated_at' => '2025-05-26 10:58:28',
   ),
 );
-        DB::table('cd_sliders')->truncate();
         DB::table('cd_sliders')->insert($data);
     }
 }

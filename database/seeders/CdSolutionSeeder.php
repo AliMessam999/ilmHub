@@ -840,6 +840,56 @@ Our systems are powered by <strong>advanced telemetry</strong> and <strong>SCADA
     'title' => 'Comprehensive monitoring for responsible mining',
     'slug' => '/sub-divisions/comprehensive-monitoring-for-responsible-mining',
   ),
+  33 => 
+  array (
+    'id' => 150,
+    'type' => 'Project',
+    'alt' => 'tji-service-2',
+    'image' => 'upload/project/6berQmARtFkH1lPSuzLrDqaY3naVNQt5v0cLOqQ4.png',
+    'description' => '<p>Every sector has unique energy requirements and one-size-fits-all solar solutions rarely deliver optimal results. Our Product Solutions portfolio offers specialized renewable energy systems engineered for specific applications and operational environments. From grid-tied commercial installations and remote off-grid systems to telecom infrastructure power and agricultural irrigation solutions, we design and deploy solar photovoltaic systems optimized for each application&#39;s technical demands, economic constraints, and operational priorities. Our application-specific approach ensures proper sizing, appropriate component selection, and system configurations that address real-world challenges, whether maintaining 24/7 telecom uptime, powering remote irrigation pumps, or reducing industrial electricity costs. With proven designs, quality components, and expert implementation, we deliver renewable energy solutions that perform reliably in demanding conditions while delivering measurable returns.</p>
+
+<p><strong>Key Features</strong></p>
+
+<ul>
+	<li>Application-Specific Design&nbsp;&nbsp;</li>
+	<li>Proven Performance&nbsp;&nbsp;</li>
+	<li>Quality Components&nbsp;</li>
+	<li>Optimal Sizing&nbsp;&nbsp;</li>
+	<li>Technical Support&nbsp;</li>
+	<li>Scalable Architecture</li>
+</ul>',
+    'category_id' => 103,
+    'deleted_at' => NULL,
+    'created_at' => '2025-11-26 10:55:21',
+    'updated_at' => '2025-11-26 10:55:21',
+    'title' => 'Proven systems designed for your specific requirements',
+    'slug' => '/sub-divisions/proven-systems-designed-for-your-specific-requirements',
+  ),
+  34 => 
+  array (
+    'id' => 151,
+    'type' => 'Project',
+    'alt' => 'tji-service-2',
+    'image' => 'upload/project/yvHipSkdP18gqAlinyMCnVPHzcBT1o2hTKXUl27H.png',
+    'description' => '<p>Transitioning to renewable energy involves complex decisions that impact finances, operations, and long-term sustainability goals. Our Renewable Energy Advisory services provide strategic guidance and analytical rigor to help organizations navigate the renewable energy landscape with confidence. From detailed financial modeling and investment analysis to comprehensive sustainability planning and decarbonization strategies, we deliver insights that align energy decisions with business objectives. Our advisors combine technical expertise, market knowledge, and financial acumen to evaluate opportunities, quantify benefits, assess risks, and chart practical pathways toward renewable energy adoption. Whether you&#39;re exploring your first solar installation or developing enterprise-wide sustainability initiatives, we provide the strategic clarity and actionable roadmaps that turn renewable energy aspirations into achievable reality.</p>
+
+<p><strong>Key Features</strong></p>
+
+<ul>
+	<li>Investment Clarity&nbsp;</li>
+	<li>Strategic Planning&nbsp;</li>
+	<li>Risk Assessment&nbsp;&nbsp;</li>
+	<li>Market Intelligence&nbsp;</li>
+	<li>Customized Solutions&nbsp;</li>
+	<li>Implementation Support&nbsp;&nbsp;</li>
+</ul>',
+    'category_id' => 102,
+    'deleted_at' => NULL,
+    'created_at' => '2025-11-26 10:59:53',
+    'updated_at' => '2025-11-26 10:59:53',
+    'title' => 'Data-driven insights that power smart energy decisions',
+    'slug' => '/sub-divisions/data-driven-insights-that-power-smart-energy-decisions',
+  ),
 );
         DB::table('cd_solutions')->insert($data);
     }
