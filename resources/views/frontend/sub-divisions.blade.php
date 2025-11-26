@@ -60,30 +60,35 @@
                         {!! $solution->description !!}
 
                         @php
-                            use App\Models\CustomerService;
-                            use Illuminate\Support\Str;
-                            
-                            $servicesWithImages = CustomerService::where('solution_id', $solution->id)
-                                ->where('label', 'withImage')
-                                ->get();
-                                
+
+                            use App\Models\CustomerService;                            
+                                $servicesWithImages = CustomerService::where('solution_id', $solution->id)
+                                    ->where('label', 'withImage')
+                                    ->get();
+                                // dd($servicesWithImages);
                                 $servicesWithoutImages = CustomerService::where('solution_id', $solution->id)
                                 ->where('label', 'withoutImage')
                                 ->get();
                                 
-                            $firstServiceWithoutImage = $servicesWithoutImages->first();
+                                $firstServiceWithoutImage = $servicesWithoutImages->first();
                         @endphp
                         
                         @if($servicesWithImages->count() > 0)
                         <div class="images-wrap">
                             <div class="row">
                                 @foreach($servicesWithImages as $service)
+                                @php
+                                    // dd($service);
+                                @endphp
                                 <div class="col-sm-6">
                                     <div class="division-detail">
                                         <div class="image-box" data-bg-image="/{{ $service->image }}">
                                             <div class="content">
                                                 <h5>{{ $service->title }}</h5>
-                                                <p>{{ Str::words($service->description, 40, '...') }}</p>
+                                                {{-- @php
+                                                    dd($service->description);
+                                                @endphp --}}
+                                                <p>{{ $service->description }}</p>
 
                                                 <a class="tj-primary-btn" href="/contact">
                                                     <span class="btn-text"><span>Let's Talk</span></span>

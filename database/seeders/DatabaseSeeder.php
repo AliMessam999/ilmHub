@@ -34,6 +34,7 @@ class DatabaseSeeder extends Seeder
         CdSkillSeeder::class,
         CdSliderSeeder::class,
         CdSolutionSeeder::class,
+        CustomerServiceSeeder::class,
         CdTeamMemberSeeder::class,
         CdTermConditionSeeder::class,
         CdTestimonialSeeder::class,

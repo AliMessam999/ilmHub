@@ -135,7 +135,6 @@
                                                     @foreach ($menu->customer_services as $index => $service)
                                                         <div class="customer-service-row">
                                                             <div class="row">
-
                                                                 <div class="col-lg-2">
                                                                     @if ($index == 0)
                                                                         <label>Service Title</label>
