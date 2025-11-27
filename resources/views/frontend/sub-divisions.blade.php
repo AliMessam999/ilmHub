@@ -80,7 +80,7 @@
                                 @php
                                     // dd($service);
                                 @endphp
-                                <div class="col-sm-6">
+                                <div class="col-sm-6 mb-3">
                                     <div class="division-detail">
                                         <div class="image-box" data-bg-image="/{{ $service->image }}">
                                             <div class="content">

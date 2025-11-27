@@ -40,7 +40,7 @@ class SeederCommand extends Command
         // Get the list of tables in the database
         $originalArray = DB::connection()->getDoctrineSchemaManager()->listTableNames();
         $tables = array_filter($originalArray, function ($value) {
-            return strpos($value, 'cd_') !== false;
+            return strpos($value, 'cd_') !== false || $value === 'customer_services';
         });
 
         foreach ($tables as $table) {
