@@ -7569,7 +7569,7 @@ START: Heading CSS
   padding: 0 0 0 12px;
   position: relative;
 }
-.sec-heading.style-8 .sub-title::before {
+/* .sec-heading.style-8 .sub-title::before {
   content: "";
   width: 4px;
   height: 4px;
@@ -7578,7 +7578,7 @@ START: Heading CSS
   position: absolute;
   inset-inline-start: 0;
   top: 6px;
-}
+} */
 @media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
   .sec-heading {
     margin-bottom: 35px;
@@ -9867,6 +9867,7 @@ START: Services CSS
   width: 100%;
   inset-inline-start: 0;
   bottom: 0;
+  /* left: 0; */
   padding: 40px 30px 20px;
   z-index: 3;
   overflow: hidden;
@@ -9897,7 +9898,7 @@ START: Services CSS
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px) {
   .service-item.style-1 .service-content {
-    padding: 25px 20px;
+    padding: 25px 5px;
   }
 }
 @media (max-width: 575px) {
@@ -9995,7 +9996,7 @@ START: Services CSS
 }
 .service-item.style-2 .service-content,
 .service-item.style-2 .title-area {
-  width: 48%;
+  width: 49%;
 }
 @media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
   .service-item.style-2 .service-content,
@@ -13764,7 +13765,7 @@ START: Theme Slider CSS
   }
 }
 .tj-slider-item .slider-content .slider-desc {
-  max-width: 440px;
+  max-width: 640px;
   font-size: 18px;
   line-height: 1.444;
   color: var(--tj-color-text-body-2);

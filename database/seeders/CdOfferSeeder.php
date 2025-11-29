@@ -14,7 +14,7 @@ class CdOfferSeeder extends Seeder
   0 => 
   array (
     'id' => 1,
-    'title' => 'Driving Innovation and Excellence for Sustainable Corporate Success Worldwide.',
+    'title' => 'Creating Intelligent Solutions that Shape a Smarter, Sustainable Future',
     'description' => '<p>heading</p>',
     'alt' => 'Our Journey',
     'class' => NULL,
@@ -22,7 +22,7 @@ class CdOfferSeeder extends Seeder
     'icon' => NULL,
     'deleted_at' => NULL,
     'created_at' => NULL,
-    'updated_at' => '2025-11-13 06:05:07',
+    'updated_at' => '2025-11-28 06:53:57',
     'category_id' => 12,
     'position' => 'bottom',
   ),

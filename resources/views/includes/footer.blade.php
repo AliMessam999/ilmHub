@@ -6,7 +6,7 @@
                            <div class="footer-widget widget-subscribe h6-footer-subscribe wow fadeInUp"
                                data-wow-delay=".3s">
                                <h3 class="title text-anim">
-                                   Subscribe to Our Newsletter.
+                                   Subscribe to Our Newsletter
                                </h3>
                                <div class="subscribe-form">
                                    <form action="#">
@@ -35,16 +35,16 @@
                        <div class="col-xl-2 col-lg-2 col-md-6">
                            <div class="footer-widget footer-col-3 widget-nav-menu h6-footer-col-3 wow fadeInUp"
                                data-wow-delay=".5s">
-                               <h5 class="title">Resources</h5>
+                               <h5 class="title">About Us</h5>
                                <ul>
-                                   <li><a href="#">Contact us</a></li>
-                                   <li><a href="#">Team Member</a></li>
-                                   <li><a href="#">Recognitions</a></li>
-                                   <li>
+                                   <li><a href="/about_us">Company Overview</a></li>
+                                   <li><a href="/case-studies">Case Studies</a></li>
+                                   <li><a href="/careers">Careers</a></li>
+                                   {{-- <li>
                                        <a href="careers.html">Careers <span class="badge">New</span></a>
                                    </li>
                                    <li><a href="#">News</a></li>
-                                   <li><a href="#">Feedback</a></li>
+                                   <li><a href="#">Feedback</a></li> --}}
                                </ul>
                            </div>
                        </div>

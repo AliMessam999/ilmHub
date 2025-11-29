@@ -1431,6 +1431,18 @@ label{
   }
 }
 
+/* Slider description width adjustment */
+.slider-desc {
+  max-width: 520px !important;
+}
+
+/* Keep skills right items in one line */
+.about-bottom-area {
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  gap: 15px !important;
+}
+
 @media (max-width: 480px) {
   .banner-division-text-detail {
     font-size: 40px;

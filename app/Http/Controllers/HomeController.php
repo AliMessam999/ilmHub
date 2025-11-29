@@ -310,6 +310,7 @@ class HomeController extends Controller
         $caseStudies = CdFeature::whereHas('category',function($query) use ($category){
             return $query->where('parent',$category->id);
         })->with('images')->paginate(15);
+        // dd($caseStudies);
         
         return view('frontend.divisions',compact('category','caseStudies'));
     }

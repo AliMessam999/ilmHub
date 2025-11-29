@@ -11,7 +11,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="tj-page-header-content text-center">
-                    <h1 class="tj-page-title mt-3">Case Study</h1>
+                    <h1 class="tj-page-title mt-3">{{ $caseStudy->title }}</h1>
                     <div class="tj-page-link">
                         <span><i class="tji-home"></i></span>
                         <span>
@@ -19,7 +19,10 @@
                         </span>
                         <span><i class="tji-arrow-right"></i></span>
                         <span>
-                            <a href="division.html">{{ $caseStudy->sub_category->name ?? 'N/A' }}</a>
+                            {{-- @php
+                                dd($caseStudy->sub_category_id->title);
+                            @endphp --}}
+                            <a href="division.html">{{ $caseStudy->sub_category->title ?? 'Case-Studies' }}</a>
                         </span>
                         <span><i class="tji-arrow-right"></i></span>
                         <span>
@@ -42,18 +45,65 @@
             <div class="col-lg-8">
                 <div class="post-details-wrapper">
                     <div class="blog-images wow fadeInUp" data-wow-delay=".1s">
-                        <img src="/{{ $caseStudy->images[0]->image }}" alt="{{ $caseStudy->images[0]->alt }}" />
+                        {{-- <img src="/{{ $caseStudy->images[0]->image }}" alt="{{ $caseStudy->images[0]->alt }}" /> --}}
                     </div>
+                    @php
+                        $description = is_string($caseStudy->description) ? json_decode($caseStudy->description) : $caseStudy->description;
+                        $h2Content = isset($description->h2) ? $description->h2 : null;
+                        $h3Content = isset($description->h3) ? $description->h3 : '';
+                        $h3SecondContent = isset($description->h3_second) ? $description->h3_second : null;
+                        $normalContent = isset($description->description) ? $description->description : $caseStudy->description;
+                    @endphp
+                    @if($h2Content)
                     <h2 class="title title-anim">
-                        {{ $caseStudy->title }}
+                        {!! $h2Content !!}
                     </h2>
+                    @endif
+                    <h3 class="wow fadeInUp" data-wow-delay=".3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+                        {!! $h3Content !!}
+                    </h3>
                     <div class="blog-text">
+                        {!! $normalContent !!}
+                    </div>
+                    @if($h3SecondContent)
+                    <h3 class="wow fadeInUp second-heading" data-wow-delay=".3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+                        {!! $h3SecondContent !!}
+                    </h3>
+                    @endif
+
+                    <div class="images-wrap">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="image-box wow fadeInUp" data-wow-delay=".3s">
+                                    <a class="gallery vbox-item" data-gall="gallery" href="{{ asset('assets/images/project/2.png') }}">
+                                        <img src="{{ asset('assets/images/project/2.png') }}" alt="Image">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="image-box wow fadeInUp" data-wow-delay=".3s">
+                                    <a class="gallery vbox-item" data-gall="gallery" href="{{ asset('assets/images/project/3.png') }}">
+                                        <img src="{{ asset('assets/images/project/3.png') }}" alt="Image">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="image-box wow fadeInUp" data-wow-delay=".5s">
+                                    <a class="gallery vbox-item" data-gall="gallery" href="{{ asset('assets/images/project/4.png') }}">
+                                        <img src="{{ asset('assets/images/project/4.png') }}" alt="Image">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    {{-- <div class="blog-text">
                         {!! $caseStudy->description !!}
-                        <div class="images-wrap">
+                         <div class="images-wrap">
                             <div class="row">
                                 @foreach($caseStudy->images as $image)
                                 <div class="col-sm-6">
-                                    <div
+                                 <div
                                         class="image-box wow fadeInUp"
                                         data-wow-delay=".3s">
                                         <a
@@ -62,13 +112,13 @@
                                             href="/{{$image->image}}"><img
                                                 src="/{{$image->image}}"
                                                 alt="{{$image->alt}}" /></a>
-                                    </div>
+                                    </div> 
                                 </div>
                                 @endforeach
                                
                             </div>
-                        </div>
-                    </div>
+                        </div> 
+                    </div> --}}
                     <div
                         class="tj-post__navigation mb-0 wow fadeInUp"
                         data-wow-delay=".3s">
@@ -107,7 +157,7 @@
                                 </h6>
                             </div>
                         </div>
-                        <div class="infos-item">
+                        {{-- <div class="infos-item">
                             <div class="project-icons">
                                 <i class="tji-budget"></i>
                             </div>
@@ -117,7 +167,7 @@
                                    {{ $caseStudy->funded_by }}
                                 </h6>
                             </div>
-                        </div>
+                        </div> --}}
                         <div class="infos-item">
                             <div class="project-icons">
                                 <i class="tji-location-2"></i>

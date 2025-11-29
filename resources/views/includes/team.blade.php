@@ -5,7 +5,7 @@
                 <div class="sec-heading style-3">
                     <span class="sub-title wow fadeInUp" data-wow-delay=".3s">MEET OUR TEAM</span>
                     <h2 class="sec-title title-anim">
-                        Meet the Mind Behind Our Success.
+                        Meet the Mind Behind Our Success
                     </h2>
                 </div>
             </div>

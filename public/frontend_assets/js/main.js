@@ -394,10 +394,10 @@ Progressbar js
 			slidesPerView: 1.1,
 			spaceBetween: 15,
 			loop: true,
-			speed: 1500,
+			speed: 1000,
 			centeredSlides: true,
 			autoplay: {
-				delay: 6000,
+				delay: 1000,
 			},
 			navigation: {
 				nextEl: ".slider-next",

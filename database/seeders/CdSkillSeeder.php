@@ -14,35 +14,35 @@ class CdSkillSeeder extends Seeder
   0 => 
   array (
     'id' => 1,
-    'title' => 'Experiences',
-    'percentage' => '20+',
-    'description' => 'Decades of Experience, Endless Innovation',
+    'title' => 'Experience',
+    'percentage' => '23+',
+    'description' => 'Proven Excellence Built Over Years of Innovation',
     'position' => 'left',
     'deleted_at' => NULL,
     'created_at' => '2023-11-23 12:26:19',
-    'updated_at' => '2025-11-18 10:16:48',
+    'updated_at' => '2025-11-29 04:39:06',
   ),
   1 => 
   array (
     'id' => 2,
-    'title' => 'Projects',
-    'percentage' => '100+',
-    'description' => 'Decades of Experience, Endless Innovation',
+    'title' => 'Projects Delivered',
+    'percentage' => '200+',
+    'description' => 'Delivering Complex Projects With Precision and Consistency',
     'position' => 'right',
     'deleted_at' => NULL,
     'created_at' => '2023-11-23 12:26:34',
-    'updated_at' => '2025-11-18 10:14:54',
+    'updated_at' => '2025-11-29 04:39:50',
   ),
   2 => 
   array (
     'id' => 3,
-    'title' => 'Partner',
+    'title' => 'Strategic Partners',
     'percentage' => '50+',
-    'description' => 'Decades of Experience, Endless Innovation',
+    'description' => 'Collaborating With Global Leaders to Drive Innovation',
     'position' => 'right',
     'deleted_at' => NULL,
     'created_at' => '2023-11-23 12:26:50',
-    'updated_at' => '2025-11-18 10:15:30',
+    'updated_at' => '2025-11-29 04:40:19',
   ),
   3 => 
   array (
@@ -69,13 +69,13 @@ class CdSkillSeeder extends Seeder
   5 => 
   array (
     'id' => 7,
-    'title' => 'Clients Served',
-    'percentage' => '250000+',
-    'description' => 'Decades of Experience, Endless Innovation',
+    'title' => 'Field Hours Logged',
+    'percentage' => '250,000+',
+    'description' => 'Proven Capability Through Extensive On-Ground Operations',
     'position' => 'right',
     'deleted_at' => NULL,
     'created_at' => '2025-11-18 10:16:19',
-    'updated_at' => '2025-11-21 11:08:58',
+    'updated_at' => '2025-11-29 04:40:44',
   ),
   6 => 
   array (
