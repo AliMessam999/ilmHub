@@ -84,20 +84,14 @@ class CdFeatureSeeder extends Seeder
     'icon' => 'test',
     'deleted_at' => NULL,
     'created_at' => '2025-05-15 15:11:32',
-    'updated_at' => '2025-05-21 11:51:30',
+    'updated_at' => '2025-11-29 10:34:11',
     'image' => NULL,
   ),
   4 => 
   array (
     'id' => 6,
     'title' => 'Real-Time Flow Monitoring for Punjab Irrigation Network',
-    'description' => '<p>In a major step toward intelligent water management, CDigital successfully implemented a Real-Time Flow Monitoring System for the Punjab Irrigation Department under the guidance of WAPDA. Designed to modernize the province&rsquo;s extensive canal network, this project aimed to improve the accuracy, transparency, and efficiency of water resource distribution. The solution integrates real-time monitoring of water levels, discharge rates, and flow velocities, powered by ultrasonic and velocity sensors, and includes a customizable executive dashboard for live data visualization and decision-making.</p>
-
-<p>&nbsp;</p>
-
-<p>The system now enables the department to make data-driven, timely decisions, optimize water distribution, and proactively respond to anomalies through automated email alerts and custom discharge control options. Its secure architecture, groundwater data integration, and interactive mapping and reporting tools offer a holistic view of water dynamics across the network. Tailored specifically to the needs of Punjab&rsquo;s irrigation infrastructure, the solution ensures greater operational control, accountability, and sustainability in managing one of Pakistan&rsquo;s most vital natural resources. This system represents a significant advancement in water resource management, providing WAPDA and associated departments with the tools necessary for efficient, transparent, and responsive water distribution across the region.</p>
-
-<p>&nbsp;</p>',
+    'description' => '<h2>xxx</h2><h3>yyy</h3><p>In a major step toward intelligent water management, CDigital successfully implemented a Real-Time Flow Monitoring System for the Punjab Irrigation Department under the guidance of WAPDA. Designed to modernize the province&rsquo;s extensive canal network, this project aimed to improve the accuracy, transparency, and efficiency of water resource distribution. The solution integrates real-time monitoring of water levels, discharge rates, and flow velocities, powered by ultrasonic and velocity sensors, and includes a customizable executive dashboard for live data visualization and decision-making.</p><p>&nbsp;</p><p>The system now enables the department to make data-driven, timely decisions, optimize water distribution, and proactively respond to anomalies through automated email alerts and custom discharge control options. Its secure architecture, groundwater data integration, and interactive mapping and reporting tools offer a holistic view of water dynamics across the network. Tailored specifically to the needs of Punjab&rsquo;s irrigation infrastructure, the solution ensures greater operational control, accountability, and sustainability in managing one of Pakistan&rsquo;s most vital natural resources. This system represents a significant advancement in water resource management, providing WAPDA and associated departments with the tools necessary for efficient, transparent, and responsive water distribution across the region.</p><p>&nbsp;</p>',
     'sub_category_id' => NULL,
     'client_name' => NULL,
     'funded_by' => NULL,
@@ -377,6 +371,158 @@ class CdFeatureSeeder extends Seeder
     'deleted_at' => '2025-11-22 07:55:37',
     'created_at' => '2025-11-22 07:55:13',
     'updated_at' => '2025-11-22 07:55:37',
+    'image' => NULL,
+  ),
+  17 => 
+  array (
+    'id' => 19,
+    'title' => 'Ali Messam',
+    'description' => '<h2>Automating Flood Forecasting &amp; Weather Intelligence</h2>
+
+<h3>Intro</h3>
+
+<p>In today&#39;s fast-paced digital landscape, outdated infrastructure can hold your business back. Our IT Modernization &amp; Cloud Infrastructure services help you break free from legacy limitations and embrace agile, scalable systems that drive efficiency and innovation. Whether you&#39;re consolidating data centers, migrating to the cloud, or strengthening business continuity, we provide end-to-end solutions that modernize your technology foundation while minimizing disruption. Our approach balances performance, security, and cost-effectiveness ensuring your infrastructure not only meets today&#39;s demands but is ready to evolve with tomorrow&#39;s opportunities.</p>
+
+<ul>
+	<li>Seamless Cloud Migration&nbsp;</li>
+	<li>Virtualization &amp; Consolidation&nbsp;</li>
+	<li>Hybrid Cloud Flexibility&nbsp;</li>
+	<li>Business Continuity Assurance&nbsp;</li>
+	<li>Integrated Process Platforms</li>
+	<li>Scalable Architecture</li>
+</ul>
+
+<h3>Delivered Services</h3>
+
+<ul>
+	<li>Seamless Cloud Migration&nbsp;</li>
+	<li>Virtualization &amp; Consolidation&nbsp;</li>
+	<li>Hybrid Cloud Flexibility&nbsp;</li>
+	<li>Business Continuity Assurance&nbsp;</li>
+	<li>Integrated Process Platforms</li>
+	<li>Scalable Architecture</li>
+</ul>
+
+<h3>Product Gallery</h3>',
+    'sub_category_id' => 81,
+    'client_name' => 'Meesam',
+    'funded_by' => 'Meesam',
+    'location' => 'Gulberg',
+    'industry_id' => 1,
+    'website' => NULL,
+    'alt' => 'meesam',
+    'icon' => 'tji-service-3',
+    'deleted_at' => NULL,
+    'created_at' => '2025-11-29 08:03:46',
+    'updated_at' => '2025-11-29 10:03:09',
+    'image' => NULL,
+  ),
+  18 => 
+  array (
+    'id' => 20,
+    'title' => 'Ali Shaheer',
+    'description' => '<h2>Automating Flood Forecasting &amp; Weather Intelligence</h2>
+
+<h3>Intro</h3>
+
+<p>In today&#39;s fast-paced digital landscape, outdated infrastructure can hold your business back. Our IT Modernization &amp; Cloud Infrastructure services help you break free from legacy limitations and embrace agile, scalable systems that drive efficiency and innovation. Whether you&#39;re consolidating data centers, migrating to the cloud, or strengthening business continuity, we provide end-to-end solutions that modernize your technology foundation while minimizing disruption. Our approach balances performance, security, and cost-effectiveness ensuring your infrastructure not only meets today&#39;s demands but is ready to evolve with tomorrow&#39;s opportunities.</p>
+
+<ul>
+	<li>Seamless Cloud Migration&nbsp;</li>
+	<li>Virtualization &amp; Consolidation&nbsp;</li>
+	<li>Hybrid Cloud Flexibility&nbsp;</li>
+	<li>Business Continuity Assurance&nbsp;</li>
+	<li>Integrated Process Platforms</li>
+	<li>Scalable Architecture</li>
+</ul>
+
+<h3>Delivered Services</h3>
+
+<ul>
+	<li>Seamless Cloud Migration&nbsp;</li>
+	<li>Virtualization &amp; Consolidation&nbsp;</li>
+	<li>Hybrid Cloud Flexibility&nbsp;</li>
+	<li>Business Continuity Assurance&nbsp;</li>
+	<li>Integrated Process Platforms</li>
+	<li>Scalable Architecture</li>
+</ul>
+
+<h3>Product Gallery</h3>
+
+<p>&nbsp;</p>',
+    'sub_category_id' => 81,
+    'client_name' => 'Shaheer',
+    'funded_by' => 'no one',
+    'location' => 'gulberg',
+    'industry_id' => 1,
+    'website' => NULL,
+    'alt' => 'image',
+    'icon' => 'eeee',
+    'deleted_at' => NULL,
+    'created_at' => '2025-11-29 10:31:33',
+    'updated_at' => '2025-11-29 11:05:23',
+    'image' => NULL,
+  ),
+  19 => 
+  array (
+    'id' => 21,
+    'title' => 'Ali Daniyal',
+    'description' => '<p>&lt;h2&gt;Automating Flood Forecasting &amp;amp; Weather Intelligence&lt;/h2&gt; &lt;h3&gt;Intro&lt;/h3&gt; &lt;p&gt;In today&amp;#39;s fast-paced digital landscape, outdated infrastructure can hold your business back. Our IT Modernization &amp;amp; Cloud Infrastructure services help you break free from legacy limitations and embrace agile, scalable systems that drive efficiency and innovation. Whether you&amp;#39;re consolidating data centers, migrating to the cloud, or strengthening business continuity, we provide end-to-end solutions that modernize your technology foundation while minimizing disruption. Our approach balances performance, security, and cost-effectiveness ensuring your infrastructure not only meets today&amp;#39;s demands but is ready to evolve with tomorrow&amp;#39;s opportunities.&lt;/p&gt; &lt;ul&gt; &lt;li&gt;Seamless Cloud Migration&amp;nbsp;&lt;/li&gt; &lt;li&gt;Virtualization &amp;amp; Consolidation&amp;nbsp;&lt;/li&gt; &lt;li&gt;Hybrid Cloud Flexibility&amp;nbsp;&lt;/li&gt; &lt;li&gt;Business Continuity Assurance&amp;nbsp;&lt;/li&gt; &lt;li&gt;Integrated Process Platforms&lt;/li&gt; &lt;li&gt;Scalable Architecture&lt;/li&gt; &lt;/ul&gt; &lt;h3&gt;Delivered Services&lt;/h3&gt; &lt;ul&gt; &lt;li&gt;Seamless Cloud Migration&amp;nbsp;&lt;/li&gt; &lt;li&gt;Virtualization &amp;amp; Consolidation&amp;nbsp;&lt;/li&gt; &lt;li&gt;Hybrid Cloud Flexibility&amp;nbsp;&lt;/li&gt; &lt;li&gt;Business Continuity Assurance&amp;nbsp;&lt;/li&gt; &lt;li&gt;Integrated Process Platforms&lt;/li&gt; &lt;li&gt;Scalable Architecture&lt;/li&gt; &lt;/ul&gt; &lt;h3&gt;Product Gallery&lt;/h3&gt;</p>',
+    'sub_category_id' => 82,
+    'client_name' => 'Daniyal',
+    'funded_by' => NULL,
+    'location' => 'Peshawar',
+    'industry_id' => 2,
+    'website' => NULL,
+    'alt' => 'image',
+    'icon' => 'yyy',
+    'deleted_at' => '2025-11-29 10:46:58',
+    'created_at' => '2025-11-29 10:40:26',
+    'updated_at' => '2025-11-29 10:46:58',
+    'image' => NULL,
+  ),
+  20 => 
+  array (
+    'id' => 22,
+    'title' => 'Ali Daniyallll',
+    'description' => '<h2>Automating Flood Forecasting &amp; Weather Intelligence</h2>
+
+<h3>Intro</h3>
+
+<p>In today&#39;s fast-paced digital landscape, outdated infrastructure can hold your business back. Our IT Modernization &amp; Cloud Infrastructure services help you break free from legacy limitations and embrace agile, scalable systems that drive efficiency and innovation. Whether you&#39;re consolidating data centers, migrating to the cloud, or strengthening business continuity, we provide end-to-end solutions that modernize your technology foundation while minimizing disruption. Our approach balances performance, security, and cost-effectiveness ensuring your infrastructure not only meets today&#39;s demands but is ready to evolve with tomorrow&#39;s opportunities.</p>
+
+<ul>
+	<li>Seamless Cloud Migration&nbsp;</li>
+	<li>Virtualization &amp; Consolidation&nbsp;</li>
+	<li>Hybrid Cloud Flexibility&nbsp;</li>
+	<li>Business Continuity Assurance&nbsp;</li>
+	<li>Integrated Process Platforms</li>
+	<li>Scalable Architecture</li>
+</ul>
+
+<h3>Delivered Services</h3>
+
+<ul>
+	<li>Seamless Cloud Migration&nbsp;</li>
+	<li>Virtualization &amp; Consolidation&nbsp;</li>
+	<li>Hybrid Cloud Flexibility&nbsp;</li>
+	<li>Business Continuity Assurance&nbsp;</li>
+	<li>Integrated Process Platforms</li>
+	<li>Scalable Architecture</li>
+</ul>
+
+<h3>Product Gallery</h3>',
+    'sub_category_id' => 86,
+    'client_name' => 'Daniyal',
+    'funded_by' => NULL,
+    'location' => 'Peshawar',
+    'industry_id' => 1,
+    'website' => NULL,
+    'alt' => 'ttt',
+    'icon' => 'uuu',
+    'deleted_at' => NULL,
+    'created_at' => '2025-11-29 10:48:59',
+    'updated_at' => '2025-11-29 11:05:45',
     'image' => NULL,
   ),
 );

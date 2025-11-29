@@ -211,6 +211,46 @@ class CdFeatureImageSeeder extends Seeder
     'created_at' => '2025-11-22 07:55:14',
     'updated_at' => '2025-11-22 07:55:14',
   ),
+  20 => 
+  array (
+    'id' => 61,
+    'feature_id' => 19,
+    'image' => 'upload/featured/uJthtZtkQCUeSXnTqV5iqcWbN58Ar4TBDNbpPVDn.png',
+    'alt' => 'meesam',
+    'deleted_at' => NULL,
+    'created_at' => '2025-11-29 08:03:47',
+    'updated_at' => '2025-11-29 08:03:47',
+  ),
+  21 => 
+  array (
+    'id' => 62,
+    'feature_id' => 20,
+    'image' => 'upload/featured/e5BZGzSmvheXA0QR2MCY2Mv8kdKZrOWpbHnr3r8Z.png',
+    'alt' => 'image',
+    'deleted_at' => NULL,
+    'created_at' => '2025-11-29 10:31:33',
+    'updated_at' => '2025-11-29 10:31:33',
+  ),
+  22 => 
+  array (
+    'id' => 63,
+    'feature_id' => 21,
+    'image' => 'upload/featured/U7SPQwMvUc06EVrBSgHObFKpingBCm1JZJ0SO2gs.jpg',
+    'alt' => 'image',
+    'deleted_at' => NULL,
+    'created_at' => '2025-11-29 10:40:27',
+    'updated_at' => '2025-11-29 10:40:27',
+  ),
+  23 => 
+  array (
+    'id' => 64,
+    'feature_id' => 22,
+    'image' => 'upload/featured/7cyvfH58Rqk32bonkplIHfrKSkmbzhvB4eJqkGOS.jpg',
+    'alt' => 'ttt',
+    'deleted_at' => NULL,
+    'created_at' => '2025-11-29 10:48:59',
+    'updated_at' => '2025-11-29 10:48:59',
+  ),
 );
         DB::table('cd_feature_images')->insert($data);
     }

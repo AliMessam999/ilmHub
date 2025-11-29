@@ -33,7 +33,7 @@ class CdSolutionSeeder extends Seeder
     'deleted_at' => NULL,
     'created_at' => '2025-11-24 07:53:56',
     'updated_at' => '2025-11-24 07:53:56',
-    'title' => 'Modern systems built for agility, designed for growth',
+    'title' => 'Modern Systems Built for Agility, Designed for Growth',
     'slug' => '/sub-divisions/modern-systems-built-for-agility-designed-for-growth',
   ),
   1 => 
@@ -58,7 +58,7 @@ class CdSolutionSeeder extends Seeder
     'deleted_at' => NULL,
     'created_at' => '2025-11-24 09:24:10',
     'updated_at' => '2025-11-24 09:24:10',
-    'title' => 'Strategy that shapes your digital future',
+    'title' => 'Strategy that Shapes Your Digital Future',
     'slug' => '/sub-divisions/strategy-that-shapes-your-digital-future',
   ),
   2 => 
@@ -84,7 +84,7 @@ class CdSolutionSeeder extends Seeder
     'deleted_at' => NULL,
     'created_at' => '2025-11-24 09:27:59',
     'updated_at' => '2025-11-24 09:27:59',
-    'title' => 'Security that protects, compliance that proves it',
+    'title' => 'Security that Protects, Compliance that Proves It',
     'slug' => '/sub-divisions/security-that-protects-compliance-that-proves-it',
   ),
   3 => 
@@ -109,7 +109,7 @@ class CdSolutionSeeder extends Seeder
     'deleted_at' => NULL,
     'created_at' => '2025-11-24 09:36:06',
     'updated_at' => '2025-11-24 09:36:06',
-    'title' => 'The backbone of your operations, delivered with precision',
+    'title' => 'The Backbone of Your Operations, Delivered with Precision',
     'slug' => '/sub-divisions/the-backbone-of-your-operations-delivered-with-precision',
   ),
   4 => 
@@ -134,7 +134,7 @@ class CdSolutionSeeder extends Seeder
     'deleted_at' => NULL,
     'created_at' => '2025-11-24 09:41:46',
     'updated_at' => '2025-11-24 09:41:46',
-    'title' => 'Validation that ensures performance when it matters most',
+    'title' => 'Validation that Ensures Performance when It Matters Most',
     'slug' => '/sub-divisions/validation-that-ensures-performance-when-it-matters-most',
   ),
   5 => 
@@ -159,7 +159,7 @@ class CdSolutionSeeder extends Seeder
     'deleted_at' => NULL,
     'created_at' => '2025-11-24 09:46:45',
     'updated_at' => '2025-11-24 09:46:45',
-    'title' => 'Redefining how businesses operate with automation, integration, and digital intelligence',
+    'title' => 'Redefining How Businesses Operate with Automation, Integration, and Digital Intelligence',
     'slug' => '/sub-divisions/redefining-how-businesses-operate-with-automation-integration-and-digital-intelligence',
   ),
   6 => 
@@ -184,7 +184,7 @@ class CdSolutionSeeder extends Seeder
     'deleted_at' => NULL,
     'created_at' => '2025-11-24 09:52:25',
     'updated_at' => '2025-11-24 09:52:25',
-    'title' => 'Unified systems for seamless enterprise management',
+    'title' => 'Unified Systems for Seamless Enterprise Management',
     'slug' => '/sub-divisions/unified-systems-for-seamless-enterprise-management',
   ),
   7 => 
@@ -210,7 +210,7 @@ class CdSolutionSeeder extends Seeder
     'deleted_at' => NULL,
     'created_at' => '2025-11-24 09:58:59',
     'updated_at' => '2025-11-24 09:58:59',
-    'title' => 'Where artificial intelligence meets real-world impact',
+    'title' => 'Where Artificial Intelligence Meets Real-World Impact',
     'slug' => '/sub-divisions/where-artificial-intelligence-meets-real-world-impact',
   ),
   8 => 
@@ -235,7 +235,7 @@ class CdSolutionSeeder extends Seeder
     'deleted_at' => NULL,
     'created_at' => '2025-11-24 10:14:59',
     'updated_at' => '2025-11-24 10:14:59',
-    'title' => 'Seamless development. Powerful integration. Limitless possibilities',
+    'title' => 'Seamless Development. Powerful Integration. Limitless Possibilities',
     'slug' => '/sub-divisions/seamless-development-powerful-integration-limitless-possibilities',
   ),
   9 => 
@@ -263,7 +263,7 @@ Our systems are powered by <strong>advanced telemetry</strong> and <strong>SCADA
     'deleted_at' => NULL,
     'created_at' => '2025-11-24 10:19:53',
     'updated_at' => '2025-11-24 10:19:53',
-    'title' => 'Predict water behavior. Protect communities proactively.',
+    'title' => 'Predict Water Behavior. Protect Communities Proactively.',
     'slug' => '/sub-divisions/predict-water-behavior-protect-communities-proactively',
   ),
   10 => 
@@ -288,7 +288,7 @@ Our systems are powered by <strong>advanced telemetry</strong> and <strong>SCADA
     'deleted_at' => NULL,
     'created_at' => '2025-11-24 10:23:08',
     'updated_at' => '2025-11-24 10:23:08',
-    'title' => 'Precision weather intelligence for critical operations',
+    'title' => 'Precision Weather Intelligence for Critical Operations',
     'slug' => '/sub-divisions/precision-weather-intelligence-for-critical-operations',
   ),
   11 => 
@@ -313,7 +313,7 @@ Our systems are powered by <strong>advanced telemetry</strong> and <strong>SCADA
     'deleted_at' => NULL,
     'created_at' => '2025-11-24 10:26:44',
     'updated_at' => '2025-11-24 10:26:44',
-    'title' => 'Protecting water resources through intelligent monitoring',
+    'title' => 'Protecting Water Resources Through Intelligent Monitoring',
     'slug' => '/sub-divisions/protecting-water-resources-through-intelligent-monitoring',
   ),
   12 => 
@@ -338,7 +338,7 @@ Our systems are powered by <strong>advanced telemetry</strong> and <strong>SCADA
     'deleted_at' => NULL,
     'created_at' => '2025-11-24 10:30:29',
     'updated_at' => '2025-11-24 10:30:29',
-    'title' => 'Precision intelligence that grows with your crops',
+    'title' => 'Precision Intelligence That Grows With Your Crops',
     'slug' => '/sub-divisions/precision-intelligence-that-grows-with-your-crops',
   ),
   13 => 
@@ -363,7 +363,7 @@ Our systems are powered by <strong>advanced telemetry</strong> and <strong>SCADA
     'deleted_at' => NULL,
     'created_at' => '2025-11-24 10:34:58',
     'updated_at' => '2025-11-24 10:34:58',
-    'title' => 'Engineering life at the molecular level',
+    'title' => 'Engineering Life at The Molecular Level',
     'slug' => '/sub-divisions/engineering-life-at-the-molecular-level',
   ),
   14 => 
@@ -387,7 +387,7 @@ Our systems are powered by <strong>advanced telemetry</strong> and <strong>SCADA
     'deleted_at' => NULL,
     'created_at' => '2025-11-24 10:38:55',
     'updated_at' => '2025-11-24 10:38:55',
-    'title' => 'Precision fermentation for maximum yield and efficiency',
+    'title' => 'Precision Fermentation for Maximum Yield and Efficiency',
     'slug' => '/sub-divisions/precision-fermentation-for-maximum-yield-and-efficiency',
   ),
   15 => 
@@ -411,7 +411,7 @@ Our systems are powered by <strong>advanced telemetry</strong> and <strong>SCADA
     'deleted_at' => NULL,
     'created_at' => '2025-11-24 10:41:37',
     'updated_at' => '2025-11-24 10:41:37',
-    'title' => 'Recovery and purification engineered for quality and yield',
+    'title' => 'Recovery and Purification Engineered for Quality and Yield',
     'slug' => '/sub-divisions/recovery-and-purification-engineered-for-quality-and-yield',
   ),
   16 => 
@@ -436,7 +436,7 @@ Our systems are powered by <strong>advanced telemetry</strong> and <strong>SCADA
     'deleted_at' => NULL,
     'created_at' => '2025-11-24 10:45:05',
     'updated_at' => '2025-11-24 10:45:05',
-    'title' => 'Seamless transitions from pilot to full-scale manufacturing',
+    'title' => 'Seamless Transitions From Pilot to Full-Scale Manufacturing',
     'slug' => '/sub-divisions/seamless-transitions-from-pilot-to-full-scale-manufacturing',
   ),
   17 => 
@@ -461,7 +461,7 @@ Our systems are powered by <strong>advanced telemetry</strong> and <strong>SCADA
     'deleted_at' => NULL,
     'created_at' => '2025-11-24 10:49:01',
     'updated_at' => '2025-11-24 10:49:01',
-    'title' => 'Precision testing and tools that power biotech excellence',
+    'title' => 'Precision Testing and Tools That Power Biotech Excellence',
     'slug' => '/sub-divisions/precision-testing-and-tools-that-power-biotech-excellence',
   ),
   18 => 
@@ -486,7 +486,7 @@ Our systems are powered by <strong>advanced telemetry</strong> and <strong>SCADA
     'deleted_at' => NULL,
     'created_at' => '2025-11-24 10:51:11',
     'updated_at' => '2025-11-24 10:51:11',
-    'title' => 'Strategic partnerships that accelerate biotech breakthroughs',
+    'title' => 'Strategic Partnerships That Accelerate Biotech Breakthroughs',
     'slug' => '/sub-divisions/strategic-partnerships-that-accelerate-biotech-breakthroughs',
   ),
   19 => 
@@ -511,7 +511,7 @@ Our systems are powered by <strong>advanced telemetry</strong> and <strong>SCADA
     'deleted_at' => NULL,
     'created_at' => '2025-11-24 10:54:56',
     'updated_at' => '2025-11-24 10:54:56',
-    'title' => 'Harnessing sunlight. Delivering sustainable energy.',
+    'title' => 'Harnessing Sunlight. Delivering Sustainable Energy.',
     'slug' => '/sub-divisions/harnessing-sunlight-delivering-sustainable-energy',
   ),
   20 => 
@@ -535,7 +535,7 @@ Our systems are powered by <strong>advanced telemetry</strong> and <strong>SCADA
     'deleted_at' => NULL,
     'created_at' => '2025-11-24 10:56:58',
     'updated_at' => '2025-11-24 10:56:58',
-    'title' => 'Proactive care that protects your energy investment',
+    'title' => 'Proactive Care That Protects Your Energy Investment',
     'slug' => '/sub-divisions/proactive-care-that-protects-your-energy-investment',
   ),
   21 => 
@@ -562,7 +562,7 @@ Our systems are powered by <strong>advanced telemetry</strong> and <strong>SCADA
     'deleted_at' => NULL,
     'created_at' => '2025-11-24 11:09:57',
     'updated_at' => '2025-11-24 11:09:57',
-    'title' => 'Unified command for coordinated security response',
+    'title' => 'Unified Command for Coordinated Security Response',
     'slug' => '/sub-divisions/unified-command-for-coordinated-security-response',
   ),
   22 => 
@@ -587,7 +587,7 @@ Our systems are powered by <strong>advanced telemetry</strong> and <strong>SCADA
     'deleted_at' => NULL,
     'created_at' => '2025-11-24 11:13:27',
     'updated_at' => '2025-11-24 11:13:27',
-    'title' => 'Advanced surveillance powered by intelligent analytics',
+    'title' => 'Advanced Surveillance Powered by Intelligent Analytics',
     'slug' => '/sub-divisions/advanced-surveillance-powered-by-intelligent-analytics',
   ),
   23 => 
@@ -612,7 +612,7 @@ Our systems are powered by <strong>advanced telemetry</strong> and <strong>SCADA
     'deleted_at' => NULL,
     'created_at' => '2025-11-24 11:17:48',
     'updated_at' => '2025-11-24 11:17:48',
-    'title' => 'Intelligent access management for complete facility control',
+    'title' => 'Intelligent Access Management for Complete Facility Control',
     'slug' => '/sub-divisions/intelligent-access-management-for-complete-facility-control',
   ),
   24 => 
@@ -637,7 +637,7 @@ Our systems are powered by <strong>advanced telemetry</strong> and <strong>SCADA
     'deleted_at' => NULL,
     'created_at' => '2025-11-24 11:20:39',
     'updated_at' => '2025-11-24 11:20:39',
-    'title' => 'Layered defense that stops intrusions in their tracks',
+    'title' => 'Layered Defense That Stops Intrusions in Their Tracks',
     'slug' => '/sub-divisions/layered-defense-that-stops-intrusions-in-their-tracks',
   ),
   25 => 
@@ -662,7 +662,7 @@ Our systems are powered by <strong>advanced telemetry</strong> and <strong>SCADA
     'deleted_at' => NULL,
     'created_at' => '2025-11-24 11:22:58',
     'updated_at' => '2025-11-24 11:22:58',
-    'title' => 'Early detection that saves lives and protects assets',
+    'title' => 'Early Detection That Saves Lives and Protects Assets',
     'slug' => '/sub-divisions/early-detection-that-saves-lives-and-protects-assets',
   ),
   26 => 
@@ -687,7 +687,7 @@ Our systems are powered by <strong>advanced telemetry</strong> and <strong>SCADA
     'deleted_at' => NULL,
     'created_at' => '2025-11-24 11:26:53',
     'updated_at' => '2025-11-24 11:26:53',
-    'title' => 'Crystal-clear communication when every word matters',
+    'title' => 'Crystal-Clear Communication When Every Word Matters',
     'slug' => '/sub-divisions/crystal-clear-communication-when-every-word-matters',
   ),
   27 => 
@@ -712,7 +712,7 @@ Our systems are powered by <strong>advanced telemetry</strong> and <strong>SCADA
     'deleted_at' => NULL,
     'created_at' => '2025-11-24 11:30:32',
     'updated_at' => '2025-11-24 11:30:32',
-    'title' => 'Advanced screening that protects without compromise',
+    'title' => 'Advanced Screening That Protects Without Compromise',
     'slug' => '/sub-divisions/advanced-screening-that-protects-without-compromise',
   ),
   28 => 
@@ -737,7 +737,7 @@ Our systems are powered by <strong>advanced telemetry</strong> and <strong>SCADA
     'deleted_at' => NULL,
     'created_at' => '2025-11-24 11:33:51',
     'updated_at' => '2025-11-24 11:33:51',
-    'title' => 'Track, manage, and optimize your mobile assets',
+    'title' => 'Track, Manage, and Optimize Your Mobile Assets',
     'slug' => '/sub-divisions/track-manage-and-optimize-your-mobile-assets',
   ),
   29 => 
@@ -762,7 +762,7 @@ Our systems are powered by <strong>advanced telemetry</strong> and <strong>SCADA
     'deleted_at' => NULL,
     'created_at' => '2025-11-24 11:37:21',
     'updated_at' => '2025-11-24 11:37:21',
-    'title' => 'Advanced sensing that maps mineral potential accurately',
+    'title' => 'Advanced Sensing That Maps Mineral Potential Accurately',
     'slug' => '/sub-divisions/advanced-sensing-that-maps-mineral-potential-accurately',
   ),
   30 => 
@@ -787,7 +787,7 @@ Our systems are powered by <strong>advanced telemetry</strong> and <strong>SCADA
     'deleted_at' => NULL,
     'created_at' => '2025-11-24 11:40:39',
     'updated_at' => '2025-11-24 11:40:39',
-    'title' => 'Smart automation for safer, more productive mining',
+    'title' => 'Smart Automation for Safer, more Productive Mining',
     'slug' => '/sub-divisions/smart-automation-for-safer-more-productive-mining',
   ),
   31 => 
@@ -812,7 +812,7 @@ Our systems are powered by <strong>advanced telemetry</strong> and <strong>SCADA
     'deleted_at' => NULL,
     'created_at' => '2025-11-24 11:44:13',
     'updated_at' => '2025-11-24 11:44:13',
-    'title' => 'Intelligent systems that maximize mineral value',
+    'title' => 'Intelligent Systems that Maximize Mineral Value',
     'slug' => '/sub-divisions/intelligent-systems-that-maximize-mineral-value',
   ),
   32 => 
@@ -837,7 +837,7 @@ Our systems are powered by <strong>advanced telemetry</strong> and <strong>SCADA
     'deleted_at' => NULL,
     'created_at' => '2025-11-24 11:48:32',
     'updated_at' => '2025-11-24 11:48:32',
-    'title' => 'Comprehensive monitoring for responsible mining',
+    'title' => 'Comprehensive Monitoring for Responsible Mining',
     'slug' => '/sub-divisions/comprehensive-monitoring-for-responsible-mining',
   ),
   33 => 
@@ -862,7 +862,7 @@ Our systems are powered by <strong>advanced telemetry</strong> and <strong>SCADA
     'deleted_at' => NULL,
     'created_at' => '2025-11-26 10:55:21',
     'updated_at' => '2025-11-26 10:55:21',
-    'title' => 'Proven systems designed for your specific requirements',
+    'title' => 'Proven Systems Designed for Your Specific Requirements',
     'slug' => '/sub-divisions/proven-systems-designed-for-your-specific-requirements',
   ),
   34 => 
@@ -887,7 +887,7 @@ Our systems are powered by <strong>advanced telemetry</strong> and <strong>SCADA
     'deleted_at' => NULL,
     'created_at' => '2025-11-26 10:59:53',
     'updated_at' => '2025-11-26 10:59:53',
-    'title' => 'Data-driven insights that power smart energy decisions',
+    'title' => 'Data-Driven Insights that Power Smart Energy Decisions',
     'slug' => '/sub-divisions/data-driven-insights-that-power-smart-energy-decisions',
   ),
 );

@@ -2,7 +2,6 @@
 
 @section('content')
 
-
 <!-- start: Breadcrumb Section -->
 <section
     class="tj-page-header m-0 mb-5 rounded-0 section-gap-x"
@@ -61,8 +60,7 @@
                                 </h4>
                             </div>
                             <div class="service-content">
-                                <span class="desc">{!! substr($sub_category->solutions[0]->description,0,110) ?? 'N/A' !!}
-</span>
+                                <span class="desc">{!! substr($sub_category->solutions[0]->description ?? 'N/A', 0, 110) !!}</span>
                             </div>
                         </div>
                         <div
@@ -73,14 +71,6 @@
                     @endforeach
                     
                 </div>
-                <!-- <div
-                    class="service-btn-area text-center wow fadeInUp"
-                    data-wow-delay=".3s">
-                    <a class="tj-primary-btn" href="service.html">
-                        <span class="btn-text"><span>More Services</span></span>
-                        <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
-                    </a>
-                </div> -->
             </div>
         </div>
     </div>
@@ -88,7 +78,7 @@
 <!-- end: Service Section -->
 
 <!-- start: Project Section -->
- @if($caseStudies->count() > 0)
+@if($caseStudies->count() > 0)
 <section class="tj-project-section-3 mb-5 section-gap section-gap-x">
     <div class="container">
         <div class="row">
@@ -136,17 +126,18 @@
                                     <div class="project-img">
                                         <img
                                             src="/{{ $caseStudy->images[0]->image ?? '' }}"
-                                            alt="{{ $caseStudy->images[0]->alt ?? '' }}" />
+                                            alt="{{ $caseStudy->images[0]->alt ?? '' }}"
+                                            style="height: 250px; object-fit: cover;" />
                                     </div>
                                     <div class="project-content">
                                         <span class="categories"><a href="portfolio-details.html">{{ $caseStudy->category->title ?? '' }}</a></span>
                                         <div class="project-text">
                                             <h4 class="title">
-                                                <a href="portfolio-details.html">{{ $caseStudy->title }}</a>
+                                                <a href="/case-study/{{ $caseStudy->slug ?? $caseStudy->title }}">{{ $caseStudy->title }}</a>
                                             </h4>
                                             <a
                                                 class="project-btn"
-                                                href="/case-study/{{ $caseStudy->title }}">
+                                                href="/case-study/{{ $caseStudy->slug ?? $caseStudy->title }}">
                                                 <i class="tji-arrow-right-big"></i>
                                             </a>
                                         </div>
@@ -162,18 +153,8 @@
             </div>
         </div>
     </div>
-    <div class="bg-shape-1">
-        <img src="assets/images/shape/pattern-2.svg" alt="" />
-    </div>
-    <div class="bg-shape-2">
-        <img src="assets/images/shape/pattern-3.svg" alt="" />
-    </div>
-    <div class="bg-shape-3">
-        <img src="assets/images/shape/shape-blur.svg" alt="" />
-    </div>
 </section>
 @endif
 <!-- end: Project Section -->
-
 
 @endsection
