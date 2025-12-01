@@ -9745,6 +9745,7 @@ START: Services CSS
   font-size: 70px;
   width: 80px;
   height: 80px;
+  /* background: orange; */
   background: linear-gradient(-45deg, rgba(30, 138, 138, 0.3) 0%, rgba(30, 138, 138, 0) 50%, rgba(30, 138, 138, 0.3) 100%);
   border-radius: 50%;
   border: 1px solid rgba(30, 138, 138, 0.15);
@@ -28689,6 +28690,12 @@ START: Blog CSS
   width: 30px;
   height: 30px;
   font-size: 20px;
+}
+
+
+.service-item-wrapper .title-area .service-icon 
+{  
+  border-color: orange !important;
 }
 
 /* !END: Blog CSS *//*# sourceMappingURL=main.css.map */

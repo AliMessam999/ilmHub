@@ -48,14 +48,13 @@
         }
 
         .service-item-wrapper .title-area .service-icon {
-            /* border: 1px solid white; */
-            position: absolute; /* Add this */
-            top: -30px; /* Adjust this value to position the icon */
-            left: 40%; /* Center horizontally */
-            transform: translateX(-50%); /* Center horizontally */
-            background: /* Add background color if needed to match your design */;
-            padding: 10px; /* Add padding if needed */
-            border-radius: 50%; /* Make it circular if desired */
+            position: absolute !important;
+            top: -30px !important;
+            left: 50% !important;
+            transform: translateX(-50%) !important;
+            padding: 10px;
+            border-radius: 50%;
+            border-color: #DB8801 !important;
         }
         
         .about-bottom-area {
@@ -96,9 +95,36 @@
         .experience-box .sub-title{
             color: #2a2e3f !important;
         }
+
+        .global-map-img img {
+            position: relative;
+            left: -80px; /* adjust this value to move more or less */
+        }
+
         
         
         </style>
+        
+        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const clientSlider = document.querySelector('.client-slider-1');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        clientSlider.style.animationPlayState = 'running';
+                    } else {
+                        clientSlider.style.animationPlayState = 'paused';
+                    }
+                });
+            }, { threshold: 0.1 });
+            
+            if (clientSlider) {
+                clientSlider.style.animationPlayState = 'paused';
+                observer.observe(clientSlider);
+            }
+        });
+        </script>
 
     @php
         use App\Models\CdSkill;
@@ -205,7 +231,8 @@
                                 <div class="service-item box style-2">
                                     <div class="title-area">
                                         <div class="service-icon">
-                                            <i class="{{$solution->class}}"></i>
+                                            <img src="{{ $solution->image }}" alt="icon" style="">
+                                            {{-- <i class="{{$solution->class}}"></i> --}}
                                             <!-- tji-service-1  tji-service-2   tji-service-3   tji-service-4 -->
                                         </div>
                                         <h4 class="title">
@@ -436,7 +463,7 @@
                 <div class="col-lg-6">
                     <div class="global-map wow fadeInUp" data-wow-delay=".3s">
                         <div class="global-map-img">
-                            <img src="{{ asset('frontend_assets/images/bg/map.svg') }}" alt="Image" />
+                            <img src="{{ asset('frontend_assets/images/bg/map2.png') }}" alt="Image" />
                             <div class="location-indicator active loc-1">
                                 <div class="location-tooltip">
                                     <span></span>
@@ -453,6 +480,11 @@
                                 </div>
                             </div>
                             <div class="location-indicator active loc-4">
+                                <div class="location-tooltip">
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="location-indicator active loc-5">
                                 <div class="location-tooltip">
                                     <span></span>
                                 </div>
