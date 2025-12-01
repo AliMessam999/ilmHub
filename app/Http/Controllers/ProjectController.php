@@ -12,11 +12,10 @@ use Illuminate\Support\Facades\Validator;
 
 class ProjectController extends Controller
 {
-    //
-    //
     public function create_project(Request $request)
     {
         $validator = Validator::make($request->all(), [
+            'title' => 'required|string|max:255', // ✅ ADDED: Title validation
             'category_id' => ['required', Rule::unique('cd_solutions')],
             'description' => 'required',
             'image' => ['required', Rule::imageFile(), 'max:500'],
@@ -34,7 +33,7 @@ class ProjectController extends Controller
             }
             $project = new CdSolution();
             $project->title = $request->title;
-            $project->slug = $request->slug; // added 
+            $project->slug = $request->slug;
             $project->category_id = $request->category_id;
             $project->description = $request->description;
             $project->alt = $request->alt;
@@ -125,12 +124,12 @@ class ProjectController extends Controller
             ], 302);
         }
     }
+
     public function show_project($id = null)
     {
         $project = CdSolution::where('type', 'Project')->with('category')->get();
         return view('admin.project.index', compact('project'));
     }
-
 
     public function update_project(Request $request, $id)
     {
@@ -141,6 +140,7 @@ class ProjectController extends Controller
 
         // Validate depending on image
         $rules = [
+            'title' => 'required|string|max:255', // ✅ ADDED: Title validation
             'category_id' => 'required',
             'description' => 'required',
             'alt' => 'required'
@@ -168,6 +168,7 @@ class ProjectController extends Controller
 
         // Update basic fields
         $CdSolution->update([
+            'title'        => $request->title, // ✅ ADDED: Title field
             'slug'         => $request->slug,
             'category_id'  => $request->category_id,
             'description'  => $request->description,
@@ -175,19 +176,26 @@ class ProjectController extends Controller
             'image'        => $CdSolution->image ?? $CdSolution->image
         ]);
 
-        // Update customer services only if provided
+        // ✅ FIXED: Update customer services with image preservation
         if ($request->filled('service_titles')) {
 
             CustomerService::where('solution_id', $id)->delete();
 
             $customer_services = [];
             $images = $request->file('service_images');
+            $existing_images = $request->existing_service_images ?? []; // ✅ ADDED: Get existing images
             
             foreach ($request->service_titles as $i => $title) {
                 if ($title) {
                     $imagePath = null;
+                    
+                    // ✅ FIXED: Check if new image was uploaded
                     if (isset($images[$i]) && $images[$i]) {
                         $imagePath = $images[$i]->store('upload/customer_services');
+                    }
+                    // ✅ ADDED: Use existing image if no new image uploaded
+                    elseif (isset($existing_images[$i]) && !empty($existing_images[$i])) {
+                        $imagePath = $existing_images[$i];
                     }
                     
                     $customer_services[] = [
@@ -227,7 +235,6 @@ class ProjectController extends Controller
 
         return response()->json(["message" => "Solution Updated Successfully"], 200);
     }
-
 
     public function create_project_view()
     {

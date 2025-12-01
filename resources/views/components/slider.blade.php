@@ -45,8 +45,8 @@
                                         {!! $slider->description !!}
                                     </div>
                                     <div class="slider-btn">
-                                        <a class="tj-primary-btn" href="/contact">
-                                            <span class="btn-text"><span>Get Started</span></span>
+                                        <a class="tj-primary-btn" href="/about_us">
+                                            <span class="btn-text"><span>Learn More</span></span>
                                             <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
                                         </a>
                                     </div>

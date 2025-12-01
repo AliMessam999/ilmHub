@@ -57,6 +57,47 @@
             padding: 10px; /* Add padding if needed */
             border-radius: 50%; /* Make it circular if desired */
         }
+        
+        .about-bottom-area {
+            display: flex !important;
+            flex-wrap: nowrap !important;
+            gap: 15px !important;
+        }
+        
+        .about-bottom-area .experience-box {
+            flex: 1 !important;
+            min-width: 0 !important;
+        }
+        
+        .about-bottom-area .experience-box .sub-title {
+            font-size: 0.80em !important;
+        }
+        
+        .about-bottom-area .experience-box .customers-number {
+            font-size: 1.8em !important;
+        }
+
+        .about-bottom-area .experience-box .customers-text {
+            font-size: 0.65em !important;
+        }
+
+        .left-experince-box .customers-number{
+            font-size: 3.0rem !important;
+        }
+        
+        .left-experince-box .customers-text{
+            font-size: 0.8rem !important;
+        }
+
+        .experience-box .customers-number{
+            color: #DB8801 !important;
+        }
+
+        .experience-box .sub-title{
+            color: #2a2e3f !important;
+        }
+        
+        
         </style>
 
     @php
@@ -96,7 +137,7 @@
                             </video>
                         </div>
                         <div class="box-area">
-                            <div class="experience-box wow fadeInUp" data-wow-delay=".3s">
+                            <div class="experience-box left-experince-box wow fadeInUp" data-wow-delay=".3s">
                                 <span class="sub-title">{{$skillsLeft->title}}</span>
                                 <div class="customers-number">{{$skillsLeft->percentage}}</div>
                                 <h6 class="customers-text">{{$skillsLeft->description}}</h6>
@@ -142,15 +183,15 @@
                 <div class="col-lg-4">
                     <div class="content-wrap slidebar-stickiy">
                         <div class="sec-heading style-2">
-                            <span class="sub-title wow fadeInUp" data-wow-delay=".3s">Our Departments</span>
+                            <span class="sub-title wow fadeInUp" data-wow-delay=".3s"><i class="tji-box"></i>Our Departments</span>
                             <h2 class="sec-title text-white text-anim">
                                 Powering Progress in Every Sector
-                                <span>We Touch.</span>
+                                <span>We Touch</span>
                             </h2>
                         </div>
                         <div class="wow fadeInUp" data-wow-delay=".6s">
-                            <a class="tj-primary-btn" href="/sub-divisions/it-infrastructure-and-hardware">
-                                <span class="btn-text"><span>More Services</span></span>
+                            <a class="tj-primary-btn" href="/contact">
+                                <span class="btn-text"><span>Contact Us</span></span>
                                 <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
                             </a>
                         </div>
@@ -203,14 +244,13 @@
             <div class="row">
                 <div class="col-12 col-lg-4 col-xl-3">
                     <div class="sec-heading style-3 slidebar-stickiy">
-                        <span class="sub-title wow fadeInUp" data-wow-delay=".3s"><i class="tji-box"></i>Insights &
-                            Ideas</span>
+                        <span class="sub-title wow fadeInUp" data-wow-delay=".3s"><i class="tji-box"></i>Case Studies</span>
                         <h2 class="sec-title title-anim">
-                            Read Our Latest Blog & News.
+                            To Be Renamed Later...
                         </h2>
                         <div class="h8-blog-more wow fadeInUp" data-wow-delay=".8s">
                             <a class="tj-primary-btn" href="/blogs">
-                                <span class="btn-text"><span>More Blogs</span></span>
+                                <span class="btn-text"><span>More Case Studies</span></span>
                                 <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
                             </a>
                         </div>
@@ -297,9 +337,8 @@
                           </h5>
                         </div> -->
                     <!-- <span class="sub-title wow fadeInUp" data-wow-delay=".3s">Our Departments</span> -->
-                    <div class="swiper client-slider client-slider-1 wow fadeIn" data-wow-delay=".5s">
-
-                        <div class="swiper-wrapper">
+                    <div class="swiper client-slider client-slider-1 wow fadeInUp" data-wow-delay=".3s">
+                        <div class="swiper-wrapper mb-5">
                             @foreach ($data->partners as $client)
                                 <div class="swiper-slide client-item">
                                     <div class="client-logo">
@@ -307,13 +346,6 @@
                                     </div>
                                 </div>
                             @endforeach
-                            <!-- Reference -->
-                            <!-- <div class="swiper-slide client-item">
-                                <div class="client-logo">
-                                    <img src="{{ asset('frontend_assets/images/brands/brand-6.webp') }}"
-                                        alt="" />
-                                </div>
-                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -330,9 +362,9 @@
                     <div class="sec-heading-wrap">
                         <div class="heading-wrap-content">
                             <div class="sec-heading style-8">
-                                <span class="sub-title wow fadeInUp" data-wow-delay=".3s">OUR Industries</span>
+                                <span class="sub-title wow fadeInUp" data-wow-delay=".3s"><i class="tji-box"></i>OUR Industries</span>
                                 <h2 class="sec-title title-anim">
-                                    Empowering Business with Expertise.
+                                    Empowering Business with Expertise
                                 </h2>
                             </div>
                             <div class="slider-navigation d-none d-md-inline-flex wow fadeInUp" data-wow-delay=".5s">
@@ -369,30 +401,14 @@
                                         <div class="project-content">
                                             <div class="project-text">
                                                 <h4 class="title">
-                                                    <a href="portfolio-details.html">{{$client->title}}</a>
+                                                    {{$client->title}}
+                                                    {{-- <a href="portfolio-details.html">{{$client->title}}</a> --}}
                                                 </h4>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 @endforeach
-                                <!-- Reference -->
-                                <!-- <div class="swiper-slide">
-                                    <div class="project-item">
-                                        <div class="project-img">
-                                            <img src="{{ asset('frontend_assets/images/industries/3.jpg') }}"
-                                                alt="" />
-                                        </div>
-                                        <div class="project-content">
-                                            <span class="categories"><a href="portfolio-details.html">Business</a></span>
-                                            <div class="project-text">
-                                                <h4 class="title">
-                                                    <a href="portfolio-details.html">Education</a>
-                                                </h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div> -->
                             </div>
                             <div class="swiper-pagination-area"></div>
                         </div>
@@ -449,7 +465,7 @@
                         <div class="sec-heading">
                             <span class="sub-title text-white"><i class="tji-box"></i>Get in Touch</span>
                             <h2 class="sec-title title-anim">
-                                Drop Us a <span>Line.</span>
+                                Drop Us a <span>Line</span>
                             </h2>
                         </div>
                         <form id="contact-form-2">
