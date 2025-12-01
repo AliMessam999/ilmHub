@@ -95,6 +95,12 @@
         .experience-box .sub-title{
             color: #2a2e3f !important;
         }
+
+        .global-map-img img {
+            position: relative;
+            left: -80px; /* adjust this value to move more or less */
+        }
+
         
         
         </style>
@@ -474,6 +480,11 @@
                                 </div>
                             </div>
                             <div class="location-indicator active loc-4">
+                                <div class="location-tooltip">
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="location-indicator active loc-5">
                                 <div class="location-tooltip">
                                     <span></span>
                                 </div>
