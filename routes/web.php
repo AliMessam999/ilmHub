@@ -25,6 +25,7 @@ use App\Http\Controllers\TeamMemberController;
 use App\Http\Controllers\SubCategoryController;
 use App\Http\Controllers\TermConditionController;
 use App\Http\Controllers\CompanyProfileController;
+use App\Http\Controllers\FooterController;
 
 /*
 |--------------------------------------------------------------------------
@@ -160,6 +161,16 @@ Route::middleware('authwithadmin')->controller(GallaryController::class)->group(
     Route::post('/admin/gallary/update/{id}', 'update_gallary');
     Route::delete('/admin/gallary/delete/{id}','delete_gallary');
 });
+
+Route::middleware('authwithadmin')->controller(FooterController::class)->group(function () {
+    Route::get('/admin/footer', 'show_footer')->name('footer_list');
+    Route::get('/admin/footer/create', 'create_footer_view');
+    Route::get('/admin/footer/update/{id}', 'update_footer_view')->name('footer.update');
+    Route::post('/admin/footer/create', 'create_footer');
+    Route::delete('/admin/footer/delete/{id}','delete_footer');
+});
+
+
 Route::middleware('authwithadmin')->controller(PolicyController::class)->group(function () {
     Route::get('/admin/policy', 'show_policy')->name('policy_list');
     Route::get('/admin/policy/create', 'create_policy_view');
