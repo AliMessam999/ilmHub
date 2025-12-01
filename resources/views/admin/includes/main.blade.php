@@ -207,6 +207,19 @@
             </li>
             
             @endif
+             {{-- @if (auth()->user()->haspermission('read-gallary')) --}}
+                <li class>
+                    <a class="" href="/admin/footer" aria-expanded="false">
+                        <div class="nav_icon_small">
+                            <i class="fas fa-window-restore" style="color: #048391;"></i>
+
+                        </div>
+                        <div class="nav_title">
+                            <span>Footer Content</span>
+                        </div>
+                    </a>
+                </li>
+            {{-- @endif --}}
             @if (auth()->user()->haspermission('read-users'))
             <li class>
                 <a class="" href="/admin/user" aria-expanded="false">
