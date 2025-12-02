@@ -96,9 +96,26 @@ class FooterController extends Controller
         // }
     }
 
-    public function delete_footer(){
-        
+    public function delete_footer($id)
+    {
+    // Find the footer by ID
+    $footer = CdFooter::find($id);
+
+    if ($footer) {
+        // Delete the footer
+        $footer->delete();
+
+        // Return success response
+        return response()->json([
+            "message" => "Footer deleted successfully"
+        ], 200);
+    } else {
+        // Footer not found
+        return response()->json([
+            "message" => "Footer not found"
+        ], 404);
     }
+}
 
 
 }
