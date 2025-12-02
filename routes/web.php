@@ -167,7 +167,7 @@ Route::middleware('authwithadmin')->controller(FooterController::class)->group(f
     Route::get('/admin/footer/create', 'create_footer_view');
     Route::get('/admin/footer/update/{id}', 'update_footer_view')->name('footer.update');
     Route::post('/admin/footer/create', 'create_footer');
-    Route::delete('/admin/footer/delete/{id}','delete_footer');
+    Route::delete('/admin/footer/delete/{id}','delete_footer')->name('footer.delete');
 });
 
 
