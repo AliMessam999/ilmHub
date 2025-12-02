@@ -20,18 +20,18 @@ class CdFooterSeeder extends Seeder
     'sub_category_id' => NULL,
     'deleted_at' => NULL,
     'created_at' => '2025-12-01 12:30:02',
-    'updated_at' => '2025-12-01 12:30:02',
+    'updated_at' => '2025-12-02 05:04:45',
   ),
   1 => 
   array (
     'id' => 2,
-    'title' => 'Ready to discover what\'s beneath? Let\'s map your mineral potential',
+    'title' => 'Let’s mine smarter with data, automation, and sustainability.',
     'menu_id' => 2,
     'category_id' => 77,
     'sub_category_id' => NULL,
     'deleted_at' => NULL,
     'created_at' => '2025-12-01 12:32:03',
-    'updated_at' => '2025-12-01 12:32:03',
+    'updated_at' => '2025-12-02 06:20:18',
   ),
   2 => 
   array (
@@ -51,20 +51,20 @@ class CdFooterSeeder extends Seeder
     'menu_id' => 2,
     'category_id' => 1,
     'sub_category_id' => NULL,
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-02 04:53:10',
     'created_at' => '2025-12-01 12:36:35',
-    'updated_at' => '2025-12-01 12:36:35',
+    'updated_at' => '2025-12-02 04:53:10',
   ),
   4 => 
   array (
     'id' => 5,
-    'title' => 'Ready to modernize? Let\'s make it happen.',
+    'title' => 'Let\'s build infrastructure that never lets you down',
     'menu_id' => 2,
     'category_id' => 1,
     'sub_category_id' => NULL,
     'deleted_at' => NULL,
     'created_at' => '2025-12-01 12:39:43',
-    'updated_at' => '2025-12-01 12:39:43',
+    'updated_at' => '2025-12-02 05:57:11',
   ),
   5 => 
   array (
@@ -124,13 +124,13 @@ class CdFooterSeeder extends Seeder
   10 => 
   array (
     'id' => 11,
-    'title' => 'Ready to lead the digital revolution? Let\'s transform together.',
+    'title' => 'Your next digital step starts here',
     'menu_id' => 2,
     'category_id' => 2,
     'sub_category_id' => NULL,
     'deleted_at' => NULL,
     'created_at' => '2025-12-01 12:58:37',
-    'updated_at' => '2025-12-01 12:58:37',
+    'updated_at' => '2025-12-02 05:58:38',
   ),
   11 => 
   array (
@@ -179,13 +179,13 @@ class CdFooterSeeder extends Seeder
   15 => 
   array (
     'id' => 16,
-    'title' => 'Ready to master water management? Let\'s protect what matters',
+    'title' => 'Together, let’s build a smarter, more sustainable planet',
     'menu_id' => 2,
     'category_id' => 3,
     'sub_category_id' => NULL,
     'deleted_at' => NULL,
     'created_at' => '2025-12-01 13:07:04',
-    'updated_at' => '2025-12-01 13:07:04',
+    'updated_at' => '2025-12-02 06:00:14',
   ),
   16 => 
   array (
@@ -234,7 +234,7 @@ class CdFooterSeeder extends Seeder
   20 => 
   array (
     'id' => 21,
-    'title' => 'Ready to engineer biological innovation?',
+    'title' => 'Let’s innovate together — from biology to breakthrough.',
     'menu_id' => 2,
     'category_id' => 4,
     'sub_category_id' => NULL,
@@ -311,7 +311,7 @@ class CdFooterSeeder extends Seeder
   27 => 
   array (
     'id' => 28,
-    'title' => 'Ready to power the future with solar?',
+    'title' => ' Let’s power a cleaner, brighter future together',
     'menu_id' => 2,
     'category_id' => 5,
     'sub_category_id' => 100,
@@ -472,6 +472,39 @@ class CdFooterSeeder extends Seeder
     'deleted_at' => NULL,
     'created_at' => '2025-12-01 13:43:26',
     'updated_at' => '2025-12-01 13:43:26',
+  ),
+  42 => 
+  array (
+    'id' => 43,
+    'title' => 'Ready to power the future with solar?',
+    'menu_id' => 2,
+    'category_id' => 5,
+    'sub_category_id' => 100,
+    'deleted_at' => NULL,
+    'created_at' => '2025-12-02 06:17:59',
+    'updated_at' => '2025-12-02 06:17:59',
+  ),
+  43 => 
+  array (
+    'id' => 44,
+    'title' => 'Build confidence with technology that protects, detects, and responds',
+    'menu_id' => 2,
+    'category_id' => 6,
+    'sub_category_id' => NULL,
+    'deleted_at' => NULL,
+    'created_at' => '2025-12-02 06:25:40',
+    'updated_at' => '2025-12-02 06:25:40',
+  ),
+  44 => 
+  array (
+    'id' => 45,
+    'title' => 'Build confidence with technology that protects, detects, and responds',
+    'menu_id' => 2,
+    'category_id' => 6,
+    'sub_category_id' => NULL,
+    'deleted_at' => '2025-12-02 06:32:42',
+    'created_at' => '2025-12-02 06:31:50',
+    'updated_at' => '2025-12-02 06:32:42',
   ),
 );
         DB::table('cd_footers')->insert($data);
