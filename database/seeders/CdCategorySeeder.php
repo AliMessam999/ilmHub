@@ -135,11 +135,11 @@ class CdCategorySeeder extends Seeder
   array (
     'id' => 6,
     'title' => 'Security Systems',
-    'slug' => 'security-systems',
+    'slug' => '/divisions/security-systems',
     'parent' => NULL,
     'deleted_at' => NULL,
     'created_at' => '2023-11-22 11:07:55',
-    'updated_at' => '2025-11-24 07:31:49',
+    'updated_at' => '2025-12-02 06:21:28',
     'menu_id' => 2,
     'description' => '<h2>Secure Your World</h2>
 

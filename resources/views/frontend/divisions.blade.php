@@ -2,6 +2,17 @@
 
 @section('content')
 
+<style>
+    .division-item:hover .service-reveal-bg{
+        z-index: 5 !important;
+        /* transform: none !important; */
+    }
+    .division-item:hover + .division-item:not(:hover){
+        z-index: -1;
+    }
+
+</style>
+
 <!-- start: Breadcrumb Section -->
 <section
     class="tj-page-header m-0 mb-5 rounded-0 section-gap-x"

@@ -980,18 +980,39 @@ Progressbar js
 				}
 
 				if (scrollValue < 96) {
-					if(scrollValue > 70 && scrollValue < 100){
-						 let gradientPos = 50 + ((scrollValue - 80) / 20) * 50; 
-    $(".footer-top-scrool-bg").css("--gradient-position", `${gradientPos}%`);
-						// $(".footer-top-scrool-bg").css("--gradient-position", `${scrollValue}%`);
-					}
-					$("#tj-back-to-top-percentage").text(`${scrollValue}%`);
-				} else {
-					$("#tj-back-to-top-percentage").html(
-						'<i class="tji-arrow-up-long"></i>'
-					);
-				}
-			};
+        $("#tj-back-to-top-percentage").text(`${scrollValue}%`);
+    } else {
+        $("#tj-back-to-top-percentage").html('<i class="tji-arrow-up-long"></i>');
+    }
+
+    // ---- Gradient logic (kept OUTSIDE else block) ----
+    // decide if we should run gradient (no inline if inside else)
+    const in7to20 = (scrollValue >= 4 && scrollValue <= 20);
+    const in70to100 = (scrollValue >= 70 && scrollValue <= 100);
+
+    if (in7to20 || in70to100) {
+        let gradientPos;
+
+        if (in70to100) {
+            // map 70 -> 50%  and 100 -> 100%  (smooth)
+            // normalized fraction: (scrollValue - 70) / (100 - 70) => 0..1
+            const t = (scrollValue - 70) / 30;
+            gradientPos = 50 + t * 50; // 50..100
+        } else {
+            // in7to20: map 7 -> 0% and 20 -> 50% (example mapping)
+            // normalized fraction: (scrollValue - 7) / (20 - 7) => 0..1
+            const t = (scrollValue - 4) / 13;
+            gradientPos = 0 + t * 50; // 0..50
+            // you can adjust mapping (0..50) to your desired start/end
+        }
+
+        // clamp to 0..100 just in case
+        gradientPos = Math.min(100, Math.max(0, gradientPos));
+
+        // apply CSS custom property
+        $(".footer-top-scrool-bg").css("--gradient-position", `${gradientPos}%`);
+    }
+}
 			window.onscroll = scrollPercentage;
 			window.onload = scrollPercentage;
 

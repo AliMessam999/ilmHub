@@ -38,6 +38,7 @@ class DatabaseSeeder extends Seeder
         CdTeamMemberSeeder::class,
         CdTermConditionSeeder::class,
         CdTestimonialSeeder::class,
+        CdFooterSeeder::class,
     ];
         array_push($seeds,
             UserSeeder::class,
