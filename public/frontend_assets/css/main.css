@@ -13589,18 +13589,7 @@ START: Contact CSS
     height: 12px;
   }
 }
-.location-indicator.loc-1 {
-  top: 40%;
-  inset-inline-start: 55%;
-}
-.location-indicator.loc-2 {
-  top: 50%;
-  inset-inline-start: 46%;
-}
-.location-indicator.loc-3 {
-  top: 42%;
-  inset-inline-start: 58%;
-}
+
 .location-indicator::after {
   content: "";
   background: var(--tj-color-theme-primary);  
@@ -13654,33 +13643,48 @@ START: Contact CSS
 .loc-1 .location-tooltip::after {
   content:"Islamabad" !important;
 }
+.location-indicator.loc-1 {
+  top: 40%;
+  inset-inline-start: 55%;
+}
+
 .loc-2 .location-tooltip::after {
   content:"Dubai";
   inset-inline-start: 40%;
 }
+.location-indicator.loc-2 {
+  top: 48%;
+  inset-inline-start: 50%;
+}
+
 .loc-3 .location-tooltip::after {
   content:"Lahore";
   inset-inline-start: 40%;
-
 }
+.location-indicator.loc-3 {
+  top: 42%;
+  inset-inline-start: 58%;
+}
+
 .loc-4 .location-tooltip::after {
   content:"Chicago";
   inset-inline-start: 38%;
-
-}
-.loc-5 .location-tooltip::after {
-  content:"Sharjah";
-  inset-inline-start: 38%;
-
 }
 .location-indicator.loc-4{
   top: 35%;
   left: 14%;
 }
-.location-indicator.loc-5{
-  top: 56%;
-  left: 43%;
+
+.loc-5 .location-tooltip::after {
+  content:"Sharjah";
+  inset-inline-start: 38%;
 }
+.location-indicator.loc-5{
+  top: 46%;
+  left: 51%;
+}
+
+
 
 .location-tooltip span {
   color: var(--tj-color-common-white);

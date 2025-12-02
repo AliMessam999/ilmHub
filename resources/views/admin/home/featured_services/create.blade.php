@@ -87,6 +87,13 @@
                                     </div>
                                 </div>
 
+                                <div class="col-lg-12">
+                                    <label>User Details</label>
+                                    <div class="common_input mb_15">
+                                        <textarea name="user_details" placeholder="Enter User Details" rows="4"></textarea>
+                                    </div>
+                                </div>
+
 
                                 <div class="col-lg-6">
                                     <label>Icon</label>

@@ -145,7 +145,7 @@
                     <div
                         class="tj-sidebar-widget widget-categories wow fadeInUp"
                         data-wow-delay=".1s">
-                        <h4 class="widget-title">Client</h4>
+                        <h4 class="widget-title">Client Overview</h4>
                         <div class="infos-item">
                             <div class="project-icons">
                                 <i class="tji-user"></i>
@@ -157,6 +157,20 @@
                                 </h6>
                             </div>
                         </div>
+                        @if($caseStudy->user_details)
+                        <div class="infos-item">
+                            {{-- <div class="project-icons">
+                                <i class="tji-info"></i>
+                            </div> --}}
+                            <div class="project-text">
+                                {{-- <span>Details</span> --}}
+                                <p class="title">
+                                    {{ $caseStudy->user_details }}
+                                </p>
+                            </div>
+                        </div>
+                        @endif
+                        {{-- Funded By --}}
                         {{-- <div class="infos-item">
                             <div class="project-icons">
                                 <i class="tji-budget"></i>
@@ -168,7 +182,9 @@
                                 </h6>
                             </div>
                         </div> --}}
-                        <div class="infos-item">
+
+                        {{-- Location --}}
+                        {{-- <div class="infos-item">
                             <div class="project-icons">
                                 <i class="tji-location-2"></i>
                             </div>
@@ -176,8 +192,10 @@
                                 <span>Location</span>
                                 <h6 class="title">{{ $caseStudy->location }}</h6>
                             </div>
-                        </div>
-                        <div class="infos-item">
+                        </div> --}}
+
+                        {{-- Industry --}}
+                        {{-- <div class="infos-item">
                             <div class="project-icons">
                                 <i class="tji-chart"></i>
                             </div>
@@ -187,8 +205,10 @@
                                     {{ $caseStudy->industry->title ?? 'N/A' }}
                                 </h6>
                             </div>
-                        </div>
-                        <div class="infos-item">
+                        </div> --}}
+
+                        {{-- Website --}}
+                        {{-- <div class="infos-item">
                             <div class="project-icons">
                                 <i class="tji-window"></i>
                             </div>
@@ -196,7 +216,7 @@
                                 <span>Website</span>
                                 <h6 class="title">{{ $caseStudy->website }}</h6>
                             </div>
-                        </div>
+                        </div> --}}
                     </div>
                 </div>
             </div>

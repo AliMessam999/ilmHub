@@ -36,6 +36,7 @@ class FeaturedController extends Controller
             $career->location = $request->location;
             $career->industry_id = $request->industry_id;
             $career->website = $request->website;
+            $career->user_details = $request->user_details;
             $career->alt = $request->alt;
             $result = $career->save();
 
@@ -143,6 +144,14 @@ class FeaturedController extends Controller
             'title' => $request->title,
             'icon' => $request->icon,
             'description' => $request->description,
+            'sub_category_id' => $request->sub_category_id,
+            'client_name' => $request->client_name,
+            'funded_by' => $request->funded_by,
+            'location' => $request->location,
+            'industry_id' => $request->industry_id,
+            'website' => $request->website,
+            'user_details' => $request->user_details,
+            'alt' => $request->alt,
         ]);
 
         return response()->json(["message" => "Feature updated successfully"], 200);
