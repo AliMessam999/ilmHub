@@ -12,11 +12,11 @@ class FooterController extends Controller
 {
     public function show_footer()
     {
-        
+
         // $element = CdFooter::with('menu','category.sub_category')->paginate(15);
         // $element = CdFooter::with('menu','category','sub_category')->get()->last();
         // dd($element->category_id);
-        $element = CdFooter::with('menu','category','sub_category')->paginate(15);
+        $element = CdFooter::with('menu', 'category', 'sub_category')->paginate(50);
 
 
         // $items = CdMenu::with('menu')->get();
@@ -25,10 +25,10 @@ class FooterController extends Controller
     }
 
     // public function homepage(){
-        //  $footers = CdFooter::with(['menu', 'category', 'subCategory'])->get();
-        //  $footer = CdFooter::latest()->first();
-//  $footer = CdFooter::latest()->first();  // get latest record
-//     return view('includes.cta-section', compact('footer'));
+    //  $footers = CdFooter::with(['menu', 'category', 'subCategory'])->get();
+    //  $footer = CdFooter::latest()->first();
+    //  $footer = CdFooter::latest()->first();  // get latest record
+    //     return view('includes.cta-section', compact('footer'));
     // return view('frontend.home', compact('footer'));
     // }
 
@@ -37,9 +37,9 @@ class FooterController extends Controller
         $categories = CdCategory::where('parent', null)->get();
         $subCategories = CdCategory::whereNotNull('parent')->get();
         $menus = CdMenu::all();
-        return view('admin.footer.create', compact('categories', 'menus','subCategories' ));
+        return view('admin.footer.create', compact('categories', 'menus', 'subCategories'));
 
-      
+
 
         // $menus = CdMenu::all();
         // return view('admin.footer.create', compact('menus'));
@@ -47,12 +47,40 @@ class FooterController extends Controller
 
     public function update_footer_view($id)
     {
-        $footer = CdFooter::find($id);
-        $categories = CdCategory::where('parent', null)->get();
+        // Fetch footer item by ID
+        $footer = CdFooter::findOrFail($id);
+
+        // Get all menus
         $menus = CdMenu::all();
+
+        // Get all categories
+        $categories = CdCategory::all();
+
+        // Return view with required data
         return view('admin.footer.update', compact('footer', 'menus', 'categories'));
-        // return "Hello";
-        // return view('admin.footer.update');
+    }
+
+    public function update_footer(Request $request, $id)
+    {
+        $request->validate([
+            'title' => 'required',
+            'menu_id' => 'required|exists:cd_menus,id',
+            'category_id' => 'nullable|exists:cd_categories,id',
+            'sub_category_id' => 'nullable|exists:cd_categories,id',
+        ]);
+
+        $footer = CdFooter::findOrFail($id);
+
+        $footer->title = $request->title;
+        $footer->menu_id = $request->menu_id;
+        $footer->category_id = $request->category_id;
+        $footer->sub_category_id = $request->sub_category_id;
+
+        $footer->save();
+
+        return response()->json([
+            "message" => "Footer Updated Successfully"
+        ]);
     }
 
     public function create_footer(Request $request)
@@ -68,10 +96,10 @@ class FooterController extends Controller
         //     return response()->json($validator->errors(), 302);
         // } else {
 
-       $request->validate([
+        $request->validate([
             'title' => 'required',
             'menu_id' => 'required',
-            
+
         ]);
 
         // dd($request->all());
@@ -98,25 +126,22 @@ class FooterController extends Controller
 
     public function delete_footer($id)
     {
-    // Find the footer by ID
-    $footer = CdFooter::find($id);
+        // Find the footer by ID
+        $footer = CdFooter::find($id);
 
-    if ($footer) {
-        // Delete the footer
-        $footer->delete();
+        if ($footer) {
+            // Delete the footer
+            $footer->delete();
 
-        // Return success response
-        return response()->json([
-            "message" => "Footer deleted successfully"
-        ], 200);
-    } else {
-        // Footer not found
-        return response()->json([
-            "message" => "Footer not found"
-        ], 404);
+            // Return success response
+            return response()->json([
+                "message" => "Footer deleted successfully"
+            ], 200);
+        } else {
+            // Footer not found
+            return response()->json([
+                "message" => "Footer not found"
+            ], 404);
+        }
     }
 }
-
-
-}
-    

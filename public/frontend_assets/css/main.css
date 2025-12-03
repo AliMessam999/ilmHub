@@ -10120,7 +10120,7 @@ START: Services CSS
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px) {
   .service-item.style-3 {
-    padding: 40px 40px 40px 30px;
+    padding: 40px 30px 40px 100px;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
@@ -29047,7 +29047,7 @@ START: Blog CSS
   backdrop-filter:blur(1px);
   /* background-color:rgba(255,255,255,0.7); */
   position:relative;
-  z-index:1;
+  z-index:0;
 }
 /* .division-item::before{
   position:absolute;
@@ -29100,7 +29100,7 @@ START: Blog CSS
   opacity:1;
   visibility:visible;
   transition: transform 1s ease;
-  transform: translateX(250px);
+  transform: translateX(100px);
 }
 .division-item .service-content-wrap .service-icon{
   background:var(--tj-color-theme-dark-2);
@@ -29165,3 +29165,5 @@ START: Blog CSS
   padding: 2px;
   border-radius: 50%;
 }
+
+

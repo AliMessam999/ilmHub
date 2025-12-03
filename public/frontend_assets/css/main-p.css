@@ -10075,7 +10075,7 @@ START: Services CSS
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px) {
   .service-item.style-3 {
-    padding: 40px 40px 40px 30px;
+    padding: 40px 40px 40px 100px;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
