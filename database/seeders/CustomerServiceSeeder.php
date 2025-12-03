@@ -2360,9 +2360,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Discover how your systems truly perform under pressure with comprehensive load and performance testing.',
     'image' => 'upload/customer_services/LBhMspOi1LHpbMjrnCKbOt6gr9mg0BCyAlCQjmxJ.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-02 19:18:40',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-02 19:18:40',
   ),
   196 => 
   array (
@@ -2372,9 +2372,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Guarantee business continuity with rigorous high availability and failover testing for critical systems.',
     'image' => 'upload/customer_services/WapTvKclaiKMYFqUWWdlDLusqsLui0CB8V6SeUh6.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-02 19:18:40',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-02 19:18:40',
   ),
   197 => 
   array (
@@ -2384,9 +2384,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Prepare for the unexpected with practical Business Continuity and Disaster Recovery drills that test your readiness.',
     'image' => 'upload/customer_services/oUsck8DY9A2dwfYRZ0DF3Nv6FFuIRztfx6obWu12.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-02 19:18:40',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-02 19:18:40',
   ),
   198 => 
   array (
@@ -2396,9 +2396,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Ensure seamless operation across complex, integrated environments with comprehensive QA for system integration projects. We validate data flows, API connections, cross-system functionality, and user workflows spanning multiple platforms and divisions.',
     'image' => 'upload/customer_services/NRQvxHD3FZ5QbKv6chJ6s35khhELrSfPGNBLdxOP.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-02 19:18:40',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-02 19:18:40',
   ),
   199 => 
   array (
@@ -2408,9 +2408,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Transform how governments connect with citizens through intuitive digital platforms that make services accessible anytime, anywhere.',
     'image' => 'upload/customer_services/YLwX7jHDEYs0A79LGztflB2q7pDoNegvWFVt1t8M.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-02 19:21:23',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-02 19:21:23',
   ),
   200 => 
   array (
@@ -2420,9 +2420,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Automate complex licensing, permitting, and billing processes with intelligent management systems that eliminate manual bottlenecks.',
     'image' => 'upload/customer_services/NuUCvpPUzDHvDOGuhnIXQALp9KABKc35h9ulonfu.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-02 19:21:23',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-02 19:21:23',
   ),
   201 => 
   array (
@@ -2432,9 +2432,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Strengthen community safety with intelligent information systems designed for rapid response and coordinated enforcement.',
     'image' => 'upload/customer_services/ndl9EEXrdsVwMDm9PCFrNjZFdb6YReubObz4E0gg.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-02 19:21:23',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-02 19:21:23',
   ),
   202 => 
   array (
@@ -2444,9 +2444,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Elevate visitor experiences and streamline destination management with comprehensive tourism platforms.',
     'image' => 'upload/customer_services/8K3adBnMrb1Me3uhLoVJv4OtywxKWDtyAz6co6mF.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-02 19:21:23',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-02 19:21:23',
   ),
   203 => 
   array (
@@ -2456,9 +2456,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Optimize mobility and reduce congestion with intelligent transport and traffic management solutions.',
     'image' => 'upload/customer_services/vpwTKdotIH5IyyZ3E3jlPykWHOuVPOSYRzdeoCub.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-02 19:21:23',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-02 19:21:23',
   ),
   204 => 
   array (
@@ -2468,9 +2468,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Streamline workforce management with comprehensive HR and payroll systems that handle everything from recruitment to compensation.',
     'image' => 'upload/customer_services/37sCNFoTi8DpvUzKy0tA8WP6ZX5JP4AHOYmKc3iE.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-02 19:22:28',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-02 19:22:28',
   ),
   205 => 
   array (
@@ -2480,9 +2480,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Gain complete control over your assets and finances with real-time tracking and management systems.',
     'image' => 'upload/customer_services/1a8xKpEzUfwGkndJaFu0G4oxJ53OwzzH9QgeUo7J.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-02 19:22:28',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-02 19:22:28',
   ),
   206 => 
   array (
@@ -2492,9 +2492,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Coordinate events and manage facilities effortlessly with digital tools designed for operational excellence.',
     'image' => 'upload/customer_services/YyhUiLa7JLGrzAzX9WOxYMEOxFdlquhCGRzHtBiN.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-02 19:22:28',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-02 19:22:28',
   ),
   207 => 
   array (
@@ -2504,9 +2504,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Optimize your mobile assets with intelligent fleet and mobility management solutions.',
     'image' => 'upload/customer_services/9KCnibFofyqQY2bIKSPEDLcxD1PccHWhOehaIUlv.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-02 19:22:28',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-02 19:22:28',
   ),
   208 => 
   array (
@@ -2516,9 +2516,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Ensure accurate workforce tracking with secure biometric and time attendance systems that integrate seamlessly with your HR platforms.',
     'image' => 'upload/customer_services/d9BdQfO5hnTvypDcbsKgBmB0y2QhHCHbz123wwlS.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-02 19:22:28',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-02 19:22:28',
   ),
   209 => 
   array (
@@ -2528,9 +2528,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Transform customer engagement and lead qualification with intelligent chatbots and virtual assistants that understand context and deliver instant responses.',
     'image' => 'upload/customer_services/9zCCxgWudrnA2OPfgYsKuDJpwiFe0SGbBPtEcPNK.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-02 19:23:32',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-02 19:23:32',
   ),
   210 => 
   array (
@@ -2540,9 +2540,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Enable natural, hands-free interactions with multilingual voice agents that understand and respond like humans.',
     'image' => 'upload/customer_services/IkYB7J1Qg2zvsG8U7sVxU7ebkIEpGMzc0cqVO4Bk.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-02 19:23:32',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-02 19:23:32',
   ),
   211 => 
   array (
@@ -2552,9 +2552,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Turn data into strategic advantage with AI-powered analytics dashboards that deliver real-time insights at a glance.',
     'image' => 'upload/customer_services/a0LWAI7xqZw288k9YKclAzRwMw3lfJ7tlquInrXh.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-02 19:23:32',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-02 19:23:32',
   ),
   212 => 
   array (
@@ -2564,9 +2564,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Eliminate tedious manual work with Robotic Process Automation that handles repetitive, rule-based tasks with precision and speed.',
     'image' => 'upload/customer_services/sME9AvwnoylGlKN2TTB5KkLaGEeCtKtixmF2QgzP.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-02 19:23:32',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-02 19:23:32',
   ),
   213 => 
   array (
@@ -2576,9 +2576,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Enhance strategic planning with intelligent decision support systems that analyze complex data and provide actionable recommendations.',
     'image' => 'upload/customer_services/FXgMU7mubF9BV08NjXhRn9UWrAdFearJk5fnZWsE.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-02 19:23:32',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-02 19:23:32',
   ),
   214 => 
   array (
@@ -2588,9 +2588,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Bring your vision to life with modern web and mobile applications designed for exceptional user experiences.',
     'image' => 'upload/customer_services/8WU6kfGXJpbyvvQUe0DAaH7Pz6efFFy7KyN48R2Z.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-02 19:24:28',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-02 19:24:28',
   ),
   215 => 
   array (
@@ -2600,9 +2600,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Empower your organization with tailored interfaces that centralize operations, analytics, and customer relationships.',
     'image' => 'upload/customer_services/OcfVzthzcAHcJ9P3EvQYM3LvJsq4TMlk5phx4HRL.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-02 19:24:28',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-02 19:24:28',
   ),
   216 => 
   array (
@@ -2612,9 +2612,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Break down silos and enable seamless workflows with robust API integrations and cloud-native applications.',
     'image' => 'upload/customer_services/LWZamkuwvpk7lkJnyhrF90D1VPWodyE1Z05Si47P.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-02 19:24:28',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-02 19:24:28',
   ),
   217 => 
   array (
@@ -2624,9 +2624,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Reach users wherever they are with native and hybrid mobile applications for iOS, Android, and cross-platform environments.',
     'image' => 'upload/customer_services/1CT4q8XBRx9uuDJjnqRefx5kIh3X2xPLv3MYweqb.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-02 19:24:28',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-02 19:24:28',
   ),
   218 => 
   array (
@@ -2636,9 +2636,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Track river behavior with precision through automated flow and discharge monitoring systems that provide real-time insights into water movement.',
     'image' => 'upload/customer_services/KIV6sfn5ID3QPAUibLeAciorY2RDjOEG8oU8B0BZ.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-02 19:47:06',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-02 19:47:06',
   ),
   219 => 
   array (
@@ -2648,9 +2648,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Save lives and protect infrastructure with intelligent flood forecasting and early warning systems that predict inundation before it happens.',
     'image' => 'upload/customer_services/bGm1oLa1GdvCWkm8zYjmppWoSVcGqBNazihfYaAs.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-02 19:47:06',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-02 19:47:06',
   ),
   220 => 
   array (
@@ -2660,9 +2660,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Manage urban water challenges with intelligent stormwater monitoring and drainage solutions designed for modern cities.',
     'image' => 'upload/customer_services/si7Zp9m6xSwDobtRO8s14afqXOoahZQ8WmLucJi2.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-02 19:47:06',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-02 19:47:06',
   ),
   221 => 
   array (
@@ -2672,9 +2672,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Ensure sustainable water resource management with comprehensive groundwater and surface water monitoring systems.',
     'image' => 'upload/customer_services/AyBkgVMJLvwWkBvEZxnWNj4IUW7ca3FYCC9hyiTr.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-02 19:47:06',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-02 19:47:06',
   ),
   222 => 
   array (
@@ -2684,9 +2684,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Deploy specialized weather stations designed for mission-critical applications where precision matters.',
     'image' => 'upload/customer_services/T183yIJm18Jt9dgSPhrGcRxdW3g5T2ymMLrap37w.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-02 19:48:58',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-02 19:48:58',
   ),
   223 => 
   array (
@@ -2696,9 +2696,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Build comprehensive monitoring coverage with integrated hydro-meteorological networks that combine weather and water observations.',
     'image' => 'upload/customer_services/4xLZDDuCI63xBq6CL2lYjfJ101YtRaJ6ed0C6wGh.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-02 19:48:58',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-02 19:48:58',
   ),
   224 => 
   array (
@@ -2708,9 +2708,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Optimize renewable energy production with precise solar radiation and meteorological resource monitoring.',
     'image' => 'upload/customer_services/seVfNRbllRlwpZPKFCCUD3ws5l31PRsYat9cId6H.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-02 19:48:58',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-02 19:48:58',
   ),
   225 => 
   array (
@@ -2720,9 +2720,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Safeguard drinking water sources and aquatic ecosystems with comprehensive groundwater and surface water quality monitoring.',
     'image' => 'upload/customer_services/9OOW7BW1SnisiiAZlQDVcOmp5r3JZ28aFpZyAAx9.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-02 19:50:30',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-02 19:50:30',
   ),
   226 => 
   array (
@@ -2732,9 +2732,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Optimize water supply management and protect aquatic health through detailed reservoir and lake profiling.',
     'image' => 'upload/customer_services/fvTj0hRzQ4ixqg8lU1u86erlu0vuOfDYCnF8tVIh.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-02 19:50:30',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-02 19:50:30',
   ),
   227 => 
   array (
@@ -2744,9 +2744,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Protect downstream water quality and wetland ecosystems by monitoring agricultural runoff and wetland health.',
     'image' => 'upload/customer_services/pXkU4TNl5pFMOlMMi66Cc8uw8XTJR2U7MojSlWgW.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-02 19:50:30',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-02 19:50:30',
   ),
   228 => 
   array (
@@ -2756,9 +2756,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Ensure water suitability for irrigation and protect coastal environments with specialized monitoring for command areas and coastal zones.',
     'image' => 'upload/customer_services/nDuu9Vd8qeqKQ9eQqtSAjqUb7QpjUh9WLk4sVw1S.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-02 19:50:30',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-02 19:50:30',
   ),
   229 => 
   array (
@@ -2768,9 +2768,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Conserve water and optimize crop health with intelligent irrigation systems that deliver exactly what your fields need, when they need it.',
     'image' => 'upload/customer_services/ioXSODX4icm85Tj16VYMDQV19la444QlRweX3yZN.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-02 19:51:40',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-02 19:51:40',
   ),
   230 => 
   array (
@@ -2780,9 +2780,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Make informed irrigation and planting decisions with precise rainfall and soil moisture monitoring at the field level.',
     'image' => 'upload/customer_services/Bg3kKaFjN6sq5PpiGYq32eto7MFYGR2MeKTp79cv.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-02 19:51:40',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-02 19:51:40',
   ),
   231 => 
   array (
@@ -2792,9 +2792,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Enhance agricultural productivity with intelligent decision support systems that analyze weather patterns, soil conditions, and crop development stages.',
     'image' => 'upload/customer_services/L5WHPgsZhn5Pl6ja94fKJNLSyRkxgKmVbFH8BVS0.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-02 19:51:40',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-02 19:51:40',
   ),
   232 => 
   array (
@@ -2804,9 +2804,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Accelerate natural selection to create superior strains through directed evolution and systematic genetic optimization.',
     'image' => 'upload/customer_services/ttu7XytexaAVEKRzuVkWKvx9M76zmjln3sayQVuZ.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-02 19:57:01',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-02 19:57:01',
   ),
   233 => 
   array (
@@ -2816,9 +2816,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Redesign cellular metabolism to maximize production of target compounds through intelligent metabolic pathway engineering.',
     'image' => 'upload/customer_services/xi3DQMVYEQr9TnVf0alFfMbEIDlJp4VFosLAsgId.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-02 19:57:01',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-02 19:57:01',
   ),
   234 => 
   array (
@@ -2828,9 +2828,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Build and modify genomes with precision using advanced DNA synthesis and recombineering technologies.',
     'image' => 'upload/customer_services/1so7uHIeLSSHV7sQ1YUb7L9xwWr3ppK8O0bbLvMp.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-02 19:57:01',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-02 19:57:01',
   ),
   235 => 
   array (
@@ -2840,9 +2840,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Maximize fermentation performance through systematic media formulation and process parameter optimization.',
     'image' => 'upload/customer_services/lCFP2gcmKFohqdMY0k4hFtAUXFk3ntjJqVyUpCoF.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-02 19:57:59',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-02 19:57:59',
   ),
   236 => 
   array (
@@ -2852,9 +2852,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'De-risk commercialization with systematic scale-up from laboratory benchtop to pilot-scale bioreactors.',
     'image' => 'upload/customer_services/nmBdIPCumTDmZ63368kEIsVVusVeLXCpSk3FnD6C.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-02 19:57:59',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-02 19:57:59',
   ),
   237 => 
   array (
@@ -2864,9 +2864,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Ensure smooth technology transfer to manufacturing facilities with comprehensive scale-up documentation and validation support.',
     'image' => 'upload/customer_services/Bqv3pKqtKU6VbHaCRMksDbeazWZrfWogWhUUIrqo.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-02 19:57:59',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-02 19:57:59',
   ),
   238 => 
   array (
@@ -2876,9 +2876,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Efficiently separate cells and biomass from fermentation broth using optimized filtration and centrifugation technologies.',
     'image' => 'upload/customer_services/Zg4R1XtOWZLJsdz8MUQUiOnYR5WkNe92hkeXIHSM.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-02 19:59:05',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-02 19:59:05',
   ),
   239 => 
   array (
@@ -2888,9 +2888,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Achieve target purity specifications through expertly designed extraction and chromatographic purification strategies.',
     'image' => 'upload/customer_services/f4xzrD6IX3N7FV0fFMT3gJoQz4zvwEHPRtY2mRtj.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-02 19:59:05',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-02 19:59:05',
   ),
   240 => 
   array (
@@ -2900,9 +2900,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Ensure product quality and consistency with comprehensive analytical quality assurance testing throughout downstream processing.',
     'image' => 'upload/customer_services/52w89GKqe2mah5qHmpEk1YQh3JRnGEZFCbtw06UK.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-02 19:59:05',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-02 19:59:05',
   ),
   241 => 
   array (
@@ -2912,9 +2912,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Navigate the critical transition from pilot scale to commercial manufacturing with expert guidance and comprehensive support.',
     'image' => 'upload/customer_services/g0MgbEhAdcCtrk3F4oJ3li8MLUuiuYzvuzlmusBz.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-02 20:00:00',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-02 20:00:00',
   ),
   242 => 
   array (
@@ -2924,9 +2924,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Maximize profitability and competitiveness through systematic process optimization focused on cost reduction and operational efficiency.',
     'image' => 'upload/customer_services/Ur8bTqEmk3dQ6agwL3wn0vHRqW7oiERL2ssZHxs9.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-02 20:00:00',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-02 20:00:00',
   ),
   243 => 
   array (
@@ -2936,9 +2936,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Maintain production excellence with ongoing technical support and troubleshooting for industrial biomanufacturing operations.',
     'image' => 'upload/customer_services/N8M5BjZClysiCPCN04dh4uIEnK30MhNou2qFvtdT.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-02 20:00:00',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-02 20:00:00',
   ),
   244 => 
   array (
@@ -2948,9 +2948,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Unlock genetic insights and ensure food safety with comprehensive agro-genomics, DNA sequencing, and food testing services.',
     'image' => 'upload/customer_services/zqBvvNfnbRpMSNynLcdMCjH8wOyP0TL86f61cZQs.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-02 20:00:51',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-02 20:00:51',
   ),
   245 => 
   array (
@@ -2960,9 +2960,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Protect environmental health and ensure regulatory compliance with thorough soil, water, and industrial effluent analysis services.',
     'image' => 'upload/customer_services/lVgyvHh5YVKgGjPKnXcodiVNVuTa7QayImi9w1Z7.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-02 20:00:51',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-02 20:00:51',
   ),
   246 => 
   array (
@@ -2972,9 +2972,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Equip your laboratory with premium instruments, consumables, and reagents from leading global manufacturers.',
     'image' => 'upload/customer_services/u7stUcPUoQBoiq1OhfzaPXOoUHxg2ic6l5vsM4X6.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-02 20:00:51',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-02 20:00:51',
   ),
   247 => 
   array (
@@ -2984,9 +2984,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Develop and commercialize high-value bioproducts spanning pharmaceutical, nutritional, and specialty chemical markets.',
     'image' => 'upload/customer_services/Tsx5dOXgVKv3PvzGNSfH3LYM8RfRFkphbCBayCBh.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-02 20:06:09',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-02 20:06:09',
   ),
   248 => 
   array (
@@ -2996,9 +2996,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Accelerate innovation and reduce development risks through strategic partnerships with world-class research institutions and contract manufacturing organizations (CMOs).',
     'image' => 'upload/customer_services/LB3WslFqh0mx6wePRX7DcOCiQej2R3EXzkxmL1Xy.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-02 20:06:09',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-02 20:06:09',
   ),
   249 => 
   array (
@@ -3008,9 +3008,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Make informed investment decisions with comprehensive site assessment and solar resource analysis.',
     'image' => 'upload/customer_services/mPLtYw2ytZCHzSa4AkrY5L49ukgSZeMX3DlFqtG2.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-02 20:41:28',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-02 20:41:28',
   ),
   250 => 
   array (
@@ -3020,9 +3020,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Transform solar potential into practical, high-performing photovoltaic systems through expert design and engineering.',
     'image' => 'upload/customer_services/N27jbsINkfZjLAWafX13deozQstderjW1v21DdBK.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-02 20:41:28',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-02 20:41:28',
   ),
   251 => 
   array (
@@ -3032,9 +3032,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Execute solar projects flawlessly with experienced construction teams and rigorous project management.',
     'image' => 'upload/customer_services/yGhbT442TmB0lfEGDZ1AUglkHTY18HUW64zTZ9dl.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-02 20:41:28',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-02 20:41:28',
   ),
   252 => 
   array (
@@ -3044,9 +3044,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Complete your solar project with seamless grid connection and comprehensive commissioning testing.',
     'image' => 'upload/customer_services/NpNgsSapqx5D1BeoReQ2SCqFo7zR1WfAvVZ0BOMa.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-02 20:41:28',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-02 20:41:28',
   ),
   253 => 
   array (
@@ -3056,9 +3056,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Maximize energy production and catch issues early with comprehensive remote monitoring and intelligent analytics platforms.',
     'image' => 'upload/customer_services/jVm23NCeLhjvQGqRJJJc5ZSS0TpqiJkQ9mo2B1bw.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-02 20:42:24',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-02 20:42:24',
   ),
   254 => 
   array (
@@ -3068,9 +3068,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Protect your investment and ensure peak performance with comprehensive preventive and corrective maintenance programs tailored to your renewable energy systems.',
     'image' => 'upload/customer_services/CuyJn3vpDFAUloDmVeUMcSSeJwhQzCkOmwV3kcDY.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-02 20:42:24',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-02 20:42:24',
   ),
   255 => 
   array (
@@ -3080,9 +3080,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Unify fragmented security systems with PSIM platforms that integrate surveillance, access control, intrusion detection, fire alarms, and building systems into single management interfaces.',
     'image' => 'upload/customer_services/exVJvZJcjoLmj6GNXcIuouWBMvbT3ysy0GuraUpv.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-03 00:01:53',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-03 00:01:53',
   ),
   256 => 
   array (
@@ -3092,9 +3092,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Manage surveillance infrastructure comprehensively with enterprise video management platforms that control cameras, recordings, analytics, and viewing across organizations.',
     'image' => 'upload/customer_services/Hgy2sie5UosSxL2ekkQTHnpNNSMsab9GvpcpQPJx.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-03 00:01:53',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-03 00:01:53',
   ),
   257 => 
   array (
@@ -3104,9 +3104,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Create purpose-built command centers optimized for security monitoring and incident response.',
     'image' => 'upload/customer_services/iJOOd86rw6fhzUmdjD06lIZWB6CoMd5Use635xds.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-03 00:01:53',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-03 00:01:53',
   ),
   258 => 
   array (
@@ -3116,9 +3116,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Streamline security response with comprehensive incident management platforms that guide operators through detection, assessment, response, and resolution.',
     'image' => 'upload/customer_services/38hmXCXp1cyPXqxrHK77uLpw8kBXtLPSvALmD5W1.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-03 00:01:53',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-03 00:01:53',
   ),
   259 => 
   array (
@@ -3128,9 +3128,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Deploy enterprise-grade IP camera networks that deliver crystal-clear visibility across your entire facility or campus.',
     'image' => 'upload/customer_services/USJZhX5IreVTVYb8BstcKIPY4fUaEm3iLbLLMqt1.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-03 00:03:15',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-03 00:03:15',
   ),
   260 => 
   array (
@@ -3140,9 +3140,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Transform passive surveillance into proactive security with artificial intelligence that analyzes video in real-time.',
     'image' => 'upload/customer_services/uT7jeYv2hvf9krZCpRwcmmwkBA2xC8Et5HygmM59.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-03 00:03:15',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-03 00:03:15',
   ),
   261 => 
   array (
@@ -3152,9 +3152,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Centralize security operations with integrated command and control centers that provide comprehensive situational awareness.',
     'image' => 'upload/customer_services/ZuU6fBw2QJwEjqP8gF35H8q7hYEoVTZMdNr4FZPJ.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-03 00:03:15',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-03 00:03:15',
   ),
   262 => 
   array (
@@ -3164,9 +3164,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Protect boundaries and critical zones with intelligent perimeter security systems that detect and deter intrusions before they reach sensitive areas.',
     'image' => 'upload/customer_services/mf3VflNNdYyaTzgKFHb3IQwAZLGEMaf4mFDCGQJ0.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-03 00:03:15',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-03 00:03:15',
   ),
   263 => 
   array (
@@ -3176,9 +3176,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Secure facilities efficiently with card-based access control systems that provide convenient yet reliable authentication.',
     'image' => 'upload/customer_services/aIOc5wZlYC6BlvALfXoAUwyLeqDCtKRBzdzpXfX9.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-03 00:04:43',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-03 00:04:43',
   ),
   264 => 
   array (
@@ -3188,9 +3188,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Eliminate credential sharing and ensure positive identification with biometric access control using fingerprint, facial recognition, iris scanning, or palm vein technology.',
     'image' => 'upload/customer_services/buzmZwT9cPQN0NLmAT1cpRpQHVeUtqdEkbSrlnrP.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-03 00:04:43',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-03 00:04:43',
   ),
   265 => 
   array (
@@ -3200,9 +3200,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Streamline workforce management by integrating access control with time and attendance tracking.',
     'image' => 'upload/customer_services/TpIM4TEFP1rY31lSbLy0XLf4pxacQ1Ug2Tw2E136.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-03 00:04:43',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-03 00:04:43',
   ),
   266 => 
   array (
@@ -3212,9 +3212,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Embrace modern access control with mobile credentials and cloud-based management platforms that offer flexibility and convenience.',
     'image' => 'upload/customer_services/jzMsGN0B8vERwl5JxGszW7EPnK8tDvFpGlrSCuzM.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-03 00:04:43',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-03 00:04:43',
   ),
   267 => 
   array (
@@ -3224,9 +3224,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Secure your boundaries with advanced perimeter intrusion detection systems that create invisible security barriers around your property.',
     'image' => 'upload/customer_services/gt43YnbIIcheKobDPb7QzogiBWeNea9aUiGA3vJl.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-03 00:06:50',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-03 00:06:50',
   ),
   268 => 
   array (
@@ -3236,9 +3236,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Protect interior spaces with comprehensive intrusion alarm systems that detect unauthorized entry into buildings and restricted areas.',
     'image' => 'upload/customer_services/PowLLqxFUt32rj7n5zqDN06EPUJZvLgKXJSFunyN.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-03 00:06:50',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-03 00:06:50',
   ),
   269 => 
   array (
@@ -3248,9 +3248,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Achieve superior perimeter security in challenging conditions with thermal imaging and radar detection technologies.',
     'image' => 'upload/customer_services/DAk6PGCLPaE09FcK4bV4R9TZRWYOZmD044ztjF7E.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-03 00:06:50',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-03 00:06:50',
   ),
   270 => 
   array (
@@ -3260,9 +3260,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Deploy intelligent fire detection with fully addressable alarm systems that pinpoint fire locations instantly.',
     'image' => 'upload/customer_services/ySXjSDq0d8iByaPYQSxqRgiPgqtLB1xCdcwsIhFJ.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-03 00:08:24',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-03 00:08:24',
   ),
   271 => 
   array (
@@ -3272,9 +3272,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Protect occupants and property with comprehensive smoke and heat detection networks strategically positioned throughout facilities.',
     'image' => 'upload/customer_services/xIHALhaJDRGkgH42N7uLYiKCluFv0I758nyV4h1O.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-03 00:08:24',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-03 00:08:24',
   ),
   272 => 
   array (
@@ -3284,9 +3284,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Guide safe evacuations with intelligible voice communication systems that provide clear instructions during emergencies.',
     'image' => 'upload/customer_services/wecsd1VAzeyNw4e7qmx7VXLm28x0G7X1Z2hefLJF.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-03 00:08:24',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-03 00:08:24',
   ),
   273 => 
   array (
@@ -3296,9 +3296,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Reach every corner of your facility with comprehensive public address systems designed for clear, consistent coverage.',
     'image' => 'upload/customer_services/6Jc1wo3VX2juQpkIUezIM4JS0VaMp3NlV9tqmm1E.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-03 00:09:34',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-03 00:09:34',
   ),
   274 => 
   array (
@@ -3308,9 +3308,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Protect lives with emergency mass notification systems that deliver critical alerts instantly across facilities.',
     'image' => 'upload/customer_services/pfpYPQ7YAh6hhOdYHCmgz6RMbRWwvwzxPIjYmV7v.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-03 00:09:34',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-03 00:09:34',
   ),
   275 => 
   array (
@@ -3320,9 +3320,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Transform meeting spaces with professional audio-visual systems that enable productive collaboration and impressive presentations.',
     'image' => 'upload/customer_services/3fvzywEEIhueHPi2tHI9ekPdAarVDAabU493cWtN.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-03 00:09:34',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-03 00:09:34',
   ),
   276 => 
   array (
@@ -3332,9 +3332,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Deliver exceptional audio experiences in large venues with acoustically-optimized sound reinforcement and presentation systems.',
     'image' => 'upload/customer_services/mcbo53wGatpakMLg0phMldQKQK21zNSGPKkCjeD2.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-03 00:09:34',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-03 00:09:34',
   ),
   277 => 
   array (
@@ -3344,9 +3344,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Inspect bags, packages, and cargo with advanced X-ray screening systems that reveal concealed threats and contraband.',
     'image' => 'upload/customer_services/d0fYWQee4kWcOgkDU4wd0PPG7Hs1ZgDxZCbib23J.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-03 00:10:42',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-03 00:10:42',
   ),
   278 => 
   array (
@@ -3356,9 +3356,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Detect metallic weapons and prohibited items with reliable metal detection systems designed for high-volume screening.',
     'image' => 'upload/customer_services/j5ZfQTxMOUGVKtiEirQBsMBu229g3ZUlPqWhFJeb.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-03 00:10:42',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-03 00:10:42',
   ),
   279 => 
   array (
@@ -3368,9 +3368,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Identify explosive materials and narcotics with ultra-sensitive trace detection technology that analyzes microscopic particles.',
     'image' => 'upload/customer_services/5j6yQGlEgcsZLKbm9kLZ3xHjI1EC7fmcazJYDQNh.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-03 00:10:42',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-03 00:10:42',
   ),
   280 => 
   array (
@@ -3380,9 +3380,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Monitor your entire fleet in real-time with GPS tracking systems that provide complete visibility into vehicle locations, movements, and status.',
     'image' => 'upload/customer_services/B1ubdP504Q4tp2SBPGcabgKkFNgMNh3eDknXK0Pf.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-03 00:12:03',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-03 00:12:03',
   ),
   281 => 
   array (
@@ -3392,9 +3392,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Improve safety and reduce insurance costs with comprehensive driver behavior monitoring and coaching systems.',
     'image' => 'upload/customer_services/V8m1zTPWNMEpP8Hpdd7kjLv0xyQ6Q3GrDWAd6IYp.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-03 00:12:03',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-03 00:12:03',
   ),
   282 => 
   array (
@@ -3404,9 +3404,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Prevent breakdowns and extend vehicle life with predictive maintenance systems powered by telematics data.',
     'image' => 'upload/customer_services/eZR7PTxTopQNZQOhCJgSdiuzHaNzC7WONmwZhqPp.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-03 00:12:03',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-03 00:12:03',
   ),
   283 => 
   array (
@@ -3416,9 +3416,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Protect high-value vehicles and equipment with advanced security features and rapid recovery capabilities.',
     'image' => 'upload/customer_services/ErvOW0Y4DeA8upxzHL1ScRnK5b8jOj1AStAcRVAJ.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-03 00:12:03',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-03 00:12:03',
   ),
   284 => 
   array (
@@ -3428,9 +3428,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Reveal subsurface geological structures and mineral deposits with comprehensive geophysical survey programs.',
     'image' => 'upload/customer_services/O9wOn3XiKhyoZnTrEiOmfege5OCqEjKEa35gOTaI.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-03 00:16:31',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-03 00:16:31',
   ),
   285 => 
   array (
@@ -3440,9 +3440,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Leverage space-based technology for regional exploration and geological mapping using multispectral and hyperspectral remote sensing.',
     'image' => 'upload/customer_services/5uI9ysIbIN43ojK3tsyBDYlh5QOmovGSetCIDLkq.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-03 00:16:31',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-03 00:16:31',
   ),
   286 => 
   array (
@@ -3452,9 +3452,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Build comprehensive geological understanding through systematic field mapping and surface investigations.',
     'image' => 'upload/customer_services/YWAcb68WJXTjPJentlYFl9zvGcONGaH0aWPnDpwT.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-03 00:16:31',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-03 00:16:31',
   ),
   287 => 
   array (
@@ -3464,9 +3464,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Detect mineralization footprints and pathfinder elements through systematic geochemical surveys and laboratory analysis.',
     'image' => 'upload/customer_services/y6yoUyWaOb27FzSdfMofZXXintQ2WJ47AGxBTn7i.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-03 00:16:31',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-03 00:16:31',
   ),
   288 => 
   array (
@@ -3476,9 +3476,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Transform survey data into comprehensive 3D geological models that visualize subsurface conditions and support resource calculations.',
     'image' => 'upload/customer_services/TEp9f36O6NZMS4VYDsKcObeUGXdp4O616igO6KTi.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-03 00:16:31',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-03 00:16:31',
   ),
   289 => 
   array (
@@ -3488,9 +3488,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Maximize productivity and safety with autonomous haul truck systems that operate 24/7 without human drivers.',
     'image' => 'upload/customer_services/U75z3LriwUata3ZDZkgq2FZX9YBEdLIm1tq7HiZ4.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-03 00:19:51',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-03 00:19:51',
   ),
   290 => 
   array (
@@ -3500,9 +3500,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Enhance safety and operational efficiency by controlling mining equipment remotely from surface control centers.',
     'image' => 'upload/customer_services/R7mG7jFBq2ZJ689s3pBR035UybXfzRToYwQrHX1b.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-03 00:19:51',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-03 00:19:51',
   ),
   291 => 
   array (
@@ -3512,9 +3512,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Optimize mineral processing with advanced automation and control systems that maximize recovery, throughput, and efficiency.',
     'image' => 'upload/customer_services/KT0Rp1KvsbstNDaAuqr352ATbbpzoAshxyqFXxvM.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-03 00:19:51',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-03 00:19:51',
   ),
   292 => 
   array (
@@ -3524,9 +3524,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Gain complete operational visibility with real-time production monitoring systems and advanced analytics platforms.',
     'image' => 'upload/customer_services/lCKV3JsDs5GOMFoRy2lQEDFVwCDTAxuG0n0kSNnJ.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-03 00:19:51',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-03 00:19:51',
   ),
   293 => 
   array (
@@ -3536,9 +3536,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Ensure safe underground conditions with automated ventilation control systems that optimize air quality while minimizing energy costs.',
     'image' => 'upload/customer_services/nO3kbcJsva0pdbO7HtDP2q3NilSEa27Sa3kLa0CM.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-03 00:19:51',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-03 00:19:51',
   ),
   294 => 
   array (
@@ -3548,9 +3548,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Gain complete operational visibility with real-time process monitoring systems integrating data from crushers, mills, flotation circuits, and downstream processes.',
     'image' => 'upload/customer_services/Ko4YXYyrEQJ4qz4b65zW2LtyiQNo5tmNITC2PuGe.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-03 00:20:48',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-03 00:20:48',
   ),
   295 => 
   array (
@@ -3560,9 +3560,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Ensure accurate production reporting and identify process losses with sophisticated metallurgical accounting systems performing real-time mass and grade balancing.',
     'image' => 'upload/customer_services/K0d6HIgFbayoQxIznPJcvSlfHgtL2DEYpRK3m3qS.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-03 00:20:48',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-03 00:20:48',
   ),
   296 => 
   array (
@@ -3572,9 +3572,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Drive continuous improvement with comprehensive analytics platforms that transform processing data into strategic insights.',
     'image' => 'upload/customer_services/ocj7BsApuJqAAQNuuuHyzWmpqQK5qivyfiS4FP8z.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-03 00:20:48',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-03 00:20:48',
   ),
   297 => 
   array (
@@ -3584,9 +3584,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Protect worker health and community relations with comprehensive air quality and dust monitoring systems.',
     'image' => 'upload/customer_services/IwDpzK6UvGMHEBEcKAhhf1KOmXHE82TYAVWeKm2Y.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-03 00:21:55',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-03 00:21:55',
   ),
   298 => 
   array (
@@ -3596,9 +3596,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Ensure underground safety with real-time gas detection systems monitoring oxygen, methane, carbon monoxide, nitrogen dioxide, and other atmospheric hazards.',
     'image' => 'upload/customer_services/fuy76wVkHGrvr44wx4HrXKAyvZzr2bQretBSNuv0.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-03 00:21:55',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-03 00:21:55',
   ),
   299 => 
   array (
@@ -3608,9 +3608,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Prevent catastrophic failures with sophisticated ground movement and slope stability monitoring using precision instruments and advanced analytics.',
     'image' => 'upload/customer_services/yjLQKllPsS4mtcIi1mugln3W7rXKFMjHCxVEkIDH.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-03 00:21:55',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-03 00:21:55',
   ),
   300 => 
   array (
@@ -3620,9 +3620,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Demonstrate environmental responsibility with comprehensive water quality monitoring across mine sites and discharge points.',
     'image' => 'upload/customer_services/KpxMpTY0406QJvlFzboQsAxWF1QQMT5qN9UXC4T6.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-03 00:21:55',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-03 00:21:55',
   ),
   301 => 
   array (
@@ -3632,9 +3632,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Maintain community relations and regulatory compliance through systematic noise, vibration, and blast monitoring programs.',
     'image' => 'upload/customer_services/EusBSCIpdQAVUYCI1mkqlK1ByWVpE2da7UDrCYSa.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-03 00:21:55',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-03 00:21:55',
   ),
   302 => 
   array (
@@ -3644,9 +3644,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Power your operations with flexible solar solutions designed for both grid-connected and remote applications.',
     'image' => NULL,
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-02 20:44:50',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-02 20:44:50',
   ),
   303 => 
   array (
@@ -3656,9 +3656,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Reduce operational costs and enhance sustainability with large-scale solar installations for industrial facilities and commercial enterprises.',
     'image' => NULL,
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-02 20:44:50',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-02 20:44:50',
   ),
   304 => 
   array (
@@ -3668,9 +3668,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Ensure uninterrupted telecommunications with reliable solar power systems designed for critical infrastructure.',
     'image' => NULL,
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-02 20:44:50',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-02 20:44:50',
   ),
   305 => 
   array (
@@ -3680,9 +3680,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Transform agricultural operations with solar-powered irrigation systems that reduce costs and increase farming flexibility.',
     'image' => NULL,
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-02 20:44:50',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-02 20:44:50',
   ),
   306 => 
   array (
@@ -3692,9 +3692,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Make confident renewable energy investments with rigorous financial feasibility analysis and return-on-investment modeling.',
     'image' => 'upload/customer_services/d6L79bvCWBlhE9DTiJOhs8Nee07j6mEkVqeQNhRu.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-02 20:45:34',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-02 20:45:34',
   ),
   307 => 
   array (
@@ -3704,6 +3704,1602 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Chart your path to carbon neutrality and sustainability leadership with comprehensive corporate sustainability roadmaps.',
     'image' => 'upload/customer_services/7LZmhbxw7NpbqKzXRghy4JeROTNqZl00WzJdhidw.png',
+    'deleted_at' => '2025-12-02 20:45:34',
+    'created_at' => NULL,
+    'updated_at' => '2025-12-02 20:45:34',
+  ),
+  308 => 
+  array (
+    'id' => 399,
+    'solution_id' => 121,
+    'title' => 'Load & Performance Testing',
+    'label' => 'withImage',
+    'description' => 'Discover how your systems truly perform under pressure with comprehensive load and performance testing.',
+    'image' => 'upload/customer_services/Jc7v4ok63r8n4XZsLiOE01rzKJM0FECzfBblyR6T.webp',
+    'deleted_at' => '2025-12-02 19:19:08',
+    'created_at' => NULL,
+    'updated_at' => '2025-12-02 19:19:08',
+  ),
+  309 => 
+  array (
+    'id' => 400,
+    'solution_id' => 121,
+    'title' => 'High Availability / Failover Validation',
+    'label' => 'withImage',
+    'description' => 'Guarantee business continuity with rigorous high availability and failover testing for critical systems.',
+    'image' => 'upload/customer_services/jViH2ljrKTKCsazYW275tuX9xwkJPZmmNXtu68wI.webp',
+    'deleted_at' => '2025-12-02 19:19:08',
+    'created_at' => NULL,
+    'updated_at' => '2025-12-02 19:19:08',
+  ),
+  310 => 
+  array (
+    'id' => 401,
+    'solution_id' => 121,
+    'title' => 'BCDR Drills & Simulation Testing',
+    'label' => 'withImage',
+    'description' => 'Prepare for the unexpected with practical Business Continuity and Disaster Recovery drills that test your readiness.',
+    'image' => 'upload/customer_services/BQGdMjs5L9rDoUp0yddGDp7xHVY3XHmBqzP3zdSl.webp',
+    'deleted_at' => '2025-12-02 19:19:08',
+    'created_at' => NULL,
+    'updated_at' => '2025-12-02 19:19:08',
+  ),
+  311 => 
+  array (
+    'id' => 402,
+    'solution_id' => 121,
+    'title' => 'QA for Software & System Integration Projects',
+    'label' => 'withImage',
+    'description' => 'Ensure seamless operation across complex, integrated environments with comprehensive QA for system integration projects. We validate data flows, API connections, cross-system functionality, and user workflows spanning multiple platforms and divisions.',
+    'image' => 'upload/customer_services/F81fXNh2Yhi7BtzuNgG3APSmZTyhUBsivJayysxY.webp',
+    'deleted_at' => '2025-12-02 19:19:08',
+    'created_at' => NULL,
+    'updated_at' => '2025-12-02 19:19:08',
+  ),
+  312 => 
+  array (
+    'id' => 403,
+    'solution_id' => 121,
+    'title' => 'Load & Performance Testing',
+    'label' => 'withImage',
+    'description' => 'Discover how your systems truly perform under pressure with comprehensive load and performance testing.',
+    'image' => 'upload/customer_services/Jc7v4ok63r8n4XZsLiOE01rzKJM0FECzfBblyR6T.webp',
+    'deleted_at' => '2025-12-02 19:44:28',
+    'created_at' => NULL,
+    'updated_at' => '2025-12-02 19:44:28',
+  ),
+  313 => 
+  array (
+    'id' => 404,
+    'solution_id' => 121,
+    'title' => 'High Availability / Failover Validation',
+    'label' => 'withImage',
+    'description' => 'Guarantee business continuity with rigorous high availability and failover testing for critical systems.',
+    'image' => 'upload/customer_services/jViH2ljrKTKCsazYW275tuX9xwkJPZmmNXtu68wI.webp',
+    'deleted_at' => '2025-12-02 19:44:28',
+    'created_at' => NULL,
+    'updated_at' => '2025-12-02 19:44:28',
+  ),
+  314 => 
+  array (
+    'id' => 405,
+    'solution_id' => 121,
+    'title' => 'BCDR Drills & Simulation Testing',
+    'label' => 'withImage',
+    'description' => 'Prepare for the unexpected with practical Business Continuity and Disaster Recovery drills that test your readiness.',
+    'image' => 'upload/customer_services/BQGdMjs5L9rDoUp0yddGDp7xHVY3XHmBqzP3zdSl.webp',
+    'deleted_at' => '2025-12-02 19:44:28',
+    'created_at' => NULL,
+    'updated_at' => '2025-12-02 19:44:28',
+  ),
+  315 => 
+  array (
+    'id' => 406,
+    'solution_id' => 121,
+    'title' => 'QA for Software & System Integration Projects',
+    'label' => 'withImage',
+    'description' => 'Ensure seamless operation across complex, integrated environments with comprehensive QA for system integration projects. We validate data flows, API connections, cross-system functionality, and user workflows spanning multiple platforms and divisions.',
+    'image' => 'upload/customer_services/F81fXNh2Yhi7BtzuNgG3APSmZTyhUBsivJayysxY.webp',
+    'deleted_at' => '2025-12-02 19:44:28',
+    'created_at' => NULL,
+    'updated_at' => '2025-12-02 19:44:28',
+  ),
+  316 => 
+  array (
+    'id' => 407,
+    'solution_id' => 122,
+    'title' => 'e-Governance & Citizen Portals',
+    'label' => 'withImage',
+    'description' => 'Transform how governments connect with citizens through intuitive digital platforms that make services accessible anytime, anywhere.',
+    'image' => 'upload/customer_services/WX8YkaiDXh3vqkl5Eq3o8n6yzXfScS6olJNKRDtU.webp',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  317 => 
+  array (
+    'id' => 408,
+    'solution_id' => 122,
+    'title' => 'Licensing, Permitting & Utility Billing Systems',
+    'label' => 'withImage',
+    'description' => 'Automate complex licensing, permitting, and billing processes with intelligent management systems that eliminate manual bottlenecks.',
+    'image' => 'upload/customer_services/G9BlzfQGwPK9ZIEFTHwzB1M3Xql1YXu6RyhMd9wr.jpg',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  318 => 
+  array (
+    'id' => 409,
+    'solution_id' => 122,
+    'title' => 'Public Safety & Law Enforcement Systems',
+    'label' => 'withImage',
+    'description' => 'Strengthen community safety with intelligent information systems designed for rapid response and coordinated enforcement.',
+    'image' => 'upload/customer_services/5CJfV4dBOrGs2ld8WQk51xwpUoFP8B3EuIGbJfGM.webp',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  319 => 
+  array (
+    'id' => 410,
+    'solution_id' => 122,
+    'title' => 'Tourism & Visitor Management Platforms',
+    'label' => 'withImage',
+    'description' => 'Elevate visitor experiences and streamline destination management with comprehensive tourism platforms.',
+    'image' => 'upload/customer_services/wGUtEt96ppULeMKVACLysUJs6mR0KV2483cvwfKt.png',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  320 => 
+  array (
+    'id' => 411,
+    'solution_id' => 122,
+    'title' => 'Transport & Traffic Management Systems',
+    'label' => 'withImage',
+    'description' => 'Optimize mobility and reduce congestion with intelligent transport and traffic management solutions.',
+    'image' => 'upload/customer_services/OugIHWHosWlWKyGmIyHIMqwS1E4aUslTFET78bLp.webp',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  321 => 
+  array (
+    'id' => 412,
+    'solution_id' => 123,
+    'title' => 'HR & Payroll Automation',
+    'label' => 'withImage',
+    'description' => 'Streamline workforce management with comprehensive HR and payroll systems that handle everything from recruitment to compensation.',
+    'image' => 'upload/customer_services/gUAiMnUNGNFncPxXX7tOo23xQR7HrzP2xdBlcpMq.jpg',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  322 => 
+  array (
+    'id' => 413,
+    'solution_id' => 123,
+    'title' => 'Asset & Financial Management Systems',
+    'label' => 'withImage',
+    'description' => 'Gain complete control over your assets and finances with real-time tracking and management systems.',
+    'image' => 'upload/customer_services/hY0EsERflkXCCDcyZRnFFijLWhx5TqA6Br7tC0J9.webp',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  323 => 
+  array (
+    'id' => 414,
+    'solution_id' => 123,
+    'title' => 'Event & Facility Management Systems',
+    'label' => 'withImage',
+    'description' => 'Coordinate events and manage facilities effortlessly with digital tools designed for operational excellence.',
+    'image' => 'upload/customer_services/kP04nc7evJcJHxtSbK1GNX1E6OaWUlmsr6KiTO9Q.webp',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  324 => 
+  array (
+    'id' => 415,
+    'solution_id' => 123,
+    'title' => 'Fleet & Mobility Management',
+    'label' => 'withImage',
+    'description' => 'Optimize your mobile assets with intelligent fleet and mobility management solutions.',
+    'image' => 'upload/customer_services/MEt98EAjt7hhb0OVkhbEBfTXd5bdrBCdh2uFwe4R.jpg',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  325 => 
+  array (
+    'id' => 416,
+    'solution_id' => 123,
+    'title' => 'Biometric & Time Attendance Systems',
+    'label' => 'withImage',
+    'description' => 'Ensure accurate workforce tracking with secure biometric and time attendance systems that integrate seamlessly with your HR platforms.',
+    'image' => 'upload/customer_services/hbsfexZWZFM8JA5d8JiidXMnJqMy6bdVwfVTojjf.jpg',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  326 => 
+  array (
+    'id' => 417,
+    'solution_id' => 124,
+    'title' => 'AI Chatbots & Virtual Assistants',
+    'label' => 'withImage',
+    'description' => 'Transform customer engagement and lead qualification with intelligent chatbots and virtual assistants that understand context and deliver instant responses.',
+    'image' => 'upload/customer_services/1Zlm0r7BhFtoGShmvhGNRU9xTQg9zsjBKJVLbsFx.webp',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  327 => 
+  array (
+    'id' => 418,
+    'solution_id' => 124,
+    'title' => 'Voice Agents & Conversational Interfaces',
+    'label' => 'withImage',
+    'description' => 'Enable natural, hands-free interactions with multilingual voice agents that understand and respond like humans.',
+    'image' => 'upload/customer_services/f2o5sYhqjPD7Hn8jaBmU2YgLRg5AP2hv4UnfeGdd.png',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  328 => 
+  array (
+    'id' => 419,
+    'solution_id' => 124,
+    'title' => 'Analytics Dashboards',
+    'label' => 'withImage',
+    'description' => 'Turn data into strategic advantage with AI-powered analytics dashboards that deliver real-time insights at a glance.',
+    'image' => 'upload/customer_services/5mGDRylnQYLeLZebKz6HQ3ULqC4LKQtDtY3nh0tZ.webp',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  329 => 
+  array (
+    'id' => 420,
+    'solution_id' => 124,
+    'title' => 'RPA & Workflow Bots',
+    'label' => 'withImage',
+    'description' => 'Eliminate tedious manual work with Robotic Process Automation that handles repetitive, rule-based tasks with precision and speed.',
+    'image' => 'upload/customer_services/xna7MBER4Jyfmxn0YI3E26w2gSD4W9uQ3W05bDkk.jpg',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  330 => 
+  array (
+    'id' => 421,
+    'solution_id' => 124,
+    'title' => 'Data-Driven Decision Support Systems',
+    'label' => 'withImage',
+    'description' => 'Enhance strategic planning with intelligent decision support systems that analyze complex data and provide actionable recommendations.',
+    'image' => 'upload/customer_services/jG9MokxZi16eT6sBDXL5gYRbVZfEK4QmPeMFY8MG.webp',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  331 => 
+  array (
+    'id' => 422,
+    'solution_id' => 125,
+    'title' => 'Web & Mobile App Development',
+    'label' => 'withImage',
+    'description' => 'Bring your vision to life with modern web and mobile applications designed for exceptional user experiences.',
+    'image' => 'upload/customer_services/SgVCNSftDzGgw1scVzRB04VKCVW2XEYpHazxJX8I.webp',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  332 => 
+  array (
+    'id' => 423,
+    'solution_id' => 125,
+    'title' => 'Custom Portals, Dashboards & CRMs',
+    'label' => 'withImage',
+    'description' => 'Empower your organization with tailored interfaces that centralize operations, analytics, and customer relationships.',
+    'image' => 'upload/customer_services/biAd9uXHkVXKDSC1FygHbZNnSDLhKQ1LWzRjpuFn.jpg',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  333 => 
+  array (
+    'id' => 424,
+    'solution_id' => 125,
+    'title' => 'API Integrations & Cloud-Native Applications',
+    'label' => 'withImage',
+    'description' => 'Break down silos and enable seamless workflows with robust API integrations and cloud-native applications.',
+    'image' => 'upload/customer_services/ZgCZgb4QIdR6jiCSBX9EzlWfLwxCYQKVBg6hgXah.jpg',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  334 => 
+  array (
+    'id' => 425,
+    'solution_id' => 125,
+    'title' => 'Multi-Platform Mobile Solutions',
+    'label' => 'withImage',
+    'description' => 'Reach users wherever they are with native and hybrid mobile applications for iOS, Android, and cross-platform environments.',
+    'image' => 'upload/customer_services/1eCoP3GvTcqsl5JEw1yi0NTdAfwSYg0xGRzdNDke.webp',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  335 => 
+  array (
+    'id' => 426,
+    'solution_id' => 121,
+    'title' => 'Load & Performance Testing',
+    'label' => 'withImage',
+    'description' => 'Discover how your systems truly perform under pressure with comprehensive load and performance testing.',
+    'image' => 'upload/customer_services/Jc7v4ok63r8n4XZsLiOE01rzKJM0FECzfBblyR6T.webp',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  336 => 
+  array (
+    'id' => 427,
+    'solution_id' => 121,
+    'title' => 'High Availability / Failover Validation',
+    'label' => 'withImage',
+    'description' => 'Guarantee business continuity with rigorous high availability and failover testing for critical systems.',
+    'image' => 'upload/customer_services/jViH2ljrKTKCsazYW275tuX9xwkJPZmmNXtu68wI.webp',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  337 => 
+  array (
+    'id' => 428,
+    'solution_id' => 121,
+    'title' => 'BCDR Drills & Simulation Testing',
+    'label' => 'withImage',
+    'description' => 'Prepare for the unexpected with practical Business Continuity and Disaster Recovery drills that test your readiness.',
+    'image' => 'upload/customer_services/BQGdMjs5L9rDoUp0yddGDp7xHVY3XHmBqzP3zdSl.webp',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  338 => 
+  array (
+    'id' => 429,
+    'solution_id' => 121,
+    'title' => 'QA for Software & System Integration Projects',
+    'label' => 'withImage',
+    'description' => 'Ensure seamless operation across complex, integrated environments with comprehensive QA for system integration projects. We validate data flows, API connections, cross-system functionality, and user workflows spanning multiple platforms and divisions.',
+    'image' => 'upload/customer_services/F81fXNh2Yhi7BtzuNgG3APSmZTyhUBsivJayysxY.webp',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  339 => 
+  array (
+    'id' => 430,
+    'solution_id' => 126,
+    'title' => 'River Flow & Discharge Monitoring',
+    'label' => 'withImage',
+    'description' => 'Track river behavior with precision through automated flow and discharge monitoring systems that provide real-time insights into water movement.',
+    'image' => 'upload/customer_services/daNauirYRKfIEQtUdyA1LajI2YgrlO7bNGWnUxUj.png',
+    'deleted_at' => '2025-12-02 19:52:00',
+    'created_at' => NULL,
+    'updated_at' => '2025-12-02 19:52:00',
+  ),
+  340 => 
+  array (
+    'id' => 431,
+    'solution_id' => 126,
+    'title' => 'Flood Forecasting & Early Warning Systems',
+    'label' => 'withImage',
+    'description' => 'Save lives and protect infrastructure with intelligent flood forecasting and early warning systems that predict inundation before it happens.',
+    'image' => 'upload/customer_services/A99NvEz60BbZ19MEx4SF9wgBBXQ83Jot7ukQPrX3.jpg',
+    'deleted_at' => '2025-12-02 19:52:00',
+    'created_at' => NULL,
+    'updated_at' => '2025-12-02 19:52:00',
+  ),
+  341 => 
+  array (
+    'id' => 432,
+    'solution_id' => 126,
+    'title' => 'Urban Hydrology & Stormwater Solutions',
+    'label' => 'withImage',
+    'description' => 'Manage urban water challenges with intelligent stormwater monitoring and drainage solutions designed for modern cities.',
+    'image' => 'upload/customer_services/dLWk9IrFyEfPdZe2jp8z83ohKQeFHNKB6rdn7B7C.webp',
+    'deleted_at' => '2025-12-02 19:52:00',
+    'created_at' => NULL,
+    'updated_at' => '2025-12-02 19:52:00',
+  ),
+  342 => 
+  array (
+    'id' => 433,
+    'solution_id' => 126,
+    'title' => 'Groundwater & Surface Water Monitoring',
+    'label' => 'withImage',
+    'description' => 'Ensure sustainable water resource management with comprehensive groundwater and surface water monitoring systems.',
+    'image' => 'upload/customer_services/u5zyCpM8GvbaFOREvb6G3sYIuBsxennDeLSmPS1m.jpg',
+    'deleted_at' => '2025-12-02 19:52:00',
+    'created_at' => NULL,
+    'updated_at' => '2025-12-02 19:52:00',
+  ),
+  343 => 
+  array (
+    'id' => 434,
+    'solution_id' => 127,
+    'title' => 'Weather Stations',
+    'label' => 'withImage',
+    'description' => 'Deploy specialized weather stations designed for mission-critical applications where precision matters.',
+    'image' => 'upload/customer_services/PkQrMISgFmr8BUk37n0vTXVfEVwZn7IyCHozR2ho.webp',
+    'deleted_at' => '2025-12-02 19:53:13',
+    'created_at' => NULL,
+    'updated_at' => '2025-12-02 19:53:13',
+  ),
+  344 => 
+  array (
+    'id' => 435,
+    'solution_id' => 127,
+    'title' => 'Hydro-Meteorological Networks',
+    'label' => 'withImage',
+    'description' => 'Build comprehensive monitoring coverage with integrated hydro-meteorological networks that combine weather and water observations.',
+    'image' => 'upload/customer_services/4xLZDDuCI63xBq6CL2lYjfJ101YtRaJ6ed0C6wGh.png',
+    'deleted_at' => '2025-12-02 19:53:13',
+    'created_at' => NULL,
+    'updated_at' => '2025-12-02 19:53:13',
+  ),
+  345 => 
+  array (
+    'id' => 436,
+    'solution_id' => 127,
+    'title' => 'Solar Radiation & Energy Resource Monitoring',
+    'label' => 'withImage',
+    'description' => 'Optimize renewable energy production with precise solar radiation and meteorological resource monitoring.',
+    'image' => 'upload/customer_services/1UcNNEuntuygJeHS1Nq0EFoRNHCvzrU9FLmbTjOt.webp',
+    'deleted_at' => '2025-12-02 19:53:13',
+    'created_at' => NULL,
+    'updated_at' => '2025-12-02 19:53:13',
+  ),
+  346 => 
+  array (
+    'id' => 437,
+    'solution_id' => 128,
+    'title' => 'Groundwater / Surface Water Quality',
+    'label' => 'withImage',
+    'description' => 'Safeguard drinking water sources and aquatic ecosystems with comprehensive groundwater and surface water quality monitoring.',
+    'image' => 'upload/customer_services/AGeS69ffQDDcIvu9AYWkkcAZZtiEPDwBdHoJmhP9.webp',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  347 => 
+  array (
+    'id' => 438,
+    'solution_id' => 128,
+    'title' => 'Reservoir & Lake Profiling',
+    'label' => 'withImage',
+    'description' => 'Optimize water supply management and protect aquatic health through detailed reservoir and lake profiling.',
+    'image' => 'upload/customer_services/uMcqAnfXFBnvUoqEMxOK26o1AAtXMCsNdGaUydzV.webp',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  348 => 
+  array (
+    'id' => 439,
+    'solution_id' => 128,
+    'title' => 'Agricultural Runoff & Wetland Monitoring',
+    'label' => 'withImage',
+    'description' => 'Protect downstream water quality and wetland ecosystems by monitoring agricultural runoff and wetland health.',
+    'image' => 'upload/customer_services/m7A3EqhSfWX95XbX9PZFQPTorD5HYEqQYbJ7b5OE.jpg',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  349 => 
+  array (
+    'id' => 440,
+    'solution_id' => 128,
+    'title' => 'Command Area & Coastal Water Quality',
+    'label' => 'withImage',
+    'description' => 'Ensure water suitability for irrigation and protect coastal environments with specialized monitoring for command areas and coastal zones.',
+    'image' => 'upload/customer_services/eptvIBNna5ZfZ6QdrdMVil7alH800B3f8stf3usv.jpg',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  350 => 
+  array (
+    'id' => 441,
+    'solution_id' => 129,
+    'title' => 'Smart Irrigation Management',
+    'label' => 'withImage',
+    'description' => 'Conserve water and optimize crop health with intelligent irrigation systems that deliver exactly what your fields need, when they need it.',
+    'image' => 'upload/customer_services/5UrnvxtqbnSUYyvr46XDvmZNpPgXxpoDp2ziCoNF.jpg',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  351 => 
+  array (
+    'id' => 442,
+    'solution_id' => 129,
+    'title' => 'Rainfall & Soil Moisture Monitoring',
+    'label' => 'withImage',
+    'description' => 'Make informed irrigation and planting decisions with precise rainfall and soil moisture monitoring at the field level.',
+    'image' => 'upload/customer_services/7CK8vicNQ3gnpHd5LYKBfpA52oMpDj11Snff2o91.jpg',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  352 => 
+  array (
+    'id' => 443,
+    'solution_id' => 129,
+    'title' => 'Crop & Yield Decision Support Systems',
+    'label' => 'withImage',
+    'description' => 'Enhance agricultural productivity with intelligent decision support systems that analyze weather patterns, soil conditions, and crop development stages.',
+    'image' => 'upload/customer_services/S4hf0uFtGd0Q6yuBnps76cH8u8Y58MCacOKQSB4b.jpg',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  353 => 
+  array (
+    'id' => 444,
+    'solution_id' => 126,
+    'title' => 'River Flow & Discharge Monitoring',
+    'label' => 'withImage',
+    'description' => 'Track river behavior with precision through automated flow and discharge monitoring systems that provide real-time insights into water movement.',
+    'image' => 'upload/customer_services/daNauirYRKfIEQtUdyA1LajI2YgrlO7bNGWnUxUj.png',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  354 => 
+  array (
+    'id' => 445,
+    'solution_id' => 126,
+    'title' => 'Flood Forecasting & Early Warning Systems',
+    'label' => 'withImage',
+    'description' => 'Save lives and protect infrastructure with intelligent flood forecasting and early warning systems that predict inundation before it happens.',
+    'image' => 'upload/customer_services/A99NvEz60BbZ19MEx4SF9wgBBXQ83Jot7ukQPrX3.jpg',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  355 => 
+  array (
+    'id' => 446,
+    'solution_id' => 126,
+    'title' => 'Urban Hydrology & Stormwater Solutions',
+    'label' => 'withImage',
+    'description' => 'Manage urban water challenges with intelligent stormwater monitoring and drainage solutions designed for modern cities.',
+    'image' => 'upload/customer_services/dLWk9IrFyEfPdZe2jp8z83ohKQeFHNKB6rdn7B7C.webp',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  356 => 
+  array (
+    'id' => 447,
+    'solution_id' => 126,
+    'title' => 'Groundwater & Surface Water Monitoring',
+    'label' => 'withImage',
+    'description' => 'Ensure sustainable water resource management with comprehensive groundwater and surface water monitoring systems.',
+    'image' => 'upload/customer_services/u5zyCpM8GvbaFOREvb6G3sYIuBsxennDeLSmPS1m.jpg',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  357 => 
+  array (
+    'id' => 448,
+    'solution_id' => 127,
+    'title' => 'Weather Stations',
+    'label' => 'withImage',
+    'description' => 'Deploy specialized weather stations designed for mission-critical applications where precision matters.',
+    'image' => 'upload/customer_services/nWySHTAvSbw8UsTfE4fwSnqlvwubXSwJnnKzmtwj.webp',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  358 => 
+  array (
+    'id' => 449,
+    'solution_id' => 127,
+    'title' => 'Hydro-Meteorological Networks',
+    'label' => 'withImage',
+    'description' => 'Build comprehensive monitoring coverage with integrated hydro-meteorological networks that combine weather and water observations.',
+    'image' => 'upload/customer_services/ZqsZyITdEi5zSMo8ZYu1ARBPjLTlnij28BayOoiv.webp',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  359 => 
+  array (
+    'id' => 450,
+    'solution_id' => 127,
+    'title' => 'Solar Radiation & Energy Resource Monitoring',
+    'label' => 'withImage',
+    'description' => 'Optimize renewable energy production with precise solar radiation and meteorological resource monitoring.',
+    'image' => 'upload/customer_services/sz2fheyexPJBVJZ7MpbzCd6rEKxLraActH9XYWWC.webp',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  360 => 
+  array (
+    'id' => 451,
+    'solution_id' => 130,
+    'title' => 'Directed Evolution & Genetic Optimization',
+    'label' => 'withImage',
+    'description' => 'Accelerate natural selection to create superior strains through directed evolution and systematic genetic optimization.',
+    'image' => 'upload/customer_services/Lnmambcp0HcAmRgmkdeie2UjNZt5HGjCzhWpuO5K.png',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  361 => 
+  array (
+    'id' => 452,
+    'solution_id' => 130,
+    'title' => 'Metabolic Pathway Design',
+    'label' => 'withImage',
+    'description' => 'Redesign cellular metabolism to maximize production of target compounds through intelligent metabolic pathway engineering.',
+    'image' => 'upload/customer_services/Zcwwb7Yvz3QMHWrrfvsdJPW0vTGZSdraD0xxrZcH.png',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  362 => 
+  array (
+    'id' => 453,
+    'solution_id' => 130,
+    'title' => 'DNA Synthesis & Recombineering Platforms',
+    'label' => 'withImage',
+    'description' => 'Build and modify genomes with precision using advanced DNA synthesis and recombineering technologies.',
+    'image' => 'upload/customer_services/SPMVpUNf5KF89IO1PXZMvE7ubBEgMgLRpva2zuNV.png',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  363 => 
+  array (
+    'id' => 454,
+    'solution_id' => 131,
+    'title' => 'Media Formulation & Parameter Optimization',
+    'label' => 'withImage',
+    'description' => 'Maximize fermentation performance through systematic media formulation and process parameter optimization.',
+    'image' => 'upload/customer_services/u412nZzDhxrGLtwlXyJjIXxFoC19Fe67kgHc2n8V.png',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  364 => 
+  array (
+    'id' => 455,
+    'solution_id' => 131,
+    'title' => 'Lab-to-Pilot Scale Up (5L→150L Bioreactors)',
+    'label' => 'withImage',
+    'description' => 'De-risk commercialization with systematic scale-up from laboratory benchtop to pilot-scale bioreactors.',
+    'image' => 'upload/customer_services/4zX0sLj48OJ6nfkARHgzxsQtJonIRPSl8gepdcUz.png',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  365 => 
+  array (
+    'id' => 456,
+    'solution_id' => 131,
+    'title' => 'Scale-up Transfer for Production',
+    'label' => 'withImage',
+    'description' => 'Ensure smooth technology transfer to manufacturing facilities with comprehensive scale-up documentation and validation support.',
+    'image' => 'upload/customer_services/exWTSwQYyaAOuqXMnAbigr7BUQO3a9aenWM0eN8w.png',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  366 => 
+  array (
+    'id' => 457,
+    'solution_id' => 132,
+    'title' => 'Biomass Separation (Filtration, Centrifugation)',
+    'label' => 'withImage',
+    'description' => 'Efficiently separate cells and biomass from fermentation broth using optimized filtration and centrifugation technologies.',
+    'image' => 'upload/customer_services/S0D5uDrFO5oSvVtAovDkjfcFBzJQ1GAZY3oy0SJm.png',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  367 => 
+  array (
+    'id' => 458,
+    'solution_id' => 132,
+    'title' => 'Extraction & Purification (Chromatography, HPLC)',
+    'label' => 'withImage',
+    'description' => 'Achieve target purity specifications through expertly designed extraction and chromatographic purification strategies.',
+    'image' => 'upload/customer_services/cOhNgknHcRhnK5cE9vJ26zBQDeQnKtfdxhtLHsNI.png',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  368 => 
+  array (
+    'id' => 459,
+    'solution_id' => 132,
+    'title' => 'Analytical QA for Bioproducts',
+    'label' => 'withImage',
+    'description' => 'Ensure product quality and consistency with comprehensive analytical quality assurance testing throughout downstream processing.',
+    'image' => 'upload/customer_services/WeXvQVyE4d8l50k2vQp7M1W4FOkXwJVyALmJ9wjy.webp',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  369 => 
+  array (
+    'id' => 460,
+    'solution_id' => 133,
+    'title' => 'Pilot-to-Production Transition',
+    'label' => 'withImage',
+    'description' => 'Navigate the critical transition from pilot scale to commercial manufacturing with expert guidance and comprehensive support.',
+    'image' => 'upload/customer_services/8TfB5USKFHhswqlAHWfHmFKrBRQMeYzyl2KGBrRx.png',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  370 => 
+  array (
+    'id' => 461,
+    'solution_id' => 133,
+    'title' => 'Process Optimization for Cost & Efficiency',
+    'label' => 'withImage',
+    'description' => 'Maximize profitability and competitiveness through systematic process optimization focused on cost reduction and operational efficiency.',
+    'image' => 'upload/customer_services/lARbdM8XSF88M673edDTSiwvgUqpg2E2dablD4P7.png',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  371 => 
+  array (
+    'id' => 462,
+    'solution_id' => 133,
+    'title' => 'Industrial Biomanufacturing Support',
+    'label' => 'withImage',
+    'description' => 'Maintain production excellence with ongoing technical support and troubleshooting for industrial biomanufacturing operations.',
+    'image' => 'upload/customer_services/buOoeJPkqWrPEkon1vqr6csQnkX2GAHE2P1sLYB3.png',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  372 => 
+  array (
+    'id' => 463,
+    'solution_id' => 134,
+    'title' => 'Agro-genomics, Sequencing & Food Testing',
+    'label' => 'withImage',
+    'description' => 'Unlock genetic insights and ensure food safety with comprehensive agro-genomics, DNA sequencing, and food testing services.',
+    'image' => 'upload/customer_services/ulz0cnCRVDy79aPVPO1pajJHAfrHqw4V9pnlvDrZ.png',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  373 => 
+  array (
+    'id' => 464,
+    'solution_id' => 134,
+    'title' => 'Soil & Water Analysis / Industrial Effluent Treatment',
+    'label' => 'withImage',
+    'description' => 'Protect environmental health and ensure regulatory compliance with thorough soil, water, and industrial effluent analysis services.',
+    'image' => 'upload/customer_services/ZANjKvXn4EVWmQeI4eDchLIFJuy1Ir9Nn87dw0e7.png',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  374 => 
+  array (
+    'id' => 465,
+    'solution_id' => 134,
+    'title' => 'Laboratory Equipment, Analytical Instruments, Kits & Reagents',
+    'label' => 'withImage',
+    'description' => 'Equip your laboratory with premium instruments, consumables, and reagents from leading global manufacturers.',
+    'image' => 'upload/customer_services/RWysTWH1boZaeVxmlewNVomLdGtwUuQEJxWr8ls4.png',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  375 => 
+  array (
+    'id' => 466,
+    'solution_id' => 135,
+    'title' => 'APIs, Vitamins, Food Colorants, Specialty Biochemicals',
+    'label' => 'withImage',
+    'description' => 'Develop and commercialize high-value bioproducts spanning pharmaceutical, nutritional, and specialty chemical markets.',
+    'image' => 'upload/customer_services/GhWeHSYb56tbijzsmXfyjsglVW5ZW6iYVhWY2nOD.png',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  376 => 
+  array (
+    'id' => 467,
+    'solution_id' => 135,
+    'title' => 'Collaboration with Global Partners for R&D and Manufacturing',
+    'label' => 'withImage',
+    'description' => 'Accelerate innovation and reduce development risks through strategic partnerships with world-class research institutions and contract manufacturing organizations (CMOs).',
+    'image' => 'upload/customer_services/Erc3aIITMGKwgcPFjG604tmtAXqSAcLHxaW3q18U.png',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  377 => 
+  array (
+    'id' => 468,
+    'solution_id' => 136,
+    'title' => 'Site & Sunlight Analysis',
+    'label' => 'withImage',
+    'description' => 'Make informed investment decisions with comprehensive site assessment and solar resource analysis.',
+    'image' => 'upload/customer_services/OrtbUXj6ajupiGgq987SjV4h6TlwEcTkkP0UGorK.png',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  378 => 
+  array (
+    'id' => 469,
+    'solution_id' => 136,
+    'title' => 'PV System Design & Engineering',
+    'label' => 'withImage',
+    'description' => 'Transform solar potential into practical, high-performing photovoltaic systems through expert design and engineering.',
+    'image' => 'upload/customer_services/XFEY56eOLlrZqoLsmdlQwjRHVIdyVcjcS2fK7BYo.png',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  379 => 
+  array (
+    'id' => 470,
+    'solution_id' => 136,
+    'title' => 'Construction & Project Management',
+    'label' => 'withImage',
+    'description' => 'Execute solar projects flawlessly with experienced construction teams and rigorous project management.',
+    'image' => 'upload/customer_services/d9bcyhUTv6hr3TawYG3YN4XkjqaNLuoZIa35Jw3D.png',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  380 => 
+  array (
+    'id' => 471,
+    'solution_id' => 136,
+    'title' => 'Grid Interconnection & Testing',
+    'label' => 'withImage',
+    'description' => 'Complete your solar project with seamless grid connection and comprehensive commissioning testing.',
+    'image' => 'upload/customer_services/jHo2uIjNSC6MKNYkSa5eitGmc0aXBrKi5o8OHNfx.webp',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  381 => 
+  array (
+    'id' => 472,
+    'solution_id' => 137,
+    'title' => 'Remote System Monitoring & Analytics',
+    'label' => 'withImage',
+    'description' => 'Maximize energy production and catch issues early with comprehensive remote monitoring and intelligent analytics platforms.',
+    'image' => 'upload/customer_services/JS51hldgVRrZ1onIl4mqlT6xARdvzKGHEzDqXjlD.png',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  382 => 
+  array (
+    'id' => 473,
+    'solution_id' => 137,
+    'title' => 'Preventive / Corrective Maintenance Programs',
+    'label' => 'withImage',
+    'description' => 'Protect your investment and ensure peak performance with comprehensive preventive and corrective maintenance programs tailored to your renewable energy systems.',
+    'image' => 'upload/customer_services/WmxqHLNSarRM8A0pZuObJbgrcPeDJESzAhHDJMbF.png',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  383 => 
+  array (
+    'id' => 474,
+    'solution_id' => 150,
+    'title' => 'Grid-Tied & Off-Grid Systems',
+    'label' => 'withImage',
+    'description' => 'Power your operations with flexible solar solutions designed for both grid-connected and remote applications.',
+    'image' => 'upload/customer_services/vUnqYKaDWNOGovdqudtzLSsdGy87YoIpHdtTsFcY.png',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  384 => 
+  array (
+    'id' => 475,
+    'solution_id' => 150,
+    'title' => 'Industrial / Commercial Solar Plants',
+    'label' => 'withImage',
+    'description' => 'Reduce operational costs and enhance sustainability with large-scale solar installations for industrial facilities and commercial enterprises.',
+    'image' => 'upload/customer_services/fFw4ySTIat7sgUC1NvIMQTaEncXAVB3pyvyFbqiQ.png',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  385 => 
+  array (
+    'id' => 476,
+    'solution_id' => 150,
+    'title' => 'Telecom Solar Systems',
+    'label' => 'withImage',
+    'description' => 'Ensure uninterrupted telecommunications with reliable solar power systems designed for critical infrastructure.',
+    'image' => 'upload/customer_services/R7M73BpkrA6BHFECyLaik6E7c2HBFXUzIjOJ905c.png',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  386 => 
+  array (
+    'id' => 477,
+    'solution_id' => 150,
+    'title' => 'Agricultural / Irrigation Solar Solutions',
+    'label' => 'withImage',
+    'description' => 'Transform agricultural operations with solar-powered irrigation systems that reduce costs and increase farming flexibility.',
+    'image' => 'upload/customer_services/jw2hqTsimUzSTctJisFPgoGUyS4SWio2vVvXMPyr.png',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  387 => 
+  array (
+    'id' => 478,
+    'solution_id' => 151,
+    'title' => 'Financial Feasibility & ROI Modelling',
+    'label' => 'withImage',
+    'description' => 'Make confident renewable energy investments with rigorous financial feasibility analysis and return-on-investment modeling.',
+    'image' => 'upload/customer_services/PewzBNRk2PAvo1hkWCLfLJVr4jmaCV8XjMck9Gid.png',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  388 => 
+  array (
+    'id' => 479,
+    'solution_id' => 151,
+    'title' => 'Corporate Sustainability Roadmaps',
+    'label' => 'withImage',
+    'description' => 'Chart your path to carbon neutrality and sustainability leadership with comprehensive corporate sustainability roadmaps.',
+    'image' => 'upload/customer_services/bre1q78W6n7FSgTmmtT7974w7Ug49FNT57SYgSCK.png',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  389 => 
+  array (
+    'id' => 480,
+    'solution_id' => 138,
+    'title' => 'Physical Security Information Management (PSIM)',
+    'label' => 'withImage',
+    'description' => 'Unify fragmented security systems with PSIM platforms that integrate surveillance, access control, intrusion detection, fire alarms, and building systems into single management interfaces.',
+    'image' => 'upload/customer_services/u1Q5KJKmcUr6K3dS6bSPvPZRQoMrpJ4GPIfdbZQG.png',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  390 => 
+  array (
+    'id' => 481,
+    'solution_id' => 138,
+    'title' => 'Video Management Systems (VMS)',
+    'label' => 'withImage',
+    'description' => 'Manage surveillance infrastructure comprehensively with enterprise video management platforms that control cameras, recordings, analytics, and viewing across organizations.',
+    'image' => 'upload/customer_services/gx44widLvnE06aQJerT9zNPfG0IAt77GHfaeGPrF.webp',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  391 => 
+  array (
+    'id' => 482,
+    'solution_id' => 138,
+    'title' => 'Security Operations Center (SOC) Design',
+    'label' => 'withImage',
+    'description' => 'Create purpose-built command centers optimized for security monitoring and incident response.',
+    'image' => 'upload/customer_services/iUinGBopT1HIkkNA45G3o0REmRo4kl7JWv5N7iwf.png',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  392 => 
+  array (
+    'id' => 483,
+    'solution_id' => 138,
+    'title' => 'Incident Management & Response Systems',
+    'label' => 'withImage',
+    'description' => 'Streamline security response with comprehensive incident management platforms that guide operators through detection, assessment, response, and resolution.',
+    'image' => 'upload/customer_services/0NGEINDIKLVvmsEDXbdlIKtdOV5J24YhSHnHOjqX.webp',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  393 => 
+  array (
+    'id' => 484,
+    'solution_id' => 139,
+    'title' => 'IP Video Surveillance Systems',
+    'label' => 'withImage',
+    'description' => 'Deploy enterprise-grade IP camera networks that deliver crystal-clear visibility across your entire facility or campus.',
+    'image' => 'upload/customer_services/piFEhZuD1FwDcapHpYhz3ohLQ4pGZBL1KsWaO572.png',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  394 => 
+  array (
+    'id' => 485,
+    'solution_id' => 139,
+    'title' => 'AI-Powered Video Analytics',
+    'label' => 'withImage',
+    'description' => 'Transform passive surveillance into proactive security with artificial intelligence that analyzes video in real-time.',
+    'image' => 'upload/customer_services/jBkU0awDDjDWyPH67em2wvn6d3naRcOacOCq1tKM.jpg',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  395 => 
+  array (
+    'id' => 486,
+    'solution_id' => 139,
+    'title' => 'Command & Control Centers',
+    'label' => 'withImage',
+    'description' => 'Centralize security operations with integrated command and control centers that provide comprehensive situational awareness.',
+    'image' => 'upload/customer_services/sJwuJVL18BpnHPAVW4Z5QoQkL5HdjOKHFSTeakrQ.png',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  396 => 
+  array (
+    'id' => 487,
+    'solution_id' => 139,
+    'title' => 'Perimeter Security & Detection',
+    'label' => 'withImage',
+    'description' => 'Protect boundaries and critical zones with intelligent perimeter security systems that detect and deter intrusions before they reach sensitive areas.',
+    'image' => 'upload/customer_services/NYdK0GMb0pZWEClRybW0bAeiM8833Q8i2lxJSyFZ.webp',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  397 => 
+  array (
+    'id' => 488,
+    'solution_id' => 140,
+    'title' => 'Card-Based Access Systems',
+    'label' => 'withImage',
+    'description' => 'Secure facilities efficiently with card-based access control systems that provide convenient yet reliable authentication.',
+    'image' => 'upload/customer_services/4ViuijvSfyMk0m1gFTybhwGVfNVcESHqhxZK2VT1.webp',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  398 => 
+  array (
+    'id' => 489,
+    'solution_id' => 140,
+    'title' => 'Biometric Authentication Systems',
+    'label' => 'withImage',
+    'description' => 'Eliminate credential sharing and ensure positive identification with biometric access control using fingerprint, facial recognition, iris scanning, or palm vein technology.',
+    'image' => 'upload/customer_services/h6QDRl2xQOxcFsN4rM1igUDNLElqqoKdIeJAVh49.jpg',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  399 => 
+  array (
+    'id' => 490,
+    'solution_id' => 140,
+    'title' => 'Time & Attendance Integration',
+    'label' => 'withImage',
+    'description' => 'Streamline workforce management by integrating access control with time and attendance tracking.',
+    'image' => 'upload/customer_services/RtaG4YTfFpjY70ShxizUlKzp3w6Sa7MUVBDezr2t.webp',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  400 => 
+  array (
+    'id' => 491,
+    'solution_id' => 140,
+    'title' => 'Mobile Access & Cloud Solutions',
+    'label' => 'withImage',
+    'description' => 'Embrace modern access control with mobile credentials and cloud-based management platforms that offer flexibility and convenience.',
+    'image' => 'upload/customer_services/olY2mLuKzrCIL0ralK1Hh6LSYo0BWLn1Zfm6vbYK.png',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  401 => 
+  array (
+    'id' => 492,
+    'solution_id' => 141,
+    'title' => 'Perimeter Intrusion Detection Systems',
+    'label' => 'withImage',
+    'description' => 'Secure your boundaries with advanced perimeter intrusion detection systems that create invisible security barriers around your property.',
+    'image' => 'upload/customer_services/G7i1sng08bLeh1RHz3jeXNZwdTc6XWDs8qER93ol.png',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  402 => 
+  array (
+    'id' => 493,
+    'solution_id' => 141,
+    'title' => 'Indoor Intrusion Alarm Systems',
+    'label' => 'withImage',
+    'description' => 'Protect interior spaces with comprehensive intrusion alarm systems that detect unauthorized entry into buildings and restricted areas.',
+    'image' => 'upload/customer_services/MKIeAzw6bDaieBn3BWC0BVElBoqvoz2dHTbQqhH7.webp',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  403 => 
+  array (
+    'id' => 494,
+    'solution_id' => 141,
+    'title' => 'Thermal & Radar Detection Systems',
+    'label' => 'withImage',
+    'description' => 'Achieve superior perimeter security in challenging conditions with thermal imaging and radar detection technologies.',
+    'image' => 'upload/customer_services/AXSYpaWuq12F9Ehz496qDRYwS74EbGXoQ5ODxzQO.png',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  404 => 
+  array (
+    'id' => 495,
+    'solution_id' => 142,
+    'title' => 'Addressable Fire Alarm Systems',
+    'label' => 'withImage',
+    'description' => 'Deploy intelligent fire detection with fully addressable alarm systems that pinpoint fire locations instantly.',
+    'image' => 'upload/customer_services/1vgjlImMos0UZ0zMJzzSIVtio8idozkkH9Xhf6eB.png',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  405 => 
+  array (
+    'id' => 496,
+    'solution_id' => 142,
+    'title' => 'Smoke & Heat Detection Networks',
+    'label' => 'withImage',
+    'description' => 'Protect occupants and property with comprehensive smoke and heat detection networks strategically positioned throughout facilities.',
+    'image' => 'upload/customer_services/ZfVB16jojyCtZsmjdKx0TnAj0ENJYnRt7mVDjq3X.webp',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  406 => 
+  array (
+    'id' => 497,
+    'solution_id' => 142,
+    'title' => 'Emergency Voice Evacuation Systems',
+    'label' => 'withImage',
+    'description' => 'Guide safe evacuations with intelligible voice communication systems that provide clear instructions during emergencies.',
+    'image' => 'upload/customer_services/acR0SQ8Pvl5BEFBVKHf1zzM5jlqLAZzZNESCTkLE.png',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  407 => 
+  array (
+    'id' => 498,
+    'solution_id' => 143,
+    'title' => 'Campus & Facility-Wide PA Systems',
+    'label' => 'withImage',
+    'description' => 'Reach every corner of your facility with comprehensive public address systems designed for clear, consistent coverage.',
+    'image' => 'upload/customer_services/fC0HVSTfqne4z2thfLDWRyMYPswMHHCOcfwnd8oc.webp',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  408 => 
+  array (
+    'id' => 499,
+    'solution_id' => 143,
+    'title' => 'Emergency Mass Notification Systems',
+    'label' => 'withImage',
+    'description' => 'Protect lives with emergency mass notification systems that deliver critical alerts instantly across facilities.',
+    'image' => 'upload/customer_services/SEptckMERbIMzzTcNYllFVtiTOhMTA8CYKv4rm3C.jpg',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  409 => 
+  array (
+    'id' => 500,
+    'solution_id' => 143,
+    'title' => 'Conference Room & Boardroom Solutions',
+    'label' => 'withImage',
+    'description' => 'Transform meeting spaces with professional audio-visual systems that enable productive collaboration and impressive presentations.',
+    'image' => 'upload/customer_services/pg8vjYJybhEVZDacCD7jRuZkSPQurovZmtEHJsPy.webp',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  410 => 
+  array (
+    'id' => 501,
+    'solution_id' => 143,
+    'title' => 'Lecture Halls & Auditorium Systems',
+    'label' => 'withImage',
+    'description' => 'Deliver exceptional audio experiences in large venues with acoustically-optimized sound reinforcement and presentation systems.',
+    'image' => 'upload/customer_services/gDtqaBl8mwPPVlDEWCwd2nhvRF2PnXUHEjXA4sx5.webp',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  411 => 
+  array (
+    'id' => 502,
+    'solution_id' => 144,
+    'title' => 'X-Ray Baggage & Parcel Scanners',
+    'label' => 'withImage',
+    'description' => 'Inspect bags, packages, and cargo with advanced X-ray screening systems that reveal concealed threats and contraband.',
+    'image' => 'upload/customer_services/uTNkN7HNuau7RCx3fvWeSgNiD192VA96iB4sQgGj.png',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  412 => 
+  array (
+    'id' => 503,
+    'solution_id' => 144,
+    'title' => 'Walk-Through & Hand-Held Metal Detectors',
+    'label' => 'withImage',
+    'description' => 'Detect metallic weapons and prohibited items with reliable metal detection systems designed for high-volume screening.',
+    'image' => 'upload/customer_services/nW5V3NP9x0Vgat187IqUQi2LYZnbwtvgTYQhNHKv.png',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  413 => 
+  array (
+    'id' => 504,
+    'solution_id' => 144,
+    'title' => 'Explosive Trace Detection (ETD) Systems',
+    'label' => 'withImage',
+    'description' => 'Identify explosive materials and narcotics with ultra-sensitive trace detection technology that analyzes microscopic particles.',
+    'image' => 'upload/customer_services/ukSEbUl0C7wrLxGm9OgTprgZCPm2Thyz8Y8WBc0a.jpg',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  414 => 
+  array (
+    'id' => 505,
+    'solution_id' => 145,
+    'title' => 'GPS Fleet Tracking Systems',
+    'label' => 'withImage',
+    'description' => 'Monitor your entire fleet in real-time with GPS tracking systems that provide complete visibility into vehicle locations, movements, and status.',
+    'image' => 'upload/customer_services/Ouds0m5GgueZUBIFBXGVp5FVgb3sJjve0Be8EXtW.jpg',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  415 => 
+  array (
+    'id' => 506,
+    'solution_id' => 145,
+    'title' => 'Driver Behavior & Safety Monitoring',
+    'label' => 'withImage',
+    'description' => 'Improve safety and reduce insurance costs with comprehensive driver behavior monitoring and coaching systems.',
+    'image' => 'upload/customer_services/NaVLoO0fWUDjdhpkPtTLUlXOQEERZFgkco7p1656.png',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  416 => 
+  array (
+    'id' => 507,
+    'solution_id' => 145,
+    'title' => 'Maintenance Management & Diagnostics',
+    'label' => 'withImage',
+    'description' => 'Prevent breakdowns and extend vehicle life with predictive maintenance systems powered by telematics data.',
+    'image' => 'upload/customer_services/DlJdZZkUDRw4tZS7zpfBrhhyWL4aqVeiSN2p6kIV.jpg',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  417 => 
+  array (
+    'id' => 508,
+    'solution_id' => 145,
+    'title' => 'Asset Protection & Recovery',
+    'label' => 'withImage',
+    'description' => 'Protect high-value vehicles and equipment with advanced security features and rapid recovery capabilities.',
+    'image' => 'upload/customer_services/gIDC74onjtFmFhCKqvWUQZRyvI6Nh3FDF0nbdRUC.webp',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  418 => 
+  array (
+    'id' => 509,
+    'solution_id' => 146,
+    'title' => 'Geophysical Surveys & Exploration',
+    'label' => 'withImage',
+    'description' => 'Reveal subsurface geological structures and mineral deposits with comprehensive geophysical survey programs.',
+    'image' => 'upload/customer_services/LrrxhEX6sZzaISqc5pReXRhPE8bxOU9VA616B05E.png',
+    'deleted_at' => '2025-12-03 00:18:11',
+    'created_at' => NULL,
+    'updated_at' => '2025-12-03 00:18:11',
+  ),
+  419 => 
+  array (
+    'id' => 510,
+    'solution_id' => 146,
+    'title' => 'Remote Sensing & Satellite Imagery Analysis',
+    'label' => 'withImage',
+    'description' => 'Leverage space-based technology for regional exploration and geological mapping using multispectral and hyperspectral remote sensing.',
+    'image' => 'upload/customer_services/WmIL1k3As8XJDjarfFj8BCoZvaPh3zUeTS8qDfOT.png',
+    'deleted_at' => '2025-12-03 00:18:11',
+    'created_at' => NULL,
+    'updated_at' => '2025-12-03 00:18:11',
+  ),
+  420 => 
+  array (
+    'id' => 511,
+    'solution_id' => 146,
+    'title' => 'Geological Mapping & Field Surveys',
+    'label' => 'withImage',
+    'description' => 'Build comprehensive geological understanding through systematic field mapping and surface investigations.',
+    'image' => 'upload/customer_services/VUtSSDd27WiVNQvgP3Pzm2nLdGbJyxR89rMp46Cf.png',
+    'deleted_at' => '2025-12-03 00:18:11',
+    'created_at' => NULL,
+    'updated_at' => '2025-12-03 00:18:11',
+  ),
+  421 => 
+  array (
+    'id' => 512,
+    'solution_id' => 146,
+    'title' => 'Geochemical Analysis & Soil Sampling',
+    'label' => 'withImage',
+    'description' => 'Detect mineralization footprints and pathfinder elements through systematic geochemical surveys and laboratory analysis.',
+    'image' => 'upload/customer_services/y6yoUyWaOb27FzSdfMofZXXintQ2WJ47AGxBTn7i.png',
+    'deleted_at' => '2025-12-03 00:18:11',
+    'created_at' => NULL,
+    'updated_at' => '2025-12-03 00:18:11',
+  ),
+  422 => 
+  array (
+    'id' => 513,
+    'solution_id' => 146,
+    'title' => '3D Geological Modeling & Resource Estimation',
+    'label' => 'withImage',
+    'description' => 'Transform survey data into comprehensive 3D geological models that visualize subsurface conditions and support resource calculations.',
+    'image' => 'upload/customer_services/iVZUFgd1llmIkgy7RIs3ET1PH8jHK6YZWRg3xzey.png',
+    'deleted_at' => '2025-12-03 00:18:11',
+    'created_at' => NULL,
+    'updated_at' => '2025-12-03 00:18:11',
+  ),
+  423 => 
+  array (
+    'id' => 514,
+    'solution_id' => 146,
+    'title' => 'Geophysical Surveys & Exploration',
+    'label' => 'withImage',
+    'description' => 'Reveal subsurface geological structures and mineral deposits with comprehensive geophysical survey programs.',
+    'image' => 'upload/customer_services/LrrxhEX6sZzaISqc5pReXRhPE8bxOU9VA616B05E.png',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  424 => 
+  array (
+    'id' => 515,
+    'solution_id' => 146,
+    'title' => 'Remote Sensing & Satellite Imagery Analysis',
+    'label' => 'withImage',
+    'description' => 'Leverage space-based technology for regional exploration and geological mapping using multispectral and hyperspectral remote sensing.',
+    'image' => 'upload/customer_services/WmIL1k3As8XJDjarfFj8BCoZvaPh3zUeTS8qDfOT.png',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  425 => 
+  array (
+    'id' => 516,
+    'solution_id' => 146,
+    'title' => 'Geological Mapping & Field Surveys',
+    'label' => 'withImage',
+    'description' => 'Build comprehensive geological understanding through systematic field mapping and surface investigations.',
+    'image' => 'upload/customer_services/VUtSSDd27WiVNQvgP3Pzm2nLdGbJyxR89rMp46Cf.png',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  426 => 
+  array (
+    'id' => 517,
+    'solution_id' => 146,
+    'title' => 'Geochemical Analysis & Soil Sampling',
+    'label' => 'withImage',
+    'description' => 'Detect mineralization footprints and pathfinder elements through systematic geochemical surveys and laboratory analysis.',
+    'image' => 'upload/customer_services/8iOjQ7Nzu3o8pcEcOX7xHglWT3e2IFjHAJMeQ0MO.webp',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  427 => 
+  array (
+    'id' => 518,
+    'solution_id' => 146,
+    'title' => '3D Geological Modeling & Resource Estimation',
+    'label' => 'withImage',
+    'description' => 'Transform survey data into comprehensive 3D geological models that visualize subsurface conditions and support resource calculations.',
+    'image' => 'upload/customer_services/iVZUFgd1llmIkgy7RIs3ET1PH8jHK6YZWRg3xzey.png',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  428 => 
+  array (
+    'id' => 519,
+    'solution_id' => 147,
+    'title' => 'Autonomous Haulage & Fleet Management',
+    'label' => 'withImage',
+    'description' => 'Maximize productivity and safety with autonomous haul truck systems that operate 24/7 without human drivers.',
+    'image' => 'upload/customer_services/GOO5D2g8FfhAuS1pzRJq89LKKjdzuW2LX7IZsBHg.png',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  429 => 
+  array (
+    'id' => 520,
+    'solution_id' => 147,
+    'title' => 'Remote Equipment Operation Centers',
+    'label' => 'withImage',
+    'description' => 'Enhance safety and operational efficiency by controlling mining equipment remotely from surface control centers.',
+    'image' => 'upload/customer_services/xLeg4ecP5nxrlTJCMSiFAQxPeEfSw0purLUd4eUc.png',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  430 => 
+  array (
+    'id' => 521,
+    'solution_id' => 147,
+    'title' => 'Process Control & Plant Automation',
+    'label' => 'withImage',
+    'description' => 'Optimize mineral processing with advanced automation and control systems that maximize recovery, throughput, and efficiency.',
+    'image' => 'upload/customer_services/AlWayHE8JgHhaeQs5LOB1QpDKW6fX1uS5yskFCFO.png',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  431 => 
+  array (
+    'id' => 522,
+    'solution_id' => 147,
+    'title' => 'Production Monitoring & Analytics',
+    'label' => 'withImage',
+    'description' => 'Gain complete operational visibility with real-time production monitoring systems and advanced analytics platforms.',
+    'image' => 'upload/customer_services/ze5PL410guTTQVh5KSNY6Ycwt4TW4oPCcIRj5eTL.webp',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  432 => 
+  array (
+    'id' => 523,
+    'solution_id' => 147,
+    'title' => 'Ventilation & Environmental Control Systems',
+    'label' => 'withImage',
+    'description' => 'Ensure safe underground conditions with automated ventilation control systems that optimize air quality while minimizing energy costs.',
+    'image' => 'upload/customer_services/YBkqx7vXB2qcNXgCFItykOg54LJtcjhl30WufhRB.webp',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  433 => 
+  array (
+    'id' => 524,
+    'solution_id' => 148,
+    'title' => 'Real-Time Process Monitoring & SCADA',
+    'label' => 'withImage',
+    'description' => 'Gain complete operational visibility with real-time process monitoring systems integrating data from crushers, mills, flotation circuits, and downstream processes.',
+    'image' => 'upload/customer_services/R3UIaR8RqAGMO4VEXPFdzXLlHbv0LH8zNApsvzzD.jpg',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  434 => 
+  array (
+    'id' => 525,
+    'solution_id' => 148,
+    'title' => 'Metallurgical Accounting & Mass Balance Systems',
+    'label' => 'withImage',
+    'description' => 'Ensure accurate production reporting and identify process losses with sophisticated metallurgical accounting systems performing real-time mass and grade balancing.',
+    'image' => 'upload/customer_services/gSWIxeYBwZWBayLrscXvN6IY5nv9J16dhIApGg9W.jpg',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  435 => 
+  array (
+    'id' => 526,
+    'solution_id' => 148,
+    'title' => 'Performance Analytics & Reporting Platforms',
+    'label' => 'withImage',
+    'description' => 'Drive continuous improvement with comprehensive analytics platforms that transform processing data into strategic insights.',
+    'image' => 'upload/customer_services/lzH6tLt6WJ6u3Xy5UyDIymZjh9L17Wxcalqun5wZ.webp',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  436 => 
+  array (
+    'id' => 527,
+    'solution_id' => 149,
+    'title' => 'Air Quality & Dust Monitoring',
+    'label' => 'withImage',
+    'description' => 'Protect worker health and community relations with comprehensive air quality and dust monitoring systems.',
+    'image' => 'upload/customer_services/of48LOcg4dB3vOrQwaNMhJ2CzpKRNfemEqjj2Kzo.jpg',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  437 => 
+  array (
+    'id' => 528,
+    'solution_id' => 149,
+    'title' => 'Gas Detection & Atmospheric Monitoring',
+    'label' => 'withImage',
+    'description' => 'Ensure underground safety with real-time gas detection systems monitoring oxygen, methane, carbon monoxide, nitrogen dioxide, and other atmospheric hazards.',
+    'image' => 'upload/customer_services/dQpcEGbutXJ9g5HwNru3501Lnlo6nfCFM2ZpCWcG.jpg',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  438 => 
+  array (
+    'id' => 529,
+    'solution_id' => 149,
+    'title' => 'Ground Movement & Slope Stability Monitoring',
+    'label' => 'withImage',
+    'description' => 'Prevent catastrophic failures with sophisticated ground movement and slope stability monitoring using precision instruments and advanced analytics.',
+    'image' => 'upload/customer_services/pgHiW7F2TujeO27756uxhjbcxPREdHtKmmBSKpbG.jpg',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  439 => 
+  array (
+    'id' => 530,
+    'solution_id' => 149,
+    'title' => 'Water Quality & Discharge Monitoring',
+    'label' => 'withImage',
+    'description' => 'Demonstrate environmental responsibility with comprehensive water quality monitoring across mine sites and discharge points.',
+    'image' => 'upload/customer_services/Zrf3hgxRnGQpo55sZkKVgjK9pMAH7b0Ycho156Df.webp',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  440 => 
+  array (
+    'id' => 531,
+    'solution_id' => 149,
+    'title' => 'Noise, Vibration & Blast Monitoring',
+    'label' => 'withImage',
+    'description' => 'Maintain community relations and regulatory compliance through systematic noise, vibration, and blast monitoring programs.',
+    'image' => 'upload/customer_services/c96wdQje746yqrJuF0o8BktIb4h16TcDLnpXkSf7.webp',
     'deleted_at' => NULL,
     'created_at' => NULL,
     'updated_at' => NULL,
