@@ -29180,3 +29180,6 @@ START: Blog CSS
 }
 
 
+.post-details-wrapper .blog-text h3:first-of-type {
+  color: #DB8801;
+}
