@@ -276,7 +276,7 @@
                             Experience the Impact
                         </h2>
                         <div class="h8-blog-more wow fadeInUp" data-wow-delay=".8s">
-                            <a class="tj-primary-btn" href="/blogs">
+                            <a class="tj-primary-btn" href="/case-studies">
                                 <span class="btn-text"><span>More Case Studies</span></span>
                                 <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
                             </a>
@@ -285,27 +285,27 @@
                 </div>
                 <div class="col-12 col-lg-8 col-xl-9">
                     <div class="blog-wrapper h8-blog-wrapper">
-                            @foreach ($data->blogs as $blog)
+                            @foreach ($data->caseStudies as $caseStudy)
                                 <div class="blog-item style-2 wow fadeInUp" data-wow-delay=".3s">
                                     <div class="blog-thumb">
-                                        <a href="blog-details.html">
-                                            <img src="{{ asset($blog->image) }}" alt="{{ $blog->alt }}" />
+                                        <a href="/case-study/{{ $caseStudy->slug ?? $caseStudy->title }}">
+                                            <img src="{{ asset($caseStudy->images[0]->image ?? '') }}" alt="{{ $caseStudy->images[0]->alt ?? '' }}" />
                                         </a>
                                         <div class="blog-date">
-                                            <span class="date">{{ $blog->created_at->format('d') }}</span>
-                                            <span class="month">{{ $blog->created_at->format('M') }}</span>
+                                            <span class="date">{{ $caseStudy->created_at->format('d') }}</span>
+                                            <span class="month">{{ $caseStudy->created_at->format('M') }}</span>
                                         </div>
                                     </div>
                                     <div class="blog-content">
                                         <div class="title-area">
                                             <div class="blog-meta">
-                                                <span class="categories"><a href="blog-details.html">{{$blog->category->title}}</a></span>
+                                                <span class="categories"><a href="/case-study/{{ $caseStudy->slug ?? $caseStudy->title }}">{{$caseStudy->category->title ?? 'Case Study'}}</a></span>
                                             </div>
                                             <h3 class="title">
-                                                <a href="{{{ $blog->tags }}}">{{ $blog->title }}</a>
+                                                <a href="/case-study/{{ $caseStudy->slug ?? $caseStudy->title }}">{{ $caseStudy->title }}</a>
                                             </h3>
                                         </div>
-                                        <a class="text-btn" href="{{{ $blog->tags }}}">
+                                        <a class="text-btn" href="/case-study/{{ $caseStudy->slug ?? $caseStudy->title }}">
                                             <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
                                             <span class="btn-text"><span>Read More</span></span>
                                         </a>

@@ -8663,6 +8663,9 @@ START: Choose CSS
   max-width: 88px;
   margin-bottom: 43px;
 }
+.choose-box .choose-content:hover p{
+  color: white;
+} 
 .choose-box .choose-icon i {
   line-height: 1;
   display: -webkit-inline-box;
@@ -29164,6 +29167,16 @@ START: Blog CSS
   border: 1px solid transparent;
   padding: 2px;
   border-radius: 50%;
+}
+
+.mainmenu ul > li > .sub-menu > li > a {
+  font-size: 14px !important;
+  padding: 6px 20px !important;
+}
+
+.mainmenu ul > li > .mega-menu-pages .mega-menu-list a {
+  font-size: 13px !important;
+  padding: 8px 0 !important;
 }
 
 

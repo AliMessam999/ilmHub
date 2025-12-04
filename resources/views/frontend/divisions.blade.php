@@ -48,7 +48,7 @@
                 <div class="sec-heading style-3 text-center">
                     <span class="sub-title wow fadeInUp" data-wow-delay=".3s"><i class="tji-box"></i>Our Solutions</span>
                     <h2 class="sec-title title-anim">
-                        Tailor Business Solutions for Corporates.
+                        Tailor Business Solutions for Corporates
                     </h2>
                 </div>
             </div>
@@ -99,7 +99,7 @@
                     <div class="heading-wrap-content">
                         <div class="sec-heading style-3">
                             <h2 class="sec-title title-anim">
-                                Breaking Boundaries, Building Dreams.
+                                Breaking Boundaries, Building Dreams
                             </h2>
                         </div>
                         <div

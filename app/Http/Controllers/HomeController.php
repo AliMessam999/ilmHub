@@ -43,7 +43,7 @@ class HomeController extends Controller
         // dd($data->client);
 
         // New Data
-        $data->blogs = CdNew::inRandomOrder()->with('category')->get();      
+        $data->caseStudies = CdFeature::inRandomOrder()->with('images')->limit(3)->get();      
         return view('frontend.home', compact('data'));
     }
     public function IndustryData()
