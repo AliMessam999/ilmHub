@@ -62,6 +62,14 @@
                                                <a href="tel:{{ $footer->profile->contact }}">P:
                                                    {{ $footer->profile->contact }}</a>
                                            @endif
+                                           @if (!empty($footer->profile->contact_2))
+                                               <a href="tel:{{ $footer->profile->contact_2 }}">P:
+                                                   {{ $footer->profile->contact_2 }}</a>
+                                           @endif
+                                           @if (!empty($footer->profile->contact_3))
+                                               <a href="tel:{{ $footer->profile->contact_3 }}">P:
+                                                   {{ $footer->profile->contact_3 }}</a>
+                                           @endif
 
                                            @if (!empty($footer->profile->email))
                                                <a href="mailto:{{ $footer->profile->email }}">M:
