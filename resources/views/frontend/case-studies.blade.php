@@ -41,7 +41,7 @@
                     <div class="heading-wrap-content">
                         <div class="sec-heading style-3">
                             <h2 class="sec-title title-anim text-black">
-                                Breaking Boundaries, Building Dreams.
+                                Breaking Boundaries, Building Dreams
                             </h2>
                         </div>
                         <div
@@ -79,9 +79,9 @@
                                     <div class="project-img">
                                         <img
                                             src="/{{ $caseStudy->images[0]->image }}"
-                                            alt="{{ $caseStudy->alt }}" />
+                                            alt="{{ $caseStudy->alt }}" style="min-height:250px;max-height: 250px" />
                                     </div>
-                                    <div class="project-content">
+                                    <div class="project-content" style="height: 150px;">
                                         <span class="categories"><a href="/case-study/{{ $caseStudy->title }}">ICT</a></span>
                                         <div class="project-text">
                                             <h4 class="title">
@@ -101,22 +101,8 @@
                         </div>
                         <!-- <div class="swiper-pagination-area"></div> -->
                     </div>
-                    <div class="row ">
-                        <div class="tj-pagination d-flex text-center justify-content-center">
-                            <ul>
-                                <!-- <li>
-                                    <span aria-current="page" class="page-numbers current">1</span>
-                                </li> -->
-                                {{ $caseStudies->links() }}
-                                
-                                <!-- <li>
-                                    <a class="page-numbers" href="#">3</a>
-                                </li> -->
-                                <!-- <li>
-                                    <a class="next page-numbers" href="#"><i class="tji-arrow-right-long"></i></a>
-                                </li> -->
-                            </ul>
-                        </div>
+                    <div class="d-flex justify-content-center mt-4">
+                        {{ $caseStudies->links() }}
                     </div>
                 </div>
             </div>

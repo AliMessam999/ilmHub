@@ -64,7 +64,7 @@
                         <div class="heading-wrap-content">
                             <div class="sec-heading">
                                 <h2 class="sec-title title-anim">
-                                    Powering Industries with Innovative <span>Solutions.</span>
+                                    Powering Industries with Innovative <span>Solutions</span>
                                 </h2>
                             </div>
                             <div class="btn-wrap wow fadeInUp" data-wow-delay=".6s">
