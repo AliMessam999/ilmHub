@@ -163,16 +163,6 @@ class CdFeatureImageSeeder extends Seeder
   ),
   15 => 
   array (
-    'id' => 56,
-    'feature_id' => 8,
-    'image' => 'upload/featured/vhD8NFXWND6a2kQBddYgLdNinFMioaxdlyui9k37.png',
-    'alt' => 'Digital Transformation of Driving License Management in AJ&K',
-    'deleted_at' => NULL,
-    'created_at' => '2025-05-26 11:56:44',
-    'updated_at' => '2025-05-26 11:56:44',
-  ),
-  16 => 
-  array (
     'id' => 57,
     'feature_id' => 9,
     'image' => 'upload/featured/hAECiE8xPuKDlicwGzK5YiCEC9U8G7T4qjRdegFt.jpg',
@@ -181,7 +171,7 @@ class CdFeatureImageSeeder extends Seeder
     'created_at' => '2025-06-03 14:46:48',
     'updated_at' => '2025-06-03 14:46:48',
   ),
-  17 => 
+  16 => 
   array (
     'id' => 58,
     'feature_id' => 9,
@@ -191,7 +181,7 @@ class CdFeatureImageSeeder extends Seeder
     'created_at' => '2025-06-03 14:51:25',
     'updated_at' => '2025-06-03 14:51:25',
   ),
-  18 => 
+  17 => 
   array (
     'id' => 59,
     'feature_id' => 18,
@@ -201,7 +191,7 @@ class CdFeatureImageSeeder extends Seeder
     'created_at' => '2025-11-22 07:55:14',
     'updated_at' => '2025-11-22 07:55:14',
   ),
-  19 => 
+  18 => 
   array (
     'id' => 60,
     'feature_id' => 18,
@@ -211,7 +201,7 @@ class CdFeatureImageSeeder extends Seeder
     'created_at' => '2025-11-22 07:55:14',
     'updated_at' => '2025-11-22 07:55:14',
   ),
-  20 => 
+  19 => 
   array (
     'id' => 61,
     'feature_id' => 19,
@@ -221,7 +211,7 @@ class CdFeatureImageSeeder extends Seeder
     'created_at' => '2025-11-29 08:03:47',
     'updated_at' => '2025-11-29 08:03:47',
   ),
-  21 => 
+  20 => 
   array (
     'id' => 62,
     'feature_id' => 20,
@@ -231,7 +221,7 @@ class CdFeatureImageSeeder extends Seeder
     'created_at' => '2025-11-29 10:31:33',
     'updated_at' => '2025-11-29 10:31:33',
   ),
-  22 => 
+  21 => 
   array (
     'id' => 63,
     'feature_id' => 21,
@@ -241,7 +231,7 @@ class CdFeatureImageSeeder extends Seeder
     'created_at' => '2025-11-29 10:40:27',
     'updated_at' => '2025-11-29 10:40:27',
   ),
-  23 => 
+  22 => 
   array (
     'id' => 64,
     'feature_id' => 22,
@@ -251,65 +241,25 @@ class CdFeatureImageSeeder extends Seeder
     'created_at' => '2025-11-29 10:48:59',
     'updated_at' => '2025-11-29 10:48:59',
   ),
-  24 => 
-  array (
-    'id' => 65,
-    'feature_id' => 23,
-    'image' => 'upload/featured/3kKeB9GiLwyz12na6rx8WtXnYMDI4p4KR7Mo2O4W.png',
-    'alt' => 'zzz',
-    'deleted_at' => NULL,
-    'created_at' => '2025-12-02 12:51:06',
-    'updated_at' => '2025-12-02 12:51:06',
-  ),
-  25 => 
+  23 => 
   array (
     'id' => 66,
-    'feature_id' => 24,
-    'image' => 'upload/featured/e26VKQ0XcCiJrRNXVD7daoR5ZxzOfnNiKpZ7dlf7.png',
-    'alt' => 'alt',
-    'deleted_at' => NULL,
-    'created_at' => '2025-12-02 13:25:00',
-    'updated_at' => '2025-12-02 13:25:00',
-  ),
-  26 => 
-  array (
-    'id' => 67,
-    'feature_id' => 25,
-    'image' => 'upload/featured/WgxUpDLzWEPEH9S0MIeKmSXN7R5FVGXOXTypEEbQ.png',
-    'alt' => 'alt',
-    'deleted_at' => NULL,
-    'created_at' => '2025-12-02 13:33:29',
-    'updated_at' => '2025-12-02 13:33:29',
-  ),
-  27 => 
-  array (
-    'id' => 68,
-    'feature_id' => 26,
-    'image' => 'upload/featured/yUBNf2dMJfzzGSoHnpmKynOJoxCeWAU6OZdBn6Uf.png',
-    'alt' => 'alt',
-    'deleted_at' => NULL,
-    'created_at' => '2025-12-03 07:04:53',
-    'updated_at' => '2025-12-03 07:04:53',
-  ),
-  28 => 
-  array (
-    'id' => 69,
-    'feature_id' => 27,
-    'image' => 'upload/featured/ImvWQ7lEgZxRjGYY8aab6Jw7cBjayaTMoFlgE2Hs.jpg',
-    'alt' => NULL,
-    'deleted_at' => NULL,
-    'created_at' => '2025-12-03 18:01:51',
-    'updated_at' => '2025-12-03 18:01:51',
-  ),
-  29 => 
-  array (
-    'id' => 70,
     'feature_id' => 28,
     'image' => 'upload/featured/62I1YBX317Jd0GYSYbULu1X8UyELWNIOW2it9wxU.jpg',
     'alt' => NULL,
     'deleted_at' => NULL,
     'created_at' => '2025-12-03 18:12:01',
     'updated_at' => '2025-12-03 18:12:01',
+  ),
+  24 => 
+  array (
+    'id' => 68,
+    'feature_id' => 30,
+    'image' => 'upload/featured/MU3HzSCLESrOS9nc4t5E6ZxerRlDaln2iuNKvnNP.webp',
+    'alt' => NULL,
+    'deleted_at' => NULL,
+    'created_at' => '2025-12-04 18:20:09',
+    'updated_at' => '2025-12-04 18:20:09',
   ),
 );
         DB::table('cd_feature_images')->insert($data);

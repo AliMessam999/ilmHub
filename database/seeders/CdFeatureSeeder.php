@@ -86,9 +86,9 @@ class CdFeatureSeeder extends Seeder
     'user_details' => NULL,
     'alt' => NULL,
     'icon' => 'test',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-04 17:33:44',
     'created_at' => '2025-05-15 15:11:32',
-    'updated_at' => '2025-11-29 10:34:11',
+    'updated_at' => '2025-12-04 17:33:44',
     'image' => NULL,
   ),
   4 => 
@@ -105,9 +105,9 @@ class CdFeatureSeeder extends Seeder
     'user_details' => NULL,
     'alt' => NULL,
     'icon' => 'cerp',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-04 17:34:23',
     'created_at' => '2025-05-15 15:22:28',
-    'updated_at' => '2025-05-26 11:34:46',
+    'updated_at' => '2025-12-04 17:34:23',
     'image' => NULL,
   ),
   5 => 
@@ -137,31 +137,6 @@ class CdFeatureSeeder extends Seeder
   ),
   6 => 
   array (
-    'id' => 8,
-    'title' => 'Digital Transformation of Driving License Management in AJ&K',
-    'description' => '<p>As part of Azad Jammu &amp; Kashmir&rsquo;s broader e-governance vision, CDigital successfully developed and deployed a Driving License Management System (DLMS) to modernize and streamline the region&rsquo;s licensing processes. This end-to-end digital solution was aligned with the government&#39;s strategic pillars of Computer Mass Literacy, E-Governance, and the Promotion of Advanced IT Culture. This customized software solution fully automates driving license issuance, renewal, upgrades, and record management, ensuring fast, transparent, and citizen-friendly public services. Leveraging state-of-the-art technology and modern communication infrastructure, the system is designed to run seamlessly on any device, ensuring maximum accessibility and usability.</p>
-
-<p>&nbsp;</p>
-
-<p>Powered by a web-based, responsive architecture, the DLMS integrates cutting-edge features including NADRA Verisys verification, real-time video monitoring of driving tests, SMS/email alerts, and hierarchical administrative controls. The platform delivers real-time analytics and reporting tools that support evidence-based decision-making. Since implementation, the system has significantly improved service delivery, reduced manual errors, and empowered authorities with greater oversight, transparency, and operational efficiency&mdash;setting a benchmark for digital governance in the region.</p>
-
-<p>&nbsp;</p>',
-    'sub_category_id' => NULL,
-    'client_name' => NULL,
-    'funded_by' => NULL,
-    'location' => NULL,
-    'industry_id' => NULL,
-    'website' => NULL,
-    'user_details' => NULL,
-    'alt' => NULL,
-    'icon' => 'bio',
-    'deleted_at' => NULL,
-    'created_at' => '2025-05-15 15:23:38',
-    'updated_at' => '2025-05-26 11:56:44',
-    'image' => NULL,
-  ),
-  7 => 
-  array (
     'id' => 9,
     'title' => 'Turnkey Establishment of a Modern Data Centre for Pakistan Bureau of Statistics',
     'description' => '<p>In a strategic move to enhance national data infrastructure and ensure uninterrupted digital operations, CDigital partnered with the Pakistan Bureau of Statistics (PBS) to establish a fully integrated modular data centre on a turnkey basis at its Islamabad headquarters. This high-availability solution included modular data centre racks at both primary and disaster recovery (DR) sites, civil works, structured cabling, SAN storage, firewall security, SQL Server 2022, and Windows Server Datacenter Edition. The project was further strengthened by 100 KVA generator backup, a 2x2 video wall for real-time visibility, and modern backup appliances to ensure secure and resilient operations.</p>
@@ -185,7 +160,7 @@ class CdFeatureSeeder extends Seeder
     'updated_at' => '2025-06-03 14:51:25',
     'image' => NULL,
   ),
-  8 => 
+  7 => 
   array (
     'id' => 10,
     'title' => 'Smart Flood Forecasting & Weather Monitoring for WAPDA',
@@ -210,7 +185,7 @@ class CdFeatureSeeder extends Seeder
     'updated_at' => '2025-05-26 11:44:59',
     'image' => NULL,
   ),
-  9 => 
+  8 => 
   array (
     'id' => 11,
     'title' => 'Real-Time Flood Monitoring System for KPK Irrigation Dept.',
@@ -233,7 +208,7 @@ class CdFeatureSeeder extends Seeder
     'updated_at' => '2025-05-26 11:48:50',
     'image' => NULL,
   ),
-  10 => 
+  9 => 
   array (
     'id' => 12,
     'title' => 'Deployment of Automatic Weather Stations for FWRDP – Khyber Pakhtunkhwa',
@@ -256,7 +231,7 @@ class CdFeatureSeeder extends Seeder
     'updated_at' => '2025-05-26 11:22:03',
     'image' => NULL,
   ),
-  11 => 
+  10 => 
   array (
     'id' => 13,
     'title' => 'Bio-Product Development for Sustainable Agriculture',
@@ -279,7 +254,7 @@ class CdFeatureSeeder extends Seeder
     'updated_at' => '2025-05-26 10:42:19',
     'image' => NULL,
   ),
-  12 => 
+  11 => 
   array (
     'id' => 14,
     'title' => 'Solar Power System Deployment at PCSIR Campuses',
@@ -302,7 +277,7 @@ class CdFeatureSeeder extends Seeder
     'updated_at' => '2025-05-26 10:42:46',
     'image' => NULL,
   ),
-  13 => 
+  12 => 
   array (
     'id' => 15,
     'title' => '100 kW Solar Power System for ASF Housing Foundation, Karachi',
@@ -325,7 +300,7 @@ class CdFeatureSeeder extends Seeder
     'updated_at' => '2025-05-26 10:43:02',
     'image' => NULL,
   ),
-  14 => 
+  13 => 
   array (
     'id' => 16,
     'title' => 'Urban Surveillance System in Gilgit City (2013)',
@@ -348,7 +323,7 @@ class CdFeatureSeeder extends Seeder
     'updated_at' => '2025-05-26 11:45:57',
     'image' => NULL,
   ),
-  15 => 
+  14 => 
   array (
     'id' => 17,
     'title' => 'GPS-Based Vehicle & Container Tracking (2013)',
@@ -366,12 +341,12 @@ class CdFeatureSeeder extends Seeder
     'user_details' => NULL,
     'alt' => NULL,
     'icon' => 'GPS',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-04 17:34:40',
     'created_at' => '2025-05-21 11:49:05',
-    'updated_at' => '2025-05-26 10:43:33',
+    'updated_at' => '2025-12-04 17:34:40',
     'image' => NULL,
   ),
-  16 => 
+  15 => 
   array (
     'id' => 18,
     'title' => 'Dolorum duis eum arc',
@@ -390,7 +365,7 @@ class CdFeatureSeeder extends Seeder
     'updated_at' => '2025-11-22 07:55:37',
     'image' => NULL,
   ),
-  17 => 
+  16 => 
   array (
     'id' => 19,
     'title' => 'Ali Messam',
@@ -430,12 +405,12 @@ class CdFeatureSeeder extends Seeder
     'user_details' => 'Details will be shown here...',
     'alt' => 'meesam',
     'icon' => 'tji-service-3',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-04 17:34:51',
     'created_at' => '2025-11-29 08:03:46',
-    'updated_at' => '2025-12-01 11:18:47',
+    'updated_at' => '2025-12-04 17:34:51',
     'image' => NULL,
   ),
-  18 => 
+  17 => 
   array (
     'id' => 20,
     'title' => 'Ali Shaheer',
@@ -477,12 +452,12 @@ class CdFeatureSeeder extends Seeder
     'user_details' => NULL,
     'alt' => 'image',
     'icon' => 'eeee',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-04 17:35:01',
     'created_at' => '2025-11-29 10:31:33',
-    'updated_at' => '2025-11-29 11:05:23',
+    'updated_at' => '2025-12-04 17:35:01',
     'image' => NULL,
   ),
-  19 => 
+  18 => 
   array (
     'id' => 21,
     'title' => 'Ali Daniyal',
@@ -501,7 +476,7 @@ class CdFeatureSeeder extends Seeder
     'updated_at' => '2025-11-29 10:46:58',
     'image' => NULL,
   ),
-  20 => 
+  19 => 
   array (
     'id' => 22,
     'title' => 'Ali Daniyallll',
@@ -541,195 +516,63 @@ class CdFeatureSeeder extends Seeder
     'user_details' => NULL,
     'alt' => 'ttt',
     'icon' => 'uuu',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-04 17:56:53',
     'created_at' => '2025-11-29 10:48:59',
-    'updated_at' => '2025-11-29 11:05:45',
+    'updated_at' => '2025-12-04 17:56:53',
+    'image' => NULL,
+  ),
+  20 => 
+  array (
+    'id' => 28,
+    'title' => 'Billing Infrastructure',
+    'description' => '<h2>Building First Unified Province-Wide Digital Utility System</h2>
+
+<h3>How CDigital Modernized AJKED&rsquo;s Consumer Billing Infrastructure &amp; Administrative Systems at Scale</h3>
+
+<p>AJKED&rsquo;s utility operations were heavily paper-driven, resulting in delays, errors, and limited transparency. With no centralized data visibility, departments worked in isolation, making reconciliation and reporting slow and unreliable. Outdated hardware, missing backups, and the absence of disaster recovery created serious security and reliability risks. Customer services also suffered, with long queues, repeated visits, and high complaint volumes. AJKED needed a modern digital backbone to support its ERP ecosystem and transition to fully integrated utility governance.</p>
+
+<h3><strong>Services&nbsp;Delivered </strong></h3>
+
+<ul>
+	<li>IT Infrastructure</li>
+	<li>Hardware Supply</li>
+	<li>Systems Integration</li>
+	<li>ERP Enablement</li>
+	<li>Training &amp; Support</li>
+</ul>
+
+<h3><strong>Key Features</strong></h3>
+
+<ul>
+	<li>10 Districts Digitally Enabled</li>
+	<li>100+ Offices Integrated Into One System</li>
+	<li>500+ Government Employees Covered</li>
+</ul>',
+    'sub_category_id' => NULL,
+    'client_name' => 'AJK Electricity Department (AJKED)',
+    'funded_by' => NULL,
+    'location' => NULL,
+    'industry_id' => NULL,
+    'website' => NULL,
+    'user_details' => 'The AJK Electricity Department (AJKED) oversees thousands of employees, dozens of offices, and a rapidly expanding consumer base across Azad Jammu & Kashmir. For years, manual workflows and fragmented, paper-based systems created operational bottlenecks, revenue gaps, and governance challenges. To enable a transparent, scalable, and digitally empowered utility, AJKED partnered with CDigital to modernize its core IT infrastructure — laying the foundation for a fully digital power-sector ecosystem.',
+    'alt' => NULL,
+    'icon' => 'alt',
+    'deleted_at' => NULL,
+    'created_at' => '2025-12-03 18:12:01',
+    'updated_at' => '2025-12-04 17:28:35',
     'image' => NULL,
   ),
   21 => 
   array (
-    'id' => 23,
-    'title' => 'Main Title',
-    'description' => '<h2>Heading 1</h2>
-
-<h3>Introduction</h3>
-
-<p>In today&#39;s fast-paced digital landscape, outdated infrastructure can hold your business back. Our IT Modernization &amp; Cloud Infrastructure services help you break free from legacy limitations and embrace agile, scalable systems that drive efficiency and innovation. Whether you&#39;re consolidating data centers, migrating to the cloud, or strengthening business continuity, we provide end-to-end solutions that modernize your technology foundation while minimizing disruption. Our approach balances performance, security, and cost-effectiveness ensuring your infrastructure not only meets today&#39;s demands but is ready to evolve with tomorrow&#39;s opportunities.</p>
-
-<ul>
-	<li>Bullet 1</li>
-	<li>Bullet 2</li>
-</ul>
-
-<h3>Services</h3>
-
-<ul>
-	<li>Bullet 3</li>
-	<li>Bullet 4</li>
-</ul>
-
-<h3>Product Gallery</h3>',
-    'sub_category_id' => 81,
-    'client_name' => 'xyz',
-    'funded_by' => 'xyz',
-    'location' => 'xyz',
-    'industry_id' => 1,
-    'website' => NULL,
-    'user_details' => 'abc',
-    'alt' => 'zzz',
-    'icon' => 'zvzz',
-    'deleted_at' => NULL,
-    'created_at' => '2025-12-02 12:51:05',
-    'updated_at' => '2025-12-02 12:55:09',
-    'image' => NULL,
-  ),
-  22 => 
-  array (
-    'id' => 24,
-    'title' => 'PBS',
-    'description' => '<h2>Building Pakistan&rsquo;s National Data Backbone</h2>
-
-<h3>How CDigital Helped PBS Build a Future-Ready Datacentre Backbone, Achieving 99%+ Uptime While Cutting Recovery Time by &asymp;60%</h3>
-
-<p><strong>&nbsp;</strong>PBS was operating on aging, fragmented infrastructure that could no longer support the scale and sensitivity of Pakistan&rsquo;s national data systems. With no centralized datacenter, no disaster-recovery capability, recurring performance bottlenecks, cybersecurity gaps, and limited technical readiness, the organization faced serious operational risk. For an institution powering economic planning, census operations, and national policy, a modern digital backbone wasn&rsquo;t optional &mdash; it was mission-critical for Pakistan&rsquo;s future.</p>
-
-<h3><strong>Key Features</strong></h3>
-
-<ul>
-	<li>230M Resident&rsquo;s Data Processed Through PBS Datacenters</li>
-	<li>99%+ System Uptime Increase</li>
-	<li>Millions of Records Ingested Daily Across All Provinces</li>
-</ul>
-
-<h3><strong>Delivered Services</strong></h3>
-
-<ul>
-	<li>Datacentre Engineering &amp; EPC</li>
-	<li>Hardware Deployment (HCI, SAN, Compute)</li>
-	<li>Network &amp; Security Infrastructure</li>
-	<li>Monitoring &amp; Endpoint Security</li>
-	<li>Civil Works &amp; Legacy Datacentre Migration</li>
-	<li>Staff Training &amp; Documentation</li>
-</ul>',
-    'sub_category_id' => NULL,
-    'client_name' => 'Pakistan Bureau of Statistics (PBS)',
-    'funded_by' => NULL,
-    'location' => NULL,
-    'industry_id' => NULL,
-    'website' => NULL,
-    'user_details' => 'The Pakistan Bureau of Statistics (PBS) is Pakistan’s central authority for national data, producing population, economic, labor, and agriculture statistics that shape government planning and public policy. Managing millions of data points annually, PBS required a modern, secure, and scalable datacenter ecosystem — a transformation delivered by CDigital.',
-    'alt' => 'alt',
-    'icon' => 'ccccc',
-    'deleted_at' => NULL,
-    'created_at' => '2025-12-02 13:25:00',
-    'updated_at' => '2025-12-03 07:07:32',
-    'image' => NULL,
-  ),
-  23 => 
-  array (
-    'id' => 25,
-    'title' => 'Land Records AJK',
-    'description' => '<h2><strong>&nbsp;</strong>Transforming Land Governance in AJ&amp;K</h2>
-
-<h3><strong>&nbsp;</strong>How CDigital Modernized AJ&amp;K&rsquo;s Land Record System With a Unified Digital Infrastructure, Secure Networking &amp; Real-Time Service Delivery</h3>
-
-<p><strong>&nbsp;</strong>AJ&amp;K&rsquo;s land record system was fragmented, manual, and highly vulnerable &mdash; with no digital integration, no centralized database, and no reliable way to secure or synchronize records across tehsils. Citizens faced long queues and error-prone manual processes, while outdated servers, weak connectivity, and the absence of disaster recovery created serious security and continuity risks. With no standardized access controls, surveillance, or staff training, the system lacked the readiness to support modern governance. A complete end-to-end transformation was essential.</p>
-
-<h3><strong>Key Features</strong></h3>
-
-<ul>
-	<li>4M+ Residents Connected to Governance System</li>
-	<li>15 Digital Service Centers Established across AJ&amp;K</li>
-	<li>1000+ Daily Transactions now Processed Digitally</li>
-	<li>30+ Enterprise-Grade Servers Powering LRMIS Database</li>
-</ul>
-
-<h3><strong>Delivered Services</strong></h3>
-
-<ul>
-	<li>Digital Service Center Deployment</li>
-	<li>Networking &amp; Secure Connectivity</li>
-	<li>Data Center &amp; DR Setup</li>
-	<li>Hardware Procurement</li>
-	<li>LRMIS Installation</li>
-	<li>CCTV, Biometrics &amp; Security</li>
-	<li>Staff training &amp; SOPs</li>
-	<li>Civil &amp; interior works</li>
-</ul>
-
-<p>&nbsp;</p>',
-    'sub_category_id' => NULL,
-    'client_name' => 'IT Board, Government of Azad Jammu & Kashmir (AJ&K)',
-    'funded_by' => NULL,
-    'location' => NULL,
-    'industry_id' => NULL,
-    'website' => NULL,
-    'user_details' => 'The Government of Azad Jammu & Kashmir (AJ&K) manages governance and land administration across a challenging, mountainous region of over 4 million people. For decades, land records were handled through manual, non-standardized processes spread across scattered tehsil offices, causing delays and low public trust. To modernize this system, the IT Board initiated an integrated network of Digital Service Centers linked to a centralized command facility — a complete digital ecosystem delivered by CDigital.',
-    'alt' => 'alt',
-    'icon' => 'ccc',
-    'deleted_at' => NULL,
-    'created_at' => '2025-12-02 13:33:29',
-    'updated_at' => '2025-12-02 13:35:34',
-    'image' => NULL,
-  ),
-  24 => 
-  array (
-    'id' => 26,
-    'title' => 'Tourism Management',
-    'description' => '<h2>Modernizing Tourism Intelligence in Khyber Pakhtunkhwa</h2>
-
-<h3>How CDigital Built Pakistan&rsquo;s #1 Tourism Management System &mdash; Awarded Winner at the P@SHA ICT Awards 2025</h3>
-
-<p>KP&rsquo;s existing Tourism Management Information System (TMIS) could no longer keep pace with the province&rsquo;s rapidly growing tourism sector. The platform was fragmented and outdated, lacking modern UI/UX, multilingual support, advanced search, mapping, or cultural integration. Critical functions &mdash; licensing, inspections, HR, FMIS, and inventory &mdash; were manual and slow, with no real-time dashboards. The system also faced serious scalability and security limitations, from weak authentication to poor database structure and no load balancing. With no unified platform for KP&rsquo;s heritage, arts, cuisine, and tourism assets, the ecosystem remained disconnected. A complete digital overhaul was essential &mdash; modern, scalable, secure, and built for future expansion.</p>
-
-<h3><strong>Key Features</strong></h3>
-
-<ul>
-	<li>TMIS Revamp &amp; Mobile App Development</li>
-	<li>Cultural Mapping &amp; Digital Archives</li>
-	<li>Licensing + Inspections Automation</li>
-	<li>API Integrations &amp; Data Migration</li>
-	<li>Enterprise MIS Modules</li>
-	<li>Training &amp; Documentation</li>
-	<li>Maintenance &amp; Support</li>
-</ul>
-
-<p>&nbsp;</p>
-
-<h3>&nbsp;</h3>',
-    'sub_category_id' => NULL,
-    'client_name' => 'Khyber Pakhtunkhwa Integrated Tourism Development Project (KITE)',
-    'funded_by' => NULL,
-    'location' => NULL,
-    'industry_id' => NULL,
-    'website' => NULL,
-    'user_details' => 'The Khyber Pakhtunkhwa Integrated Tourism Development Project (KITE) is the government’s flagship, World Bank–supported initiative to transform KP into a globally competitive tourism destination. By developing Integrated Tourism Zones, improving access infrastructure, preserving heritage, and strengthening environmental sustainability, KITE is reshaping the province’s tourism economy. To meet rising demand and modernize services, KITE needed an intelligent Tourism Management Information System (TMIS) — a transformation delivered in partnership with CDigital.',
-    'alt' => 'alt',
-    'icon' => 'dwdw',
-    'deleted_at' => NULL,
-    'created_at' => '2025-12-03 07:04:51',
-    'updated_at' => '2025-12-03 07:04:51',
-    'image' => NULL,
-  ),
-  25 => 
-  array (
-    'id' => 27,
+    'id' => 30,
     'title' => 'Driving License Management',
     'description' => '<h2>Transforming Driving License Management in AJ&amp;K</h2>
 
-<h3><strong>&nbsp;</strong>How CDigital Digitalized an Entire Provincial Licensing System &mdash; Enhancing Security, Speed &amp; Public Trust</h3>
+<h3>How CDigital Digitalized an Entire Provincial Licensing System &mdash; Enhancing Security, Speed &amp; Public Trust</h3>
 
 <p>AJ&amp;K&rsquo;s driving license system was fully manual, leading to delays, frequent errors, and low operational efficiency. With no digital workflows, weak infrastructure, and high security vulnerabilities, the process lacked reliability, transparency, and data protection. Modernizing this system was essential to enable secure, efficient, and citizen-friendly licensing services.</p>
 
-<h3><strong>Key Features</strong></h3>
-
-<ul>
-	<li>10 District Police Units Connected to Central Licensing System</li>
-	<li>24/7 Digital Verification Portal Operational across AJ&amp;K</li>
-	<li>1.5M+ Residents Served</li>
-</ul>
-
-<h3><strong>Delivered Services:</strong></h3>
+<h3><strong>Services&nbsp;Delivered</strong></h3>
 
 <ul>
 	<li>DLMS Software Development</li>
@@ -742,13 +585,15 @@ class CdFeatureSeeder extends Seeder
 	<li>Staff Training &amp; Support</li>
 </ul>
 
-<p>&nbsp;</p>
+<h3><strong>Key Features</strong></h3>
 
-<p>&nbsp;</p>
+<ul>
+	<li>10 District Police Units Connected to Central Licensing System</li>
+	<li>24/7 Digital Verification Portal Operational across AJ&amp;K</li>
+	<li>1.5M+ Residents Served</li>
+</ul>
 
-<h3>&nbsp;</h3>
-
-<h3>&nbsp;</h3>',
+<p>&nbsp;</p>',
     'sub_category_id' => NULL,
     'client_name' => 'AJ&K Information Technology Board & AJ&K Police',
     'funded_by' => NULL,
@@ -757,57 +602,10 @@ class CdFeatureSeeder extends Seeder
     'website' => NULL,
     'user_details' => 'The AJ&K Information Technology Board, the region’s lead agency for digital transformation, is driving modernization under the Master Implementation Plan. To strengthen governance and improve public services, the AJ&K Police partnered with CDigital to replace manual, paper-based licensing with a centralized, secure digital driving license system — one of the region’s earliest milestones in e-governance.',
     'alt' => NULL,
-    'icon' => 'alt',
+    'icon' => 'Alt',
     'deleted_at' => NULL,
-    'created_at' => '2025-12-03 18:01:50',
-    'updated_at' => '2025-12-03 18:01:50',
-    'image' => NULL,
-  ),
-  26 => 
-  array (
-    'id' => 28,
-    'title' => 'Billing Infrastructure',
-    'description' => '<h2>Building First Unified Province-Wide Digital Utility System</h2>
-
-<h3>How CDigital Modernized AJKED&rsquo;s Consumer Billing Infrastructure &amp; Administrative Systems at Scale</h3>
-
-<p>AJKED&rsquo;s utility operations were heavily paper-driven, resulting in delays, errors, and limited transparency. With no centralized data visibility, departments worked in isolation, making reconciliation and reporting slow and unreliable. Outdated hardware, missing backups, and the absence of disaster recovery created serious security and reliability risks. Customer services also suffered, with long queues, repeated visits, and high complaint volumes. AJKED needed a modern digital backbone to support its ERP ecosystem and transition to fully integrated utility governance.</p>
-
-<h3><strong>Key Features</strong></h3>
-
-<p>&nbsp;</p>
-
-<ul>
-	<li>10 Districts Digitally Enabled</li>
-	<li>100+ Offices Integrated Into One System</li>
-	<li>500+ Government Employees Covered</li>
-</ul>
-
-<h3><strong>Delivered Services</strong></h3>
-
-<ul>
-	<li>IT Infrastructure</li>
-	<li>Hardware Supply</li>
-	<li>Systems Integration</li>
-	<li>ERP Enablement</li>
-	<li>Training &amp; Support</li>
-</ul>
-
-<h3>&nbsp;</h3>
-
-<p>&nbsp;</p>',
-    'sub_category_id' => NULL,
-    'client_name' => 'AJK Electricity Department (AJKED)',
-    'funded_by' => NULL,
-    'location' => NULL,
-    'industry_id' => NULL,
-    'website' => NULL,
-    'user_details' => 'The AJK Electricity Department (AJKED) oversees thousands of employees, dozens of offices, and a rapidly expanding consumer base across Azad Jammu & Kashmir. For years, manual workflows and fragmented, paper-based systems created operational bottlenecks, revenue gaps, and governance challenges. To enable a transparent, scalable, and digitally empowered utility, AJKED partnered with CDigital to modernize its core IT infrastructure — laying the foundation for a fully digital power-sector ecosystem.',
-    'alt' => NULL,
-    'icon' => 'alt',
-    'deleted_at' => NULL,
-    'created_at' => '2025-12-03 18:12:01',
-    'updated_at' => '2025-12-03 18:12:01',
+    'created_at' => '2025-12-04 18:20:09',
+    'updated_at' => '2025-12-04 18:20:09',
     'image' => NULL,
   ),
 );
