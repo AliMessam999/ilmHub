@@ -115,6 +115,13 @@
                                         value="{{ isset($item) && !empty($item) ? $item->contact_2 : '' }}">
                                 </div>
                             </div>
+                             <div class="col-lg-6">
+                                <label>Contact3</label>
+                                <div class="common_input mb_15">
+                                    <input type="text" name="contact_3" placeholder="Enter Contact3" autocomplete="off"
+                                        value="{{ isset($item) && !empty($item) ? $item->contact_3 : '' }}">
+                                </div>
+                            </div>
                             <div class="col-lg-6">
                                 <label>Email 2</label>
                                 <div class="common_input mb_15">

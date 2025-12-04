@@ -165,7 +165,6 @@ Route::middleware('authwithadmin')->controller(GallaryController::class)->group(
 Route::middleware('authwithadmin')->controller(FooterController::class)->group(function () {
     Route::get('/admin/footer', 'show_footer')->name('footer_list');
     Route::get('/admin/footer/create', 'create_footer_view');
-    Route::get('/admin/footer/update/{id}', 'update_footer_view')->name('footer.update');
     Route::post('/admin/footer/create', 'create_footer');
     Route::delete('/admin/footer/delete/{id}','delete_footer')->name('footer.delete');
     Route::get('/admin/footer/update/{id}', 'update_footer_view')->name('footer.update');

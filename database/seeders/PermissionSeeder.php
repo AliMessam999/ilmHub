@@ -33,6 +33,7 @@ class PermissionSeeder extends Seeder
             'offers',
             'particular',
             'home',
+            'footer',
             'roles',
         ];
 

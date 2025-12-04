@@ -273,7 +273,7 @@
                     <div class="sec-heading style-3 slidebar-stickiy">
                         <span class="sub-title wow fadeInUp" data-wow-delay=".3s"><i class="tji-box"></i>Case Studies</span>
                         <h2 class="sec-title title-anim">
-                            To Be Renamed Later...
+                            Experience the Impact
                         </h2>
                         <div class="h8-blog-more wow fadeInUp" data-wow-delay=".8s">
                             <a class="tj-primary-btn" href="/blogs">

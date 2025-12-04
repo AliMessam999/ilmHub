@@ -207,7 +207,7 @@
             </li>
             
             @endif
-             {{-- @if (auth()->user()->haspermission('read-gallary')) --}}
+             @if (auth()->user()->haspermission('read-footer'))
                 <li class>
                     <a class="" href="/admin/footer" aria-expanded="false">
                         <div class="nav_icon_small">
@@ -219,7 +219,7 @@
                         </div>
                     </a>
                 </li>
-            {{-- @endif --}}
+            @endif
             @if (auth()->user()->haspermission('read-users'))
             <li class>
                 <a class="" href="/admin/user" aria-expanded="false">
