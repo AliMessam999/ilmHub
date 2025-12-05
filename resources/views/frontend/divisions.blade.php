@@ -30,7 +30,7 @@
 <!-- start: Breadcrumb Section -->
 <section
     class="tj-page-header m-0 mb-5 rounded-0 section-gap-x"
-    data-bg-image="/frontend_assets/images/bg/hydromet-banner.png">
+    data-bg-image="{{ $category->image ? asset($category->image) : asset('frontend_assets/images/bg/hydromet-banner.png') }}">
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-12">

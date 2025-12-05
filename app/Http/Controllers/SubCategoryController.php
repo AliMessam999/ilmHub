@@ -14,6 +14,7 @@ class SubCategoryController extends Controller
         $validator = Validator::make($request->all(), [
             'title'  => ['required'],
             'parent' => ['required'],
+            'image' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg,webp|max:2048'
         ]);
 
         if ($validator->fails()) {
@@ -23,9 +24,11 @@ class SubCategoryController extends Controller
         $menu = new CdCategory();
         $menu->title  = $request->title;
         $menu->parent = $request->parent;
-
-        // Directly store slug as entered
         $menu->slug = $request->slug ?? $request->title;
+        
+        if ($request->hasFile('image')) {
+            $menu->image = $request->file('image')->store('upload/categories');
+        }
 
         $result = $menu->save();
 
@@ -87,6 +90,7 @@ class SubCategoryController extends Controller
         $validator = Validator::make($request->all(), [
             'title'  => ['required'],
             'parent' => ['required'],
+            'image' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg,webp|max:2048'
         ]);
 
         if ($validator->fails()) {
@@ -96,6 +100,10 @@ class SubCategoryController extends Controller
         $menu->title  = $request->title;
         $menu->parent = $request->parent;
         $menu->slug   = $request->slug ?? $request->title;
+        
+        if ($request->hasFile('image')) {
+            $menu->image = $request->file('image')->store('upload/categories');
+        }
 
         if ($menu->save()) {
             return response()->json([

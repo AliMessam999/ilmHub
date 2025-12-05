@@ -28875,6 +28875,7 @@ START: Blog CSS
     position: relative;
     z-index: 5;
     transition:all 0.3s ease;
+    font-size: 50px !important;
     /* animation: moveFa/r 2s infinite alternate; */
 }
 

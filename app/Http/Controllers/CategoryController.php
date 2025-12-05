@@ -21,6 +21,7 @@ class CategoryController extends Controller
     {
         $validator = Validator::make($request->all(), [
             'title' => ['required'],
+            'image' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg,webp|max:2048'
         ]);
 
         if ($validator->fails()) {
@@ -32,9 +33,11 @@ class CategoryController extends Controller
         $category->description = $request->description;
         $category->menu_id = $request->menu_id;
         $category->parent = $request->parent;
-
-        // Slug handling (store as provided)
         $category->slug = $request->slug ?? $request->title;
+        
+        if ($request->hasFile('image')) {
+            $category->image = $request->file('image')->store('upload/categories');
+        }
 
         $result = $category->save();
 
@@ -76,6 +79,7 @@ class CategoryController extends Controller
 
         $validator = Validator::make($request->all(), [
             'title' => 'required',
+            'image' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg,webp|max:2048'
         ]);
 
         if ($validator->fails()) {
@@ -86,9 +90,11 @@ class CategoryController extends Controller
         $category->description = $request->description;
         $category->menu_id = $request->menu_id;
         $category->parent = $request->parent;
-
-        // Slug handling (store as provided)
         $category->slug = $request->slug ?? $request->title;
+        
+        if ($request->hasFile('image')) {
+            $category->image = $request->file('image')->store('upload/categories');
+        }
 
         $result = $category->save();
 

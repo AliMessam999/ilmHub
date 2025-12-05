@@ -52,6 +52,18 @@
                                 </div>
                             </div>
 
+                            <!-- Image -->
+                            <div class="col-lg-6">
+                                <label>Image</label>
+                                <div class="d-flex gap-5 align-items-center h-100">
+                                    <div class="fileupload btn btn_1 radius_btn btn-anim">
+                                        <i class="fa fa-upload"></i>
+                                        <span class="btn-text">Upload Image</span>
+                                        <input type="file" class="upload" name="image" accept="image/*">
+                                    </div>
+                                </div>
+                            </div>
+
                             <!-- Description -->
                             <div class="col-lg-12">
                                 <label>Description</label>

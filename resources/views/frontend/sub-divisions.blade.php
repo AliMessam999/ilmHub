@@ -3,7 +3,7 @@
 @section('content')
 
     <!-- start: Breadcrumb Section -->
-    <section class="tj-page-header rounded-0">
+    <section class="tj-page-header rounded-0" data-bg-image="{{ $sub_division->image ? asset($sub_division->image) : asset('') }}">
         <!-- <div class="slider-bg-image">
                  <video
                   data-speed="0.8"

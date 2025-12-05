@@ -125,6 +125,9 @@ class FeaturedController extends Controller
 
         // Handle image uploads (optional)
         if ($request->hasFile('image')) {
+            // Delete existing images
+            CdFeatureImage::where('feature_id', $id)->delete();
+            
             foreach ($request->file('image') as $item) {
                 $path = $item->store('upload/featured');
                 if (!$path) {

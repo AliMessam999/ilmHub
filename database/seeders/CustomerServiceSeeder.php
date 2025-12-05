@@ -2132,9 +2132,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Unlock the full potential of your data center with virtualization, consolidation, and optimization strategies that maximize efficiency.',
     'image' => 'upload/customer_services/DtiaC27m4bjYzGzsVJ5J85q32rlRSmkJTU4HlIhq.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-05 05:49:21',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-05 05:49:21',
   ),
   177 => 
   array (
@@ -2144,9 +2144,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Make the leap to cloud with confidence. Our cloud enablement services guide you through migration planning, hybrid cloud architecture design, and virtual desktop implementation.',
     'image' => 'upload/customer_services/GKOArm4T5wrfeR4QkUefUdHhOc9vDqgIUMSZF3w1.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-05 05:49:21',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-05 05:49:21',
   ),
   178 => 
   array (
@@ -2156,9 +2156,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Prepare for the unexpected with integrated Business Continuity and Disaster Recovery (BCDR) systems designed to protect your operations.',
     'image' => 'upload/customer_services/Pn6yFCzAmaKwfT0bfsJHFKYq1QstmzaHfxDn2G0U.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-05 05:49:21',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-05 05:49:21',
   ),
   179 => 
   array (
@@ -2168,9 +2168,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Break down silos and create digital continuity across your organization. Our process integration platforms connect systems, automate workflows, and ensure seamless data flow between departments.',
     'image' => 'upload/customer_services/V84LVUfE89zVnuAaP0bdKcTIXHQaDXF3cjGvQRyA.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-05 05:49:21',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-05 05:49:21',
   ),
   180 => 
   array (
@@ -2180,9 +2180,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Chart a clear path forward with enterprise architecture and technology roadmaps tailored to your business vision.',
     'image' => 'upload/customer_services/tnbf8456031xDtWi3lYRS32mVQ0IvP3JMcDF3jum.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-05 05:50:43',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-05 05:50:43',
   ),
   181 => 
   array (
@@ -2192,9 +2192,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Build data centers that combine physical robustness with logical excellence.',
     'image' => 'upload/customer_services/xpZHo0MhprMcZCjOBC6iAf3pRryDD77cKhWw8Jod.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-05 05:50:43',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-05 05:50:43',
   ),
   182 => 
   array (
@@ -2204,9 +2204,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Unlock better performance from your existing systems through expert optimization.',
     'image' => 'upload/customer_services/2vVc3bhkPdrh6CPGNEPl1B46aoaUNJ61iX7gdeQh.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-05 05:50:43',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-05 05:50:43',
   ),
   183 => 
   array (
@@ -2216,9 +2216,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Bring order to complexity with unified system integration and centralized infrastructure management.',
     'image' => 'upload/customer_services/br1QoYbXcFWWnLALbZ5zBxlFTt44I7knK4nJbijo.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-05 05:50:43',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-05 05:50:43',
   ),
   184 => 
   array (
@@ -2228,9 +2228,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Keep critical systems running with reliable power infrastructure designed for zero tolerance environments.',
     'image' => 'upload/customer_services/tEOT9AD7GZKgxDDbLofaTEmlg8gscSAqkL966AF8.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-05 05:50:43',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-05 05:50:43',
   ),
   185 => 
   array (
@@ -2240,9 +2240,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Build a fortress around your digital infrastructure with comprehensive network security solutions.',
     'image' => 'upload/customer_services/zy4oFVJOsSz3UPcc7zDcDgiANXIAGM5JwqFsOe4F.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-05 05:52:14',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-05 05:52:14',
   ),
   186 => 
   array (
@@ -2252,9 +2252,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Control who accesses what, when, and how with intelligent identity and access management systems.',
     'image' => 'upload/customer_services/1MTNEW4tlI54kvCqwNsDSMzDR6JNCSVxTqsrPYkL.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-05 05:52:14',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-05 05:52:14',
   ),
   187 => 
   array (
@@ -2264,9 +2264,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Protect your most valuable asset—your data—with military-grade encryption and security protocols.',
     'image' => 'upload/customer_services/O8uYuiFxreSNdwiI56KDZBXes7HgvCIZ9VBCQ1VM.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-05 05:52:14',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-05 05:52:14',
   ),
   188 => 
   array (
@@ -2276,9 +2276,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Navigate regulatory requirements with confidence through proven compliance framework implementation.',
     'image' => 'upload/customer_services/NDCbBkL5ZYCvl1iTKT89ZjF0fPZHIsr6dvdA26hw.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-05 05:52:14',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-05 05:52:14',
   ),
   189 => 
   array (
@@ -2288,9 +2288,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Stay one step ahead of threats with proactive security audits and comprehensive vulnerability assessments.',
     'image' => 'upload/customer_services/R6lGVPluDwx8ztD60M1f2d6nT20xlglL0lpA8T0r.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-05 05:52:14',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-05 05:52:14',
   ),
   190 => 
   array (
@@ -2300,9 +2300,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Power your operations with enterprise-grade compute and storage solutions built for demanding workloads.',
     'image' => 'upload/customer_services/FFPijeIrXFKb3OgfuzZtpwlSHGCXuBxqqfFHBpOz.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-05 05:53:45',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-05 05:53:45',
   ),
   191 => 
   array (
@@ -2312,9 +2312,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Connect your enterprise with intelligent, high-performance active network infrastructure.',
     'image' => 'upload/customer_services/zvJlFWbe6b7I8H3kos8jAfEujguK1UZvQ2XLNOcG.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-05 05:53:45',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-05 05:53:45',
   ),
   192 => 
   array (
@@ -2324,9 +2324,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Build the foundation of reliable connectivity with professionally designed passive network infrastructure.',
     'image' => 'upload/customer_services/HnsVzGfCEAfj3Ao970W3V6nM6E1QXpMaxtWjHohv.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-05 05:53:45',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-05 05:53:45',
   ),
   193 => 
   array (
@@ -2336,9 +2336,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Eliminate downtime with robust power and backup systems designed for mission-critical environments.',
     'image' => 'upload/customer_services/778ntBXRpQvA9ulc1vl8P3IjPcLsGKeBuy40BUqL.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-05 05:53:45',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-05 05:53:45',
   ),
   194 => 
   array (
@@ -2348,9 +2348,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Equip your workforce with the right tools for productivity and collaboration.',
     'image' => 'upload/customer_services/lxn1PuxtqvJiu7cV6w8RO3AZeg9DNVbgahFS6kwp.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-05 05:53:45',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-05 05:53:45',
   ),
   195 => 
   array (
@@ -4040,9 +4040,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Discover how your systems truly perform under pressure with comprehensive load and performance testing.',
     'image' => 'upload/customer_services/Jc7v4ok63r8n4XZsLiOE01rzKJM0FECzfBblyR6T.webp',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-05 06:24:47',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-05 06:24:47',
   ),
   336 => 
   array (
@@ -4052,9 +4052,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Guarantee business continuity with rigorous high availability and failover testing for critical systems.',
     'image' => 'upload/customer_services/jViH2ljrKTKCsazYW275tuX9xwkJPZmmNXtu68wI.webp',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-05 06:24:47',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-05 06:24:47',
   ),
   337 => 
   array (
@@ -4064,9 +4064,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Prepare for the unexpected with practical Business Continuity and Disaster Recovery drills that test your readiness.',
     'image' => 'upload/customer_services/BQGdMjs5L9rDoUp0yddGDp7xHVY3XHmBqzP3zdSl.webp',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-05 06:24:47',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-05 06:24:47',
   ),
   338 => 
   array (
@@ -4076,9 +4076,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Ensure seamless operation across complex, integrated environments with comprehensive QA for system integration projects. We validate data flows, API connections, cross-system functionality, and user workflows spanning multiple platforms and divisions.',
     'image' => 'upload/customer_services/F81fXNh2Yhi7BtzuNgG3APSmZTyhUBsivJayysxY.webp',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-05 06:24:47',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-05 06:24:47',
   ),
   339 => 
   array (
@@ -4412,9 +4412,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Efficiently separate cells and biomass from fermentation broth using optimized filtration and centrifugation technologies.',
     'image' => 'upload/customer_services/S0D5uDrFO5oSvVtAovDkjfcFBzJQ1GAZY3oy0SJm.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-05 06:28:13',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-05 06:28:13',
   ),
   367 => 
   array (
@@ -4424,9 +4424,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Achieve target purity specifications through expertly designed extraction and chromatographic purification strategies.',
     'image' => 'upload/customer_services/cOhNgknHcRhnK5cE9vJ26zBQDeQnKtfdxhtLHsNI.png',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-05 06:28:13',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-05 06:28:13',
   ),
   368 => 
   array (
@@ -4436,9 +4436,9 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Ensure product quality and consistency with comprehensive analytical quality assurance testing throughout downstream processing.',
     'image' => 'upload/customer_services/WeXvQVyE4d8l50k2vQp7M1W4FOkXwJVyALmJ9wjy.webp',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-05 06:28:13',
     'created_at' => NULL,
-    'updated_at' => NULL,
+    'updated_at' => '2025-12-05 06:28:13',
   ),
   369 => 
   array (
@@ -5300,6 +5300,318 @@ class CustomerServiceSeeder extends Seeder
     'label' => 'withImage',
     'description' => 'Maintain community relations and regulatory compliance through systematic noise, vibration, and blast monitoring programs.',
     'image' => 'upload/customer_services/c96wdQje746yqrJuF0o8BktIb4h16TcDLnpXkSf7.webp',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  441 => 
+  array (
+    'id' => 532,
+    'solution_id' => 117,
+    'title' => 'Data Center Modernization',
+    'label' => 'withImage',
+    'description' => 'Unlock the full potential of your data center with virtualization, consolidation, and optimization strategies that maximize efficiency.',
+    'image' => 'upload/customer_services/37aCbSrnhLmVTAanLYOgPMQFb25O9jkmZzEm4UxN.jpg',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  442 => 
+  array (
+    'id' => 533,
+    'solution_id' => 117,
+    'title' => 'Cloud Enablement',
+    'label' => 'withImage',
+    'description' => 'Make the leap to cloud with confidence. Our cloud enablement services guide you through migration planning, hybrid cloud architecture design, and virtual desktop implementation.',
+    'image' => 'upload/customer_services/ay5UGDukVtABBLpvMzchcm1P7YaNUu4mwIotJEPr.webp',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  443 => 
+  array (
+    'id' => 534,
+    'solution_id' => 117,
+    'title' => 'Business Continuity Modernization',
+    'label' => 'withImage',
+    'description' => 'Prepare for the unexpected with integrated Business Continuity and Disaster Recovery (BCDR) systems designed to protect your operations.',
+    'image' => 'upload/customer_services/k0nePELA7VU8JsJIigrNCFmpFv3a9GaMqK5y7sY6.jpg',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  444 => 
+  array (
+    'id' => 535,
+    'solution_id' => 117,
+    'title' => 'Process Integration Platforms',
+    'label' => 'withImage',
+    'description' => 'Break down silos and create digital continuity across your organization. Our process integration platforms connect systems, automate workflows, and ensure seamless data flow between departments.',
+    'image' => 'upload/customer_services/ueQyEQnz2MyWBB1V9P9a1rOk5nq97THjxb1TloGi.webp',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  445 => 
+  array (
+    'id' => 536,
+    'solution_id' => 118,
+    'title' => 'Enterprise Architecture & Technology Roadmaps',
+    'label' => 'withImage',
+    'description' => 'Chart a clear path forward with enterprise architecture and technology roadmaps tailored to your business vision.',
+    'image' => 'upload/customer_services/RJMdxhv6zN3qeMBblIFNS6cIPUCmcXQS8bqSAOrG.jpg',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  446 => 
+  array (
+    'id' => 537,
+    'solution_id' => 118,
+    'title' => 'Data Center Design & Implementation',
+    'label' => 'withImage',
+    'description' => 'Build data centers that combine physical robustness with logical excellence.',
+    'image' => 'upload/customer_services/Be6wvCdEZnelgtDQs95WoZ5oP8A9WMDMOdr476MW.jpg',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  447 => 
+  array (
+    'id' => 538,
+    'solution_id' => 118,
+    'title' => 'Database & Platform Optimization',
+    'label' => 'withImage',
+    'description' => 'Unlock better performance from your existing systems through expert optimization.',
+    'image' => 'upload/customer_services/QEVLEwUulnuTIAqX48gS6Qe9PbmX4NvmuzyLmSgw.webp',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  448 => 
+  array (
+    'id' => 539,
+    'solution_id' => 118,
+    'title' => 'System Integration & Infrastructure Management',
+    'label' => 'withImage',
+    'description' => 'Bring order to complexity with unified system integration and centralized infrastructure management.',
+    'image' => 'upload/customer_services/NZsAAzFzCUHQynoJHnuMkmaiJJW8F2VvmIWNTSxd.webp',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  449 => 
+  array (
+    'id' => 540,
+    'solution_id' => 118,
+    'title' => 'Power Infrastructure for Mission-Critical ICT',
+    'label' => 'withImage',
+    'description' => 'Keep critical systems running with reliable power infrastructure designed for zero tolerance environments.',
+    'image' => 'upload/customer_services/pjwV4mYMYY39WWUr0WWEtzyWqPfUoipIbCGoG7PN.jpg',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  450 => 
+  array (
+    'id' => 541,
+    'solution_id' => 119,
+    'title' => 'Network Security',
+    'label' => 'withImage',
+    'description' => 'Build a fortress around your digital infrastructure with comprehensive network security solutions.',
+    'image' => 'upload/customer_services/9HFAhLaA754AH7T6WBOhKWAf26GDb0Zr8cdAF6WL.jpg',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  451 => 
+  array (
+    'id' => 542,
+    'solution_id' => 119,
+    'title' => 'Access Control & Identity Management',
+    'label' => 'withImage',
+    'description' => 'Control who accesses what, when, and how with intelligent identity and access management systems.',
+    'image' => 'upload/customer_services/VoOyIV9zKBDbG9rwxD0JuvmkmCoBJtcEczokQGXY.webp',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  452 => 
+  array (
+    'id' => 543,
+    'solution_id' => 119,
+    'title' => 'Data Security & Encryption',
+    'label' => 'withImage',
+    'description' => 'Protect your most valuable asset—your data—with military-grade encryption and security protocols.',
+    'image' => 'upload/customer_services/Pbz8njtdEKQ8AjEZhh2GV83bZyXO8fFfgH2clS6Q.webp',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  453 => 
+  array (
+    'id' => 544,
+    'solution_id' => 119,
+    'title' => 'Compliance Frameworks',
+    'label' => 'withImage',
+    'description' => 'Navigate regulatory requirements with confidence through proven compliance framework implementation.',
+    'image' => 'upload/customer_services/xTZWh0P77kmkT3QUA4iYsm8C0x9tjbaAMIcb5mBB.webp',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  454 => 
+  array (
+    'id' => 545,
+    'solution_id' => 119,
+    'title' => 'Security Audits & Vulnerability Assessments',
+    'label' => 'withImage',
+    'description' => 'Stay one step ahead of threats with proactive security audits and comprehensive vulnerability assessments.',
+    'image' => 'upload/customer_services/80XMzL6EOnANfmgEfjZQ57Sv8ODcBSozM6nObyZf.webp',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  455 => 
+  array (
+    'id' => 546,
+    'solution_id' => 120,
+    'title' => 'Compute & Storage Systems',
+    'label' => 'withImage',
+    'description' => 'Power your operations with enterprise-grade compute and storage solutions built for demanding workloads.',
+    'image' => 'upload/customer_services/GIJTuXnQHjvNtxuLcqMykeniSsAGQVCzSa80KFza.webp',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  456 => 
+  array (
+    'id' => 547,
+    'solution_id' => 120,
+    'title' => 'Network Infrastructure – Active',
+    'label' => 'withImage',
+    'description' => 'Connect your enterprise with intelligent, high-performance active network infrastructure.',
+    'image' => 'upload/customer_services/88mgZrSN7RILlfNrwe8ufT71FOb5bDzJqPIHFEz9.webp',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  457 => 
+  array (
+    'id' => 548,
+    'solution_id' => 120,
+    'title' => 'Network Infrastructure – Passive',
+    'label' => 'withImage',
+    'description' => 'Build the foundation of reliable connectivity with professionally designed passive network infrastructure.',
+    'image' => 'upload/customer_services/GkkdSspJAZJEv5bnmoJeg3CYoO1AtdZ7BCDTOFKF.webp',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  458 => 
+  array (
+    'id' => 549,
+    'solution_id' => 120,
+    'title' => 'Power & Backup Systems',
+    'label' => 'withImage',
+    'description' => 'Eliminate downtime with robust power and backup systems designed for mission-critical environments.',
+    'image' => 'upload/customer_services/bdyM6gdzpuyC52guavIxdaydrOv95UQ8EKSS2ldo.webp',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  459 => 
+  array (
+    'id' => 550,
+    'solution_id' => 120,
+    'title' => 'Peripherals & End-User Devices',
+    'label' => 'withImage',
+    'description' => 'Equip your workforce with the right tools for productivity and collaboration.',
+    'image' => 'upload/customer_services/ubLDp9guXVETUouZODMQfbrDzdk49KT2p4iVTh1k.webp',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  460 => 
+  array (
+    'id' => 551,
+    'solution_id' => 121,
+    'title' => 'Load & Performance Testing',
+    'label' => 'withImage',
+    'description' => 'Discover how your systems truly perform under pressure with comprehensive load and performance testing.',
+    'image' => 'upload/customer_services/Jc7v4ok63r8n4XZsLiOE01rzKJM0FECzfBblyR6T.webp',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  461 => 
+  array (
+    'id' => 552,
+    'solution_id' => 121,
+    'title' => 'High Availability / Failover Validation',
+    'label' => 'withImage',
+    'description' => 'Guarantee business continuity with rigorous high availability and failover testing for critical systems.',
+    'image' => 'upload/customer_services/jViH2ljrKTKCsazYW275tuX9xwkJPZmmNXtu68wI.webp',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  462 => 
+  array (
+    'id' => 553,
+    'solution_id' => 121,
+    'title' => 'BCDR Drills & Simulation Testing',
+    'label' => 'withImage',
+    'description' => 'Prepare for the unexpected with practical Business Continuity and Disaster Recovery drills that test your readiness.',
+    'image' => 'upload/customer_services/BQGdMjs5L9rDoUp0yddGDp7xHVY3XHmBqzP3zdSl.webp',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  463 => 
+  array (
+    'id' => 554,
+    'solution_id' => 121,
+    'title' => 'QA for Software & System Integration Projects',
+    'label' => 'withImage',
+    'description' => 'Ensure seamless operation across complex, integrated environments with comprehensive QA for system integration projects. We validate data flows, API connections, cross-system functionality, and user workflows spanning multiple platforms and divisions.',
+    'image' => 'upload/customer_services/F81fXNh2Yhi7BtzuNgG3APSmZTyhUBsivJayysxY.webp',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  464 => 
+  array (
+    'id' => 555,
+    'solution_id' => 132,
+    'title' => 'Biomass Separation (Filtration, Centrifugation)',
+    'label' => 'withImage',
+    'description' => 'Efficiently separate cells and biomass from fermentation broth using optimized filtration and centrifugation technologies.',
+    'image' => 'upload/customer_services/S0D5uDrFO5oSvVtAovDkjfcFBzJQ1GAZY3oy0SJm.png',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  465 => 
+  array (
+    'id' => 556,
+    'solution_id' => 132,
+    'title' => 'Extraction & Purification (Chromatography, HPLC)',
+    'label' => 'withImage',
+    'description' => 'Achieve target purity specifications through expertly designed extraction and chromatographic purification strategies.',
+    'image' => 'upload/customer_services/cOhNgknHcRhnK5cE9vJ26zBQDeQnKtfdxhtLHsNI.png',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  466 => 
+  array (
+    'id' => 557,
+    'solution_id' => 132,
+    'title' => 'Analytical QA for Bioproducts',
+    'label' => 'withImage',
+    'description' => 'Ensure product quality and consistency with comprehensive analytical quality assurance testing throughout downstream processing.',
+    'image' => 'upload/customer_services/WeXvQVyE4d8l50k2vQp7M1W4FOkXwJVyALmJ9wjy.webp',
     'deleted_at' => NULL,
     'created_at' => NULL,
     'updated_at' => NULL,
