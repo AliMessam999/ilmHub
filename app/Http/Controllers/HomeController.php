@@ -195,10 +195,9 @@ class HomeController extends Controller
         $validator = Validator::make($request->all(), [
             'name' => 'required',
             'email' => ['required', Rule::unique('cd_contacts')],
-            'phone_no' => 'required',
+            'phone' => 'required',
             'subject' => 'required',
             'message' => 'required',
-
         ]);
 
         if ($validator->fails()) {
@@ -214,13 +213,17 @@ class HomeController extends Controller
         $contact = new CdContact();
         $contact->name = $request->name;
         $contact->email = $request->email;
-        $contact->phone = $request->phone_no;
+        $contact->phone = $request->phone;
         $contact->subject = $request->subject;
         $contact->message = $request->message;
         $contact->ip = $localIpAddress;
         if ($contact->save()) {
+            $confirmationToken = 'CD' . str_pad($contact->id, 6, '0', STR_PAD_LEFT);
+            $redirectUrl = $request->input('redirect_to') === 'home' ? route('home') : null;
             return response()->json([
-                'message' => 'Thanks for contact us. Please wait for the reply.'
+                'message' => 'Thanks for contact us. Please wait for the reply.',
+                // 'confirmation_token' => $confirmationToken,
+                'redirect' => $redirectUrl
             ], 200);
         } else {
             return response()->json([

@@ -95,6 +95,7 @@
                         </h3>
                         <form id="contact-form" method="POST" action="{{ route('contact.store') }}">
                             @csrf
+                            <input type="hidden" name="redirect_to" value="home">
                             <div class="row">
                                 <div class="col-sm-6">
                                     <div class="form-input">
@@ -178,6 +179,7 @@
 
     @push('styles')
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
         <style>
             #map {
                 height: 100%;
@@ -227,6 +229,7 @@
 
     @push('scripts')
         <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
         <script>
             // Coordinates for the cities
             const cities = [
@@ -320,6 +323,63 @@
 
             // Make map keyboard accessible: focus on map container
             document.getElementById("map").tabIndex = 0;
+        </script>
+        
+        <script>
+            document.getElementById('contact-form').addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                const formData = new FormData(this);
+                
+                fetch(this.action, {
+                    method: 'POST',
+                    body: formData,
+                    headers: {
+                        'X-Requested-With': 'XMLHttpRequest',
+                        'Accept': 'application/json'
+                    }
+                })
+                .then(response => {
+                    if (response.status === 302) {
+                        return response.json().then(data => {
+                            toastr.options = { 'progressBar': true };
+                            toastr.info(data.message, 'Message already sent. Wait for response.');
+                        });
+                    }
+                    return response.json().then(data => {
+                        toastr.options = { 'progressBar': true };
+                        
+                        const message = data.confirmation_token ? 
+                            `${data.message} Your confirmation token: ${data.confirmation_token}` : 
+                            data.message;
+                        
+                        toastr.success(message, 'Success');
+                        
+                        if (data.redirect) {
+                            setTimeout(() => {
+                                window.location.href = data.redirect;
+                            }, 2000);
+                        }
+                    });
+                })
+                .catch(error => {
+                    fetch(this.action, {
+                        method: 'POST',
+                        body: formData
+                    })
+                    .then(response => response.json())
+                    .then(errorData => {
+                        if (errorData.message && errorData.message.includes('already sent')) {
+                            toastr.info(errorData.message, 'Info');
+                        } else {
+                            toastr.error('An error occurred. Please try again.', 'Error');
+                        }
+                    })
+                    .catch(() => {
+                        toastr.error('An error occurred. Please try again.', 'Error');
+                    });
+                });
+            });
         </script>
     @endpush
 @endsection

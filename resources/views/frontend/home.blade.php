@@ -126,6 +126,8 @@
         });
         </script>
 
+
+
     @php
         use App\Models\CdSkill;
         use App\Models\CdCoreValue;
@@ -500,41 +502,36 @@
                                 Drop Us a <span>Line</span>
                             </h2>
                         </div>
-                        <form id="contact-form-2">
+                        <form id="contact-form-2" method="POST" action="{{ route('contact.store') }}">
+                            @csrf
                             <div class="row wow fadeInUp" data-wow-delay=".5s">
                                 <div class="col-sm-6">
                                     <div class="form-input">
-                                        <input type="text" name="cfName2" placeholder="Full Name *" />
+                                        <input type="text" name="name" placeholder="Full Name *" required />
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="form-input">
-                                        <input type="email" name="cfEmail2" placeholder="Email Address *" />
+                                        <input type="email" name="email" placeholder="Email Address *" required />
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="form-input">
-                                        <input type="tel" name="cfPhone2" placeholder="Phone number *" />
+                                        <input type="tel" name="phone" placeholder="Phone number *" required />
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="form-input">
                                         <div class="tj-nice-select-box">
                                             <div class="tj-select">
-                                                <select name="cfSubject2">
-                                                    <option value="0">Chose a option</option>
-                                                    <option value="1">Business Strategy</option>
-                                                    <option value="2">Customer Experience</option>
-                                                    <option value="3">
-                                                        Sustainability and ESG
-                                                    </option>
-                                                    <option value="4">
-                                                        Training and Development
-                                                    </option>
-                                                    <option value="5">
-                                                        IT Support & Maintenance
-                                                    </option>
-                                                    <option value="6">Marketing Strategy</option>
+                                                <select name="subject" required>
+                                                    <option value="">Choose an option</option>
+                                                    <option value="Business Strategy">Business Strategy</option>
+                                                    <option value="Customer Experience">Customer Experience</option>
+                                                    <option value="Sustainability and ESG">Sustainability and ESG</option>
+                                                    <option value="Training and Development">Training and Development</option>
+                                                    <option value="IT Support & Maintenance">IT Support & Maintenance</option>
+                                                    <option value="Marketing Strategy">Marketing Strategy</option>
                                                 </select>
                                             </div>
                                         </div>
@@ -542,11 +539,11 @@
                                 </div>
                                 <div class="col-sm-12">
                                     <div class="form-input message-input">
-                                        <textarea name="cfMessage2" id="message" placeholder="Type message *"></textarea>
+                                        <textarea name="message" placeholder="Type message *" required></textarea>
                                     </div>
                                 </div>
                                 <div class="submit-btn">
-                                    <button class="tj-primary-btn" type="submit">
+                                    <button class="tj-primary-btn" type="button" onclick="submitHomeForm()">
                                         <span class="btn-text"><span>Send Message</span></span>
                                         <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
                                     </button>
@@ -567,4 +564,43 @@
     <!-- end: Contact Section -->
 
     
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+    
+    <script>
+        function submitHomeForm() {
+            var form = document.getElementById('contact-form-2');
+            var formData = new FormData(form);
+            
+            fetch('{{ route("contact.store") }}', {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'X-Requested-With': 'XMLHttpRequest'
+                }
+            })
+            .then(response => {
+                if (response.status === 302) {
+                    return response.json().then(data => {
+                        toastr.options = { 'progressBar': true };
+                        toastr.info(data.message, 'Info');
+                    });
+                }
+                return response.json().then(data => {
+                    toastr.options = { 'progressBar': true };
+                    
+                    var message = data.confirmation_token ? 
+                        data.message + ' Your confirmation token: ' + data.confirmation_token : 
+                        data.message;
+                    
+                    toastr.success(message, 'Success');
+                    form.reset();
+                });
+            })
+            .catch(error => {
+                toastr.options = { 'progressBar': true };
+                toastr.error('An error occurred. Please try again.', 'Error');
+            });
+        }
+    </script>
 @endsection
