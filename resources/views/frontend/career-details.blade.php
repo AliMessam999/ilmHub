@@ -5,7 +5,7 @@
 <!-- start: Breadcrumb Section -->
 <section
     class="tj-page-header rounded-0"
-    data-bg-image="{{ $career->image ? '/'.$career->image : '/frontend_assets/images/bg/pheader-bg.webp' }}">
+    data-bg-image="{{ $career->image ? '/'.$career->image : '' }}">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
