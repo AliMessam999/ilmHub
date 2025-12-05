@@ -2,7 +2,7 @@
 
 @section('content')
     <!-- start: Breadcrumb Section -->
-    <section class="tj-page-header rounded-0" data-bg-image="{{ asset('frontend_assets/images/bg/pheader-bg.webp') }}">
+    <section class="tj-page-header rounded-0" data-bg-image="">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
