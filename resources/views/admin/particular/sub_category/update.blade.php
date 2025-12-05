@@ -50,6 +50,25 @@
                             </div>
                         </div>
 
+                        <!-- Image -->
+                        <div class="col-lg-6">
+                            <label>Image</label>
+                            <div class="d-flex gap-5 align-items-center h-100">
+                                <div class="fileupload btn btn_1 radius_btn btn-anim">
+                                    <i class="fa fa-upload"></i>
+                                    <span class="btn-text">Upload Image</span>
+                                    <input type="file" class="upload" name="image" accept="image/*">
+                                </div>
+                                @if($menu->image)
+                                    <div class="img-upload-wrap">
+                                        <div class="image-preview" style="position: relative; display: inline-block; margin: 5px;">
+                                            <img src="{{ asset($menu->image) }}" class="image-list" alt="Current Image" style="height:100px; width:100px; object-fit:cover; border-radius:5px;">
+                                        </div>
+                                    </div>
+                                @endif
+                            </div>
+                        </div>
+
                         <!-- Submit -->
                         <div class="col-12">
                             <div class="create_report_btn mt_30">
@@ -132,6 +151,22 @@
                 array.forEach(element => popup(element));
             }
         });
+    });
+
+    // Image preview functionality
+    $('input[name="image"]').on('change', function(event) {
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                $('.img-upload-wrap').html(`
+                    <div class="image-preview" style="position: relative; display: inline-block; margin: 5px;">
+                        <img src="${e.target.result}" class="image-list" alt="Selected Image" style="height:100px; width:100px; object-fit:cover; border-radius:5px;">
+                    </div>
+                `);
+            };
+            reader.readAsDataURL(file);
+        }
     });
 </script>
 @stop

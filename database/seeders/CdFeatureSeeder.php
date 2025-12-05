@@ -14,7 +14,7 @@ class CdFeatureSeeder extends Seeder
   0 => 
   array (
     'id' => 28,
-    'title' => 'Billing Infrastructure',
+    'title' => 'AJ&K Consumer Billing System',
     'description' => '<h2>Building First Unified Province-Wide Digital Utility System</h2>
 
 <h3>How CDigital Modernized AJKED&rsquo;s Consumer Billing Infrastructure &amp; Administrative Systems at Scale</h3>
@@ -49,13 +49,13 @@ class CdFeatureSeeder extends Seeder
     'icon' => 'alt',
     'deleted_at' => NULL,
     'created_at' => '2025-12-03 18:12:01',
-    'updated_at' => '2025-12-04 08:42:36',
+    'updated_at' => '2025-12-05 06:45:29',
     'image' => NULL,
   ),
   1 => 
   array (
     'id' => 30,
-    'title' => 'Driving License Management',
+    'title' => 'Computerization of Driving Licenses in AJ&K',
     'description' => '<h2>Transforming Driving License Management in AJ&amp;K</h2>
 
 <h3>How CDigital Digitalized an Entire Provincial Licensing System &mdash; Enhancing Security, Speed &amp; Public Trust</h3>
@@ -95,7 +95,7 @@ class CdFeatureSeeder extends Seeder
     'icon' => 'Alt',
     'deleted_at' => NULL,
     'created_at' => '2025-12-04 18:20:09',
-    'updated_at' => '2025-12-04 18:20:09',
+    'updated_at' => '2025-12-05 06:43:15',
     'image' => NULL,
   ),
 );
