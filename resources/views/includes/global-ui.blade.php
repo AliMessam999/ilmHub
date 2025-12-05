@@ -44,9 +44,7 @@
           </div>
           <div class="offcanvas-text">
             <p>
-              Developing personalize our customer journeys to increase
-              satisfaction & loyalty of our expansion recognized by industry
-              leaders.
+              Turning complex challenges into transformative outcomes through advanced, integrated, and future-ready technologies
             </p>
           </div>
           <!-- <div class="hamburger-search-area">
@@ -70,7 +68,15 @@
               <div class="contact-item">
                 <span class="subtitle">Phone</span>
                 <a class="contact-link" href="tel:10095447818"
-                  >+1 (009) 544-7818</a
+                  >+92-51-5915790</a
+                >
+                <br>
+                <a class="contact-link" href="tel:10095447818"
+                  >+92-51-5915591</a
+                >
+                <br>
+                <a class="contact-link" href="tel:10095447818"
+                  >+92-51-5915992</a
                 >
               </div>
               <div class="contact-item">
@@ -82,7 +88,7 @@
               <div class="contact-item mb-0">
                 <span class="subtitle">Location</span>
                 <span class="contact-link"
-                  >993 Renner Burg, West Rond, MT 94251-030</span
+                  >Platino Mall, 2nd Floor, D-Markaz Gulberg Green Islamabad</span
                 >
               </div>
             </div>
