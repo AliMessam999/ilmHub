@@ -102,6 +102,19 @@ The Torah, which is part of the Bible, has commanded that the same be done to th
     'created_at' => '2025-06-04 00:03:20',
     'updated_at' => '2025-06-04 00:03:20',
   ),
+  1 => 
+  array (
+    'id' => 19,
+    'name' => 'Ali Messam',
+    'email' => 'hadi@gmail.com',
+    'phone' => '03145698745',
+    'subject' => 'Business Strategy',
+    'message' => 'zzzzzzzzzzzzzzz',
+    'ip' => '192.168.18.243',
+    'deleted_at' => NULL,
+    'created_at' => '2025-12-05 11:16:32',
+    'updated_at' => '2025-12-05 11:16:32',
+  ),
 );
         DB::table('cd_contacts')->insert($data);
     }
