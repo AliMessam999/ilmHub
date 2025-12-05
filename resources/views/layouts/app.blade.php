@@ -3,6 +3,7 @@
 
 <head>
     @include('includes.head')
+    @stack('styles')
 </head>
 
 <body>
@@ -16,7 +17,9 @@
             <main id="primary" class="site-main">
                 @yield('content')
 
-                <x-cta-section />
+                @unless(request()->is('contact') || request()->is('about_us'))
+                    <x-cta-section />
+                @endunless
             </main>
          
 
@@ -26,6 +29,7 @@
     </div>
 
     @include('includes.scripts')
+    @stack('scripts')
 </body>
 
 </html>

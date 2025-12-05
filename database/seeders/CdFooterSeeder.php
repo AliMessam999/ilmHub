@@ -14,13 +14,13 @@ class CdFooterSeeder extends Seeder
   0 => 
   array (
     'id' => 1,
-    'title' => 'Your next digital step starts here',
+    'title' => 'Your Next Digital Step Starts Here',
     'menu_id' => 12,
     'category_id' => NULL,
     'sub_category_id' => NULL,
     'deleted_at' => NULL,
     'created_at' => '2025-12-01 12:30:02',
-    'updated_at' => '2025-12-02 05:04:45',
+    'updated_at' => '2025-12-04 09:35:09',
   ),
   1 => 
   array (

@@ -735,6 +735,18 @@ class CdCategorySeeder extends Seeder
     'menu_id' => NULL,
     'description' => NULL,
   ),
+  54 => 
+  array (
+    'id' => 116,
+    'title' => 'Leadership & Team',
+    'slug' => 'leadership-team',
+    'parent' => NULL,
+    'deleted_at' => NULL,
+    'created_at' => '2025-12-04 10:20:34',
+    'updated_at' => '2025-12-04 10:20:34',
+    'menu_id' => 6,
+    'description' => NULL,
+  ),
 );
         DB::table('cd_categories')->insert($data);
     }
