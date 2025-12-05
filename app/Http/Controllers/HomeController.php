@@ -139,10 +139,12 @@ class HomeController extends Controller
          $certificates = CdOffer::where('position','top')->whereHas('Category',function($query){
             return $query->where('title','LIKE','Leadership & Team');
         })->get();
+        // dd($certificates);
         $registrations =  CdOffer::where('position','bottom')->whereHas('Category',function($query){
             return $query->where('title','LIKE','Leadership & Team');
         })->get();
-
+        // dd($registrations);
+        
         $expertise = CdOffer::where('position','top')->whereHas('Category',function($query){
             return $query->where('title', 'Company Overview');
         })->get();
@@ -184,7 +186,7 @@ class HomeController extends Controller
     public function contactPage()
     {
         $contact = CdProfile::first();
-        return view('contact', compact('contact'));
+        return view('frontend.contact', compact('contact'));
     }
     public function contactus(Request $request)
     {

@@ -164,7 +164,7 @@
                             </div> --}}
                             <div class="project-text">
                                 {{-- <span>Details</span> --}}
-                                <p class="title">
+                                <p class="">
                                     {{ $caseStudy->user_details }}
                                 </p>
                             </div>

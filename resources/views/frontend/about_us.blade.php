@@ -67,12 +67,6 @@
                                     Powering Industries with Innovative <span>Solutions</span>
                                 </h2>
                             </div>
-                            <div class="btn-wrap wow fadeInUp" data-wow-delay=".6s">
-                                <a class="tj-primary-btn" href="contact.html">
-                                    <span class="btn-text"><span>Request a Call</span></span>
-                                    <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
-                                </a>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -150,8 +144,8 @@
                         </div>
                     </div>
                     <div class="about-btn-area wow fadeInUp" data-wow-delay=".6s">
-                        <a class="tj-primary-btn" href="{{ url('about_us') }}">
-                            <span class="btn-text"><span>Learn More About Us</span></span>
+                        <a class="tj-primary-btn" href="{{ url('contact') }}">
+                            <span class="btn-text"><span>Get In Touch</span></span>
                             <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
                         </a>
                     </div>
@@ -166,9 +160,6 @@
         </div>
     </section>
     <!-- end: About Section -->
-
-
-
 
     <!-- start: Team Section -->
     <section class="tj-team-section-3 section-gap section-gap-x">
@@ -193,29 +184,13 @@
                                 <div class="team-img-inner">
                                     <img src="/{{ $item->image }}" alt="{{ $item->alt }}" />
                                 </div>
-                                <!-- <div class="social-links">
-                                <ul>
-                                    <li>
-                                        <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="https://x.com/" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-                                    </li>
-                                </ul>
-                            </div> -->
                             </div>
                             <div class="team-content">
                                 <h4 class="title">
                                     <a href="#">{{ $item->name }}</a>
                                 </h4>
                                 <span class="designation">{{ $item->designation }}</span>
-                                <a class="mail-at" href="#"><i class="tji-at"></i></a>
+                                {{-- <a class="mail-at" href="#"><i class="tji-at"></i></a> --}}
                             </div>
                         </div>
                     </div>
@@ -234,9 +209,8 @@
 
     <section class="division-section py-5">
         <div class="container-fluid px-5">
-
             <!-- 🟦 Registrations -->
-            <h2 class="mb-4 text-start">Registrations</h2>
+            <h2 class="mb-4 text-start">Registrations / Certificates</h2>
             <div class="row g-4">
                 <!-- Card 1 -->
                 @foreach ($certificates as $certificate)
@@ -252,12 +226,24 @@
                         </div>
                     </div>
                 @endforeach
-
-
+                <!-- Card 2 -->
+                @foreach ($registrations as $registration)
+                    <div class="col-md-4 col-sm-6">
+                        <div class="card text-center shadow-sm h-100">
+                            <div class="card-body">
+                                <div class="certifications-box">
+                                    <img src="/{{ $registration->image }}" alt="{{ $registration->alt }}"
+                                        class="img-fluid mb-3">
+                                    <p class="card-text mb-1">{!! $registration->title !!}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                @endforeach
             </div>
 
             <!-- 🟩 Certifications -->
-            <div class="mt-5">
+            {{-- <div class="mt-5">
                 <h2 class="mb-4 text-start">Certifications</h2>
                 <div class="row justify-content-start">
                     @foreach ($registrations as $registration)
@@ -275,7 +261,7 @@
                         </div>
                     @endforeach
                 </div>
-            </div>
+            </div> --}}
         </div>
     </section>
 @endsection

@@ -10,6 +10,20 @@
     .division-item:hover + .division-item:not(:hover){
         z-index: -1;
     }
+    
+    .project-item {
+        height: 400px !important;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .project-content {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 20px;
+    }
 
 </style>
 
