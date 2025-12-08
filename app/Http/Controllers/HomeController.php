@@ -201,10 +201,12 @@ class HomeController extends Controller
         ]);
 
         if ($validator->fails()) {
-            return response()->json($validator->errors(), 302);
+            $errors = $validator->errors();
+            $errorMessage = $errors->first();
+            return response()->json(['message' => $errorMessage], 302);
         }
 
-        if (CdContact::where('ip', $localIpAddress)->count() > 0) {
+        if (CdContact::where('ip', $localIpAddress)->whereNull('deleted_at')->count() > 0) {
             return response()->json([
                 'message' => 'You have already sent a message. Please wait for the reply.'
             ], 302);
@@ -221,7 +223,7 @@ class HomeController extends Controller
             $confirmationToken = 'CD' . str_pad($contact->id, 6, '0', STR_PAD_LEFT);
             $redirectUrl = $request->input('redirect_to') === 'home' ? route('home') : null;
             return response()->json([
-                'message' => 'Thanks for contact us. Please wait for the reply.',
+                'message' => 'Thanks for contacting us. Please wait for the reply.',
                 // 'confirmation_token' => $confirmationToken,
                 'redirect' => $redirectUrl
             ], 200);

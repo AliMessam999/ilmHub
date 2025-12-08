@@ -23,29 +23,32 @@ toastr.options = {
     'progressBar': true,
 }
 
-var SweetAlert = function () { };
-
-//examples 
-SweetAlert.prototype.init = function () {
-
-
-function deleteItem(id,url,message){
-    console.log(id,url,message);
-    swal({
-        title: "Are you sure?",
-        text: "You will not be able to recover this imaginary file!",
-        type: "warning",
+function deleteItem(id, url, message) {
+    Swal.fire({
+        title: 'Are you sure?',
+        text: "You won't be able to revert this!",
+        icon: 'warning',
         showCancelButton: true,
-        confirmButtonColor: "#fcb03b",
-        confirmButtonText: "Yes, delete it!",
-        closeOnConfirm: false
-    }, function () {
-        swal("Deleted!", "Your imaginary file has been deleted.", "success");
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Yes, delete it!'
+    }).then((result) => {
+        if (result.isConfirmed) {
+            $.ajax({
+                url: url + '/' + id,
+                type: 'DELETE',
+                headers: {'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')},
+                success: function(response) {
+                    Swal.fire('Deleted!', response.message, 'success');
+                    location.reload();
+                },
+                error: function(xhr) {
+                    Swal.fire('Error!', 'Something went wrong.', 'error');
+                }
+            });
+        }
     });
-    return false;
 }
-  
-};
 
 function popup(message, success) {
     if (success) {
