@@ -26,6 +26,7 @@ use App\Http\Controllers\SubCategoryController;
 use App\Http\Controllers\TermConditionController;
 use App\Http\Controllers\CompanyProfileController;
 use App\Http\Controllers\FooterController;
+use App\Http\Controllers\ContactController;
 
 /*
 |--------------------------------------------------------------------------
@@ -271,6 +272,11 @@ Route::middleware('authwithadmin')->controller(CompanyProfileController::class)-
 Route::middleware('authwithadmin')->controller(SeoController::class)->group(function () {
     Route::get('/admin/seo/update/{type}/{id}', 'update_seo_view');
     Route::post('/admin/seo/update/{id}', 'update_seo');
+});
+
+Route::middleware('authwithadmin')->controller(ContactController::class)->group(function () {
+    Route::get('/admin/contact', 'show_contact')->name('contact_list');
+    Route::delete('/admin/contact/delete/{id}', 'delete_contact');
 });
 
 

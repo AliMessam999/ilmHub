@@ -504,6 +504,7 @@
                         </div>
                         <form id="contact-form-2" method="POST" action="{{ route('contact.store') }}">
                             @csrf
+                            <input type="hidden" name="redirect_to" value="home">
                             <div class="row wow fadeInUp" data-wow-delay=".5s">
                                 <div class="col-sm-6">
                                     <div class="form-input">
@@ -562,11 +563,14 @@
         </div>
     </section>
     <!-- end: Contact Section -->
+@endsection
 
-    
+@push('styles')
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
+@endpush
+
+@push('scripts')
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
-    
     <script>
         function submitHomeForm() {
             var form = document.getElementById('contact-form-2');
@@ -576,31 +580,27 @@
                 method: 'POST',
                 body: formData,
                 headers: {
-                    'X-Requested-With': 'XMLHttpRequest'
+                    'X-Requested-With': 'XMLHttpRequest',
+                    'Accept': 'application/json'
                 }
             })
             .then(response => {
                 if (response.status === 302) {
                     return response.json().then(data => {
                         toastr.options = { 'progressBar': true };
-                        toastr.info(data.message, 'Info');
+                        toastr.info(data.message);
                     });
                 }
                 return response.json().then(data => {
                     toastr.options = { 'progressBar': true };
-                    
-                    var message = data.confirmation_token ? 
-                        data.message + ' Your confirmation token: ' + data.confirmation_token : 
-                        data.message;
-                    
-                    toastr.success(message, 'Success');
+                    toastr.success(data.message);
                     form.reset();
                 });
             })
             .catch(error => {
                 toastr.options = { 'progressBar': true };
-                toastr.error('An error occurred. Please try again.', 'Error');
+                toastr.error('An error occurred. Please try again.');
             });
         }
     </script>
-@endsection
+@endpush

@@ -256,6 +256,16 @@
                 </a>
             </li>
             @endif
+            <li>
+                <a href="/admin/contact" aria-expanded="false">
+                    <div class="nav_icon_small">
+                        <i class="fa fa-envelope" style="color:#048391"></i>
+                    </div>
+                    <div class="nav_title">
+                        <span>Contact Messages</span>
+                    </div>
+                </a>
+            </li>
         </ul>
     </nav>
 
