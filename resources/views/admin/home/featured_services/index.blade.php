@@ -8,7 +8,7 @@
                     <div class="white_card_body">
                         <div class="QA_section">
                             <div class="white_box_tittle list_header d-flex">
-                                <h4>Featured Services </h4>
+                                <h4>Case Studies </h4>
                                 <a href="/admin/featured/create" class="white_btn3 justify-content-end">Create Featured Services</a>
                             </div>
                             <div class="QA_table mb_30">

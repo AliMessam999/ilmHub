@@ -112,7 +112,7 @@
                 </a>
                 <ul>
                     <li><a href="/admin/slider">Slider</a></li>
-                    <li><a href="/admin/featured">Featured Services</a></li>
+                    <li><a href="/admin/featured">Case Studies</a></li>
                     <li><a href="/admin/faq">Faqs</a></li>
                     <li><a href="/admin/core_value">Core Values</a></li>
                     <li><a href="/admin/team_member">Team Members</a></li>

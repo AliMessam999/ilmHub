@@ -34,7 +34,7 @@ class FeaturedController extends Controller
             $career->client_name = $request->client_name;
             $career->funded_by = $request->funded_by;
             $career->location = $request->location;
-            $career->industry_id = $request->industry_id;
+            $career->industry = $request->industry;
             $career->website = $request->website;
             $career->user_details = $request->user_details;
             $career->alt = $request->alt;
@@ -151,7 +151,7 @@ class FeaturedController extends Controller
             'client_name' => $request->client_name,
             'funded_by' => $request->funded_by,
             'location' => $request->location,
-            'industry_id' => $request->industry_id,
+            'industry' => $request->industry,
             'website' => $request->website,
             'user_details' => $request->user_details,
             'alt' => $request->alt,

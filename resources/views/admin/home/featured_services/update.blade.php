@@ -9,7 +9,7 @@
                     <div class="white_card_header">
                         <div class="box_header m-0">
                             <div class="main-title">
-                                <h3 class="m-0">Update Header</h3>
+                                <h3 class="m-0">Update Case Study</h3>
                             </div>
                         </div>
                     </div>
@@ -68,15 +68,8 @@
                                 <div class="col-lg-6">
                                     <label>Industry</label>
                                     <div class="common_input mb_15">
-                                        <select class="form-control nice_Select2 wide" name="industry_id">
-                                            <option value="" disabled selected>Select Industry</option>
-                                            @foreach ($clients as $client)
-                                                <option value="{{ $client->id }}"
-                                                    {{ $menu->industry_id == $client->id ? 'selected' : '' }}>
-                                                    {{ $client->title }}
-                                                </option>
-                                            @endforeach
-                                        </select>
+                                        <input type="text" name="industry" value="{{ $menu->industry }}"
+                                            placeholder="Enter Industry" autocomplete="off">
                                     </div>
                                 </div>
 

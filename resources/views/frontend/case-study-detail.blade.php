@@ -165,7 +165,7 @@
                                 <div class="project-text">
                                     <span>Industry</span>
                                     <h6 class="title">
-                                        {{ $caseStudy->industry->title ?? 'N/A' }}
+                                        {{ $caseStudy->industry ?? 'N/A' }}
                                     </h6>
                                 </div>
                             </div>
