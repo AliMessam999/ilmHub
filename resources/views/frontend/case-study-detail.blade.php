@@ -157,19 +157,50 @@
                                 </h6>
                             </div>
                         </div>
-                        @if($caseStudy->user_details)
+                             {{-- Industry --}}
+                            <div class="infos-item">
+                                <div class="project-icons">
+                                    <i class="tji-chart"></i>
+                                </div>
+                                <div class="project-text">
+                                    <span>Industry</span>
+                                    <h6 class="title">
+                                        {{ $caseStudy->industry ?? 'N/A' }}
+                                    </h6>
+                                </div>
+                            </div>
+
+                            {{-- Website --}}
+                            <div class="infos-item">
+                                <div class="project-icons">
+                                    <i class="tji-window"></i>
+                                </div>
+                                <div class="project-text">
+                                    <span>Website</span>
+                                    <h6 class="title">{{ $caseStudy->website }}</h6>
+                                </div>
+                            </div>
+
+{{-- Location --}}
                         <div class="infos-item">
-                            {{-- <div class="project-icons">
-                                <i class="tji-info"></i>
-                            </div> --}}
+                            <div class="project-icons">
+                                <i class="tji-location-2"></i>
+                            </div>
                             <div class="project-text">
-                                {{-- <span>Details</span> --}}
+                                <span>Location</span>
+                                <h6 class="title">{{ $caseStudy->location }}</h6>
+                            </div>
+                        </div>
+                        
+                        {{-- @if($caseStudy->user_details)
+                        <div class="infos-item">
+                            <div class="project-text">
                                 <p class="">
                                     {{ $caseStudy->user_details }}
                                 </p>
                             </div>
                         </div>
-                        @endif
+                        @endif --}}
                         {{-- Funded By --}}
                         {{-- <div class="infos-item">
                             <div class="project-icons">
@@ -183,40 +214,7 @@
                             </div>
                         </div> --}}
 
-                        {{-- Location --}}
-                        {{-- <div class="infos-item">
-                            <div class="project-icons">
-                                <i class="tji-location-2"></i>
-                            </div>
-                            <div class="project-text">
-                                <span>Location</span>
-                                <h6 class="title">{{ $caseStudy->location }}</h6>
-                            </div>
-                        </div> --}}
-
-                        {{-- Industry --}}
-                        {{-- <div class="infos-item">
-                            <div class="project-icons">
-                                <i class="tji-chart"></i>
-                            </div>
-                            <div class="project-text">
-                                <span>Industry</span>
-                                <h6 class="title">
-                                    {{ $caseStudy->industry->title ?? 'N/A' }}
-                                </h6>
-                            </div>
-                        </div> --}}
-
-                        {{-- Website --}}
-                        {{-- <div class="infos-item">
-                            <div class="project-icons">
-                                <i class="tji-window"></i>
-                            </div>
-                            <div class="project-text">
-                                <span>Website</span>
-                                <h6 class="title">{{ $caseStudy->website }}</h6>
-                            </div>
-                        </div> --}}
+                        
                     </div>
                 </div>
             </div>

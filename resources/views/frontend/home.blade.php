@@ -110,7 +110,62 @@
             left: -80px; /* adjust this value to move more or less */
         }
 
-        
+        .industry-hover-item {
+            overflow: hidden !important;
+            border-radius: 12px !important;
+        }
+
+        .industry-hover-item.project-item {
+            overflow: hidden !important;
+            border-radius: 12px !important;
+        }
+
+        .industry-hover-item .project-img {
+            position: relative;
+            height: 450px;
+            background-size: cover !important;
+            background-position: center !important;
+            background-repeat: no-repeat !important;
+            border-radius: 10px !important;
+        }
+
+        .industry-hover-item .project-img::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0);
+            transition: background 0.4s ease, backdrop-filter 0.4s ease;
+            z-index: 1;
+            border-radius: 10px !important;
+        }
+
+        .industry-hover-item .project-img:hover::after {
+            background: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(10px);
+        }
+
+        .industry-hover-item .industry-content {
+            position: absolute;
+            top: 50%;
+            left: 55%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+            text-align: center;
+            width: 90%;
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }
+
+        .industry-hover-item .project-img:hover .industry-content {
+            opacity: 1;
+        }
+
+        .industry-hover-item .title {
+            color: white !important;
+            font-size: 25px;
+            font-weight: 700;
+            margin: 0;
+        }
         
         </style>
         
@@ -121,7 +176,9 @@
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
-                        clientSlider.style.animationPlayState = 'running';
+                        setTimeout(() => {
+                            clientSlider.style.animationPlayState = 'running';
+                        }, 3000);
                     } else {
                         clientSlider.style.animationPlayState = 'paused';
                     }
@@ -432,16 +489,10 @@
                             <div class="swiper-wrapper">
                                 @foreach ($data->client as $client)
                                 <div class="swiper-slide">
-                                    <div class="project-item">
-                                        <div class="project-img">
-                                           <img src="{{ asset($client->image) }}" alt="{{ $client->alt }}" />
-                                        </div>
-                                        <div class="project-content">
-                                            <div class="project-text">
-                                                <h4 class="title">
-                                                    {{$client->title}}
-                                                    {{-- <a href="portfolio-details.html">{{$client->title}}</a> --}}
-                                                </h4>
+                                    <div class="project-item industry-hover-item">
+                                        <div class="project-img" style="background-image: url('{{ asset($client->image) }}'); background-size: cover; background-position: center;">
+                                            <div class="industry-content">
+                                                <h4 class="title">{{$client->title}}</h4>
                                             </div>
                                         </div>
                                     </div>

@@ -63,8 +63,8 @@ class CdMenuSeeder extends Seeder
     'order' => '4',
     'deleted_at' => NULL,
     'created_at' => '2025-11-06 11:27:05',
-    'updated_at' => '2025-11-11 05:08:14',
-    'slug' => '/industry',
+    'updated_at' => '2025-12-09 06:35:30',
+    'slug' => '/industries',
   ),
 );
         DB::table('cd_menus')->insert($data);
