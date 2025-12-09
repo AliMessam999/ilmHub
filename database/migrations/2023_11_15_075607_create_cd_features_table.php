@@ -15,9 +15,9 @@ return new class extends Migration
             $table->id();
             $table->string('title');
             $table->longText('description');
-            $table->string('image');
+            $table->string('image')->nullable();
             $table->string('alt')->nullable();
-            $table->string('icon');
+            $table->string('icon')->nullable();
             $table->SoftDeletes();
             $table->timestamps();
         });

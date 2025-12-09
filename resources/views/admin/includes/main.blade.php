@@ -64,8 +64,10 @@
 
     <nav class="sidebar">
         <div class="logo d-flex justify-content-between">
-            <a class="large_logo" href="/"><img src="{{ url('frontend_assets/images/logos/logo-black.png') }}" height="50px" alt></a>
-            <a class="small_logo" href="/"><img src="{{ url('frontend_assets/images/logos/logo-black.png') }}" height="50px" alt></a>
+            <a class="large_logo" href="/"><img src="{{ url('frontend_assets/images/logos/logo-black.png') }}"
+                    height="50px" alt></a>
+            <a class="small_logo" href="/"><img src="{{ url('frontend_assets/images/logos/logo-black.png') }}"
+                    height="50px" alt></a>
             <div class="sidebar_close_icon d-lg-none">
                 <i class="ti-close"></i>
             </div>
@@ -84,43 +86,43 @@
                 </li>
             @endif
             @if (auth()->user()->haspermission('read-particular'))
-            <li class>
-                <a class="has-arrow" href="#" aria-expanded="false">
-                    <div class="nav_icon_small">
-                        <i class="fa fa-bars" style="color: #048391;"></i>
-                    </div>
-                    <div class="nav_title">
-                        <span>Particular</span>
-                    </div>
-                </a>
-                <ul>
-                    <li><a href="/admin/header">Header</a></li>
-                    <li><a href="/admin/category">Category</a></li>
-                    <li><a href="/admin/sub_category">Sub-Category</a></li>
-                </ul>
-            </li>
+                <li class>
+                    <a class="has-arrow" href="#" aria-expanded="false">
+                        <div class="nav_icon_small">
+                            <i class="fa fa-bars" style="color: #048391;"></i>
+                        </div>
+                        <div class="nav_title">
+                            <span>Particular</span>
+                        </div>
+                    </a>
+                    <ul>
+                        <li><a href="/admin/header">Header</a></li>
+                        <li><a href="/admin/category">Category</a></li>
+                        <li><a href="/admin/sub_category">Sub-Category</a></li>
+                    </ul>
+                </li>
             @endif
             @if (auth()->user()->haspermission('read-home'))
-            <li class>
-                <a class="has-arrow" href="#" aria-expanded="false">
-                    <div class="nav_icon_small">
-                        <i class="fa fa-home" style="color: #048391;"></i>
-                    </div>
-                    <div class="nav_title">
-                        <span>Home Page</span>
-                    </div>
-                </a>
-                <ul>
-                    <li><a href="/admin/slider">Slider</a></li>
-                    <li><a href="/admin/featured">Case Studies</a></li>
-                    <li><a href="/admin/faq">Faqs</a></li>
-                    <li><a href="/admin/core_value">Core Values</a></li>
-                    <li><a href="/admin/team_member">Team Members</a></li>
-                    <li><a href="/admin/skills">Skills</a></li>
-                    <li><a href="/admin/term_condition">Terms & Conditions</a></li>
-                    <li><a href="/admin/policy">Policies</a></li>
-                </ul>
-            </li>
+                <li class>
+                    <a class="has-arrow" href="#" aria-expanded="false">
+                        <div class="nav_icon_small">
+                            <i class="fa fa-home" style="color: #048391;"></i>
+                        </div>
+                        <div class="nav_title">
+                            <span>Home Page</span>
+                        </div>
+                    </a>
+                    <ul>
+                        <li><a href="/admin/slider">Slider</a></li>
+                        <li><a href="/admin/featured">Case Studies</a></li>
+                        <li><a href="/admin/faq">Faqs</a></li>
+                        <li><a href="/admin/core_value">Core Values</a></li>
+                        <li><a href="/admin/team_member">Team Members</a></li>
+                        <li><a href="/admin/skills">Skills</a></li>
+                        <li><a href="/admin/term_condition">Terms & Conditions</a></li>
+                        <li><a href="/admin/policy">Policies</a></li>
+                    </ul>
+                </li>
             @endif
             @if (auth()->user()->haspermission('read-gallary'))
                 <li class>
@@ -171,43 +173,42 @@
                 </li>
             @endif
             @if (auth()->user()->haspermission('read-clients'))
-            <li class>
-                <a class="" href="/admin/client" aria-expanded="false">
-                    <div class="nav_icon_small">
-                        <i class="fa fa-users" style="color: #048391;"></i>
-                    </div>
-                    <div class="nav_title">
-                        <span>Industries</span>
-                    </div>
-                </a>
-            </li>
+                <li class>
+                    <a class="" href="/admin/client" aria-expanded="false">
+                        <div class="nav_icon_small">
+                            <i class="fa fa-users" style="color: #048391;"></i>
+                        </div>
+                        <div class="nav_title">
+                            <span>Industries</span>
+                        </div>
+                    </a>
+                </li>
             @endif
             @if (auth()->user()->haspermission('read-partners'))
-            <li class>
-                <a class="" href="/admin/partner" aria-expanded="false">
-                    <div class="nav_icon_small">
-                        <i class="fa fa-user-shield" style="color: #048391;"></i>
-                    </div>
-                    <div class="nav_title">
-                        <span>Partners</span>
-                    </div>
-                </a>
-            </li>
+                <li class>
+                    <a class="" href="/admin/partner" aria-expanded="false">
+                        <div class="nav_icon_small">
+                            <i class="fa fa-user-shield" style="color: #048391;"></i>
+                        </div>
+                        <div class="nav_title">
+                            <span>Partners</span>
+                        </div>
+                    </a>
+                </li>
             @endif
             @if (auth()->user()->haspermission('read-offers'))
-            <li class>
-                <a class="" href="/admin/offer" aria-expanded="false">
-                    <div class="nav_icon_small">
-                        <i class="fab fa-buffer" style="color: #048391;"></i>
-                    </div>
-                    <div class="nav_title">
-                        <span>Global Content</span>
-                    </div>
-                </a>
-            </li>
-            
+                <li class>
+                    <a class="" href="/admin/offer" aria-expanded="false">
+                        <div class="nav_icon_small">
+                            <i class="fab fa-buffer" style="color: #048391;"></i>
+                        </div>
+                        <div class="nav_title">
+                            <span>Global Content</span>
+                        </div>
+                    </a>
+                </li>
             @endif
-             @if (auth()->user()->haspermission('read-footer'))
+            @if (auth()->user()->haspermission('read-footer'))
                 <li class>
                     <a class="" href="/admin/footer" aria-expanded="false">
                         <div class="nav_icon_small">
@@ -220,52 +221,55 @@
                     </a>
                 </li>
             @endif
+            @if (auth()->user()->haspermission('read-message'))
+                <li>
+                    <a href="/admin/contact" aria-expanded="false">
+                        <div class="nav_icon_small">
+                            <i class="fa fa-envelope" style="color:#048391"></i>
+                        </div>
+                        <div class="nav_title">
+                            <span>Contact Messages</span>
+                        </div>
+                    </a>
+                </li>
+            @endif
             @if (auth()->user()->haspermission('read-users'))
-            <li class>
-                <a class="" href="/admin/user" aria-expanded="false">
-                    <div class="nav_icon_small">
-                        <i class="fa fa-user-lock" style="color: #048391;"></i>
-                    </div>
-                    <div class="nav_title">
-                        <span>Users</span>
-                    </div>
-                </a>
-            </li>
+                <li class>
+                    <a class="" href="/admin/user" aria-expanded="false">
+                        <div class="nav_icon_small">
+                            <i class="fa fa-user-lock" style="color: #048391;"></i>
+                        </div>
+                        <div class="nav_title">
+                            <span>Users</span>
+                        </div>
+                    </a>
+                </li>
             @endif
             @if (auth()->user()->haspermission('read-roles'))
-            <li>
-                <a href="/admin/role" aria-expanded="false">
-                    <div class="nav_icon_small">
-                        <i class="fas fa-tasks" style="color:#048391"></i>
-                    </div>
-                    <div class="nav_title">
-                        <span>Roles </span>
-                    </div>
-                </a>
-            </li>
+                <li>
+                    <a href="/admin/role" aria-expanded="false">
+                        <div class="nav_icon_small">
+                            <i class="fas fa-tasks" style="color:#048391"></i>
+                        </div>
+                        <div class="nav_title">
+                            <span>Roles </span>
+                        </div>
+                    </a>
+                </li>
             @endif
             @if (auth()->user()->haspermission('read-compnay_profile'))
-            <li>
-                <a href="/admin/company-profile/create" aria-expanded="false">
-                    <div class="nav_icon_small">
-                        <i class="fa fa-cogs" style="color:#048391"></i>
-                    </div>
-                    <div class="nav_title">
-                        <span>Company Profile </span>
-                    </div>
-                </a>
-            </li>
+                <li>
+                    <a href="/admin/company-profile/create" aria-expanded="false">
+                        <div class="nav_icon_small">
+                            <i class="fa fa-cogs" style="color:#048391"></i>
+                        </div>
+                        <div class="nav_title">
+                            <span>Company Profile </span>
+                        </div>
+                    </a>
+                </li>
             @endif
-            <li>
-                <a href="/admin/contact" aria-expanded="false">
-                    <div class="nav_icon_small">
-                        <i class="fa fa-envelope" style="color:#048391"></i>
-                    </div>
-                    <div class="nav_title">
-                        <span>Contact Messages</span>
-                    </div>
-                </a>
-            </li>
+
         </ul>
     </nav>
 
@@ -295,7 +299,7 @@
                             </div>
                         </div>
                         <div class="header_right d-flex justify-content-between align-items-center">
-                            
+
                             <div class="profile_info">
                                 <img src="{{ url('img/client_img.png') }}" alt="#">
                                 <div class="profile_info_iner">
@@ -505,9 +509,9 @@
 
     <script src="{{ url('vendors/vectormap-home/vectormap-2.0.2.min.js') }}"></script>
     <script src="{{ url('vendors/vectormap-home/vectormap-world-mill-en.js') }}"></script>
-    @if(request()->is('/dashboard'))
-    <script src="{{ url('vendors/apex_chart/apex-chart2.js') }}"></script>
-    <script src="{{ url('vendors/apex_chart/apex_dashboard.js') }}"></script>
+    @if (request()->is('/dashboard'))
+        <script src="{{ url('vendors/apex_chart/apex-chart2.js') }}"></script>
+        <script src="{{ url('vendors/apex_chart/apex_dashboard.js') }}"></script>
     @endif
     <script src="{{ url('vendors/chart_am/core.js') }}"></script>
     <script src="{{ url('vendors/chart_am/charts.js') }}"></script>
@@ -523,11 +527,11 @@
     <script src="{{ url('/js/ajaxfunctions.js') }}"></script>
     <script src="https://kit.fontawesome.com/62af19d765.js" crossorigin="anonymous"></script>
 
- 
+
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://cdn.ckeditor.com/4.20.0/standard-all/ckeditor.js"></script>
     <script src="{{ url('/js/custom-main.js') }}"></script>
-@yield('scripts')
+    @yield('scripts')
 </body>
 
 

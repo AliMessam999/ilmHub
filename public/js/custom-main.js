@@ -3,8 +3,7 @@ var textarea = $("#ckeditor").val();
   if(textarea !== undefined){
     CKEDITOR.replace('ckeditor', {
 extraPlugins: 'editorplaceholder',
-editorplaceholder: 'Start typing here...',
-removeButtons: 'PasteFromWord'
+editorplaceholder: 'Start typing here...'
 });
   }
 
