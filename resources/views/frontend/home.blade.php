@@ -108,20 +108,23 @@
         <script>
         document.addEventListener('DOMContentLoaded', function() {
             const clientSlider = document.querySelector('.client-slider-1');
+            const partnerSection = document.querySelector('.tj-client-section');
+            let animationStarted = false;
             
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        clientSlider.style.animationPlayState = 'running';
-                    } else {
-                        clientSlider.style.animationPlayState = 'paused';
+                    if (entry.isIntersecting && !animationStarted) {
+                        setTimeout(() => {
+                            clientSlider.style.animationPlayState = 'running';
+                            animationStarted = true;
+                        }, 3000);
                     }
                 });
             }, { threshold: 0.1 });
             
-            if (clientSlider) {
+            if (clientSlider && partnerSection) {
                 clientSlider.style.animationPlayState = 'paused';
-                observer.observe(clientSlider);
+                observer.observe(partnerSection);
             }
         });
         </script>

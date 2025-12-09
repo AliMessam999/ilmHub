@@ -26,9 +26,9 @@
                             </div>
                         </div>
                         <div class="col-lg-6">
-                            <label>Sort</label>
+                            <label>Order</label>
                             <div class="common_input mb_15">
-                                <input type="number" value="{{__($menu->sort)}}" name="sort" placeholder="Enter Sort No"
+                                <input type="number" value="{{__($menu->order)}}" name="order" placeholder="Enter Order No"
                                     autocomplete="off">
                             </div>
                         </div>

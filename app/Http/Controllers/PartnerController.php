@@ -13,7 +13,7 @@ class PartnerController extends Controller
     {
         $validator = Validator::make($request->all(), [
             'title' => ['required',Rule::unique('cd_partners')],
-            'sort' => 'required',
+            'order' => 'required',
             'image' => ['required', Rule::imageFile(), 'max:500'],
             'alt' => 'required',
         ]);
@@ -29,7 +29,8 @@ class PartnerController extends Controller
             }
             $partner = new CdPartner();
             $partner->title = $request->title;
-            $partner->sort = $request->sort;
+            $partner->order = $request->order;
+            $partner->sort = $request->order;
             $partner->alt = $request->alt;
             $partner->image = $path;
             $partner->link = $request->link;
@@ -72,7 +73,7 @@ class PartnerController extends Controller
     }
     public function show_partner($id = null)
     {
-        $partner = CdPartner::get();
+        $partner = CdPartner::orderBy('order', 'asc')->get();
         return view('admin.partner.index', compact('partner'));
     }
     public function update_partner(Request $request, $id)
@@ -81,7 +82,7 @@ class PartnerController extends Controller
             if ($request->file('image')) {
                 $validator = Validator::make($request->all(), [
                     'title' => 'required',
-                    'sort' => 'required',
+                    'order' => 'required',
                     'image' => ['required', Rule::imageFile(), 'max:500'],
                     'alt'=>'required'
                 ]);
@@ -89,7 +90,7 @@ class PartnerController extends Controller
             } else {
                 $validator = Validator::make($request->all(), [
                     'title' => 'required',
-                    'sort'=>'required',
+                    'order'=>'required',
                     'alt'=>'required'
                 ]);
             }
@@ -104,14 +105,16 @@ class PartnerController extends Controller
                 if ($request->file('image')) {
                     $CdPartner = CdPartner::where('id', $id)->update([
                         'title' => $request->title,
-                        'sort' => $request->sort,
+                        'order' => $request->order,
+                        'sort' => $request->order,
                         'alt' => $request->alt,
                         'image' => $path,
                     ]);
                 } else {
                     $CdPartner = CdPartner::where('id', $id)->update([
                         'title' => $request->title,
-                        'sort' => $request->sort,
+                        'order' => $request->order,
+                        'sort' => $request->order,
                         'alt' => $request->alt,
                     ]);
                 }
