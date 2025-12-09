@@ -222,7 +222,14 @@
     </div>
 </section>
 <!-- end: Blog Section -->
-
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const firstH3 = document.querySelector('.post-details-wrapper .blog-text h3:first-of-type');
+    if (firstH3) {
+        firstH3.classList.add('footer-top-scrool-bg-1');
+    }
+});
+</script>
 
 
 @endsection
