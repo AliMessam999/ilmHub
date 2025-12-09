@@ -76,15 +76,8 @@
                                 <div class="col-lg-6">
                                     <label>Website</label>
                                     <div class="common_input mb_15">
-                                        <input type="url" name="website" value="{{ $menu->website }}"
+                                        <input type="text" name="website" value="{{ $menu->website }}"
                                             placeholder="Enter Website URL" autocomplete="off">
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-12">
-                                    <label>User Details</label>
-                                    <div class="common_input mb_15">
-                                        <textarea name="user_details" placeholder="Enter User Details" rows="4">{{ $menu->user_details }}</textarea>
                                     </div>
                                 </div>
 
@@ -96,61 +89,56 @@
                                             autocomplete="off" required>
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="col-lg-6">
-                                        <div class="d-flex gap-5  align-items-center h-100">
-
-                                            <div class="fileupload btn btn_1 radius_btn btn-anim"><i
-                                                    class="fa fa-upload"></i><span class="btn-text">Upload Images</span>
-                                                <input type="file" class="upload" name="image[]" id="uploadFile"
-                                                    accept="image/*" multiple>
-
-                                            </div>
-                                            <div class="img-upload-wrap">
-                                                <div id="imagePreviews">
-                                                    @if (!empty($menu->images))
-                                                        @foreach ($menu->images as $image)
-                                                            <div class="image-preview" data-id="{{ $image->id }}"
-                                                                style="position: relative; display: inline-block; margin: 5px;">
-                                                                <img src="/{{ __($image->image) }}" class="image-list"
-                                                                    alt="{{ $image->alt }}"
-                                                                    style="height:100px; width:100px; object-fit:cover; border-radius:5px;">
-                                                                <button class="close-button"
-                                                                    style="position:absolute;top:5px;right:5px;background:rgba(0,0,0,0.6);color:#fff;border:none;border-radius:50%;cursor:pointer;">
-                                                                    <i class="fa fa-times"></i>
-                                                                </button>
-                                                            </div>
-                                                        @endforeach
-                                                    @endif
-                                                </div>
-                                            </div>
-
+                                <div class="col-lg-6">
+                                    <label>Upload Images</label>
+                                    <div class="d-flex gap-5 align-items-center h-100">
+                                        <div class="fileupload btn btn_1 radius_btn btn-anim"><i
+                                                class="fa fa-upload"></i><span class="btn-text">Upload Images</span>
+                                            <input type="file" class="upload" name="image[]" id="uploadFile"
+                                                accept="image/*" multiple>
                                         </div>
-
-                                        <div class="col-lg-6">
-                                            <label>alt</label>
-                                            <div class="common_input mb_15">
-                                                <input type="text" name="alt" value="{{ __($menu->alt) }}"
-                                                    placeholder="Enter ALt of Image for SEO" autocomplete="off">
+                                        <div class="img-upload-wrap">
+                                            <div id="imagePreviews">
+                                                @if (!empty($menu->images))
+                                                    @foreach ($menu->images as $image)
+                                                        <div class="image-preview" data-id="{{ $image->id }}"
+                                                            style="position: relative; display: inline-block; margin: 5px;">
+                                                            <img src="/{{ __($image->image) }}" class="image-list"
+                                                                alt="{{ $image->alt }}"
+                                                                style="height:100px; width:100px; object-fit:cover; border-radius:5px;">
+                                                            <button class="close-button"
+                                                                style="position:absolute;top:5px;right:5px;background:rgba(0,0,0,0.6);color:#fff;border:none;border-radius:50%;cursor:pointer;">
+                                                                <i class="fa fa-times"></i>
+                                                            </button>
+                                                        </div>
+                                                    @endforeach
+                                                @endif
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="row">
+                                </div>
 
-                                        <div class="col-lg-12">
-                                            <label>Description</label>
-                                            <div class="common_input mb_15">
-                                                <textarea name="description" id="ckeditor" placeholder="Enter Description of Career" style="height:100%">{{ __($menu->description) }}</textarea>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-12">
-                                            <div class="create_report_btn mt_30">
-                                                <button href="#" class="btn_1 radius_btn d-block text-center"
-                                                    type="submit" id="updatebtn">Update</button>
-                                            </div>
-                                        </div>
+                                <div class="col-lg-6">
+                                    <label>Alt Text</label>
+                                    <div class="common_input mb_15">
+                                        <input type="text" name="alt" value="{{ __($menu->alt) }}"
+                                            placeholder="Enter Alt Text for SEO" autocomplete="off">
                                     </div>
+                                </div>
+
+                                <div class="col-lg-12">
+                                    <label>Description</label>
+                                    <div class="common_input mb_15">
+                                        <textarea name="description" id="ckeditor" placeholder="Enter Description" style="height:100%">{{ __($menu->description) }}</textarea>
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="create_report_btn mt_30">
+                                        <button class="btn_1 radius_btn d-block text-center"
+                                            type="submit" id="updatebtn">Update</button>
+                                    </div>
+                                </div>
                                 </div>
                         </form>
                     </div>
@@ -164,6 +152,8 @@
     <script>
         $("#CircleForm").on("submit", function(e) {
             e.preventDefault();
+            console.log('Form submitted');
+            
             var form = $("#CircleForm");
             $("#updatebtn").html(
                 "<i class='fa fa-spinner fa-spin' style='padding:0px;margin-right:10px' id='spinner'></i>Waiting.."
@@ -173,7 +163,14 @@
             var desc = CKEDITOR.instances.ckeditor.getData();
             formData.append("description", desc)
             var id = $("#header_id").val();
-            // console.log(form);
+            
+            console.log('Form ID:', id);
+            console.log('Description:', desc);
+            
+            // Log all form data
+            for (var pair of formData.entries()) {
+                console.log(pair[0] + ': ' + pair[1]);
+            }
             $.ajax({
                 url: "/admin/featured/update/" + id,
                 method: "POST",
@@ -181,6 +178,7 @@
                 contentType: false, //this is requireded please see answers above
                 processData: false,
                 success: function(data) {
+                    console.log('Success response:', data);
                     $("#spinner").hide();
                     $("#updatebtn").text("");
                     $("#updatebtn").append("Update")
@@ -206,6 +204,31 @@
                     });
                 }
             });
+        });
+
+        // Override the global uploadFile handler for this page
+        $('#uploadFile').off('change').on('change', function() {
+            // Clear existing previews
+            $('#imagePreviews').empty();
+            
+            // Show new image previews
+            if (this.files && this.files.length > 0) {
+                Array.from(this.files).forEach(function(file, index) {
+                    if (file.type.startsWith('image/')) {
+                        const reader = new FileReader();
+                        reader.onload = function(e) {
+                            const imageDiv = $('<div class="image-preview" style="position: relative; display: inline-block; margin: 5px;">');
+                            const img = $('<img>').attr({
+                                'src': e.target.result,
+                                'style': 'height:100px; width:100px; object-fit:cover; border-radius:5px;'
+                            });
+                            imageDiv.append(img);
+                            $('#imagePreviews').append(imageDiv);
+                        };
+                        reader.readAsDataURL(file);
+                    }
+                });
+            }
         });
     </script>
 @stop

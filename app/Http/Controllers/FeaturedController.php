@@ -19,7 +19,7 @@ class FeaturedController extends Controller
             'icon' => 'required',
             'description' => 'required',
             'image' => 'required|array',
-            'image.*' => 'image|mimes:jpeg,png,jpg,gif,svg,webp|max:500'
+            'image.*' => 'image|mimes:jpeg,png,jpg,gif,svg,webp|max:2048'
         ]);
 
         if ($validator->fails()) {
@@ -36,7 +36,7 @@ class FeaturedController extends Controller
             $career->location = $request->location;
             $career->industry = $request->industry;
             $career->website = $request->website;
-            $career->user_details = $request->user_details;
+
             $career->alt = $request->alt;
             $result = $career->save();
 
@@ -99,6 +99,9 @@ class FeaturedController extends Controller
 
     public function update_featured(Request $request, $id)
     {
+        // Debug: Log the request data
+        \Log::info('Update request data:', $request->all());
+        
         $feature = CdFeature::find($id);
         if (!$feature) {
             return response()->json(["message" => "Feature not found"], 404);
@@ -110,7 +113,7 @@ class FeaturedController extends Controller
             'icon' => 'required',
             'description' => 'required',
             'image' => 'nullable|array',
-            'image.*' => 'image|mimes:jpeg,png,jpg,gif,svg,webp|max:500',
+            'image.*' => 'image|mimes:jpeg,png,jpg,gif,svg,webp|max:2048',
         ];
 
         $validator = Validator::make($request->all(), $rules);
@@ -134,11 +137,11 @@ class FeaturedController extends Controller
                     return response()->json(["message" => "File not stored, try again!"], 302);
                 }
 
-                CdFeatureImage::create([
-                    'feature_id' => $id,
-                    'image' => $path,
-                    'alt' => $request->alt,
-                ]);
+                $cdFeatureImage = new CdFeatureImage();
+                $cdFeatureImage->feature_id = $id;
+                $cdFeatureImage->image = $path;
+                $cdFeatureImage->alt = $request->alt;
+                $cdFeatureImage->save();
             }
         }
 
@@ -153,7 +156,7 @@ class FeaturedController extends Controller
             'location' => $request->location,
             'industry' => $request->industry,
             'website' => $request->website,
-            'user_details' => $request->user_details,
+
             'alt' => $request->alt,
         ]);
 

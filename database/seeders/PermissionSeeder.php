@@ -34,6 +34,7 @@ class PermissionSeeder extends Seeder
             'particular',
             'home',
             'footer',
+            'message',      
             'roles',
         ];
 
@@ -62,6 +63,5 @@ class PermissionSeeder extends Seeder
                 }
             }
         }
-
     }
 }
