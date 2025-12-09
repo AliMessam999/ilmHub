@@ -217,7 +217,7 @@ class CdOfferSeeder extends Seeder
 
 <ul>
 	<li>Empowerment</li>
-	<li>Tecnology</li>
+	<li>Technology</li>
 	<li>Growth</li>
 </ul>',
     'alt' => 'our mission',
