@@ -38,7 +38,7 @@ class HomeController extends Controller
         $data->aboutus = CdCoreValue::first();
         $data->skills = CdSkill::get();
         $data->offer = CdOffer::first();
-        $data->partners = CdPartner::OrderBy('sort', 'asc')->get();
+        $data->partners = CdPartner::OrderBy('order', 'asc')->get();
         $data->client = CdClient::OrderBy('sort', 'asc')->get();
         // dd($data->client);
 

@@ -17,7 +17,7 @@
                                         <tr>
                                             <th scope="col">id</th>
                                             <th scope="col">Title</th>
-                                            <th scope="col">Sort</th>
+                                            <th scope="col">Order</th>
                                             <th scope="col">Image</th>
                                             <th scope="col">Alt Tag</th>
                                             <th scope="col">Action</th>
@@ -28,7 +28,7 @@
                                             <tr>
                                                 <td>{{ $item->id }}</td>
                                                 <td>{{ $item->title }}</td>
-                                                <td>{{ $item->sort }}</td>
+                                                <td>{{ $item->order }}</td>
                                                 <td><img src="/{{ $item->image }}" alt="{{ $item->alt ? $item->alt:"No Alt" }}" class="image-list"></td>
                                                 <td>{!! $item->alt !!}</td>
                                                 <td>

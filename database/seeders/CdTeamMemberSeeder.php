@@ -63,9 +63,9 @@ class CdTeamMemberSeeder extends Seeder
     'image' => 'upload/team_member/edgT5kmaDgJDm0SEzpSFWJJycfBkr0amnjHknTQD.png',
     'deleted_at' => NULL,
     'created_at' => '2025-05-15 12:44:55',
-    'updated_at' => '2025-11-24 06:05:44',
+    'updated_at' => '2025-12-09 04:29:03',
     'category_id' => NULL,
-    'division' => '/divisions/renewable-energy, /divisions/security-systems, /divisions/hydromet',
+    'division' => '/divisions/renewable-energy, /divisions/security-systems',
   ),
   4 => 
   array (
@@ -77,9 +77,9 @@ class CdTeamMemberSeeder extends Seeder
     'image' => 'upload/team_member/R7dNqJYj1VGJmFbaBh7zgwYxbsP9829aOoYyYsgX.png',
     'deleted_at' => NULL,
     'created_at' => '2025-05-15 12:45:29',
-    'updated_at' => '2025-11-24 06:06:03',
+    'updated_at' => '2025-12-09 04:28:45',
     'category_id' => NULL,
-    'division' => '/divisions/software-solutions',
+    'division' => '/divisions/hydromet',
   ),
   5 => 
   array (
@@ -105,7 +105,7 @@ class CdTeamMemberSeeder extends Seeder
     'image' => 'upload/team_member/5ww4lOoDKnuAzjljsBa3bzm0dm9b3cuVaN4trdFm.png',
     'deleted_at' => NULL,
     'created_at' => '2025-05-15 12:46:41',
-    'updated_at' => '2025-11-17 09:49:39',
+    'updated_at' => '2025-12-09 04:35:40',
     'category_id' => NULL,
     'division' => '/divisions/biotechnology, /divisions/mining-minerals',
   ),
@@ -133,9 +133,9 @@ class CdTeamMemberSeeder extends Seeder
     'image' => 'upload/team_member/NiiveAtxy1zmANDFUg9dUlt7GIQHvoyCbDWQFBLu.png',
     'deleted_at' => NULL,
     'created_at' => '2025-05-26 17:08:32',
-    'updated_at' => '2025-11-22 11:36:01',
+    'updated_at' => '2025-12-09 04:26:52',
     'category_id' => NULL,
-    'division' => '/divisions/information-technology-infrastructure',
+    'division' => '/divisions/it-infrastructure, /divisions/software-solutions',
   ),
 );
         DB::table('cd_team_members')->insert($data);

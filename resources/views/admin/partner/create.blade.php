@@ -29,9 +29,9 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
-                                    <label>Sort</label>
+                                    <label>Order</label>
                                     <div class="common_input mb_15">
-                                        <input type="number" name="sort" placeholder="Enter Sort No" autocomplete="off">
+                                        <input type="number" name="order" placeholder="Enter Order No" autocomplete="off">
                                     </div>
                                 </div>
                             </div>
