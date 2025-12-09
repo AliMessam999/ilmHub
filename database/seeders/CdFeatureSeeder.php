@@ -47,9 +47,9 @@ class CdFeatureSeeder extends Seeder
     'user_details' => 'The AJK Electricity Department (AJKED) oversees thousands of employees, dozens of offices, and a rapidly expanding consumer base across Azad Jammu & Kashmir. For years, manual workflows and fragmented, paper-based systems created operational bottlenecks, revenue gaps, and governance challenges. To enable a transparent, scalable, and digitally empowered utility, AJKED partnered with CDigital to modernize its core IT infrastructure — laying the foundation for a fully digital power-sector ecosystem.',
     'alt' => NULL,
     'icon' => 'alt',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-09 07:36:18',
     'created_at' => '2025-12-03 18:12:01',
-    'updated_at' => '2025-12-05 06:45:29',
+    'updated_at' => '2025-12-09 07:36:18',
     'image' => NULL,
   ),
   1 => 
@@ -93,9 +93,9 @@ class CdFeatureSeeder extends Seeder
     'user_details' => 'The AJ&K Information Technology Board, the region’s lead agency for digital transformation, is driving modernization under the Master Implementation Plan. To strengthen governance and improve public services, the AJ&K Police partnered with CDigital to replace manual, paper-based licensing with a centralized, secure digital driving license system — one of the region’s earliest milestones in e-governance.',
     'alt' => NULL,
     'icon' => 'Alt',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-09 07:36:28',
     'created_at' => '2025-12-04 18:20:09',
-    'updated_at' => '2025-12-05 06:43:15',
+    'updated_at' => '2025-12-09 07:36:28',
     'image' => NULL,
   ),
 );
