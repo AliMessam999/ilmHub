@@ -11,7 +11,7 @@ return new class extends Migration
         Schema::table('cd_features', function (Blueprint $table) {
             $table->dropForeign(['industry_id']);
             $table->dropColumn('industry_id');
-            $table->string('industry')->nullable()->after('location');
+            $table->string('industry')->nullable(); // ❌ Removed after('location')
         });
     }
 
@@ -19,7 +19,7 @@ return new class extends Migration
     {
         Schema::table('cd_features', function (Blueprint $table) {
             $table->dropColumn('industry');
-            $table->unsignedBigInteger('industry_id')->nullable()->after('location');
+            $table->unsignedBigInteger('industry_id')->nullable(); // ❌ Removed after('location')
             $table->foreign('industry_id')
                   ->references('id')->on('cd_clients')
                   ->onDelete('set null');
