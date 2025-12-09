@@ -142,10 +142,10 @@
                                     </div>
                                 @endforeach
                             </div>
-                            <h3 class="wow fadeInUp" data-wow-delay=".3s">
+                            {{-- <h3 class="wow fadeInUp" data-wow-delay=".3s">
                                 Frequently asked questions
-                            </h3>
-                            <div class="accordion tj-faq style-2" id="faqOne">
+                            </h3> --}}
+                            {{-- <div class="accordion tj-faq style-2" id="faqOne">
                                 <!-- FAQs -->
                                 @php
                                     use App\Models\CdFaq;
@@ -169,9 +169,9 @@
                                     </div>
                                 @endforeach
                                 <!-- End FAQs -->
-                            </div>
+                            </div> --}}
                         </div>
-                        <div class="tj-post__navigation mb-0 wow fadeInUp" data-wow-delay=".3s">
+                        {{-- <div class="tj-post__navigation mb-0 wow fadeInUp" data-wow-delay=".3s">
                             <!-- previous post -->
                             <div class="tj-nav__post previous">
                                 <div class="tj-nav-post__nav prev_post">
@@ -187,7 +187,7 @@
                                     <a href="service-details.html">Next<span><i class="tji-arrow-right"></i></span></a>
                                 </div>
                             </div>
-                        </div>
+                        </div> --}}
                     </div>
                 </div>
                 <div class="col-lg-4">
