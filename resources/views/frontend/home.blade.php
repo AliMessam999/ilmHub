@@ -39,22 +39,31 @@
         } */
 
         .service-item-wrapper .title-area {
-            margin: auto;
-            /* border: 1px solid white; */
-            width: 30%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
             text-align: center;
-            position: relative; /* Add this */
-            padding-top: 60px; 
+            width: 100%;
+            max-width: 200px;
+            margin: 0 auto;
         }
 
         .service-item-wrapper .title-area .service-icon {
-            position: absolute !important;
-            top: -30px !important;
-            left: 50% !important;
-            transform: translateX(-50%) !important;
+            width: 60px;
+            height: 60px;
             padding: 10px;
             border-radius: 50%;
             border-color: #DB8801 !important;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+        
+        .service-item-wrapper .title-area .service-icon img {
+            max-width: 100%;
+            height: auto;
         }
         
         .about-bottom-area {
@@ -108,23 +117,20 @@
         <script>
         document.addEventListener('DOMContentLoaded', function() {
             const clientSlider = document.querySelector('.client-slider-1');
-            const partnerSection = document.querySelector('.tj-client-section');
-            let animationStarted = false;
             
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
-                    if (entry.isIntersecting && !animationStarted) {
-                        setTimeout(() => {
-                            clientSlider.style.animationPlayState = 'running';
-                            animationStarted = true;
-                        }, 3000);
+                    if (entry.isIntersecting) {
+                        clientSlider.style.animationPlayState = 'running';
+                    } else {
+                        clientSlider.style.animationPlayState = 'paused';
                     }
                 });
             }, { threshold: 0.1 });
             
-            if (clientSlider && partnerSection) {
+            if (clientSlider) {
                 clientSlider.style.animationPlayState = 'paused';
-                observer.observe(partnerSection);
+                observer.observe(clientSlider);
             }
         });
         </script>

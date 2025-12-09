@@ -306,18 +306,22 @@ class HomeController extends Controller
     public function divsions($category_id = null)
     {
         $category = CdCategory::where('slug','LIKE','%'.$category_id.'%')->with('sub_categories.solutions')->first();
-        // dd($category);
         
-        // Check if category exists
         if (!$category) {
-            // Handle the case where category is not found
             abort(403, 'Category not found');
+        }
+        
+        if (stripos($category->title, 'industries') !== false) {
+            abort(500);
         }
 
         $caseStudies = CdFeature::whereHas('category',function($query) use ($category){
             return $query->where('parent',$category->id);
         })->with('images')->paginate(15);
-        // dd($caseStudies);
+        
+        if ($caseStudies->isEmpty() && $category->sub_categories->isEmpty()) {
+            return view('frontend.coming-soon', compact('category'));
+        }
         
         return view('frontend.divisions',compact('category','caseStudies'));
     }
@@ -328,9 +332,17 @@ class HomeController extends Controller
             return $query->where('slug','LIKE','%'.$category_id.'%');
         })->with('category')->first();
         $data['sub_division']= CdCategory::where('slug','LIKE','%'.$category_id.'%')->with('parent_item')->first();
+        
+        if (!$data['sub_division']) {
+            abort(404, 'Sub-division not found');
+        }
+        
+        if (!$data['solution']) {
+            return view('frontend.coming-soon', ['category' => $data['sub_division']]);
+        }
+        
         $data['categories'] = CdCategory::where('parent',$data['sub_division']->parent_item->id)->get();
         $data['slug'] = '/sub-divisions/'.$category_id;
-        // dd($category_id);
        return view('frontend.sub-divisions',$data);
     }
 }
