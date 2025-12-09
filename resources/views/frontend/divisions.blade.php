@@ -81,7 +81,7 @@
                                     <i class="tji-service-1"></i>
                                 </div>
                                 <h4 class="title">
-                                    <a href="service-details.html">{{ $sub_category->title }}</a>
+                                    <a href="{{ $sub_category->slug }}">{{ $sub_category->title }}</a>
                                 </h4>
                             </div>
                             <div class="service-content">
