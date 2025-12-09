@@ -184,21 +184,60 @@ Progressbar js
 
 	////////////////////////////////////////////////////
 	// Client-slider Js
-	if ($(".client-slider").length > 0) {
-		var client = new Swiper(".client-slider", {
-			slidesPerView: "auto",
-			spaceBetween: 0,
-			freemode: true,
-			centeredSlides: true,
-			loop: true,
-			speed: 5000,
-			allowTouchMove: false,
-			autoplay: {
-				delay: 1,
-				disableOnInteraction: true,
-			},
-		});
-	}
+	// if ($(".client-slider").length > 0) {
+	// 	var client = new Swiper(".client-slider", {
+	// 		slidesPerView: "auto",
+	// 		spaceBetween: 0,
+	// 		freemode: true,
+	// 		centeredSlides: true,
+	// 		loop: true,
+	// 		speed: 5000,
+	// 		allowTouchMove: false,
+	// 		autoplay: {
+	// 			delay: 1,
+	// 			disableOnInteraction: true,
+	// 		},
+	// 	});
+	// }
+
+	document.addEventListener("DOMContentLoaded", function () {
+    if ($(".client-slider").length > 0) {
+        // Initialize Swiper
+        var client = new Swiper(".client-slider", {
+            slidesPerView: "auto",
+            spaceBetween: 0,
+            freemode: true,
+            centeredSlides: true,
+            loop: true,
+            speed: 5000,
+            allowTouchMove: false,
+            autoplay: {
+                delay: 1,
+                disableOnInteraction: true, // autoplay can restart
+            },
+        });
+
+        // Stop autoplay initially
+        client.autoplay.stop();
+
+        // Observe when slider is in viewport
+        const sliderSection = document.querySelector(".client-slider");
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    // Section visible → start autoplay
+                    client.autoplay.start();
+                } else {
+                    // Section not visible → stop autoplay
+                    client.autoplay.stop();
+                }
+            });
+        }, { threshold: 0.5 }); // 50% visible
+
+        observer.observe(sliderSection);
+    }
+});
+
 
 	////////////////////////////////////////////////////
 	// Marquee slider Js
@@ -1011,6 +1050,7 @@ Progressbar js
 
         // apply CSS custom property
         $(".footer-top-scrool-bg").css("--gradient-position", `${gradientPos}%`);
+		$(".footer-top-scrool-bg-1").css("--gradient-position", `${gradientPos}%`);
     }
 }
 			window.onscroll = scrollPercentage;

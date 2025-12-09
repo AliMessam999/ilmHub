@@ -289,6 +289,11 @@ class HomeController extends Controller
     public function caseStudyDetailPage($title)
     {
         $caseStudy = CdFeature::where('title', 'LIKE', '%' . $title . '%')->with('images')->first();
+        
+        // if (!$caseStudy) {
+        //     abort(404, 'Case study not found');
+        // }
+        
         $recent = CdFeature::where('id', '!=', $caseStudy->id)->orderBy('created_at', 'desc')->limit(3)->get();
         // Next post (newer one in same category)
         $next = CdFeature::where('id', '>', $caseStudy->id)

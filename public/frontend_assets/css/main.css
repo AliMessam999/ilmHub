@@ -29213,5 +29213,19 @@ START: Blog CSS
 
 
 .post-details-wrapper .blog-text h3:first-of-type {
-  color: #DB8801;
+      display: block;
+    color: #262b3f;
+    --gradient-position: 50%;
+    background: -webkit-linear-gradient(348deg, #262b3f 0%, #262b3f 28.66%, #db8801 32.66%, #ffd88a 33%, #262b3f 37%, #262b3f 45%, #db8801 47.5%, #5e6580 48%, #262b3f 50.5%, #262b3f 64%, #db8801 69%, #262b3f 70%);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 200% 100%, 100% 100%;
+    background-position: var(--gradient-position) 50%, 50% 50%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    z-index: 5;
+    transition:all 0.3s ease;
+    /* font-size: 50px !important; */
+    /* animation: moveFa/r 2s infinite alternate; */
 }

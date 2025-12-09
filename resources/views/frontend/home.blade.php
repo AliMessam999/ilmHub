@@ -176,9 +176,7 @@
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
-                        setTimeout(() => {
-                            clientSlider.style.animationPlayState = 'running';
-                        }, 3000);
+                        clientSlider.style.animationPlayState = 'running';
                     } else {
                         clientSlider.style.animationPlayState = 'paused';
                     }
