@@ -93,28 +93,42 @@
                                             allowed)</p>
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="col-lg-6">
-                                    <div class="d-flex gap-5 align-items-center h-100">
 
-                                        <div class="fileupload btn btn_1 radius_btn btn-anim"><i
-                                                class="fa fa-upload"></i><span class="btn-text">Upload Images</span>
-                                            <input type="file" multiple class="upload" name="image[]" id="uploadFile"
-                                                 accept="image/*">
-
-                                        </div>
-                                        <div class="img-upload-wrap">
-                                            <div id="imagePreviews"></div>
-                                            <!-- <img class="img-responsive" src="dist/img/chair.jpg" alt="upload_img"> -->
-                                        </div>
+                                <div class="col-lg-6">
+                                    <label>Main Alt Text</label>
+                                    <div class="common_input mb_15">
+                                        <input type="text" name="alt" placeholder="Enter Main Alt Text for SEO" autocomplete="off">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="main-title mt_30">
+                                        <h4>Gallery Images</h4>
                                     </div>
                                 </div>
 
-                                    <div class="col-lg-6">
-                                        <label>alt</label>
-                                        <div class="common_input mb_15">
-                                            <input type="text" name="alt" placeholder="Enter ALt of Image for SEO"
-                                                autocomplete="off">
+                                <div class="col-12">
+                                    <div class="service-row-container">
+                                        <div id="images-container" style="width: 80%;">
+                                            <div class="image-row">
+                                                <div class="row">
+                                                    <div class="col-lg-6">
+                                                        <label>Image</label>
+                                                        <div class="fileupload btn btn_1 radius_btn btn-anim mb_15" style="white-space: nowrap; display: block;">
+                                                            <i class="fa fa-upload"></i><span class="btn-text">Upload Image</span>
+                                                            <input type="file" class="upload" name="images[]" accept="image/*">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-5">
+                                                        <label>Alt Text</label>
+                                                        <div class="common_input mb_15">
+                                                            <input type="text" name="alts[]" placeholder="Enter Alt Text for SEO" autocomplete="off">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-1">
+                                                        <button type="button" class="add-image-btn" id="add-image-btn" style="background: #4CAF50; color: white; border: none; border-radius: 50%; width: 40px; height: 40px; font-size: 24px; cursor: pointer; display: flex; align-items: center; justify-content: center; margin-top: 26px;">+</button>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -146,27 +160,40 @@
 
 @section('scripts')
     <script>
-        document.getElementById('uploadFilesMultiple').addEventListener('change', function(event) {
-            const preview = document.getElementById('imagePreview');
-            preview.innerHTML = ''; // clear previous previews
-            const files = event.target.files;
+        // Dynamic Image Add/Remove
+        document.getElementById('add-image-btn').addEventListener('click', function() {
+            const container = document.getElementById('images-container');
+            const newRow = document.createElement('div');
+            newRow.className = 'image-row';
+            newRow.innerHTML = `
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="fileupload btn btn_1 radius_btn btn-anim mb_15" style="white-space: nowrap; display: block;">
+                            <i class="fa fa-upload"></i><span class="btn-text">Upload Image</span>
+                            <input type="file" class="upload" name="images[]" accept="image/*">
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="common_input mb_15">
+                            <input type="text" name="alts[]" placeholder="Enter Alt Text for SEO" autocomplete="off">
+                        </div>
+                    </div>
+                    <div class="col-lg-1">
+                        <button type="button" class="remove-image" style="background: #ff5a5a; color: white; border: none; border-radius: 50%; width: 40px; height: 40px; font-size: 24px; cursor: pointer; display: flex; align-items: center; justify-content: center;">×</button>
+                    </div>
+                </div>
+            `;
+            container.appendChild(newRow);
 
-            if (files.length > 0) {
-                Array.from(files).forEach(file => {
-                    if (file.type.startsWith('image/')) {
-                        const reader = new FileReader();
-                        reader.onload = function(e) {
-                            const img = document.createElement('img');
-                            img.src = e.target.result;
-                            img.classList.add('img-thumbnail');
-                            img.style.width = '100px';
-                            img.style.height = '100px';
-                            img.style.objectFit = 'cover';
-                            preview.appendChild(img);
-                        };
-                        reader.readAsDataURL(file);
-                    }
-                });
+            newRow.querySelector('.remove-image').addEventListener('click', function() {
+                container.removeChild(newRow);
+            });
+        });
+
+        // Remove image row
+        document.addEventListener('click', function(e) {
+            if (e.target.classList.contains('remove-image')) {
+                e.target.closest('.image-row').remove();
             }
         });
     </script>
