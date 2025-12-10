@@ -1,5 +1,5 @@
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
 <title>CDigital - ICT | Hydromet | Software | Hardware | Solar | Biotech</title>
 
 <link rel="shortcut icon" href="{{ asset('frontend_assets/images/fav.png') }}" type="image/x-icon">
@@ -14,3 +14,5 @@
 <link rel="stylesheet" href="{{ asset('frontend_assets/css/odometer-theme-default.css') }}">
 <link rel="stylesheet" href="{{ asset('frontend_assets/css/meanmenu.css') }}">
 <link rel="stylesheet" href="{{ asset('frontend_assets/css/main.css') }}">
+<link rel="stylesheet" href="{{ asset('frontend_assets/css/responsive.css') }}">
+<link rel="stylesheet" href="{{ asset('frontend_assets/css/responsive-fixes.css') }}">

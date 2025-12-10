@@ -1,0 +1,227 @@
+/* Critical Responsive Fixes */
+
+/* Viewport Meta Fix */
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/* Container Fixes */
+.container, .container-fluid {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Navigation Mobile Menu */
+@media (max-width: 991px) {
+  .navbar-collapse {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 280px;
+    height: 100vh;
+    background: #fff;
+    z-index: 9999;
+    transition: all 0.3s ease;
+    padding: 20px;
+    box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+  }
+  
+  .navbar-collapse.show {
+    left: 0;
+  }
+  
+  .navbar-nav {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .nav-item {
+    margin: 10px 0;
+  }
+  
+  .dropdown-menu {
+    position: static;
+    float: none;
+    width: 100%;
+    margin-top: 0;
+    background-color: #f8f9fa;
+    border: none;
+    box-shadow: none;
+  }
+}
+
+/* Hero Section Mobile */
+@media (max-width: 767px) {
+  .hero-section, .banner-section {
+    padding: 80px 0 60px;
+  }
+  
+  .hero-title, .banner-title {
+    font-size: 2rem !important;
+    line-height: 1.2;
+  }
+  
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+}
+
+/* Cards and Grid Mobile */
+@media (max-width: 767px) {
+  .row > [class*="col-"] {
+    margin-bottom: 30px;
+  }
+  
+  .card, .service-item, .feature-item {
+    margin-bottom: 20px;
+  }
+  
+  .btn-group {
+    flex-direction: column;
+  }
+  
+  .btn-group .btn {
+    margin-bottom: 10px;
+    border-radius: 5px !important;
+  }
+}
+
+/* Table Mobile */
+@media (max-width: 767px) {
+  .table-responsive table {
+    font-size: 12px;
+  }
+  
+  .table th, .table td {
+    padding: 8px 4px;
+  }
+}
+
+/* Form Mobile */
+@media (max-width: 767px) {
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-control {
+    font-size: 16px; /* Prevents zoom on iOS */
+  }
+  
+  .btn {
+    padding: 12px 20px;
+    font-size: 14px;
+  }
+}
+
+/* Images and Media */
+img, video, iframe {
+  max-width: 100%;
+  height: auto;
+}
+
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Slider Mobile */
+@media (max-width: 767px) {
+  .swiper-slide {
+    text-align: center;
+  }
+  
+  .slider-content {
+    padding: 20px;
+  }
+  
+  .slider-title {
+    font-size: 1.8rem !important;
+  }
+}
+
+/* Footer Mobile */
+@media (max-width: 767px) {
+  .footer-widget {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .footer-links {
+    text-align: center;
+  }
+  
+  .social-links {
+    justify-content: center;
+  }
+}
+
+/* Utility Classes */
+.d-mobile-none {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .d-mobile-none {
+    display: block;
+  }
+}
+
+.d-mobile-block {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .d-mobile-block {
+    display: none;
+  }
+}
+
+/* Text Alignment Mobile */
+@media (max-width: 767px) {
+  .text-mobile-center {
+    text-align: center !important;
+  }
+  
+  .text-mobile-left {
+    text-align: left !important;
+  }
+}
+
+/* Spacing Mobile */
+@media (max-width: 767px) {
+  .py-mobile-sm {
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
+  }
+  
+  .mt-mobile-0 {
+    margin-top: 0 !important;
+  }
+  
+  .mb-mobile-20 {
+    margin-bottom: 20px !important;
+  }
+}
+
+/* Overflow Fix */
+body {
+  overflow-x: hidden;
+}
+
+.container-fluid {
+  overflow-x: hidden;
+}
+
+/* Touch Targets */
+@media (max-width: 767px) {
+  .btn, .nav-link, a {
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+  }
+}
