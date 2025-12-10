@@ -7,7 +7,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="tj-page-header-content text-center">
-                        <h1 class="tj-page-title mt-5">Contact Us</h1>
+                        <h1 class="tj-page-title mt-5 ">Contact Us</h1>
                         <div class="tj-page-link">
                             <span><i class="tji-home"></i></span>
                             <span>
@@ -90,7 +90,7 @@
             <div class="row">
                 <div class="col-lg-6">
                     <div class="contact-form wow fadeInUp" data-wow-delay=".1s">
-                        <h3 class="title">
+                        <h3 class="title text-center text-md-start">
                             Feel Free to Get in Touch or Visit our Location.
                         </h3>
                         <form id="contact-form" method="POST" action="{{ route('contact.store') }}">
@@ -153,7 +153,7 @@
                                         @enderror
                                     </div>
                                 </div>
-                                <div class="submit-btn">
+                                <div class="submit-btn text-center text-md-start">
                                     <button class="tj-primary-btn" type="submit">
                                         <span class="btn-text"><span>Submit Now</span></span>
                                         <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
@@ -165,7 +165,9 @@
                 </div>
                 <div class="col-lg-6 d-flex">
                     <div class="map-area wow fadeInUp" data-wow-delay=".3s">
-                        <div id="map" aria-label="Map showing Dubai, Chicago, Lahore, Islamabad"></div>
+                       <div class="ratio ratio-16x9 py-2">
+    <div id="map" aria-label="Map showing Dubai, Chicago, Lahore, Islamabad"></div>
+</div>
                     </div>
                 </div>
             </div>
@@ -181,6 +183,17 @@
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
         <style>
+                  @media (max-width: 480px) {
+    .tj-page-header .container {
+        min-height: 300px; /* Example: set mobile height */
+        padding-top: 20px;
+        padding-bottom: 20px;
+          display: flex;
+        flex-direction: column;
+        justify-content: center; /* vertical center content */
+        text-align: center; 
+    }
+}
             #map {
                 height: 100%;
                 width: 100%;

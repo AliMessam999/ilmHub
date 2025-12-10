@@ -1,7 +1,19 @@
 @extends('layouts.app')
 
 @section('content')
-
+<style>
+      @media (max-width: 480px) {
+    .tj-page-header .container-fluid {
+        min-height: 300px; /* Example: set mobile height */
+        padding-top: 20px;
+        padding-bottom: 20px;
+          display: flex;
+        flex-direction: column;
+        justify-content: center; /* vertical center content */
+        text-align: center; 
+    }
+}
+</style>
 
 <!-- start: Breadcrumb Section -->
 <section
@@ -36,7 +48,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <div class="sec-heading-wrap">
+                <div class="sec-heading-wrap text-center text-md-start">
                     <span class="sub-title wow fadeInUp" data-wow-delay=".3s"><i class="tji-box"></i>Proud Projects</span>
                     <div class="heading-wrap-content">
                         <div class="sec-heading style-3">

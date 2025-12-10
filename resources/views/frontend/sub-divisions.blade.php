@@ -1,6 +1,22 @@
 @extends('layouts.app')
 
 @section('content')
+<style>
+      @media (max-width: 480px) {
+    .tj-page-header .container-fluid {
+        min-height: 300px; /* Example: set mobile height */
+        padding-top: 20px;
+        padding-bottom: 20px;
+          display: flex;
+        flex-direction: column;
+        justify-content: center; /* vertical center content */
+        text-align: center; 
+    }
+    .tj-page-title {
+        margin: 20px;
+    }
+}
+</style>
 
     <!-- start: Breadcrumb Section -->
     <section class="tj-page-header rounded-0" data-bg-image="{{ $sub_division->image ? asset($sub_division->image) : asset('') }}">
@@ -193,7 +209,7 @@
                 <div class="col-lg-4">
                     <div class="tj-main-sidebar slidebar-stickiy">
                         <div class="tj-sidebar-widget service-categories wow fadeInUp" data-wow-delay=".1s">
-                            <h4 class="widget-title">More services</h4>
+                            <h4 class="widget-title text-center text-md-start">More services</h4>
                             <ul>
                                 @foreach ($categories as $category)
                                     <li>
