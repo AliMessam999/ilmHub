@@ -18,8 +18,10 @@ class FeaturedController extends Controller
             'title' => ['required', Rule::unique('cd_features')],
             'icon' => 'required',
             'description' => 'required',
-            'image' => 'required|array',
-            'image.*' => 'image|mimes:jpeg,png,jpg,gif,svg,webp|max:2048'
+            'images' => 'required|array',
+            'images.*' => 'image|mimes:jpeg,png,jpg,gif,svg,webp|max:2048',
+            'alts' => 'required|array',
+            'alts.*' => 'nullable|string'
         ]);
 
         if ($validator->fails()) {
@@ -40,7 +42,7 @@ class FeaturedController extends Controller
             $career->alt = $request->alt;
             $result = $career->save();
 
-            foreach ($request->file('image') as $item) {
+            foreach ($request->file('images') as $index => $item) {
                 $path = $item->store('upload/featured');
                 if (!$path) {
                     return response()->json([
@@ -50,7 +52,7 @@ class FeaturedController extends Controller
                 $cdFeatureImage = new CdFeatureImage();
                 $cdFeatureImage->feature_id = $career->id;
                 $cdFeatureImage->image = $path;
-                $cdFeatureImage->alt = $request->alt;
+                $cdFeatureImage->alt = $request->alts[$index] ?? '';
                 $result2 = $cdFeatureImage->save();
             }
 
@@ -112,8 +114,10 @@ class FeaturedController extends Controller
             'title' => 'required',
             'icon' => 'required',
             'description' => 'required',
-            'image' => 'nullable|array',
-            'image.*' => 'image|mimes:jpeg,png,jpg,gif,svg,webp|max:2048',
+            'images' => 'nullable|array',
+            'images.*' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg,webp|max:2048',
+            'alts' => 'nullable|array',
+            'alts.*' => 'nullable|string'
         ];
 
         $validator = Validator::make($request->all(), $rules);
@@ -126,22 +130,38 @@ class FeaturedController extends Controller
             return response()->json(["message" => "The title has already been taken"], 302);
         }
 
-        // Handle image uploads (optional)
-        if ($request->hasFile('image')) {
-            // Delete existing images
-            CdFeatureImage::where('feature_id', $id)->delete();
-            
-            foreach ($request->file('image') as $item) {
-                $path = $item->store('upload/featured');
-                if (!$path) {
-                    return response()->json(["message" => "File not stored, try again!"], 302);
-                }
+        // Handle new image uploads
+        if ($request->hasFile('images')) {
+            foreach ($request->file('images') as $index => $item) {
+                if ($item) {
+                    $path = $item->store('upload/featured');
+                    if (!$path) {
+                        return response()->json(["message" => "File not stored, try again!"], 302);
+                    }
 
-                $cdFeatureImage = new CdFeatureImage();
-                $cdFeatureImage->feature_id = $id;
-                $cdFeatureImage->image = $path;
-                $cdFeatureImage->alt = $request->alt;
-                $cdFeatureImage->save();
+                    $cdFeatureImage = new CdFeatureImage();
+                    $cdFeatureImage->feature_id = $id;
+                    $cdFeatureImage->image = $path;
+                    $cdFeatureImage->alt = $request->alts[$index] ?? '';
+                    $cdFeatureImage->save();
+                }
+            }
+        }
+
+        // Handle image deletions
+        if ($request->has('deleted_images')) {
+            CdFeatureImage::whereIn('id', $request->deleted_images)->delete();
+        }
+
+        // Update existing image alt texts
+        if ($request->has('existing_images') && $request->has('alts')) {
+            $existingImages = $request->existing_images;
+            $alts = $request->alts;
+            
+            foreach ($existingImages as $index => $imageId) {
+                if (isset($alts[$index])) {
+                    CdFeatureImage::where('id', $imageId)->update(['alt' => $alts[$index]]);
+                }
             }
         }
 

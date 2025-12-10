@@ -3,6 +3,28 @@
 @section('content')
 <style>
     /* Style list items in mission-vision boxes */
+    @media (max-width: 480px) {
+    .tj-page-header .container {
+        min-height: 300px; /* Example: set mobile height */
+        padding-top: 20px;
+        padding-bottom: 20px;
+          display: flex;
+        flex-direction: column;
+        justify-content: center; /* vertical center content */
+        text-align: center; 
+    }
+    .team-content .title{
+        margin: auto;
+    }
+
+    .tj-progress-title {
+        font-size: 12px;
+    }
+
+    .choose-content .choose-icon{
+        margin: auto;
+    }
+}
     .mission-vision-box p {
         /* font-weight: light; */
     }
@@ -31,7 +53,7 @@
     <!-- start: Breadcrumb Section -->
     {{-- <section class="tj-page-header rounded-0" data-bg-image="/frontend_assets/images/bg/pheader-bg.webp"> --}}
     <section class="tj-page-header rounded-0" data-bg-image="">
-        <div class="container-fluid">
+        <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="tj-page-header-content text-center mt-5">
@@ -56,13 +78,13 @@
 
     <!-- start: Choose Section -->
     <section id="choose" class="tj-choose-section section-gap">
-        <div class="container">
+        <div class="container text-center text-md-start">
             <div class="row">
                 <div class="col-12">
-                    <div class="sec-heading-wrap">
+                    <div class="sec-heading-wrap ">
                         <span class="sub-title wow fadeInUp" data-wow-delay=".3s"><i class="tji-box"></i>Choose the
                             Best</span>
-                        <div class="heading-wrap-content">
+                        <div class="heading-wrap-content ">
                             <div class="sec-heading">
                                 <h2 class="sec-title title-anim">
                                     Powering Industries with Innovative <span>Solutions</span>
@@ -72,13 +94,13 @@
                     </div>
                 </div>
             </div>
-            <div class="row row-gap-4 rightSwipeWrap">
+            <div class="row row-gap-4 rightSwipeWrap ">
                 @foreach ($expertise as $exp)
                     <div class="col-lg-4">
-                        <div class="choose-box right-swipe">
+                        <div class="choose-box right-swipe ">
                             <div class="choose-content">
-                                <div class="choose-icon">
-                                    <img src="/{{ $exp->image }}" alt="{{ $exp->alt }}">
+                                <div class="choose-icon text-center">
+                                    <img src="/{{ $exp->image }}"  alt="{{ $exp->alt }}">
                                 </div>
                                 <h4 class="title">{{ $exp->title }}</h4>
                                 <p class="desc">
@@ -98,7 +120,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-xl-6 col-lg-6 order-lg-1 order-2">
-                    <div class="about-img-area style-2 wow fadeInLeft" data-wow-delay=".3s">
+                    <div class="about-img-area style-2 wow fadeInLeft " data-wow-delay=".3s">
                         <div class="about-img overflow-hidden">
                             <img data-speed=".8" src="/{{ $about_us[0]->image }}" alt="{{ $about_us[0]->alt }}" />
                         </div>
@@ -121,7 +143,7 @@
                     </div>
                 </div>
                 <div class="col-xl-6 col-lg-6 order-lg-2 order-1">
-                    <div class="about-content-area">
+                    <div class="about-content-area text-center text-md-start">
                         <div class="sec-heading">
                             <span class="sub-title wow fadeInUp" data-wow-delay=".3s"><i class="tji-box"></i>Get to Know
                                 Us</span>
@@ -186,7 +208,7 @@
                                     <img src="/{{ $item->image }}" alt="{{ $item->alt }}" />
                                 </div>
                             </div>
-                            <div class="team-content">
+                            <div class="team-content text-center text-md-start">
                                 <h4 class="title">
                                     <a href="#">{{ $item->name }}</a>
                                 </h4>

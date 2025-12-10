@@ -14,5 +14,6 @@
 <link rel="stylesheet" href="{{ asset('frontend_assets/css/odometer-theme-default.css') }}">
 <link rel="stylesheet" href="{{ asset('frontend_assets/css/meanmenu.css') }}">
 <link rel="stylesheet" href="{{ asset('frontend_assets/css/main.css') }}">
+<link rel="stylesheet" href="{{ asset('frontend_assets/css/gallery-close.css') }}">
 
 

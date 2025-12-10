@@ -71,30 +71,100 @@
                     </h3>
                     @endif
 
+                    @if($caseStudy->images && $caseStudy->images->count() > 1)
                     <div class="images-wrap">
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <div class="image-box wow fadeInUp" data-wow-delay=".3s">
-                                    <a class="gallery vbox-item" data-gall="gallery" href="{{ asset('assets/images/project/2.png') }}">
-                                        <img src="{{ asset('assets/images/project/2.png') }}" alt="Image">
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="image-box wow fadeInUp" data-wow-delay=".3s">
-                                    <a class="gallery vbox-item" data-gall="gallery" href="{{ asset('assets/images/project/3.png') }}">
-                                        <img src="{{ asset('assets/images/project/3.png') }}" alt="Image">
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="image-box wow fadeInUp" data-wow-delay=".5s">
-                                    <a class="gallery vbox-item" data-gall="gallery" href="{{ asset('assets/images/project/4.png') }}">
-                                        <img src="{{ asset('assets/images/project/4.png') }}" alt="Image">
-                                    </a>
-                                </div>
-                            </div>
+                        <div class="row" id="imageGallery">
+                            <!-- Images will be populated by JavaScript -->
                         </div>
+                        @if($caseStudy->images->skip(1)->count() > 3)
+                        <div class="gallery-navigation" style="text-align: center; margin-top: 20px;">
+                            <button id="prevBtn" onclick="changeImageSet(-1)" style="background: #007bff; color: white; border: none; padding: 10px 20px; margin: 0 10px; cursor: pointer; border-radius: 5px;">Previous</button>
+                            <span id="pageInfo" style="margin: 0 20px; font-weight: bold;"></span>
+                            <button id="nextBtn" onclick="changeImageSet(1)" style="background: #007bff; color: white; border: none; padding: 10px 20px; margin: 0 10px; cursor: pointer; border-radius: 5px;">Next</button>
+                        </div>
+                        @endif
+                    </div>
+                    @endif
+
+                    <script>
+                        const allImages = @json($caseStudy->images->skip(1)->values());
+                        let currentPage = 0;
+                        const imagesPerPage = 3;
+
+                        function displayImages() {
+                            const gallery = document.getElementById('imageGallery');
+                            gallery.innerHTML = '';
+                            
+                            const startIndex = currentPage * imagesPerPage;
+                            const endIndex = Math.min(startIndex + imagesPerPage, allImages.length);
+                            
+                            for (let i = startIndex; i < endIndex; i++) {
+                                const image = allImages[i];
+                                const colClass = (i - startIndex) === 0 ? 'col-sm-12' : 'col-sm-6';
+                                
+                                const imageHtml = `
+                                    <div class="${colClass}">
+                                        <div class="image-box wow fadeInUp" data-wow-delay=".3s" style="position: relative; overflow: hidden; cursor: pointer;" onclick="openModal('/${image.image}', '${image.alt || 'Case Study Image'}')">
+                                            <img src="/${image.image}" alt="${image.alt || 'Case Study Image'}" style="width: 100%; height: auto; max-height: 300px; object-fit: cover; transition: transform 0.3s ease;">
+                                            <div class="image-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); opacity: 0; transition: opacity 0.3s ease; display: flex; align-items: center; justify-content: center;">
+                                                <i class="fa fa-search" style="color: white; font-size: 24px;"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                `;
+                                gallery.innerHTML += imageHtml;
+                            }
+                            
+                            updateNavigation();
+                            addHoverEffects();
+                        }
+
+                        function updateNavigation() {
+                            const totalPages = Math.ceil(allImages.length / imagesPerPage);
+                            const prevBtn = document.getElementById('prevBtn');
+                            const nextBtn = document.getElementById('nextBtn');
+                            const pageInfo = document.getElementById('pageInfo');
+                            
+                            if (prevBtn) prevBtn.disabled = currentPage === 0;
+                            if (nextBtn) nextBtn.disabled = currentPage >= totalPages - 1;
+                            if (pageInfo) pageInfo.textContent = `${currentPage + 1} / ${totalPages}`;
+                        }
+
+                        function changeImageSet(direction) {
+                            const totalPages = Math.ceil(allImages.length / imagesPerPage);
+                            currentPage += direction;
+                            
+                            if (currentPage < 0) currentPage = 0;
+                            if (currentPage >= totalPages) currentPage = totalPages - 1;
+                            
+                            displayImages();
+                        }
+
+                        function addHoverEffects() {
+                            document.querySelectorAll('.image-box                        function addHoverEffects() {
+                            document.querySelectorAll('.image-box').forEach(box => {
+                                box.addEventListener('mouseenter', function() {
+                                    this.querySelector('.image-overlay').style.opacity = '1';
+                                    this.querySelector('img').style.transform = 'scale(1.05)';
+                                });
+                                box.addEventListener('mouseleave', function() {
+                                    this.querySelector('.image-overlay').style.opacity = '0';
+                                    this.querySelector('img').style.transform = 'scale(1)';
+                                });
+                            });
+                        }
+
+                        // Initialize gallery
+                        if (allImages.length > 0) {
+                            displayImages();
+                        }
+                    </script>
+
+                    <!-- Image Modal -->
+                    <div id="imageModal" style="display: none; position: fixed; z-index: 2147483647; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.95); overflow: hidden;">
+                        <span onclick="closeModal()" style="position: absolute; top: 15px; right: 35px; color: #f1f1f1; font-size: 40px; font-weight: bold; cursor: pointer;">&times;</span>
+                        <img id="modalImage" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); max-width: 80%; max-height: 80%; width: auto; height: auto; object-fit: contain;">
+                        <div id="caption" style="margin: auto; display: block; width: 80%; max-width: 700px; text-align: center; color: #ccc; padding: 10px 0; height: 150px;"></div>
                     </div>
 
                     {{-- <div class="blog-text">
@@ -227,6 +297,39 @@ document.addEventListener('DOMContentLoaded', function() {
     const firstH3 = document.querySelector('.post-details-wrapper .blog-text h3:first-of-type');
     if (firstH3) {
         firstH3.classList.add('footer-top-scrool-bg-1');
+    }
+
+    // Image hover effects are now handled in addHoverEffects() function
+});
+
+function openModal(imageSrc, imageAlt) {
+    console.log('Opening modal with image:', imageSrc);
+    const modal = document.getElementById('imageModal');
+    const modalImg = document.getElementById('modalImage');
+    const caption = document.getElementById('caption');
+    
+    document.body.style.overflow = 'hidden';
+    modal.style.display = 'block';
+    modalImg.src = imageSrc;
+    caption.innerHTML = imageAlt;
+    
+    modalImg.onload = function() {
+        console.log('Image loaded successfully:', imageSrc);
+    };
+    modalImg.onerror = function() {
+        console.log('Image failed to load:', imageSrc);
+    };
+}
+
+function closeModal() {
+    document.getElementById('imageModal').style.display = 'none';
+    document.body.style.overflow = 'auto';
+}
+
+// Close modal when clicking outside the image
+document.getElementById('imageModal').addEventListener('click', function(e) {
+    if (e.target === this) {
+        closeModal();
     }
 });
 </script>
