@@ -76,13 +76,7 @@
                         <div class="row" id="imageGallery">
                             <!-- Images will be populated by JavaScript -->
                         </div>
-                        @if($caseStudy->images->skip(1)->count() > 3)
-                        <div class="gallery-navigation" style="text-align: center; margin-top: 20px;">
-                            <button id="prevBtn" onclick="changeImageSet(-1)" style="background: #007bff; color: white; border: none; padding: 10px 20px; margin: 0 10px; cursor: pointer; border-radius: 5px;">Previous</button>
-                            <span id="pageInfo" style="margin: 0 20px; font-weight: bold;"></span>
-                            <button id="nextBtn" onclick="changeImageSet(1)" style="background: #007bff; color: white; border: none; padding: 10px 20px; margin: 0 10px; cursor: pointer; border-radius: 5px;">Next</button>
-                        </div>
-                        @endif
+
                     </div>
                     @endif
 
@@ -121,12 +115,28 @@
 
                         function updateNavigation() {
                             const totalPages = Math.ceil(allImages.length / imagesPerPage);
-                            const prevBtn = document.getElementById('prevBtn');
-                            const nextBtn = document.getElementById('nextBtn');
+                            const prevBtn = document.getElementById('prevImageBtn');
+                            const nextBtn = document.getElementById('nextImageBtn');
                             const pageInfo = document.getElementById('pageInfo');
                             
-                            if (prevBtn) prevBtn.disabled = currentPage === 0;
-                            if (nextBtn) nextBtn.disabled = currentPage >= totalPages - 1;
+                            if (prevBtn) {
+                                if (currentPage === 0) {
+                                    prevBtn.style.opacity = '0.5';
+                                    prevBtn.style.pointerEvents = 'none';
+                                } else {
+                                    prevBtn.style.opacity = '1';
+                                    prevBtn.style.pointerEvents = 'auto';
+                                }
+                            }
+                            if (nextBtn) {
+                                if (currentPage >= totalPages - 1) {
+                                    nextBtn.style.opacity = '0.5';
+                                    nextBtn.style.pointerEvents = 'none';
+                                } else {
+                                    nextBtn.style.opacity = '1';
+                                    nextBtn.style.pointerEvents = 'auto';
+                                }
+                            }
                             if (pageInfo) pageInfo.textContent = `${currentPage + 1} / ${totalPages}`;
                         }
 
@@ -141,7 +151,6 @@
                         }
 
                         function addHoverEffects() {
-                            document.querySelectorAll('.image-box                        function addHoverEffects() {
                             document.querySelectorAll('.image-box').forEach(box => {
                                 box.addEventListener('mouseenter', function() {
                                     this.querySelector('.image-overlay').style.opacity = '1';
@@ -189,25 +198,39 @@
                             </div>
                         </div> 
                     </div> --}}
-                    <div
-                        class="tj-post__navigation mb-0 wow fadeInUp"
-                        data-wow-delay=".3s">
-                        <!-- previous post -->
+                    @if($caseStudy->images->skip(1)->count() > 3)
+                    <div class="tj-post__navigation mb-0 wow fadeInUp" data-wow-delay=".3s">
                         <div class="tj-nav__post previous">
                             <div class="tj-nav-post__nav prev_post">
-                                <a href="{{ $previous ? '/case-study/'.$previous->title:'#' }}"><span><i class="tji-arrow-left"></i></span>Previous</a>
+                                <a href="#" onclick="changeImageSet(-1); return false;" id="prevImageBtn"><span><i class="tji-arrow-left"></i></span>Previous Images</a>
+                            </div>
+                        </div>
+                        <div class="tj-nav-post__grid">
+                            {{-- <span id="pageInfo" style="color: #666; font-weight: bold;">1 / 1</span> --}}
+                        </div>
+                        <div class="tj-nav__post next">
+                            <div class="tj-nav-post__nav next_post">
+                                <a href="#" onclick="changeImageSet(1); return false;" id="nextImageBtn">Next Images<span><i class="tji-arrow-right"></i></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    @endif
+                    
+                    {{-- <div class="tj-post__navigation mb-0 wow fadeInUp" data-wow-delay=".3s">
+                        <div class="tj-nav__post previous">
+                            <div class="tj-nav-post__nav prev_post">
+                                <a href="{{ $previous ? '/case-study/'.$previous->title:'#' }}"><span><i class="tji-arrow-left"></i></span>Previous Case Study</a>
                             </div>
                         </div>
                         <div class="tj-nav-post__grid">
                             <a href="/case-studies"><i class="tji-window"></i></a>
                         </div>
-                        <!-- next post -->
                         <div class="tj-nav__post next">
                             <div class="tj-nav-post__nav next_post">
-                                <a href="{{ $next ? '/case-study/'.$next->title:'#' }}">Next<span><i class="tji-arrow-right"></i></span></a>
+                                <a href="{{ $next ? '/case-study/'.$next->title:'#' }}">Next Case Study<span><i class="tji-arrow-right"></i></span></a>
                             </div>
                         </div>
-                    </div>
+                    </div> --}}
                 </div>
             </div>
             <div class="col-lg-4">
@@ -307,8 +330,10 @@ function openModal(imageSrc, imageAlt) {
     const modal = document.getElementById('imageModal');
     const modalImg = document.getElementById('modalImage');
     const caption = document.getElementById('caption');
+    const headerWrapper = document.querySelector('.header-wrapper') || document.querySelector('header') || document.querySelector('.header') || document.querySelector('nav');
     
     document.body.style.overflow = 'hidden';
+    if (headerWrapper) headerWrapper.style.display = 'none';
     modal.style.display = 'block';
     modalImg.src = imageSrc;
     caption.innerHTML = imageAlt;
@@ -322,8 +347,10 @@ function openModal(imageSrc, imageAlt) {
 }
 
 function closeModal() {
+    const headerWrapper = document.querySelector('.header-wrapper') || document.querySelector('header') || document.querySelector('.header') || document.querySelector('nav');
     document.getElementById('imageModal').style.display = 'none';
     document.body.style.overflow = 'auto';
+    if (headerWrapper) headerWrapper.style.display = 'block';
 }
 
 // Close modal when clicking outside the image
