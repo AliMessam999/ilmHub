@@ -90,39 +90,74 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
-                                    <label>Upload Images</label>
-                                    <div class="d-flex gap-5 align-items-center h-100">
-                                        <div class="fileupload btn btn_1 radius_btn btn-anim"><i
-                                                class="fa fa-upload"></i><span class="btn-text">Upload Images</span>
-                                            <input type="file" class="upload" name="image[]" id="uploadFile"
-                                                accept="image/*" multiple>
-                                        </div>
-                                        <div class="img-upload-wrap">
-                                            <div id="imagePreviews">
-                                                @if (!empty($menu->images))
-                                                    @foreach ($menu->images as $image)
-                                                        <div class="image-preview" data-id="{{ $image->id }}"
-                                                            style="position: relative; display: inline-block; margin: 5px;">
-                                                            <img src="/{{ __($image->image) }}" class="image-list"
-                                                                alt="{{ $image->alt }}"
-                                                                style="height:100px; width:100px; object-fit:cover; border-radius:5px;">
-                                                            <button class="close-button"
-                                                                style="position:absolute;top:5px;right:5px;background:rgba(0,0,0,0.6);color:#fff;border:none;border-radius:50%;cursor:pointer;">
-                                                                <i class="fa fa-times"></i>
-                                                            </button>
-                                                        </div>
-                                                    @endforeach
-                                                @endif
-                                            </div>
-                                        </div>
+                                    <label>Main Alt Text</label>
+                                    <div class="common_input mb_15">
+                                        <input type="text" name="alt" value="{{ __($menu->alt) }}"
+                                            placeholder="Enter Main Alt Text for SEO" autocomplete="off">
                                     </div>
                                 </div>
 
-                                <div class="col-lg-6">
-                                    <label>Alt Text</label>
-                                    <div class="common_input mb_15">
-                                        <input type="text" name="alt" value="{{ __($menu->alt) }}"
-                                            placeholder="Enter Alt Text for SEO" autocomplete="off">
+                                <div class="col-12">
+                                    <div class="main-title mt_30">
+                                        <h4>Gallery Images</h4>
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="service-row-container">
+                                        <div id="images-container" style="width: 80%;">
+                                            @if($menu->images && $menu->images->count() > 0)
+                                                @foreach($menu->images as $image)
+                                                <div class="image-row">
+                                                    <div class="row">
+                                                        <div class="col-lg-4">
+                                                            <div style="position: relative; display: inline-block; margin: 5px;">
+                                                                <img src="/{{ $image->image }}" alt="{{ $image->alt }}"
+                                                                    style="height:100px; width:100px; object-fit:cover; border-radius:5px;">
+                                                                <input type="hidden" name="existing_images[]" value="{{ $image->id }}">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-3">
+                                                            <label>New Image (Optional)</label>
+                                                            <div class="fileupload btn btn_1 radius_btn btn-anim mb_15" style="white-space: nowrap; display: block;">
+                                                                <i class="fa fa-upload"></i><span class="btn-text">Replace Image</span>
+                                                                <input type="file" class="upload" name="images[]" accept="image/*">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4">
+                                                            <label>Alt Text</label>
+                                                            <div class="common_input mb_15">
+                                                                <input type="text" name="alts[]" value="{{ $image->alt }}" placeholder="Enter Alt Text for SEO" autocomplete="off">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-1">
+                                                            <button type="button" class="remove-image" style="background: #ff5a5a; color: white; border: none; border-radius: 50%; width: 40px; height: 40px; font-size: 24px; cursor: pointer; display: flex; align-items: center; justify-content: center;">×</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                @endforeach
+                                            @endif
+                                            <div class="image-row">
+                                                <div class="row">
+                                                    <div class="col-lg-6">
+                                                        <label>Add New Image</label>
+                                                        <div class="fileupload btn btn_1 radius_btn btn-anim mb_15" style="white-space: nowrap; display: block;">
+                                                            <i class="fa fa-upload"></i><span class="btn-text">Upload Image</span>
+                                                            <input type="file" class="upload" name="images[]" accept="image/*">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-5">
+                                                        <label>Alt Text</label>
+                                                        <div class="common_input mb_15">
+                                                            <input type="text" name="alts[]" placeholder="Enter Alt Text for SEO" autocomplete="off">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-1">
+                                                        <button type="button" class="add-image-btn" id="add-image-btn" style="background: #4CAF50; color: white; border: none; border-radius: 50%; width: 40px; height: 40px; font-size: 24px; cursor: pointer; display: flex; align-items: center; justify-content: center; margin-top: 26px;">+</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
 
@@ -206,28 +241,52 @@
             });
         });
 
-        // Override the global uploadFile handler for this page
-        $('#uploadFile').off('change').on('change', function() {
-            // Clear existing previews
-            $('#imagePreviews').empty();
-            
-            // Show new image previews
-            if (this.files && this.files.length > 0) {
-                Array.from(this.files).forEach(function(file, index) {
-                    if (file.type.startsWith('image/')) {
-                        const reader = new FileReader();
-                        reader.onload = function(e) {
-                            const imageDiv = $('<div class="image-preview" style="position: relative; display: inline-block; margin: 5px;">');
-                            const img = $('<img>').attr({
-                                'src': e.target.result,
-                                'style': 'height:100px; width:100px; object-fit:cover; border-radius:5px;'
-                            });
-                            imageDiv.append(img);
-                            $('#imagePreviews').append(imageDiv);
-                        };
-                        reader.readAsDataURL(file);
-                    }
-                });
+        // Dynamic Image Add/Remove
+        document.getElementById('add-image-btn').addEventListener('click', function() {
+            const container = document.getElementById('images-container');
+            const newRow = document.createElement('div');
+            newRow.className = 'image-row';
+            newRow.innerHTML = `
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="fileupload btn btn_1 radius_btn btn-anim mb_15" style="white-space: nowrap; display: block;">
+                            <i class="fa fa-upload"></i><span class="btn-text">Upload Image</span>
+                            <input type="file" class="upload" name="images[]" accept="image/*">
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="common_input mb_15">
+                            <input type="text" name="alts[]" placeholder="Enter Alt Text for SEO" autocomplete="off">
+                        </div>
+                    </div>
+                    <div class="col-lg-1">
+                        <button type="button" class="remove-image" style="background: #ff5a5a; color: white; border: none; border-radius: 50%; width: 40px; height: 40px; font-size: 24px; cursor: pointer; display: flex; align-items: center; justify-content: center;">×</button>
+                    </div>
+                </div>
+            `;
+            container.appendChild(newRow);
+
+            newRow.querySelector('.remove-image').addEventListener('click', function() {
+                container.removeChild(newRow);
+            });
+        });
+
+        // Remove image row
+        document.addEventListener('click', function(e) {
+            if (e.target.classList.contains('remove-image')) {
+                const imageRow = e.target.closest('.image-row');
+                const hiddenInput = imageRow.querySelector('input[name="existing_images[]"]');
+                
+                if (hiddenInput) {
+                    // Mark existing image for deletion
+                    const deletedInput = document.createElement('input');
+                    deletedInput.type = 'hidden';
+                    deletedInput.name = 'deleted_images[]';
+                    deletedInput.value = hiddenInput.value;
+                    document.getElementById('CircleForm').appendChild(deletedInput);
+                }
+                
+                imageRow.remove();
             }
         });
     </script>

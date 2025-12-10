@@ -95,7 +95,7 @@
                     <div
                         class="tj-sidebar-widget widget-search wow fadeInUp"
                         data-wow-delay=".1s">
-                        <h4 class="widget-title">Search here</h4>
+                        <h4 class="widget-title text-center text-md-start">Search here</h4>
                         <div class="search-box">
                             <form action="#">
                                 <input
@@ -113,7 +113,7 @@
                     <div
                         class="tj-sidebar-widget widget-categories wow fadeInUp"
                         data-wow-delay=".5s">
-                        <h4 class="widget-title">Categories</h4>
+                        <h4 class="widget-title text-center text-md-start">Categories</h4>
                         <ul>
                             @foreach($category as $cat)
                             <li>
@@ -126,7 +126,7 @@
                     <div
                         class="tj-sidebar-widget widget-tag-cloud wow fadeInUp"
                         data-wow-delay=".7s">
-                        <h4 class="widget-title">Tags</h4>
+                        <h4 class="widget-title text-center text-md-start">Tags</h4>
                         <nav>
                             <div class="tagcloud">
                                 <a href="blog-details.html">Growth</a>
@@ -148,6 +148,25 @@
     </div>
 </section>
 <!-- end: Blog Section -->
+        @push('styles')
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
+        <style>
+            /* Target screens 480px or smaller */
+@media (max-width: 480px) {
+    .tj-page-header .container {
+        min-height: 300px; /* Example: set mobile height */
+        padding-top: 20px;
+        padding-bottom: 20px;
+          display: flex;
+        flex-direction: column;
+        justify-content: center; /* vertical center content */
+        text-align: center; 
+    }
+}
+  
+        </style>
+    @endpush
 
 
 
