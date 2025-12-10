@@ -1,6 +1,19 @@
 @extends('layouts.app')
 
 @section('content')
+<style>
+      @media (max-width: 480px) {
+    .tj-page-header .container-fluid {
+        min-height: 300px; /* Example: set mobile height */
+        padding-top: 20px;
+        padding-bottom: 20px;
+          display: flex;
+        flex-direction: column;
+        justify-content: center; /* vertical center content */
+        text-align: center; 
+    }
+}
+</style>
 
    <!-- start: Breadcrumb Section -->
         {{-- <section class="tj-page-header rounded-0" data-bg-image="/frontend_assets/images/bg/pheader-bg.webp"> --}}
@@ -34,7 +47,7 @@
             <div class="row">
               <div class="col-12">
                 <div class="sec-heading-wrap">
-                  <div class="heading-wrap-content">
+                  <div class="heading-wrap-content text-center text-md-start">
                     <div class="sec-heading style-8">
                       <span class="sub-title wow fadeInUp" data-wow-delay=".3s">OUR Gallery</span>
                       <h2 class="sec-title title-anim text-black">
