@@ -357,10 +357,13 @@
                                         <a href="/case-study/{{ $caseStudy->slug ?? $caseStudy->title }}">
                                             <img src="{{ asset($caseStudy->images[0]->image ?? '') }}" alt="{{ $caseStudy->images[0]->alt ?? '' }}" />
                                         </a>
+
                                         {{-- <div class="blog-date">
                                             <span class="date">{{ $caseStudy->created_at->format('d') }}</span>
                                             <span class="month">{{ $caseStudy->created_at->format('M') }}</span>
                                         </div> --}}
+
+
                                     </div>
                                     <div class="blog-content">
                                         <div class="title-area">
@@ -411,6 +414,10 @@
                 </div>
             </div>
         </div>
+
+
+    
+
     </section>
     <!-- end: Blog Section -->
 
@@ -660,5 +667,9 @@
                 toastr.error('An error occurred. Please try again.');
             });
         }
+
+     
+
+
     </script>
 @endpush
