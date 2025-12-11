@@ -14,6 +14,7 @@
     }
     .tj-page-title {
         margin: 20px;
+        font-size: 32px !important;
     }
     .division-detail .content {
         text-align: center;
@@ -21,6 +22,41 @@
     .tj-primary-btn{
         margin:auto;
     }
+    .division-detail .image-box .content h5 {
+        font-size: 24px;
+        margin: auto;
+        margin-bottom: 25px;
+    }
+    .division-detail .image-box .content p {
+        font-size: 16px;
+        margin: auto;
+        margin-bottom: 25px;
+        text-align: center;
+    }
+    .tj-blog-section{
+        padding-bottom: 0 !important;
+    }
+    
+    .col-lg-8 {
+        margin-bottom: 20px !important;
+    }
+    
+    .tj-main-sidebar {
+        margin-top: 0 !important;
+        padding-top: 0 !important;
+    }
+    
+    .details-content-box {
+        margin-top: 20px !important;
+        padding-top: 0 !important;
+    }
+    .tj-blog-section .col-lg-8{
+        margin-bottom: 0 !important;
+    }
+
+    .post-details-wrapper .blog-text h3 {
+    margin-bottom: -141px;
+}
 }
 </style>
 
@@ -69,7 +105,7 @@
     <section class="tj-blog-section section-gap slidebar-stickiy-container">
         <div class="container">
             <div class="row row-gap-5">
-                <div class="col-lg-8">
+                <div class="col-lg-8 mb-0">
                     <div class="post-details-wrapper">
                         <div class="blog-images wow fadeInLeft" data-wow-delay=".2s"></div>
                         <h2 class="title  wow fadeInUp footer-top-scrool-bg">
@@ -99,7 +135,7 @@
                                             @php
                                                 // dd($service);
                                             @endphp
-                                            <div class="col-sm-6 mb-3">
+                                            <div class="col-sm-6 mb-4">
                                                 <div class="division-detail">
                                                     <div class="image-box" data-bg-image="/{{ $service->image }}">
                                                         <div class="content">
@@ -214,7 +250,7 @@
                 </div>
                 <div class="col-lg-4">
                     <div class="tj-main-sidebar slidebar-stickiy">
-                        <div class="tj-sidebar-widget service-categories wow fadeInUp mb-2" data-wow-delay=".1s">
+                        <div class="tj-sidebar-widget service-categories wow fadeInUp my-4" data-wow-delay=".1s">
                             <h4 class="widget-title text-center text-md-start">More services</h4>
                             <ul>
                                 @foreach ($categories as $category)

@@ -1422,6 +1422,26 @@ only screen and (min-width: 576px) and (max-width: 767px),
     .subscribe-form label {
         font-size: 12px !important;
     }
+    
+    /* Slider video and background height */
+    .tj-slider-item {
+        height: 380px !important;
+        min-height: 380px !important;
+    }
+    
+    .tj-slider-item video {
+        height: 380px !important;
+        object-fit: cover !important;
+    }
+    
+    /* Slider text sizes */
+    .tj-slider-item .slider-title {
+        font-size: 32px !important;
+    }
+    
+    .tj-slider-item .slider-content p {
+        font-size: 14px !important;
+    }
 }
 
 .header-top-content .header-info .social-links ul li a {
