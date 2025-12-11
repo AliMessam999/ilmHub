@@ -112,6 +112,16 @@
             left: -80px;
             /* adjust this value to move more or less */
         }
+        
+        @media (max-width: 480px) {
+            .global-map-img img {
+                left: -120px !important;
+            }
+            
+            .location-indicator {
+                transform: scale(1.2) !important;
+            }
+        }
 
         .industry-hover-item {
             overflow: hidden !important;
@@ -369,7 +379,6 @@
                                             <span class="categories">
                                                 <a href="/case-study/{{ $caseStudy->slug ?? $caseStudy->title }}">
                                                     Case Study
-                                                    {{-- {{ $caseStudy->category->title ?? 'Case Study' }} --}}
                                                 </a>
                                             </span>
                                         </div>
@@ -411,7 +420,7 @@
                                                 <div class="blog-meta">
                                                     <span class="categories">
                                                         <a href="/case-study/{{ $caseStudy->slug ?? $caseStudy->title }}">
-                                                            {{ $caseStudy->category->title ?? 'Case Study' }}
+                                                            Case Study
                                                         </a>
                                                     </span>
                                                 </div>
@@ -434,8 +443,6 @@
 
                         </div>
 
-                        <div class="swiper-button-next cs-next"></div>
-                        <div class="swiper-button-prev cs-prev"></div>
                         <div class="swiper-pagination"></div>
                         
                     </div>
