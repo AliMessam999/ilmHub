@@ -19,10 +19,12 @@ jobs:
     - name: Deploy to Hostinger VPS
       run: |
         sshpass -p "${{ secrets.SSH_PASSWORD }}" ssh \
-          -o StrictHostKeyChecking=no \
-          -o UserKnownHostsFile=/dev/null \
-          -o RequestTTY=no \
-          ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} << 'EOF'
+        -p 65002 \
+        -o StrictHostKeyChecking=no \
+        -o UserKnownHostsFile=/dev/null \
+        -o RequestTTY=no \
+        ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} << 'EOF'
+
 
           cd ${{ secrets.MAIN_DEPLOY_PATH }}
 
