@@ -99,7 +99,7 @@
                                 const imageHtml = `
                                     <div class="${colClass}">
                                         <div class="image-box wow fadeInUp" data-wow-delay=".3s" style="position: relative; overflow: hidden; cursor: pointer;" onclick="openModal('/${image.image}', '${image.alt || 'Case Study Image'}')">
-                                            <img src="/${image.image}" alt="${image.alt || 'Case Study Image'}" style="width: 100%; height: auto; max-height: 300px; object-fit: cover; transition: transform 0.3s ease;">
+                                            <img src="/${image.image}" alt="${image.alt || 'Case Study Image'}" style="width: 100%; height: 300px; object-fit: cover; transition: transform 0.3s ease;">
                                             <div class="image-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); opacity: 0; transition: opacity 0.3s ease; display: flex; align-items: center; justify-content: center;">
                                                 <i class="fa fa-search" style="color: white; font-size: 24px;"></i>
                                             </div>
@@ -172,7 +172,7 @@
                     <!-- Image Modal -->
                     <div id="imageModal" style="display: none; position: fixed; z-index: 2147483647; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.95); overflow: hidden;">
                         <span onclick="closeModal()" style="position: absolute; top: 15px; right: 35px; color: #f1f1f1; font-size: 40px; font-weight: bold; cursor: pointer;">&times;</span>
-                        <img id="modalImage" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); max-width: 80%; max-height: 80%; width: auto; height: auto; object-fit: contain;">
+                        <img id="modalImage" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 90vw; height: 90vh; object-fit: contain;">
                         <div id="caption" style="margin: auto; display: block; width: 80%; max-width: 700px; text-align: center; color: #ccc; padding: 10px 0; height: 150px;"></div>
                     </div>
 
@@ -316,50 +316,46 @@
 </section>
 <!-- end: Blog Section -->
 <script>
-document.addEventListener('DOMContentLoaded', function() {
-    const firstH3 = document.querySelector('.post-details-wrapper .blog-text h3:first-of-type');
-    if (firstH3) {
-        firstH3.classList.add('footer-top-scrool-bg-1');
-    }
-
-    // Image hover effects are now handled in addHoverEffects() function
-});
-
 function openModal(imageSrc, imageAlt) {
-    console.log('Opening modal with image:', imageSrc);
     const modal = document.getElementById('imageModal');
     const modalImg = document.getElementById('modalImage');
     const caption = document.getElementById('caption');
-    const headerWrapper = document.querySelector('.header-wrapper') || document.querySelector('header') || document.querySelector('.header') || document.querySelector('nav');
-    
+
     document.body.style.overflow = 'hidden';
-    if (headerWrapper) headerWrapper.style.display = 'none';
+    const headerArea = document.querySelector('.header-area');
+    const stickyHeader = document.querySelector('.header-area.sticky');
+    if (headerArea) headerArea.style.display = 'none';
+    if (stickyHeader) stickyHeader.style.display = 'none';
+
     modal.style.display = 'block';
     modalImg.src = imageSrc;
-    caption.innerHTML = imageAlt;
-    
-    modalImg.onload = function() {
-        console.log('Image loaded successfully:', imageSrc);
-    };
-    modalImg.onerror = function() {
-        console.log('Image failed to load:', imageSrc);
-    };
+    caption.innerHTML = imageAlt ?? '';
 }
 
 function closeModal() {
-    const headerWrapper = document.querySelector('.header-wrapper') || document.querySelector('header') || document.querySelector('.header') || document.querySelector('nav');
-    document.getElementById('imageModal').style.display = 'none';
+    const modal = document.getElementById('imageModal');
+    modal.style.display = 'none';
+
     document.body.style.overflow = 'auto';
-    if (headerWrapper) headerWrapper.style.display = 'block';
+
+    const headerArea = document.querySelector('.header-area');
+    const stickyHeader = document.querySelector('.header-area.sticky');
+    if (headerArea) headerArea.style.display = 'block';
+    if (stickyHeader) stickyHeader.style.display = 'block';
 }
 
-// Close modal when clicking outside the image
+// Close modal on background click
 document.getElementById('imageModal').addEventListener('click', function(e) {
-    if (e.target === this) {
-        closeModal();
-    }
+    if (e.target === this) closeModal();
 });
 </script>
 
 
+
 @endsection
+
+<div id="imageModal" class="image-modal">
+    <span class="close-modal" onclick="closeModal()">&times;</span>
+    <img id="modalImage" alt="">
+    <div id="caption"></div>
+</div>
