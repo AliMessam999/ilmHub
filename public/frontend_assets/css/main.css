@@ -1255,6 +1255,9 @@ START: Theme Header CSS
     min-height: 380px !important;
   }
   
+  .header-wrapper {
+    padding: 15px 20px !important;
+  }
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
@@ -1287,15 +1290,15 @@ only screen and (min-width: 576px) and (max-width: 767px),
 
   .header-area.header-3 .header-wrapper,
   .header-area.header-1 .header-wrapper {
-    padding: 15px 0px;
+    padding: 15px 20px;
   }
 
   .header-area.header-2.header-absolute .header-wrapper {
-    padding: 15px 12px;
+    padding: 15px 20px;
   }
 
   .header-area.header-2.header-sticky .header-wrapper {
-    padding: 15px 0;
+    padding: 15px 20px;
   }
 }
 
