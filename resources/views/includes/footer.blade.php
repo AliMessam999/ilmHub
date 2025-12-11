@@ -23,11 +23,14 @@
                                data-wow-delay=".3s">
                                <h5 class="title">Divisions</h5>
                                <ul>
-
-
+                                    {{-- @php
+                                        dd($footer->services);
+                                    @endphp --}}
                                    @foreach ($footer->services as $service)
-                                       <li><a href="/category/{{ $service->title ?? '#' }}">{{ $service->title }}</a>
-                                       </li>
+                                        <li>
+                                            <a href="{{ $service->slug ?: url('/' . $$service->slug) }}">{{ $service->title }}</a>
+                                        </li>
+                                        {{-- href="{{ $subCategory->url ?: url('/' . $subCategory->slug) }}" --}}
                                    @endforeach
                                </ul>
                            </div>
