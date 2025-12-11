@@ -93,7 +93,7 @@
             <div class="col-lg-4">
                 <div class="tj-main-sidebar slidebar-stickiy">
                     <div
-                        class="tj-sidebar-widget widget-search wow fadeInUp"
+                        class="tj-sidebar-widget widget-search wow fadeInUp mb-3"
                         data-wow-delay=".1s">
                         <h4 class="widget-title text-center text-md-start">Search here</h4>
                         <div class="search-box">
@@ -111,7 +111,7 @@
                     </div>
                     
                     <div
-                        class="tj-sidebar-widget widget-categories wow fadeInUp"
+                        class="tj-sidebar-widget widget-categories wow fadeInUp mb-3"
                         data-wow-delay=".5s">
                         <h4 class="widget-title text-center text-md-start">Categories</h4>
                         <ul>
@@ -162,6 +162,22 @@
         flex-direction: column;
         justify-content: center; /* vertical center content */
         text-align: center; 
+    }
+    .blog-meta {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+    .blog-content p {
+        text-align: justify;
+        margin-bottom: 0 !important;
+    }
+    .blog-content a.text-btn {
+        margin-top: 0 !important;
+    }
+    .tj-blog-section{
+        padding-bottom: 0 !important;
     }
 }
   

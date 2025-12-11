@@ -368,7 +368,8 @@
                                         <div class="blog-meta">
                                             <span class="categories">
                                                 <a href="/case-study/{{ $caseStudy->slug ?? $caseStudy->title }}">
-                                                    {{ $caseStudy->category->title ?? 'Case Study' }}
+                                                    Case Study
+                                                    {{-- {{ $caseStudy->category->title ?? 'Case Study' }} --}}
                                                 </a>
                                             </span>
                                         </div>
@@ -435,6 +436,8 @@
 
                         <div class="swiper-button-next cs-next"></div>
                         <div class="swiper-button-prev cs-prev"></div>
+                        <div class="swiper-pagination"></div>
+                        
                     </div>
                 </div>
             </div>
@@ -713,6 +716,15 @@
                 navigation: {
                     nextEl: ".cs-next",
                     prevEl: ".cs-prev",
+                },
+                autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                    type: 'bullets',
                 },
             });
         }

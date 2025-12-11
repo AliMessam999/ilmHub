@@ -25,6 +25,13 @@
         padding: 20px;
     }
 
+    @media (max-width: 480px) {
+        .sec-heading-wrap .sub-title {
+            display: block;
+            text-align: center;
+        }
+    }
+
 </style>
 
 <!-- start: Breadcrumb Section -->
@@ -155,9 +162,10 @@
                                             style="height: 250px; object-fit: cover;" />
                                     </div>
                                     <div class="project-content">
-                                        <span class="categories"><a href="portfolio-details.html">{{ $caseStudy->category->title ?? '' }}</a></span>
+                                        <span class="categories"><a href="portfolio-details.html">Case Study</a></span>
+                                        {{-- <span class="categories"><a href="portfolio-details.html">{{ $caseStudy->category->title ?? '' }}</a></span> --}}
                                         <div class="project-text">
-                                            <h4 class="title">
+                                            <h4 class="title" style="text-align: left">
                                                 <a href="/case-study/{{ $caseStudy->slug ?? $caseStudy->title }}">{{ $caseStudy->title }}</a>
                                             </h4>
                                             <a
