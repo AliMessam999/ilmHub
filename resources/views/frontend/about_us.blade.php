@@ -46,6 +46,18 @@
         margin-left: 0 !important;
         padding-left: 0 !important;
     }
+    .mission-vision-box ul li {
+        list-style-type: none !important;
+    }
+    .about-btn-area .tj-primary-btn{
+        margin-bottom: 30px !important;
+    }
+    .box-area .progress-box{
+        padding: 5px;
+    }
+    .division-section .mb-4{
+        text-align: center !important;
+    }
 }
     .mission-vision-box p {
         /* font-weight: light; */
