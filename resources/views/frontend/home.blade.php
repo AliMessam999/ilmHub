@@ -37,8 +37,8 @@
         }
 
         /* .partners-tagline .sec-heading .sub-title{
-                border: 1px dashed gray;
-            } */
+                    border: 1px dashed gray;
+                } */
 
         .service-item-wrapper .title-area {
             display: flex;
@@ -351,7 +351,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-lg-8 col-xl-9">
+                {{--  --}}
+                <div class="col-12 col-lg-8 col-xl-9 desktop-only">
                     <div class="blog-wrapper h8-blog-wrapper">
                         @foreach ($data->caseStudies as $caseStudy)
                             <div class="blog-item style-2 wow fadeInUp" data-wow-delay=".3s">
@@ -360,27 +361,24 @@
                                         <img src="{{ asset($caseStudy->images[0]->image ?? '') }}"
                                             alt="{{ $caseStudy->images[0]->alt ?? '' }}" />
                                     </a>
-
-                                    {{-- <div class="blog-date">
-                                            <span class="date">{{ $caseStudy->created_at->format('d') }}</span>
-                                            <span class="month">{{ $caseStudy->created_at->format('M') }}</span>
-                                        </div> --}}
-
-
                                 </div>
+
                                 <div class="blog-content">
                                     <div class="title-area">
                                         <div class="blog-meta">
-                                            <span class="categories"><a
-                                                    href="/case-study/{{ $caseStudy->slug ?? $caseStudy->title }}">Case
-                                                    Study</a></span>
-                                            {{-- <span class="categories"><a href="/case-study/{{ $caseStudy->slug ?? $caseStudy->title }}">{{$caseStudy->category->title ?? 'Case Study'}}</a></span> --}}
+                                            <span class="categories">
+                                                <a href="/case-study/{{ $caseStudy->slug ?? $caseStudy->title }}">
+                                                    {{ $caseStudy->category->title ?? 'Case Study' }}
+                                                </a>
+                                            </span>
                                         </div>
                                         <h3 class="title">
-                                            <a
-                                                href="/case-study/{{ $caseStudy->slug ?? $caseStudy->title }}">{{ $caseStudy->title }}</a>
+                                            <a href="/case-study/{{ $caseStudy->slug ?? $caseStudy->title }}">
+                                                {{ $caseStudy->title }}
+                                            </a>
                                         </h3>
                                     </div>
+
                                     <a class="text-btn" href="/case-study/{{ $caseStudy->slug ?? $caseStudy->title }}">
                                         <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
                                         <span class="btn-text"><span>Read More</span></span>
@@ -388,35 +386,55 @@
                                 </div>
                             </div>
                         @endforeach
+                    </div>
+                </div>
 
-                        <!-- Reference -->
-                        <!-- <div class="blog-item style-2 wow fadeInUp" data-wow-delay=".4s">
-                                <div class="blog-thumb">
-                                    <a href="blog-details.html"><img
-                                            src="{{ asset('frontend_assets/images/blog/blog-5.webp') }}" alt="" /></a>
-                                    <div class="blog-date">
-                                        <span class="date">28</span>
-                                        <span class="month">Feb</span>
-                                    </div>
-                                </div>
-                                <div class="blog-content">
-                                    <div class="title-area">
-                                        <div class="blog-meta">
-                                            <span class="categories"><a href="blog-details.html">Business</a></span>
-                                            <span>By
-                                                <a href="blog-details.html">Ellinien Loma</a></span>
+
+
+                <div class="col-12 mobile-only">
+                    <div class="swiper case-slider">
+                        <div class="swiper-wrapper">
+
+                            @foreach ($data->caseStudies as $caseStudy)
+                                <div class="swiper-slide">
+                                    <div class="blog-item style-2">
+                                        <div class="blog-thumb">
+                                            <a href="/case-study/{{ $caseStudy->slug ?? $caseStudy->title }}">
+                                                <img src="{{ asset($caseStudy->images[0]->image ?? '') }}"
+                                                    alt="">
+                                            </a>
                                         </div>
-                                        <h3 class="title">
-                                            <a href="blog-details.html">Mastering Change Management Lessons for
-                                                Businesses.</a>
-                                        </h3>
+
+                                        <div class="blog-content">
+                                            <div class="title-area">
+                                                <div class="blog-meta">
+                                                    <span class="categories">
+                                                        <a href="/case-study/{{ $caseStudy->slug ?? $caseStudy->title }}">
+                                                            {{ $caseStudy->category->title ?? 'Case Study' }}
+                                                        </a>
+                                                    </span>
+                                                </div>
+                                                <h3 class="title">
+                                                    <a href="/case-study/{{ $caseStudy->slug ?? $caseStudy->title }}">
+                                                        {{ $caseStudy->title }}
+                                                    </a>
+                                                </h3>
+                                            </div>
+
+                                            <a class="text-btn"
+                                                href="/case-study/{{ $caseStudy->slug ?? $caseStudy->title }}">
+                                                <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
+                                                <span class="btn-text"><span>Read More</span></span>
+                                            </a>
+                                        </div>
                                     </div>
-                                    <a class="text-btn" href="blog-details.html">
-                                        <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
-                                        <span class="btn-text"><span>Read More</span></span>
-                                    </a>
                                 </div>
-                            </div> -->
+                            @endforeach
+
+                        </div>
+
+                        <div class="swiper-button-next cs-next"></div>
+                        <div class="swiper-button-prev cs-prev"></div>
                     </div>
                 </div>
             </div>
@@ -440,10 +458,10 @@
                 </div>
                 <div class="col-12">
                     <!-- <div class="client-content style-2 wow fadeIn" data-wow-delay=".3s">
-                              <h5 class="sec-title">Join Over <span class="client-numbers">1000+</span> Companies with
-                                <span class="client-text">Cdigital</span> Here
-                              </h5>
-                            </div> -->
+                                  <h5 class="sec-title">Join Over <span class="client-numbers">1000+</span> Companies with
+                                    <span class="client-text">Cdigital</span> Here
+                                  </h5>
+                                </div> -->
                     <!-- <span class="sub-title wow fadeInUp" data-wow-delay=".3s">Our Departments</span> -->
                     <div class="swiper client-slider client-slider-1 wow fadeInUp" data-wow-delay=".3s">
                         <div class="swiper-wrapper mb-5">
@@ -685,6 +703,18 @@
                     };
                     toastr.error('An error occurred. Please try again.');
                 });
+        }
+
+        if (window.innerWidth <= 480) {
+            var caseSlider = new Swiper(".case-slider", {
+                slidesPerView: 1,
+                spaceBetween: 20,
+                loop: true,
+                navigation: {
+                    nextEl: ".cs-next",
+                    prevEl: ".cs-prev",
+                },
+            });
         }
     </script>
 @endpush
