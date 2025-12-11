@@ -1,0 +1,36 @@
+name: Deploy to SSH VPS Hostinger
+
+
+on:
+  push:
+    branches:
+      - main  # Change this to your branch name
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest  # Using Ubuntu runner
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+
+    - name: Install sshpass
+      run: sudo apt-get install sshpass
+
+    - name: Deploy to Windows Server
+      run: |
+        sshpass -p "${{ secrets.SSH_PASSWORD }}" ssh -o StrictHostKeyChecking=no ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} << 'EOF'
+        cd ${{secrets.MAIN_DEPLOY_PATH}}
+        git pull origin main
+        composer install --no-interaction --prefer-dist --optimize-autoloader
+        php artisan migrate:fresh --seed --force
+        php artisan cache:clear
+        export NVM_DIR="$HOME/.nvm"
+        [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" 
+        [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+        node -v  # Check Node version
+        npm -v   # Check npm version
+        npm install
+        npm run build
+        EOF
