@@ -15798,6 +15798,67 @@ only screen and (min-width: 576px) and (max-width: 767px),
   left: 53%;
 }
 
+@media (max-width: 480px) {
+  .loc-1 .location-tooltip::after {
+    content: "Islamabad" !important;
+    bottom: 1px;
+  }
+
+  .location-indicator.loc-1 {
+    top: 38%;
+    inset-inline-start: 56%;
+  }
+
+  .loc-2 .location-tooltip::after {
+    content: "Dubai";
+    inset-inline-start: 38%;
+    bottom: 1px;
+  }
+
+  .location-indicator.loc-2 {
+    top: 45%;
+    inset-inline-start: 40%;
+  }
+
+  .loc-3 .location-tooltip::after {
+    content: "Lahore";
+    inset-inline-start: 40%;
+  }
+
+  .location-indicator.loc-3 {
+    top: 44%;
+    inset-inline-start: 59%;
+  }
+
+  .loc-4 .location-tooltip::after {
+    content: "Chicago";
+    inset-inline-start: 38%;
+  }
+
+  .location-indicator.loc-4 {
+    top: 33%;
+    left: 13%;
+  }
+
+  .loc-5 .location-tooltip::after {
+    content: "Sharjah";
+    inset-inline-start: 38%;
+  }
+
+  .location-indicator.loc-5 {
+    top: 50%;
+    left: 54%;
+  }
+
+  .section-gap-x{
+    margin-top: 48px;
+  }
+
+  .gap-top, .section-top-gap{
+    padding-top: 0px;
+  }
+}
+
 
 
 .location-tooltip span {
@@ -34057,6 +34118,12 @@ only screen and (min-width: 768px) and (max-width: 991px) {
   /* animation: moveFa/r 2s infinite alternate; */
 }
 
+@media (max-width: 480px) {
+  .footer-top-scrool-bg {
+    font-size: 28px !important;
+  }
+}
+
 @keyframes moveFar {
   0% {
     --gradient-position: 50%;
@@ -34567,6 +34634,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
     .slidebar-stickiy .h8-blog-more {
       justify-content: center;
       display: flex;
+      margin-top: 11px;
     }
   }
 
@@ -34577,6 +34645,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
     margin-left: auto !important;
     margin-right: auto !important;
     padding: 10px 0;
+    margin-bottom: 50px;
     /* optional spacing */
   }
 
@@ -34782,9 +34851,9 @@ only screen and (min-width: 768px) and (max-width: 991px) {
         color: #fff;
     }
 
-    /* .case-slider .swiper-pagination {
+    .case-slider .swiper-pagination {
         bottom: 10px;
-    } */
+    }
 }
 
 /* SHOW normal layout on tablet + desktop */

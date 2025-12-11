@@ -15,6 +15,12 @@
     .tj-page-title {
         margin: 20px;
     }
+    .division-detail .content {
+        text-align: center;
+    }
+    .tj-primary-btn{
+        margin:auto;
+    }
 }
 </style>
 

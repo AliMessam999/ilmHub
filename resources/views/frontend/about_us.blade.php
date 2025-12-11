@@ -24,6 +24,28 @@
     .choose-content .choose-icon{
         margin: auto;
     }
+    .tj-choose-section{
+        padding-bottom: 0 !important;
+    }
+    .tj-about-section-2{
+        margin-top: 20px !important;
+    }
+    .choose-box * {
+        list-style: none !important;
+        list-style-type: none !important;
+    }
+    .choose-box *::before,
+    .choose-box *::after {
+        display: none !important;
+    }
+    .choose-content ul,
+    .choose-content ol,
+    .choose-content li {
+        list-style: none !important;
+        list-style-type: none !important;
+        margin-left: 0 !important;
+        padding-left: 0 !important;
+    }
 }
     .mission-vision-box p {
         /* font-weight: light; */
