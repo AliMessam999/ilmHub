@@ -17,7 +17,7 @@
             <main id="primary" class="site-main">
                 @yield('content')
 
-                @unless(request()->is('contact') || request()->is('about_us'))
+                @unless(request()->is('contact') || request()->is('about_us') || request()->is('case-study/*'))
                     <x-cta-section />
                 @endunless
             </main>

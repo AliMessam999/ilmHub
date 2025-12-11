@@ -94,7 +94,7 @@
                                             alt="{{ $caseStudy->alt }}" style="min-height:250px;max-height: 250px" />
                                     </div>
                                     <div class="project-content" style="height: 150px;">
-                                        <span class="categories"><a href="/case-study/{{ $caseStudy->title }}">ICT</a></span>
+                                        <span class="categories"><a href="/case-study/{{ $caseStudy->title }}">Case Study</a></span>
                                         <div class="project-text">
                                             <h4 class="title">
                                                 <a href="/case-study/{{ $caseStudy->title }}">{{ $caseStudy->title }}</a>
