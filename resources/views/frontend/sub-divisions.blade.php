@@ -208,7 +208,7 @@
                 </div>
                 <div class="col-lg-4">
                     <div class="tj-main-sidebar slidebar-stickiy">
-                        <div class="tj-sidebar-widget service-categories wow fadeInUp" data-wow-delay=".1s">
+                        <div class="tj-sidebar-widget service-categories wow fadeInUp mb-2" data-wow-delay=".1s">
                             <h4 class="widget-title text-center text-md-start">More services</h4>
                             <ul>
                                 @foreach ($categories as $category)
