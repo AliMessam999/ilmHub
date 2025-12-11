@@ -487,6 +487,12 @@ img {
   display: block
 }
 
+/* Hide all swiper navigation buttons */
+.swiper-button-prev,
+.swiper-button-next {
+  display: none !important;
+}
+
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .section-gap {

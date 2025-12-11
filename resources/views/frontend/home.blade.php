@@ -434,8 +434,6 @@
 
                         </div>
 
-                        <div class="swiper-button-next cs-next"></div>
-                        <div class="swiper-button-prev cs-prev"></div>
                         <div class="swiper-pagination"></div>
                         
                     </div>
