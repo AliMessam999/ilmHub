@@ -10285,10 +10285,10 @@ START: Services CSS
 }
 
 .service-item:first-child .service-reveal-bg {
-  margin-top: 40px;
+  margin-top: 0px;
 }
 .service-item:last-child .service-reveal-bg {
-  margin-top: -40px;
+  margin-top: 0px;
 }
 .service-item:hover .service-reveal-bg {
   opacity: 1;
