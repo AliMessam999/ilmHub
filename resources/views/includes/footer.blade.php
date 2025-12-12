@@ -126,7 +126,7 @@
                                <div class="social-links style-3 style-6">
                                    <ul>
                                        <li>
-                                           <a href="https://www.facebook.com/" target="_blank"><i
+                                           <a href="https://www.facebook.com/CDigitalPakOfficial" target="_blank"><i
                                                    class="fa-brands fa-facebook-f"></i></a>
                                        </li>
                                        <li>
@@ -138,7 +138,7 @@
                                                    class="fa-brands fa-x-twitter"></i></a>
                                        </li>
                                        <li>
-                                           <a href="https://www.linkedin.com/" target="_blank"><i
+                                           <a href="https://www.linkedin.com/company/cdigital/" target="_blank"><i
                                                    class="fa-brands fa-linkedin-in"></i></a>
                                        </li>
                                    </ul>

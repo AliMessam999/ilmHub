@@ -99,7 +99,7 @@
           <div class="social-links style-3">
             <ul>
               <li>
-                <a href="https://www.facebook.com/" target="_blank"
+                <a href="https://www.facebook.com/CDigitalPakOfficial" target="_blank"
                   ><i class="fa-brands fa-facebook-f"></i
                 ></a>
               </li>
@@ -114,7 +114,7 @@
                 ></a>
               </li>
               <li>
-                <a href="https://www.linkedin.com/" target="_blank"
+                <a href="https://www.linkedin.com/company/cdigital/" target="_blank"
                   ><i class="fa-brands fa-linkedin-in"></i
                 ></a>
               </li>
@@ -191,7 +191,7 @@
           <div class="social-links style-3">
             <ul>
               <li>
-                <a href="https://www.facebook.com/" target="_blank"
+                <a href="https://www.facebook.com/CDigitalPakOfficial" target="_blank"
                   ><i class="fa-brands fa-facebook-f"></i
                 ></a>
               </li>
@@ -206,7 +206,7 @@
                 ></a>
               </li>
               <li>
-                <a href="https://www.linkedin.com/" target="_blank"
+                <a href="https://www.linkedin.com/company/cdigital/" target="_blank"
                   ><i class="fa-brands fa-linkedin-in"></i
                 ></a>
               </li>

@@ -15915,6 +15915,14 @@ only screen and (min-width: 576px) and (max-width: 767px),
     padding-top: 0px;
   }
   
+  .tj-project-section-3 .container-fluid  .row .col-12{
+    flex: 0 0 auto;
+    width: 98%;    
+  }
+
+  .project-text .title{
+    margin-bottom: 10px;
+  }
 }
 
 
