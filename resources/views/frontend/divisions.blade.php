@@ -187,7 +187,7 @@
                             @endforeach
                             
                         </div>
-                        <div class="swiper-pagination-area"></div>
+                        <div class="swiper-pagination"></div>
                     </div>
                 </div>
             </div>
@@ -196,5 +196,33 @@
 </section>
 @endif
 <!-- end: Project Section -->
+
+<script>
+    
+
+       document.addEventListener("DOMContentLoaded", function () {
+    if (window.innerWidth <= 480 && document.querySelector(".project-slider-2")) {
+        var teamSwiper = new Swiper(".project-slider-2", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    }
+});
+
+
+</script>
 
 @endsection

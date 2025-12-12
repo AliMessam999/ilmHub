@@ -48,8 +48,7 @@
                         </div>
                         <h3 class="contact-title">Our Location</h3>
                         <p>
-                            House# 275C, Street#13, Chaklala Scheme III, Rawalpindi,
-                            Punjab 46000
+                            Platino Mall, 2nd Floor, D-Markaz Gulberg Green Islamabad
                         </p>
                     </div>
                 </div>
@@ -74,7 +73,13 @@
                         <h3 class="contact-title">Call us</h3>
                         <ul class="contact-list">
                             <li>
-                                <a href="tel:+92-51-5133790-2">+92-51-5133790-2</a>
+                                <a href="tel:+92-51-5133790-2">+92-51-5915790</a>
+                            </li>
+                            <li>
+                                <a href="tel:+92-51-5133790-2">+92-51-5915591</a>
+                            </li>
+                            <li>
+                                <a href="tel:+92-51-5133790-2">+92-51-5915992</a>
                             </li>
                         </ul>
                     </div>
@@ -88,10 +93,10 @@
     <section class="tj-contact-section-2 section-bottom-gap">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6">
+                <div class="col-lg-6 mb-4">
                     <div class="contact-form wow fadeInUp" data-wow-delay=".1s">
                         <h3 class="title text-center text-md-start">
-                            Feel Free to Get in Touch or Visit our Location.
+                            Feel Free to Get in Touch or Visit our Location
                         </h3>
                         <form id="contact-form" method="POST" action="{{ route('contact.store') }}">
                             @csrf
