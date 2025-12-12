@@ -4,13 +4,39 @@
 <style>
       @media (max-width: 480px) {
     .tj-page-header .container-fluid {
-        min-height: 300px; /* Example: set mobile height */
+        min-height: 300px;
         padding-top: 20px;
         padding-bottom: 20px;
-          display: flex;
+        display: flex;
         flex-direction: column;
-        justify-content: center; /* vertical center content */
-        text-align: center; 
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .project-content .categories a {
+        margin: auto;
+        display: block; /* Added to make margin: auto work */
+        text-align: center;
+    }
+    
+    .project-text h4.title {
+        text-align: center; /* This is what actually centers the text */
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%; /* Ensure it takes full width for proper centering */
+    }
+    
+    /* Additional styling to ensure proper mobile display */
+    .project-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .project-text {
+        width: 100%;
+        text-align: center;
     }
 }
 </style>
