@@ -241,71 +241,6 @@ class CdCategorySeeder extends Seeder
   ),
   12 => 
   array (
-    'id' => 54,
-    'title' => 'Healthcare',
-    'slug' => '/industry-detail/healthcare',
-    'image' => NULL,
-    'parent' => NULL,
-    'deleted_at' => '2025-12-09 05:49:17',
-    'created_at' => '2025-11-06 11:27:42',
-    'updated_at' => '2025-12-09 05:49:17',
-    'menu_id' => 14,
-    'description' => NULL,
-  ),
-  13 => 
-  array (
-    'id' => 55,
-    'title' => 'Education',
-    'slug' => '/industry-detail/education',
-    'image' => NULL,
-    'parent' => NULL,
-    'deleted_at' => '2025-12-09 05:49:34',
-    'created_at' => '2025-11-06 11:28:08',
-    'updated_at' => '2025-12-09 05:49:34',
-    'menu_id' => 14,
-    'description' => NULL,
-  ),
-  14 => 
-  array (
-    'id' => 56,
-    'title' => 'Utilities / Environment',
-    'slug' => '/industry-detail/utilities-environment',
-    'image' => NULL,
-    'parent' => NULL,
-    'deleted_at' => '2025-12-09 05:50:03',
-    'created_at' => '2025-11-06 11:28:41',
-    'updated_at' => '2025-12-09 05:50:03',
-    'menu_id' => 14,
-    'description' => NULL,
-  ),
-  15 => 
-  array (
-    'id' => 57,
-    'title' => 'Defence & Law Enforcement',
-    'slug' => '/industry-detail/defence-law-enforcement',
-    'image' => NULL,
-    'parent' => NULL,
-    'deleted_at' => '2025-12-09 05:50:37',
-    'created_at' => '2025-11-06 11:29:35',
-    'updated_at' => '2025-12-09 05:50:37',
-    'menu_id' => 14,
-    'description' => NULL,
-  ),
-  16 => 
-  array (
-    'id' => 58,
-    'title' => 'Private Enterprises',
-    'slug' => '/industry-detail/private-enterprises',
-    'image' => NULL,
-    'parent' => NULL,
-    'deleted_at' => '2025-12-09 05:50:55',
-    'created_at' => '2025-11-06 11:30:07',
-    'updated_at' => '2025-12-09 05:50:55',
-    'menu_id' => 14,
-    'description' => NULL,
-  ),
-  17 => 
-  array (
     'id' => 77,
     'title' => 'Mining & Minerals',
     'slug' => '/divisions/mining-minerals',
@@ -317,7 +252,7 @@ class CdCategorySeeder extends Seeder
     'menu_id' => 2,
     'description' => '<p>nnn</p>',
   ),
-  18 => 
+  13 => 
   array (
     'id' => 79,
     'title' => 'Meesam',
@@ -334,7 +269,7 @@ class CdCategorySeeder extends Seeder
 	<li>Data Analyst</li>
 </ul>',
   ),
-  19 => 
+  14 => 
   array (
     'id' => 81,
     'title' => 'IT Modernization & Cloud Infrastructure',
@@ -347,7 +282,7 @@ class CdCategorySeeder extends Seeder
     'menu_id' => NULL,
     'description' => NULL,
   ),
-  20 => 
+  15 => 
   array (
     'id' => 82,
     'title' => 'Enterprise IT Architecture & Strategy',
@@ -360,7 +295,7 @@ class CdCategorySeeder extends Seeder
     'menu_id' => NULL,
     'description' => NULL,
   ),
-  21 => 
+  16 => 
   array (
     'id' => 83,
     'title' => 'Cybersecurity & Compliance',
@@ -373,7 +308,7 @@ class CdCategorySeeder extends Seeder
     'menu_id' => NULL,
     'description' => NULL,
   ),
-  22 => 
+  17 => 
   array (
     'id' => 84,
     'title' => 'Hardware, Networking & Infrastructure',
@@ -386,7 +321,7 @@ class CdCategorySeeder extends Seeder
     'menu_id' => NULL,
     'description' => NULL,
   ),
-  23 => 
+  18 => 
   array (
     'id' => 85,
     'title' => 'Quality Assurance & Product Validation',
@@ -399,7 +334,7 @@ class CdCategorySeeder extends Seeder
     'menu_id' => NULL,
     'description' => NULL,
   ),
-  24 => 
+  19 => 
   array (
     'id' => 86,
     'title' => 'Digital Transformation',
@@ -412,7 +347,7 @@ class CdCategorySeeder extends Seeder
     'menu_id' => NULL,
     'description' => NULL,
   ),
-  25 => 
+  20 => 
   array (
     'id' => 87,
     'title' => 'Enterprise Business Applications',
@@ -425,7 +360,7 @@ class CdCategorySeeder extends Seeder
     'menu_id' => NULL,
     'description' => NULL,
   ),
-  26 => 
+  21 => 
   array (
     'id' => 88,
     'title' => 'AI & Intelligent Automation',
@@ -438,7 +373,7 @@ class CdCategorySeeder extends Seeder
     'menu_id' => NULL,
     'description' => NULL,
   ),
-  27 => 
+  22 => 
   array (
     'id' => 89,
     'title' => 'Application Development & Integration',
@@ -451,7 +386,7 @@ class CdCategorySeeder extends Seeder
     'menu_id' => NULL,
     'description' => NULL,
   ),
-  28 => 
+  23 => 
   array (
     'id' => 90,
     'title' => 'Hydrology & Flood Management',
@@ -464,7 +399,7 @@ class CdCategorySeeder extends Seeder
     'menu_id' => NULL,
     'description' => NULL,
   ),
-  29 => 
+  24 => 
   array (
     'id' => 91,
     'title' => 'Meteorology & Climate Monitoring',
@@ -477,7 +412,7 @@ class CdCategorySeeder extends Seeder
     'menu_id' => NULL,
     'description' => NULL,
   ),
-  30 => 
+  25 => 
   array (
     'id' => 92,
     'title' => 'Agrometeorology & Precision Agriculture',
@@ -490,7 +425,7 @@ class CdCategorySeeder extends Seeder
     'menu_id' => NULL,
     'description' => NULL,
   ),
-  31 => 
+  26 => 
   array (
     'id' => 93,
     'title' => 'Water Quality & Environmental Monitoring',
@@ -503,7 +438,7 @@ class CdCategorySeeder extends Seeder
     'menu_id' => NULL,
     'description' => NULL,
   ),
-  32 => 
+  27 => 
   array (
     'id' => 94,
     'title' => 'Strain Engineering & Synthetic Biology',
@@ -516,7 +451,7 @@ class CdCategorySeeder extends Seeder
     'menu_id' => NULL,
     'description' => NULL,
   ),
-  33 => 
+  28 => 
   array (
     'id' => 95,
     'title' => 'Fermentation & Bioprocess Development',
@@ -529,7 +464,7 @@ class CdCategorySeeder extends Seeder
     'menu_id' => NULL,
     'description' => NULL,
   ),
-  34 => 
+  29 => 
   array (
     'id' => 96,
     'title' => 'Downstream Processing (DSP)',
@@ -542,7 +477,7 @@ class CdCategorySeeder extends Seeder
     'menu_id' => NULL,
     'description' => NULL,
   ),
-  35 => 
+  30 => 
   array (
     'id' => 97,
     'title' => 'Tech Transfer & Industrial Scale-Up',
@@ -555,7 +490,7 @@ class CdCategorySeeder extends Seeder
     'menu_id' => NULL,
     'description' => NULL,
   ),
-  36 => 
+  31 => 
   array (
     'id' => 98,
     'title' => 'Biotech Technical Services',
@@ -568,7 +503,7 @@ class CdCategorySeeder extends Seeder
     'menu_id' => NULL,
     'description' => NULL,
   ),
-  37 => 
+  32 => 
   array (
     'id' => 99,
     'title' => 'Product Development & Partnerships',
@@ -581,7 +516,7 @@ class CdCategorySeeder extends Seeder
     'menu_id' => NULL,
     'description' => NULL,
   ),
-  38 => 
+  33 => 
   array (
     'id' => 100,
     'title' => 'Solar Engineering & EPC',
@@ -594,7 +529,7 @@ class CdCategorySeeder extends Seeder
     'menu_id' => NULL,
     'description' => NULL,
   ),
-  39 => 
+  34 => 
   array (
     'id' => 101,
     'title' => 'Operations, Maintenance & Monitoring',
@@ -607,7 +542,7 @@ class CdCategorySeeder extends Seeder
     'menu_id' => NULL,
     'description' => NULL,
   ),
-  40 => 
+  35 => 
   array (
     'id' => 102,
     'title' => 'Renewable Energy Advisory',
@@ -620,7 +555,7 @@ class CdCategorySeeder extends Seeder
     'menu_id' => NULL,
     'description' => NULL,
   ),
-  41 => 
+  36 => 
   array (
     'id' => 103,
     'title' => 'Product Solutions',
@@ -633,7 +568,7 @@ class CdCategorySeeder extends Seeder
     'menu_id' => NULL,
     'description' => NULL,
   ),
-  42 => 
+  37 => 
   array (
     'id' => 104,
     'title' => 'Integrated Surveillance & Analytics',
@@ -646,7 +581,7 @@ class CdCategorySeeder extends Seeder
     'menu_id' => NULL,
     'description' => NULL,
   ),
-  43 => 
+  38 => 
   array (
     'id' => 105,
     'title' => 'Access Control & Identity',
@@ -659,7 +594,7 @@ class CdCategorySeeder extends Seeder
     'menu_id' => NULL,
     'description' => NULL,
   ),
-  44 => 
+  39 => 
   array (
     'id' => 106,
     'title' => 'Intrusion & Perimeter Defense',
@@ -672,7 +607,7 @@ class CdCategorySeeder extends Seeder
     'menu_id' => NULL,
     'description' => NULL,
   ),
-  45 => 
+  40 => 
   array (
     'id' => 107,
     'title' => 'Fire Detection & Safety',
@@ -685,7 +620,7 @@ class CdCategorySeeder extends Seeder
     'menu_id' => NULL,
     'description' => NULL,
   ),
-  46 => 
+  41 => 
   array (
     'id' => 108,
     'title' => 'Public Address & Conference Systems',
@@ -698,7 +633,7 @@ class CdCategorySeeder extends Seeder
     'menu_id' => NULL,
     'description' => NULL,
   ),
-  47 => 
+  42 => 
   array (
     'id' => 109,
     'title' => 'Scanning, Detection & Screening',
@@ -711,7 +646,7 @@ class CdCategorySeeder extends Seeder
     'menu_id' => NULL,
     'description' => NULL,
   ),
-  48 => 
+  43 => 
   array (
     'id' => 110,
     'title' => 'Vehicle Tracking & Telematics',
@@ -724,7 +659,7 @@ class CdCategorySeeder extends Seeder
     'menu_id' => NULL,
     'description' => NULL,
   ),
-  49 => 
+  44 => 
   array (
     'id' => 111,
     'title' => 'Command, Control & Security Management',
@@ -737,7 +672,7 @@ class CdCategorySeeder extends Seeder
     'menu_id' => NULL,
     'description' => NULL,
   ),
-  50 => 
+  45 => 
   array (
     'id' => 112,
     'title' => 'Geological Surveying & Sensing',
@@ -750,7 +685,7 @@ class CdCategorySeeder extends Seeder
     'menu_id' => NULL,
     'description' => NULL,
   ),
-  51 => 
+  46 => 
   array (
     'id' => 113,
     'title' => 'Mine Automation & Control',
@@ -763,7 +698,7 @@ class CdCategorySeeder extends Seeder
     'menu_id' => NULL,
     'description' => NULL,
   ),
-  52 => 
+  47 => 
   array (
     'id' => 114,
     'title' => 'Mineral Processing Data Systems',
@@ -776,7 +711,7 @@ class CdCategorySeeder extends Seeder
     'menu_id' => NULL,
     'description' => NULL,
   ),
-  53 => 
+  48 => 
   array (
     'id' => 115,
     'title' => 'Safety, Environment & Compliance Monitoring',
@@ -789,16 +724,16 @@ class CdCategorySeeder extends Seeder
     'menu_id' => NULL,
     'description' => NULL,
   ),
-  54 => 
+  49 => 
   array (
     'id' => 116,
     'title' => 'Leadership & Team',
-    'slug' => 'leadership-team',
+    'slug' => 'about_us',
     'image' => NULL,
     'parent' => NULL,
     'deleted_at' => NULL,
     'created_at' => '2025-12-04 10:20:34',
-    'updated_at' => '2025-12-04 10:20:34',
+    'updated_at' => '2025-12-12 10:07:12',
     'menu_id' => 6,
     'description' => NULL,
   ),

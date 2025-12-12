@@ -42,7 +42,7 @@
             </div>
             <div class="row row-gap-4">
                 <div class="col-xl-4 col-lg-6 col-sm-6">
-                    <div class="contact-item style-2 wow fadeInUp" data-wow-delay=".3s">
+                    <div class="contact-item style-2 wow fadeInUp" data-wow-delay=".3s" style="max-height: 250px;">
                         <div class="contact-icon">
                             <i class="tji-location-3"></i>
                         </div>
@@ -53,7 +53,7 @@
                     </div>
                 </div>
                 <div class="col-xl-4 col-lg-6 col-sm-6">
-                    <div class="contact-item style-2 wow fadeInUp" data-wow-delay=".5s">
+                    <div class="contact-item style-2 wow fadeInUp" data-wow-delay=".5s" style="max-height: 250px;">
                         <div class="contact-icon">
                             <i class="tji-envelop"></i>
                         </div>
@@ -66,7 +66,7 @@
                     </div>
                 </div>
                 <div class="col-xl-4 col-lg-6 col-sm-6">
-                    <div class="contact-item style-2 wow fadeInUp" data-wow-delay=".7s">
+                    <div class="contact-item style-2 wow fadeInUp" data-wow-delay=".7s" style="max-height: 250px;">
                         <div class="contact-icon">
                             <i class="tji-phone"></i>
                         </div>

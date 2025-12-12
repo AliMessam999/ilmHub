@@ -55,17 +55,6 @@ class CdMenuSeeder extends Seeder
     'updated_at' => '2025-11-10 10:32:09',
     'slug' => '/',
   ),
-  4 => 
-  array (
-    'id' => 14,
-    'title' => 'Industries',
-    'icon' => 'icon',
-    'order' => '4',
-    'deleted_at' => NULL,
-    'created_at' => '2025-11-06 11:27:05',
-    'updated_at' => '2025-12-09 06:35:30',
-    'slug' => '/industries',
-  ),
 );
         DB::table('cd_menus')->insert($data);
     }
