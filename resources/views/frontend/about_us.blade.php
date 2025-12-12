@@ -83,6 +83,29 @@
     .tj-progress-list li {
         margin-bottom: 15px;
     }
+
+    
+@media (max-width: 480px) {
+  .mobile-only {
+    display: block !important;
+  }
+
+  .desktop-only {
+    display: none !important;
+  }
+
+
+}
+
+@media (min-width: 481px) {
+  .mobile-only {
+    display: none !important;
+  }
+
+  .desktop-only {
+    display: flex !important;
+  }
+}
 </style>
     <!-- start: Breadcrumb Section -->
     {{-- <section class="tj-page-header rounded-0" data-bg-image="/frontend_assets/images/bg/pheader-bg.webp"> --}}
@@ -219,7 +242,7 @@
     <!-- end: About Section -->
 
     <!-- start: Team Section -->
-    <section class="tj-team-section-3 section-gap section-gap-x">
+    {{-- <section class="tj-team-section-3 section-gap section-gap-x">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -247,7 +270,6 @@
                                     <a href="#">{{ $item->name }}</a>
                                 </h4>
                                 <span class="designation">{{ $item->designation }}</span>
-                                {{-- <a class="mail-at" href="#"><i class="tji-at"></i></a> --}}
                             </div>
                         </div>
                     </div>
@@ -261,15 +283,77 @@
         <div class="bg-shape-2">
             <img src="/frontend_assets/images/shape/pattern-3.svg" alt="" />
         </div>
-    </section>
+    </section> --}}
+
+
+    <section class="tj-team-section-3 section-gap section-gap-x">
+    <div class="container">
+
+        <!-- Desktop Grid -->
+        <div class="row leftSwipeWrap d-none d-md-flex">
+            @foreach ($team as $item)
+                <div class="col-lg-3 col-sm-6">
+                    <div class="team-item">
+                        <div class="team-img">
+                            <div class="team-img-inner">
+                                <img src="/{{ $item->image }}" alt="{{ $item->alt }}" />
+                            </div>
+                        </div>
+                        <div class="team-content text-center text-md-start">
+                            <h4 class="title">
+                                <a href="#">{{ $item->name }}</a>
+                            </h4>
+                            <span class="designation">{{ $item->designation }}</span>
+                        </div>
+                    </div>
+                </div>
+            @endforeach
+        </div>
+
+        <!-- Mobile Slider (≤480px) -->
+        <div class="swiper team-slider d-md-none">
+            <div class="swiper-wrapper">
+                @foreach ($team as $item)
+                    <div class="swiper-slide text-center">
+                        <div class="team-item">
+                            <div class="team-img">
+                                <div class="team-img-inner">
+                                    <img src="/{{ $item->image }}" alt="{{ $item->alt }}" />
+                                </div>
+                            </div>
+                            <div class="team-content">
+                                <h4 class="title">{{ $item->name }}</h4>
+                                <span class="designation">{{ $item->designation }}</span>
+                            </div>
+                        </div>
+                    </div>
+                @endforeach
+            </div>
+
+            <!-- Navigation -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+
+    </div>
+
+    <div class="bg-shape-1">
+        <img src="/frontend_assets/images/shape/pattern-2.svg" alt="" />
+    </div>
+    <div class="bg-shape-2">
+        <img src="/frontend_assets/images/shape/pattern-3.svg" alt="" />
+    </div>
+</section>
     <!-- end: Team Section -->
 
-    <section class="division-section py-5">
+    {{-- <section class="division-section py-5">
         <div class="container-fluid px-5">
             <!-- 🟦 Registrations -->
             <h2 class="mb-4 text-start">Registrations / Certificates</h2>
             <div class="row g-4">
-                <!-- Card 1 -->
                 @foreach ($certificates as $certificate)
                     <div class="col-md-4 col-sm-6">
                         <div class="card text-center shadow-sm h-100">
@@ -283,7 +367,6 @@
                         </div>
                     </div>
                 @endforeach
-                <!-- Card 2 -->
                 @foreach ($registrations as $registration)
                     <div class="col-md-4 col-sm-6">
                         <div class="card text-center shadow-sm h-100">
@@ -298,27 +381,155 @@
                     </div>
                 @endforeach
             </div>
+        </div>
+    </section> --}}
 
-            <!-- 🟩 Certifications -->
-            {{-- <div class="mt-5">
-                <h2 class="mb-4 text-start">Certifications</h2>
-                <div class="row justify-content-start">
-                    @foreach ($registrations as $registration)
-                        <div class="col-md-4 col-sm-6">
-                            <div class="card text-center shadow-sm h-100">
-                                <div class="card-body">
-                                    <div class="certifications-box">
-                                        <img src="/{{ $registration->image }}" alt="{{ $registration->alt }}"
-                                            class="img-fluid mb-3">
-                                        <p class="card-text mb-1">{!! $registration->title !!}</p>
+    <section class="division-section py-5">
+    <div class="container-fluid px-5">
 
-                                    </div>
+        <h2 class="mb-4 text-start">Registrations / Certificates</h2>
+
+        <!-- Desktop / Tablet Grid -->
+        <div class="row g-4 desktop-only">
+            @foreach ($certificates as $certificate)
+                <div class="col-md-4 col-sm-6">
+                    <div class="card text-center shadow-sm h-100">
+                        <div class="card-body">
+                            <div class="certifications-box">
+                                <img src="/{{ $certificate->image }}" alt="{{ $certificate->alt }}" class="img-fluid mb-3">
+                                <h5 class="card-title">{{ $certificate->title }}</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            @endforeach
+
+            @foreach ($registrations as $registration)
+                <div class="col-md-4 col-sm-6">
+                    <div class="card text-center shadow-sm h-100">
+                        <div class="card-body">
+                            <div class="certifications-box">
+                                <img src="/{{ $registration->image }}" alt="{{ $registration->alt }}" class="img-fluid mb-3">
+                                <p class="card-text mb-1">{!! $registration->title !!}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            @endforeach
+        </div>
+
+        <!-- Mobile Swiper -->
+        <div class="swiper mobile-only">
+            <div class="swiper-wrapper">
+                @foreach ($certificates as $certificate)
+                    <div class="swiper-slide text-center">
+                        <div class="card text-center shadow-sm h-100">
+                            <div class="card-body">
+                                <div class="certifications-box">
+                                    <img src="/{{ $certificate->image }}" alt="{{ $certificate->alt }}" class="img-fluid mb-3">
+                                    <h5 class="card-title">{{ $certificate->title }}</h5>
                                 </div>
                             </div>
                         </div>
-                    @endforeach
-                </div>
-            </div> --}}
+                    </div>
+                @endforeach
+
+                @foreach ($registrations as $registration)
+                    <div class="swiper-slide text-center">
+                        <div class="card text-center shadow-sm h-100">
+                            <div class="card-body">
+                                <div class="certifications-box">
+                                    <img src="/{{ $registration->image }}" alt="{{ $registration->alt }}" class="img-fluid mb-3">
+                                    <p class="card-text mb-1">{!! $registration->title !!}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                @endforeach
+            </div>
+
+            <!-- Navigation -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- Pagination -->
+            <div class="swiper-pagination"></div>
         </div>
-    </section>
+
+    </div>
+</section>
+
+<script>
+        document.addEventListener("DOMContentLoaded", function () {
+    function initTeamSlider() {
+        if (window.innerWidth <= 480 && document.querySelector(".team-slider")) {
+            var teamSwiper = new Swiper(".team-slider", {
+                slidesPerView: 1,
+                spaceBetween: 15,
+                loop: true,
+                autoplay: {
+                    delay: 3000,
+                    disableOnInteraction: false,
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                // pagination: {
+                //     el: ".swiper-pagination",
+                //     clickable: true,
+                // },
+            });
+        }
+    }
+
+    initTeamSlider();
+
+    // Re-init on window resize
+    window.addEventListener("resize", function () {
+        initTeamSlider();
+    });
+});
+
+
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    function initMobileCertSwiper() {
+        if (window.innerWidth <= 480 && document.querySelector(".mobile-only")) {
+            if (!window.mobileCertSwiper) {
+                window.mobileCertSwiper = new Swiper(".mobile-only", {
+                    slidesPerView: 1,
+                    spaceBetween: 15,
+                    loop: true,
+                    autoplay: {
+                        delay: 2500,
+                        disableOnInteraction: false,
+                    },
+                    navigation: {
+                        nextEl: ".mobile-only .swiper-button-next",
+                        prevEl: ".mobile-only .swiper-button-prev",
+                    },
+                    // pagination: {
+                    //     el: ".mobile-only .swiper-pagination",
+                    //     clickable: true,
+                    // },
+                });
+            }
+        } else {
+            if (window.mobileCertSwiper) {
+                window.mobileCertSwiper.destroy(true, true);
+                window.mobileCertSwiper = undefined;
+            }
+        }
+    }
+
+    initMobileCertSwiper();
+    window.addEventListener("resize", initMobileCertSwiper);
+});
+
+    </script>
 @endsection
