@@ -1425,12 +1425,12 @@ only screen and (min-width: 576px) and (max-width: 767px),
     
     /* Slider video and background height */
     .tj-slider-item {
-        height: 380px !important;
-        min-height: 380px !important;
+        height: 420px !important;
+        min-height: 420px !important;
     }
     
     .tj-slider-item video {
-        height: 380px !important;
+        height: 420px !important;
         object-fit: cover !important;
     }
     
@@ -15914,6 +15914,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
   .gap-top, .section-top-gap{
     padding-top: 0px;
   }
+  
 }
 
 
@@ -17419,6 +17420,16 @@ only screen and (min-width: 576px) and (max-width: 767px),
     gap: 20px;
   }
 }
+
+@media (max-width: 480px) {
+  .progress-box {
+    max-width: 70%;
+    margin-left: 0 !important;
+  }
+  .progress-box .tj-progress-list li{
+    text-align: left;
+  }
+  }
 
 .tj-progress-title {
   font-size: 16px;
