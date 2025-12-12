@@ -449,6 +449,7 @@
                                             </div>
 
                                             <a class="text-btn"
+                                                style="margin: auto; margin-top: 10px;"
                                                 href="/case-study/{{ $caseStudy->slug ?? $caseStudy->title }}">
                                                 <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
                                                 <span class="btn-text" style="margin: auto;"><span  style="margin: auto;">Read More</span></span>
