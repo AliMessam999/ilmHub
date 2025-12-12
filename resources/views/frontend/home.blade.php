@@ -387,7 +387,21 @@
                                         </div>
                                         <h3 class="title">
                                             <a href="/case-study/{{ $caseStudy->slug ?? $caseStudy->title }}">
-                                                {{ $caseStudy->title }}
+                                                @php
+                                                    $html = $caseStudy->description;
+
+                                                    $dom = new DOMDocument();
+                                                    libxml_use_internal_errors(true);
+                                                    $dom->loadHTML($html);
+                                                    libxml_clear_errors();
+
+                                                    $h3Tags = $dom->getElementsByTagName('h3');
+
+                                                    $firstH3 = $h3Tags->length > 0 ? $h3Tags->item(0)->textContent : null;
+
+                                                    // dd($firstH3);
+                                                @endphp
+                                                {{ $firstH3 }}
                                             </a>
                                         </h3>
                                     </div>
@@ -421,15 +435,15 @@
                                         <div class="blog-content">
                                             <div class="title-area">
                                                 <div class="blog-meta">
-                                                    <span class="categories">
+                                                    <span class="categories" style="margin: auto;">
                                                         <a href="/case-study/{{ $caseStudy->slug ?? $caseStudy->title }}">
                                                             Case Study
                                                         </a>
                                                     </span>
                                                 </div>
-                                                <h3 class="title">
+                                                <h3 class="title" style="font-size: 16px;text-align: center;">
                                                     <a href="/case-study/{{ $caseStudy->slug ?? $caseStudy->title }}">
-                                                        {{ $caseStudy->title }}
+                                                        {{ $firstH3 }}
                                                     </a>
                                                 </h3>
                                             </div>
@@ -437,7 +451,7 @@
                                             <a class="text-btn"
                                                 href="/case-study/{{ $caseStudy->slug ?? $caseStudy->title }}">
                                                 <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
-                                                <span class="btn-text"><span>Read More</span></span>
+                                                <span class="btn-text" style="margin: auto;"><span  style="margin: auto;">Read More</span></span>
                                             </a>
                                         </div>
                                     </div>
@@ -446,7 +460,7 @@
 
                         </div>
 
-                        <div class="swiper-pagination"></div>
+                        {{-- <div class="swiper-pagination"></div> --}}
                         
                     </div>
                 </div>

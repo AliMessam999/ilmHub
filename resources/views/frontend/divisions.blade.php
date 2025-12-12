@@ -37,6 +37,8 @@
         .tj-service-section{
             padding-bottom: 0 !important;
         }
+
+        
     }
 
 </style>
@@ -162,7 +164,7 @@
                             @foreach($caseStudies as $caseStudy)
                             <div class="swiper-slide">
                                 <div class="project-item">
-                                    <div class="project-img">
+                                    <div class="project-img project-img-33">
                                         <img
                                             src="/{{ $caseStudy->images[0]->image ?? '' }}"
                                             alt="{{ $caseStudy->images[0]->alt ?? '' }}"
@@ -187,7 +189,7 @@
                             @endforeach
                             
                         </div>
-                        <div class="swiper-pagination"></div>
+                        {{-- <div class="swiper-pagination"></div> --}}
                     </div>
                 </div>
             </div>
