@@ -167,7 +167,9 @@
             <div class="contact-info">
               <div class="contact-item">
                 <span class="subtitle">Phone</span>
-                <a class="contact-link" href="tel:8089091313">808-909-1313</a>
+                <a href="tel:+92-51-5133790-2">+92-51-5915790</a></br>
+                <a href="tel:+92-51-5133790-2">+92-51-5915591</a></br>
+                <a href="tel:+92-51-5133790-2">+92-51-5915992</a>
               </div>
               <div class="contact-item">
                 <span class="subtitle">Email</span>
@@ -178,7 +180,7 @@
               <div class="contact-item">
                 <span class="subtitle">Location</span>
                 <span class="contact-link"
-                  >993 Renner Burg, West Rond, MT 94251-030</span
+                  >Platino Mall, 2nd Floor, D-Markaz Gulberg Green Islamabad</span
                 >
               </div>
             </div>
