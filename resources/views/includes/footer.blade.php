@@ -13,7 +13,7 @@
                                        <input type="email" name="email" placeholder="Enter email" />
                                        <button type="submit"><i class="tji-plane"></i></button>
                                        <label for="agree"><input id="agree" type="checkbox" />Agree to our
-                                           <a href="#">Terms & Condition?</a></label>
+                                           <a href="{{ route('terms.page') }}">Terms & Condition?</a></label>
                                    </form>
                                </div>
                            </div>
