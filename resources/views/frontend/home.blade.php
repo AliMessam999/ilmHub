@@ -121,6 +121,9 @@
             .location-indicator {
                 transform: scale(1.2) !important;
             }
+            .tj-about-section{
+                padding-bottom: 0 !important;
+            }
         }
 
         .industry-hover-item {

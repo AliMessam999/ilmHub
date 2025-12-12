@@ -30,6 +30,13 @@
             display: block;
             text-align: center;
         }
+        
+        .tj-page-title {
+            font-size: 32px !important;
+        }
+        .tj-service-section{
+            padding-bottom: 0 !important;
+        }
     }
 
 </style>

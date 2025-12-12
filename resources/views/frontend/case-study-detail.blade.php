@@ -2,7 +2,42 @@
 
 @section('content')
 
-
+<style>
+    @media (max-width: 480px) {
+        @media (max-width: 480px) {
+        .tj-page-title {
+            font-size: 32px !important;
+            text-align: center !important; /* Add this line */
+        }
+        
+        /* Increase height of the page header section */
+        .tj-page-header {
+            min-height: 250px !important;
+            display: flex !important;
+            align-items: center !important;
+        }
+        
+        .tj-page-header .container-fluid {
+            min-height: 250px !important;
+            display: flex !important;
+            flex-direction: column !important;
+            justify-content: center !important;
+            text-align: center !important; /* Add this line */
+        }
+        
+        /* Ensure the header content is centered */
+        .tj-page-header-content {
+            text-align: center !important;
+            width: 100% !important;
+        }
+        
+        /* Adjust margins if needed */
+        .tj-page-title.mt-3 {
+            margin-top: 0 !important;
+            padding-top: 20px !important;
+        }
+    }
+</style>
 <!-- start: Breadcrumb Section -->
 <section
     class="tj-page-header rounded-0"

@@ -175,25 +175,34 @@
     </section>
     <!-- end: Contact Section -->
 
-    <!-- start: Cta Section -->
-    
-    <!-- end: Cta Section -->
-
     @push('styles')
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
         <style>
-                  @media (max-width: 480px) {
-    .tj-page-header .container {
-        min-height: 300px; /* Example: set mobile height */
-        padding-top: 20px;
-        padding-bottom: 20px;
-          display: flex;
-        flex-direction: column;
-        justify-content: center; /* vertical center content */
-        text-align: center; 
-    }
-}
+            @media (max-width: 480px) {
+                .tj-page-header .container {
+                    min-height: 300px;
+                    padding-top: 20px;
+                    padding-bottom: 20px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    text-align: center;
+                }
+                
+                /* Hide the map legend/controls on mobile */
+                .leaflet-control.legend,
+                .legend,
+                .leaflet-top.leaflet-right .leaflet-control {
+                    display: none !important;
+                }
+                
+                /* Optionally hide scale control too */
+                .leaflet-control-scale {
+                    display: none !important;
+                }
+            }
+            
             #map {
                 height: 100%;
                 width: 100%;
@@ -315,25 +324,39 @@
             // Add scale control
             L.control.scale({ imperial: true, metric: true }).addTo(map);
 
-            // Add legend control
+            // Add legend control - but only show on desktop
             const legend = L.control({ position: "topright" });
             legend.onAdd = function () {
                 const div = L.DomUtil.create("div", "legend");
-                div.innerHTML = '<div class="title">Locations</div>';
-                cities.forEach((c) => {
-                    const item = document.createElement("div");
-                    item.className = "item";
-                    item.innerHTML = `<span class="marker-dot" style="background:${c.color}"></span><span>${c.name}</span>`;
-                    div.appendChild(item);
-                });
-                const info = document.createElement("div");
-                info.className = "info";
-                info.innerHTML = "Click markers to view details. Scroll/drag to explore the map.";
-                div.appendChild(info);
+                // Only add content if not mobile
+                if (window.innerWidth > 480) {
+                    div.innerHTML = '<div class="title">Locations</div>';
+                    cities.forEach((c) => {
+                        const item = document.createElement("div");
+                        item.className = "item";
+                        item.innerHTML = `<span class="marker-dot" style="background:${c.color}"></span><span>${c.name}</span>`;
+                        div.appendChild(item);
+                    });
+                    const info = document.createElement("div");
+                    info.className = "info";
+                    info.innerHTML = "Click markers to view details. Scroll/drag to explore the map.";
+                    div.appendChild(info);
+                }
                 return div;
             };
             legend.addTo(map);
 
+            // Hide legend on mobile initially
+            function hideLegendOnMobile() {
+                const legend = document.querySelector('.legend');
+                if (legend && window.innerWidth <= 480) {
+                    legend.style.display = 'none';
+                }
+            }
+            
+            // Call on load
+            window.addEventListener('load', hideLegendOnMobile);
+            
             // Make map keyboard accessible: focus on map container
             document.getElementById("map").tabIndex = 0;
         </script>
