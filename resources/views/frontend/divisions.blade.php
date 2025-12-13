@@ -101,7 +101,8 @@
                                 </h4>
                             </div>
                             <div class="service-content">
-                                <span class="desc">{!! substr($sub_category->solutions[0]->description ?? 'N/A', 0, 110) !!}</span>
+                                <span class="desc">{!!($sub_category->solutions[0]->alt) !!}</span>
+                                {{-- <span class="desc">{!! substr($sub_category->solutions[0]->description ?? 'N/A', 0, 110) !!}</span> --}}
                             </div>
                         </div>
                         <div
