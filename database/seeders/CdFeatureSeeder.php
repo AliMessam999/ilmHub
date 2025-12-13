@@ -17,7 +17,7 @@ class CdFeatureSeeder extends Seeder
     'title' => 'PBS',
     'description' => '<h2>Building Pakistan&rsquo;s National Data Backbone</h2>
 
-<h3>How CDigital Helped PBS Build a Future-Ready Datacentre Backbone, Achieving 99%+ Uptime While Cutting Recovery Time by &asymp;60%</h3>
+<h3>How CDigital Helped Pakistan Bureau of Statistics&nbsp;Build a Future-Ready Datacentre Backbone, Achieving 99%+ Uptime While Cutting Recovery Time by &asymp;60%</h3>
 
 <h3><strong>About The Client</strong></h3>
 
@@ -56,7 +56,7 @@ class CdFeatureSeeder extends Seeder
     'icon' => 'Nill',
     'deleted_at' => NULL,
     'created_at' => '2025-12-09 15:34:15',
-    'updated_at' => '2025-12-09 15:34:15',
+    'updated_at' => '2025-12-13 09:49:29',
     'industry' => 'National Data Infrastructure / Public Sector Digitalization',
     'image' => NULL,
   ),
@@ -209,7 +209,7 @@ class CdFeatureSeeder extends Seeder
     'icon' => 'Nill',
     'deleted_at' => NULL,
     'created_at' => '2025-12-09 15:48:14',
-    'updated_at' => '2025-12-09 15:48:14',
+    'updated_at' => '2025-12-13 09:56:01',
     'industry' => 'Public Sector · Law Enforcement · Digital Governance',
     'image' => NULL,
   ),
