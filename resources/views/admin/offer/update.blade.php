@@ -50,7 +50,7 @@
                                 </div>
                             </div>
                             <div class="col-lg-4">
-                                <label>Class (Optional)</label>
+                                <label>Class/URL (Optional)</label>
                                 <div class="common_input mb_15">
                                     <input type="text" name="class" value="{{__($menu->class)}}" placeholder="Enter CSS class for icon"
                                         autocomplete="off">
