@@ -572,17 +572,6 @@ class CdFooterSeeder extends Seeder
     'created_at' => '2025-12-05 06:40:10',
     'updated_at' => '2025-12-05 06:40:10',
   ),
-  51 => 
-  array (
-    'id' => 52,
-    'title' => 'Your Next Digital Step Starts Here',
-    'menu_id' => 14,
-    'category_id' => NULL,
-    'sub_category_id' => NULL,
-    'deleted_at' => NULL,
-    'created_at' => '2025-12-09 06:02:24',
-    'updated_at' => '2025-12-09 06:02:24',
-  ),
 );
         DB::table('cd_footers')->insert($data);
     }

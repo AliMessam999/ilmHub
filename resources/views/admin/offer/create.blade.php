@@ -51,9 +51,9 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-4">
-                                    <label>Class (Optional)</label>
+                                    <label>Class/URL (Optional)</label>
                                     <div class="common_input mb_15">
-                                        <input type="text" name="class" placeholder="Enter CSS class for icon" autocomplete="off" value="tji-service-1">
+                                        <input type="text" name="class" placeholder="Enter CSS class for icon" autocomplete="off" value="">
                                     </div>
                                 </div>
                                 <div class="col-lg-4">

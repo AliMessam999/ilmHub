@@ -43,7 +43,12 @@ class HomeController extends Controller
         // dd($data->client);
 
         // New Data
-        $data->caseStudies = CdFeature::inRandomOrder()->with('images')->limit(3)->get();      
+        $data->caseStudies = CdFeature::with('images')
+            ->whereIn('id', [50, 43, 48])
+            ->orderByRaw("FIELD(id, 50, 43, 48)")
+            ->get();
+        // $data->caseStudies = CdFeature::get(); 
+        // dd($data->caseStudies);     
         return view('frontend.home', compact('data'));
     }
     public function IndustryData()

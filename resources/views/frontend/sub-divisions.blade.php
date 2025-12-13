@@ -277,7 +277,7 @@
                             <div class="tj-sidebar-widget widget-feature-item wow fadeInUp" data-wow-delay=".3s">
                                 <div class="feature-box">
                                     <div class="feature-content">
-                                        <h2 class="title">{{ $teamMember->name }}</h2>
+                                        <h2 class="title" style="font-size: 50px">{{ $teamMember->name }}</h2>
                                         <span>{{ $teamMember->designation }}</span>
                                     </div>
                                     <div class="feature-images bg-white">

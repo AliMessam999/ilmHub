@@ -230,6 +230,7 @@
         $mainHeading = implode(' ', array_slice($words, 0, -1));
 
         $solutions = CdOffer::where('position', 'bottom')->where('alt', 'home_page_card')->get();
+        // dd($solutions);
 
     @endphp
     <section class="tj-about-section section-gap">
@@ -317,7 +318,7 @@
                                             <!-- tji-service-1  tji-service-2   tji-service-3   tji-service-4 -->
                                         </div>
                                         <h4 class="title">
-                                            <a href="{{ $solution->slug }}">{!! $solution->title !!}</a>
+                                            <a href="{{ $solution->class }}">{!! $solution->title !!}</a>
                                         </h4>
                                     </div>
                                     <div class="service-content">
@@ -449,6 +450,7 @@
                                             </div>
 
                                             <a class="text-btn"
+                                                style="margin: auto; margin-top: 10px;"
                                                 href="/case-study/{{ $caseStudy->slug ?? $caseStudy->title }}">
                                                 <span class="btn-icon"><i class="tji-arrow-right-long"></i></span>
                                                 <span class="btn-text" style="margin: auto;"><span  style="margin: auto;">Read More</span></span>
