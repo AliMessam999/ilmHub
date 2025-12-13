@@ -15814,19 +15814,19 @@ only screen and (min-width: 576px) and (max-width: 767px),
 }
 
 .location-indicator.loc-1 {
-  top: 40%;
-  inset-inline-start: 52%;
+  top: 37%;
+  inset-inline-start: 53%;
 }
 
 .loc-2 .location-tooltip::after {
   content: "Dubai";
   inset-inline-start: 38%;
-  bottom: 1px;
+  bottom: -10px;
 }
 
 .location-indicator.loc-2 {
   top: 46%;
-  inset-inline-start: 47%;
+  inset-inline-start: 49%;
 }
 
 .loc-3 .location-tooltip::after {
@@ -15856,7 +15856,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
 
 .location-indicator.loc-5 {
   top: 48%;
-  left: 53%;
+  left: 51%;
 }
 
 .swiper-slide .project-item .project-img-33 {
