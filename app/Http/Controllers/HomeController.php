@@ -316,7 +316,7 @@ class HomeController extends Controller
     public function divsions($category_id = null)
     {
         $category = CdCategory::where('slug','LIKE','%'.$category_id.'%')->with('sub_categories.solutions')->first();
-        
+        // dd($category);
         if (!$category) {
             abort(403, 'Category not found');
         }
