@@ -7320,6 +7320,54 @@ class CustomerServiceSeeder extends Seeder
     'created_at' => NULL,
     'updated_at' => NULL,
   ),
+  467 => 
+  array (
+    'id' => 558,
+    'solution_id' => 117,
+    'title' => 'Data Center Modernization',
+    'label' => 'withImage',
+    'description' => 'Unlock the full potential of your data center with virtualization, consolidation, and optimization strategies that maximize efficiency.',
+    'image' => 'upload/customer_services/37aCbSrnhLmVTAanLYOgPMQFb25O9jkmZzEm4UxN.jpg',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  468 => 
+  array (
+    'id' => 559,
+    'solution_id' => 117,
+    'title' => 'Cloud Enablement',
+    'label' => 'withImage',
+    'description' => 'Make the leap to cloud with confidence. Our cloud enablement services guide you through migration planning, hybrid cloud architecture design, and virtual desktop implementation.',
+    'image' => 'upload/customer_services/ay5UGDukVtABBLpvMzchcm1P7YaNUu4mwIotJEPr.webp',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  469 => 
+  array (
+    'id' => 560,
+    'solution_id' => 117,
+    'title' => 'Business Continuity Modernization',
+    'label' => 'withImage',
+    'description' => 'Prepare for the unexpected with integrated Business Continuity and Disaster Recovery (BCDR) systems designed to protect your operations.',
+    'image' => 'upload/customer_services/k0nePELA7VU8JsJIigrNCFmpFv3a9GaMqK5y7sY6.jpg',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  470 => 
+  array (
+    'id' => 561,
+    'solution_id' => 117,
+    'title' => 'Process Integration Platforms',
+    'label' => 'withImage',
+    'description' => 'Break down silos and create digital continuity across your organization. Our process integration platforms connect systems, automate workflows, and ensure seamless data flow between departments.',
+    'image' => 'upload/customer_services/ueQyEQnz2MyWBB1V9P9a1rOk5nq97THjxb1TloGi.webp',
+    'deleted_at' => NULL,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
 );
         DB::table('customer_services')->insert($data);
     }

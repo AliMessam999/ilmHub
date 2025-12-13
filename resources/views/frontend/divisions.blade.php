@@ -3,6 +3,9 @@
 @section('content')
 
 <style>
+    .tj-project-section-3{
+        height: 800px;
+    }
     .division-item:hover .service-reveal-bg{
         z-index: 5 !important;
         /* transform: none !important; */
@@ -12,7 +15,7 @@
     }
     
     .project-item {
-        height: 400px !important;
+        height: 450px !important;
         display: flex;
         flex-direction: column;
     }
@@ -121,7 +124,7 @@
 
 <!-- start: Project Section -->
 @if($caseStudies->count() > 0)
-<section class="tj-project-section-3 mb-5 section-gap section-gap-x">
+<section class="tj-project-section-3 mb-5 section-gap section-gap-x" style="">
     <div class="container">
         <div class="row">
             <div class="col-12">
@@ -174,9 +177,12 @@
                                     <div class="project-content">
                                         <span class="categories"><a href="portfolio-details.html">Case Study</a></span>
                                         {{-- <span class="categories"><a href="portfolio-details.html">{{ $caseStudy->category->title ?? '' }}</a></span> --}}
-                                        <div class="project-text">
+                                        <div class="project-text mt-2">
                                             <h4 class="title" style="text-align: left">
-                                                <a href="/case-study/{{ $caseStudy->slug ?? $caseStudy->title }}">{{ $caseStudy->title }}</a>
+                                                <a 
+                                                    class="my-0"
+                                                    href="/case-study/{{ $caseStudy->slug ?? $caseStudy->title }}" 
+                                                    style="font-size: 22px;">{{ $caseStudy->title }}</a>
                                             </h4>
                                             <a
                                                 class="project-btn"

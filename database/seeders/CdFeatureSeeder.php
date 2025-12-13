@@ -14,7 +14,7 @@ class CdFeatureSeeder extends Seeder
   0 => 
   array (
     'id' => 43,
-    'title' => 'PBS',
+    'title' => 'Pakistan Bureau of Statistics National Datacenter Powers Critical Data for 200M+ Citizens',
     'description' => '<h2>Building Pakistan&rsquo;s National Data Backbone</h2>
 
 <h3>How CDigital Helped Pakistan Bureau of Statistics&nbsp;Build a Future-Ready Datacentre Backbone, Achieving 99%+ Uptime While Cutting Recovery Time by &asymp;60%</h3>
@@ -63,7 +63,7 @@ class CdFeatureSeeder extends Seeder
   1 => 
   array (
     'id' => 44,
-    'title' => 'Land Records AJK',
+    'title' => 'Transforming Land Governance for 4 Million Citizens in AJ&K',
     'description' => '<h2>Transforming Land Governance in AJ&amp;K</h2>
 
 <h3>How CDigital Modernized AJ&amp;K&rsquo;s Land Record System With a Unified Digital Infrastructure, Secure Networking &amp; Real-Time Service Delivery</h3>
@@ -108,14 +108,14 @@ class CdFeatureSeeder extends Seeder
     'icon' => 'Nill',
     'deleted_at' => NULL,
     'created_at' => '2025-12-09 15:39:15',
-    'updated_at' => '2025-12-09 15:39:15',
+    'updated_at' => '2025-12-13 06:32:54',
     'industry' => 'Digital Governance • Land Administration',
     'image' => NULL,
   ),
   2 => 
   array (
     'id' => 45,
-    'title' => 'Tourism Management',
+    'title' => 'KP Launches Pakistan’s #1 Tourism Intelligence Platform',
     'description' => '<h2>Modernizing Tourism Intelligence in Khyber Pakhtunkhwa</h2>
 
 <h3>How CDigital Built Pakistan&rsquo;s #1 Tourism Management System &mdash; Awarded Winner at the P@SHA ICT Awards 2025</h3>
@@ -158,14 +158,14 @@ class CdFeatureSeeder extends Seeder
     'icon' => 'Nill',
     'deleted_at' => NULL,
     'created_at' => '2025-12-09 15:43:09',
-    'updated_at' => '2025-12-09 15:43:09',
+    'updated_at' => '2025-12-13 06:33:26',
     'industry' => 'Tourism • Government Digital Transformation',
     'image' => NULL,
   ),
   3 => 
   array (
     'id' => 46,
-    'title' => 'Computerization of Driving Licenses in AJ&K',
+    'title' => 'A New Era of Citizen-Centric Driving Licensing in AJ&K',
     'description' => '<h2>Transforming Driving License Management in AJ&amp;K</h2>
 
 <h3>How CDigital Digitalized an Entire Provincial Licensing System &mdash; Enhancing Security, Speed &amp; Public Trust</h3>
@@ -216,7 +216,7 @@ class CdFeatureSeeder extends Seeder
   4 => 
   array (
     'id' => 47,
-    'title' => 'AJ&K Consumer Billing System',
+    'title' => 'Revolutionizing AJK’s Power Sector with a Unified Digital System',
     'description' => '<h2>Building First Unified Province-Wide Digital Utility System</h2>
 
 <h3>How CDigital Modernized AJKED&rsquo;s Consumer Billing Infrastructure &amp; Administrative Systems at Scale</h3>
@@ -257,14 +257,14 @@ class CdFeatureSeeder extends Seeder
     'icon' => 'Nill',
     'deleted_at' => NULL,
     'created_at' => '2025-12-09 15:54:08',
-    'updated_at' => '2025-12-09 15:54:08',
+    'updated_at' => '2025-12-13 06:36:59',
     'industry' => 'Public Utilities • Power Distribution',
     'image' => NULL,
   ),
   5 => 
   array (
     'id' => 48,
-    'title' => 'Judiciary AJK',
+    'title' => '110,000+ Judgments Digitized as AJK & KP Take a Leap Toward E-Justice',
     'description' => '<h2>The Largest Judicial Digital Transformation in AJ&amp;K&rsquo;s History</h2>
 
 <h3>How CDigital Replaced Manual Court Processes With a Modern, Connected &amp; Future-Ready Judicial System</h3>
@@ -306,14 +306,14 @@ class CdFeatureSeeder extends Seeder
     'icon' => 'Nill',
     'deleted_at' => NULL,
     'created_at' => '2025-12-09 15:58:08',
-    'updated_at' => '2025-12-09 15:58:08',
+    'updated_at' => '2025-12-13 06:35:34',
     'industry' => 'Public Sector · Judiciary · Digital Governance',
     'image' => NULL,
   ),
   6 => 
   array (
     'id' => 49,
-    'title' => 'IT LABS',
+    'title' => 'Building 300+ IT Labs Across AJK & KPK to Power the Next Generation of Digital Learners',
     'description' => '<h2>Rebuilding the Academic Digital Backbone at National Scale</h2>
 
 <h3>How CDigital Built 300+ IT Labs to Empower a Generation of Learners Across AJK &amp; KPK</h3>
@@ -354,14 +354,14 @@ class CdFeatureSeeder extends Seeder
     'icon' => 'Nill',
     'deleted_at' => NULL,
     'created_at' => '2025-12-09 16:01:43',
-    'updated_at' => '2025-12-09 16:01:43',
+    'updated_at' => '2025-12-13 06:34:57',
     'industry' => 'Education • Digital Infrastructure • Public Sector ICT',
     'image' => NULL,
   ),
   7 => 
   array (
     'id' => 50,
-    'title' => 'IRSA',
+    'title' => 'World’s Largest Water Telemetry Modernization Project across the Indus Basin',
     'description' => '<h2>World&rsquo;s Largest Water Telemetry Modernization Project across the Indus Basin</h2>
 
 <h3>How CDigital Is Delivering a Nation-Scale Telemetry System to Transform Real-Time Water Management Across 27 Sites</h3>
@@ -403,14 +403,14 @@ class CdFeatureSeeder extends Seeder
     'icon' => 'Nill',
     'deleted_at' => NULL,
     'created_at' => '2025-12-09 16:05:23',
-    'updated_at' => '2025-12-09 16:05:23',
+    'updated_at' => '2025-12-13 06:37:31',
     'industry' => 'Water Resources • Public Infrastructure • Climate Resilience',
     'image' => NULL,
   ),
   8 => 
   array (
     'id' => 51,
-    'title' => 'AFD',
+    'title' => 'Empowering WAPDA With Real-Time Intelligence for National Water Security',
     'description' => '<h2>Modernizing Pakistan&rsquo;s Flood Forecasting Infrastructure</h2>
 
 <h3>How CDigital Helped WAPDA Transform Pakistan&rsquo;s Flood Forecasting System With Automated Sensors, Satellite Connectivity &amp; Predictive Data Intelligence</h3>
@@ -453,14 +453,14 @@ class CdFeatureSeeder extends Seeder
     'icon' => 'Nill',
     'deleted_at' => NULL,
     'created_at' => '2025-12-09 16:09:01',
-    'updated_at' => '2025-12-09 16:09:01',
+    'updated_at' => '2025-12-13 06:38:54',
     'industry' => 'Public Infrastructure • Water Resources',
     'image' => NULL,
   ),
   9 => 
   array (
     'id' => 52,
-    'title' => 'IRRIGATION KPK',
+    'title' => 'KP’s Flood Forecasting Transformed through Smart Hydrological Monitoring',
     'description' => '<h2>Real-Time Hydrology &amp; Flood-Alert Network for Khyber Pakhtunkhwa</h2>
 
 <h3>How CDigital Helped Transform Flood Forecasting &amp; Water Management in a Climate-Vulnerable Province</h3>
@@ -502,14 +502,14 @@ class CdFeatureSeeder extends Seeder
     'icon' => 'Nill',
     'deleted_at' => NULL,
     'created_at' => '2025-12-09 16:12:36',
-    'updated_at' => '2025-12-09 16:12:36',
+    'updated_at' => '2025-12-13 06:38:30',
     'industry' => 'Public Infrastructure • Water Resources',
     'image' => NULL,
   ),
   10 => 
   array (
     'id' => 53,
-    'title' => 'Warsak',
+    'title' => 'Protecting Pakistan’s Hydropower Future Through Scientific Sediment Monitoring',
     'description' => '<h2>Sustainable Sediment Monitoring for Warsak Reservoir</h2>
 
 <h3>How CDigital Delivered Pakistan&rsquo;s First Integrated Sediment Monitoring &amp; Analysis Ecosystem</h3>
@@ -551,14 +551,14 @@ class CdFeatureSeeder extends Seeder
     'icon' => 'Nill',
     'deleted_at' => NULL,
     'created_at' => '2025-12-09 16:15:45',
-    'updated_at' => '2025-12-09 16:15:45',
+    'updated_at' => '2025-12-13 06:38:05',
     'industry' => 'Water Resources • Hydropower • Climate Resilience',
     'image' => NULL,
   ),
   11 => 
   array (
     'id' => 54,
-    'title' => 'Fata Ground Water',
+    'title' => 'A unified Groundwater & Surface Water Monitoring System in FATA',
     'description' => '<h2>Bringing Reliable Water Intelligence to One of Pakistan&rsquo;s Most Underserved Regions</h2>
 
 <h3>How CDigital Built the First Standardized Hydrological Monitoring Framework in the Merged Districts of KP</h3>
@@ -601,14 +601,14 @@ class CdFeatureSeeder extends Seeder
     'icon' => 'Nill',
     'deleted_at' => NULL,
     'created_at' => '2025-12-09 16:19:16',
-    'updated_at' => '2025-12-09 16:19:16',
+    'updated_at' => '2025-12-13 06:40:31',
     'industry' => 'Water Resources • Public Infrastructure',
     'image' => NULL,
   ),
   12 => 
   array (
     'id' => 55,
-    'title' => 'Fata AWS',
+    'title' => 'The First Unified AWS Network Transforming KP’s Climate Monitoring',
     'description' => '<h2>Automating Weather Intelligence in KP&rsquo;s Merged Districts</h2>
 
 <h3>How CDigital Deployed Modern Automatic Weather Stations (AWS) to Transform Climate Monitoring Across Khyber, Mohmand &amp; Bajaur</h3>
@@ -651,14 +651,14 @@ class CdFeatureSeeder extends Seeder
     'icon' => 'Nill',
     'deleted_at' => NULL,
     'created_at' => '2025-12-09 16:22:29',
-    'updated_at' => '2025-12-09 16:22:29',
+    'updated_at' => '2025-12-13 06:39:30',
     'industry' => 'Climate Monitoring • Water Resources • Disaster Management',
     'image' => NULL,
   ),
   13 => 
   array (
     'id' => 56,
-    'title' => 'Neelum Jhelum',
+    'title' => 'A High-Accuracy Hydrological Network for the Neelum Basin',
     'description' => '<h2>Telemetric Stream Gauging Stations on the Neelum River</h2>
 
 <h3>How CDigital Delivered Automated Streamflow Intelligence Across Pakistan&rsquo;s Most Remote Mountain Corridors</h3>
@@ -701,14 +701,14 @@ class CdFeatureSeeder extends Seeder
     'icon' => 'Nill',
     'deleted_at' => NULL,
     'created_at' => '2025-12-09 16:26:09',
-    'updated_at' => '2025-12-09 16:26:09',
+    'updated_at' => '2025-12-13 06:39:56',
     'industry' => 'Water Resources • Hydropower • Climate Resilience',
     'image' => NULL,
   ),
   14 => 
   array (
     'id' => 57,
-    'title' => 'RTFMS',
+    'title' => 'Real-Time Water Governance for 21 Million Acres: Punjab’s RTFM Revolution',
     'description' => '<h2>Empowering Punjab&rsquo;s Irrigation System with Real-Time Flow Monitoring System</h2>
 
 <h3>How CDigital Delivered a Province-Wide Telemetry System to Modernize Water Distribution &amp; Improve Irrigation Governance Across Punjab</h3>
@@ -751,7 +751,7 @@ class CdFeatureSeeder extends Seeder
     'icon' => 'Nill',
     'deleted_at' => NULL,
     'created_at' => '2025-12-09 16:29:41',
-    'updated_at' => '2025-12-09 16:29:41',
+    'updated_at' => '2025-12-13 06:40:54',
     'industry' => 'Water Resources • Public Infrastructure • Irrigation Automation',
     'image' => NULL,
   ),
