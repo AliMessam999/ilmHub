@@ -3,42 +3,44 @@
 @section('content')
 
 <style>
-    @media (max-width: 480px) {
-        @media (max-width: 480px) {
-        .tj-page-title {
+        .footer-top-scrool-bg {
             font-size: 32px !important;
-            text-align: center !important; /* Add this line */
         }
         
-        /* Increase height of the page header section */
-        .tj-page-header {
-            min-height: 250px !important;
-            display: flex !important;
-            align-items: center !important;
-        }
+        @media (max-width: 480px) {
+            .tj-page-title {
+                font-size: 32px !important;
+                text-align: center !important; /* Add this line */
+            }
         
-        .tj-page-header .container-fluid {
-            min-height: 250px !important;
-            display: flex !important;
-            flex-direction: column !important;
-            justify-content: center !important;
-            text-align: center !important; /* Add this line */
-        }
+            /* Increase height of the page header section */
+            .tj-page-header {
+                min-height: 250px !important;
+                display: flex !important;
+                align-items: center !important;
+            }
         
-        /* Ensure the header content is centered */
-        .tj-page-header-content {
-            text-align: center !important;
-            width: 100% !important;
-        }
+            .tj-page-header .container-fluid {
+                min-height: 250px !important;
+                display: flex !important;
+                flex-direction: column !important;
+                justify-content: center !important;
+                text-align: center !important; /* Add this line */
+            }
         
-        /* Adjust margins if needed */
-        .tj-page-title.mt-3 {
-            margin-top: 0 !important;
-            padding-top: 20px !important;
+            /* Ensure the header content is centered */
+            .tj-page-header-content {
+                text-align: center !important;
+                width: 100% !important;
+            }
+        
+            /* Adjust margins if needed */
+            .tj-page-title.mt-3 {
+                margin-top: 0 !important;
+                padding-top: 20px !important;
+            }
         }
-    }
 </style>
-<!-- start: Breadcrumb Section -->
 <section
     class="tj-page-header rounded-0"
     data-bg-image="/frontend_assets/images/project/water.jpg">
@@ -54,9 +56,6 @@
                         </span>
                         <span><i class="tji-arrow-right"></i></span>
                         <span>
-                            {{-- @php
-                                dd($caseStudy->sub_category_id->title);
-                            @endphp --}}
                             <a href="division.html">{{ $caseStudy->sub_category->title ?? 'Case-Studies' }}</a>
                         </span>
                         <span><i class="tji-arrow-right"></i></span>
@@ -68,20 +67,14 @@
             </div>
         </div>
     </div>
-    <!-- <div class="page-header-overlay" data-bg-image="assets/images/shape/pheader-overlay.webp"></div> -->
 </section>
-<!-- end: Breadcrumb Section -->
 
-<!-- start: Blog Section -->
 <section
     class="tj-blog-section section-gap slidebar-stickiy-container">
     <div class="container">
         <div class="row row-gap-5">
             <div class="col-lg-8">
                 <div class="post-details-wrapper">
-                    <div class="blog-images wow fadeInUp" data-wow-delay=".1s">
-                        {{-- <img src="/{{ $caseStudy->images[0]->image }}" alt="{{ $caseStudy->images[0]->alt }}" /> --}}
-                    </div>
                     @php
                         $description = is_string($caseStudy->description) ? json_decode($caseStudy->description) : $caseStudy->description;
                         $h2Content = isset($description->h2) ? $description->h2 : null;
@@ -205,34 +198,13 @@
                     </script>
 
                     <!-- Image Modal -->
-                    <div id="imageModal" style="display: none; position: fixed; z-index: 2147483647; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.95); overflow: hidden;">
+                    {{-- <div id="imageModal" style="display: none; position: fixed; z-index: 2147483647; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.95); overflow: hidden;">
                         <span onclick="closeModal()" style="position: absolute; top: 15px; right: 35px; color: #f1f1f1; font-size: 40px; font-weight: bold; cursor: pointer;">&times;</span>
                         <img id="modalImage" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 90vw; height: 90vh; object-fit: contain;">
                         <div id="caption" style="margin: auto; display: block; width: 80%; max-width: 700px; text-align: center; color: #ccc; padding: 10px 0; height: 150px;"></div>
-                    </div>
-
-                    {{-- <div class="blog-text">
-                        {!! $caseStudy->description !!}
-                         <div class="images-wrap">
-                            <div class="row">
-                                @foreach($caseStudy->images as $image)
-                                <div class="col-sm-6">
-                                 <div
-                                        class="image-box wow fadeInUp"
-                                        data-wow-delay=".3s">
-                                        <a
-                                            class="gallery"
-                                            data-gall="gallery"
-                                            href="/{{$image->image}}"><img
-                                                src="/{{$image->image}}"
-                                                alt="{{$image->alt}}" /></a>
-                                    </div> 
-                                </div>
-                                @endforeach
-                               
-                            </div>
-                        </div> 
                     </div> --}}
+
+                    
                     @if($caseStudy->images->skip(1)->count() > 3)
                     <div class="tj-post__navigation mb-0 wow fadeInUp" data-wow-delay=".3s">
                         <div class="tj-nav__post previous">
@@ -250,22 +222,6 @@
                         </div>
                     </div>
                     @endif
-                    
-                    {{-- <div class="tj-post__navigation mb-0 wow fadeInUp" data-wow-delay=".3s">
-                        <div class="tj-nav__post previous">
-                            <div class="tj-nav-post__nav prev_post">
-                                <a href="{{ $previous ? '/case-study/'.$previous->title:'#' }}"><span><i class="tji-arrow-left"></i></span>Previous Case Study</a>
-                            </div>
-                        </div>
-                        <div class="tj-nav-post__grid">
-                            <a href="/case-studies"><i class="tji-window"></i></a>
-                        </div>
-                        <div class="tj-nav__post next">
-                            <div class="tj-nav-post__nav next_post">
-                                <a href="{{ $next ? '/case-study/'.$next->title:'#' }}">Next Case Study<span><i class="tji-arrow-right"></i></span></a>
-                            </div>
-                        </div>
-                    </div> --}}
                 </div>
             </div>
             <div class="col-lg-4">
@@ -309,7 +265,7 @@
                                 </div>
                             </div>
 
-{{-- Location --}}
+                            {{-- Location --}}
                         <div class="infos-item">
                             <div class="project-icons">
                                 <i class="tji-location-2"></i>
@@ -319,30 +275,6 @@
                                 <h6 class="title">{{ $caseStudy->location }}</h6>
                             </div>
                         </div>
-                        
-                        {{-- @if($caseStudy->user_details)
-                        <div class="infos-item">
-                            <div class="project-text">
-                                <p class="">
-                                    {{ $caseStudy->user_details }}
-                                </p>
-                            </div>
-                        </div>
-                        @endif --}}
-                        {{-- Funded By --}}
-                        {{-- <div class="infos-item">
-                            <div class="project-icons">
-                                <i class="tji-budget"></i>
-                            </div>
-                            <div class="project-text">
-                                <span>Funded by:</span>
-                                <h6 class="title">
-                                   {{ $caseStudy->funded_by }}
-                                </h6>
-                            </div>
-                        </div> --}}
-
-                        
                     </div>
                 </div>
             </div>
@@ -350,47 +282,51 @@
     </div>
 </section>
 <!-- end: Blog Section -->
+
+{{-- Script To Open Images --}}
 <script>
-function openModal(imageSrc, imageAlt) {
-    const modal = document.getElementById('imageModal');
-    const modalImg = document.getElementById('modalImage');
-    const caption = document.getElementById('caption');
+    function openModal(imageSrc, imageAlt) {
+        const modal = document.getElementById('imageModal');
+        const modalImg = document.getElementById('modalImage');
+        const caption = document.getElementById('caption');
+        document.body.style.overflow = 'hidden';
+        const headerArea = document.querySelector('.header-area');
+        const stickyHeader = document.querySelector('.header-area.sticky');
+        if (headerArea) headerArea.style.display = 'none';
+        if (stickyHeader) stickyHeader.style.display = 'none';
+        modal.style.display = 'block';
+        modalImg.src = imageSrc;
+        caption.innerHTML = imageAlt ?? '';
+    }
 
-    document.body.style.overflow = 'hidden';
-    const headerArea = document.querySelector('.header-area');
-    const stickyHeader = document.querySelector('.header-area.sticky');
-    if (headerArea) headerArea.style.display = 'none';
-    if (stickyHeader) stickyHeader.style.display = 'none';
+    function closeModal() {
+        const modal = document.getElementById('imageModal');
+        modal.style.display = 'none';
+        document.body.style.overflow = 'auto';
+        const headerArea = document.querySelector('.header-area');
+        const stickyHeader = document.querySelector('.header-area.sticky');
+        if (headerArea) headerArea.style.display = 'block';
+        if (stickyHeader) stickyHeader.style.display = 'block';
+    }
+    
+    document.getElementById('imageModal').addEventListener('click', function(e) {
+        if (e.target === this) closeModal();
+    });
+</script>
 
-    modal.style.display = 'block';
-    modalImg.src = imageSrc;
-    caption.innerHTML = imageAlt ?? '';
-}
-
-function closeModal() {
-    const modal = document.getElementById('imageModal');
-    modal.style.display = 'none';
-
-    document.body.style.overflow = 'auto';
-
-    const headerArea = document.querySelector('.header-area');
-    const stickyHeader = document.querySelector('.header-area.sticky');
-    if (headerArea) headerArea.style.display = 'block';
-    if (stickyHeader) stickyHeader.style.display = 'block';
-}
-
-// Close modal on background click
-document.getElementById('imageModal').addEventListener('click', function(e) {
-    if (e.target === this) closeModal();
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const firstH3 = document.querySelector('.post-details-wrapper .blog-text h3:first-of-type');
+    if (firstH3) {
+        firstH3.classList.add('footer-top-scrool-bg');
+    }
 });
 </script>
 
-
-
 @endsection
 
-<div id="imageModal" class="image-modal">
+{{-- <div id="imageModal" class="image-modal">
     <span class="close-modal" onclick="closeModal()">&times;</span>
     <img id="modalImage" alt="">
     <div id="caption"></div>
-</div>
+</div> --}}
