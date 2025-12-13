@@ -18,7 +18,7 @@
                                             <th scope="col">id</th>
                                             <th scope="col">Title</th>
                                             <th scope="col">Icon</th>
-                                            <th scope="col">Description</th>
+                                            {{-- <th scope="col">Description</th> --}}
                                             <th scope="col">Image</th>
                                             <th scope="col">Action</th>
                                         </tr>
@@ -29,7 +29,7 @@
                                                 <td>{{ $item->id }}</td>
                                                 <td>{{ $item->title }}</td>
                                                 <td class="fs-2">{!! $item->icon !!}</td>
-                                                <td>{{ $item->description }}</td>
+                                                {{-- <td>{{ $item->description }}</td> --}}
                                                 <td><img src="/{{ $item->image }}" alt="{{ $item->alt ? $item->alt:"No Alt" }}" class="image-list"></td>
                                                 <td>
                                                     <div class="action_btns d-flex">

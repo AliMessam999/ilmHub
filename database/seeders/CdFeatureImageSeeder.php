@@ -169,7 +169,7 @@ class CdFeatureImageSeeder extends Seeder
     'alt' => 'Image',
     'deleted_at' => NULL,
     'created_at' => '2025-12-10 04:38:26',
-    'updated_at' => '2025-12-13 06:34:57',
+    'updated_at' => '2025-12-13 10:04:09',
   ),
   16 => 
   array (
@@ -179,7 +179,7 @@ class CdFeatureImageSeeder extends Seeder
     'alt' => 'Image',
     'deleted_at' => NULL,
     'created_at' => '2025-12-10 04:39:11',
-    'updated_at' => '2025-12-13 06:35:34',
+    'updated_at' => '2025-12-13 09:59:10',
   ),
   17 => 
   array (
@@ -189,7 +189,7 @@ class CdFeatureImageSeeder extends Seeder
     'alt' => 'image',
     'deleted_at' => NULL,
     'created_at' => '2025-12-10 04:40:01',
-    'updated_at' => '2025-12-13 06:32:54',
+    'updated_at' => '2025-12-13 09:47:26',
   ),
   18 => 
   array (
@@ -199,7 +199,7 @@ class CdFeatureImageSeeder extends Seeder
     'alt' => 'image',
     'deleted_at' => NULL,
     'created_at' => '2025-12-10 04:40:37',
-    'updated_at' => '2025-12-13 06:59:52',
+    'updated_at' => '2025-12-13 09:40:18',
   ),
   19 => 
   array (
@@ -209,7 +209,7 @@ class CdFeatureImageSeeder extends Seeder
     'alt' => 'Nill',
     'deleted_at' => NULL,
     'created_at' => '2025-12-10 04:41:56',
-    'updated_at' => '2025-12-13 06:33:26',
+    'updated_at' => '2025-12-13 09:49:38',
   ),
   20 => 
   array (
@@ -229,7 +229,7 @@ class CdFeatureImageSeeder extends Seeder
     'alt' => 'Nill',
     'deleted_at' => NULL,
     'created_at' => '2025-12-10 04:43:12',
-    'updated_at' => '2025-12-13 06:34:33',
+    'updated_at' => '2025-12-13 09:53:58',
   ),
   22 => 
   array (
@@ -239,7 +239,7 @@ class CdFeatureImageSeeder extends Seeder
     'alt' => 'Image',
     'deleted_at' => NULL,
     'created_at' => '2025-12-10 10:28:04',
-    'updated_at' => '2025-12-13 06:40:31',
+    'updated_at' => '2025-12-13 10:25:26',
   ),
   23 => 
   array (
@@ -249,7 +249,7 @@ class CdFeatureImageSeeder extends Seeder
     'alt' => 'Image',
     'deleted_at' => NULL,
     'created_at' => '2025-12-10 10:29:39',
-    'updated_at' => '2025-12-13 06:38:30',
+    'updated_at' => '2025-12-13 10:13:41',
   ),
   24 => 
   array (
@@ -677,9 +677,9 @@ class CdFeatureImageSeeder extends Seeder
     'feature_id' => 52,
     'image' => 'upload/featured/9evnT1iHQMVyuZgT8NAjdpUMu3eFdb1kFwqyyUHl.jpg',
     'alt' => '42',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-13 10:13:41',
     'created_at' => '2025-12-11 06:11:30',
-    'updated_at' => '2025-12-13 06:38:30',
+    'updated_at' => '2025-12-13 10:13:41',
   ),
   67 => 
   array (
@@ -687,9 +687,9 @@ class CdFeatureImageSeeder extends Seeder
     'feature_id' => 52,
     'image' => 'upload/featured/Mg4uDrxqbE9fql7DSmLh5BWyrw1kXFHDV6L50WzM.jpg',
     'alt' => '41',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-13 10:13:41',
     'created_at' => '2025-12-11 06:11:30',
-    'updated_at' => '2025-12-13 06:38:30',
+    'updated_at' => '2025-12-13 10:13:41',
   ),
   68 => 
   array (
@@ -697,9 +697,9 @@ class CdFeatureImageSeeder extends Seeder
     'feature_id' => 52,
     'image' => 'upload/featured/E61RBZyoBkb77ClEqJTVVVq1II9x8PHOMnzcjR2U.jpg',
     'alt' => '40',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-13 10:13:41',
     'created_at' => '2025-12-11 06:11:30',
-    'updated_at' => '2025-12-13 06:38:30',
+    'updated_at' => '2025-12-13 10:13:41',
   ),
   69 => 
   array (
@@ -707,9 +707,9 @@ class CdFeatureImageSeeder extends Seeder
     'feature_id' => 52,
     'image' => 'upload/featured/nTtMDKQrbsbXWpZXrTK8TJTf3HLkoZi5tbaonkul.jpg',
     'alt' => '39',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-13 10:13:41',
     'created_at' => '2025-12-11 06:11:30',
-    'updated_at' => '2025-12-13 06:38:30',
+    'updated_at' => '2025-12-13 10:13:41',
   ),
   70 => 
   array (
@@ -717,9 +717,9 @@ class CdFeatureImageSeeder extends Seeder
     'feature_id' => 52,
     'image' => 'upload/featured/holaxAD9daFmNqj4QALSNLFoGi8Ooqq5ezLCulxx.jpg',
     'alt' => '38',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-13 10:13:41',
     'created_at' => '2025-12-11 06:11:30',
-    'updated_at' => '2025-12-13 06:38:30',
+    'updated_at' => '2025-12-13 10:13:41',
   ),
   71 => 
   array (
@@ -727,9 +727,9 @@ class CdFeatureImageSeeder extends Seeder
     'feature_id' => 52,
     'image' => 'upload/featured/ba7NdeY6VxEAEfZzaaaDeMF4ZmYcCxNl3tcx6Dr4.jpg',
     'alt' => '37',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-13 10:13:41',
     'created_at' => '2025-12-11 06:11:30',
-    'updated_at' => '2025-12-13 06:38:30',
+    'updated_at' => '2025-12-13 10:13:41',
   ),
   72 => 
   array (
@@ -737,9 +737,9 @@ class CdFeatureImageSeeder extends Seeder
     'feature_id' => 52,
     'image' => 'upload/featured/b99tYZfxm8vxYfsHEkCnXmx0atHnq5skC1HDm3lh.jpg',
     'alt' => '36',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-13 10:13:41',
     'created_at' => '2025-12-11 06:11:30',
-    'updated_at' => '2025-12-13 06:38:30',
+    'updated_at' => '2025-12-13 10:13:41',
   ),
   73 => 
   array (
@@ -747,9 +747,9 @@ class CdFeatureImageSeeder extends Seeder
     'feature_id' => 52,
     'image' => 'upload/featured/YqBmIE1FpQFlf6ex7WUZ4c90lzSWhmraClllQQu7.jpg',
     'alt' => '35',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-13 10:13:41',
     'created_at' => '2025-12-11 06:11:30',
-    'updated_at' => '2025-12-13 06:38:30',
+    'updated_at' => '2025-12-13 10:13:41',
   ),
   74 => 
   array (
@@ -757,9 +757,9 @@ class CdFeatureImageSeeder extends Seeder
     'feature_id' => 54,
     'image' => 'upload/featured/2J2u568ohkIZ1skGh9Bm4SKZvwsxBLaYWnW1Q0CZ.png',
     'alt' => '',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-13 10:25:26',
     'created_at' => '2025-12-11 06:15:23',
-    'updated_at' => '2025-12-11 06:15:23',
+    'updated_at' => '2025-12-13 10:25:26',
   ),
   75 => 
   array (
@@ -767,9 +767,9 @@ class CdFeatureImageSeeder extends Seeder
     'feature_id' => 53,
     'image' => 'upload/featured/3QuCT7mjIpHkUJl6xbMgOqbWW9GmR6Hv0HiL7xmd.jpg',
     'alt' => '51',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-13 10:21:05',
     'created_at' => '2025-12-11 06:18:03',
-    'updated_at' => '2025-12-13 06:38:05',
+    'updated_at' => '2025-12-13 10:21:05',
   ),
   76 => 
   array (
@@ -777,9 +777,9 @@ class CdFeatureImageSeeder extends Seeder
     'feature_id' => 53,
     'image' => 'upload/featured/1Q6k4XXn1R3zPw2HugzhNv3ZJn8IeFeNA9M4k8uI.png',
     'alt' => '49',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-13 10:21:05',
     'created_at' => '2025-12-11 06:18:03',
-    'updated_at' => '2025-12-13 06:38:05',
+    'updated_at' => '2025-12-13 10:21:05',
   ),
   77 => 
   array (
@@ -787,9 +787,9 @@ class CdFeatureImageSeeder extends Seeder
     'feature_id' => 53,
     'image' => 'upload/featured/oKXjF3sffcqjjacEniugmRDGNFChZ9yNFaeDLEBM.jpg',
     'alt' => '48',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-13 10:21:05',
     'created_at' => '2025-12-11 06:18:03',
-    'updated_at' => '2025-12-13 06:38:05',
+    'updated_at' => '2025-12-13 10:21:05',
   ),
   78 => 
   array (
@@ -797,9 +797,9 @@ class CdFeatureImageSeeder extends Seeder
     'feature_id' => 53,
     'image' => 'upload/featured/SBMQ91OncJMk65q3v5fzZ8uf29sX6HHthzvarpBp.jpg',
     'alt' => '47',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-13 10:21:05',
     'created_at' => '2025-12-11 06:18:03',
-    'updated_at' => '2025-12-13 06:38:05',
+    'updated_at' => '2025-12-13 10:21:05',
   ),
   79 => 
   array (
@@ -807,9 +807,9 @@ class CdFeatureImageSeeder extends Seeder
     'feature_id' => 53,
     'image' => 'upload/featured/XHZ3BGEJgCxGcDXs0VxCGxH7lC2HcHDNzB8C6Z8S.jpg',
     'alt' => '46',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-13 10:21:05',
     'created_at' => '2025-12-11 06:18:03',
-    'updated_at' => '2025-12-13 06:38:05',
+    'updated_at' => '2025-12-13 10:21:05',
   ),
   80 => 
   array (
@@ -817,9 +817,9 @@ class CdFeatureImageSeeder extends Seeder
     'feature_id' => 53,
     'image' => 'upload/featured/q4vqfR2HXdhEbypa8ZmI4olqZX3s064ppCEIDtVq.jpg',
     'alt' => '45',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-13 10:21:05',
     'created_at' => '2025-12-11 06:18:03',
-    'updated_at' => '2025-12-13 06:38:05',
+    'updated_at' => '2025-12-13 10:21:05',
   ),
   81 => 
   array (
@@ -827,9 +827,9 @@ class CdFeatureImageSeeder extends Seeder
     'feature_id' => 53,
     'image' => 'upload/featured/b5eiVYmwBaMiAkbz9BP5dehN0pOnJlQoHbLQJ1M3.jpg',
     'alt' => '44',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-13 10:21:05',
     'created_at' => '2025-12-11 06:18:03',
-    'updated_at' => '2025-12-13 06:38:05',
+    'updated_at' => '2025-12-13 10:21:05',
   ),
   82 => 
   array (
@@ -839,7 +839,7 @@ class CdFeatureImageSeeder extends Seeder
     'alt' => '55',
     'deleted_at' => NULL,
     'created_at' => '2025-12-11 06:19:37',
-    'updated_at' => '2025-12-13 06:39:30',
+    'updated_at' => '2025-12-13 10:29:24',
   ),
   83 => 
   array (
@@ -849,7 +849,7 @@ class CdFeatureImageSeeder extends Seeder
     'alt' => '54',
     'deleted_at' => NULL,
     'created_at' => '2025-12-11 06:19:37',
-    'updated_at' => '2025-12-13 06:39:30',
+    'updated_at' => '2025-12-13 10:29:24',
   ),
   84 => 
   array (
@@ -859,7 +859,7 @@ class CdFeatureImageSeeder extends Seeder
     'alt' => '53',
     'deleted_at' => NULL,
     'created_at' => '2025-12-11 06:19:37',
-    'updated_at' => '2025-12-13 06:39:30',
+    'updated_at' => '2025-12-13 10:29:24',
   ),
   85 => 
   array (
@@ -869,7 +869,7 @@ class CdFeatureImageSeeder extends Seeder
     'alt' => '52',
     'deleted_at' => NULL,
     'created_at' => '2025-12-11 06:19:37',
-    'updated_at' => '2025-12-13 06:39:30',
+    'updated_at' => '2025-12-13 10:29:24',
   ),
   86 => 
   array (
@@ -889,7 +889,7 @@ class CdFeatureImageSeeder extends Seeder
     'alt' => 'it-labs',
     'deleted_at' => NULL,
     'created_at' => '2025-12-11 06:24:00',
-    'updated_at' => '2025-12-13 06:34:57',
+    'updated_at' => '2025-12-13 10:04:09',
   ),
   88 => 
   array (
@@ -897,9 +897,9 @@ class CdFeatureImageSeeder extends Seeder
     'feature_id' => 46,
     'image' => 'upload/featured/yycCNfWKdgErnNCYQXSbnB5gaFKpTjrRkqj9Sije.png',
     'alt' => '75',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-13 09:56:01',
     'created_at' => '2025-12-11 06:27:02',
-    'updated_at' => '2025-12-13 06:34:33',
+    'updated_at' => '2025-12-13 09:56:01',
   ),
   89 => 
   array (
@@ -907,9 +907,9 @@ class CdFeatureImageSeeder extends Seeder
     'feature_id' => 46,
     'image' => 'upload/featured/Ay4rO9gILYeBY9m441EJPjiFFfHriqG9nltkLTPO.png',
     'alt' => '74',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-13 09:56:01',
     'created_at' => '2025-12-11 06:27:02',
-    'updated_at' => '2025-12-13 06:34:33',
+    'updated_at' => '2025-12-13 09:56:01',
   ),
   90 => 
   array (
@@ -917,9 +917,9 @@ class CdFeatureImageSeeder extends Seeder
     'feature_id' => 46,
     'image' => 'upload/featured/dPNgJsebBqMDVgTHsvoQXTGxl2MKL0FJ9uaVaru6.png',
     'alt' => '73',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-13 09:56:01',
     'created_at' => '2025-12-11 06:27:02',
-    'updated_at' => '2025-12-13 06:34:33',
+    'updated_at' => '2025-12-13 09:56:01',
   ),
   91 => 
   array (
@@ -927,9 +927,9 @@ class CdFeatureImageSeeder extends Seeder
     'feature_id' => 46,
     'image' => 'upload/featured/8Lv2s4hlzQplnhwUblkUiDVUY1Mug79IIzFrjFDT.png',
     'alt' => '72',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-13 09:56:01',
     'created_at' => '2025-12-11 06:27:02',
-    'updated_at' => '2025-12-13 06:34:33',
+    'updated_at' => '2025-12-13 09:56:01',
   ),
   92 => 
   array (
@@ -937,9 +937,9 @@ class CdFeatureImageSeeder extends Seeder
     'feature_id' => 46,
     'image' => 'upload/featured/eoz4x1Q4g6hGtBZoNfRYvG64i9hlguvsLEx4nrpS.jpg',
     'alt' => '71',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-13 09:56:01',
     'created_at' => '2025-12-11 06:27:02',
-    'updated_at' => '2025-12-13 06:34:33',
+    'updated_at' => '2025-12-13 09:56:01',
   ),
   93 => 
   array (
@@ -947,9 +947,9 @@ class CdFeatureImageSeeder extends Seeder
     'feature_id' => 46,
     'image' => 'upload/featured/UPiIrV1yAH9YJj1OYsMImYlYZ41QtjoE2B2CrEub.jpg',
     'alt' => '70',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-13 09:56:01',
     'created_at' => '2025-12-11 06:27:02',
-    'updated_at' => '2025-12-13 06:34:33',
+    'updated_at' => '2025-12-13 09:56:01',
   ),
   94 => 
   array (
@@ -957,9 +957,9 @@ class CdFeatureImageSeeder extends Seeder
     'feature_id' => 46,
     'image' => 'upload/featured/tvDZxDAQhlja1zZALRjVMsLdN0ZlII8cd0u52wO0.jpg',
     'alt' => '69',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-13 09:56:01',
     'created_at' => '2025-12-11 06:27:02',
-    'updated_at' => '2025-12-13 06:34:33',
+    'updated_at' => '2025-12-13 09:56:01',
   ),
   95 => 
   array (
@@ -967,9 +967,9 @@ class CdFeatureImageSeeder extends Seeder
     'feature_id' => 46,
     'image' => 'upload/featured/jfIzA8rJFGi2gd57SthuRtkatW5jbfWOCfqFxRHP.jpg',
     'alt' => '68',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-13 09:56:01',
     'created_at' => '2025-12-11 06:27:02',
-    'updated_at' => '2025-12-13 06:34:33',
+    'updated_at' => '2025-12-13 09:56:01',
   ),
   96 => 
   array (
@@ -977,9 +977,9 @@ class CdFeatureImageSeeder extends Seeder
     'feature_id' => 46,
     'image' => 'upload/featured/0YiJfHLstntIRbSwB6nmkCazpgmK62h4TkueJGv5.jpg',
     'alt' => '67',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-13 09:56:01',
     'created_at' => '2025-12-11 06:27:02',
-    'updated_at' => '2025-12-13 06:34:33',
+    'updated_at' => '2025-12-13 09:56:01',
   ),
   97 => 
   array (
@@ -987,9 +987,9 @@ class CdFeatureImageSeeder extends Seeder
     'feature_id' => 48,
     'image' => 'upload/featured/eAc6UHQ1MPI2Pu23nZElX3Ce75UHC4UGmS5CWJmP.png',
     'alt' => '',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-13 09:59:10',
     'created_at' => '2025-12-11 06:28:51',
-    'updated_at' => '2025-12-11 06:28:51',
+    'updated_at' => '2025-12-13 09:59:10',
   ),
   98 => 
   array (
@@ -997,9 +997,9 @@ class CdFeatureImageSeeder extends Seeder
     'feature_id' => 48,
     'image' => 'upload/featured/uMbDyLwupYR3kkf7YPZ6tPzxn974cuW62wLKtOIl.png',
     'alt' => '',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-13 09:59:10',
     'created_at' => '2025-12-11 06:28:51',
-    'updated_at' => '2025-12-11 06:28:51',
+    'updated_at' => '2025-12-13 09:59:10',
   ),
   99 => 
   array (
@@ -1007,9 +1007,9 @@ class CdFeatureImageSeeder extends Seeder
     'feature_id' => 48,
     'image' => 'upload/featured/idcOxWw3nniMKRxNiUKI8CS0ovC9ioy95HHIbkUt.png',
     'alt' => '',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-13 09:59:10',
     'created_at' => '2025-12-11 06:28:51',
-    'updated_at' => '2025-12-11 06:28:51',
+    'updated_at' => '2025-12-13 09:59:10',
   ),
   100 => 
   array (
@@ -1017,9 +1017,9 @@ class CdFeatureImageSeeder extends Seeder
     'feature_id' => 48,
     'image' => 'upload/featured/W3Q7IaXLS0iRjzIWgOX55jJbN4aD6eRchvyC84jZ.png',
     'alt' => '',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-13 09:59:10',
     'created_at' => '2025-12-11 06:28:51',
-    'updated_at' => '2025-12-11 06:28:51',
+    'updated_at' => '2025-12-13 09:59:10',
   ),
   101 => 
   array (
@@ -1027,9 +1027,9 @@ class CdFeatureImageSeeder extends Seeder
     'feature_id' => 48,
     'image' => 'upload/featured/torI8D3qQmTPMOdHYYTMl6AqolDyo9W6QKZSHP4W.png',
     'alt' => '',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-13 09:59:10',
     'created_at' => '2025-12-11 06:28:51',
-    'updated_at' => '2025-12-11 06:28:51',
+    'updated_at' => '2025-12-13 09:59:10',
   ),
   102 => 
   array (
@@ -1037,9 +1037,9 @@ class CdFeatureImageSeeder extends Seeder
     'feature_id' => 48,
     'image' => 'upload/featured/yrXwxwDqFvAcjqRu6ljX0rdusih1n88RNqSto0Rd.jpg',
     'alt' => '',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-13 09:59:10',
     'created_at' => '2025-12-11 06:28:51',
-    'updated_at' => '2025-12-11 06:28:51',
+    'updated_at' => '2025-12-13 09:59:10',
   ),
   103 => 
   array (
@@ -1047,9 +1047,9 @@ class CdFeatureImageSeeder extends Seeder
     'feature_id' => 48,
     'image' => 'upload/featured/hxhEz4w3NdNelgAosv1jNhBsirvXwfBrMud30B3s.jpg',
     'alt' => '',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-13 09:59:10',
     'created_at' => '2025-12-11 06:28:51',
-    'updated_at' => '2025-12-11 06:28:51',
+    'updated_at' => '2025-12-13 09:59:10',
   ),
   104 => 
   array (
@@ -1057,9 +1057,9 @@ class CdFeatureImageSeeder extends Seeder
     'feature_id' => 48,
     'image' => 'upload/featured/iGTrhzg5E8B7FwGEwTbkdDRUYWJrxWCxwAeM6eCF.jpg',
     'alt' => '',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-13 09:59:10',
     'created_at' => '2025-12-11 06:28:51',
-    'updated_at' => '2025-12-11 06:28:51',
+    'updated_at' => '2025-12-13 09:59:10',
   ),
   105 => 
   array (
@@ -1067,9 +1067,9 @@ class CdFeatureImageSeeder extends Seeder
     'feature_id' => 56,
     'image' => 'upload/featured/IizExq2fxTFfYBBLzlBO4gm24QnO7f2jHbZQJDzu.jpg',
     'alt' => '',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-13 10:31:36',
     'created_at' => '2025-12-11 06:29:59',
-    'updated_at' => '2025-12-11 06:29:59',
+    'updated_at' => '2025-12-13 10:31:36',
   ),
   106 => 
   array (
@@ -1077,9 +1077,9 @@ class CdFeatureImageSeeder extends Seeder
     'feature_id' => 56,
     'image' => 'upload/featured/POQqqvr9iRj6Tz9SjEstxLJEp3ZdQOcmKgCdQxqG.jpg',
     'alt' => '',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-13 10:31:36',
     'created_at' => '2025-12-11 06:29:59',
-    'updated_at' => '2025-12-11 06:29:59',
+    'updated_at' => '2025-12-13 10:31:36',
   ),
   107 => 
   array (
@@ -1087,9 +1087,9 @@ class CdFeatureImageSeeder extends Seeder
     'feature_id' => 56,
     'image' => 'upload/featured/rjHKl1pTJLybEpAx0AD3nkGpvCc8mRqYiw69Sath.jpg',
     'alt' => '',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-13 10:31:36',
     'created_at' => '2025-12-11 06:29:59',
-    'updated_at' => '2025-12-11 06:29:59',
+    'updated_at' => '2025-12-13 10:31:36',
   ),
   108 => 
   array (
@@ -1097,9 +1097,9 @@ class CdFeatureImageSeeder extends Seeder
     'feature_id' => 56,
     'image' => 'upload/featured/IBV9ybGzJrhV1KnSPjkXN3Zf44oK6TXL1eEFqFBR.jpg',
     'alt' => '',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-13 10:31:36',
     'created_at' => '2025-12-11 06:29:59',
-    'updated_at' => '2025-12-11 06:29:59',
+    'updated_at' => '2025-12-13 10:31:36',
   ),
   109 => 
   array (
@@ -1107,9 +1107,9 @@ class CdFeatureImageSeeder extends Seeder
     'feature_id' => 56,
     'image' => 'upload/featured/q7QYrmRJNDV3QmuVoiS8eJkIKL0DHOVy6vQwdPyN.jpg',
     'alt' => '',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-13 10:31:36',
     'created_at' => '2025-12-11 06:29:59',
-    'updated_at' => '2025-12-11 06:29:59',
+    'updated_at' => '2025-12-13 10:31:36',
   ),
   110 => 
   array (
@@ -1117,9 +1117,9 @@ class CdFeatureImageSeeder extends Seeder
     'feature_id' => 56,
     'image' => 'upload/featured/06ol6Q7mCRq4mFnw8dPJ0NnvvPjRpTzVhvM57cpc.jpg',
     'alt' => '',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-13 10:31:36',
     'created_at' => '2025-12-11 06:29:59',
-    'updated_at' => '2025-12-11 06:29:59',
+    'updated_at' => '2025-12-13 10:31:36',
   ),
   111 => 
   array (
@@ -1127,9 +1127,9 @@ class CdFeatureImageSeeder extends Seeder
     'feature_id' => 56,
     'image' => 'upload/featured/Ui2J3lMcR2rdRq875WQKF7IxanCMu2Npe9Olmf32.jpg',
     'alt' => '',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-13 10:31:36',
     'created_at' => '2025-12-11 06:29:59',
-    'updated_at' => '2025-12-11 06:29:59',
+    'updated_at' => '2025-12-13 10:31:36',
   ),
   112 => 
   array (
@@ -1137,9 +1137,9 @@ class CdFeatureImageSeeder extends Seeder
     'feature_id' => 56,
     'image' => 'upload/featured/qPTuBF9qhSJFHoAEil4fbv40giccKikFNbUy8XeS.jpg',
     'alt' => '',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-13 10:31:36',
     'created_at' => '2025-12-11 06:29:59',
-    'updated_at' => '2025-12-11 06:29:59',
+    'updated_at' => '2025-12-13 10:31:36',
   ),
   113 => 
   array (
@@ -1147,9 +1147,9 @@ class CdFeatureImageSeeder extends Seeder
     'feature_id' => 43,
     'image' => 'upload/featured/arYEMIoCC2YSws6mI2JHq12ZkYeuPmcJ9dah0h2J.png',
     'alt' => '',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-13 09:40:18',
     'created_at' => '2025-12-11 06:31:03',
-    'updated_at' => '2025-12-11 06:31:03',
+    'updated_at' => '2025-12-13 09:40:18',
   ),
   114 => 
   array (
@@ -1157,9 +1157,9 @@ class CdFeatureImageSeeder extends Seeder
     'feature_id' => 43,
     'image' => 'upload/featured/3wDyUv6zNcux4vQEHlISGsjKtgqul5rRwPVOIiHX.png',
     'alt' => '',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-13 09:40:18',
     'created_at' => '2025-12-11 06:31:03',
-    'updated_at' => '2025-12-11 06:31:03',
+    'updated_at' => '2025-12-13 09:40:18',
   ),
   115 => 
   array (
@@ -1167,9 +1167,9 @@ class CdFeatureImageSeeder extends Seeder
     'feature_id' => 43,
     'image' => 'upload/featured/ogcWYUShZYCMfTE1dCudOpgHNPXbSkiFAXFX7rrB.jpg',
     'alt' => '',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-13 09:40:18',
     'created_at' => '2025-12-11 06:31:03',
-    'updated_at' => '2025-12-11 06:31:03',
+    'updated_at' => '2025-12-13 09:40:18',
   ),
   116 => 
   array (
@@ -1177,9 +1177,9 @@ class CdFeatureImageSeeder extends Seeder
     'feature_id' => 43,
     'image' => 'upload/featured/oZz0q1LJYOxl0WwxQSHgGAsh2BMgvJznuLQL0HVo.jpg',
     'alt' => '',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-13 09:40:18',
     'created_at' => '2025-12-11 06:31:03',
-    'updated_at' => '2025-12-11 06:31:03',
+    'updated_at' => '2025-12-13 09:40:18',
   ),
   117 => 
   array (
@@ -1187,9 +1187,9 @@ class CdFeatureImageSeeder extends Seeder
     'feature_id' => 43,
     'image' => 'upload/featured/PlGUr9OoIIwD3cOf964OkRoG1xJaWSvZxTh79KNv.jpg',
     'alt' => '',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-13 09:40:18',
     'created_at' => '2025-12-11 06:31:03',
-    'updated_at' => '2025-12-11 06:31:03',
+    'updated_at' => '2025-12-13 09:40:18',
   ),
   118 => 
   array (
@@ -1197,9 +1197,9 @@ class CdFeatureImageSeeder extends Seeder
     'feature_id' => 43,
     'image' => 'upload/featured/x3h64EMT3CaAUWCumvhVnVgTR0EApT4JxgFUThVy.jpg',
     'alt' => '',
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-13 09:40:18',
     'created_at' => '2025-12-11 06:31:03',
-    'updated_at' => '2025-12-11 06:31:03',
+    'updated_at' => '2025-12-13 09:40:18',
   ),
   119 => 
   array (
@@ -1260,6 +1260,876 @@ class CdFeatureImageSeeder extends Seeder
     'deleted_at' => NULL,
     'created_at' => '2025-12-11 06:32:46',
     'updated_at' => '2025-12-11 06:32:46',
+  ),
+  125 => 
+  array (
+    'id' => 211,
+    'feature_id' => 46,
+    'image' => 'upload/featured/ygl9t0wXMqpflw2Dr846FMkZnuElN7fAMwIFQnEl.jpg',
+    'alt' => '',
+    'deleted_at' => '2025-12-13 09:58:26',
+    'created_at' => '2025-12-13 09:56:01',
+    'updated_at' => '2025-12-13 09:58:26',
+  ),
+  126 => 
+  array (
+    'id' => 212,
+    'feature_id' => 46,
+    'image' => 'upload/featured/xsJ7k3zuyIFIqnGevr3YzSB4YyjnOdweXnjP3wux.jpg',
+    'alt' => '',
+    'deleted_at' => '2025-12-13 09:53:58',
+    'created_at' => '2025-12-13 09:56:01',
+    'updated_at' => '2025-12-13 09:53:58',
+  ),
+  127 => 
+  array (
+    'id' => 213,
+    'feature_id' => 46,
+    'image' => 'upload/featured/BGF0ea3mP1IYIFPCLXe3u1hgtJikYqTEf57q6922.jpg',
+    'alt' => '',
+    'deleted_at' => '2025-12-13 09:53:58',
+    'created_at' => '2025-12-13 09:57:15',
+    'updated_at' => '2025-12-13 09:53:58',
+  ),
+  128 => 
+  array (
+    'id' => 214,
+    'feature_id' => 46,
+    'image' => 'upload/featured/KCDf7BNwZ7WMcobdxFyU8bUwUiQpMET54CoxMbkN.jpg',
+    'alt' => '',
+    'deleted_at' => '2025-12-13 09:53:58',
+    'created_at' => '2025-12-13 09:57:15',
+    'updated_at' => '2025-12-13 09:53:58',
+  ),
+  129 => 
+  array (
+    'id' => 215,
+    'feature_id' => 46,
+    'image' => 'upload/featured/gMaPncmkGSXqmgqJ3l6AIGQeDM7GbLjRAO8BPnvF.jpg',
+    'alt' => '',
+    'deleted_at' => '2025-12-13 09:53:58',
+    'created_at' => '2025-12-13 09:57:15',
+    'updated_at' => '2025-12-13 09:53:58',
+  ),
+  130 => 
+  array (
+    'id' => 216,
+    'feature_id' => 46,
+    'image' => 'upload/featured/E76hNFU4Uz3CIwBqmrsAmnVfIpvgaXeviU151MUd.jpg',
+    'alt' => '',
+    'deleted_at' => '2025-12-13 09:53:58',
+    'created_at' => '2025-12-13 09:58:26',
+    'updated_at' => '2025-12-13 09:53:58',
+  ),
+  131 => 
+  array (
+    'id' => 217,
+    'feature_id' => 46,
+    'image' => 'upload/featured/FfezySlLIADPCEZ2TZYc4bLSBV81b7xopWqv4Sdk.png',
+    'alt' => '',
+    'deleted_at' => '2025-12-13 09:53:58',
+    'created_at' => '2025-12-13 09:58:26',
+    'updated_at' => '2025-12-13 09:53:58',
+  ),
+  132 => 
+  array (
+    'id' => 218,
+    'feature_id' => 46,
+    'image' => 'upload/featured/yJ4nTlusm1PkSvM83WlogxLvsCOx9Ce9jifWyaJE.png',
+    'alt' => '',
+    'deleted_at' => '2025-12-13 09:53:58',
+    'created_at' => '2025-12-13 09:59:40',
+    'updated_at' => '2025-12-13 09:53:58',
+  ),
+  133 => 
+  array (
+    'id' => 219,
+    'feature_id' => 46,
+    'image' => 'upload/featured/CpyBC5hnNta59voLxWbEX2pREgzmQnsHmTGBvabf.png',
+    'alt' => '',
+    'deleted_at' => '2025-12-13 09:53:58',
+    'created_at' => '2025-12-13 09:59:40',
+    'updated_at' => '2025-12-13 09:53:58',
+  ),
+  134 => 
+  array (
+    'id' => 220,
+    'feature_id' => 46,
+    'image' => 'upload/featured/4cPLxJyQB1PZRHbn4tchlwHOF3ZiQ6F2pUV9abvx.png',
+    'alt' => '',
+    'deleted_at' => '2025-12-13 09:53:58',
+    'created_at' => '2025-12-13 09:59:40',
+    'updated_at' => '2025-12-13 09:53:58',
+  ),
+  135 => 
+  array (
+    'id' => 221,
+    'feature_id' => 43,
+    'image' => 'upload/featured/6Nuo7d4mFp1ryv3PstVlkGnWguEtRlLcJ65tI4dH.jpg',
+    'alt' => '',
+    'deleted_at' => '2025-12-13 09:40:18',
+    'created_at' => '2025-12-13 09:38:57',
+    'updated_at' => '2025-12-13 09:40:18',
+  ),
+  136 => 
+  array (
+    'id' => 222,
+    'feature_id' => 43,
+    'image' => 'upload/featured/6I6g6TOAWBqpY0pKh7cN9bUkOk4qu3KldifaHbZy.jpg',
+    'alt' => '',
+    'deleted_at' => '2025-12-13 09:40:18',
+    'created_at' => '2025-12-13 09:38:57',
+    'updated_at' => '2025-12-13 09:40:18',
+  ),
+  137 => 
+  array (
+    'id' => 223,
+    'feature_id' => 43,
+    'image' => 'upload/featured/EIqNFVl7gY8CuKBnRlvItDcXHiKxqsQUQwDW89PP.jpg',
+    'alt' => '',
+    'deleted_at' => '2025-12-13 09:40:18',
+    'created_at' => '2025-12-13 09:38:57',
+    'updated_at' => '2025-12-13 09:40:18',
+  ),
+  138 => 
+  array (
+    'id' => 224,
+    'feature_id' => 43,
+    'image' => 'upload/featured/uJspqElCTjw16uibCfkenkyoSPo8sx4bplSwVLKe.jpg',
+    'alt' => '',
+    'deleted_at' => '2025-12-13 09:40:18',
+    'created_at' => '2025-12-13 09:38:57',
+    'updated_at' => '2025-12-13 09:40:18',
+  ),
+  139 => 
+  array (
+    'id' => 225,
+    'feature_id' => 43,
+    'image' => 'upload/featured/mVojMv8dLnFjSchScKJZDID7jryuQQoNN7g2eaSy.png',
+    'alt' => '',
+    'deleted_at' => '2025-12-13 09:40:18',
+    'created_at' => '2025-12-13 09:38:57',
+    'updated_at' => '2025-12-13 09:40:18',
+  ),
+  140 => 
+  array (
+    'id' => 226,
+    'feature_id' => 43,
+    'image' => 'upload/featured/yDUonSitVBuuKL3Igon85mfQ06pIk9PrxYF6PE16.png',
+    'alt' => '',
+    'deleted_at' => '2025-12-13 09:40:18',
+    'created_at' => '2025-12-13 09:38:57',
+    'updated_at' => '2025-12-13 09:40:18',
+  ),
+  141 => 
+  array (
+    'id' => 227,
+    'feature_id' => 43,
+    'image' => 'upload/featured/Iggb94ENRTtknxUGCpaDeyWYENntVa0yk3mt0ZGx.jpg',
+    'alt' => '',
+    'deleted_at' => NULL,
+    'created_at' => '2025-12-13 09:40:18',
+    'updated_at' => '2025-12-13 09:40:18',
+  ),
+  142 => 
+  array (
+    'id' => 228,
+    'feature_id' => 43,
+    'image' => 'upload/featured/qLcrOWPxRIllH8MNoloGlwEPKcjwcAXVEreTEGP7.jpg',
+    'alt' => '',
+    'deleted_at' => NULL,
+    'created_at' => '2025-12-13 09:40:18',
+    'updated_at' => '2025-12-13 09:40:18',
+  ),
+  143 => 
+  array (
+    'id' => 229,
+    'feature_id' => 43,
+    'image' => 'upload/featured/Cs8mzVmqZZWq9TtECV4BLtFpjfK2ZGL9jvd7xM6l.jpg',
+    'alt' => '',
+    'deleted_at' => NULL,
+    'created_at' => '2025-12-13 09:40:18',
+    'updated_at' => '2025-12-13 09:40:18',
+  ),
+  144 => 
+  array (
+    'id' => 230,
+    'feature_id' => 43,
+    'image' => 'upload/featured/Fx4snCaJNdOP6zHKWAGvwbwHqExWHHa37D52TaPI.jpg',
+    'alt' => '',
+    'deleted_at' => NULL,
+    'created_at' => '2025-12-13 09:40:18',
+    'updated_at' => '2025-12-13 09:40:18',
+  ),
+  145 => 
+  array (
+    'id' => 231,
+    'feature_id' => 43,
+    'image' => 'upload/featured/8M2jWdQjRcrIoNKfFUzQrAREfI4tZTPNSQwLhyjk.png',
+    'alt' => '',
+    'deleted_at' => NULL,
+    'created_at' => '2025-12-13 09:40:18',
+    'updated_at' => '2025-12-13 09:40:18',
+  ),
+  146 => 
+  array (
+    'id' => 232,
+    'feature_id' => 43,
+    'image' => 'upload/featured/V9xQ33TgsTx3pLJ8A7UcZro0HXO58JhbeWAjZqLt.png',
+    'alt' => '',
+    'deleted_at' => NULL,
+    'created_at' => '2025-12-13 09:40:18',
+    'updated_at' => '2025-12-13 09:40:18',
+  ),
+  147 => 
+  array (
+    'id' => 233,
+    'feature_id' => 44,
+    'image' => 'upload/featured/AZdJwQ3KHuWn66GSTeUHBf0Ner3ru8Gv2ccHpac0.jpg',
+    'alt' => '',
+    'deleted_at' => NULL,
+    'created_at' => '2025-12-13 09:45:53',
+    'updated_at' => '2025-12-13 09:45:53',
+  ),
+  148 => 
+  array (
+    'id' => 234,
+    'feature_id' => 44,
+    'image' => 'upload/featured/SkMOPtYLE78sDaSgF4aOQVuzzkamVNrG1Atvdmwp.png',
+    'alt' => '',
+    'deleted_at' => NULL,
+    'created_at' => '2025-12-13 09:45:53',
+    'updated_at' => '2025-12-13 09:45:53',
+  ),
+  149 => 
+  array (
+    'id' => 235,
+    'feature_id' => 44,
+    'image' => 'upload/featured/qHX7LiWoRPgFdYIWpNCvKtF5MS8pDBIuN2gPxmLG.jpg',
+    'alt' => '',
+    'deleted_at' => NULL,
+    'created_at' => '2025-12-13 09:45:53',
+    'updated_at' => '2025-12-13 09:45:53',
+  ),
+  150 => 
+  array (
+    'id' => 236,
+    'feature_id' => 44,
+    'image' => 'upload/featured/vresKrSbUNU2N9nvdA2XYxK39LkRfVjV5DBv4TyM.jpg',
+    'alt' => '',
+    'deleted_at' => NULL,
+    'created_at' => '2025-12-13 09:45:53',
+    'updated_at' => '2025-12-13 09:45:53',
+  ),
+  151 => 
+  array (
+    'id' => 237,
+    'feature_id' => 44,
+    'image' => 'upload/featured/gzEFGy8A84HE5R8W4MT05O4NU3ow3Bi35h112O5R.jpg',
+    'alt' => '',
+    'deleted_at' => NULL,
+    'created_at' => '2025-12-13 09:45:53',
+    'updated_at' => '2025-12-13 09:45:53',
+  ),
+  152 => 
+  array (
+    'id' => 238,
+    'feature_id' => 44,
+    'image' => 'upload/featured/KPGxqKzztxeLOHtExqO6XBfaCnXl12GxFwsafU84.jpg',
+    'alt' => '',
+    'deleted_at' => NULL,
+    'created_at' => '2025-12-13 09:45:53',
+    'updated_at' => '2025-12-13 09:45:53',
+  ),
+  153 => 
+  array (
+    'id' => 239,
+    'feature_id' => 44,
+    'image' => 'upload/featured/N6aKHQ6OLzgIOtOynAopO8m3mgOJEYsxYYsOuWeF.jpg',
+    'alt' => '',
+    'deleted_at' => NULL,
+    'created_at' => '2025-12-13 09:45:53',
+    'updated_at' => '2025-12-13 09:45:53',
+  ),
+  154 => 
+  array (
+    'id' => 240,
+    'feature_id' => 44,
+    'image' => 'upload/featured/XS7t6rnXW585xQkylltdJH9IAwCYF1hQ8CutFeNt.png',
+    'alt' => '',
+    'deleted_at' => NULL,
+    'created_at' => '2025-12-13 09:45:53',
+    'updated_at' => '2025-12-13 09:45:53',
+  ),
+  155 => 
+  array (
+    'id' => 241,
+    'feature_id' => 44,
+    'image' => 'upload/featured/ZNN14z9QmkDrwytpPyT51qJsy4AbjS0uwBkuOiyM.jpg',
+    'alt' => '',
+    'deleted_at' => NULL,
+    'created_at' => '2025-12-13 09:47:26',
+    'updated_at' => '2025-12-13 09:47:26',
+  ),
+  156 => 
+  array (
+    'id' => 242,
+    'feature_id' => 45,
+    'image' => 'upload/featured/jnRONnN3Ar08DARN4YyclttxAoieDNTirkJ99R6R.jpg',
+    'alt' => '',
+    'deleted_at' => NULL,
+    'created_at' => '2025-12-13 09:49:38',
+    'updated_at' => '2025-12-13 09:49:38',
+  ),
+  157 => 
+  array (
+    'id' => 243,
+    'feature_id' => 45,
+    'image' => 'upload/featured/9jPPCbB8qcxalD2g2TVvoF3lTKv5adLi7svLxx1o.jpg',
+    'alt' => '',
+    'deleted_at' => NULL,
+    'created_at' => '2025-12-13 09:49:38',
+    'updated_at' => '2025-12-13 09:49:38',
+  ),
+  158 => 
+  array (
+    'id' => 244,
+    'feature_id' => 46,
+    'image' => 'upload/featured/sd4sti0V4u0IjsyfIoKdFGJU87DevRcu9C6dvKqc.jpg',
+    'alt' => '',
+    'deleted_at' => NULL,
+    'created_at' => '2025-12-13 09:53:58',
+    'updated_at' => '2025-12-13 09:53:58',
+  ),
+  159 => 
+  array (
+    'id' => 245,
+    'feature_id' => 46,
+    'image' => 'upload/featured/qWJPmiWpvBKHK5T52uXS0lOpYMeA8szpMFtjLgkY.jpg',
+    'alt' => '',
+    'deleted_at' => NULL,
+    'created_at' => '2025-12-13 09:53:58',
+    'updated_at' => '2025-12-13 09:53:58',
+  ),
+  160 => 
+  array (
+    'id' => 246,
+    'feature_id' => 46,
+    'image' => 'upload/featured/Mv7XsAHD2U5iFPz4wr7GPB7JRboWm5BMYTVX3njb.jpg',
+    'alt' => '',
+    'deleted_at' => NULL,
+    'created_at' => '2025-12-13 09:53:58',
+    'updated_at' => '2025-12-13 09:53:58',
+  ),
+  161 => 
+  array (
+    'id' => 247,
+    'feature_id' => 46,
+    'image' => 'upload/featured/Nqwbafe8sEj7n7YaIHG0a7iOOAx88KeEETVE4vVb.jpg',
+    'alt' => '',
+    'deleted_at' => NULL,
+    'created_at' => '2025-12-13 09:53:58',
+    'updated_at' => '2025-12-13 09:53:58',
+  ),
+  162 => 
+  array (
+    'id' => 248,
+    'feature_id' => 46,
+    'image' => 'upload/featured/eW0yjTSuA7pqTRVp7rcOp5VgBPZ0PRIJJJqiDHTc.jpg',
+    'alt' => '',
+    'deleted_at' => NULL,
+    'created_at' => '2025-12-13 09:53:58',
+    'updated_at' => '2025-12-13 09:53:58',
+  ),
+  163 => 
+  array (
+    'id' => 249,
+    'feature_id' => 46,
+    'image' => 'upload/featured/sTBfOztNseft7gYK85oPWBX6sw1O5eP4OuxgGEJx.png',
+    'alt' => '',
+    'deleted_at' => NULL,
+    'created_at' => '2025-12-13 09:53:58',
+    'updated_at' => '2025-12-13 09:53:58',
+  ),
+  164 => 
+  array (
+    'id' => 250,
+    'feature_id' => 46,
+    'image' => 'upload/featured/kb2KV21Za3eE5760JnzDArVKBUnOCWPk1xghTv0f.png',
+    'alt' => '',
+    'deleted_at' => NULL,
+    'created_at' => '2025-12-13 09:53:58',
+    'updated_at' => '2025-12-13 09:53:58',
+  ),
+  165 => 
+  array (
+    'id' => 251,
+    'feature_id' => 46,
+    'image' => 'upload/featured/iPy5kgaRG6Fm16KRICYnhUxzucxy7UToZvUul98n.png',
+    'alt' => '',
+    'deleted_at' => NULL,
+    'created_at' => '2025-12-13 09:53:58',
+    'updated_at' => '2025-12-13 09:53:58',
+  ),
+  166 => 
+  array (
+    'id' => 252,
+    'feature_id' => 46,
+    'image' => 'upload/featured/3Dh7x8eZGWv2rNsHJ7jxyCBCw7EvapjkqlvKbQrc.png',
+    'alt' => '',
+    'deleted_at' => NULL,
+    'created_at' => '2025-12-13 09:53:58',
+    'updated_at' => '2025-12-13 09:53:58',
+  ),
+  167 => 
+  array (
+    'id' => 253,
+    'feature_id' => 48,
+    'image' => 'upload/featured/spd9bqxcgxJ1NrLzff2XZfE3D9DPAKA2Z26VVuVp.jpg',
+    'alt' => '',
+    'deleted_at' => NULL,
+    'created_at' => '2025-12-13 09:59:10',
+    'updated_at' => '2025-12-13 09:59:10',
+  ),
+  168 => 
+  array (
+    'id' => 254,
+    'feature_id' => 48,
+    'image' => 'upload/featured/Qzh04bJLBOcDOjhDvCNBwA7O5D9ZrLnAb9dYxZYt.jpg',
+    'alt' => '',
+    'deleted_at' => NULL,
+    'created_at' => '2025-12-13 09:59:10',
+    'updated_at' => '2025-12-13 09:59:10',
+  ),
+  169 => 
+  array (
+    'id' => 255,
+    'feature_id' => 48,
+    'image' => 'upload/featured/iqDW4fbp9UnaPwq5eQijURRwbELRnoEFzSZe0r9g.jpg',
+    'alt' => '',
+    'deleted_at' => NULL,
+    'created_at' => '2025-12-13 09:59:10',
+    'updated_at' => '2025-12-13 09:59:10',
+  ),
+  170 => 
+  array (
+    'id' => 256,
+    'feature_id' => 48,
+    'image' => 'upload/featured/6aM9fwHD5owBBWTejXTbueliEbu7ohObW8aQBy96.png',
+    'alt' => '',
+    'deleted_at' => NULL,
+    'created_at' => '2025-12-13 09:59:10',
+    'updated_at' => '2025-12-13 09:59:10',
+  ),
+  171 => 
+  array (
+    'id' => 257,
+    'feature_id' => 48,
+    'image' => 'upload/featured/UhbteaDUnIun2TGqGmHr6X0ircermsps9zpj5FJA.png',
+    'alt' => '',
+    'deleted_at' => NULL,
+    'created_at' => '2025-12-13 09:59:10',
+    'updated_at' => '2025-12-13 09:59:10',
+  ),
+  172 => 
+  array (
+    'id' => 258,
+    'feature_id' => 48,
+    'image' => 'upload/featured/sCygTR2eooC6yPjZz8VUoStc3gtzHmpYUOfW1cgM.png',
+    'alt' => '',
+    'deleted_at' => NULL,
+    'created_at' => '2025-12-13 09:59:10',
+    'updated_at' => '2025-12-13 09:59:10',
+  ),
+  173 => 
+  array (
+    'id' => 259,
+    'feature_id' => 48,
+    'image' => 'upload/featured/BLU2zIMEhk9FG7m81V1wlWm3MxAhq0Z6Q2TIkHQ3.png',
+    'alt' => '',
+    'deleted_at' => NULL,
+    'created_at' => '2025-12-13 09:59:10',
+    'updated_at' => '2025-12-13 09:59:10',
+  ),
+  174 => 
+  array (
+    'id' => 260,
+    'feature_id' => 48,
+    'image' => 'upload/featured/DLWsiwUDqIxzPjUSzLZurV15kInP7pkp2xmwYkuj.png',
+    'alt' => '',
+    'deleted_at' => NULL,
+    'created_at' => '2025-12-13 09:59:10',
+    'updated_at' => '2025-12-13 09:59:10',
+  ),
+  175 => 
+  array (
+    'id' => 261,
+    'feature_id' => 49,
+    'image' => 'upload/featured/yn4KFIMQiGe89lAV1wkbJLsN5oyPHogaeVoGOrpy.jpg',
+    'alt' => '',
+    'deleted_at' => NULL,
+    'created_at' => '2025-12-13 10:04:09',
+    'updated_at' => '2025-12-13 10:04:09',
+  ),
+  176 => 
+  array (
+    'id' => 262,
+    'feature_id' => 49,
+    'image' => 'upload/featured/4zop2MVr6pDlBloyFsqby3V9PtaiA41fVaEO33TW.jpg',
+    'alt' => '',
+    'deleted_at' => NULL,
+    'created_at' => '2025-12-13 10:04:09',
+    'updated_at' => '2025-12-13 10:04:09',
+  ),
+  177 => 
+  array (
+    'id' => 263,
+    'feature_id' => 49,
+    'image' => 'upload/featured/3VcADr9UXib9qBS3OE5QjijHTZy54vr6NSLu7nq3.jpg',
+    'alt' => '',
+    'deleted_at' => NULL,
+    'created_at' => '2025-12-13 10:04:09',
+    'updated_at' => '2025-12-13 10:04:09',
+  ),
+  178 => 
+  array (
+    'id' => 264,
+    'feature_id' => 49,
+    'image' => 'upload/featured/yDQSFxMqWJoNyYC2gy5vw8ylcDg13EAlbX9E3THL.jpg',
+    'alt' => '',
+    'deleted_at' => NULL,
+    'created_at' => '2025-12-13 10:04:09',
+    'updated_at' => '2025-12-13 10:04:09',
+  ),
+  179 => 
+  array (
+    'id' => 265,
+    'feature_id' => 49,
+    'image' => 'upload/featured/kU4aYcY2no431EzA7SWnMhvwuCE2iODwVV0KzZN9.jpg',
+    'alt' => '',
+    'deleted_at' => NULL,
+    'created_at' => '2025-12-13 10:04:09',
+    'updated_at' => '2025-12-13 10:04:09',
+  ),
+  180 => 
+  array (
+    'id' => 266,
+    'feature_id' => 49,
+    'image' => 'upload/featured/Lp1oa4y47Ntt8UlkG3REcWo9deAi1QLKcVJ0qk8g.jpg',
+    'alt' => '',
+    'deleted_at' => NULL,
+    'created_at' => '2025-12-13 10:04:09',
+    'updated_at' => '2025-12-13 10:04:09',
+  ),
+  181 => 
+  array (
+    'id' => 267,
+    'feature_id' => 49,
+    'image' => 'upload/featured/rKxc5MSuAIpL7dtbe6nxc3zxbX3yPLO9oCobmWyx.jpg',
+    'alt' => '',
+    'deleted_at' => NULL,
+    'created_at' => '2025-12-13 10:04:09',
+    'updated_at' => '2025-12-13 10:04:09',
+  ),
+  182 => 
+  array (
+    'id' => 268,
+    'feature_id' => 49,
+    'image' => 'upload/featured/3N4l2dayXpViXgAfVXVvYUgLhBWouuMDxwx8C2uW.jpg',
+    'alt' => '',
+    'deleted_at' => NULL,
+    'created_at' => '2025-12-13 10:04:09',
+    'updated_at' => '2025-12-13 10:04:09',
+  ),
+  183 => 
+  array (
+    'id' => 269,
+    'feature_id' => 50,
+    'image' => 'upload/featured/XiP6ZmxtjVCdk8JdE2S5qzqdyCWCmWCDdd1RZ6lY.jpg',
+    'alt' => '',
+    'deleted_at' => NULL,
+    'created_at' => '2025-12-13 10:07:24',
+    'updated_at' => '2025-12-13 10:07:24',
+  ),
+  184 => 
+  array (
+    'id' => 270,
+    'feature_id' => 52,
+    'image' => 'upload/featured/B4iz3PK0WplppyzXyU0r7ZPdLD6gf38ZlO8WTozp.jpg',
+    'alt' => '',
+    'deleted_at' => NULL,
+    'created_at' => '2025-12-13 10:13:41',
+    'updated_at' => '2025-12-13 10:13:41',
+  ),
+  185 => 
+  array (
+    'id' => 271,
+    'feature_id' => 52,
+    'image' => 'upload/featured/x8uIqbaR2bGN318XMLQ2quvmur131rLlOok0r36o.jpg',
+    'alt' => '',
+    'deleted_at' => NULL,
+    'created_at' => '2025-12-13 10:13:41',
+    'updated_at' => '2025-12-13 10:13:41',
+  ),
+  186 => 
+  array (
+    'id' => 272,
+    'feature_id' => 52,
+    'image' => 'upload/featured/7o2KwJnTcERX7Rm17MUAhgbOm6stIxEC1ebtVa1R.jpg',
+    'alt' => '',
+    'deleted_at' => NULL,
+    'created_at' => '2025-12-13 10:13:41',
+    'updated_at' => '2025-12-13 10:13:41',
+  ),
+  187 => 
+  array (
+    'id' => 273,
+    'feature_id' => 52,
+    'image' => 'upload/featured/jBL0oezCt4cDuCNOhRBz6UWOi3dBNtcmFGgsAace.jpg',
+    'alt' => '',
+    'deleted_at' => NULL,
+    'created_at' => '2025-12-13 10:13:41',
+    'updated_at' => '2025-12-13 10:13:41',
+  ),
+  188 => 
+  array (
+    'id' => 274,
+    'feature_id' => 52,
+    'image' => 'upload/featured/pnKXBnqSrs4ca2PSPaCz4wkMEcz4HY67Rlfzn5Qp.jpg',
+    'alt' => '',
+    'deleted_at' => NULL,
+    'created_at' => '2025-12-13 10:13:41',
+    'updated_at' => '2025-12-13 10:13:41',
+  ),
+  189 => 
+  array (
+    'id' => 275,
+    'feature_id' => 52,
+    'image' => 'upload/featured/igvDLH1gqmzqLvZQKqb2iQqniNskZrzh79JZ0wvo.jpg',
+    'alt' => '',
+    'deleted_at' => NULL,
+    'created_at' => '2025-12-13 10:13:41',
+    'updated_at' => '2025-12-13 10:13:41',
+  ),
+  190 => 
+  array (
+    'id' => 276,
+    'feature_id' => 52,
+    'image' => 'upload/featured/psjihJAw0SJDkasAaF46V5iQbSawXyWUJpwjekBl.jpg',
+    'alt' => '',
+    'deleted_at' => NULL,
+    'created_at' => '2025-12-13 10:13:41',
+    'updated_at' => '2025-12-13 10:13:41',
+  ),
+  191 => 
+  array (
+    'id' => 277,
+    'feature_id' => 52,
+    'image' => 'upload/featured/gXfaS4rFTLXIte8yN9MnL2pa2k9goUAvPiV0IbiL.jpg',
+    'alt' => '',
+    'deleted_at' => NULL,
+    'created_at' => '2025-12-13 10:13:41',
+    'updated_at' => '2025-12-13 10:13:41',
+  ),
+  192 => 
+  array (
+    'id' => 278,
+    'feature_id' => 53,
+    'image' => 'upload/featured/TFixOQjXGIYofVK8gti2EDZmRrnvdgp4sVg2kTRQ.jpg',
+    'alt' => '',
+    'deleted_at' => NULL,
+    'created_at' => '2025-12-13 10:21:05',
+    'updated_at' => '2025-12-13 10:21:05',
+  ),
+  193 => 
+  array (
+    'id' => 279,
+    'feature_id' => 53,
+    'image' => 'upload/featured/pHhwmK0umyU1eJA93W09R9mkEeN4DCd3MYzbDLDn.jpg',
+    'alt' => '',
+    'deleted_at' => NULL,
+    'created_at' => '2025-12-13 10:21:05',
+    'updated_at' => '2025-12-13 10:21:05',
+  ),
+  194 => 
+  array (
+    'id' => 280,
+    'feature_id' => 53,
+    'image' => 'upload/featured/Odw2GJDkgF85W3QIq5GRnADGQTvcvUdNFUrwWs5l.jpg',
+    'alt' => '',
+    'deleted_at' => NULL,
+    'created_at' => '2025-12-13 10:21:05',
+    'updated_at' => '2025-12-13 10:21:05',
+  ),
+  195 => 
+  array (
+    'id' => 281,
+    'feature_id' => 53,
+    'image' => 'upload/featured/P2o2T1uiXyj19txs8hz31falPPx9zmAi2EdEmjjb.jpg',
+    'alt' => '',
+    'deleted_at' => NULL,
+    'created_at' => '2025-12-13 10:21:05',
+    'updated_at' => '2025-12-13 10:21:05',
+  ),
+  196 => 
+  array (
+    'id' => 282,
+    'feature_id' => 53,
+    'image' => 'upload/featured/EkxgEEiHdA6ApVL08PaesxP6TgrfMrtIeRyf5XJs.jpg',
+    'alt' => '',
+    'deleted_at' => NULL,
+    'created_at' => '2025-12-13 10:21:05',
+    'updated_at' => '2025-12-13 10:21:05',
+  ),
+  197 => 
+  array (
+    'id' => 283,
+    'feature_id' => 53,
+    'image' => 'upload/featured/vmyyvNcHH021JD33B08QX4SEd8QTi9dwehaP5AV9.png',
+    'alt' => '',
+    'deleted_at' => NULL,
+    'created_at' => '2025-12-13 10:21:05',
+    'updated_at' => '2025-12-13 10:21:05',
+  ),
+  198 => 
+  array (
+    'id' => 284,
+    'feature_id' => 53,
+    'image' => 'upload/featured/nNqzrM5CCYn4oMSnOrLTiNjPn9m2vRZI5iVHlwx3.jpg',
+    'alt' => '',
+    'deleted_at' => NULL,
+    'created_at' => '2025-12-13 10:21:05',
+    'updated_at' => '2025-12-13 10:21:05',
+  ),
+  199 => 
+  array (
+    'id' => 285,
+    'feature_id' => 54,
+    'image' => 'upload/featured/LbR1chQeVdUh0glIYze6GrVNmfi3ubqgNs5BZOuz.png',
+    'alt' => '',
+    'deleted_at' => NULL,
+    'created_at' => '2025-12-13 10:25:25',
+    'updated_at' => '2025-12-13 10:25:25',
+  ),
+  200 => 
+  array (
+    'id' => 286,
+    'feature_id' => 54,
+    'image' => 'upload/featured/BgaVd1JpbDsPFXaPmo1TOvfO8v3BRZVpVrO1DiY1.jpg',
+    'alt' => '',
+    'deleted_at' => NULL,
+    'created_at' => '2025-12-13 10:25:25',
+    'updated_at' => '2025-12-13 10:25:25',
+  ),
+  201 => 
+  array (
+    'id' => 287,
+    'feature_id' => 54,
+    'image' => 'upload/featured/FPUkCY5K0P0CnkobLLXCEt6BEi6aysITatSJUvsu.jpg',
+    'alt' => '',
+    'deleted_at' => NULL,
+    'created_at' => '2025-12-13 10:25:26',
+    'updated_at' => '2025-12-13 10:25:26',
+  ),
+  202 => 
+  array (
+    'id' => 288,
+    'feature_id' => 55,
+    'image' => 'upload/featured/Igff4aKSutO2v0zZ4TtnAyDvoaHGhRIS5ggPsgRS.png',
+    'alt' => '',
+    'deleted_at' => NULL,
+    'created_at' => '2025-12-13 10:29:24',
+    'updated_at' => '2025-12-13 10:29:24',
+  ),
+  203 => 
+  array (
+    'id' => 289,
+    'feature_id' => 55,
+    'image' => 'upload/featured/HzHlCxmw147MvVLwGnbHPLioEYwZSyLqc172Jzum.jpg',
+    'alt' => '',
+    'deleted_at' => NULL,
+    'created_at' => '2025-12-13 10:29:24',
+    'updated_at' => '2025-12-13 10:29:24',
+  ),
+  204 => 
+  array (
+    'id' => 290,
+    'feature_id' => 56,
+    'image' => 'upload/featured/Z0g5TP4x64jxg2DYzoc6veIvcikWyzeE5KgiSxoJ.jpg',
+    'alt' => '',
+    'deleted_at' => NULL,
+    'created_at' => '2025-12-13 10:31:36',
+    'updated_at' => '2025-12-13 10:31:36',
+  ),
+  205 => 
+  array (
+    'id' => 291,
+    'feature_id' => 56,
+    'image' => 'upload/featured/gGEjIMqsYehijucvPwTgSQJi2elOYOIiAAXBSZ1v.jpg',
+    'alt' => '',
+    'deleted_at' => NULL,
+    'created_at' => '2025-12-13 10:31:36',
+    'updated_at' => '2025-12-13 10:31:36',
+  ),
+  206 => 
+  array (
+    'id' => 292,
+    'feature_id' => 56,
+    'image' => 'upload/featured/WcXuGmRTShxlJt4HdFw7UjBY0jaHc7QhndmpdlBt.jpg',
+    'alt' => '',
+    'deleted_at' => NULL,
+    'created_at' => '2025-12-13 10:31:36',
+    'updated_at' => '2025-12-13 10:31:36',
+  ),
+  207 => 
+  array (
+    'id' => 293,
+    'feature_id' => 56,
+    'image' => 'upload/featured/wRz0FxIRHFKguamPTl6VDToQaKrPSmAgYsUMibWt.jpg',
+    'alt' => '',
+    'deleted_at' => NULL,
+    'created_at' => '2025-12-13 10:31:36',
+    'updated_at' => '2025-12-13 10:31:36',
+  ),
+  208 => 
+  array (
+    'id' => 294,
+    'feature_id' => 56,
+    'image' => 'upload/featured/N4QyJFd2FQZ5dzx8cpqNBAVMJmhj5bAajsabYe1b.jpg',
+    'alt' => '',
+    'deleted_at' => NULL,
+    'created_at' => '2025-12-13 10:31:36',
+    'updated_at' => '2025-12-13 10:31:36',
+  ),
+  209 => 
+  array (
+    'id' => 295,
+    'feature_id' => 56,
+    'image' => 'upload/featured/4YuZ3aXrvTKIInFUsY9e1QhPun2mumPGGn5lBZZH.jpg',
+    'alt' => '',
+    'deleted_at' => NULL,
+    'created_at' => '2025-12-13 10:31:36',
+    'updated_at' => '2025-12-13 10:31:36',
+  ),
+  210 => 
+  array (
+    'id' => 296,
+    'feature_id' => 56,
+    'image' => 'upload/featured/zAGmSI9XBwN5yLlLoZfvcEuYU4v51bGLTsozT2nf.jpg',
+    'alt' => '',
+    'deleted_at' => NULL,
+    'created_at' => '2025-12-13 10:31:36',
+    'updated_at' => '2025-12-13 10:31:36',
+  ),
+  211 => 
+  array (
+    'id' => 297,
+    'feature_id' => 56,
+    'image' => 'upload/featured/FLMB20W8nsV8V0TE439JaD9V2BfC4l0xMHT9Oav6.jpg',
+    'alt' => '',
+    'deleted_at' => NULL,
+    'created_at' => '2025-12-13 10:31:36',
+    'updated_at' => '2025-12-13 10:31:36',
   ),
 );
         DB::table('cd_feature_images')->insert($data);
