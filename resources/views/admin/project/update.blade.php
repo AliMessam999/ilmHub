@@ -112,7 +112,7 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
-                                    <label>alt</label>
+                                    <label>Division(Heading)</label>
                                     <div class="common_input mb_15">
                                         <input type="text" name="alt" value="{{ __($menu->alt) }}"
                                             placeholder="Enter ALt of Image for SEO" autocomplete="off">
