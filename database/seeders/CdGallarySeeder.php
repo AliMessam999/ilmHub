@@ -18,10 +18,10 @@ class CdGallarySeeder extends Seeder
     'category_id' => 1,
     'deleted_at' => NULL,
     'created_at' => '2023-11-23 12:41:59',
-    'updated_at' => '2025-05-15 09:32:24',
+    'updated_at' => '2025-12-13 10:53:59',
     'description' => '<p>Dr. Umer Saif (Federal Minister for IT and S&amp;T), Nasir Mahmood Malik (Chief ICT, Planning Commission), Arshhed Gellani(CDigital, Workstream Lead), Gerard Newman (CEO Oxon Consulting/ Project Director), and Ali Ehsan(Oxon Consulting). at the launching ceremony of the IT ITeS Export Strategy of Pakistan. The study was conducted for PSEB by PwC UK, A.F. Ferguson, Oxford Global Projects, Oxon Global, and CDigital.</p>',
     'alt' => 'persons',
-    'image' => 'upload/gallary/Uj7mMNb7p2Rg0pJhu1vJyUEw7ZiOqj7v5vPadPMk.jpg',
+    'image' => 'upload/gallary/sJzekxUw8VleOSwDz4eCeSOsI71tKnRFv7MQJ1Cz.jpg',
   ),
   1 => 
   array (
@@ -30,10 +30,10 @@ class CdGallarySeeder extends Seeder
     'category_id' => 1,
     'deleted_at' => NULL,
     'created_at' => '2023-11-23 12:44:22',
-    'updated_at' => '2025-05-15 09:32:59',
+    'updated_at' => '2025-12-13 10:54:17',
     'description' => '<p>CDigital Team at the launching ceremony of IT ITeS Export Strategy of Pakistan with Project Director Gerard Nauman(Oxon Global)</p>',
     'alt' => 'ITEs 2',
-    'image' => 'upload/gallary/IJAPNkzZCQ1F1OrLDUpqaLyn6U5pcRnajsEeRHpp.jpg',
+    'image' => 'upload/gallary/e6rBkuTtn4w6MePEt0M3FfYnzm9Tfmd07gcDb4eM.jpg',
   ),
   2 => 
   array (
@@ -88,9 +88,9 @@ class CdGallarySeeder extends Seeder
     'id' => 22,
     'title' => 'Dinner hosted in Lahore at Salt n Pepper',
     'category_id' => 3,
-    'deleted_at' => NULL,
+    'deleted_at' => '2025-12-13 10:55:01',
     'created_at' => '2023-11-23 13:02:29',
-    'updated_at' => '2025-05-15 10:06:12',
+    'updated_at' => '2025-12-13 10:55:01',
     'description' => NULL,
     'alt' => 'Dinner hosted in Lahore at Salt n Pepper',
     'image' => 'upload/gallary/J8TH4GOV9htxxwxCbVdG5IUAT8yeCdMHTqazIF9S.jpg',
