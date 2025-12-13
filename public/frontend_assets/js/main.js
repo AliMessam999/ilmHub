@@ -1005,7 +1005,7 @@ Progressbar js
 					document.documentElement.scrollHeight -
 					document.documentElement.clientHeight;
 				const scrollValue = Math.round((scrollTopPos / calcHeight) * 100);
-
+				console.log(scrollValue,scrollTopPos);
 				scrollElementWrap.css(
 					"background",
 					`conic-gradient( var(--tj-color-theme-primary) ${scrollValue}%, var(--tj-color-common-white) ${scrollValue}%)`

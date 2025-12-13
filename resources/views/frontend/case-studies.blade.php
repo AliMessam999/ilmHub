@@ -119,7 +119,7 @@
                                             src="/{{ $caseStudy->images[0]->image }}"
                                             alt="{{ $caseStudy->alt }}" style="min-height:250px;max-height: 250px" />
                                     </div>
-                                    <div class="project-content" style="height: 150px;">
+                                    <div class="project-content" style="height: 190px;">
                                         <span class="categories"><a href="/case-study/{{ $caseStudy->title }}">Case Study</a></span>
                                         <div class="project-text">
                                             <h4 class="title">

@@ -15,7 +15,7 @@ class CdSolutionSeeder extends Seeder
   array (
     'id' => 117,
     'type' => 'Project',
-    'alt' => 'tji-service-1',
+    'alt' => 'The Pakistan Water and Power Development Authority (WAPDA) manages Pakistan’s major water infrastructure, including dams, barrages, and hydropower operations. As the country’s central water authority, WAPDA depends on accurate flow data to manage river systems and support national water security.',
     'image' => 'upload/project/hneFJ01Xm6EzElGL1fGJ4pYEKZV3TrFG8vPm6Dxs.png',
     'description' => '<p>In today&#39;s fast-paced digital landscape, outdated infrastructure can hold your business back. Our IT Modernization &amp; Cloud Infrastructure services help you break free from legacy limitations and embrace agile, scalable systems that drive efficiency and innovation. Whether you&#39;re consolidating data centers, migrating to the cloud, or strengthening business continuity, we provide end-to-end solutions that modernize your technology foundation while minimizing disruption. Our approach balances performance, security, and cost-effectiveness ensuring your infrastructure not only meets today&#39;s demands but is ready to evolve with tomorrow&#39;s opportunities.</p>
 
@@ -32,7 +32,7 @@ class CdSolutionSeeder extends Seeder
     'category_id' => 81,
     'deleted_at' => NULL,
     'created_at' => '2025-11-24 07:53:56',
-    'updated_at' => '2025-12-05 05:49:21',
+    'updated_at' => '2025-12-12 14:27:44',
     'title' => 'Modern Systems Built for Agility, Designed for Growth',
     'slug' => '/sub-divisions/modern-systems-built-for-agility-designed-for-growth',
   ),

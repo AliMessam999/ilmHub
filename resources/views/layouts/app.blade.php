@@ -30,6 +30,13 @@
 
     @include('includes.scripts')
     @stack('scripts')
+
+
+    <div id="imageModal" class="image-modal">
+    <span class="close-modal" onclick="closeModal()">&times;</span>
+    <img id="modalImage" alt="">
+    <div id="caption"></div>
+</div>
 </body>
 
 </html>
