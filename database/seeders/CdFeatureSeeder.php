@@ -45,7 +45,7 @@ class CdFeatureSeeder extends Seeder
 	<li>Civil Works &amp; Legacy Datacentre Migration</li>
 	<li>Staff Training &amp; Documentation</li>
 </ul>',
-    'sub_category_id' => 81,
+    'sub_category_id' => NULL,
     'client_name' => 'Pakistan Bureau of Statistics (PBS)',
     'funded_by' => 'Nill',
     'location' => 'Pakistan',
@@ -56,7 +56,7 @@ class CdFeatureSeeder extends Seeder
     'icon' => 'Nill',
     'deleted_at' => NULL,
     'created_at' => '2025-12-09 15:34:15',
-    'updated_at' => '2025-12-13 09:38:57',
+    'updated_at' => '2025-12-15 06:11:20',
     'industry' => 'National Data Infrastructure / Public Sector Digitalization',
     'image' => NULL,
   ),
@@ -97,7 +97,7 @@ class CdFeatureSeeder extends Seeder
 	<li>Staff training &amp; SOPs</li>
 	<li>Civil &amp; interior works</li>
 </ul>',
-    'sub_category_id' => 81,
+    'sub_category_id' => NULL,
     'client_name' => 'IT Board, Government of Azad Jammu & Kashmir (AJ&K)',
     'funded_by' => 'Nill',
     'location' => 'Azad Jammu & Kashmir (AJ&K)',
@@ -108,7 +108,7 @@ class CdFeatureSeeder extends Seeder
     'icon' => 'Nill',
     'deleted_at' => NULL,
     'created_at' => '2025-12-09 15:39:15',
-    'updated_at' => '2025-12-13 09:45:53',
+    'updated_at' => '2025-12-15 06:08:45',
     'industry' => 'Digital Governance • Land Administration',
     'image' => NULL,
   ),
@@ -147,7 +147,7 @@ class CdFeatureSeeder extends Seeder
 	<li>Training &amp; Documentation</li>
 	<li>Maintenance &amp; Support</li>
 </ul>',
-    'sub_category_id' => 81,
+    'sub_category_id' => NULL,
     'client_name' => 'Khyber Pakhtunkhwa Integrated Tourism Development Project (KITE)',
     'funded_by' => 'Nill',
     'location' => 'Khyber Pakhtunkhwa, Pakistan',
@@ -158,7 +158,7 @@ class CdFeatureSeeder extends Seeder
     'icon' => 'Nill',
     'deleted_at' => NULL,
     'created_at' => '2025-12-09 15:43:09',
-    'updated_at' => '2025-12-13 09:49:38',
+    'updated_at' => '2025-12-15 06:07:58',
     'industry' => 'Tourism • Government Digital Transformation',
     'image' => NULL,
   ),
@@ -198,7 +198,7 @@ class CdFeatureSeeder extends Seeder
 	<li>Renovation &amp; Service Center Setup</li>
 	<li>Staff Training &amp; Support</li>
 </ul>',
-    'sub_category_id' => 81,
+    'sub_category_id' => NULL,
     'client_name' => 'AJ&K Information Technology Board & AJ&K Police',
     'funded_by' => 'Nill',
     'location' => 'Azad Jammu & Kashmir (AJ&K), Pakistan',
@@ -209,7 +209,7 @@ class CdFeatureSeeder extends Seeder
     'icon' => 'Nill',
     'deleted_at' => NULL,
     'created_at' => '2025-12-09 15:48:14',
-    'updated_at' => '2025-12-13 09:53:58',
+    'updated_at' => '2025-12-15 06:09:11',
     'industry' => 'Public Sector · Law Enforcement · Digital Governance',
     'image' => NULL,
   ),
@@ -246,7 +246,7 @@ class CdFeatureSeeder extends Seeder
 	<li>ERP Enablement</li>
 	<li>Training &amp; Support</li>
 </ul>',
-    'sub_category_id' => 81,
+    'sub_category_id' => NULL,
     'client_name' => 'AJK Electricity Department (AJKED)',
     'funded_by' => 'Nill',
     'location' => 'Azad Jammu & Kashmir (AJ&K), Pakistan',
@@ -257,7 +257,7 @@ class CdFeatureSeeder extends Seeder
     'icon' => 'Nill',
     'deleted_at' => NULL,
     'created_at' => '2025-12-09 15:54:08',
-    'updated_at' => '2025-12-13 06:36:59',
+    'updated_at' => '2025-12-15 06:09:41',
     'industry' => 'Public Utilities • Power Distribution',
     'image' => NULL,
   ),
@@ -295,7 +295,7 @@ class CdFeatureSeeder extends Seeder
 	<li>Staff Training</li>
 	<li>Maintenance &amp; Support</li>
 </ul>',
-    'sub_category_id' => 81,
+    'sub_category_id' => NULL,
     'client_name' => 'Azad Jammu & Kashmir (AJ&K) Information Technology Board',
     'funded_by' => 'Nill',
     'location' => 'Azad Jammu & Kashmir (AJ&K), Pakistan',
@@ -306,7 +306,7 @@ class CdFeatureSeeder extends Seeder
     'icon' => 'Nill',
     'deleted_at' => NULL,
     'created_at' => '2025-12-09 15:58:08',
-    'updated_at' => '2025-12-13 09:59:10',
+    'updated_at' => '2025-12-15 06:12:23',
     'industry' => 'Public Sector · Judiciary · Digital Governance',
     'image' => NULL,
   ),
@@ -343,7 +343,7 @@ class CdFeatureSeeder extends Seeder
 	<li>Training &amp; Operational Support</li>
 	<li>Civil &amp; Renovation Works</li>
 </ul>',
-    'sub_category_id' => 81,
+    'sub_category_id' => NULL,
     'client_name' => 'AJK IT Board, Higher Education Department Muzaffarabad, Government of Khyber Pakhtunkhwa',
     'funded_by' => 'Nill',
     'location' => 'Khyber Pakhtunkhwa, Azad Jammu & Kashmir (AJ&K), Pakistan',
@@ -354,7 +354,7 @@ class CdFeatureSeeder extends Seeder
     'icon' => 'Nill',
     'deleted_at' => NULL,
     'created_at' => '2025-12-09 16:01:43',
-    'updated_at' => '2025-12-13 10:04:09',
+    'updated_at' => '2025-12-15 06:14:37',
     'industry' => 'Education • Digital Infrastructure • Public Sector ICT',
     'image' => NULL,
   ),
@@ -392,7 +392,7 @@ class CdFeatureSeeder extends Seeder
 	<li>Central Dashboards &amp; Control Rooms</li>
 	<li>Training &amp; Operational Readiness</li>
 </ul>',
-    'sub_category_id' => 81,
+    'sub_category_id' => NULL,
     'client_name' => 'Pakistan Water and Power Development Authority (WAPDA)',
     'funded_by' => NULL,
     'location' => 'Pakistan',
@@ -403,7 +403,7 @@ class CdFeatureSeeder extends Seeder
     'icon' => 'Nill',
     'deleted_at' => NULL,
     'created_at' => '2025-12-09 16:05:23',
-    'updated_at' => '2025-12-13 10:07:24',
+    'updated_at' => '2025-12-15 06:15:07',
     'industry' => 'Water Resources • Public Infrastructure • Climate Resilience',
     'image' => NULL,
   ),
@@ -442,7 +442,7 @@ class CdFeatureSeeder extends Seeder
 	<li>Predictive Flood Alert System</li>
 	<li>Training and Capacity Building</li>
 </ul>',
-    'sub_category_id' => 81,
+    'sub_category_id' => NULL,
     'client_name' => 'WAPDA – Hydrology & Research Directorate',
     'funded_by' => 'Nill',
     'location' => 'Pakistan',
@@ -453,7 +453,7 @@ class CdFeatureSeeder extends Seeder
     'icon' => 'Nill',
     'deleted_at' => NULL,
     'created_at' => '2025-12-09 16:09:01',
-    'updated_at' => '2025-12-13 06:38:54',
+    'updated_at' => '2025-12-15 06:15:33',
     'industry' => 'Public Infrastructure • Water Resources',
     'image' => NULL,
   ),
@@ -491,7 +491,7 @@ class CdFeatureSeeder extends Seeder
 	<li>Civil &amp; Marine Infrastructure Works</li>
 	<li>Training &amp; Technical Capacity Building</li>
 </ul>',
-    'sub_category_id' => 81,
+    'sub_category_id' => NULL,
     'client_name' => 'Irrigation Department, Government of Khyber Pakhtunkhwa',
     'funded_by' => 'Nill',
     'location' => 'Peshawar, Khyber Pakhtunkhwa, Pakistan',
@@ -502,7 +502,7 @@ class CdFeatureSeeder extends Seeder
     'icon' => 'Nill',
     'deleted_at' => NULL,
     'created_at' => '2025-12-09 16:12:36',
-    'updated_at' => '2025-12-13 10:13:41',
+    'updated_at' => '2025-12-15 06:15:58',
     'industry' => 'Public Infrastructure • Water Resources',
     'image' => NULL,
   ),
@@ -540,7 +540,7 @@ class CdFeatureSeeder extends Seeder
 	<li>Civil &amp; MEP Works</li>
 	<li>Training &amp; Capacity Building</li>
 </ul>',
-    'sub_category_id' => 81,
+    'sub_category_id' => NULL,
     'client_name' => 'Water and Power Development Authority (WAPDA), Pakistan',
     'funded_by' => NULL,
     'location' => 'Peshawar, Khyber Pakhtunkhwa, Pakistan',
@@ -551,7 +551,7 @@ class CdFeatureSeeder extends Seeder
     'icon' => 'Nill',
     'deleted_at' => NULL,
     'created_at' => '2025-12-09 16:15:45',
-    'updated_at' => '2025-12-13 10:21:05',
+    'updated_at' => '2025-12-15 06:18:22',
     'industry' => 'Water Resources • Hydropower • Climate Resilience',
     'image' => NULL,
   ),
@@ -590,7 +590,7 @@ class CdFeatureSeeder extends Seeder
 	<li>Field Hydrology Toolkit Supply</li>
 	<li>Training &amp; Capacity Building</li>
 </ul>',
-    'sub_category_id' => 81,
+    'sub_category_id' => NULL,
     'client_name' => 'Government of Khyber Pakhtunkhwa (KP)',
     'funded_by' => 'Nill',
     'location' => 'Seven Merged Districts (Former FATA)',
@@ -601,7 +601,7 @@ class CdFeatureSeeder extends Seeder
     'icon' => 'Nill',
     'deleted_at' => NULL,
     'created_at' => '2025-12-09 16:19:16',
-    'updated_at' => '2025-12-13 10:25:26',
+    'updated_at' => '2025-12-15 06:19:03',
     'industry' => 'Water Resources • Public Infrastructure',
     'image' => NULL,
   ),
@@ -640,7 +640,7 @@ class CdFeatureSeeder extends Seeder
 	<li>Rugged Field Installation</li>
 	<li>Training &amp; Capacity Building</li>
 </ul>',
-    'sub_category_id' => 81,
+    'sub_category_id' => NULL,
     'client_name' => 'FATA Water Resources Development Project (FWRDP)',
     'funded_by' => 'Nill',
     'location' => 'Khyber, Mohmand & Bajaur',
@@ -651,7 +651,7 @@ class CdFeatureSeeder extends Seeder
     'icon' => 'Nill',
     'deleted_at' => NULL,
     'created_at' => '2025-12-09 16:22:29',
-    'updated_at' => '2025-12-13 10:29:24',
+    'updated_at' => '2025-12-15 06:19:31',
     'industry' => 'Climate Monitoring • Water Resources • Disaster Management',
     'image' => NULL,
   ),
@@ -690,7 +690,7 @@ class CdFeatureSeeder extends Seeder
 	<li>Autonomous Power Infrastructure</li>
 	<li>Training &amp; Capacity Building</li>
 </ul>',
-    'sub_category_id' => 81,
+    'sub_category_id' => NULL,
     'client_name' => 'WAPDA – Hydrology & Research Directorate',
     'funded_by' => 'Nill',
     'location' => 'Khyber, Mohmand & Bajaur',
@@ -701,7 +701,7 @@ class CdFeatureSeeder extends Seeder
     'icon' => 'Nill',
     'deleted_at' => NULL,
     'created_at' => '2025-12-09 16:26:09',
-    'updated_at' => '2025-12-13 10:31:36',
+    'updated_at' => '2025-12-15 06:20:10',
     'industry' => 'Water Resources • Hydropower • Climate Resilience',
     'image' => NULL,
   ),
@@ -740,7 +740,7 @@ class CdFeatureSeeder extends Seeder
 	<li>Civil, Structural &amp; Field Infrastructure Works</li>
 	<li>Training &amp; Capacity Building</li>
 </ul>',
-    'sub_category_id' => 81,
+    'sub_category_id' => NULL,
     'client_name' => 'Punjab Irrigation Department (PID)',
     'funded_by' => 'Nill',
     'location' => 'Punjab, Pakistan',
@@ -751,7 +751,7 @@ class CdFeatureSeeder extends Seeder
     'icon' => 'Nill',
     'deleted_at' => NULL,
     'created_at' => '2025-12-09 16:29:41',
-    'updated_at' => '2025-12-13 06:40:54',
+    'updated_at' => '2025-12-15 06:20:43',
     'industry' => 'Water Resources • Public Infrastructure • Irrigation Automation',
     'image' => NULL,
   ),
