@@ -54,7 +54,7 @@
                        <div class="col-xl-3 col-lg-3 col-md-6">
                            <div class="footer-widget widget-contact h6-footer-contact wow fadeInUp"
                                data-wow-delay=".7s">
-                               <h5 class="title">Our Office</h5>
+                               <h5 class="title">Head Office</h5>
                                <div class="footer-contact-info">
                                    @if (!empty($footer->profile))
                                        <div class="contact-item">
