@@ -27,17 +27,17 @@
                                 </div>
 
                                 <div class="col-lg-6">
-                                    <label>Sub Category</label>
+                                    <label>Sub Categories</label>
                                     <div class="common_input mb_15">
-                                        <select class="form-control nice_Select2 wide" name="sub_category_id">
-                                            <option value="" disabled selected>Select Sub Category</option>
+                                        <select class="form-control nice_Select2 wide" name="sub_category_ids[]" multiple>
                                             @foreach ($categories as $subcategory)
                                                 <option value="{{ $subcategory->id }}"
-                                                    {{ $menu->sub_category_id == $subcategory->id ? 'selected' : '' }}>
+                                                    {{ in_array($subcategory->id, $menu->subCategories->pluck('id')->toArray()) ? 'selected' : '' }}>
                                                     {{ $subcategory->title }}
                                                 </option>
                                             @endforeach
                                         </select>
+                                        <small class="text-muted">Hold Ctrl/Cmd to select multiple categories</small>
                                     </div>
                                 </div>
 

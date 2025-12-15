@@ -17,8 +17,8 @@
                                         <tr>
                                             <th scope="col">id</th>
                                             <th scope="col">Title</th>
+                                            <th scope="col">Sub Categories</th>
                                             <th scope="col">Icon</th>
-                                            {{-- <th scope="col">Description</th> --}}
                                             <th scope="col">Image</th>
                                             <th scope="col">Action</th>
                                         </tr>
@@ -28,8 +28,16 @@
                                             <tr>
                                                 <td>{{ $item->id }}</td>
                                                 <td>{{ $item->title }}</td>
+                                                <td>
+                                                    @if($item->subCategories->count() > 0)
+                                                        @foreach($item->subCategories as $subCat)
+                                                            <span class="badge badge-primary">{{ $subCat->title }}</span>
+                                                        @endforeach
+                                                    @else
+                                                        <span class="text-muted">No categories</span>
+                                                    @endif
+                                                </td>
                                                 <td class="fs-2">{!! $item->icon !!}</td>
-                                                {{-- <td>{{ $item->description }}</td> --}}
                                                 <td><img src="/{{ $item->image }}" alt="{{ $item->alt ? $item->alt:"No Alt" }}" class="image-list"></td>
                                                 <td>
                                                     <div class="action_btns d-flex">
@@ -41,7 +49,7 @@
                                                 </td>
                                             </tr>
                                             @empty
-                                                <tr class="text-center"><td colspan="7">No Records Found</td></tr>
+                                                <tr class="text-center"><td colspan="6">No Records Found</td></tr>
                                             @endforelse
                                     </tbody>
                                 </table>

@@ -17,4 +17,8 @@ class CdFeature extends Model
     public function category(){
         return $this->belongsTo(CdCategory::class, 'sub_category_id', 'id');
     }
+
+    public function subCategories(){
+        return $this->belongsToMany(CdCategory::class, 'cd_feature_sub_categories', 'feature_id', 'sub_category_id');
+    }
 }

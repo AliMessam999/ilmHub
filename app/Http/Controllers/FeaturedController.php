@@ -42,6 +42,11 @@ class FeaturedController extends Controller
             $career->alt = $request->alt;
             $result = $career->save();
 
+            // Handle multiple sub-categories
+            if ($request->has('sub_category_ids') && is_array($request->sub_category_ids)) {
+                $career->subCategories()->sync($request->sub_category_ids);
+            }
+
             foreach ($request->file('images') as $index => $item) {
                 $path = $item->store('upload/featured');
                 if (!$path) {
@@ -94,7 +99,7 @@ class FeaturedController extends Controller
     }
     public function show_featured($id = null)
     {
-        $menu = CdFeature::get();
+        $menu = CdFeature::with('subCategories')->get();
         return view('admin.home.featured_services.index', compact('menu'));
     }
 
@@ -180,6 +185,11 @@ class FeaturedController extends Controller
             'alt' => $request->alt,
         ]);
 
+        // Handle multiple sub-categories
+        if ($request->has('sub_category_ids') && is_array($request->sub_category_ids)) {
+            $feature->subCategories()->sync($request->sub_category_ids);
+        }
+
         return response()->json(["message" => "Feature updated successfully"], 200);
     }
 
@@ -199,7 +209,7 @@ class FeaturedController extends Controller
 
         $menu = CdFeature::where('id', $id);
         if ($menu->count() > 0) {
-            $data['menu'] = $menu->with('images')->first();
+            $data['menu'] = $menu->with(['images', 'subCategories'])->first();
             return view('admin.home.featured_services.update', $data);
         } else {
             return redirect('/admin/featured');
