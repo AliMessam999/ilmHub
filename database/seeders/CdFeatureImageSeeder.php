@@ -199,7 +199,7 @@ class CdFeatureImageSeeder extends Seeder
     'alt' => 'image',
     'deleted_at' => NULL,
     'created_at' => '2025-12-10 04:40:37',
-    'updated_at' => '2025-12-15 06:38:34',
+    'updated_at' => '2025-12-15 06:58:52',
   ),
   19 => 
   array (
