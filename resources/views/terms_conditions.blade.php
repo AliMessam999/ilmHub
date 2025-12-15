@@ -37,18 +37,32 @@
                             Terms &amp; Conditions
                             <span class="pill">CDigital – Corporate Business Solutions</span>
                         </h2>
-                        <p class="muted">Last updated: December 20, 2024</p>
+                        <p class="muted">Last updated: August 08, 2019</p>
                         <p>
-                            Thank you for choosing <strong>CDigital</strong>. These Terms &amp; Conditions govern your use of our services and website. By accessing or using our services, you agree to be bound by these Terms.
+                            Please read these Terms and Conditions ("Terms", "Terms and Conditions") carefully before
+                            using the http://www.cdigital.com.pk/ website (the "Service") operated by MS CDigital ("us",
+                            "we", or "our").
                         </p>
-                        <div class="note">
-                            <strong>Short version:</strong> You can use our services according to the terms outlined below, but you must comply with all applicable laws and our policies.
-                        </div>
+                        <p>
+                            Your access to and use of the Service is conditioned on your acceptance of and compliance
+                            with these Terms. These Terms apply to all visitors, users and others who access or use the
+                            Service. </p>
+
+                        <p>
+                            By accessing or using the Service you agree to be bound by these Terms. If you disagree with
+                            any part of the terms then you may not access the Service.
+
+                        </p>
+
+                        {{-- <div class="note">
+                            <strong>Short version:</strong> You can use our services according to the terms outlined
+                            below, but you must comply with all applicable laws and our policies.
+                        </div> --}}
                     </div>
 
                     <nav class="toc" aria-label="Table of contents">
-                        <h2>Table of Contents</h2>
-                        <ol>
+                        <h2>Links to Other Web Sites</h2>
+                        {{-- <ol>
                             <li>
                                 <button class="tj-scroll-btn" data-target="#definitions">
                                     Definitions
@@ -74,41 +88,58 @@
                                     Liability &amp; Disclaimers
                                 </button>
                             </li>
-                        </ol>
+                        </ol> --}}
+                        <p>
+                            Our Service may contain links to third-party web sites or services that are not owned or
+                            controlled by MS CDigital.
+
+                        </p>
+                        <p>
+                            MS CDigital has no control over, and assumes no responsibility for, the content, privacy
+                            policies, or practices of any third party web sites or services. You further acknowledge and
+                            agree that we shall not be responsible or liable, directly or indirectly, for any damage or
+                            loss caused or alleged to be caused by or in connection with use of or reliance on any such
+                            content, goods or services available on or through any such web sites or services.
+                        </p>
+                        <p>
+                            We strongly advise you to read the terms and conditions and privacy policies of any
+                            third-party web sites or services that you visit.
+
+
+                        </p>
                     </nav>
 
                     <div id="definitions">
-                        <h3>1. Definitions</h3>
+                        <h2>Governing Law</h2>
                         <p>
-                            <strong>"We", "Us", "Our"</strong> refers to CDigital, a technology solutions company.
+                            These Terms shall be governed and construed in accordance with the laws of Pakistan, without
+                            regard to its conflict of law provisions.
+
                         </p>
                         <p>
-                            <strong>"You", "Your"</strong> refers to the user or client accessing our services.
-                        </p>
-                        <p>
-                            <strong>"Services"</strong> refers to all technology solutions, consulting, and support services provided by CDigital.
-                        </p>
+                            Our failure to enforce any right or provision of these Terms will not be considered a waiver
+                            of those rights. If any provision of these Terms is held to be invalid or unenforceable by a
+                            court, the remaining provisions of these Terms will remain in effect. These Terms constitute
+                            the entire agreement between us regarding our Service, and supersede and replace any prior
+                            agreements we might have between us regarding the Service. </p>
+
                     </div>
 
                     <div id="services">
-                        <h3>2. Services &amp; Usage</h3>
+                        <h2>Changes</h2>
                         <p>
-                            CDigital provides various technology solutions including but not limited to:
-                        </p>
-                        <ul>
-                            <li>ICT Solutions and Software Development</li>
-                            <li>Hydromet and Environmental Monitoring Systems</li>
-                            <li>Biotechnology Solutions</li>
-                            <li>Renewable Energy Systems</li>
-                            <li>Mining & Minerals Automation</li>
-                            <li>Security Systems and Surveillance</li>
-                        </ul>
+                            We reserve the right, at our sole discretion, to modify or replace these Terms at any time.
+                            If a revision is material, we will try to provide at least fifteen days notice prior to any
+                            new term taking effect. What constitutes a material change will be determined at our sole
+                            discretion. </p>
+
                         <p>
-                            All services are provided subject to availability and our technical capabilities.
-                        </p>
+                            By continuing to access or use our Service after those revisions become effective, you agree
+                            to be bound by the revised terms. If you do not agree to the new terms, please stop using
+                            the Service. </p>
                     </div>
 
-                    <div id="restrictions">
+                    {{-- <div id="restrictions">
                         <h3>3. Restrictions</h3>
                         <p>You agree that you will <strong>not</strong>:</p>
                         <ul>
@@ -118,25 +149,28 @@
                             <li>Violate any applicable local, national, or international laws</li>
                             <li>Infringe upon intellectual property rights of CDigital or third parties</li>
                         </ul>
-                    </div>
+                    </div> --}}
 
-                    <div id="privacy">
+                    {{-- <div id="privacy">
                         <h3>4. Privacy &amp; Data Protection</h3>
                         <p>
-                            We are committed to protecting your privacy and personal data. Our data handling practices are governed by our Privacy Policy and applicable data protection laws.
+                            We are committed to protecting your privacy and personal data. Our data handling practices
+                            are governed by our Privacy Policy and applicable data protection laws.
                         </p>
                         <ul>
                             <li>We collect only necessary information to provide our services</li>
                             <li>Your data is stored securely and used only for legitimate business purposes</li>
-                            <li>We do not sell or share your personal information with third parties without consent</li>
+                            <li>We do not sell or share your personal information with third parties without consent
+                            </li>
                             <li>You have the right to access, modify, or delete your personal data</li>
                         </ul>
-                    </div>
-
+                    </div> --}}
+                    {{--
                     <div id="liability">
                         <h3>5. Liability &amp; Disclaimers</h3>
                         <p>
-                            While we strive to provide reliable services, we cannot guarantee uninterrupted or error-free operation.
+                            While we strive to provide reliable services, we cannot guarantee uninterrupted or
+                            error-free operation.
                         </p>
                         <ul>
                             <li>Our services are provided "as is" without warranties of any kind</li>
@@ -144,13 +178,14 @@
                             <li>Our total liability is limited to the amount paid for our services</li>
                             <li>You are responsible for maintaining backups of your data</li>
                         </ul>
-                    </div>
+                    </div> --}}
 
-                    <p class="muted">
+                    {{-- <p class="muted">
                         <small>
-                            These Terms &amp; Conditions are subject to change. We will notify users of any significant changes. For questions about these terms, please contact us.
+                            These Terms &amp; Conditions are subject to change. We will notify users of any significant
+                            changes. For questions about these terms, please contact us.
                         </small>
-                    </p>
+                    </p> --}}
                 </div>
             </div>
         </div>

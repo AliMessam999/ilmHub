@@ -19,8 +19,7 @@
                                         {{-- {{ $footer->title ?? 'Default Footer Title' }} --}}
                                         {{-- {{ $footer->title ?? '' }} --}}
                                         @if($footer === 'No Record Found')
-                                        No Record Found
-                                        @else
+Your Next Digital Step Starts Here	                                        @else
                                        {{ $footer->title }}
                                         
                                         @endif

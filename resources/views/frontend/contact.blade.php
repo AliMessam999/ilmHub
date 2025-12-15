@@ -209,7 +209,7 @@
             }
             
             #map {
-                height: 100%;
+                height: 160%;
                 width: 100%;
             }
             .map-area {
