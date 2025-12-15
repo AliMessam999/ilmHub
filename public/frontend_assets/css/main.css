@@ -15951,6 +15951,63 @@ only screen and (min-width: 576px) and (max-width: 767px),
 
 
 }
+@media (min-width: 1398px) {
+  .global-map {
+    inset-inline-start: -50px;
+  }
+  
+  .loc-1 .location-tooltip::after {
+  content: "Islamabad" !important;
+  bottom: 1px;
+}
+
+.location-indicator.loc-1 {
+  top: 37%;
+  inset-inline-start: 55%;
+}
+
+.loc-2 .location-tooltip::after {
+  content: "Dubai";
+  inset-inline-start: 38%;
+  bottom: -10px;
+}
+
+.location-indicator.loc-2 {
+  top: 47%;
+  inset-inline-start: 52%;
+}
+
+.loc-3 .location-tooltip::after {
+  content: "Lahore";
+  inset-inline-start: 40%;
+}
+
+.location-indicator.loc-3 {
+  top: 42%;
+  inset-inline-start: 57%;
+}
+
+.loc-4 .location-tooltip::after {
+  content: "Chicago";
+  inset-inline-start: 38%;
+}
+
+.location-indicator.loc-4 {
+  top: 35%;
+  left: 14%;
+}
+
+.loc-5 .location-tooltip::after {
+  content: "Sharjah";
+  inset-inline-start: 38%;
+}
+
+.location-indicator.loc-5 {
+  top: 48%;
+  left: 54%;
+}
+
+}
 
 
 
