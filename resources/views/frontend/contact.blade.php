@@ -209,11 +209,26 @@
             }
             
             #map {
-                height: 160%;
+                height: 100%;
                 width: 100%;
+                min-height: 600px;
             }
             .map-area {
                 height: 100%;
+                min-height: 600px;
+            }
+            .tj-contact-section-2 .row {
+                align-items: stretch;
+            }
+            .tj-contact-section-2 .col-lg-6 {
+                display: flex;
+                flex-direction: column;
+            }
+            .contact-form {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
             }
             .legend {
                 background: white;
