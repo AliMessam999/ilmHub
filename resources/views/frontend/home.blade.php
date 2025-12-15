@@ -387,7 +387,7 @@
                                             </span>
                                         </div>
                                         <h3 class="title">
-                                            <a href="/case-study/{{ $caseStudy->slug ?? $caseStudy->title }}">
+                                            <a style="font-size: 21px;"ref="/case-study/{{ $caseStudy->slug ?? $caseStudy->title }}">
                                                 @php
                                                     $html = $caseStudy->description;
 
