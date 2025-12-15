@@ -325,7 +325,7 @@ class HomeController extends Controller
             abort(500);
         }
 
-        $caseStudies = CdFeature::whereHas('category',function($query) use ($category){
+        $caseStudies = CdFeature::whereHas('subCategories',function($query) use ($category){
             return $query->where('parent',$category->id);
         })->with('images')->paginate(15);
         
