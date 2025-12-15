@@ -182,6 +182,12 @@
             font-weight: 700;
             margin: 0;
         }
+
+        @media (min-width: 992px) {
+            .about-bottom-area {
+                margin-top: 40px;
+            }
+        }
     </style>
 
     <script>
