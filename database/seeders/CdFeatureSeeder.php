@@ -17,7 +17,7 @@ class CdFeatureSeeder extends Seeder
     'title' => 'Pakistan Bureau of Statistics National Datacenter Powers Critical Data for 200M+ Citizens',
     'description' => '<h2>Building Pakistan&rsquo;s National Data Backbone</h2>
 
-<h3>How CDigital Helped Pakistan Bureau of Statistics&nbsp;Build a Future-Ready Datacentre Backbone, Achieving 99%+ Uptime While Cutting Recovery Time by &asymp;60%</h3>
+<h3>How CDigital strengthened Pakistan Bureau of Statistics&rsquo; core: National Datacenter Powers Critical Data for 200M+ Citizens</h3>
 
 <h3><strong>About The Client</strong></h3>
 
@@ -56,7 +56,7 @@ class CdFeatureSeeder extends Seeder
     'icon' => 'Nill',
     'deleted_at' => NULL,
     'created_at' => '2025-12-09 15:34:15',
-    'updated_at' => '2025-12-15 06:11:20',
+    'updated_at' => '2025-12-15 10:22:43',
     'industry' => 'National Data Infrastructure / Public Sector Digitalization',
     'image' => NULL,
   ),
