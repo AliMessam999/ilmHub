@@ -16009,6 +16009,48 @@ only screen and (min-width: 576px) and (max-width: 767px),
 
 }
 
+/* Empowering Business Section - Industry Cards Responsive Fixes */
+.industry-hover-item .industry-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 90%;
+  z-index: 2;
+}
+
+.industry-hover-item .title {
+  color: white !important;
+  text-align: center;
+  line-height: 1.2;
+  margin: 0;
+}
+
+@media (max-width: 575px) {
+  .industry-hover-item .title {
+    font-size: 16px !important;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .industry-hover-item .title {
+    font-size: 18px !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .industry-hover-item .title {
+    font-size: 20px !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .industry-hover-item .title {
+    font-size: 22px !important;
+  }
+}
+
 
 
 .location-tooltip span {
