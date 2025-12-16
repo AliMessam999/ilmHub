@@ -16,11 +16,11 @@ class CdCategorySeeder extends Seeder
     'id' => 1,
     'title' => 'IT Infrastructure',
     'slug' => '/divisions/it-infrastructure',
-    'image' => 'upload/categories/HWdKnWBfu0qpEf2BWac91vmqwxGmAy4WBihLaqmn.png',
+    'image' => 'upload/categories/POE3szSWl4afYAGCfvO3Cc5OG7K5tPFlqR9HVniF.jpg',
     'parent' => NULL,
     'deleted_at' => NULL,
     'created_at' => '2023-11-22 11:02:40',
-    'updated_at' => '2025-12-05 07:22:49',
+    'updated_at' => '2025-12-16 11:15:53',
     'menu_id' => 2,
     'description' => '<h2>Power Your Digital Future</h2>
 
@@ -41,11 +41,11 @@ class CdCategorySeeder extends Seeder
     'id' => 2,
     'title' => 'Software Solutions',
     'slug' => '/divisions/software-solutions',
-    'image' => 'upload/categories/6jDZFXc3tLhCFvaiJchlrn5iYRAwLB7pP6isPxSf.png',
+    'image' => 'upload/categories/q0Z43xke7YvXPQ5jkIs0uT6dptxFZbg9hUeLwUdh.jpg',
     'parent' => NULL,
     'deleted_at' => NULL,
     'created_at' => '2023-11-22 11:03:33',
-    'updated_at' => '2025-12-05 07:23:40',
+    'updated_at' => '2025-12-16 11:18:01',
     'menu_id' => 2,
     'description' => '<h2>Unlock Insights about Your Environment</h2>
 
@@ -66,11 +66,11 @@ class CdCategorySeeder extends Seeder
     'id' => 3,
     'title' => 'Hydromet',
     'slug' => '/divisions/hydromet',
-    'image' => 'upload/categories/aXfAJR2vA9wPusmecWkN778Rf9Ltre9X9W1w6OL3.png',
+    'image' => 'upload/categories/FOkg4Hw9Vd7ZrPaDUSnHElv7L95a3eJkGozFgEKb.jpg',
     'parent' => NULL,
     'deleted_at' => NULL,
     'created_at' => '2023-11-22 11:05:54',
-    'updated_at' => '2025-12-05 07:23:56',
+    'updated_at' => '2025-12-16 11:19:27',
     'menu_id' => 2,
     'description' => '<h2>Accelerate Your Biotech Innovation</h2>
 
@@ -91,11 +91,11 @@ class CdCategorySeeder extends Seeder
     'id' => 4,
     'title' => 'Biotechnology',
     'slug' => '/divisions/biotechnology',
-    'image' => 'upload/categories/J0oJV2zsk4tKczpQ0m2Nfux9x8yQLpz8pvBRULNz.png',
+    'image' => 'upload/categories/8qHpQsFkKdSE3JWatxfXwR4nbm5NJi4HARNNb4bf.png',
     'parent' => NULL,
     'deleted_at' => NULL,
     'created_at' => '2023-11-22 11:06:37',
-    'updated_at' => '2025-12-05 07:24:16',
+    'updated_at' => '2025-12-16 11:20:39',
     'menu_id' => 2,
     'description' => '<h2>Your Clean Energy Partner</h2>
 
@@ -116,11 +116,11 @@ class CdCategorySeeder extends Seeder
     'id' => 5,
     'title' => 'Renewable Energy',
     'slug' => '/divisions/renewable-energy',
-    'image' => 'upload/categories/pFEhKVcCNRikvXJyNeeBL5tOJKszrWg1gM3SxN6a.png',
+    'image' => 'upload/categories/9e2VlBgrQIDUQWH9IIKXQKjmyMXb42EGX8jTKqir.jpg',
     'parent' => NULL,
     'deleted_at' => NULL,
     'created_at' => '2023-11-22 11:07:14',
-    'updated_at' => '2025-12-05 07:24:38',
+    'updated_at' => '2025-12-16 11:22:44',
     'menu_id' => 2,
     'description' => '<h2>Optimize Your Mining Operations</h2>
 
@@ -141,11 +141,11 @@ class CdCategorySeeder extends Seeder
     'id' => 6,
     'title' => 'Security Systems',
     'slug' => '/divisions/security-systems',
-    'image' => 'upload/categories/H3Kcwr6IhiEqmmGZQ7S4Hgaybuu8uYxYVFarxyNN.png',
+    'image' => 'upload/categories/Zd9M0gk41APPG0nuO2W737OStCZWwrwudzTGuyS0.jpg',
     'parent' => NULL,
     'deleted_at' => NULL,
     'created_at' => '2023-11-22 11:07:55',
-    'updated_at' => '2025-12-05 07:24:56',
+    'updated_at' => '2025-12-16 11:23:58',
     'menu_id' => 2,
     'description' => '<h2>Secure Your World</h2>
 
@@ -244,11 +244,11 @@ class CdCategorySeeder extends Seeder
     'id' => 77,
     'title' => 'Mining & Minerals',
     'slug' => '/divisions/mining-minerals',
-    'image' => 'upload/categories/wjWXGHYapSic1DCTYOrZ0jQbu9dzXxW16TuARD3k.png',
+    'image' => 'upload/categories/GmHsYk5YfsAaZr1KUWCXYZZ873jYHT98EoyCXFoi.jpg',
     'parent' => NULL,
     'deleted_at' => NULL,
     'created_at' => '2025-11-24 05:20:26',
-    'updated_at' => '2025-12-05 07:26:19',
+    'updated_at' => '2025-12-16 11:24:45',
     'menu_id' => 2,
     'description' => '<p>nnn</p>',
   ),
