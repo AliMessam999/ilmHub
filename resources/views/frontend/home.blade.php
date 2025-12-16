@@ -138,7 +138,6 @@
 
         .industry-hover-item .project-img {
             position: relative;
-            height: 450px;
             background-size: cover !important;
             background-position: center !important;
             background-repeat: no-repeat !important;

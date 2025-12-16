@@ -430,13 +430,15 @@ Progressbar js
 	// h9 Project slider Js
 	if ($(".h9-project-slider").length > 0) {
 		var work = new Swiper(".h9-project-slider", {
-			slidesPerView: 1.1,
-			spaceBetween: 15,
+			slidesPerView: "auto",
+			spaceBetween: 20,
 			loop: true,
-			speed: 1000,
-			centeredSlides: true,
+			speed: 3000,
+			centeredSlides: false,
+			freeMode: true,
 			autoplay: {
-				delay: 1000,
+				delay: 1,
+				disableOnInteraction: false,
 			},
 			navigation: {
 				nextEl: ".slider-next",
@@ -445,34 +447,6 @@ Progressbar js
 			pagination: {
 				el: ".swiper-pagination-area",
 				clickable: true,
-			},
-			breakpoints: {
-				0: {
-					centeredSlides: false,
-				},
-				576: {
-					slidesPerView: 1.3,
-				},
-				680: {
-					slidesPerView: 1.5,
-					spaceBetween: 20,
-				},
-				992: {
-					slidesPerView: 2.3,
-					spaceBetween: 20,
-				},
-				1200: {
-					slidesPerView: 2.5,
-					spaceBetween: 20,
-				},
-				1400: {
-					slidesPerView: 2.5,
-					spaceBetween: 20,
-				},
-				1500: {
-					slidesPerView: 4,
-					spaceBetween: 30,
-				},
 			},
 		});
 	}
