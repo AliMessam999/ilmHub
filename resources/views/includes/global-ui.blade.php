@@ -81,8 +81,8 @@
               </div>
               <div class="contact-item">
                 <span class="subtitle">Email</span>
-                <a class="contact-link" href="mailto:info@Cdigital.com"
-                  >info@Cdigital.com</a
+                <a class="contact-link" href="mailto:info@cdigital.com"
+                  >info@cdigital.com</a
                 >
               </div>
               <div class="contact-item mb-0">
