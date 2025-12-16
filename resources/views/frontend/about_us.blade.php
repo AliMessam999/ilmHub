@@ -187,7 +187,7 @@
     <!-- end: About Section -->
 
     <!-- start: Team Section -->
-    <section class="tj-team-section-3 section-gap section-gap-x">
+    <section id="team" class="tj-team-section-3 section-gap section-gap-x">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -290,3 +290,26 @@
         </div>
     </section>
 @endsection
+
+<script>
+// Handle hash fragment scrolling
+function scrollToTeam() {
+    if (window.location.hash === '#team') {
+        const teamSection = document.getElementById('team');
+        if (teamSection) {
+            const offset = 200; // Show 200px of content above team section
+            const elementPosition = teamSection.offsetTop - offset;
+            window.scrollTo({
+                top: elementPosition,
+                behavior: 'smooth'
+            });
+        }
+    }
+}
+
+// Try multiple events to ensure scrolling works
+window.addEventListener('DOMContentLoaded', scrollToTeam);
+window.addEventListener('load', function() {
+    setTimeout(scrollToTeam, 1000);
+});
+</script>

@@ -55,6 +55,7 @@ Route::get('/gallery', [HomeController::class, 'galleryPage']);
 Route::get('/careers', [HomeController::class, 'careersPage']);
 Route::get('/careers/{title}', [HomeController::class, 'careersPage']);
 Route::get('/about_us', [HomeController::class, 'aboutusPage']);
+Route::get('/about', [HomeController::class, 'aboutusPage']);
 Route::get('/clients', [HomeController::class, 'clientsPage']);
 Route::get('/partners', [HomeController::class, 'partnersPage']);
 Route::get('/contact', [HomeController::class, 'contactPage'])->name('contact');
