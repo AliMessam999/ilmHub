@@ -182,7 +182,7 @@
                                                 <a 
                                                     class="my-0"
                                                     href="/case-study/{{ $caseStudy->slug ?? $caseStudy->title }}" 
-                                                    style="font-size: 18px;">{{ $caseStudy->title }}</a>
+                                                    style="font-size: 18px; text-align: justify;">{{ $caseStudy->title }}</a>
                                             </h4>
                                         </div>
                                         <a
