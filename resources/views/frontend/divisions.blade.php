@@ -177,7 +177,7 @@
                                     <div class="project-content" style="position: relative;">
                                         <span class="categories"><a href="portfolio-details.html">Case Study</a></span>
                                         {{-- <span class="categories"><a href="portfolio-details.html">{{ $caseStudy->category->title ?? '' }}</a></span> --}}
-                                        <div class="project-text mt-3">
+                                        <div class="project-text mt-2">
                                             <h4 class="title" style="text-align: left">
                                                 <a 
                                                     class="my-0"
