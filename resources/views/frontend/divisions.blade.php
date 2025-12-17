@@ -24,7 +24,7 @@
         flex: 1;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        /* justify-content: space-between; */
         padding: 20px;
     }
 
@@ -174,7 +174,7 @@
                                             alt="{{ $caseStudy->images[0]->alt ?? '' }}"
                                             style="height: 250px; object-fit: cover;" />
                                     </div>
-                                    <div class="project-content">
+                                    <div class="project-content" style="position: relative;">
                                         <span class="categories"><a href="portfolio-details.html">Case Study</a></span>
                                         {{-- <span class="categories"><a href="portfolio-details.html">{{ $caseStudy->category->title ?? '' }}</a></span> --}}
                                         <div class="project-text mt-2">
@@ -182,14 +182,15 @@
                                                 <a 
                                                     class="my-0"
                                                     href="/case-study/{{ $caseStudy->slug ?? $caseStudy->title }}" 
-                                                    style="font-size: 22px;">{{ $caseStudy->title }}</a>
+                                                    style="font-size: 18px; text-align: justify;">{{ $caseStudy->title }}</a>
                                             </h4>
-                                            <a
-                                                class="project-btn"
-                                                href="/case-study/{{ $caseStudy->slug ?? $caseStudy->title }}">
-                                                <i class="tji-arrow-right-big"></i>
-                                            </a>
                                         </div>
+                                        <a
+                                            class="project-btn"
+                                            style="position: absolute; bottom: 20px; right: 20px;"
+                                            href="/case-study/{{ $caseStudy->slug ?? $caseStudy->title }}">
+                                            <i class="tji-arrow-right-big"></i>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
