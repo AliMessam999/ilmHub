@@ -1,26 +1,7 @@
 @extends('layouts.app')
 
 @push('head')
-<style>
-.slider-title {
-    visibility: visible !important;
-    opacity: 1 !important;
-    will-change: transform;
-    transform: translateZ(0);
-    content-visibility: auto;
-    contain-intrinsic-size: 74px;
-    text-rendering: optimizeSpeed;
-}
-.tj-slider-item {
-    will-change: transform;
-    transform: translateZ(0);
-}
-.slide-video {
-    will-change: transform;
-    transform: translateZ(0);
-    object-fit: cover;
-}
-</style>
+<style>{{ $criticalCss }}</style>
 @endpush
 
 @section('content')
@@ -340,7 +321,7 @@
                                 <div class="service-item box style-2">
                                     <div class="title-area">
                                         <div class="service-icon">
-                                            <img src="{{ \App\Helpers\ImageHelper::optimized($solution->image, 38, 38) }}" alt="icon" width="38" height="38" loading="lazy">
+                                            <img src="{{ $solution->image }}" alt="icon" width="38" height="38" loading="lazy" style="">
                                             {{-- <i class="{{$solution->class}}"></i> --}}
                                             <!-- tji-service-1  tji-service-2   tji-service-3   tji-service-4 -->
                                         </div>
