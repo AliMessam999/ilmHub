@@ -321,7 +321,7 @@
                                 <div class="service-item box style-2">
                                     <div class="title-area">
                                         <div class="service-icon">
-                                            <img src="{{ $solution->image }}" alt="icon" width="38" height="38" loading="lazy" style="">
+                                            <img src="{{ \App\Helpers\ImageHelper::optimized($solution->image, 38, 38) }}" alt="icon" width="38" height="38" loading="lazy">
                                             {{-- <i class="{{$solution->class}}"></i> --}}
                                             <!-- tji-service-1  tji-service-2   tji-service-3   tji-service-4 -->
                                         </div>
