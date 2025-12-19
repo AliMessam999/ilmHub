@@ -14,6 +14,21 @@
 <link rel="stylesheet" href="{{ asset('frontend_assets/css/odometer-theme-default.css') }}">
 <link rel="stylesheet" href="{{ asset('frontend_assets/css/meanmenu.css') }}">
 <link rel="stylesheet" href="{{ asset('frontend_assets/css/main.css') }}">
+<link rel="stylesheet" href="{{ asset('frontend_assets/css/project-fix.css') }}">
 <link rel="stylesheet" href="{{ asset('frontend_assets/css/gallery-close.css') }}">
 
+{{-- <style>
+@font-face {
+  font-family: 'Font Awesome 6 Pro';
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Font Awesome 6 Brands';
+  font-display: swap;
+}
+@font-face {
+  font-family: 'bexon-icons';
+  font-display: swap;
+}
+</style> --}}
 
