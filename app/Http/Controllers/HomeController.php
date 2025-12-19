@@ -30,17 +30,16 @@ class HomeController extends Controller
     {
         $data = new \stdClass;
         $data->slider = CdSlider::all();
+        $data->criticalCss = '.slider-title{visibility:visible!important;opacity:1!important;will-change:transform;transform:translateZ(0);content-visibility:auto;contain-intrinsic-size:74px;text-rendering:optimizeSpeed}';
         $data->feature = CdFeature::all();
         $data->category = CdCategory::whereHas('menu', function ($query) {
             return $query->where('title', 'LIKE', '%solutions%');
         })->with('sub_categories.solutions')->get();
-        // dd($data->category);
         $data->aboutus = CdCoreValue::first();
         $data->skills = CdSkill::get();
         $data->offer = CdOffer::first();
         $data->partners = CdPartner::OrderBy('order', 'asc')->get();
         $data->client = CdClient::OrderBy('sort', 'asc')->get();
-        // dd($data->client);
 
         // New Data
         $data->caseStudies = CdFeature::with('images')
@@ -48,8 +47,7 @@ class HomeController extends Controller
             ->orderByRaw("FIELD(id, 50, 43, 48)")
             ->get();
         // $data->caseStudies = CdFeature::get(); 
-        // dd($data->caseStudies);     
-        return view('frontend.home', compact('data'));
+        return view('frontend.home', compact('data'))->with('criticalCss', $data->criticalCss);
     }
     public function IndustryData()
     {
@@ -58,9 +56,7 @@ class HomeController extends Controller
     }
      public function IndustryDetails($title)
     {
-        // dd($title);
         $data['industriesDetails']=CdClient::where('title', $title)->first();
-        //  dd($data['industriesDetails']);
         $data['insightsupdates'] = CdNew::inRandomOrder()->limit(3)->get();
         return view('frontend.industries-details', $data);
     }
@@ -104,7 +100,6 @@ class HomeController extends Controller
         $solution = CdFeature::where('title', 'Like', '%' . $title . '%')->first();
         $recent = CdSolution::distinct('category_id')->with('category')->orderBy('created_at', 'desc')->limit(3)->get();
         $category = CdCategory::where('parent', NULL)->whereNotIn('title', ['Clients', 'Partners', 'Contact'])->get();
-        // dd($solution);
         return view('service_details', compact('solution', 'recent', 'category'));
     }
 
@@ -140,15 +135,12 @@ class HomeController extends Controller
         $profile = CdProfile::first();
         $services = CdFeature::Orderby('created_at', 'desc')->limit(3)->get();
         $team = CdTeamMember::all();
-        // dd($team);
          $certificates = CdOffer::where('position','top')->whereHas('Category',function($query){
             return $query->where('title','LIKE','Leadership & Team');
         })->get();
-        // dd($certificates);
         $registrations =  CdOffer::where('position','bottom')->whereHas('Category',function($query){
             return $query->where('title','LIKE','Leadership & Team');
         })->get();
-        // dd($registrations);
         
         $expertise = CdOffer::where('position','top')->whereHas('Category',function($query){
             return $query->where('title', 'Company Overview');
@@ -249,7 +241,6 @@ class HomeController extends Controller
         $category = CdCategory::where('parent', NULL)->whereHas('menu',function($query){
             return  $query->where('title','LIKE','%divisions%');
         })->withCount('news')->get();
-        // dd($category);die;
         return view('frontend.blogs', compact('news', 'category'));
     }
 
@@ -258,7 +249,6 @@ class HomeController extends Controller
         $new = CdNew::where('title', 'LIKE', '%' . $title . '%')->with('category')->first();
         $recent = CdNew::where('category_id', $new->category_id)->where('id', '!=', $new->id)->orderBy('created_at', 'desc')->limit(3)->get();
         $category = CdCategory::where('parent', NULL)->whereIn('title', ['Divisions'])->get();
-        // dd($category);
         // Next post (newer one in same category)
         $next = CdNew::where('category_id', $new->category_id)
             ->where('id', '>', $new->id)
@@ -316,7 +306,6 @@ class HomeController extends Controller
     public function divsions($category_id = null)
     {
         $category = CdCategory::where('slug','LIKE','%'.$category_id.'%')->with('sub_categories.solutions')->first();
-        // dd($category);
         if (!$category) {
             abort(403, 'Category not found');
         }

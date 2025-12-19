@@ -1,5 +1,9 @@
 @extends('layouts.app')
 
+@push('head')
+<style>{{ $criticalCss }}</style>
+@endpush
+
 @section('content')
     @include('components.slider')
 
@@ -235,7 +239,6 @@
         $mainHeading = implode(' ', array_slice($words, 0, -1));
 
         $solutions = CdOffer::where('position', 'bottom')->where('alt', 'home_page_card')->get();
-        // dd($solutions);
 
     @endphp
     <section class="tj-about-section section-gap">
@@ -405,7 +408,6 @@
 
                                                     $firstH3 = $h3Tags->length > 0 ? $h3Tags->item(0)->textContent : null;
 
-                                                    // dd($firstH3);
                                                 @endphp
                                                 {{ $firstH3 }}
                                             </a>
