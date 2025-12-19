@@ -1,7 +1,26 @@
 @extends('layouts.app')
 
 @push('head')
-<style>{{ $criticalCss }}</style>
+<style>
+.slider-title {
+    visibility: visible !important;
+    opacity: 1 !important;
+    will-change: transform;
+    transform: translateZ(0);
+    content-visibility: auto;
+    contain-intrinsic-size: 74px;
+    text-rendering: optimizeSpeed;
+}
+.tj-slider-item {
+    will-change: transform;
+    transform: translateZ(0);
+}
+.slide-video {
+    will-change: transform;
+    transform: translateZ(0);
+    object-fit: cover;
+}
+</style>
 @endpush
 
 @section('content')
