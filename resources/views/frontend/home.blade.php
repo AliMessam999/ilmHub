@@ -321,7 +321,7 @@
                                 <div class="service-item box style-2">
                                     <div class="title-area">
                                         <div class="service-icon">
-                                            <img src="{{ $solution->image }}" alt="icon" style="">
+                                            <img src="{{ $solution->image }}" alt="icon" width="38" height="38" loading="lazy" style="">
                                             {{-- <i class="{{$solution->class}}"></i> --}}
                                             <!-- tji-service-1  tji-service-2   tji-service-3   tji-service-4 -->
                                         </div>
@@ -344,13 +344,13 @@
             </div>
         </div>
         <div class="bg-shape-1">
-            <img src="{{ asset('frontend_assets/images/shape/pattern-2.svg') }}" alt="" />
+            <img src="{{ asset('frontend_assets/images/shape/pattern-2.svg') }}" alt="bg-shape-3" />
         </div>
         <div class="bg-shape-2">
-            <img src="{{ asset('frontend_assets/images/shape/pattern-3.svg') }}" alt="" />
+            <img src="{{ asset('frontend_assets/images/shape/pattern-3.svg') }}" alt="bg-shape-4" />
         </div>
         <div class="bg-shape-3">
-            <img src="{{ asset('frontend_assets/images/shape/shape-blur.svg') }}" alt="" />
+            <img src="{{ asset('frontend_assets/images/shape/shape-blur.svg') }}" alt="bg-shape-5" />
         </div>
     </section>
     <!-- end: Service Section -->
@@ -436,7 +436,7 @@
                                         <div class="blog-thumb">
                                             <a href="/case-study/{{ $caseStudy->slug ?? $caseStudy->title }}">
                                                 <img src="{{ asset($caseStudy->images[0]->image ?? '') }}"
-                                                    alt="">
+                                                    alt="image">
                                             </a>
                                         </div>
 
@@ -575,10 +575,10 @@
             </div>
         </div>
         <div class="bg-shape-1">
-            <img src="{{ asset('frontend_assets/images/shape/pattern-2.svg') }}" alt="" />
+            <img src="{{ asset('frontend_assets/images/shape/pattern-2.svg') }}" alt="bg-shape-1" />
         </div>
         <div class="bg-shape-2">
-            <img src="{{ asset('frontend_assets/images/shape/pattern-3.svg') }}" alt="" />
+            <img src="{{ asset('frontend_assets/images/shape/pattern-3.svg') }}" alt="bg-shape-2" />
         </div>
     </section>
     <!-- end: Project Section -->
@@ -687,10 +687,10 @@
             </div>
         </div>
         <div class="bg-shape-1">
-            <img src="{{ asset('frontend_assets/images/shape/pattern-2.svg') }}" alt="" />
+            <img src="{{ asset('frontend_assets/images/shape/pattern-2.svg') }}" alt="bg-shape-1" />
         </div>
         <div class="bg-shape-2">
-            <img src="{{ asset('frontend_assets/images/shape/pattern-3.svg') }}" alt="" />
+            <img src="{{ asset('frontend_assets/images/shape/pattern-3.svg') }}" alt="bg-shape-2" />
         </div>
     </section>
     <!-- end: Contact Section -->
