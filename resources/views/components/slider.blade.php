@@ -25,7 +25,7 @@
 
                     <div class="swiper-slide tj-slider-item">
                         <div class="slider-bg-image">
-                            <video class="slide-video" style="position: relative" autoplay="" muted="" loop="" playsinline="true"
+                            <video class="slide-video" style="position: relative; will-change: transform; transform: translateZ(0); object-fit: cover;" autoplay="" muted="" loop="" playsinline="true"
                                 preload="metadata" id="home-hero-video" >
                                 {{-- class="home-hero-video" --}}
                                 <source src="/{{ $slider->video }}" type="video/mp4" />
@@ -37,7 +37,6 @@
                                 <div class="slider-content">
                                     <h1 class="slider-title">
                                         {{ $slider->title }}
-                                        {{-- {{ $firstPart }} <span>{{ $lastPart }}</span> --}}
                                     </h1>
                                     <div class="slider-desc">
                                         {!! $slider->description !!}
