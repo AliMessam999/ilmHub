@@ -24,13 +24,8 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        {{-- @forelse($menu as $item) --}}
                                        
                                         @foreach ($element as $item)
-                                        
-                                        {{-- @php
-                                            dd($item->menu_id);
-                                        @endphp --}}
                                             <tr>
                                               
                                                 <td>{{ $item->id }}</td>
@@ -40,9 +35,7 @@
 
                                                 {{-- <td><img src="/{{ $item->image }}" alt="{{ $item->alt ? $item->alt:"No Alt" }}" class="image-list"></td> --}}
                                                 <td>{{ $item->category_id ? $item->category->title : 'N/A' }}</td>
-                                                {{-- @php
-                                                    dd($item->category_id);
-                                                @endphp --}}
+                                               
                                                 <td>{{ $item->sub_category_id ? $item->sub_category->title : 'N/A' }}</td>
                                                 <td>
                                                     <div class="action_btns d-flex">
