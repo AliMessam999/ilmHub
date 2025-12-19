@@ -1,0 +1,14 @@
+.slider-title {
+  content-visibility: auto;
+  contain-intrinsic-size: 74px;
+}
+
+.slider-wrapper {
+  will-change: transform;
+  transform: translateZ(0);
+}
+
+.container > .slider-wrapper > .slider-content > h1.slider-title {
+  font-display: swap;
+  text-rendering: optimizeSpeed;
+}
