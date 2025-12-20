@@ -165,151 +165,151 @@ class CdFeatureImageSeeder extends Seeder
   array (
     'id' => 101,
     'feature_id' => 49,
-    'image' => 'upload/featured/xLvrVmbQUVj2lJUXNyc1lzWqGlJZZ1NrRTltH9zu.png',
+    'image' => 'upload/featured/qyWuoYiK7sSNO9wJInFtpV4nJqj2f5APlqbGUEPQ.jpg',
     'alt' => 'Image',
     'deleted_at' => NULL,
     'created_at' => '2025-12-10 04:38:26',
-    'updated_at' => '2025-12-15 07:07:50',
+    'updated_at' => '2025-12-20 05:48:42',
   ),
   16 => 
   array (
     'id' => 102,
     'feature_id' => 48,
-    'image' => 'upload/featured/4HayWob6bFTlgW25YG7qhC5S8aR7kcrusyD6DBNZ.png',
+    'image' => 'upload/featured/Tvv5gnHqXLgZ5bNqZXQDpihZM8rO0s74wqdy8uOr.jpg',
     'alt' => 'Image',
     'deleted_at' => NULL,
     'created_at' => '2025-12-10 04:39:11',
-    'updated_at' => '2025-12-15 07:07:19',
+    'updated_at' => '2025-12-20 05:47:21',
   ),
   17 => 
   array (
     'id' => 103,
     'feature_id' => 44,
-    'image' => 'upload/featured/NhIXTPN33tSbioayAF6XnAHWBHI9IJ1x1S9DGrIY.png',
+    'image' => 'upload/featured/fwtOqgv6uscNNuDb0vPrLc6AwnPvDkC54oRkiEQN.jpg',
     'alt' => 'image',
     'deleted_at' => NULL,
     'created_at' => '2025-12-10 04:40:01',
-    'updated_at' => '2025-12-15 07:04:31',
+    'updated_at' => '2025-12-20 05:41:20',
   ),
   18 => 
   array (
     'id' => 104,
     'feature_id' => 43,
-    'image' => 'upload/featured/YfM7uKmPltiivNQVGtBJxNMuiwJ3lKBiChuzmTuv.jpg',
+    'image' => 'upload/featured/CGXuh9YSK0ytEkNYo0yq2RE7VLHm1X5B6p20ccn0.jpg',
     'alt' => 'image',
     'deleted_at' => NULL,
     'created_at' => '2025-12-10 04:40:37',
-    'updated_at' => '2025-12-15 10:22:43',
+    'updated_at' => '2025-12-20 05:37:04',
   ),
   19 => 
   array (
     'id' => 105,
     'feature_id' => 45,
-    'image' => 'upload/featured/B0G4eaHN6P2xyFYCua2lQxEUzaVNmixZuPOtZtKq.webp',
+    'image' => 'upload/featured/Qt9KNgGtlJjNMloGgBjsSLvAUS1hQ96jWHVAnruI.jpg',
     'alt' => 'Nill',
     'deleted_at' => NULL,
     'created_at' => '2025-12-10 04:41:56',
-    'updated_at' => '2025-12-15 07:05:03',
+    'updated_at' => '2025-12-20 05:43:01',
   ),
   20 => 
   array (
     'id' => 106,
     'feature_id' => 47,
-    'image' => 'upload/featured/kiweaULAZ36ligbI1nrMTOInAskcPzaI7wWU0sGP.png',
+    'image' => 'upload/featured/c8cJWzDK6JCSAwCjllzfV0XfZXskC5Pl1WbiAo8I.png',
     'alt' => 'Image',
     'deleted_at' => NULL,
     'created_at' => '2025-12-10 04:42:45',
-    'updated_at' => '2025-12-15 07:06:07',
+    'updated_at' => '2025-12-20 05:45:51',
   ),
   21 => 
   array (
     'id' => 107,
     'feature_id' => 46,
-    'image' => 'upload/featured/US8hPAxSsg85SL4eIRvc4K9ayeQcpQIxtJ8UKGZs.png',
+    'image' => 'upload/featured/BGVWa116Lpx9rfdNIh1c9pJ3MB8HCqky6wH5pdXR.jpg',
     'alt' => 'Nill',
     'deleted_at' => NULL,
     'created_at' => '2025-12-10 04:43:12',
-    'updated_at' => '2025-12-15 07:05:25',
+    'updated_at' => '2025-12-20 05:44:40',
   ),
   22 => 
   array (
     'id' => 108,
     'feature_id' => 54,
-    'image' => 'upload/featured/2Za5P7we52FUwlTSEV8ecWmG7sqvwNynFby5Fb91.png',
+    'image' => 'upload/featured/vGhbCMThXyxAC77nYU8Jdl1YGZmeNkdxgjMRPrvM.jpg',
     'alt' => 'Image',
     'deleted_at' => NULL,
     'created_at' => '2025-12-10 10:28:04',
-    'updated_at' => '2025-12-15 07:02:40',
+    'updated_at' => '2025-12-20 05:56:04',
   ),
   23 => 
   array (
     'id' => 109,
     'feature_id' => 52,
-    'image' => 'upload/featured/ycIuMw6tJMl5b8PmNeEvZYhaWXahjBUOVd6LrUK3.webp',
+    'image' => 'upload/featured/xoWcvVYSAzk5mgLMIP70YFcCDjjcYSdqenXqHvvn.jpg',
     'alt' => 'Image',
     'deleted_at' => NULL,
     'created_at' => '2025-12-10 10:29:39',
-    'updated_at' => '2025-12-15 07:09:18',
+    'updated_at' => '2025-12-20 05:53:00',
   ),
   24 => 
   array (
     'id' => 110,
     'feature_id' => 53,
-    'image' => 'upload/featured/qaS9ADQlHANLfq7a7lOWsymTMtzvPdnkkn6f2Wxa.png',
+    'image' => 'upload/featured/eNhkQYzhGrvJmmhPSMUqi2jRecJj97GHKEptCndH.jpg',
     'alt' => '',
     'deleted_at' => NULL,
     'created_at' => '2025-12-10 10:31:05',
-    'updated_at' => '2025-12-10 10:31:05',
+    'updated_at' => '2025-12-20 05:54:36',
   ),
   25 => 
   array (
     'id' => 111,
     'feature_id' => 50,
-    'image' => 'upload/featured/MPGnUnfoIajLtHeTk0ez0rsWroc0FbmpqKtyov7j.png',
+    'image' => 'upload/featured/rHxP030krUq8lCWwmr7965eV7zqmGPAWf2FuWo3I.jpg',
     'alt' => '',
     'deleted_at' => NULL,
     'created_at' => '2025-12-10 10:32:19',
-    'updated_at' => '2025-12-10 10:32:19',
+    'updated_at' => '2025-12-20 05:50:23',
   ),
   26 => 
   array (
     'id' => 112,
     'feature_id' => 56,
-    'image' => 'upload/featured/jhuVAyuWC0D7uqRLYZlS2OLDS9nadK135SkcZ6eu.png',
+    'image' => 'upload/featured/FgPUvuAuN4FlPLeHVhBJFiNt91fSTeOpL9rbCy3d.jpg',
     'alt' => '',
     'deleted_at' => NULL,
     'created_at' => '2025-12-10 10:33:07',
-    'updated_at' => '2025-12-10 10:33:07',
+    'updated_at' => '2025-12-20 05:58:34',
   ),
   27 => 
   array (
     'id' => 113,
     'feature_id' => 57,
-    'image' => 'upload/featured/3cpQdZiB2zyET8obTLE9CvQLDT6cFegeWwFUrDJA.png',
+    'image' => 'upload/featured/E7oxKkQvI52mNuR7FBgBFFCag3ueqGvTUstOsC9Y.jpg',
     'alt' => '',
     'deleted_at' => NULL,
     'created_at' => '2025-12-10 10:33:46',
-    'updated_at' => '2025-12-10 10:33:46',
+    'updated_at' => '2025-12-20 05:59:24',
   ),
   28 => 
   array (
     'id' => 114,
     'feature_id' => 51,
-    'image' => 'upload/featured/EYR0lvbtoNDOQcWei4evu7BmSZKaqrihAHpJVtBa.webp',
+    'image' => 'upload/featured/J5iZ2bhCFD2urZksJjuEjkotOvBzlX7lnNiSGyp6.jpg',
     'alt' => '',
     'deleted_at' => NULL,
     'created_at' => '2025-12-10 10:34:32',
-    'updated_at' => '2025-12-10 10:34:32',
+    'updated_at' => '2025-12-20 05:51:51',
   ),
   29 => 
   array (
     'id' => 115,
     'feature_id' => 55,
-    'image' => 'upload/featured/pxQCWZZwmGX2MlUMRKZ8ySSoUcZubVmzxqqgNK2C.webp',
+    'image' => 'upload/featured/O4fKC2rxWnqyCwFCljeP9SylNvL52ADOLTNki95q.png',
     'alt' => '',
     'deleted_at' => NULL,
     'created_at' => '2025-12-10 10:35:21',
-    'updated_at' => '2025-12-10 10:35:21',
+    'updated_at' => '2025-12-20 05:57:35',
   ),
   30 => 
   array (
@@ -559,7 +559,7 @@ class CdFeatureImageSeeder extends Seeder
     'alt' => '34',
     'deleted_at' => NULL,
     'created_at' => '2025-12-11 06:07:57',
-    'updated_at' => '2025-12-15 07:08:55',
+    'updated_at' => '2025-12-20 05:51:52',
   ),
   55 => 
   array (
@@ -569,7 +569,7 @@ class CdFeatureImageSeeder extends Seeder
     'alt' => '33',
     'deleted_at' => NULL,
     'created_at' => '2025-12-11 06:07:57',
-    'updated_at' => '2025-12-15 07:08:55',
+    'updated_at' => '2025-12-20 05:51:52',
   ),
   56 => 
   array (
@@ -579,7 +579,7 @@ class CdFeatureImageSeeder extends Seeder
     'alt' => '32',
     'deleted_at' => NULL,
     'created_at' => '2025-12-11 06:07:57',
-    'updated_at' => '2025-12-15 07:08:55',
+    'updated_at' => '2025-12-20 05:51:52',
   ),
   57 => 
   array (
@@ -589,7 +589,7 @@ class CdFeatureImageSeeder extends Seeder
     'alt' => '31',
     'deleted_at' => NULL,
     'created_at' => '2025-12-11 06:07:57',
-    'updated_at' => '2025-12-15 07:08:55',
+    'updated_at' => '2025-12-20 05:51:52',
   ),
   58 => 
   array (
@@ -599,7 +599,7 @@ class CdFeatureImageSeeder extends Seeder
     'alt' => '30',
     'deleted_at' => NULL,
     'created_at' => '2025-12-11 06:07:57',
-    'updated_at' => '2025-12-15 07:08:55',
+    'updated_at' => '2025-12-20 05:51:52',
   ),
   59 => 
   array (
@@ -609,7 +609,7 @@ class CdFeatureImageSeeder extends Seeder
     'alt' => '29',
     'deleted_at' => NULL,
     'created_at' => '2025-12-11 06:07:57',
-    'updated_at' => '2025-12-15 07:08:55',
+    'updated_at' => '2025-12-20 05:51:52',
   ),
   60 => 
   array (
@@ -619,7 +619,7 @@ class CdFeatureImageSeeder extends Seeder
     'alt' => '28',
     'deleted_at' => NULL,
     'created_at' => '2025-12-11 06:07:57',
-    'updated_at' => '2025-12-15 07:08:55',
+    'updated_at' => '2025-12-20 05:51:52',
   ),
   61 => 
   array (
@@ -629,7 +629,7 @@ class CdFeatureImageSeeder extends Seeder
     'alt' => '27',
     'deleted_at' => NULL,
     'created_at' => '2025-12-11 06:07:57',
-    'updated_at' => '2025-12-15 07:08:55',
+    'updated_at' => '2025-12-20 05:51:52',
   ),
   62 => 
   array (
@@ -639,7 +639,7 @@ class CdFeatureImageSeeder extends Seeder
     'alt' => '26',
     'deleted_at' => NULL,
     'created_at' => '2025-12-11 06:07:57',
-    'updated_at' => '2025-12-15 07:08:55',
+    'updated_at' => '2025-12-20 05:51:52',
   ),
   63 => 
   array (
@@ -649,7 +649,7 @@ class CdFeatureImageSeeder extends Seeder
     'alt' => '25',
     'deleted_at' => NULL,
     'created_at' => '2025-12-11 06:07:57',
-    'updated_at' => '2025-12-15 07:08:55',
+    'updated_at' => '2025-12-20 05:51:52',
   ),
   64 => 
   array (
@@ -659,7 +659,7 @@ class CdFeatureImageSeeder extends Seeder
     'alt' => '24',
     'deleted_at' => NULL,
     'created_at' => '2025-12-11 06:07:57',
-    'updated_at' => '2025-12-15 07:08:55',
+    'updated_at' => '2025-12-20 05:51:52',
   ),
   65 => 
   array (
@@ -669,7 +669,7 @@ class CdFeatureImageSeeder extends Seeder
     'alt' => '23',
     'deleted_at' => NULL,
     'created_at' => '2025-12-11 06:07:57',
-    'updated_at' => '2025-12-15 07:08:55',
+    'updated_at' => '2025-12-20 05:51:52',
   ),
   66 => 
   array (
@@ -839,7 +839,7 @@ class CdFeatureImageSeeder extends Seeder
     'alt' => '55',
     'deleted_at' => NULL,
     'created_at' => '2025-12-11 06:19:37',
-    'updated_at' => '2025-12-15 07:03:13',
+    'updated_at' => '2025-12-20 05:57:35',
   ),
   83 => 
   array (
@@ -849,7 +849,7 @@ class CdFeatureImageSeeder extends Seeder
     'alt' => '54',
     'deleted_at' => NULL,
     'created_at' => '2025-12-11 06:19:37',
-    'updated_at' => '2025-12-15 07:03:13',
+    'updated_at' => '2025-12-20 05:57:35',
   ),
   84 => 
   array (
@@ -859,7 +859,7 @@ class CdFeatureImageSeeder extends Seeder
     'alt' => '53',
     'deleted_at' => NULL,
     'created_at' => '2025-12-11 06:19:37',
-    'updated_at' => '2025-12-15 07:03:13',
+    'updated_at' => '2025-12-20 05:57:35',
   ),
   85 => 
   array (
@@ -869,7 +869,7 @@ class CdFeatureImageSeeder extends Seeder
     'alt' => '52',
     'deleted_at' => NULL,
     'created_at' => '2025-12-11 06:19:37',
-    'updated_at' => '2025-12-15 07:03:13',
+    'updated_at' => '2025-12-20 05:57:35',
   ),
   86 => 
   array (
@@ -889,7 +889,7 @@ class CdFeatureImageSeeder extends Seeder
     'alt' => 'it-labs',
     'deleted_at' => NULL,
     'created_at' => '2025-12-11 06:24:00',
-    'updated_at' => '2025-12-15 07:07:50',
+    'updated_at' => '2025-12-20 05:48:42',
   ),
   88 => 
   array (
@@ -2130,6 +2130,26 @@ class CdFeatureImageSeeder extends Seeder
     'deleted_at' => NULL,
     'created_at' => '2025-12-13 10:31:36',
     'updated_at' => '2025-12-13 10:31:36',
+  ),
+  212 => 
+  array (
+    'id' => 298,
+    'feature_id' => 43,
+    'image' => 'upload/featured/dNqyJfe27IlzAc5HVVzveS2OZhi8KkPC3b4T298i.jpg',
+    'alt' => 'image',
+    'deleted_at' => NULL,
+    'created_at' => '2025-12-20 05:28:15',
+    'updated_at' => '2025-12-20 05:37:04',
+  ),
+  213 => 
+  array (
+    'id' => 299,
+    'feature_id' => 43,
+    'image' => 'upload/featured/bQY35LCQqDGKyOMXlSZSqrYUOG3zh2hdIVMbx2fK.jpg',
+    'alt' => 'image',
+    'deleted_at' => NULL,
+    'created_at' => '2025-12-20 05:29:05',
+    'updated_at' => '2025-12-20 05:37:04',
   ),
 );
         DB::table('cd_feature_images')->insert($data);
