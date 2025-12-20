@@ -135,8 +135,10 @@ class FeaturedController extends Controller
             return response()->json(["message" => "The title has already been taken"], 302);
         }
 
-        // Handle new image uploads
+        // Handle new image uploads and replacements
         if ($request->hasFile('images')) {
+            $replaceIds = $request->replace_image_ids ?? [];
+            
             foreach ($request->file('images') as $index => $item) {
                 if ($item) {
                     $path = $item->store('upload/featured');
@@ -144,11 +146,21 @@ class FeaturedController extends Controller
                         return response()->json(["message" => "File not stored, try again!"], 302);
                     }
 
-                    $cdFeatureImage = new CdFeatureImage();
-                    $cdFeatureImage->feature_id = $id;
-                    $cdFeatureImage->image = $path;
-                    $cdFeatureImage->alt = $request->alts[$index] ?? '';
-                    $cdFeatureImage->save();
+                    // Check if this is a replacement for existing image
+                    if (isset($replaceIds[$index]) && $replaceIds[$index]) {
+                        $imageId = $replaceIds[$index];
+                        CdFeatureImage::where('id', $imageId)->update([
+                            'image' => $path,
+                            'alt' => $request->alts[$index] ?? ''
+                        ]);
+                    } else {
+                        // Create new image
+                        $cdFeatureImage = new CdFeatureImage();
+                        $cdFeatureImage->feature_id = $id;
+                        $cdFeatureImage->image = $path;
+                        $cdFeatureImage->alt = $request->alts[$index] ?? '';
+                        $cdFeatureImage->save();
+                    }
                 }
             }
         }

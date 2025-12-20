@@ -1,6 +1,8 @@
 @php
     use App\Models\CdSlider;
+
     $sliders = CdSlider::get();
+    // dd($sliders);
 @endphp
 <section class="tj-slider-section m-0 rounded-0">
     <div class="swiper hero-slider">
@@ -70,4 +72,21 @@
             </div>
         </div>
     </div>
+    <!-- <div class="swiper hero-thumb wow fadeIn" data-wow-delay="2s">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide thumb-item">
+                <img src="frontend_assets/images/hero/slider-thumb-1.webp" alt="Thumbnail">
+              </div>
+              <div class="swiper-slide thumb-item">
+                <img src="frontend_assets/images/hero/slider-thumb-2.webp" alt="Thumbnail">
+              </div>
+              <div class="swiper-slide thumb-item">
+                <img src="frontend_assets/images/hero/slider-thumb-3.webp" alt="Thumbnail">
+              </div>
+            </div>
+          </div> -->
+    <!-- <div class="circle-text-wrap wow fadeInUp" data-wow-delay="1s">
+            <span class="circle-text" data-bg-image="frontend_assets/images/hero/circle-text.webp"></span>
+            <a class="circle-icon" href="service.html"><i class="tji-arrow-down-big"></i></a>
+          </div> -->
 </section>
