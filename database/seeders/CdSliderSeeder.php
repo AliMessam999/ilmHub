@@ -16,20 +16,20 @@ class CdSliderSeeder extends Seeder
     'id' => 1,
     'title' => 'Powering Industries with Innovative Solutions',
     'description' => '<p>​​Delivering intelligent technologies that connect, protect, and power industries across every sector</p>',
-    'video' => 'frontend_assets/video/3.mp4',
+    'video' => 'upload/slider/4VQ8sAfryeqtW0lwp0m2IJ6taU93TUrcZHtacdKJ.mp4',
     'deleted_at' => NULL,
     'created_at' => '2023-11-23 12:04:38',
-    'updated_at' => '2025-11-28 06:05:27',
+    'updated_at' => '2025-12-20 07:01:55',
   ),
   1 => 
   array (
     'id' => 2,
     'title' => 'Where Technology Meets Transformation',
     'description' => '<p>Turning complex challenges into transformative outcomes through advanced, integrated, and future-ready technologies</p>',
-    'video' => 'frontend_assets/video/4.mp4',
+    'video' => 'upload/slider/3CDWGoeBn6FhYZFfhqBBfHm0ALTz6nnKTpWUS5rz.mp4',
     'deleted_at' => NULL,
     'created_at' => '2023-11-23 12:06:06',
-    'updated_at' => '2025-11-29 11:28:42',
+    'updated_at' => '2025-12-20 07:03:41',
   ),
   2 => 
   array (
