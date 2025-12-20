@@ -104,8 +104,8 @@
                             <div class="row">
                                 <div class="col-sm-6">
                                     <div class="form-input">
-                                        <input type="text" name="name" value="{{ old('name') }}" required />
-                                        <label class="cf-label">Full Name <span>*</span></label>
+                                        <input type="text" placeholder="Full Name" name="name" value="{{ old('name') }}" required />
+                                        {{-- <label class="cf-label">Full Name <span>*</span></label> --}}
                                         @error('name')
                                             <span class="text-danger">{{ $message }}</span>
                                         @enderror
@@ -113,8 +113,8 @@
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="form-input">
-                                        <input type="email" name="email" value="{{ old('email') }}" required />
-                                        <label class="cf-label">Email Address <span>*</span></label>
+                                        <input type="email" placeholder="Email Address" name="email" value="{{ old('email') }}" required />
+                                        {{-- <label class="cf-label">Email Address <span>*</span></label> --}}
                                         @error('email')
                                             <span class="text-danger">{{ $message }}</span>
                                         @enderror
@@ -122,8 +122,8 @@
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="form-input">
-                                        <input type="tel" name="phone" value="{{ old('phone') }}" required />
-                                        <label class="cf-label">Phone number <span>*</span></label>
+                                        <input type="tel" placeholder="Phone number" name="phone" value="{{ old('phone') }}" required />
+                                        {{-- <label class="cf-label">Phone number <span>*</span></label> --}}
                                         @error('phone')
                                             <span class="text-danger">{{ $message }}</span>
                                         @enderror
@@ -151,8 +151,8 @@
                                 </div>
                                 <div class="col-sm-12">
                                     <div class="form-input message-input">
-                                        <textarea name="message" id="message" required>{{ old('message') }}</textarea>
-                                        <label class="cf-label">Type message <span>*</span></label>
+                                        <textarea name="message" placeholder="Type Message" id="message" required>{{ old('message') }}</textarea>
+                                        {{-- <label class="cf-label">Type message <span>*</span></label> --}}
                                         @error('message')
                                             <span class="text-danger">{{ $message }}</span>
                                         @enderror
