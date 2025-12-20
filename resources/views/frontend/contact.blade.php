@@ -151,8 +151,8 @@
                                 </div>
                                 <div class="col-sm-12">
                                     <div class="form-input message-input">
-                                        <textarea name="message" id="message" required>{{ old('message') }}</textarea>
-                                        <label class="cf-label">Type message <span>*</span></label>
+                                        <textarea name="message" placeholder="Type Message" id="message" required>{{ old('message') }}</textarea>
+                                        {{-- <label class="cf-label">Type message <span>*</span></label> --}}
                                         @error('message')
                                             <span class="text-danger">{{ $message }}</span>
                                         @enderror
