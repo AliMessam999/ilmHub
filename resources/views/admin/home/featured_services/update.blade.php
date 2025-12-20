@@ -122,6 +122,7 @@
                                                             <div class="fileupload btn btn_1 radius_btn btn-anim mb_15" style="white-space: nowrap; display: block;">
                                                                 <i class="fa fa-upload"></i><span class="btn-text">Replace Image</span>
                                                                 <input type="file" class="upload" name="images[]" accept="image/*">
+                                                                <input type="hidden" name="replace_image_ids[]" value="{{ $image->id }}">
                                                             </div>
                                                         </div>
                                                         <div class="col-lg-4">

@@ -1,9 +1,5 @@
 @extends('layouts.app')
 
-@push('head')
-<style>{{ $criticalCss }}</style>
-@endpush
-
 @section('content')
     @include('components.slider')
 
@@ -239,6 +235,7 @@
         $mainHeading = implode(' ', array_slice($words, 0, -1));
 
         $solutions = CdOffer::where('position', 'bottom')->where('alt', 'home_page_card')->get();
+        // dd($solutions);
 
     @endphp
     <section class="tj-about-section section-gap">
@@ -321,7 +318,7 @@
                                 <div class="service-item box style-2">
                                     <div class="title-area">
                                         <div class="service-icon">
-                                            <img src="{{ $solution->image }}" alt="icon" width="38" height="38" loading="lazy" style="">
+                                            <img src="{{ $solution->image }}" alt="icon" style="">
                                             {{-- <i class="{{$solution->class}}"></i> --}}
                                             <!-- tji-service-1  tji-service-2   tji-service-3   tji-service-4 -->
                                         </div>
@@ -344,13 +341,13 @@
             </div>
         </div>
         <div class="bg-shape-1">
-            <img src="{{ asset('frontend_assets/images/shape/pattern-2.svg') }}" alt="bg-shape-3" />
+            <img src="{{ asset('frontend_assets/images/shape/pattern-2.svg') }}" alt="" />
         </div>
         <div class="bg-shape-2">
-            <img src="{{ asset('frontend_assets/images/shape/pattern-3.svg') }}" alt="bg-shape-4" />
+            <img src="{{ asset('frontend_assets/images/shape/pattern-3.svg') }}" alt="" />
         </div>
         <div class="bg-shape-3">
-            <img src="{{ asset('frontend_assets/images/shape/shape-blur.svg') }}" alt="bg-shape-5" />
+            <img src="{{ asset('frontend_assets/images/shape/shape-blur.svg') }}" alt="" />
         </div>
     </section>
     <!-- end: Service Section -->
@@ -408,6 +405,7 @@
 
                                                     $firstH3 = $h3Tags->length > 0 ? $h3Tags->item(0)->textContent : null;
 
+                                                    // dd($firstH3);
                                                 @endphp
                                                 {{ $firstH3 }}
                                             </a>
@@ -436,7 +434,7 @@
                                         <div class="blog-thumb">
                                             <a href="/case-study/{{ $caseStudy->slug ?? $caseStudy->title }}">
                                                 <img src="{{ asset($caseStudy->images[0]->image ?? '') }}"
-                                                    alt="image">
+                                                    alt="">
                                             </a>
                                         </div>
 
@@ -575,10 +573,10 @@
             </div>
         </div>
         <div class="bg-shape-1">
-            <img src="{{ asset('frontend_assets/images/shape/pattern-2.svg') }}" alt="bg-shape-1" />
+            <img src="{{ asset('frontend_assets/images/shape/pattern-2.svg') }}" alt="" />
         </div>
         <div class="bg-shape-2">
-            <img src="{{ asset('frontend_assets/images/shape/pattern-3.svg') }}" alt="bg-shape-2" />
+            <img src="{{ asset('frontend_assets/images/shape/pattern-3.svg') }}" alt="" />
         </div>
     </section>
     <!-- end: Project Section -->
@@ -687,10 +685,10 @@
             </div>
         </div>
         <div class="bg-shape-1">
-            <img src="{{ asset('frontend_assets/images/shape/pattern-2.svg') }}" alt="bg-shape-1" />
+            <img src="{{ asset('frontend_assets/images/shape/pattern-2.svg') }}" alt="" />
         </div>
         <div class="bg-shape-2">
-            <img src="{{ asset('frontend_assets/images/shape/pattern-3.svg') }}" alt="bg-shape-2" />
+            <img src="{{ asset('frontend_assets/images/shape/pattern-3.svg') }}" alt="" />
         </div>
     </section>
     <!-- end: Contact Section -->
