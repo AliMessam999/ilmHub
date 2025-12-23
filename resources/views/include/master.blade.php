@@ -47,7 +47,7 @@
     />
     <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"></noscript>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+    <script src="{{ url('js/swiper-minimal.min.js')}}"></script>
     <link rel="preload" href="{{ url('assets/lib/slick-1.8.1/slick/slick-theme.css')}}" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="{{ url('assets/lib/slick-1.8.1/slick/slick-theme.css')}}"></noscript>
     
@@ -432,9 +432,9 @@
     <script src="{{ url('assets/lib/bootstrap/bootstrap.min.js')}}" defer></script>
     <script src="{{ url('assets/lib/jquery/jquery.min.js')}}"></script>
     <script src="{{ url('assets/lib/fontawesome/fontawesome.js')}}" defer></script>
-    <script src="{{ url('assets/lib/slick-1.8.1/slick/slick.min.js')}}" defer></script>
 
     <script src="{{ url('assets/js/main-minimal.min.js')}}"></script>
-    <script src="{{ url('assets/js/main.min.js')}}" defer></script>
+    <script src="{{ url('assets/js/main-essential.min.js')}}" defer></script>
+    <script src="{{ url('js/lazy-loader.min.js')}}" defer></script>
   </body>
 </html>
