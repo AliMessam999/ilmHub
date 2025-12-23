@@ -1026,7 +1026,8 @@ Progressbar js
         $(".footer-top-scrool-bg").css("--gradient-position", `${gradientPos}%`);
 		$(".footer-top-scrool-bg-1").css("--gradient-position", `${gradientPos}%`);
     }
-}
+			} // <-- ADDED THIS MISSING CLOSING BRACE
+			
 			window.onscroll = scrollPercentage;
 			window.onload = scrollPercentage;
 
@@ -1958,13 +1959,15 @@ Progressbar js
 		});
 	}
 	tjQuantityController();
+	
+	// Dropdown hover effect
+	$(".has-dropdown").on("mouseover",function(){
+		// $(".body-overlay").toggleClass('opened')
+		// setTimeout(function(){
+		//  $(".body-overlay").toggleClass('opened')
+		// },2000)
+	});
+	
 })(jQuery);
 
 
-$(".has-dropdown").on("mouseover",function(){
-	// $(".body-overlay").toggleClass('opened')
-	// setTimeout(function(){
-	//  $(".body-overlay").toggleClass('opened')
-
-	// },2000)
-})
