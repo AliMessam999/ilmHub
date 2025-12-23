@@ -1969,5 +1969,3 @@ Progressbar js
 	});
 	
 })(jQuery);
-
-
