@@ -1,10 +1,11 @@
 @props(['src', 'alt' => '', 'width' => null, 'height' => null, 'class' => ''])
 
 @php
-    $optimizedSrc = $src;
-    if ($width && $height && strpos($src, 'upload/offer/') !== false) {
-        $pathInfo = pathinfo($src);
-        $optimizedSrc = $pathInfo['dirname'] . '/' . $pathInfo['filename'] . '_' . $width . 'x' . $height . '.' . $pathInfo['extension'];
+    use App\Helpers\ImageHelper;
+    $optimizedSrc = ImageHelper::getOptimizedImageUrl($src, $width, $height);
+    $imageClasses = 'optimized-image ' . $class;
+    if (strpos($src, 'upload/offer/') !== false) {
+        $imageClasses .= ' offer-icon';
     }
 @endphp
 
@@ -13,7 +14,8 @@
     alt="{{ $alt }}" 
     @if($width) width="{{ $width }}" @endif
     @if($height) height="{{ $height }}" @endif
-    class="{{ $class }}"
+    class="{{ $imageClasses }}"
     loading="lazy"
     decoding="async"
+    onerror="this.style.display='none'"
 >
