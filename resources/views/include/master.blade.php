@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="theme-color" content="#003366" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Cdigital - Leading provider of ICT, Security, Energy, Software, Hydromet, Mining & Minerals solutions. 10+ years experience delivering innovative technology solutions across Pakistan and UAE." />
     <title>
       Cdigital | ICT,Security,Energy,Software ,Hydromet,Mines & Minerals
     </title>
