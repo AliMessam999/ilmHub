@@ -32,13 +32,14 @@
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
     <link
       rel="stylesheet"
       href="{{ url('assets/lib/slick-1.8.1/slick/slick-theme.css')}}"
     />
-    <link rel="stylesheet" href="{{ url('assets/lib/animate/animate.min.css')}}" />
+    <link rel="stylesheet" href="{{ url('assets/lib/animate/animate.min.css')}}" media="print" onload="this.media='all'" />
     <link rel="stylesheet" href="{{ url('assets/css/main.css')}}" />
+    <link rel="stylesheet" href="{{ url('css/main-thread-optimizations.css')}}" />
   </head>
   <body>
     <!-- Header section starts -->
@@ -410,11 +411,12 @@
      <!-- Footer -->
    <x-new-footer/>
    
-    <script src="{{ url('assets/lib/bootstrap/bootstrap.min.js')}}"></script>
+    <script src="{{ url('assets/lib/bootstrap/bootstrap.min.js')}}" defer></script>
     <script src="{{ url('assets/lib/jquery/jquery.min.js')}}"></script>
-    <script src="{{ url('assets/lib/fontawesome/fontawesome.js')}}"></script>
-    <script src="{{ url('assets/lib/slick-1.8.1/slick/slick.min.js')}}"></script>
+    <script src="{{ url('assets/lib/fontawesome/fontawesome.js')}}" defer></script>
+    <script src="{{ url('assets/lib/slick-1.8.1/slick/slick.min.js')}}" defer></script>
 
-    <script src="{{ url('assets/js/main.js')}}"></script>
+    <script src="{{ url('assets/js/main-minimal.js')}}"></script>
+    <script src="{{ url('assets/js/main.js')}}" defer></script>
   </body>
 </html>
