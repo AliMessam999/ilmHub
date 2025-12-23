@@ -434,7 +434,7 @@
     <script src="{{ url('assets/lib/fontawesome/fontawesome.js')}}" defer></script>
     <script src="{{ url('assets/lib/slick-1.8.1/slick/slick.min.js')}}" defer></script>
 
-    <script src="{{ url('assets/js/main-minimal.js')}}"></script>
-    <script src="{{ url('assets/js/main.js')}}" defer></script>
+    <script src="{{ url('assets/js/main-minimal.min.js')}}"></script>
+    <script src="{{ url('assets/js/main.min.js')}}" defer></script>
   </body>
 </html>
