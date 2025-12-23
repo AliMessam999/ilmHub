@@ -8,7 +8,19 @@
       Cdigital | ICT,Security,Energy,Software ,Hydromet,Mines & Minerals
     </title>
  
+    <!-- LCP Image Preload -->
+    @if (!empty($data->slider) && isset($data->slider[0]))
+    <link rel="preload" as="image" href="/{{ $data->slider[0]->video ?? 'assets/images/default-hero.jpg' }}" fetchpriority="high">
+    @endif
 
+    <!-- Critical CSS for LCP -->
+    <style>
+    .banner{position:relative;height:100vh;overflow:hidden}
+    .lcp-hero-image{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;z-index:1}
+    .lcp-content{position:relative;z-index:2;height:100vh;display:flex;align-items:center;background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5))}
+    .slider-title{font-size:clamp(2rem,5vw,4rem);margin:0 0 1rem 0;font-weight:bold;line-height:1.2;color:white}
+    .container{max-width:1200px;margin:0 auto;padding:0 15px}
+    </style>
 
     
      <link rel="icon" type="image/png" href="{{ url('assets/images/favicon.png')}}" />
