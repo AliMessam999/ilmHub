@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Performance Optimized Page</title>
+    
+    <!-- Critical CSS (inline for better performance) -->
+    <style>
+        /* Critical above-the-fold styles */
+        .header-sticky { will-change: transform; transform: translateZ(0); }
+        .swiper-container { will-change: transform; transform: translateZ(0); }
+        .tj-progress-bar { will-change: width; transform: translateZ(0); }
+    </style>
+    
+    <!-- Load performance optimizations CSS -->
+    <link rel="stylesheet" href="/css/performance-optimizations.css">
+    
+    <!-- Original CSS files -->
+    <link rel="stylesheet" href="/frontend_assets/css/main.css">
+</head>
+<body>
+    <!-- Your existing HTML content -->
+    
+    <!-- Load JavaScript files in optimized order -->
+    
+    <!-- Core libraries first -->
+    <script src="/frontend_assets/js/jquery.min.js"></script>
+    <script src="/frontend_assets/js/gsap.min.js"></script>
+    <script src="/frontend_assets/js/gsap-scroll-trigger.min.js"></script>
+    <script src="/frontend_assets/js/ScrollSmoother.min.js"></script>
+    <script src="/frontend_assets/js/swiper.min.js"></script>
+    
+    <!-- Performance optimizations -->
+    <script src="/frontend_assets/js/gsap-optimizations.js"></script>
+    <script src="/frontend_assets/js/swiper-optimizations.js"></script>
+    
+    <!-- Use optimized main.js instead of original -->
+    <script src="/frontend_assets/js/main-optimized.js"></script>
+    
+    <!-- Optional: Load original main.js for fallback (comment out the optimized version above) -->
+    <!-- <script src="/frontend_assets/js/main.js"></script> -->
+    
+    <script>
+        // Additional performance optimizations
+        
+        // Reduce ScrollTrigger refresh rate
+        if (typeof ScrollTrigger !== 'undefined') {
+            ScrollTrigger.config({
+                autoRefreshEvents: "visibilitychange,DOMContentLoaded,load",
+                refreshPriority: -1
+            });
+        }
+        
+        // Optimize Swiper instances
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add lazy loading attributes to Swiper containers
+            document.querySelectorAll('.swiper-container').forEach(container => {
+                if (!container.hasAttribute('data-swiper-lazy')) {
+                    container.setAttribute('data-swiper-lazy', 'true');
+                }
+            });
+        });
+        
+        // Performance monitoring (optional)
+        if ('performance' in window) {
+            window.addEventListener('load', function() {
+                setTimeout(function() {
+                    const perfData = performance.getEntriesByType('navigation')[0];
+                    console.log('Page load time:', perfData.loadEventEnd - perfData.fetchStart, 'ms');
+                }, 0);
+            });
+        }
+    </script>
+</body>
+</html>
