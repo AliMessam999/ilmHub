@@ -243,8 +243,13 @@
                         <div class="card text-center shadow-sm h-100">
                             <div class="card-body">
                                 <div class="certifications-box">
-                                    <img src="/{{ $certificate->image }}" alt="{{ $certificate->alt }}"
-                                        class="img-fluid mb-3">
+i                                    <x-optimized-image 
+                                        :src="$certificate->image" 
+                                        :alt="$certificate->alt" 
+                                        :width="38" 
+                                        :height="38" 
+                                        class="img-fluid mb-3" 
+                                    />
                                     <h5 class="card-title">{{ $certificate->title }}</h5>
                                 </div>
                             </div>
@@ -257,8 +262,13 @@
                         <div class="card text-center shadow-sm h-100">
                             <div class="card-body">
                                 <div class="certifications-box">
-                                    <img src="/{{ $registration->image }}" alt="{{ $registration->alt }}"
-                                        class="img-fluid mb-3">
+                                    <x-optimized-image 
+                                        :src="$registration->image" 
+                                        :alt="$registration->alt" 
+                                        :width="38" 
+                                        :height="38" 
+                                        class="img-fluid mb-3" 
+                                    />
                                     <p class="card-text mb-1">{!! $registration->title !!}</p>
                                 </div>
                             </div>

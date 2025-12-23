@@ -11,6 +11,20 @@ use Illuminate\Support\Facades\Validator;
 
 class OfferController extends Controller
 {
+<?php
+
+namespace App\Http\Controllers;
+
+use App\Models\CdOffer;
+use App\Models\CdCategory;
+use App\Models\CdMenu;
+use App\Helpers\ImageHelper;
+use Illuminate\Http\Request;
+use Illuminate\Validation\Rule;
+use Illuminate\Support\Facades\Validator;
+
+class OfferController extends Controller
+{
     public function create_offer(Request $request)
     {
         $validator = Validator::make($request->all(), [
@@ -31,6 +45,10 @@ class OfferController extends Controller
                     "message" => "File not store try again!"
                 ], 302);
             }
+            
+            // Generate optimized thumbnails
+            ImageHelper::generateThumbnails($path);
+            
             $offer = new CdOffer();
             $offer->title = $request->title;
             $offer->description = $request->description;
@@ -96,6 +114,11 @@ class OfferController extends Controller
                     'alt' => 'required'
                 ]);
                 $path = $request->file('image')->store('upload/offer');
+                
+                // Generate optimized thumbnails for new image
+                if ($path) {
+                    ImageHelper::generateThumbnails($path);
+                }
             } else {
                 $validator = Validator::make($request->all(), [
                     'title' => ['required'],

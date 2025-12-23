@@ -1,0 +1,61 @@
+/* Image Optimization Styles */
+.optimized-image {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    transition: opacity 0.3s ease;
+}
+
+.optimized-image[loading="lazy"] {
+    opacity: 0;
+    animation: fadeIn 0.3s ease forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+/* Offer icon specific styles */
+.offer-icon {
+    width: 38px;
+    height: 38px;
+    object-fit: contain;
+}
+
+/* Certificate image styles */
+.certificate-image {
+    max-width: 150px;
+    max-height: 150px;
+    object-fit: contain;
+    margin: 0 auto;
+}
+
+/* Responsive image containers */
+.image-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Loading placeholder */
+.image-loading {
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    animation: loading 1.5s infinite;
+}
+
+@keyframes loading {
+    0% {
+        background-position: 200% 0;
+    }
+    100% {
+        background-position: -200% 0;
+    }
+}
