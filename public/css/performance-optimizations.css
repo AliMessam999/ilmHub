@@ -1,0 +1,94 @@
+/* Performance optimizations to reduce forced reflows */
+
+/* Use transform instead of changing layout properties */
+.header-sticky {
+    will-change: transform;
+    transform: translateZ(0);
+}
+
+.header-sticky.sticky {
+    transform: translateY(0) translateZ(0);
+}
+
+/* Optimize scroll-triggered elements */
+.tj-progress-bar {
+    will-change: width;
+    transform: translateZ(0);
+}
+
+/* Optimize slider elements */
+.swiper-container,
+.swiper-wrapper,
+.swiper-slide {
+    will-change: transform;
+    transform: translateZ(0);
+}
+
+/* Optimize GSAP animated elements */
+.gsap-element {
+    will-change: transform, opacity;
+    transform: translateZ(0);
+}
+
+/* Optimize back to top button */
+#tj-back-to-top {
+    will-change: transform, background;
+    transform: translateZ(0);
+}
+
+/* Reduce paint complexity */
+.optimized-element {
+    contain: layout style paint;
+}
+
+/* Optimize scroll containers */
+.scroll-container {
+    contain: layout;
+    overflow-anchor: none;
+}
+
+/* Prevent layout shifts during animations */
+.animation-container {
+    contain: layout style;
+}
+
+/* Optimize sticky elements */
+.sticky-element {
+    contain: layout;
+    will-change: transform;
+}
+
+/* GPU acceleration for smooth animations */
+.gpu-accelerated {
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+
+/* Optimize image loading */
+.optimized-image {
+    content-visibility: auto;
+    contain-intrinsic-size: 300px 200px;
+}
+
+/* Reduce reflow on hover effects */
+.hover-optimized {
+    will-change: transform;
+    transition: transform 0.3s ease;
+}
+
+.hover-optimized:hover {
+    transform: scale(1.05) translateZ(0);
+}
+
+/* Optimize text animations */
+.text-animation {
+    will-change: transform, opacity;
+    contain: layout style;
+}
+
+/* Critical rendering optimizations */
+.critical-element {
+    contain: strict;
+    content-visibility: auto;
+}
