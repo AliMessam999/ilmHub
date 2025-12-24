@@ -61,7 +61,7 @@
 </style>
 
     <!-- start: Breadcrumb Section -->
-    <section class="tj-page-header rounded-0" data-bg-image="{{ $sub_division->image ? asset($sub_division->image) : asset('') }}">
+    <section class="tj-page-header rounded-0" data-bg-image="">
         <!-- <div class="slider-bg-image">
                  <video
                   data-speed="0.8"
