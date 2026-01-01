@@ -2151,6 +2151,176 @@ class CdFeatureImageSeeder extends Seeder
     'created_at' => '2025-12-20 05:29:05',
     'updated_at' => '2025-12-20 13:01:44',
   ),
+  214 => 
+  array (
+    'id' => 300,
+    'feature_id' => 58,
+    'image' => 'upload/featured/2V0QVbelPRRFQwZiyDafsMwaUBgCRoFVNDWJm7px.png',
+    'alt' => '',
+    'deleted_at' => NULL,
+    'created_at' => '2026-01-01 13:08:29',
+    'updated_at' => '2026-01-01 13:38:06',
+  ),
+  215 => 
+  array (
+    'id' => 301,
+    'feature_id' => 59,
+    'image' => 'upload/featured/xEKuVDmCwuBC1p69IQESyRB0xIbcsOuw3XWybqaN.jpg',
+    'alt' => '',
+    'deleted_at' => NULL,
+    'created_at' => '2026-01-01 13:13:54',
+    'updated_at' => '2026-01-01 13:41:47',
+  ),
+  216 => 
+  array (
+    'id' => 302,
+    'feature_id' => 60,
+    'image' => 'upload/featured/0LbJqy4Cl6Lh9QIj6218WnkLNI80hhHI4HHQio23.png',
+    'alt' => '',
+    'deleted_at' => NULL,
+    'created_at' => '2026-01-01 13:21:13',
+    'updated_at' => '2026-01-01 13:44:20',
+  ),
+  217 => 
+  array (
+    'id' => 303,
+    'feature_id' => 61,
+    'image' => 'upload/featured/pFKCZ97uUU73eGJyICAHikd7gM2drnjrI84Tvp1F.jpg',
+    'alt' => '',
+    'deleted_at' => NULL,
+    'created_at' => '2026-01-01 13:26:41',
+    'updated_at' => '2026-01-01 13:46:06',
+  ),
+  218 => 
+  array (
+    'id' => 304,
+    'feature_id' => 62,
+    'image' => 'upload/featured/myOYMqUabzBUBu7qx8l50EdMiRFha3bRbEMtENYb.jpg',
+    'alt' => '',
+    'deleted_at' => NULL,
+    'created_at' => '2026-01-01 13:33:01',
+    'updated_at' => '2026-01-01 13:33:01',
+  ),
+  219 => 
+  array (
+    'id' => 305,
+    'feature_id' => 58,
+    'image' => 'upload/featured/GLW8oijiJTBxhIpjSphqujHZRnJJktjMzgKEcszn.png',
+    'alt' => '',
+    'deleted_at' => '2026-01-01 13:39:22',
+    'created_at' => '2026-01-01 13:38:06',
+    'updated_at' => '2026-01-01 13:39:22',
+  ),
+  220 => 
+  array (
+    'id' => 306,
+    'feature_id' => 58,
+    'image' => 'upload/featured/FSs5pn2tFlCxaLyXoh38GSyyYYOofrvKdGZjcs6l.png',
+    'alt' => '',
+    'deleted_at' => '2026-01-01 13:39:22',
+    'created_at' => '2026-01-01 13:38:06',
+    'updated_at' => '2026-01-01 13:39:22',
+  ),
+  221 => 
+  array (
+    'id' => 307,
+    'feature_id' => 58,
+    'image' => 'upload/featured/AdRn2Hz8e6f6iJONdilog0A2sUjgfiI7UJV0j5YR.png',
+    'alt' => '',
+    'deleted_at' => NULL,
+    'created_at' => '2026-01-01 13:39:21',
+    'updated_at' => '2026-01-01 13:39:21',
+  ),
+  222 => 
+  array (
+    'id' => 308,
+    'feature_id' => 58,
+    'image' => 'upload/featured/RFqUVplV1Z7Yf3VUg2nHp84A1a03M6XgV1YA2ksa.png',
+    'alt' => '',
+    'deleted_at' => NULL,
+    'created_at' => '2026-01-01 13:39:21',
+    'updated_at' => '2026-01-01 13:39:21',
+  ),
+  223 => 
+  array (
+    'id' => 309,
+    'feature_id' => 58,
+    'image' => 'upload/featured/uJLm3e0pEn78ZeHcF5lZyLumGy2z02nUR6gRbXNY.png',
+    'alt' => '',
+    'deleted_at' => NULL,
+    'created_at' => '2026-01-01 13:39:21',
+    'updated_at' => '2026-01-01 13:39:21',
+  ),
+  224 => 
+  array (
+    'id' => 310,
+    'feature_id' => 59,
+    'image' => 'upload/featured/7Y5rSBBvmziifNQRlQdtIAv0swjOXHSQ4X2jAnua.jpg',
+    'alt' => '',
+    'deleted_at' => NULL,
+    'created_at' => '2026-01-01 13:41:47',
+    'updated_at' => '2026-01-01 13:41:47',
+  ),
+  225 => 
+  array (
+    'id' => 311,
+    'feature_id' => 60,
+    'image' => 'upload/featured/ynf7qRwWOjmG8BJC0lDgBXVTEMbWonZW0r4t7Xf9.png',
+    'alt' => '',
+    'deleted_at' => NULL,
+    'created_at' => '2026-01-01 13:44:20',
+    'updated_at' => '2026-01-01 13:44:20',
+  ),
+  226 => 
+  array (
+    'id' => 312,
+    'feature_id' => 60,
+    'image' => 'upload/featured/UdBFGaBq2kVhp76HqfnBpc05lRe0O1BFcp240q4o.jpg',
+    'alt' => '',
+    'deleted_at' => NULL,
+    'created_at' => '2026-01-01 13:44:20',
+    'updated_at' => '2026-01-01 13:44:20',
+  ),
+  227 => 
+  array (
+    'id' => 313,
+    'feature_id' => 60,
+    'image' => 'upload/featured/OEMwWdDTsWzt0Q3iAzurCQfAYTchSDnPMoursqjc.jpg',
+    'alt' => '',
+    'deleted_at' => NULL,
+    'created_at' => '2026-01-01 13:44:20',
+    'updated_at' => '2026-01-01 13:44:20',
+  ),
+  228 => 
+  array (
+    'id' => 314,
+    'feature_id' => 61,
+    'image' => 'upload/featured/2OhPu29Drtuisf7ZmymdXE7eTjiFJsOjnJa2Uyfu.jpg',
+    'alt' => '',
+    'deleted_at' => NULL,
+    'created_at' => '2026-01-01 13:46:06',
+    'updated_at' => '2026-01-01 13:46:06',
+  ),
+  229 => 
+  array (
+    'id' => 315,
+    'feature_id' => 61,
+    'image' => 'upload/featured/axwicJAtwV93YWclnnpEpvNhPmq3KQwoFBpAIyZ7.jpg',
+    'alt' => '',
+    'deleted_at' => NULL,
+    'created_at' => '2026-01-01 13:46:06',
+    'updated_at' => '2026-01-01 13:46:06',
+  ),
+  230 => 
+  array (
+    'id' => 316,
+    'feature_id' => 61,
+    'image' => 'upload/featured/0GRjSwLQbDDLlhwPnH4gUtCsoyKN4uZgJ5ZC9klJ.jpg',
+    'alt' => '',
+    'deleted_at' => NULL,
+    'created_at' => '2026-01-01 13:46:06',
+    'updated_at' => '2026-01-01 13:46:06',
+  ),
 );
         DB::table('cd_feature_images')->insert($data);
     }
