@@ -49,7 +49,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="tj-page-header-content text-center">
-                    <h1 class="tj-page-title mt-5 pt-2">Case Studies</h1>
+                    <h1 class="tj-page-title mt-5 pt-2">Case Studiessss</h1>
                     <div class="tj-page-link">
                         <span><i class="tji-home"></i></span>
                         <span>
