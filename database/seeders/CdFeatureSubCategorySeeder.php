@@ -139,6 +139,46 @@ class CdFeatureSubCategorySeeder extends Seeder
     'created_at' => NULL,
     'updated_at' => NULL,
   ),
+  16 => 
+  array (
+    'id' => 17,
+    'feature_id' => 58,
+    'sub_category_id' => 102,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  17 => 
+  array (
+    'id' => 18,
+    'feature_id' => 59,
+    'sub_category_id' => 104,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  18 => 
+  array (
+    'id' => 19,
+    'feature_id' => 60,
+    'sub_category_id' => 104,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  19 => 
+  array (
+    'id' => 20,
+    'feature_id' => 61,
+    'sub_category_id' => 104,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
+  20 => 
+  array (
+    'id' => 21,
+    'feature_id' => 62,
+    'sub_category_id' => 100,
+    'created_at' => NULL,
+    'updated_at' => NULL,
+  ),
 );
         DB::table('cd_feature_sub_categories')->insert($data);
     }
