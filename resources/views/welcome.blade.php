@@ -1,6 +1,6 @@
 @extends('include.master')
 @section('slider')
-@include('include.slider')
+@include('include.slider-optimized')
 @endsection
 @section('content')
  <!-- Header section end -->

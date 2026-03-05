@@ -47,7 +47,29 @@
 START: Theme Default CSS
 ----------------------------------------*/
 @import url("https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap");
+@font-face {
+  font-family: "Font Awesome 6 Pro";
+  src: url("../fonts/fa-thin-100.woff2") format("woff2");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
 
+@font-face {
+  font-family: "Font Awesome 6 Brands";
+  src: url("../fonts/fa-brands-400.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "bexon-icons";
+  src: url("../fonts/bexon-icons.ttf?yu4jya") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 :root {
   /**
      @Font-Family Declaration
@@ -15950,6 +15972,105 @@ only screen and (min-width: 576px) and (max-width: 767px),
   }
 
 
+}
+@media (min-width: 1398px) {
+  .global-map {
+    inset-inline-start: -50px;
+  }
+  
+  .loc-1 .location-tooltip::after {
+  content: "Islamabad" !important;
+  bottom: 1px;
+}
+
+.location-indicator.loc-1 {
+  top: 37%;
+  inset-inline-start: 55%;
+}
+
+.loc-2 .location-tooltip::after {
+  content: "Dubai";
+  inset-inline-start: 38%;
+  bottom: -10px;
+}
+
+.location-indicator.loc-2 {
+  top: 47%;
+  inset-inline-start: 52%;
+}
+
+.loc-3 .location-tooltip::after {
+  content: "Lahore";
+  inset-inline-start: 40%;
+}
+
+.location-indicator.loc-3 {
+  top: 42%;
+  inset-inline-start: 57%;
+}
+
+.loc-4 .location-tooltip::after {
+  content: "Chicago";
+  inset-inline-start: 38%;
+}
+
+.location-indicator.loc-4 {
+  top: 35%;
+  left: 14%;
+}
+
+.loc-5 .location-tooltip::after {
+  content: "Sharjah";
+  inset-inline-start: 38%;
+}
+
+.location-indicator.loc-5 {
+  top: 48%;
+  left: 54%;
+}
+
+}
+
+/* Empowering Business Section - Industry Cards Responsive Fixes */
+.industry-hover-item .industry-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 90%;
+  z-index: 2;
+}
+
+.industry-hover-item .title {
+  color: white !important;
+  text-align: center;
+  line-height: 1.2;
+  margin: 0;
+}
+
+@media (max-width: 575px) {
+  .industry-hover-item .title {
+    font-size: 16px !important;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .industry-hover-item .title {
+    font-size: 18px !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .industry-hover-item .title {
+    font-size: 20px !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .industry-hover-item .title {
+    font-size: 22px !important;
+  }
 }
 
 

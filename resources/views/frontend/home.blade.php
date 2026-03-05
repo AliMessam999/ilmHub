@@ -138,7 +138,6 @@
 
         .industry-hover-item .project-img {
             position: relative;
-            height: 450px;
             background-size: cover !important;
             background-position: center !important;
             background-repeat: no-repeat !important;
@@ -181,6 +180,12 @@
             font-size: 25px;
             font-weight: 700;
             margin: 0;
+        }
+
+        @media (min-width: 992px) {
+            .about-bottom-area {
+                margin-top: 40px;
+            }
         }
     </style>
 

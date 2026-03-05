@@ -76,9 +76,9 @@ Progressbar js
 		});
 
 		let smoother = ScrollSmoother.create({
-			smooth: 1.5,
-			effects: true,
-			smoothTouch: 0.1,
+			smooth: 0.5,
+			effects: false,
+			smoothTouch: false,
 			ignoreMobileResize: true,
 		});
 	}
@@ -109,11 +109,11 @@ Progressbar js
 		lastScrollTop = st;
 	}
 
-	$(window).on("scroll", function () {
+	window.addEventListener("scroll", function () {
 		if ($(".header-area").length) {
 			stickyMenu($(".header-sticky"), "sticky");
 		}
-	});
+	}, { passive: true });
 
 	////////////////////////////////////////////////////
 	// Mobile Menu Js
@@ -201,42 +201,42 @@ Progressbar js
 	// }
 
 	document.addEventListener("DOMContentLoaded", function () {
-    if ($(".client-slider").length > 0) {
-        // Initialize Swiper
-        var client = new Swiper(".client-slider", {
-            slidesPerView: "auto",
-            spaceBetween: 0,
-            freemode: true,
-            centeredSlides: true,
-            loop: true,
-            speed: 5000,
-            allowTouchMove: false,
-            autoplay: {
-                delay: 1,
-                disableOnInteraction: true, // autoplay can restart
-            },
-        });
+		if ($(".client-slider").length > 0) {
+			// Initialize Swiper
+			var client = new Swiper(".client-slider", {
+				slidesPerView: "auto",
+				spaceBetween: 0,
+				freemode: true,
+				centeredSlides: true,
+				loop: true,
+				speed: 5000,
+				allowTouchMove: false,
+				autoplay: {
+					delay: 1,
+					disableOnInteraction: true, // autoplay can restart
+				},
+			});
 
-        // Stop autoplay initially
-        client.autoplay.stop();
+			// Stop autoplay initially
+			client.autoplay.stop();
 
-        // Observe when slider is in viewport
-        const sliderSection = document.querySelector(".client-slider");
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    // Section visible → start autoplay
-                    client.autoplay.start();
-                } else {
-                    // Section not visible → stop autoplay
-                    client.autoplay.stop();
-                }
-            });
-        }, { threshold: 0.5 }); // 50% visible
+			// Observe when slider is in viewport
+			const sliderSection = document.querySelector(".client-slider");
+			const observer = new IntersectionObserver((entries) => {
+				entries.forEach(entry => {
+					if (entry.isIntersecting) {
+						// Section visible → start autoplay
+						client.autoplay.start();
+					} else {
+						// Section not visible → stop autoplay
+						client.autoplay.stop();
+					}
+				});
+			}, { threshold: 0.5 }); // 50% visible
 
-        observer.observe(sliderSection);
-    }
-});
+			observer.observe(sliderSection);
+		}
+	});
 
 
 	////////////////////////////////////////////////////
@@ -430,13 +430,15 @@ Progressbar js
 	// h9 Project slider Js
 	if ($(".h9-project-slider").length > 0) {
 		var work = new Swiper(".h9-project-slider", {
-			slidesPerView: 1.1,
-			spaceBetween: 15,
+			slidesPerView: "auto",
+			spaceBetween: 20,
 			loop: true,
-			speed: 1000,
-			centeredSlides: true,
+			speed: 3000,
+			centeredSlides: false,
+			freeMode: true,
 			autoplay: {
-				delay: 1000,
+				delay: 1,
+				disableOnInteraction: false,
 			},
 			navigation: {
 				nextEl: ".slider-next",
@@ -445,34 +447,6 @@ Progressbar js
 			pagination: {
 				el: ".swiper-pagination-area",
 				clickable: true,
-			},
-			breakpoints: {
-				0: {
-					centeredSlides: false,
-				},
-				576: {
-					slidesPerView: 1.3,
-				},
-				680: {
-					slidesPerView: 1.5,
-					spaceBetween: 20,
-				},
-				992: {
-					slidesPerView: 2.3,
-					spaceBetween: 20,
-				},
-				1200: {
-					slidesPerView: 2.5,
-					spaceBetween: 20,
-				},
-				1400: {
-					slidesPerView: 2.5,
-					spaceBetween: 20,
-				},
-				1500: {
-					slidesPerView: 4,
-					spaceBetween: 30,
-				},
 			},
 		});
 	}
@@ -575,9 +549,13 @@ Progressbar js
 		}
 	}
 	verticalTestimonialSlider();
-	// Reinitialize on resize
+	// Reinitialize on resize (debounced to avoid lag)
+	let resizeTimer;
 	window.addEventListener("resize", () => {
-		verticalTestimonialSlider();
+		clearTimeout(resizeTimer);
+		resizeTimer = setTimeout(() => {
+			verticalTestimonialSlider();
+		}, 150);
 	});
 
 	// Testimonial Slider 3 Js
@@ -1005,7 +983,7 @@ Progressbar js
 					document.documentElement.scrollHeight -
 					document.documentElement.clientHeight;
 				const scrollValue = Math.round((scrollTopPos / calcHeight) * 100);
-				console.log(scrollValue,scrollTopPos);
+				// console.log removed - was causing lag on every scroll frame
 				scrollElementWrap.css(
 					"background",
 					`conic-gradient( var(--tj-color-theme-primary) ${scrollValue}%, var(--tj-color-common-white) ${scrollValue}%)`
@@ -1019,42 +997,43 @@ Progressbar js
 				}
 
 				if (scrollValue < 96) {
-        $("#tj-back-to-top-percentage").text(`${scrollValue}%`);
-    } else {
-        $("#tj-back-to-top-percentage").html('<i class="tji-arrow-up-long"></i>');
-    }
+					$("#tj-back-to-top-percentage").text(`${scrollValue}%`);
+				} else {
+					$("#tj-back-to-top-percentage").html('<i class="tji-arrow-up-long"></i>');
+				}
 
-    // ---- Gradient logic (kept OUTSIDE else block) ----
-    // decide if we should run gradient (no inline if inside else)
-    const in7to20 = (scrollValue >= 4 && scrollValue <= 20);
-    const in70to100 = (scrollValue >= 70 && scrollValue <= 100);
+				// ---- Gradient logic (kept OUTSIDE else block) ----
+				// decide if we should run gradient (no inline if inside else)
+				const in7to20 = (scrollValue >= 4 && scrollValue <= 20);
+				const in70to100 = (scrollValue >= 70 && scrollValue <= 100);
 
-    if (in7to20 || in70to100) {
-        let gradientPos;
+				if (in7to20 || in70to100) {
+					let gradientPos;
 
-        if (in70to100) {
-            // map 70 -> 50%  and 100 -> 100%  (smooth)
-            // normalized fraction: (scrollValue - 70) / (100 - 70) => 0..1
-            const t = (scrollValue - 70) / 30;
-            gradientPos = 50 + t * 50; // 50..100
-        } else {
-            // in7to20: map 7 -> 0% and 20 -> 50% (example mapping)
-            // normalized fraction: (scrollValue - 7) / (20 - 7) => 0..1
-            const t = (scrollValue - 4) / 13;
-            gradientPos = 0 + t * 50; // 0..50
-            // you can adjust mapping (0..50) to your desired start/end
-        }
+					if (in70to100) {
+						// map 70 -> 50%  and 100 -> 100%  (smooth)
+						// normalized fraction: (scrollValue - 70) / (100 - 70) => 0..1
+						const t = (scrollValue - 70) / 30;
+						gradientPos = 50 + t * 50; // 50..100
+					} else {
+						// in7to20: map 7 -> 0% and 20 -> 50% (example mapping)
+						// normalized fraction: (scrollValue - 7) / (20 - 7) => 0..1
+						const t = (scrollValue - 4) / 13;
+						gradientPos = 0 + t * 50; // 0..50
+						// you can adjust mapping (0..50) to your desired start/end
+					}
 
-        // clamp to 0..100 just in case
-        gradientPos = Math.min(100, Math.max(0, gradientPos));
+					// clamp to 0..100 just in case
+					gradientPos = Math.min(100, Math.max(0, gradientPos));
 
-        // apply CSS custom property
-        $(".footer-top-scrool-bg").css("--gradient-position", `${gradientPos}%`);
-		$(".footer-top-scrool-bg-1").css("--gradient-position", `${gradientPos}%`);
-    }
-}
-			window.onscroll = scrollPercentage;
-			window.onload = scrollPercentage;
+					// apply CSS custom property
+					$(".footer-top-scrool-bg").css("--gradient-position", `${gradientPos}%`);
+					$(".footer-top-scrool-bg-1").css("--gradient-position", `${gradientPos}%`);
+				}
+			} // <-- ADDED THIS MISSING CLOSING BRACE
+
+			window.addEventListener("scroll", scrollPercentage, { passive: true });
+			window.addEventListener("load", scrollPercentage);
 
 			// Back to Top
 			function scrollToTop() {
@@ -1086,7 +1065,9 @@ Progressbar js
 	// wow js
 	function wowController() {
 		if ($(".wow").length > 0) {
-			new WOW().init();
+			new WOW({
+				mobile: false  // disable on mobile for better performance
+			}).init();
 		}
 	}
 
@@ -1407,8 +1388,7 @@ Progressbar js
 							start: `top-=${startOffset} top`,
 							endTrigger: container,
 							end: () =>
-								`bottom top+=${
-									lastPanel.offsetHeight + startOffset + paddingBottom
+								`bottom top+=${lastPanel.offsetHeight + startOffset + paddingBottom
 								}`,
 							pin: true,
 							pinSpacing: false,
@@ -1512,8 +1492,7 @@ Progressbar js
 										start: `top-=${startOffset} top`,
 										endTrigger: container,
 										end: () =>
-											`bottom top+=${
-												lastPanel.offsetHeight + startOffset + paddingBottom
+											`bottom top+=${lastPanel.offsetHeight + startOffset + paddingBottom
 											}`,
 										pin: true,
 										pinSpacing: false,
@@ -1604,9 +1583,8 @@ Progressbar js
 								scrollTrigger: {
 									trigger: panel,
 									start: `top bottom`,
-									end: `${
-										i === 0 || i === 2 ? "bottom+=200" : "bottom+=300"
-									} bottom`,
+									end: `${i === 0 || i === 2 ? "bottom+=200" : "bottom+=300"
+										} bottom`,
 									pin: false,
 									pinSpacing: false,
 									scrub: true,
@@ -1984,13 +1962,13 @@ Progressbar js
 		});
 	}
 	tjQuantityController();
+
+	// Dropdown hover effect
+	$(".has-dropdown").on("mouseover", function () {
+		// $(".body-overlay").toggleClass('opened')
+		// setTimeout(function(){
+		//  $(".body-overlay").toggleClass('opened')
+		// },2000)
+	});
+
 })(jQuery);
-
-
-$(".has-dropdown").on("mouseover",function(){
-	// $(".body-overlay").toggleClass('opened')
-	// setTimeout(function(){
-	//  $(".body-overlay").toggleClass('opened')
-
-	// },2000)
-})

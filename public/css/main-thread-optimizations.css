@@ -1,0 +1,22 @@
+/* Reduce Style & Layout work - add to main.css */
+* { box-sizing: border-box; }
+
+/* Prevent layout shifts */
+.navbar { contain: layout; }
+.swiper-container { contain: layout; }
+
+/* Optimize animations */
+.animate__animated {
+    animation-duration: 0.5s; /* Reduced from default 1s */
+    will-change: transform;
+}
+
+/* Reduce paint complexity */
+.dropdown-menu { contain: layout style; }
+.team-section { contain: layout; }
+
+/* GPU acceleration for smooth scrolling */
+.navbar-collapse { transform: translateZ(0); }
+
+/* Optimize heavy selectors */
+.navbar-nav .nav-link { contain: style; }

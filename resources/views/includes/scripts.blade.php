@@ -1,15 +1,19 @@
+<!-- Critical JS - Load immediately -->
 <script src="{{ asset('frontend_assets/js/jquery.min.js') }}"></script>
 <script src="{{ asset('frontend_assets/js/bootstrap.bundle.min.js') }}"></script>
-<script src="{{ asset('frontend_assets/js/gsap.min.js') }}"></script>
-<script src="{{ asset('frontend_assets/js/ScrollSmoother.js') }}"></script>
-<script src="{{ asset('frontend_assets/js/gsap-scroll-to-plugin.min.js') }}"></script>
-<script src="{{ asset('frontend_assets/js/gsap-scroll-trigger.min.js') }}"></script>
-<script src="{{ asset('frontend_assets/js/gsap-split-text.min.js') }}"></script>
-<script src="{{ asset('frontend_assets/js/jquery.nice-select.min.js') }}"></script>
-<script src="{{ asset('frontend_assets/js/swiper.min.js') }}"></script>
-<script src="{{ asset('frontend_assets/js/odometer.min.js') }}"></script>
-<script src="{{ asset('frontend_assets/js/venobox.min.js') }}"></script>
-<script src="{{ asset('frontend_assets/js/appear.min.js') }}"></script>
-<script src="{{ asset('frontend_assets/js/wow.min.js') }}"></script>
-<script src="{{ asset('frontend_assets/js/meanmenu.js') }}"></script>
-<script src="{{ asset('frontend_assets/js/main.js') }}"></script>
+
+<!-- Defer non-critical JS to reduce forced reflows -->
+<script defer src="{{ asset('frontend_assets/js/gsap.min.js') }}"></script>
+<script defer src="{{ asset('frontend_assets/js/ScrollSmoother.min.js') }}"></script>
+<script defer src="{{ asset('frontend_assets/js/gsap-scroll-to-plugin.min.js') }}"></script>
+<script defer src="{{ asset('frontend_assets/js/gsap-scroll-trigger.min.js') }}"></script>
+<script defer src="{{ asset('frontend_assets/js/gsap-split-text.min.js') }}"></script>
+<script defer src="{{ asset('frontend_assets/js/jquery.nice-select.min.js') }}"></script>
+<script defer src="{{ asset('frontend_assets/js/swiper.min.js') }}"></script>
+<script defer src="{{ asset('frontend_assets/js/odometer.min.js') }}"></script>
+<script defer src="{{ asset('frontend_assets/js/venobox.min.js') }}"></script>
+<script defer src="{{ asset('frontend_assets/js/appear.min.js') }}"></script>
+<script defer src="{{ asset('frontend_assets/js/wow.min.js') }}"></script>
+<script defer src="{{ asset('frontend_assets/js/meanmenu.min.js') }}"></script>
+<script defer src="{{ asset('frontend_assets/js/main.js') }}"></script>
+

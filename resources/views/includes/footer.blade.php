@@ -54,7 +54,7 @@
                        <div class="col-xl-3 col-lg-3 col-md-6">
                            <div class="footer-widget widget-contact h6-footer-contact wow fadeInUp"
                                data-wow-delay=".7s">
-                               <h5 class="title">Our Office</h5>
+                               <h5 class="title">Head Office</h5>
                                <div class="footer-contact-info">
                                    @if (!empty($footer->profile))
                                        <div class="contact-item">
@@ -103,7 +103,7 @@
                    <div class="row">
                        <div class="col-12">
                            <div class="h6-footer-logo">
-                               <a href="index.html" class="wow fadeInUpBig" data-wow-delay=".3s">
+                               <a href="/" class="wow fadeInUpBig" data-wow-delay=".3s">
                                    <img src="{{ url('frontend_assets/images/logos/logolarge.png') }}" alt="" />
                                </a>
                            </div>

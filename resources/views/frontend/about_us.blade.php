@@ -187,7 +187,7 @@
     <!-- end: About Section -->
 
     <!-- start: Team Section -->
-    <section class="tj-team-section-3 section-gap section-gap-x">
+    <section id="team" class="tj-team-section-3 section-gap section-gap-x">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -243,8 +243,13 @@
                         <div class="card text-center shadow-sm h-100">
                             <div class="card-body">
                                 <div class="certifications-box">
-                                    <img src="/{{ $certificate->image }}" alt="{{ $certificate->alt }}"
-                                        class="img-fluid mb-3">
+i                                    <x-optimized-image 
+                                        :src="$certificate->image" 
+                                        :alt="$certificate->alt" 
+                                        :width="38" 
+                                        :height="38" 
+                                        class="img-fluid mb-3" 
+                                    />
                                     <h5 class="card-title">{{ $certificate->title }}</h5>
                                 </div>
                             </div>
@@ -257,8 +262,13 @@
                         <div class="card text-center shadow-sm h-100">
                             <div class="card-body">
                                 <div class="certifications-box">
-                                    <img src="/{{ $registration->image }}" alt="{{ $registration->alt }}"
-                                        class="img-fluid mb-3">
+                                    <x-optimized-image 
+                                        :src="$registration->image" 
+                                        :alt="$registration->alt" 
+                                        :width="38" 
+                                        :height="38" 
+                                        class="img-fluid mb-3" 
+                                    />
                                     <p class="card-text mb-1">{!! $registration->title !!}</p>
                                 </div>
                             </div>
@@ -290,3 +300,26 @@
         </div>
     </section>
 @endsection
+
+<script>
+// Handle hash fragment scrolling
+function scrollToTeam() {
+    if (window.location.hash === '#team') {
+        const teamSection = document.getElementById('team');
+        if (teamSection) {
+            const offset = 200; // Show 200px of content above team section
+            const elementPosition = teamSection.offsetTop - offset;
+            window.scrollTo({
+                top: elementPosition,
+                behavior: 'smooth'
+            });
+        }
+    }
+}
+
+// Try multiple events to ensure scrolling works
+window.addEventListener('DOMContentLoaded', scrollToTeam);
+window.addEventListener('load', function() {
+    setTimeout(scrollToTeam, 1000);
+});
+</script>

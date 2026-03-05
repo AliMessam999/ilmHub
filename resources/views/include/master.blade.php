@@ -4,29 +4,61 @@
     <meta charset="UTF-8" />
     <meta name="theme-color" content="#003366" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Cdigital - Leading provider of ICT, Security, Energy, Software, Hydromet, Mining & Minerals solutions. 10+ years experience delivering innovative technology solutions across Pakistan and UAE." />
     <title>
       Cdigital | ICT,Security,Energy,Software ,Hydromet,Mines & Minerals
     </title>
  
+    <!-- LCP Image Preload -->
+    @if (!empty($data->slider) && isset($data->slider[0]))
+    <link rel="preload" as="image" href="/{{ $data->slider[0]->video ?? 'assets/images/default-hero.jpg' }}" fetchpriority="high">
+    @endif
 
+    <!-- Critical CSS inline -->
+    <style>
+    .banner{position:relative;height:100vh;overflow:hidden}
+    .lcp-hero-image{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;z-index:1}
+    .lcp-content{position:relative;z-index:2;height:100vh;display:flex;align-items:center;background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5))}
+    .slider-title{font-size:clamp(2rem,5vw,4rem);margin:0 0 1rem 0;font-weight:bold;line-height:1.2;color:white}
+    .container{max-width:1200px;margin:0 auto;padding:0 15px}
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;line-height:1.6}
+    .navbar{position:absolute;top:0;width:100%;z-index:1000;padding:1rem 0;transition:all 0.3s}
+    .navbar-brand img{height:40px}
+    .nav-link{color:#fff;text-decoration:none;padding:0.5rem 1rem}
+    .text-white{color:#fff!important}
+    </style>
 
     
      <link rel="icon" type="image/png" href="{{ url('assets/images/favicon.png')}}" />
-    <link rel="stylesheet" href="{{ url('assets/lib/bootstrap/bootstrap.min.css')}}" />
-    <link rel="stylesheet" href="{{ url('assets/lib/slick-1.8.1/slick/slick.css')}}" />
+    
+    <!-- Defer non-critical CSS -->
+    <link rel="preload" href="{{ url('assets/lib/bootstrap/bootstrap.min.css')}}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="{{ url('assets/lib/bootstrap/bootstrap.min.css')}}"></noscript>
+    
+    <link rel="preload" href="{{ url('css/fontawesome-minimal.css')}}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="{{ url('css/fontawesome-minimal.css')}}"></noscript>
+    <link rel="preload" href="{{ url('assets/lib/slick-1.8.1/slick/slick.css')}}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="{{ url('assets/lib/slick-1.8.1/slick/slick.css')}}"></noscript>
 
     <link
-      rel="stylesheet"
+      rel="preload"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+      as="style" onload="this.onload=null;this.rel='stylesheet'"
     />
+    <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"></noscript>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <link
-      rel="stylesheet"
-      href="{{ url('assets/lib/slick-1.8.1/slick/slick-theme.css')}}"
-    />
-    <link rel="stylesheet" href="{{ url('assets/lib/animate/animate.min.css')}}" />
-    <link rel="stylesheet" href="{{ url('assets/css/main.css')}}" />
+    <script src="{{ url('js/swiper-minimal.min.js')}}"></script>
+    <link rel="preload" href="{{ url('assets/lib/slick-1.8.1/slick/slick-theme.css')}}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="{{ url('assets/lib/slick-1.8.1/slick/slick-theme.css')}}"></noscript>
+    
+    <link rel="preload" href="{{ url('assets/lib/animate/animate.min.css')}}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="{{ url('assets/lib/animate/animate.min.css')}}"></noscript>
+    
+    <link rel="preload" href="{{ url('assets/css/main.css')}}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="{{ url('assets/css/main.css')}}"></noscript>
+    
+    <script src="{{ url('js/css-loader.js')}}" defer></script>
   </head>
   <body>
     <!-- Header section starts -->
@@ -398,11 +430,12 @@
      <!-- Footer -->
    <x-new-footer/>
    
-    <script src="{{ url('assets/lib/bootstrap/bootstrap.min.js')}}"></script>
+    <script src="{{ url('assets/lib/bootstrap/bootstrap.min.js')}}" defer></script>
     <script src="{{ url('assets/lib/jquery/jquery.min.js')}}"></script>
-    <script src="{{ url('assets/lib/fontawesome/fontawesome.js')}}"></script>
-    <script src="{{ url('assets/lib/slick-1.8.1/slick/slick.min.js')}}"></script>
+    <script src="{{ url('assets/lib/fontawesome/fontawesome.js')}}" defer></script>
 
-    <script src="{{ url('assets/js/main.js')}}"></script>
+    <script src="{{ url('assets/js/main-minimal.min.js')}}"></script>
+    <script src="{{ url('assets/js/main-essential.min.js')}}" defer></script>
+    <script src="{{ url('js/lazy-loader.min.js')}}" defer></script>
   </body>
 </html>
