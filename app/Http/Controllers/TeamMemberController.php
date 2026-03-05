@@ -15,7 +15,8 @@ class TeamMemberController extends Controller
     {
         $validator = Validator::make($request->all(), [
             'name' => ['required', Rule::unique('cd_team_members')],
-            'category_id' => ['nullable'],
+            'category_id' => ['nullable'], 
+
             'designation' => 'required',
             'division' => 'nullable|string|max:255',
             'description' => 'required',
