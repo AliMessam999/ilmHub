@@ -755,6 +755,282 @@ class CdFeatureSeeder extends Seeder
     'industry' => 'Water Resources • Public Infrastructure • Irrigation Automation',
     'image' => NULL,
   ),
+  15 => 
+  array (
+    'id' => 58,
+    'title' => '5 MW Solar Power Plant – POF Sanjwal',
+    'description' => '<h2>Powering Strategic Defence Manufacturing Through Renewable Energy</h2>
+
+<h3>How CDigital Executed a 5 MW Utility-Scale Solar Power Plant at POF Sanjwal, Supporting Energy Resilience in a High-Security Defence Environment</h3>
+
+<h3><strong>About The Client</strong></h3>
+
+<p>Pakistan Ordnance Factories is one of Pakistan&rsquo;s most critical strategic organizations, responsible for defence manufacturing, storage, and associated industrial operations. Its facilities manage large-scale production units, high-value assets, and sensitive processes that demand uninterrupted power availability, operational reliability, and strict adherence to safety and security standards. With rising energy costs and increasing operational scale, POF has progressively moved toward on-site power generation and energy diversification&mdash;particularly through renewable energy initiatives&mdash;to enhance resilience while reducing reliance on conventional grid supply.</p>
+
+<h3><strong>Challenge</strong></h3>
+
+<p>POF Sanjwal was operating within a high-security, continuously active defence manufacturing environment with substantial and uninterrupted energy requirements. The facility relied heavily on conventional power sources, exposing operations to supply instability and escalating energy costs while increasing operational risk for sensitive industrial processes. Any power disruption could directly impact production continuity, asset protection, and safety compliance. The challenge was to execute a utility-scale solar power project within an operational defence installation&mdash;without disrupting ongoing activities&mdash;while strictly adhering to approved engineering designs, quality standards, safety regulations, security protocols, and contractual timelines.</p>
+
+<h3><strong>Key Features:</strong></h3>
+
+<ul>
+	<li>5 MW utility-scale solar power plant installation</li>
+	<li>On-site renewable power generation for defence manufacturing operations</li>
+	<li>Execution within an active, high-security industrial environment</li>
+	<li>Compliance with approved engineering designs and specifications</li>
+	<li>Integration with existing electrical infrastructure</li>
+	<li>Strict adherence to safety, quality, and security standards</li>
+</ul>
+
+<h3><strong>Delivered Services:</strong></h3>
+
+<ul>
+	<li>Engineering execution and construction works</li>
+	<li>Electrical and mechanical installation of solar plant systems</li>
+	<li>Power integration and coordination with internal electrical infrastructure</li>
+	<li>Site execution management and construction scheduling</li>
+	<li>Quality assurance, inspections, and compliance documentation</li>
+	<li>Safety, environmental, and security-compliant construction practices</li>
+	<li>Coordination with main contractor and client representatives</li>
+	<li>Support during testing, commissioning, and acceptance processes</li>
+</ul>',
+    'sub_category_id' => NULL,
+    'client_name' => 'Pakistan Ordnance Factories (POF)',
+    'funded_by' => NULL,
+    'location' => 'Sanjwal, Pakistan',
+    'industry_id' => NULL,
+    'website' => 'www.pof.gov.pk',
+    'user_details' => NULL,
+    'alt' => NULL,
+    'icon' => 'zz',
+    'deleted_at' => NULL,
+    'created_at' => '2026-01-01 13:08:28',
+    'updated_at' => '2026-01-01 13:08:28',
+    'industry' => 'Strategic Defence & Manufacturing',
+    'image' => NULL,
+  ),
+  16 => 
+  array (
+    'id' => 59,
+    'title' => 'Security Verification & Biometric Access Systems for Airports Security Force (ASF)',
+    'description' => '<h2>Strengthening Aviation Security Through Biometric Verification &amp; Access Control</h2>
+
+<h3>How CDigital Delivered a Secure, Biometric-Based Verification &amp; Alarm System to Enhance Access Control and Operational Security for Airports Security Force (ASF)</h3>
+
+<p><strong>About The Client</strong><br />
+The Airports Security Force (ASF) operates under the Cabinet Secretariat (Aviation Division), Government of Pakistan, and is the primary agency responsible for aviation security across Pakistan&rsquo;s airports. ASF safeguards passengers, aircraft, airport infrastructure, and sensitive aviation assets through integrated physical security, access control, surveillance, and identity verification systems. With the expansion of air travel and evolving threat landscapes, ASF has increasingly adopted technology-enabled security mechanisms to meet national and international aviation security requirements.</p>
+
+<p><strong>Challenge</strong><br />
+Prior to the project, ASF relied on largely manual and fragmented identity verification and access-control processes, increasing the risk of unauthorized access and operational inconsistency across high-security aviation environments. Limited integration between biometric verification, alarm systems, and centralized records constrained real-time monitoring, auditability, and accountability. ASF required a secure, tamper-resistant, and scalable solution that could operate reliably in mission-critical airport environments while complying with stringent government security protocols, durability standards, and inspection requirements.</p>
+
+<p><strong>Key Features:</strong></p>
+
+<ul>
+	<li>Biometric-based identity verification mechanisms</li>
+	<li>Secure access control and verification workflows</li>
+	<li>Integrated alarm and monitoring functionality</li>
+	<li>Centralized verification and control architecture</li>
+	<li>Tamper-resistant, government-compliant hardware</li>
+	<li>Power-backup and reliability-focused system design</li>
+	<li>Warranty-backed equipment suitable for aviation security environments</li>
+</ul>
+
+<p><strong>Delivered Services:</strong></p>
+
+<ul>
+	<li>Turnkey supply of security verification and biometric equipment</li>
+	<li>Installation and system commissioning at ASF-designated locations</li>
+	<li>Integration of verification devices with alarm and monitoring components</li>
+	<li>Functional testing and acceptance through ASF inspection authorities</li>
+	<li>Delivery of documentation, warranties, and compliance records</li>
+	<li>Post-deployment assurance aligned with contractual obligations</li>
+</ul>',
+    'sub_category_id' => NULL,
+    'client_name' => 'Airports Security Force (ASF)',
+    'funded_by' => NULL,
+    'location' => 'Pakistan',
+    'industry_id' => NULL,
+    'website' => 'www.asf.gov.pk',
+    'user_details' => NULL,
+    'alt' => NULL,
+    'icon' => 'zz',
+    'deleted_at' => NULL,
+    'created_at' => '2026-01-01 13:13:54',
+    'updated_at' => '2026-01-01 13:41:47',
+    'industry' => 'Aviation Security • National Security Systems',
+    'image' => NULL,
+  ),
+  17 => 
+  array (
+    'id' => 60,
+    'title' => 'City-Wide Video Surveillance System – Gilgit City',
+    'description' => '<h2>Transforming Urban Security in Gilgit City Through Integrated Video Surveillance</h2>
+
+<h3>How CDigital Designed &amp; Deployed a City-Wide, IP-Based Surveillance Ecosystem for 24/7 Situational Awareness and Proactive Policing</h3>
+
+<h3><strong>About The Client</strong></h3>
+
+<p>The Government of Gilgit-Baltistan (GoGB) is responsible for governance, public safety, and socio-economic development across the Gilgit-Baltistan region. Owing to its strategic geographic location, complex terrain, and expanding urban centers, GoGB places strong emphasis on public security, surveillance, and situational awareness to safeguard citizens, protect critical infrastructure, and enable effective law-enforcement coordination. With increasing urban activity in Gilgit City, the Government recognized the need to transition from manpower-intensive monitoring toward a technology-driven, centrally managed surveillance framework to support modern policing and city governance.</p>
+
+<h3><strong>Challenge</strong></h3>
+
+<p>Prior to the project, Gilgit City lacked real-time visibility across key public spaces, entry and exit points, and sensitive locations, resulting in fragmented monitoring and delayed incident response. The absence of centralized surveillance and continuous recording limited proactive policing, evidence collection, and coordinated law-enforcement operations&mdash;particularly across geographically dispersed and terrain-challenged urban areas. Given the city&rsquo;s sensitive security environment, the challenge was to deploy a reliable, scalable, and centrally managed surveillance system capable of continuous operation, rapid incident response, and long-term data retention while supporting multiple control rooms and future expansion.</p>
+
+<h3><strong>Key Features:</strong></h3>
+
+<ul>
+	<li>City-wide IP-based video surveillance coverage</li>
+	<li>Fixed, PTZ, and panoramic CCTV camera deployment</li>
+	<li>&ge;30 days continuous video recording and storage</li>
+	<li>Multi-control-room command and monitoring architecture</li>
+	<li>360-degree situational awareness at selected strategic points</li>
+	<li>Secure networking and data transmission infrastructure</li>
+	<li>First wireless surveillance system deployed in Gilgit-Baltistan</li>
+	<li>85 CCTV cameras installed across Gilgit City</li>
+</ul>
+
+<h3><strong>Delivered Services:</strong></h3>
+
+<ul>
+	<li>Detailed system design and engineering aligned with city topology</li>
+	<li>Supply and installation of CCTV cameras and field equipment</li>
+	<li>Deployment of recording, storage, and VMS infrastructure</li>
+	<li>Integration of cameras, control rooms, and centralized monitoring</li>
+	<li>Configuration of PTZ presets and panoramic monitoring zones</li>
+	<li>Testing, commissioning, and system validation</li>
+	<li>Operator training, SOPs, manuals, and maintenance planning</li>
+</ul>',
+    'sub_category_id' => NULL,
+    'client_name' => 'Government of Gilgit-Baltistan - Home & Prisons Department',
+    'funded_by' => NULL,
+    'location' => 'Gilgit-Baltistan, Pakistan',
+    'industry_id' => NULL,
+    'website' => 'www.gilgitbaltistan.gov.pk',
+    'user_details' => NULL,
+    'alt' => NULL,
+    'icon' => 'zz',
+    'deleted_at' => NULL,
+    'created_at' => '2026-01-01 13:21:13',
+    'updated_at' => '2026-01-01 13:21:13',
+    'industry' => 'Public Security • Smart City Infrastructure',
+    'image' => NULL,
+  ),
+  18 => 
+  array (
+    'id' => 61,
+    'title' => 'Integrated Security & Surveillance System for Pakistan Ordnance Factories (POF)',
+    'description' => '<h2>Securing Pakistan&rsquo;s Strategic Defence Manufacturing Infrastructure</h2>
+
+<h3>How CDigital Delivered a Multi-Layered, Integrated Security &amp; Surveillance Ecosystem Across Pakistan Ordinance Factories&rsquo; Critical Industrial Facilities</h3>
+
+<h3><strong>About The Client</strong></h3>
+
+<p>Pakistan Ordnance Factories (POF) is a premier defence manufacturing organization of Pakistan, responsible for the production, storage, and handling of strategic defence equipment and materials. POF operates multiple large-scale industrial installations across Wah, Sanjwal, and Havelian, employing thousands of personnel and managing high-value, sensitive inventories.</p>
+
+<p>Given the strategic importance of its facilities, POF maintains strict security protocols and continuously enhances its security posture to safeguard critical assets, personnel, and sensitive operations against evolving threats.</p>
+
+<h3><strong>Challenge</strong></h3>
+
+<p>Prior to the project, POF was operating with outdated and fragmented security infrastructure that relied heavily on manual, manpower-intensive measures. Limited real-time visibility across entry points, production facilities, storage areas, and internal circulation zones constrained proactive threat detection and timely response. The absence of centralized monitoring, recording, and analytics further increased exposure to security risks across geographically dispersed and highly sensitive defence manufacturing facilities. The challenge was to establish a modern, integrated, and scalable security framework capable of providing continuous situational awareness, deterrence, and rapid response while meeting stringent defence-sector security requirements.</p>
+
+<h3><strong>Key Features:</strong></h3>
+
+<ul>
+	<li>Integrated, multi-layered security architecture across three POF locations</li>
+	<li>Fixed CCTV and high-speed PTZ (speed dome) camera surveillance</li>
+	<li>Centralized and zoned monitoring through control rooms</li>
+	<li>Vehicle and personnel screening at all major access points</li>
+	<li>Under Vehicle Scanning Systems (UVSS) at critical gates</li>
+	<li>Walk-through metal detection gates and handheld detectors</li>
+	<li>Road blockers for controlled vehicle access</li>
+	<li>Centralized recording, live viewing, and remote monitoring capability</li>
+</ul>
+
+<h3><strong>Delivered Services:</strong></h3>
+
+<ul>
+	<li>Detailed security system design and zoning architecture</li>
+	<li>Supply and installation of CCTV, PTZ cameras, and DVR systems</li>
+	<li>Deployment of UVSS, metal detectors, and road blockers</li>
+	<li>Development of central and sub-control rooms with display systems</li>
+	<li>Fiber-optic and structured cabling infrastructure deployment</li>
+	<li>Integration of surveillance, access control, and monitoring systems</li>
+	<li>System testing, commissioning, and acceptance support</li>
+	<li>Operator training, system handover, and documentation</li>
+</ul>',
+    'sub_category_id' => NULL,
+    'client_name' => 'Pakistan Ordinance Factories (POF)',
+    'funded_by' => NULL,
+    'location' => 'Wah • Sanjwal • Havelian',
+    'industry_id' => NULL,
+    'website' => 'www.pof.gov.pk',
+    'user_details' => NULL,
+    'alt' => NULL,
+    'icon' => 'zz',
+    'deleted_at' => NULL,
+    'created_at' => '2026-01-01 13:26:41',
+    'updated_at' => '2026-01-01 13:26:41',
+    'industry' => 'Defence Manufacturing • National Security',
+    'image' => NULL,
+  ),
+  19 => 
+  array (
+    'id' => 62,
+    'title' => '3.05 MW Grid-Tied Solar Power Systems for PCSIR Laboratories',
+    'description' => '<h2>Powering Pakistan&rsquo;s National Research Infrastructure with Clean Energy</h2>
+
+<h3>How CDigital Delivered a Multi-Site, Grid-Tied Solar Energy Ecosystem to Enable Sustainable Operations Across PCSIR Laboratories</h3>
+
+<h3><strong>About The Client</strong></h3>
+
+<p>The Pakistan Council of Scientific and Industrial Research (PCSIR) is Pakistan&rsquo;s premier national research organization, mandated to promote scientific innovation, applied research, and industrial development. PCSIR operates a nationwide network of laboratories supporting materials science, energy, biotechnology, food sciences, and industrial testing.</p>
+
+<p>As a large, energy-intensive public research institution with facilities in Lahore, Peshawar, and Karachi, PCSIR has increasingly focused on energy efficiency, sustainability, and cost optimization in line with national energy conservation and clean-energy objectives.</p>
+
+<h3><strong>Challenge</strong></h3>
+
+<p>Prior to the project, PCSIR faced high and rising electricity consumption across its laboratory and support facilities, coupled with increasing exposure to grid tariff volatility and dependence on conventional power supply. Sensitive scientific equipment required reliable and uninterrupted power, while government directives mandated the adoption of renewable energy and conservation measures. The challenge was to deploy a technically robust, regulation-compliant solar solution across multiple cities&mdash;each with distinct site conditions&mdash;while ensuring seamless integration with existing electrical infrastructure, operational safety, and long-term performance.</p>
+
+<h3><strong>Key Features:</strong></h3>
+
+<ul>
+	<li>3.05 MW total grid-tied solar PV capacity across three cities</li>
+	<li>Multi-site deployment: Lahore, Peshawar, and Karachi</li>
+	<li>High-efficiency Tier-I monocrystalline solar PV modules</li>
+	<li>On-grid configuration with net-metering readiness</li>
+	<li>Advanced monitoring, data logging, and performance dashboards</li>
+	<li>Robust electrical protection, earthing, and lightning systems</li>
+	<li>Designed for high availability, safety, and long-term performance</li>
+</ul>
+
+<h3><strong>Delivered Services:</strong></h3>
+
+<ul>
+	<li>Turnkey solar EPC delivery across all PCSIR sites</li>
+	<li>Detailed system design and site-specific engineering</li>
+	<li>Civil works for mounting structures and electrical rooms</li>
+	<li>Supply and installation of PV modules, inverters, and BOS equipment</li>
+	<li>Electrical integration with existing distribution systems</li>
+	<li>Net-metering documentation and regulatory coordination</li>
+	<li>Testing, commissioning, and performance validation</li>
+	<li>Training of PCSIR staff and delivery of O&amp;M manuals</li>
+	<li>Warranty-backed deployment with long-term service readiness</li>
+</ul>',
+    'sub_category_id' => NULL,
+    'client_name' => 'Pakistan Council of Scientific and Industrial Research (PCSIR)',
+    'funded_by' => NULL,
+    'location' => 'Lahore • Peshawar • Karachi',
+    'industry_id' => NULL,
+    'website' => 'www.pcsir.gov.pk',
+    'user_details' => NULL,
+    'alt' => NULL,
+    'icon' => 'zz',
+    'deleted_at' => NULL,
+    'created_at' => '2026-01-01 13:33:01',
+    'updated_at' => '2026-01-01 13:33:01',
+    'industry' => 'Renewable Energy • Public Sector Infrastructure',
+    'image' => NULL,
+  ),
 );
         DB::table('cd_features')->insert($data);
     }
