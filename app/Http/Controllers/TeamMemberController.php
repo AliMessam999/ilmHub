@@ -15,9 +15,9 @@ class TeamMemberController extends Controller
     {
         $validator = Validator::make($request->all(), [
             'name' => ['required', Rule::unique('cd_team_members')],
-            'category_id' => ['required'],
+            'category_id' => ['nullable'],
             'designation' => 'required',
-            'division' => 'nullable|string|max:255',   // ← NULLABLE
+            'division' => 'nullable|string|max:255',
             'description' => 'required',
             'image' => ['required', Rule::imageFile(), 'max:500'],
         ]);
@@ -37,8 +37,8 @@ class TeamMemberController extends Controller
         $career = new CdTeamMember();
         $career->name = $request->name;
         $career->designation = $request->designation;
-        $career->division = $request->division ?? null;   // ← SAVING NULLABLE
-        $career->category_id = $request->category_id;
+        $career->division = $request->division ?? null;
+        $career->category_id = $request->category_id ?? null;
         $career->description = $request->description;
         $career->alt = $request->alt;
         $career->image = $path;
