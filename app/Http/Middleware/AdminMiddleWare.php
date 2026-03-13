@@ -33,7 +33,8 @@ class AdminMiddleWare
             '127.0.0.1',
             '2400:adcc:110d:bb01:d90f:a747:9c21:cedf',
             '2407:aa80:314:bdf2:25fe:aa5e:214f:d8cc',
-            '2407:aa80:314:caff:f528:f090:92b4:4c91'
+            '2407:aa80:314:caff:f528:f090:92b4:4c91',
+            '119.156.233.61'
         ];
         Log::info('AdminMiddleWare IP Check: ' . $publicIp);
         if (!in_array($publicIp, $allowedIps)) {
