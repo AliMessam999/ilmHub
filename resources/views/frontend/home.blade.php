@@ -446,7 +446,7 @@
                                                             Case Study
                                                         </a>
                                                     </span>
-                                                </div>
+                                                </div>  
                                                 <h3 class="title" style="font-size: 16px;text-align: center;">
                                                     <a href="/case-study/{{ $caseStudy->slug ?? $caseStudy->title }}">
                                                         {{ $firstH3 }}
