@@ -652,7 +652,7 @@
                                     <div class="form-input">
                                         <div class="tj-nice-select-box">
                                             <div class="tj-select">
-                                                <select name="subject" required>
+                                                <select name="subject" class="w-100" required>
                                                     <option value="">Choose an option</option>
                                                     <option value="Business Strategy">Business Strategy</option>
                                                     <option value="Customer Experience">Customer Experience</option>
