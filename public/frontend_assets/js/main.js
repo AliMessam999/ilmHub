@@ -238,6 +238,37 @@ Progressbar js
 		}
 	});
 
+	// Partners slider with multiple cards
+	if ($(".partners-slider").length > 0) {
+		var partnersSlider = new Swiper(".partners-slider", {
+			slidesPerView: 2,
+			spaceBetween: 30,
+			loop: true,
+			speed: 10000,
+			freeMode: true,
+			allowTouchMove: false,
+			autoplay: {
+				delay: 0,
+				disableOnInteraction: false,
+			},
+			freeModeMomentum: false,
+			breakpoints: {
+				576: {
+					slidesPerView: 3,
+					spaceBetween: 30,
+				},
+				768: {
+					slidesPerView: 4,
+					spaceBetween: 40,
+				},
+				992: {
+					slidesPerView: 5,
+					spaceBetween: 50,
+				},
+			},
+		});
+	}
+
 
 	////////////////////////////////////////////////////
 	// Marquee slider Js
