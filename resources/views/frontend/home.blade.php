@@ -191,7 +191,7 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            const clientSlider = document.querySelector('.client-slider-1');
+            const clientSlider = document.querySelector('.partners-slider');
 
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
@@ -491,13 +491,7 @@
                     </div>
                 </div>
                 <div class="col-12">
-                    <!-- <div class="client-content style-2 wow fadeIn" data-wow-delay=".3s">
-                                  <h5 class="sec-title">Join Over <span class="client-numbers">1000+</span> Companies with
-                                    <span class="client-text">Cdigital</span> Here
-                                  </h5>
-                                </div> -->
-                    <!-- <span class="sub-title wow fadeInUp" data-wow-delay=".3s">Our Departments</span> -->
-                    <div class="swiper client-slider client-slider-1 wow fadeInUp" data-wow-delay=".3s">
+                    <div class="swiper client-slider partners-slider wow fadeInUp" data-wow-delay=".1s">
                         <div class="swiper-wrapper mb-5">
                             @foreach ($data->partners as $client)
                                 <div class="swiper-slide client-item">
@@ -652,7 +646,7 @@
                                     <div class="form-input">
                                         <div class="tj-nice-select-box">
                                             <div class="tj-select">
-                                                <select name="subject" required>
+                                                <select name="subject" class="w-100" required>
                                                     <option value="">Choose an option</option>
                                                     <option value="Business Strategy">Business Strategy</option>
                                                     <option value="Customer Experience">Customer Experience</option>
@@ -749,7 +743,7 @@
                     prevEl: ".cs-prev",
                 },
                 autoplay: {
-                delay: 3000,
+                delay: 1000,
                 disableOnInteraction: false,
             },
                 pagination: {
