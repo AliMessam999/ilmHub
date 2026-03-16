@@ -491,7 +491,7 @@
                     </div>
                 </div>
                 <div class="col-12">
-                    <div class="swiper client-slider partners-slider wow fadeInUp" data-wow-delay=".1s">
+                    <div class="swiper client-slider partners-slider wow fadeInUp" data-wow-delay=".4s">
                         <div class="swiper-wrapper mb-5">
                             @foreach ($data->partners as $client)
                                 <div class="swiper-slide client-item">
@@ -743,7 +743,7 @@
                     prevEl: ".cs-prev",
                 },
                 autoplay: {
-                delay: 1000,
+                delay: 5000,
                 disableOnInteraction: false,
             },
                 pagination: {
@@ -752,6 +752,7 @@
                     type: 'bullets',
                 },
             });
+
         }
     </script>
 @endpush
