@@ -108,14 +108,18 @@ START: Theme Default CSS
    */
   --tj-color-common-white: #ffffff;
   --tj-color-common-black: #000000;
-  --tj-color-heading-primary: #0c1e21;
+  /* Text Blue Color */
+  --tj-color-heading-primary: #1A2B4C; 
+  /* --tj-color-heading-primary: #0c1e21; */
   --tj-color-text-body: #364e52;
   --tj-color-text-body-2: #aaafc2;
   /* --tj-color-text-body-2: #a9b8b8; */
   --tj-color-text-body-3: #67787a;
-  --tj-color-text-body-4: #18292c;
+  /* Text Blue Color */
+  --tj-color-text-body-4: #1A2B4C;
+  /* --tj-color-text-body-4: #18292c; */
   --tj-color-text-body-5: rgba(255, 255, 255, 0.8);
-  --tj-color-theme-primary: #DB8801;
+  --tj-color-theme-primary: #FE6B35;
   /* --tj-color-theme-primary: #df580e; */
   /* --tj-color-theme-primary: #fa4848; */
   --tj-color-theme-bg: #fff;
@@ -123,9 +127,17 @@ START: Theme Default CSS
   /* --tj-color-theme-bg: #d8e5e5; */
   --tj-color-theme-bg-2: #cee0e0;
   /* --tj-color-theme-bg-2: #cee0e0; */
-  --tj-color-theme-bg-3: #202e30;
-  --tj-color-theme-dark: #2a2e3f;
-  --tj-color-theme-dark-2: #262b3f;
+  /* Text Blue Color */
+  --tj-color-theme-bg-3: #1A2B4C;
+  /* --tj-color-theme-bg-3: #202e30; */
+  /* Text Blue Color */
+  --tj-color-theme-dark: #1A2B4C;
+  /* --tj-color-theme-dark: #2a2e3f; */
+  /* Text Blue Color */
+  --tj-color-theme-dark-2: #1A2B4C;
+  /* --tj-color-theme-dark-2: #262b3f; */
+  /* Text Blue Color */
+  --tj-color-theme-dark-2: #1A2B4C;
   /* --tj-color-theme-dark-2: #18292c; */
   --tj-color-theme-dark-3: #364e52;
   --tj-color-theme-dark-4: #67787a;
@@ -885,7 +897,9 @@ only screen and (min-width: 576px) and (max-width: 767px),
   width: 42px;
   height: 42px;
   overflow: hidden;
-  background-color: var(--tj-color-theme-dark);
+  /* Text Blue Color */
+  background-color: #1A2B4C;
+  /* background-color: #1A2B4C; */
   border-radius: 50%;
 }
 
@@ -899,7 +913,8 @@ only screen and (min-width: 576px) and (max-width: 767px),
 }
 
 .tj-primary-btn.btn-dark {
-  background-color: var(--tj-color-theme-dark);
+  /* Text Blue Color */
+  background-color: #1A2B4C;
 }
 
 .tj-primary-btn.btn-dark .btn-icon {
@@ -1001,7 +1016,9 @@ only screen and (min-width: 576px) and (max-width: 767px),
   width: 30px;
   height: 30px;
   overflow: hidden;
-  background-color: var(--tj-color-theme-dark);
+  /* Text Blue Color */
+  background-color: #1A2B4C;
+  /* background-color: #1A2B4C; */
   border-radius: 50%;
 }
 
@@ -2462,6 +2479,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
 }
 
 .mainmenu ul>li>.mega-menu-pages .mega-menu-list .mega-menu-title {
+  /* color: pink !important; */
   color: var(--tj-color-theme-primary) !important;
   margin-top: 10px;
 }
@@ -2502,7 +2520,10 @@ only screen and (min-width: 576px) and (max-width: 767px),
 .mainmenu ul>li>.mega-menu-pages .mega-menu-list a,
 .mobile_menu ul>li>.mega-menu-pages .mega-menu-list a {
   font-weight: var(--tj-fw-medium);
-  color: var(--tj-color-common-black-2);
+  /* color: pink; */
+  /* Text Blue Color */
+  color: #1A2B4C;
+  /* color: var(--tj-color-common-black-2); */
   padding: 12px 0;
   line-height: 1;
   position: relative;
@@ -3009,7 +3030,8 @@ only screen and (min-width: 576px) and (max-width: 767px),
 }
 
 .hamburger_menu .mean-container .mean-nav ul li .mega-menu-pages li .mega-menu-title::after {
-  background-color: var(--tj-color-theme-dark);
+  /* Text Blue Color */
+  background-color: #1A2B4C;
 }
 
 .hamburger_menu .mean-container .mean-nav ul li .mega-menu-pages li a:not(.tj-primary-btn) {
@@ -3434,7 +3456,8 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 }
 
 .subscribe-form input[type=checkbox]:checked {
-  background-color: var(--tj-color-theme-dark);
+  /* Text Blue Color */
+  background-color: #1A2B4C;
 }
 
 .subscribe-form input[type=checkbox]:checked::before {
@@ -3733,7 +3756,9 @@ only screen and (min-width: 576px) and (max-width: 767px),
 }
 
 .tj-footer-section.footer-2 {
-  background-color: var(--tj-color-theme-dark);
+  /* Text Blue Color */
+  background-color: #1A2B4C;
+  /* background-color: #1A2B4C; */
   padding-top: 100px;
 }
 
@@ -4014,7 +4039,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 }
 
 .tj-footer-section.footer-3 {
-  background-color: var(--tj-color-theme-dark);
+  background-color: #1A2B4C;
   position: relative;
   z-index: 1;
   padding-top: 0;
@@ -4549,7 +4574,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
 }
 
 .hamburger_bg {
-  background-color: var(--tj-color-theme-dark);
+  background-color: #1A2B4C;
   height: 100%;
   width: 100%;
   position: absolute;
@@ -5015,7 +5040,8 @@ START: Preloader CSS
   inset-inline-start: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--tj-color-theme-dark);
+  /* background-color: pink; */
+  background-color: #1A2B4C;
   z-index: 100000000;
   color: #fdfdf9;
   -webkit-user-select: none;
@@ -5040,7 +5066,8 @@ START: Preloader CSS
   inset-inline-start: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--tj-color-theme-dark);
+  /* background-color: pink; */
+  background-color: #1A2B4C;
   z-index: 99999999;
   opacity: 1;
   -webkit-animation: tj-fade-out 2s forwards;
@@ -6224,7 +6251,8 @@ only screen and (min-width: 768px) and (max-width: 991px) {
   }
 
   .widget-subscribe-3 .subscribe-form button .btn-text {
-    color: var(--tj-color-heading-primary);
+    color: #1A2B4C;
+    /* color: var(--tj-color-heading-primary); */
   }
 }
 
@@ -6241,7 +6269,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 }
 
 .widget-subscribe-3 .subscribe-form input[type=checkbox]:checked {
-  background-color: var(--tj-color-theme-dark);
+  background-color: #1A2B4C;
   border-color: var(--tj-color-theme-dark);
 }
 
@@ -6344,7 +6372,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
 }
 
 .tj-copyright-area-4 .social-links.style-2 ul li a:hover {
-  background-color: var(--tj-color-theme-dark);
+  background-color: #1A2B4C;
 }
 
 .tj-copyright-area-4 .social-links.style-2 ul li a:hover i {
@@ -8570,7 +8598,8 @@ START: Heading CSS
   -ms-flex-align: center;
   align-items: center;
   gap: 4px;
-  color: var(--tj-color-heading-primary);
+  color: #1A2B4C;
+  /* color: var(--tj-color-heading-primary); */
   font-size: 14px;
   line-height: 1;
   letter-spacing: 1.4px;
@@ -8836,7 +8865,7 @@ only screen and (min-width: 992px) and (max-width: 1199px) {
 }
 
 .banner-left-box {
-  background-color: var(--tj-color-theme-dark);
+  background-color: #1A2B4C;
   border-radius: 12px;
   padding: 70px;
   width: calc(50% - 15px);
@@ -9384,7 +9413,7 @@ only screen and (min-width: 992px) and (max-width: 1199px) {
 }
 
 .customers-text {
-  color: var(--tj-color-text-body);
+  /* color: var(--tj-color-text-body); */
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0;
@@ -9463,7 +9492,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
   inset-inline-start: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--tj-color-theme-dark);
+  background-color: #1A2B4C;
   opacity: 0.25;
 }
 
@@ -9936,7 +9965,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
 }
 
 .choose-box:hover .btn-icon {
-  background-color: var(--tj-color-theme-dark);
+  background-color: #1A2B4C;
 }
 
 .choose-box:hover .btn-text,
@@ -10576,7 +10605,8 @@ only screen and (min-width: 992px) and (max-width: 1199px) {
 }
 
 .experience-box .sub-title {
-  color: var(--tj-color-theme-primary);
+  color: #1A2B4C;
+  /* color: var(--tj-color-theme-primary); */
   font-weight: var(--tj-fw-medium);
 }
 
@@ -10750,7 +10780,7 @@ only screen and (min-width: 992px) and (max-width: 1199px) {
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--tj-color-theme-dark);
+  background-color: #1A2B4C;
   opacity: 0.25;
 }
 
@@ -10936,7 +10966,7 @@ only screen and (min-width: 992px) and (max-width: 1199px) {
 }
 
 .customers-box.style-2 ul li span {
-  background-color: var(--tj-color-theme-dark);
+  background-color: #1A2B4C;
 }
 
 .customers-box.style-2 .customers-text {
@@ -11118,7 +11148,8 @@ only screen and (min-width: 992px) and (max-width: 1199px) {
 START: Services CSS
 ----------------------------------------*/
 .tj-service-section {
-  background-color: var(--tj-color-theme-dark-2);
+  background-color: #1A2B4C;
+  /* background-color: var(--tj-color-theme-dark-2); */
   border-radius: 12px;
   position: relative;
   z-index: 1;
@@ -11273,7 +11304,7 @@ START: Services CSS
 .service-item.style-1 {
   border: 0;
   padding: 0;
-  background-color: var(--tj-color-theme-dark);
+  background-color: #1A2B4C;
   position: relative;
   overflow: hidden;
   height: 450px;
@@ -11562,7 +11593,8 @@ only screen and (min-width: 768px) and (max-width: 991px),
 }
 
 .service-item.style-2:hover {
-  background-color: var(--tj-color-theme-dark-2);
+  background-color: #1A2B4C;
+  /* background-color: var(--tj-color-theme-dark-2); */
   border-color: var(--tj-color-theme-primary);
 }
 
@@ -12113,7 +12145,8 @@ START: Project CSS
 }
 
 .tj-project-section-3 {
-  background-color: var(--tj-color-theme-dark);
+  background-color: #1A2B4C;
+  /* background-color: #1A2B4C; */
   border-radius: 12px;
   position: relative;
   overflow: hidden;
@@ -13095,7 +13128,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
   inset-inline-start: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--tj-color-theme-dark);
+  background-color: #1A2B4C;
   opacity: 0.25;
 }
 
@@ -13736,7 +13769,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
   inset-inline-start: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--tj-color-theme-dark);
+  background-color: #1A2B4C;
   opacity: 0.25;
 }
 
@@ -13794,7 +13827,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: var(--tj-color-theme-dark);
+  background-color: #1A2B4C;
   color: var(--tj-color-common-white);
   font-size: 20px;
   height: 52px;
@@ -14016,7 +14049,7 @@ START: Blog CSS
 
 .blog-item .blog-thumb::before {
   content: "";
-  background-color: var(--tj-color-theme-dark);
+  background-color: #1A2B4C;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -14067,6 +14100,7 @@ only screen and (min-width: 992px) and (max-width: 1199px),
   background-repeat: no-repeat;
   background-position: 0 85%;
   display: inline;
+  color: #1A2B4C;
 }
 
 .blog-item .blog-content .title a:hover {
@@ -14429,7 +14463,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 }
 
 .tj-pagination ul li .page-numbers.current {
-  background-color: var(--tj-color-theme-dark);
+  background-color: #1A2B4C;
   color: var(--tj-color-common-white);
   border-color: var(--tj-color-theme-dark);
 }
@@ -15067,7 +15101,8 @@ only screen and (min-width: 576px) and (max-width: 767px),
 START: Contact CSS
 ----------------------------------------*/
 .tj-contact-section {
-  background-color: var(--tj-color-theme-dark);
+  background-color: #1A2B4C;
+  /* background-color: #1A2B4C; */
   border-radius: 12px;
   position: relative;
   z-index: 1;
@@ -16165,7 +16200,8 @@ only screen and (min-width: 576px) and (max-width: 767px),
 .tj-slider-item {
   height: 600px;
   min-height: 600px;
-  background-color: #0c1e21;
+  background-color: #1A2B4C;
+  /* background-color: #0c1e21; */
   position: relative;
   z-index: 1;
 }
@@ -16421,7 +16457,7 @@ only screen and (min-width: 992px) and (max-width: 1199px) {
   top: 0;
   inset-inline-start: 0;
   border-radius: 6px;
-  background-color: var(--tj-color-theme-dark);
+  background-color: #1A2B4C;
   opacity: 0;
 }
 
@@ -16789,7 +16825,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
   inset-inline-start: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--tj-color-theme-dark);
+  background-color: #1A2B4C;
   opacity: 0;
   border-radius: 10px;
   z-index: -1;
@@ -17091,7 +17127,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
   width: 24px;
   height: 24px;
   font-size: 14px;
-  background-color: var(--tj-color-theme-dark);
+  background-color: #1A2B4C;
 }
 
 .team-item-wrap .team-item .social-links ul li a i {
@@ -19220,8 +19256,8 @@ only screen and (min-width: 992px) and (max-width: 1199px) {
 
   .blog-text li::before {
     content: "\e911";
-    color: red;
-    background: #DB8801;
+    color: #1A2B4C;
+    background: #FE6B35;
     font-family: "bexon-icons" !important;
     position: absolute;
     /* top: 12px; Adjusted for smaller text */
@@ -20005,7 +20041,7 @@ START: Animate CSS
 START: Hero CSS
 ----------------------------------------*/
 .h4-banner-section {
-  background-color: var(--tj-color-theme-dark);
+  background-color: #1A2B4C;
   border-radius: 12px;
   padding: 0 80px;
   position: relative;
@@ -20438,7 +20474,7 @@ START: Choose CSS
   inset-inline-start: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--tj-color-theme-dark);
+  background-color: #1A2B4C;
   opacity: 0.7;
   z-index: -1;
 }
@@ -20631,7 +20667,7 @@ START: Services CSS
 }
 
 .service-item.style-5 {
-  background-color: var(--tj-color-theme-dark);
+  background-color: #1A2B4C;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -21829,7 +21865,7 @@ only screen and (min-width: 992px) and (max-width: 1199px) {
 
 .tj-careers:hover {
   border-color: var(--tj-color-theme-dark);
-  background-color: var(--tj-color-theme-dark);
+  background-color: #1A2B4C;
 }
 
 .tj-careers:hover .tj-careers-icon {
@@ -22552,7 +22588,7 @@ START: Theme Header CSS
 START: Hero CSS
 ----------------------------------------*/
 .h5-banner-section {
-  background-color: var(--tj-color-theme-dark);
+  background-color: #1A2B4C;
   border-radius: 12px;
   position: relative;
   overflow: hidden;
@@ -23067,7 +23103,7 @@ START: Services CSS
 }
 
 .service-item.style-6:hover .text-btn .btn-icon {
-  background-color: var(--tj-color-theme-dark);
+  background-color: #1A2B4C;
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px),
@@ -23082,7 +23118,7 @@ START: Services CSS
 START: Home 5 About CSS
 ----------------------------------------*/
 .h5-about {
-  background-color: var(--tj-color-theme-dark);
+  background-color: #1A2B4C;
   border-radius: 12px;
   position: relative;
   overflow: hidden;
@@ -23489,7 +23525,7 @@ START: Working process CSS
 }
 
 .h5-working-process {
-  background-color: var(--tj-color-theme-dark);
+  background-color: #1A2B4C;
   border-radius: 12px;
   position: relative;
   z-index: 1;
@@ -23593,7 +23629,7 @@ only screen and (min-width: 576px) and (max-width: 767px) {
   border: 1px dashed var(--tj-color-border-2);
   border-radius: 50px;
   color: var(--tj-color-common-white);
-  background-color: var(--tj-color-theme-dark);
+  background-color: #1A2B4C;
   margin-bottom: 0;
   position: absolute;
   -webkit-transition: all 0.2s 0.3s;
@@ -24052,7 +24088,7 @@ START: Pricing CSS
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
   padding: 6px;
-  background-color: var(--tj-color-theme-dark);
+  background-color: #1A2B4C;
   border-radius: 100px;
   gap: 0px;
 }
@@ -24098,7 +24134,7 @@ START: Pricing CSS
 }
 
 .h5-pricing-box-wrapper {
-  background-color: var(--tj-color-theme-dark);
+  background-color: #1A2B4C;
   border-radius: 12px;
   padding: 30px;
   position: relative;
@@ -24157,7 +24193,7 @@ START: Pricing CSS
 }
 
 .h5-pricing-box .pricing-btn a:hover .btn-icon {
-  background-color: var(--tj-color-theme-dark);
+  background-color: #1A2B4C;
 }
 
 .h5-pricing-box.active .package-name,
@@ -25080,7 +25116,7 @@ only screen and (min-width: 576px) and (max-width: 767px) {
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--tj-color-theme-dark);
+  background-color: #1A2B4C;
   opacity: 0.3;
   z-index: 1;
 }
@@ -25233,7 +25269,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
 START: Home 5 About CSS
 ----------------------------------------*/
 .h6-about {
-  background-color: var(--tj-color-theme-dark);
+  background-color: #1A2B4C;
   border-radius: 12px;
   position: relative;
   overflow: hidden;
@@ -25542,7 +25578,7 @@ only screen and (min-width: 992px) and (max-width: 1199px),
 /* !END: Service CSS */
 /* START: Case Study CSS */
 .h6-project {
-  background-color: var(--tj-color-theme-dark);
+  background-color: #1A2B4C;
   border-radius: 12px;
   position: relative;
   overflow: hidden;
@@ -26271,7 +26307,7 @@ START: Award CSS
 START: Testimonial CSS
 ----------------------------------------*/
 .h6-testimonial {
-  background-color: var(--tj-color-theme-dark);
+  background-color: #1A2B4C;
   position: relative;
   z-index: 1;
   border-radius: 12px;
@@ -26341,7 +26377,7 @@ START: Testimonial CSS
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--tj-color-theme-dark);
+  background-color: #1A2B4C;
   opacity: 0.3;
   z-index: 1;
 }
@@ -27435,7 +27471,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
 }
 
 .h7-service-item:hover .h7-service-action .text-btn .btn-icon {
-  background-color: var(--tj-color-theme-dark);
+  background-color: #1A2B4C;
   border: 1px solid var(--tj-color-theme-dark);
 }
 
@@ -27448,7 +27484,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
 START: Testimonial CSS
 ----------------------------------------*/
 .h7-testimonial {
-  background-color: var(--tj-color-theme-dark);
+  background-color: #1A2B4C;
   position: relative;
   z-index: 1;
   border-radius: 12px;
@@ -27472,7 +27508,7 @@ START: Testimonial CSS
 .h7-testimonial-wrapper .slider-next,
 .h7-testimonial-wrapper .slider-prev {
   border-color: var(--tj-color-border-2);
-  background-color: var(--tj-color-theme-dark);
+  background-color: #1A2B4C;
   position: absolute;
   top: calc(50% - 31.5px);
   inset-inline-start: 0;
@@ -27699,7 +27735,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
 START: Team CSS
 ----------------------------------------*/
 .h7-team {
-  background-color: var(--tj-color-theme-dark);
+  background-color: #1A2B4C;
   position: relative;
   z-index: 1;
   border-radius: 12px;
@@ -28830,7 +28866,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
   width: 160px;
   inset-inline-end: 0;
   bottom: 60px;
-  background-color: var(--tj-color-theme-dark);
+  background-color: #1A2B4C;
   border-radius: 100%;
   color: var(--tj-color-common-white);
   font-weight: var(--tj-fw-sbold);
@@ -29125,7 +29161,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--tj-color-theme-dark);
+  background-color: #1A2B4C;
   opacity: 0.15;
   mix-blend-mode: Color;
   z-index: 1;
@@ -29426,7 +29462,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
   -ms-flex-negative: 0;
   flex-shrink: 0;
   width: 100%;
-  background-color: var(--tj-color-theme-dark);
+  background-color: #1A2B4C;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
 }
@@ -29582,7 +29618,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 
 .h8-project-wrapper .h4-project-item:hover .project-content .tji-icon-btn {
   border-color: var(--tj-color-theme-dark);
-  background-color: var(--tj-color-theme-dark);
+  background-color: #1A2B4C;
 }
 
 .h8-project-wrapper .h4-project-item:hover .project-content .tji-icon-btn i {
@@ -29627,7 +29663,7 @@ START: Countup CSS
   inset-inline-start: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--tj-color-theme-dark);
+  background-color: #1A2B4C;
   opacity: 0.25;
 }
 
@@ -31174,7 +31210,7 @@ only screen and (min-width: 576px) and (max-width: 767px) {
   inset-inline-start: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--tj-color-theme-dark);
+  background-color: #1A2B4C;
   opacity: 0.75;
   z-index: -1;
 }
@@ -31189,7 +31225,7 @@ only screen and (min-width: 576px) and (max-width: 767px) {
 START: Service CSS
 ----------------------------------------*/
 .h9-service {
-  background-color: var(--tj-color-theme-dark);
+  background-color: #1A2B4C;
   position: relative;
   z-index: 0;
   border-radius: 12px;
@@ -31387,7 +31423,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
   display: flex;
   gap: 15px;
   margin-bottom: 60px;
-  background-color: var(--tj-color-theme-dark);
+  background-color: #1A2B4C;
   padding-top: 120px;
   z-index: 1;
 }
@@ -31562,7 +31598,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
 }
 
 .h9-about {
-  background-color: var(--tj-color-theme-dark);
+  background-color: #1A2B4C;
   border-radius: 12px;
   position: relative;
   overflow: hidden;
@@ -32291,7 +32327,7 @@ START: CTA CSS
   z-index: 1;
   border-radius: 12px;
   margin-bottom: 15px;
-  background-color: var(--tj-color-theme-dark);
+  background-color: #1A2B4C;
 }
 
 .h9-cta-section::before {
@@ -32531,7 +32567,8 @@ only screen and (min-width: 576px) and (max-width: 767px),
 /* !END: CTA CSS */
 /* START: Case Study CSS */
 .h9-project-wrapper {
-  background-color: var(--tj-color-theme-dark);
+  background-color: #1A2B4C;
+  /* background-color: #1A2B4C; */
 }
 
 .h9-project-wrapper .project-item {
@@ -33608,7 +33645,7 @@ START: Home 10 About CSS
 START: Process CSS
 ----------------------------------------*/
 .h10-process {
-  background-color: var(--tj-color-theme-dark);
+  background-color: #1A2B4C;
   position: relative;
   z-index: 0;
   border-radius: 12px;
@@ -33760,7 +33797,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
   inset-inline-start: 0;
   padding: 13px 21px 17px;
   margin-bottom: 0;
-  background-color: var(--tj-color-theme-dark);
+  background-color: #1A2B4C;
   border-end-end-radius: 8px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -33983,7 +34020,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 START: Testimonial CSS
 ----------------------------------------*/
 .h10-testimonial {
-  background-color: var(--tj-color-theme-dark);
+  background-color: #1A2B4C;
   position: relative;
   z-index: 0;
   border-radius: 12px;
@@ -34138,7 +34175,7 @@ START: Pricing CSS
 }
 
 .h10-pricing-box.active .pricing-btn a:hover .btn-icon {
-  background-color: var(--tj-color-theme-dark);
+  background-color: #1A2B4C;
 }
 
 /* !END: Pricing CSS */
@@ -34377,7 +34414,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
   display: block;
   color: #262b3f;
   --gradient-position: 50%;
-  background: -webkit-linear-gradient(348deg, #262b3f 0%, #262b3f 28.66%, #db8801 32.66%, #ffd88a 33%, #262b3f 37%, #262b3f 45%, #db8801 47.5%, #5e6580 48%, #262b3f 50.5%, #262b3f 64%, #db8801 69%, #262b3f 70%);
+  background: -webkit-linear-gradient(348deg, #1A2B4C 0%, #1A2B4C 28.66%, #FE6B35 32.66%, #ffd88a 33%, #1A2B4C 37%, #1A2B4C 45%, #FE6B35 47.5%, #1A2B4C 48%, #1A2B4C 50.5%, #1A2B4C 64%, #FE6B35 69%, #1A2B4C 70%);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: 200% 100%, 100% 100%;
@@ -34711,7 +34748,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 
 .service-content li::before {
   content: "\e92f";
-  color: #DB8801;
+  color: #FE6B35;
   font-family: "bexon-icons" !important;
   position: absolute;
   /* top: 12px; Adjusted for smaller text */
@@ -34730,7 +34767,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 .blog-text li::before {
   content: "\e911";
   color: white;
-  background: #DB8801;
+  background: #FE6B35;
   font-family: "bexon-icons" !important;
   position: absolute;
   /* top: 12px; Adjusted for smaller text */
@@ -34787,7 +34824,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
   display: block;
   color: #262b3f;
   --gradient-position: 50%;
-  background: -webkit-linear-gradient(348deg, #262b3f 0%, #262b3f 28.66%, #db8801 32.66%, #ffd88a 33%, #262b3f 37%, #262b3f 45%, #db8801 47.5%, #5e6580 48%, #262b3f 50.5%, #262b3f 64%, #db8801 69%, #262b3f 70%);
+  background: -webkit-linear-gradient(348deg, #262b3f 0%, #262b3f 28.66%, #FE6B35 32.66%, #ffd88a 33%, #262b3f 37%, #262b3f 45%, #FE6B35 47.5%, #5e6580 48%, #262b3f 50.5%, #262b3f 64%, #FE6B35 69%, #262b3f 70%);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: 200% 100%, 100% 100%;
@@ -35150,3 +35187,8 @@ only screen and (min-width: 768px) and (max-width: 991px) {
   }
 }
 
+p{
+  color: #1A2B4C;
+}
+
+/* #1A2B4C */

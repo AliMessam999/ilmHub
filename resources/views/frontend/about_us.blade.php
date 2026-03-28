@@ -243,7 +243,7 @@
                         <div class="card text-center shadow-sm h-100">
                             <div class="card-body">
                                 <div class="certifications-box">
-i                                    <x-optimized-image 
+                                   <x-optimized-image 
                                         :src="$certificate->image" 
                                         :alt="$certificate->alt" 
                                         :width="38" 
