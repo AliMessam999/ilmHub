@@ -5,19 +5,6 @@ namespace App\Http\Controllers;
 use App\Models\CdOffer;
 use App\Models\CdCategory;
 use App\Models\CdMenu;
-use Illuminate\Http\Request;
-use Illuminate\Validation\Rule;
-use Illuminate\Support\Facades\Validator;
-
-class OfferController extends Controller
-{
-<?php
-
-namespace App\Http\Controllers;
-
-use App\Models\CdOffer;
-use App\Models\CdCategory;
-use App\Models\CdMenu;
 use App\Helpers\ImageHelper;
 use Illuminate\Http\Request;
 use Illuminate\Validation\Rule;
