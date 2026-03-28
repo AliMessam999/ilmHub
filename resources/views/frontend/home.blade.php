@@ -188,30 +188,10 @@
                 margin-top: 40px;
             }
         }
+        .partners-slider .swiper-wrapper {
+            transition-timing-function: linear !important;
+        }
     </style>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const clientSlider = document.querySelector('.partners-slider');
-
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        clientSlider.style.animationPlayState = 'running';
-                    } else {
-                        clientSlider.style.animationPlayState = 'paused';
-                    }
-                });
-            }, {
-                threshold: 0.1
-            });
-
-            if (clientSlider) {
-                clientSlider.style.animationPlayState = 'paused';
-                observer.observe(clientSlider);
-            }
-        });
-    </script>
 
 
 
@@ -492,7 +472,7 @@
                     </div>
                 </div>
                 <div class="col-12">
-                    <div class="swiper client-slider partners-slider wow fadeInUp" data-wow-delay=".4s">
+                    <div class="swiper partners-slider wow fadeInUp" data-wow-delay=".4s">
                         <div class="swiper-wrapper mb-5">
                             @foreach ($data->partners as $client)
                                 <div class="swiper-slide client-item">
