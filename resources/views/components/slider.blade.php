@@ -26,7 +26,7 @@
                                         {{ $slider->title }}
                                         {{-- {{ $firstPart }} <span>{{ $lastPart }}</span> --}}
                                     </h1>
-                                    <div class="slider-desc" style="color: white;">
+                                    <div class="slider-desc" >
                                         {!! $slider->description !!}
                                     </div>
                                     <div class="slider-btn">
