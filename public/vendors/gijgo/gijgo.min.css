@@ -977,7 +977,7 @@ span.gj-grid-column-resizer {
   left: 0;
   border-style: solid;
   border-width: 3px;
-  border-color: red transparent transparent red;
+  border-color: #1A2B4C transparent transparent red;
   padding: 0;
   overflow: hidden;
   vertical-align: top;

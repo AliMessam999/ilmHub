@@ -12,7 +12,7 @@
 
 <!-- Critical CSS - render blocking (needed for first paint) -->
 <link rel="stylesheet" href="{{ asset('frontend_assets/css/bootstrap.min.css') }}">
-<link rel="stylesheet" href="{{ asset('frontend_assets/css/main.min.css') }}">
+<link rel="stylesheet" href="{{ asset('frontend_assets/css/main.css') }}">
 
 <!-- Non-critical CSS - loaded async (won't block rendering) -->
 <link rel="stylesheet" href="{{ asset('frontend_assets/css/font-awesome-pro.min.css') }}" media="print" onload="this.media='all'">

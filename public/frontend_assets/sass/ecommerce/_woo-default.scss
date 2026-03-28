@@ -433,7 +433,7 @@ body {
 		}
 
 		& .reset_variations {
-			color: red;
+			color: #1A2B4C;
 			position: absolute;
 			margin-top: 10px;
 		}
@@ -3720,7 +3720,7 @@ a.added_to_cart.wc-forward::before {
 			color: var(--tj-color-heading-primary);
 			& abbr {
 				&.required {
-					color: red;
+					color: #1A2B4C;
 					text-decoration: none;
 				}
 			}
@@ -3855,7 +3855,7 @@ a.added_to_cart.wc-forward::before {
 			color: var(--tj-color-heading-primary);
 			& abbr {
 				&.required {
-					color: red;
+					color: #1A2B4C;
 					text-decoration: none;
 				}
 			}

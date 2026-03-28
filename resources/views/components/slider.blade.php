@@ -9,21 +9,6 @@
         <div class="swiper-wrapper">
             @if (!empty($sliders))
                 @foreach ($sliders as $slider)
-                {{-- @php --}}
-                    {{-- $title = $slider->title; --}}
-                    {{-- $words = explode(' ', $title); --}}
-
-                    {{-- if ($title == 'Powering Industries with Innovative Solutions' && count($words) > 1) { --}}
-                        {{-- // take last 2 words --}}
-                        {{-- $lastPart = implode(' ', array_slice($words, -2)); --}}
-                        {{-- $firstPart = implode(' ', array_slice($words, 0, -2)); --}}
-                        {{-- // dd($firstPart); --}}
-                    {{-- } else { --}}
-                        {{-- // take only last 1 word --}}
-                        {{-- $lastPart = end($words); --}}
-                        {{-- $firstPart = implode(' ', array_slice($words, 0, count($words) - 1)); --}}
-                    {{-- } --}}
-                {{-- @endphp --}}
 
                     <div class="swiper-slide tj-slider-item">
                         <div class="slider-bg-image">
@@ -41,7 +26,7 @@
                                         {{ $slider->title }}
                                         {{-- {{ $firstPart }} <span>{{ $lastPart }}</span> --}}
                                     </h1>
-                                    <div class="slider-desc">
+                                    <div class="slider-desc" >
                                         {!! $slider->description !!}
                                     </div>
                                     <div class="slider-btn">

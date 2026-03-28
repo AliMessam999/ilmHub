@@ -244,7 +244,7 @@ Progressbar js
 			slidesPerView: 2,
 			spaceBetween: 30,
 			loop: true,
-			speed: 10000,
+			speed: 1000,
 			freeMode: true,
 			allowTouchMove: false,
 			autoplay: {
@@ -606,9 +606,9 @@ Progressbar js
 			slidesPerView: "auto",
 			spaceBetween: 28,
 			loop: true,
-			speed: 1500,
+			speed: 2000,
 			autoplay: {
-				delay: 3000,
+				delay: 10000,
 			},
 			navigation: {
 				nextEl: ".slider-next",
