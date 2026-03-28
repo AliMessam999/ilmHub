@@ -33,7 +33,8 @@
           >
             <div class="hamburger_logo">
               <a href="index.html" class="mobile_logo">
-                <img src="{{ asset('frontend_assets/images/logos/logo-2.png') }}" alt="Logo" />
+                <img src="{{ asset('frontend_assets/images/logos/newLogoLight.png') }}" alt="Logo" />
+                {{-- <img src="{{ asset('frontend_assets/images/logos/logo-2.png') }}" alt="Logo" /> --}}
               </a>
             </div>
             <div class="hamburger_close">

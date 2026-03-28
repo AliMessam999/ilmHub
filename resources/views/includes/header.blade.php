@@ -7,7 +7,8 @@
           <!-- site logo -->
           <div class="site_logo">
             <a class="logo" href="{{ url('/') }}">
-              <img src="{{ asset('frontend_assets/images/logos/logo-2.png') }}" alt="Logo" />
+              <img src="{{ asset('frontend_assets/images/logos/newLogoLight.png') }}" alt="Logo" />
+              {{-- <img src="{{ asset('frontend_assets/images/logos/logo-2.png') }}" alt="Logo" /> --}}
             </a>
           </div>
 
@@ -174,7 +175,7 @@
           <!-- logo -->
           <div class="site_logo">
             <a class="logo" href="{{ url('/') }}">
-              <img src="{{ asset('frontend_assets/images/logos/logo-black.png') }}" alt="Logo" />
+              <img src="{{ asset('frontend_assets/images/logos/newLogodark.png') }}" alt="Logo" />
             </a>
           </div>
 
