@@ -108,12 +108,14 @@ START: Theme Default CSS
    */
   --tj-color-common-white: #ffffff;
   --tj-color-common-black: #000000;
-  --tj-color-heading-primary: #1A2B4C;
+  /* Text Blue Color */
+  --tj-color-heading-primary: #1A2B4C; 
   /* --tj-color-heading-primary: #0c1e21; */
   --tj-color-text-body: #364e52;
   --tj-color-text-body-2: #aaafc2;
   /* --tj-color-text-body-2: #a9b8b8; */
   --tj-color-text-body-3: #67787a;
+  /* Text Blue Color */
   --tj-color-text-body-4: #1A2B4C;
   /* --tj-color-text-body-4: #18292c; */
   --tj-color-text-body-5: rgba(255, 255, 255, 0.8);
@@ -125,12 +127,16 @@ START: Theme Default CSS
   /* --tj-color-theme-bg: #d8e5e5; */
   --tj-color-theme-bg-2: #cee0e0;
   /* --tj-color-theme-bg-2: #cee0e0; */
+  /* Text Blue Color */
   --tj-color-theme-bg-3: #1A2B4C;
   /* --tj-color-theme-bg-3: #202e30; */
+  /* Text Blue Color */
   --tj-color-theme-dark: #1A2B4C;
   /* --tj-color-theme-dark: #2a2e3f; */
+  /* Text Blue Color */
   --tj-color-theme-dark-2: #1A2B4C;
   /* --tj-color-theme-dark-2: #262b3f; */
+  /* Text Blue Color */
   --tj-color-theme-dark-2: #1A2B4C;
   /* --tj-color-theme-dark-2: #18292c; */
   --tj-color-theme-dark-3: #364e52;
@@ -891,6 +897,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
   width: 42px;
   height: 42px;
   overflow: hidden;
+  /* Text Blue Color */
   background-color: #1A2B4C;
   /* background-color: #1A2B4C; */
   border-radius: 50%;
@@ -906,6 +913,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
 }
 
 .tj-primary-btn.btn-dark {
+  /* Text Blue Color */
   background-color: #1A2B4C;
 }
 
@@ -1008,6 +1016,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
   width: 30px;
   height: 30px;
   overflow: hidden;
+  /* Text Blue Color */
   background-color: #1A2B4C;
   /* background-color: #1A2B4C; */
   border-radius: 50%;
@@ -2512,6 +2521,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
 .mobile_menu ul>li>.mega-menu-pages .mega-menu-list a {
   font-weight: var(--tj-fw-medium);
   /* color: pink; */
+  /* Text Blue Color */
   color: #1A2B4C;
   /* color: var(--tj-color-common-black-2); */
   padding: 12px 0;
@@ -3020,6 +3030,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
 }
 
 .hamburger_menu .mean-container .mean-nav ul li .mega-menu-pages li .mega-menu-title::after {
+  /* Text Blue Color */
   background-color: #1A2B4C;
 }
 
@@ -3445,6 +3456,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 }
 
 .subscribe-form input[type=checkbox]:checked {
+  /* Text Blue Color */
   background-color: #1A2B4C;
 }
 
@@ -3744,6 +3756,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
 }
 
 .tj-footer-section.footer-2 {
+  /* Text Blue Color */
   background-color: #1A2B4C;
   /* background-color: #1A2B4C; */
   padding-top: 100px;
