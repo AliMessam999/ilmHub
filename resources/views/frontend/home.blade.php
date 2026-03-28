@@ -56,7 +56,7 @@
             height: 60px;
             padding: 10px;
             border-radius: 50%;
-            border-color: #DB8801 !important;
+            border-color: #FE6B35 !important;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -100,11 +100,12 @@
         }
 
         .experience-box .customers-number {
-            color: #DB8801 !important;
+            color: #FE6B35 !important;
         }
 
         .experience-box .sub-title {
-            color: #2a2e3f !important;
+            color: #1A2B4C !important;
+            /* color: #2a2e3f !important; */
         }
 
         .global-map-img img {

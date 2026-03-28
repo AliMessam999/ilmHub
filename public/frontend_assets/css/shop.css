@@ -512,7 +512,7 @@ body .woocommerce-info:focus-visible {
 }
 .tj-product-details-wrapper .variations_form .reset_variations,
 .tj-product-details-action-wrapper .variations_form .reset_variations {
-  color: red;
+  color: #1A2B4C;
   position: absolute;
   margin-top: 10px;
 }
@@ -3555,7 +3555,7 @@ a.added_to_cart.wc-forward::before {
   color: var(--tj-color-heading-primary);
 }
 .tj-checkout-billing-wrapper label abbr.required {
-  color: red;
+  color: #1A2B4C;
   text-decoration: none;
 }
 .tj-checkout-billing-wrapper label span {
@@ -3657,7 +3657,7 @@ a.added_to_cart.wc-forward::before {
   color: var(--tj-color-heading-primary);
 }
 .tj-checkout-billing-existing-login label abbr.required, .tj-checkout-billing-coupon label abbr.required {
-  color: red;
+  color: #1A2B4C;
   text-decoration: none;
 }
 .tj-checkout-billing-existing-login .woocommerce-info, .tj-checkout-billing-coupon .woocommerce-info {
