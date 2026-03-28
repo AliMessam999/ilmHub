@@ -104,7 +104,8 @@
                        <div class="col-12">
                            <div class="h6-footer-logo">
                                <a href="/" class="wow fadeInUpBig" data-wow-delay=".3s">
-                                   <img src="{{ url('frontend_assets/images/logos/logolarge.png') }}" alt="" />
+                                   <img src="{{ url('frontend_assets/images/logos/logo-large.png') }}" alt="" />
+                                   {{-- <img src="{{ url('frontend_assets/images/logos/logolarge.png') }}" alt="" /> --}}
                                </a>
                            </div>
                        </div>
