@@ -20,19 +20,21 @@ class UserSeeder extends Seeder
 
         $users = [
             [
-            'name' => "Azhar Khan",
-            'email' => "azhar@gmail.com",
+            'name' => "Muhammad Baqir",
+            'email' => "mbaqir@gmail.com",
             'email_verified_at' => now(),
-            'password' => bcrypt('secret'), // password
+            'password' => 'secret', // password
             'remember_token' => 'tOkEn',
         ], [
-            'name' => "Adeel Tariq",
-            'email' => "adeel@gmail.com",
+            'name' => "Ali Messam",
+            'email' => "messam@gmail.com",
             'email_verified_at' => now(),
-            'password' => bcrypt('secret'), // password
+            'password' => 'secret', // password
             'remember_token' => 'tOkEn',
         ],
     ];
-        $users = User::insert($users);
+        foreach ($users as $userData) {
+            User::create($userData);
+        }
     }
 }

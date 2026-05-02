@@ -47,11 +47,19 @@
 
     <!-- Main Content -->
     <main class="flex-1 flex flex-col h-full overflow-hidden">
-        <!-- Top Header -->
         <header class="h-20 bg-white shadow-sm flex items-center justify-between px-8 z-10 flex-shrink-0">
             <h2 class="text-xl font-bold text-gray-800">@yield('header')</h2>
-            <div class="flex items-center gap-4">
-                <span class="text-sm font-medium text-gray-600">Admin User</span>
+            <div class="flex items-center gap-6">
+                <div class="flex flex-col items-end">
+                    <span class="text-sm font-semibold text-gray-800">{{ auth()->user()->name }}</span>
+                    <span class="text-xs text-gray-500">Administrator</span>
+                </div>
+                <form method="POST" action="{{ route('logout') }}">
+                    @csrf
+                    <button type="submit" class="text-sm font-medium text-red-600 hover:text-red-800 transition-colors bg-red-50 px-4 py-2 rounded-lg border border-red-100">
+                        Logout
+                    </button>
+                </form>
             </div>
         </header>
 

@@ -15,6 +15,8 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
+        $this->call(UserSeeder::class);
+
         // Speakers
         $speakers = [
             Speaker::create(['name' => 'Mufti Menk', 'bio' => 'Ismail ibn Musa Menk, also known as Mufti Menk, is a Muslim cleric from Zimbabwe and head of the country\'s fatwa department.']),

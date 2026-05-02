@@ -53,11 +53,11 @@
                 <div class="hidden sm:ml-6 sm:flex sm:items-center sm:space-x-8">
                     <a href="{{ route('home') }}" class="text-white hover:text-secondary px-3 py-2 rounded-md text-sm font-medium transition-colors">Home</a>
                     <a href="{{ route('lectures.index') }}" class="text-white hover:text-secondary px-3 py-2 rounded-md text-sm font-medium transition-colors">Browse Lectures</a>
-                    @auth
+                    {{-- @auth
                         <a href="{{ route('admin.dashboard') }}" class="bg-secondary text-primary px-4 py-2 rounded-md text-sm font-bold shadow hover:bg-yellow-400 transition-colors">Admin Panel</a>
                     @else
                         <a href="{{ route('login') }}" class="text-white border border-secondary hover:bg-secondary hover:text-primary px-4 py-2 rounded-md text-sm font-medium transition-all">Login</a>
-                    @endauth
+                    @endauth --}}
                 </div>
             </div>
         </div>
