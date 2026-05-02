@@ -175,7 +175,7 @@
           <!-- logo -->
           <div class="site_logo">
             <a class="logo" href="{{ url('/') }}">
-              <img src="{{ asset('frontend_assets/images/logos/newLogodark.png') }}" alt="Logo" />
+              <img src="{{ asset('frontend_assets/images/logos/newLogoDark.png') }}" alt="Logo" />
             </a>
           </div>
 

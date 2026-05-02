@@ -30,7 +30,7 @@
     }
     .mission-vision-box ul li {
         font-weight: light;
-        color: orange;
+        color: #FE6B35;
         list-style-type: disc;
         margin-left: 20px;
         margin-bottom: 8px;
