@@ -40,7 +40,7 @@ class SeederCommand extends Command
         // Get the list of tables in the database
         $originalArray = DB::connection()->getDoctrineSchemaManager()->listTableNames();
         $tables = array_filter($originalArray, function ($value) {
-            return strpos($value, 'cd_') !== false || $value === 'customer_services';
+            return in_array($value, ['speakers', 'topics', 'lectures', 'lecture_topic', 'users']);
         });
 
         foreach ($tables as $table) {
@@ -81,8 +81,17 @@ class SeederCommand extends Command
         $seederContent .= "    public function run()\n";
         $seederContent .= "    {\n";
         $seederContent .= "        // Seed data for the '{$table}' table\n";
-        $seederContent .= "        \$data = " . var_export($data, true) . ";\n";
-        $seederContent .= "        DB::table('{$table}')->insert(\$data);\n";
+        $seederContent .= "        \$data = " . var_export($data, true) . ";\n\n";
+        $seederContent .= "        foreach (\$data as \$item) {\n";
+        $seederContent .= "            if ('{$table}' === 'lecture_topic') {\n";
+        $seederContent .= "                DB::table('{$table}')->updateOrInsert(\n";
+        $seederContent .= "                    ['lecture_id' => \$item['lecture_id'], 'topic_id' => \$item['topic_id']],\n";
+        $seederContent .= "                    \$item\n";
+        $seederContent .= "                );\n";
+        $seederContent .= "            } else {\n";
+        $seederContent .= "                DB::table('{$table}')->updateOrInsert(['id' => \$item['id']], \$item);\n";
+        $seederContent .= "            }\n";
+        $seederContent .= "        }\n";
         $seederContent .= "    }\n";
         $seederContent .= "}\n";
 
