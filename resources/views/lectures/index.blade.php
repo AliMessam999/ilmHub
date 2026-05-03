@@ -18,6 +18,18 @@
                         <input type="text" name="search" value="{{ request('search') }}" placeholder="Title or Speaker..." class="w-full border border-gray-300 rounded-md shadow-sm px-3 py-2 focus:border-primary focus:ring-1 focus:ring-primary focus:outline-none">
                     </div>
 
+                    <!-- Date Range -->
+                    <div class="grid grid-cols-2 gap-3 mb-6">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">From Date</label>
+                            <input type="date" name="from_date" value="{{ request('from_date') }}" class="w-full border border-gray-300 rounded-md shadow-sm px-2 py-2 text-sm focus:border-primary focus:ring-1 focus:ring-primary focus:outline-none">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">To Date</label>
+                            <input type="date" name="to_date" value="{{ request('to_date') }}" class="w-full border border-gray-300 rounded-md shadow-sm px-2 py-2 text-sm focus:border-primary focus:ring-1 focus:ring-primary focus:outline-none">
+                        </div>
+                    </div>
+
                     <!-- Speaker -->
                     <div class="mb-6">
                         <label class="block text-sm font-medium text-gray-700 mb-2">Speaker</label>
