@@ -56,15 +56,48 @@
                 <div class="hidden sm:ml-6 sm:flex sm:items-center sm:space-x-8">
                     <a href="{{ route('home') }}" class="text-white hover:text-secondary px-3 py-2 rounded-md text-sm font-medium transition-colors">Home</a>
                     <a href="{{ route('lectures.index') }}" class="text-white hover:text-secondary px-3 py-2 rounded-md text-sm font-medium transition-colors">Browse Lectures</a>
-                    {{-- @auth
-                        <a href="{{ route('admin.dashboard') }}" class="bg-secondary text-primary px-4 py-2 rounded-md text-sm font-bold shadow hover:bg-yellow-400 transition-colors">Admin Panel</a>
-                    @else
-                        <a href="{{ route('login') }}" class="text-white border border-secondary hover:bg-secondary hover:text-primary px-4 py-2 rounded-md text-sm font-medium transition-all">Login</a>
-                    @endauth --}}
+                    <a href="{{ route('login') }}" class="text-white border border-secondary hover:bg-secondary hover:text-primary px-4 py-2 rounded-md text-sm font-medium transition-all">Login</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="flex items-center sm:hidden">
+                    <button id="mobile-menu-button" class="text-white hover:text-secondary focus:outline-none transition-colors">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                            <path id="close-icon" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
                 </div>
             </div>
         </div>
+
+        <!-- Mobile Menu Content -->
+        <div id="mobile-menu" class="hidden sm:hidden bg-primary border-t border-white/10 pb-4">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="{{ route('home') }}" class="block text-white hover:bg-white/10 hover:text-secondary px-3 py-4 rounded-md text-base font-medium transition-colors border-b border-white/5">Home</a>
+                <a href="{{ route('lectures.index') }}" class="block text-white hover:bg-white/10 hover:text-secondary px-3 py-4 rounded-md text-base font-medium transition-colors border-b border-white/5">Browse Lectures</a>
+                <a href="{{ route('login') }}" class="block text-white hover:bg-white/10 hover:text-secondary px-3 py-4 rounded-md text-base font-medium transition-colors">Login</a>
+            </div>
+        </div>
     </nav>
+
+    <script>
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            const menuIcon = document.getElementById('menu-icon');
+            const closeIcon = document.getElementById('close-icon');
+            
+            if (menu.classList.contains('hidden')) {
+                menu.classList.remove('hidden');
+                menuIcon.classList.add('hidden');
+                closeIcon.classList.remove('hidden');
+            } else {
+                menu.classList.add('hidden');
+                menuIcon.classList.remove('hidden');
+                closeIcon.classList.add('hidden');
+            }
+        });
+    </script>
 
     <!-- Page Content -->
     <main class="flex-grow">
