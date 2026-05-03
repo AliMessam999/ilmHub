@@ -11,6 +11,9 @@
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=inter:300,400,500,600,700&display=swap" rel="stylesheet" />
 
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
     <!-- Tailwind CSS (CDN for quick setup, assuming no build step or mixed build step) -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -75,5 +78,7 @@
             <p class="text-sm mt-2 text-gray-400">Neutral and educational content platform.</p>
         </div>
     </footer>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 </html>

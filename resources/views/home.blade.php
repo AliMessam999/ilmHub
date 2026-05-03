@@ -25,32 +25,67 @@
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
     <!-- Featured Speakers -->
     <div class="mb-16">
-        <div class="flex justify-between items-end mb-8 border-b-2 border-gray-200 pb-4">
+        <div class="flex justify-between items-center mb-8 border-b-2 border-gray-200 pb-4">
             <h2 class="text-3xl font-bold text-primary flex items-center gap-3">
                 <svg class="w-8 h-8 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
                 Featured Speakers
             </h2>
+            <div class="flex gap-2">
+                <button class="speaker-prev bg-white border border-gray-200 text-primary hover:bg-primary hover:text-white p-2 rounded-full shadow-sm transition-all outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                </button>
+                <button class="speaker-next bg-white border border-gray-200 text-primary hover:bg-primary hover:text-white p-2 rounded-full shadow-sm transition-all outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                </button>
+            </div>
         </div>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            @foreach($featuredSpeakers as $speaker)
-                <a href="{{ route('speakers.show', $speaker) }}" class="group bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-all transform hover:-translate-y-1 border border-gray-100">
-                    <div class="h-32 bg-primary/5 group-hover:bg-primary/10 flex items-center justify-center transition-colors overflow-hidden">
-                        @if($speaker->image)
-                            <img src="{{ asset($speaker->image) }}" alt="{{ $speaker->name }}" class="w-24 h-24 rounded-full object-cover shadow-md border-2 border-primary/20 group-hover:border-primary transition-colors">
-                        @else
-                            <div class="w-24 h-24 bg-primary text-secondary rounded-full flex items-center justify-center text-3xl font-bold shadow-md border-2 border-primary/20 group-hover:border-primary transition-colors">
-                                {{ substr($speaker->name, 0, 1) }}
+        
+        <div class="swiper speaker-slider">
+            <div class="swiper-wrapper">
+                @foreach($featuredSpeakers as $speaker)
+                    <div class="swiper-slide">
+                        <a href="{{ route('speakers.show', $speaker) }}" class="group bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-all block border border-gray-100 h-full">
+                            <div class="h-32 bg-primary/5 group-hover:bg-primary/10 flex items-center justify-center transition-colors overflow-hidden">
+                                @if($speaker->image)
+                                    <img src="{{ asset($speaker->image) }}" alt="{{ $speaker->name }}" class="w-24 h-24 rounded-full object-cover shadow-md border-2 border-primary/20 group-hover:border-primary transition-colors">
+                                @else
+                                    <div class="w-24 h-24 bg-primary text-secondary rounded-full flex items-center justify-center text-3xl font-bold shadow-md border-2 border-primary/20 group-hover:border-primary transition-colors">
+                                        {{ substr($speaker->name, 0, 1) }}
+                                    </div>
+                                @endif
                             </div>
-                        @endif
+                            <div class="p-6 text-center">
+                                <h3 class="text-xl font-bold text-gray-900 mb-1 group-hover:text-primary transition-colors">{{ $speaker->name }}</h3>
+                                <p class="text-sm text-gray-500 bg-gray-100 inline-block px-3 py-1 rounded-full">{{ $speaker->lectures_count }} Lectures</p>
+                            </div>
+                        </a>
                     </div>
-                    <div class="p-6 text-center">
-                        <h3 class="text-xl font-bold text-gray-900 mb-1 group-hover:text-primary transition-colors">{{ $speaker->name }}</h3>
-                        <p class="text-sm text-gray-500 bg-gray-100 inline-block px-3 py-1 rounded-full">{{ $speaker->lectures_count }} Lectures</p>
-                    </div>
-                </a>
-            @endforeach
+                @endforeach
+            </div>
         </div>
     </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            new Swiper('.speaker-slider', {
+                slidesPerView: 1,
+                spaceBetween: 30,
+                loop: true,
+                navigation: {
+                    nextEl: '.speaker-next',
+                    prevEl: '.speaker-prev',
+                },
+                breakpoints: {
+                    640: {
+                        slidesPerView: 2,
+                    },
+                    1024: {
+                        slidesPerView: 4,
+                    },
+                }
+            });
+        });
+    </script>
 
     <!-- Latest Lectures -->
     <div class="mb-16">
