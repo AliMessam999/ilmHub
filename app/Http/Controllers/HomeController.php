@@ -11,7 +11,7 @@ class HomeController extends Controller
 {
     public function index()
     {
-        $featuredSpeakers = Speaker::withCount('lectures')->orderByDesc('lectures_count')->take(4)->get();
+        $featuredSpeakers = Speaker::withCount('lectures')->orderByDesc('lectures_count')->take(12)->get();
         $latestLectures = Lecture::with(['speaker', 'topics'])->latest()->take(6)->get();
         $popularTopics = Topic::withCount('lectures')->orderByDesc('lectures_count')->take(5)->get();
 
