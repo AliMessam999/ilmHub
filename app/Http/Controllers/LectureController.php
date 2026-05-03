@@ -37,6 +37,14 @@ class LectureController extends Controller
             });
         }
 
+        if ($request->filled('from_date')) {
+            $query->whereDate('date', '>=', $request->from_date);
+        }
+
+        if ($request->filled('to_date')) {
+            $query->whereDate('date', '<=', $request->to_date);
+        }
+
         if ($request->filled('sort')) {
             if ($request->sort == 'oldest') {
                 $query->reorder('created_at', 'asc');
