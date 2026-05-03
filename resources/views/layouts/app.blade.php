@@ -56,7 +56,7 @@
                 <div class="hidden sm:ml-6 sm:flex sm:items-center sm:space-x-8">
                     <a href="{{ route('home') }}" class="text-white hover:text-secondary px-3 py-2 rounded-md text-sm font-medium transition-colors">Home</a>
                     <a href="{{ route('lectures.index') }}" class="text-white hover:text-secondary px-3 py-2 rounded-md text-sm font-medium transition-colors">Browse Lectures</a>
-                    <a href="{{ route('login') }}" class="text-white border border-secondary hover:bg-secondary hover:text-primary px-4 py-2 rounded-md text-sm font-medium transition-all">Login</a>
+                    {{-- <a href="{{ route('login') }}" class="text-white border border-secondary hover:bg-secondary hover:text-primary px-4 py-2 rounded-md text-sm font-medium transition-all">Login</a> --}}
                 </div>
 
                 <!-- Mobile Menu Button -->
@@ -76,7 +76,7 @@
             <div class="px-2 pt-2 pb-3 space-y-1">
                 <a href="{{ route('home') }}" class="block text-white hover:bg-white/10 hover:text-secondary px-3 py-4 rounded-md text-base font-medium transition-colors border-b border-white/5">Home</a>
                 <a href="{{ route('lectures.index') }}" class="block text-white hover:bg-white/10 hover:text-secondary px-3 py-4 rounded-md text-base font-medium transition-colors border-b border-white/5">Browse Lectures</a>
-                <a href="{{ route('login') }}" class="block text-white hover:bg-white/10 hover:text-secondary px-3 py-4 rounded-md text-base font-medium transition-colors">Login</a>
+                {{-- <a href="{{ route('login') }}" class="block text-white hover:bg-white/10 hover:text-secondary px-3 py-4 rounded-md text-base font-medium transition-colors">Login</a> --}}
             </div>
         </div>
     </nav>
