@@ -53,13 +53,6 @@ class TopicSeeder extends Seeder
     'created_at' => '2026-05-03 15:42:08',
     'updated_at' => '2026-05-03 15:42:08',
   ),
-  6 => 
-  array (
-    'id' => 7,
-    'name' => 'Zina',
-    'created_at' => '2026-05-03 15:46:19',
-    'updated_at' => '2026-05-03 15:46:19',
-  ),
 );
 
         foreach ($data as $item) {
