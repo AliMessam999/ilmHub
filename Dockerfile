@@ -1,43 +1,30 @@
-FROM php:8.2-apache
+FROM php:8.2-fpm
 
-# Enable Apache rewrite module (important for Laravel routes)
-RUN a2enmod rewrite
-
-# Install system dependencies + PHP extensions
+# Install system dependencies
 RUN apt-get update && apt-get install -y \
-    libzip-dev \
-    zip \
-    unzip \
-    git \
-    curl \
-    && docker-php-ext-install pdo pdo_mysql zip
+    git curl zip unzip libpng-dev libonig-dev libxml2-dev \
+    libzip-dev
+
+# Install PHP extensions
+RUN docker-php-ext-install pdo_mysql mbstring exif pcntl bcmath gd zip
 
 # Install Composer
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 
 # Set working directory
-WORKDIR /var/www/html
+WORKDIR /var/www
 
 # Copy project files
 COPY . .
 
-# Install Laravel dependencies
+# Install dependencies
 RUN composer install --no-dev --optimize-autoloader
 
-# Set permissions (important for Laravel)
-RUN chown -R www-data:www-data /var/www/html \
-    && chmod -R 775 storage bootstrap/cache
-
-# Set Apache document root to /public
-ENV APACHE_DOCUMENT_ROOT=/var/www/html/public
-
-RUN sed -ri -e 's!/var/www/html!${APACHE_DOCUMENT_ROOT}!g' \
-    /etc/apache2/sites-available/*.conf \
-    /etc/apache2/apache2.conf \
-    /etc/apache2/conf-available/*.conf
+# Set permissions
+RUN chmod -R 775 storage bootstrap/cache
 
 # Expose port
-EXPOSE 80
+EXPOSE 10000
 
-# Start Apache
-CMD ["apache2-foreground"]
+# Start server
+CMD php artisan serve --host=0.0.0.0 --port=10000
