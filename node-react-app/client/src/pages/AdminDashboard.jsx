@@ -208,15 +208,15 @@ const AdminDashboard = () => {
     const isEditing = !!editingId;
 
     return (
-      <div className={`bg-white p-8 rounded-xl shadow-sm border mb-8 ${isEditing ? 'border-[#D4AF37] ring-2 ring-[#D4AF37]/30' : 'border-gray-100'}`}>
-        <div className="flex justify-between items-center mb-6 border-b pb-4">
-          <h2 className="text-2xl font-bold text-[#0B4A2B] capitalize">
+      <div className={`bg-white p-4 md:p-8 rounded-xl shadow-sm border mb-6 md:mb-8 ${isEditing ? 'border-[#D4AF37] ring-2 ring-[#D4AF37]/30' : 'border-gray-100'}`}>
+        <div className="flex flex-wrap justify-between items-start gap-3 mb-6 border-b pb-4">
+          <h2 className="text-lg md:text-2xl font-bold text-[#0B4A2B] capitalize">
             {isEditing ? `Edit ${activeTab.slice(0, -1)} #${editingId}` : `Add New ${activeTab.slice(0, -1)}`}
           </h2>
           {isEditing && (
-            <button onClick={cancelEdit} className="flex items-center gap-2 text-sm text-gray-500 hover:text-gray-700 border border-gray-300 px-4 py-2 rounded-lg transition">
+            <button onClick={cancelEdit} className="flex items-center gap-2 text-sm text-gray-500 hover:text-gray-700 border border-gray-300 px-3 py-1.5 rounded-lg transition flex-shrink-0">
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" /></svg>
-              Cancel Edit
+              Cancel
             </button>
           )}
         </div>
@@ -347,49 +347,52 @@ const AdminDashboard = () => {
 
     return (
       <div className="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
-        <div className="px-6 py-4 bg-gray-50 border-b font-bold text-[#0B4A2B]">
+        <div className="px-4 md:px-6 py-3 md:py-4 bg-gray-50 border-b font-bold text-[#0B4A2B] text-sm md:text-base">
           Existing {activeTab.charAt(0).toUpperCase() + activeTab.slice(1)} ({items.length})
         </div>
-        <table className="w-full text-left">
-          <thead className="bg-white border-b">
-            <tr className="text-xs font-bold text-gray-500 uppercase">
-              <th className="px-6 py-4 w-14">ID</th>
-              <th className="px-6 py-4">Title / Name</th>
-              {activeTab === 'lectures' && <th className="px-6 py-4">Speaker</th>}
-              {activeTab === 'speakers' && <th className="px-6 py-4">Lectures</th>}
-              <th className="px-6 py-4 text-right">Actions</th>
-            </tr>
-          </thead>
-          <tbody className="divide-y divide-gray-100">
-            {items.map(item => (
-              <tr key={item.id} className={`hover:bg-gray-50 transition-colors ${editingId === item.id ? 'bg-yellow-50 border-l-4 border-[#D4AF37]' : ''}`}>
-                <td className="px-6 py-4 text-sm text-gray-500">{item.id}</td>
-                <td className="px-6 py-4 font-bold text-gray-800">{item.name || item.title}</td>
-                {activeTab === 'lectures' && <td className="px-6 py-4 text-sm text-gray-600">{item.speaker?.name}</td>}
-                {activeTab === 'speakers' && <td className="px-6 py-4 text-sm text-gray-600">{item._count?.lectures ?? '—'} lectures</td>}
-                <td className="px-6 py-4 text-right space-x-2">
-                  <button
-                    onClick={() => startEdit(item)}
-                    className="text-[#0B4A2B] hover:text-white font-bold text-xs bg-green-50 hover:bg-[#0B4A2B] px-3 py-1.5 rounded-full border border-green-200 transition-all"
-                  >
-                    ✏️ Edit
-                  </button>
-                  <button
-                    onClick={() => deleteItem(activeTab, item.id)}
-                    className="text-red-600 hover:text-white font-bold text-xs bg-red-50 hover:bg-red-600 px-3 py-1.5 rounded-full border border-red-200 transition-all"
-                  >
-                    🗑 Delete
-                  </button>
-                </td>
+        {/* horizontal scroll wrapper for mobile */}
+        <div className="overflow-x-auto">
+          <table className="w-full text-left min-w-[500px]">
+            <thead className="bg-white border-b">
+              <tr className="text-xs font-bold text-gray-500 uppercase">
+                <th className="px-4 md:px-6 py-3 md:py-4 w-12">ID</th>
+                <th className="px-4 md:px-6 py-3 md:py-4">Title / Name</th>
+                {activeTab === 'lectures' && <th className="px-4 md:px-6 py-3 md:py-4">Speaker</th>}
+                {activeTab === 'speakers' && <th className="px-4 md:px-6 py-3 md:py-4">Lectures</th>}
+                <th className="px-4 md:px-6 py-3 md:py-4 text-right">Actions</th>
               </tr>
-            ))}
-            {items.length === 0 && (
-              <tr>
-                <td colSpan="5" className="p-10 text-center text-gray-400 italic">No items found.</td>
-              </tr>
-            )}
-          </tbody>
-        </table>
+            </thead>
+            <tbody className="divide-y divide-gray-100">
+              {items.map(item => (
+                <tr key={item.id} className={`hover:bg-gray-50 transition-colors ${editingId === item.id ? 'bg-yellow-50 border-l-4 border-[#D4AF37]' : ''}`}>
+                  <td className="px-4 md:px-6 py-3 md:py-4 text-sm text-gray-500">{item.id}</td>
+                  <td className="px-4 md:px-6 py-3 md:py-4 font-bold text-gray-800 max-w-[180px] md:max-w-none truncate">{item.name || item.title}</td>
+                  {activeTab === 'lectures' && <td className="px-4 md:px-6 py-3 md:py-4 text-sm text-gray-600 whitespace-nowrap">{item.speaker?.name}</td>}
+                  {activeTab === 'speakers' && <td className="px-4 md:px-6 py-3 md:py-4 text-sm text-gray-600 whitespace-nowrap">{item._count?.lectures ?? '—'} lectures</td>}
+                  <td className="px-4 md:px-6 py-3 md:py-4 text-right whitespace-nowrap">
+                    <button
+                      onClick={() => startEdit(item)}
+                      className="text-[#0B4A2B] hover:text-white font-bold text-xs bg-green-50 hover:bg-[#0B4A2B] px-2 md:px-3 py-1 md:py-1.5 rounded-full border border-green-200 transition-all mr-1"
+                    >
+                      ✏️ Edit
+                    </button>
+                    <button
+                      onClick={() => deleteItem(activeTab, item.id)}
+                      className="text-red-600 hover:text-white font-bold text-xs bg-red-50 hover:bg-red-600 px-2 md:px-3 py-1 md:py-1.5 rounded-full border border-red-200 transition-all"
+                    >
+                      🗑 Delete
+                    </button>
+                  </td>
+                </tr>
+              ))}
+              {items.length === 0 && (
+                <tr>
+                  <td colSpan="5" className="p-8 md:p-10 text-center text-gray-400 italic">No items found.</td>
+                </tr>
+              )}
+            </tbody>
+          </table>
+        </div>
       </div>
     );
   };
