@@ -1,14 +1,15 @@
-import { useState } from 'react';
+import { useState, useContext } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import { AuthContext } from '../context/AuthContext';
 
 const AdminLayout = ({ children, title, activeTab, setActiveTab }) => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const navigate = useNavigate();
-  const user = JSON.parse(localStorage.getItem('user')) || { name: 'Admin' };
+  const { user, logout } = useContext(AuthContext);
+  const displayName = user?.name || JSON.parse(localStorage.getItem('user'))?.name || 'Admin';
 
   const handleLogout = () => {
-    localStorage.removeItem('token');
-    localStorage.removeItem('user');
+    logout();
     navigate('/login');
   };
 
@@ -102,7 +103,7 @@ const AdminLayout = ({ children, title, activeTab, setActiveTab }) => {
           {/* User info + logout */}
           <div className="flex items-center gap-3 flex-shrink-0">
             <div className="hidden sm:flex flex-col items-end">
-              <span className="text-sm font-semibold text-gray-800 leading-tight">{user.name}</span>
+              <span className="text-sm font-semibold text-gray-800 leading-tight">{displayName}</span>
               <span className="text-xs text-gray-500">Administrator</span>
             </div>
             <button

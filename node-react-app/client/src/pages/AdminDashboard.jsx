@@ -1,6 +1,8 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useContext } from 'react';
+import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import AdminLayout from '../components/AdminLayout';
+import { AuthContext } from '../context/AuthContext';
 
 const EMPTY_SPEAKER  = { name: '', bio: '' };
 const EMPTY_TOPIC    = { name: '' };
@@ -24,6 +26,16 @@ const AdminDashboard = () => {
 
   const getToken  = () => localStorage.getItem('token');
   const getConfig = () => ({ headers: { Authorization: `Bearer ${getToken()}` } });
+
+  const { user, loading: authLoading } = useContext(AuthContext);
+  const navigate = useNavigate();
+
+  // Auth guard — redirect to login if logged out from anywhere
+  useEffect(() => {
+    if (!authLoading && !user) {
+      navigate('/login');
+    }
+  }, [user, authLoading, navigate]);
 
   useEffect(() => { fetchData(); }, []);
 
