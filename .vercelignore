@@ -1,8 +1,11 @@
-vendor
 node_modules
+vendor
+storage
+tests
 .git
+.env
+README.md
 storage/logs
 storage/framework/cache
 storage/framework/sessions
 storage/framework/views
-.env
