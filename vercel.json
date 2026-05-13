@@ -55,9 +55,5 @@
     "public/storage/**",
     "resources/views/**",
     "README.md"
-  ],
-  "build": {
-    "command": "composer install --no-dev --optimize-autoloader"
-  }
-
+  ]
 }
