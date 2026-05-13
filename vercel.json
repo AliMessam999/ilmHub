@@ -47,13 +47,5 @@
   },
   "build": {
     "command": "composer install --no-dev --optimize-autoloader"
-  },
-  "ignore": [
-    "tests/**",
-    "node_modules/**",
-    "storage/**",
-    "public/storage/**",
-    "resources/views/**",
-    "README.md"
-  ]
+  }
 }
