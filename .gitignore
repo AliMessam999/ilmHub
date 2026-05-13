@@ -21,3 +21,5 @@ yarn-error.log
 /.vscode
 /docker-compose.yml
 /storage/logs/*
+.vercel
+.env*.local
