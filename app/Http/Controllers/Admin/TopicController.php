@@ -10,19 +10,21 @@ class TopicController extends Controller
 {
     public function index()
     {
-        $topics = Topic::latest()->paginate(10);
+        $topics = Topic::with(['parent', 'children', 'lectures'])->latest()->paginate(10);
         return view('admin.topics.index', compact('topics'));
     }
 
     public function create()
     {
-        return view('admin.topics.create');
+        $topics = Topic::whereNull('parent_id')->with('children')->get();
+        return view('admin.topics.create', compact('topics'));
     }
 
     public function store(Request $request)
     {
         $validated = $request->validate([
-            'name' => 'required|string|max:255',
+            'name'      => 'required|string|max:255',
+            'parent_id' => 'nullable|exists:topics,id',
         ]);
 
         Topic::create($validated);
@@ -31,13 +33,15 @@ class TopicController extends Controller
 
     public function edit(Topic $topic)
     {
-        return view('admin.topics.edit', compact('topic'));
+        $topics = Topic::where('id', '!=', $topic->id)->whereNull('parent_id')->with('children')->get();
+        return view('admin.topics.edit', compact('topic', 'topics'));
     }
 
     public function update(Request $request, Topic $topic)
     {
         $validated = $request->validate([
-            'name' => 'required|string|max:255',
+            'name'      => 'required|string|max:255',
+            'parent_id' => 'nullable|exists:topics,id|not_in:' . $topic->id,
         ]);
 
         $topic->update($validated);

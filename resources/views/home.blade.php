@@ -154,10 +154,22 @@
         </div>
         <div class="flex flex-wrap gap-4">
             @foreach($popularTopics as $topic)
-                <a href="{{ route('lectures.index', ['topic' => [$topic->id]]) }}" class="bg-white border border-gray-200 hover:border-secondary hover:bg-secondary/5 text-gray-800 font-medium px-6 py-3 rounded-full shadow-sm hover:shadow transition-all flex items-center gap-2">
-                    {{ $topic->name }}
-                    <span class="bg-gray-100 text-gray-500 text-xs py-0.5 px-2 rounded-full">{{ $topic->lectures_count }}</span>
-                </a>
+                <div class="flex flex-col gap-2">
+                    <a href="{{ route('lectures.index', ['topic' => [$topic->id]]) }}" class="bg-white border border-gray-200 hover:border-secondary hover:bg-secondary/5 text-gray-800 font-semibold px-6 py-3 rounded-full shadow-sm hover:shadow transition-all flex items-center gap-2">
+                        {{ $topic->name }}
+                        <span class="bg-gray-100 text-gray-500 text-xs py-0.5 px-2 rounded-full">{{ $topic->lectures_count }}</span>
+                    </a>
+                    @if($topic->children->isNotEmpty())
+                        <div class="flex flex-wrap gap-2 pl-3">
+                            @foreach($topic->children as $child)
+                                <a href="{{ route('lectures.index', ['topic' => [$child->id]]) }}" class="bg-primary/5 border border-primary/20 hover:border-primary hover:bg-primary/10 text-primary text-sm font-medium px-4 py-1.5 rounded-full transition-all flex items-center gap-1">
+                                    ↳ {{ $child->name }}
+                                    <span class="text-primary/60 text-xs">{{ $child->lectures_count }}</span>
+                                </a>
+                            @endforeach
+                        </div>
+                    @endif
+                </div>
             @endforeach
         </div>
     </div>

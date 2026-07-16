@@ -18,8 +18,11 @@ class LectureController extends Controller
         }
 
         if ($request->filled('topic')) {
-            $query->whereHas('topics', function ($q) use ($request) {
-                $q->whereIn('topics.id', (array)$request->topic);
+            $selectedIds = (array) $request->topic;
+            $childIds = Topic::whereIn('parent_id', $selectedIds)->pluck('id')->toArray();
+            $allIds = array_unique(array_merge($selectedIds, $childIds));
+            $query->whereHas('topics', function ($q) use ($allIds) {
+                $q->whereIn('topics.id', $allIds);
             });
         }
 
@@ -54,7 +57,7 @@ class LectureController extends Controller
         $lectures = $query->paginate(12)->withQueryString();
         
         $speakers = Speaker::orderBy('name')->get();
-        $topics = Topic::orderBy('name')->get();
+        $topics = Topic::whereNull('parent_id')->with('children')->orderBy('name')->get();
         $languages = Lecture::select('language')->distinct()->pluck('language');
 
         return view('lectures.index', compact('lectures', 'speakers', 'topics', 'languages'));

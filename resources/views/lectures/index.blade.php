@@ -57,12 +57,20 @@
                         <label class="block text-sm font-medium text-gray-700 mb-2">Topics</label>
                         <div class="max-h-48 overflow-y-auto pr-2 space-y-2 border border-gray-200 rounded-md p-3 bg-gray-50">
                             @foreach($topics as $topic)
-                                <label class="flex items-center text-sm text-gray-700 cursor-pointer">
-                                    <input type="checkbox" name="topic[]" value="{{ $topic->id }}" 
+                                <label class="flex items-center text-sm font-semibold text-gray-800 cursor-pointer">
+                                    <input type="checkbox" name="topic[]" value="{{ $topic->id }}"
                                         class="rounded text-primary focus:ring-primary border-gray-300"
                                         {{ in_array($topic->id, (array)request('topic', [])) ? 'checked' : '' }}>
                                     <span class="ml-2">{{ $topic->name }}</span>
                                 </label>
+                                @foreach($topic->children as $child)
+                                    <label class="flex items-center text-sm text-gray-600 cursor-pointer pl-4">
+                                        <input type="checkbox" name="topic[]" value="{{ $child->id }}"
+                                            class="rounded text-primary focus:ring-primary border-gray-300"
+                                            {{ in_array($child->id, (array)request('topic', [])) ? 'checked' : '' }}>
+                                        <span class="ml-2">↳ {{ $child->name }}</span>
+                                    </label>
+                                @endforeach
                             @endforeach
                         </div>
                     </div>

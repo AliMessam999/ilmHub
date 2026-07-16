@@ -9,10 +9,20 @@ class Topic extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['name'];
+    protected $fillable = ['name', 'parent_id'];
 
     public function lectures()
     {
         return $this->belongsToMany(Lecture::class);
+    }
+
+    public function parent()
+    {
+        return $this->belongsTo(Topic::class, 'parent_id');
+    }
+
+    public function children()
+    {
+        return $this->hasMany(Topic::class, 'parent_id');
     }
 }

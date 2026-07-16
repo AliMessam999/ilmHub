@@ -13,7 +13,9 @@ class HomeController extends Controller
     {
         $featuredSpeakers = Speaker::withCount('lectures')->orderByDesc('lectures_count')->take(12)->get();
         $latestLectures = Lecture::with(['speaker', 'topics'])->latest()->take(6)->get();
-        $popularTopics = Topic::withCount('lectures')->orderByDesc('lectures_count')->take(5)->get();
+        $popularTopics = Topic::whereNull('parent_id')->withCount('lectures')->with(['children' => function($q) {
+            $q->withCount('lectures');
+        }])->orderByDesc('lectures_count')->take(5)->get();
 
         return view('home', compact('featuredSpeakers', 'latestLectures', 'popularTopics'));
     }

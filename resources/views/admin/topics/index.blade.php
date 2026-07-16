@@ -17,6 +17,8 @@
                 <tr class="bg-white border-b border-gray-100 text-xs uppercase text-gray-500 font-medium">
                     <th class="px-6 py-4">ID</th>
                     <th class="px-6 py-4">Topic Name</th>
+                    <th class="px-6 py-4">Parent Topic</th>
+                    <th class="px-6 py-4">Sub-topics</th>
                     <th class="px-6 py-4">Lectures Count</th>
                     <th class="px-6 py-4 text-right">Actions</th>
                 </tr>
@@ -26,6 +28,10 @@
                 <tr class="hover:bg-gray-50 transition-colors">
                     <td class="px-6 py-4 text-gray-500">#{{ $topic->id }}</td>
                     <td class="px-6 py-4 font-bold text-gray-900">{{ $topic->name }}</td>
+                    <td class="px-6 py-4 text-gray-500">{{ $topic->parent?->name ?? '—' }}</td>
+                    <td class="px-6 py-4">
+                        <span class="bg-blue-50 text-blue-600 px-2 py-1 rounded text-xs font-medium">{{ $topic->children->count() }}</span>
+                    </td>
                     <td class="px-6 py-4">
                         <span class="bg-gray-100 text-gray-600 px-2 py-1 rounded text-xs font-medium">{{ $topic->lectures->count() ?? 0 }}</span>
                     </td>
@@ -41,7 +47,7 @@
                 </tr>
                 @empty
                 <tr>
-                    <td colspan="4" class="px-6 py-8 text-center text-gray-500 italic">No topics found.</td>
+                    <td colspan="6" class="px-6 py-8 text-center text-gray-500 italic">No topics found.</td>
                 </tr>
                 @endforelse
             </tbody>
