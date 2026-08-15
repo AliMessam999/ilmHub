@@ -47,7 +47,8 @@
                         <a href="{{ route('speakers.show', $speaker) }}" class="group bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-all block border border-gray-100 h-full">
                             <div class="h-32 bg-primary/5 group-hover:bg-primary/10 flex items-center justify-center transition-colors overflow-hidden">
                                 @if($speaker->image)
-                                    <img src="{{ asset($speaker->image) }}" alt="{{ $speaker->name }}" class="w-24 h-24 rounded-full object-cover shadow-md border-2 border-primary/20 group-hover:border-primary transition-colors">
+                                    <img src="{{ Storage::disk('cloudinary')->url($speaker->image) }}" alt="{{ $speaker->name }}" class="w-24 h-24 rounded-full object-cover shadow-md border-2 border-primary/20 group-hover:border-primary transition-colors">
+                                    <!-- <img src="{{ asset($speaker->image) }}" alt="{{ $speaker->name }}" class="w-24 h-24 rounded-full object-cover shadow-md border-2 border-primary/20 group-hover:border-primary transition-colors"> -->
                                 @else
                                     <div class="w-24 h-24 bg-primary text-secondary rounded-full flex items-center justify-center text-3xl font-bold shadow-md border-2 border-primary/20 group-hover:border-primary transition-colors">
                                         {{ substr($speaker->name, 0, 1) }}

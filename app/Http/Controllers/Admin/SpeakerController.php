@@ -29,7 +29,7 @@ class SpeakerController extends Controller
         ]);
 
         if ($request->hasFile('image')) {
-            $validated['image'] = $request->file('image')->store('speakers', 'public');
+            $validated['image'] = $request->file('image')->store('speakers', 'cloudinary');
         }
 
         Speaker::create($validated);
@@ -51,9 +51,9 @@ class SpeakerController extends Controller
 
         if ($request->hasFile('image')) {
             if ($speaker->image) {
-                Storage::disk('public')->delete($speaker->image);
+                Storage::disk('cloudinary')->delete($speaker->image);
             }
-            $validated['image'] = $request->file('image')->store('speakers', 'public');
+            $validated['image'] = $request->file('image')->store('speakers', 'cloudinary');
         }
 
         $speaker->update($validated);
@@ -62,6 +62,10 @@ class SpeakerController extends Controller
 
     public function destroy(Speaker $speaker)
     {
+        if ($speaker->image) {
+            Storage::disk('cloudinary')->delete($speaker->image);
+        }
+
         $speaker->delete();
         return redirect()->route('admin.speakers.index')->with('success', 'Speaker deleted successfully.');
     }

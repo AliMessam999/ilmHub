@@ -67,6 +67,9 @@ return [
             // 'ssl' => true,
             // 'timeout' => 30,
         ],
+        'cloudinary' => [
+            'driver' => 'cloudinary'
+        ],
 
     ],
 

@@ -132,9 +132,9 @@
                                 
                                 <div class="mt-auto pt-4 border-t border-gray-100 flex items-center justify-between">
                                     <a href="{{ route('speakers.show', $lecture->speaker) }}" class="flex items-center gap-2 text-xs font-semibold text-gray-700 hover:text-primary transition-colors">
-                                        <div class="w-6 h-6 bg-gray-200 rounded-full flex items-center justify-center text-primary">
+                                        <!-- <div class="w-6 h-6 bg-gray-200 rounded-full flex items-center justify-center text-primary">
                                             {{ substr($lecture->speaker->name, 0, 1) }}
-                                        </div>
+                                        </div> -->
                                         {{ $lecture->speaker->name }}
                                     </a>
                                     <span class="text-xs text-gray-400">{{ $lecture->date ? $lecture->date->format('M Y') : '' }}</span>

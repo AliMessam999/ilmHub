@@ -13,7 +13,7 @@
             <!-- Avatar Placeholder -->
             <div class="w-40 h-40 bg-white rounded-full border-4 border-secondary shadow-xl flex items-center justify-center flex-shrink-0 z-10 relative mt-4 md:mt-0 overflow-hidden">
                 @if($speaker->image)
-                    <img src="{{ asset($speaker->image) }}" alt="{{ $speaker->name }}" class="w-full h-full object-cover">
+                    <img src="{{ Storage::disk('cloudinary')->url($speaker->image) }}" alt="{{ $speaker->name }}" class="w-full h-full object-cover">
                 @else
                     <span class="text-6xl font-bold text-primary">{{ substr($speaker->name, 0, 1) }}</span>
                 @endif

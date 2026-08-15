@@ -26,7 +26,7 @@
                 <tr class="hover:bg-gray-50 transition-colors">
                     <td class="px-6 py-4 font-bold text-gray-900 flex items-center gap-3">
                         @if($speaker->image)
-                            <img src="{{ asset($speaker->image) }}" alt="{{ $speaker->name }}" class="w-8 h-8 rounded-full object-cover border border-gray-200">
+                            <img src="{{ Storage::disk('cloudinary')->url($speaker->image) }}" alt="{{ $speaker->name }}" class="w-8 h-8 rounded-full object-cover border border-gray-200">
                         @else
                             <div class="w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center text-xs font-bold">
                                 {{ substr($speaker->name, 0, 1) }}

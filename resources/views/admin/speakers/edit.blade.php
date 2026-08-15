@@ -30,7 +30,7 @@
             <label for="image" class="block text-sm font-medium text-gray-700 mb-2">Speaker Image</label>
             @if($speaker->image)
                 <div class="mb-3">
-                    <img src="{{ asset($speaker->image) }}" alt="Current Image" class="h-20 w-20 object-cover rounded-full border-2 border-primary">
+                    <img src="{{ Storage::disk('cloudinary')->url($speaker->image) }}" alt="{{ $speaker->name }}" class="h-20 w-20 object-cover rounded-full border-2 border-primary">
                     <p class="text-xs text-gray-500 mt-1">Current Image</p>
                 </div>
             @endif
