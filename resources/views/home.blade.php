@@ -43,9 +43,9 @@
         <div class="swiper speaker-slider">
             <div class="swiper-wrapper">
                 @foreach($featuredSpeakers as $speaker)
-                    <div class="swiper-slide">
-                        <a href="{{ route('speakers.show', $speaker) }}" class="group bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-all block border border-gray-100 h-full">
-                            <div class="h-32 bg-primary/5 group-hover:bg-primary/10 flex items-center justify-center transition-colors overflow-hidden">
+                    <div class="swiper-slide h-full">
+                        <a href="{{ route('speakers.show', $speaker) }}" class="group bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-all flex flex-col h-full border border-gray-100">
+                            <div class="h-32 bg-primary/5 group-hover:bg-primary/10 flex items-center justify-center transition-colors overflow-hidden flex-shrink-0">
                                 @if($speaker->image)
                                     <img src="{{ Storage::disk('cloudinary')->url($speaker->image) }}" alt="{{ $speaker->name }}" class="w-24 h-24 rounded-full object-cover shadow-md border-2 border-primary/20 group-hover:border-primary transition-colors">
                                     <!-- <img src="{{ asset($speaker->image) }}" alt="{{ $speaker->name }}" class="w-24 h-24 rounded-full object-cover shadow-md border-2 border-primary/20 group-hover:border-primary transition-colors"> -->
@@ -55,9 +55,9 @@
                                     </div>
                                 @endif
                             </div>
-                            <div class="p-6 text-center">
-                                <h3 class="text-xl font-bold text-gray-900 mb-1 group-hover:text-primary transition-colors">{{ $speaker->name }}</h3>
-                                <p class="text-sm text-gray-500 bg-gray-100 inline-block px-3 py-1 rounded-full">{{ $speaker->lectures_count }} Lectures</p>
+                            <div class="p-6 text-center flex flex-col justify-center flex-grow">
+                                <h3 class="text-xl font-bold text-gray-900 mb-1 group-hover:text-primary transition-colors min-h-[3.5rem] flex items-center justify-center">{{ $speaker->name }}</h3>
+                                <p class="text-sm text-gray-500 bg-gray-100 inline-block px-3 py-1 rounded-full self-center">{{ $speaker->lectures_count }} Lectures</p>
                             </div>
                         </a>
                     </div>
