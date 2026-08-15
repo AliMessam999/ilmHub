@@ -11,7 +11,7 @@ RUN apt-get update && apt-get install -y \
     libxml2-dev \
     libzip-dev \
     default-mysql-client \
-    && docker-php-ext-install pdo pdo_mysql mbstring exif pcntl bcmath gd zip
+    && docker-php-ext-install pdo pdo_mysql mbstring exif pcntl bcmath gd zip ftp
 
 # Enable Apache mod_rewrite (needed for Laravel's pretty URLs)
 RUN a2enmod rewrite
