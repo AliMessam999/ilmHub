@@ -44,5 +44,5 @@ RUN sed -i 's/80/${PORT}/g' /etc/apache2/ports.conf /etc/apache2/sites-available
 
 EXPOSE 8080
 
-# Run migrations then start Apache
-CMD php artisan config:cache && php artisan migrate --force && apache2-foreground
+# Run migrations, link storage, then start Apache
+CMD php artisan config:cache && php artisan migrate --force && php artisan storage:link && apache2-foreground
