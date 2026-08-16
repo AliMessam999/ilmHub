@@ -146,6 +146,7 @@
     </div>
 
     <!-- Popular Topics -->
+    <!-- Popular Topics -->
     <div>
         <div class="flex justify-between items-end mb-8 border-b-2 border-gray-200 pb-4">
             <h2 class="text-3xl font-bold text-primary flex items-center gap-3">
